@@ -1,0 +1,98 @@
+<!--OAFA Studio by Dane Aleksander.-->
+<!doctype html>
+<html lang="en, fr">
+
+<script>
+  function loadObject() {
+    var e,
+        i,
+        obj_e,
+        obj,
+        xhttp;
+    e = document.getElementsByTagName("*");
+    for (i = 0; i < e.length; i++) {
+      obj_e = e[i];
+      obj = obj_e.getAttribute("js-obj");
+      if (obj) {
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {obj_e.innerHTML = this.responseText;}
+            if (this.status == 404) {obj_e.innerHTML = "JS 404.<br/><em>We should have taken a left turn at Albuquerque.</em>";}
+            obj_e.removeAttribute("js-obj");
+            loadObject();
+          }
+        }
+        xhttp.open("GET", obj, true);
+        xhttp.send();
+        return;
+      }
+    }
+  };
+</script>
+
+<head>
+
+  <!--meta-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <null js-obj="../inc/studio/meta.html"></null></head>
+
+<body id="zero">
+
+  <nav><ul class="single">
+      <null js-obj="../inc/studio/nav.html"></null></ul></nav>
+
+  <section class="single">
+    <article>
+
+      <!--title-->
+      <div class="quote text-center">
+        <h1><a href="../" title="Animat Habitat&trade;" target="_self" ><font class="clear">ANIMAT</font> HABITAT</a><font class="blue trade"> &trade;</font></h1>
+        <h3>Studio series: <em>Creating Creatures for Animation</em>.</h3></div>
+
+      <div>
+        <!--Photo 101-->
+        <a href="_101/" title="PHOTO 101 | character design for animation">
+          <div class="color"><h3><font class="blue">PHOTO 101:</font> Character Design for Animation</h3></div></a>
+
+        <!--Photo 102-->
+        <!--<a href="_102/" title="PHOTO 102 | creature design for animation">-->
+          <div><h3><font class="blue">PHOTO 102:</font> Creature Design for Animation *</h3></div><!--</a>-->
+
+        <!--Maya 201-->
+        <a href="_201/" title="MAYA 201 | modeling creatures for animation">
+          <div class="color"><h3><font class="aqua">MAYA 201:</font> Modeling Creatures for Animation</h3></div></a>
+
+        <!--Maya 202-->
+        <a href="_202/" title="MAYA 202 | rigging creatures for animation">
+          <div class="color"><h3><font class="aqua">MAYA 202:</font> Rigging Creatures for Animation</h3></div></a>
+
+        <!--Maya 301-->
+        <!--a href="_301/" title="MAYA 301 | creature fx for animation"-->
+          <div><h3><font class="aqua">MAYA 301:</font> Creature FX for Animation *</h3></div><!--/a-->
+
+        <!--Maya 302-->
+        <!--a href="_302/" title="MAYA 302 | animating creatures for motion pictures"-->
+          <div><h3><font class="aqua">MAYA 302:</font> Animating Creatures for Motion Pictures *</h3></div><!--/a-->
+
+        <!--Maya 302-->
+        <!--a href="_303/" title="MAYA 303 | animating creatures for interactive multimedia"-->
+          <div><h3><font class="aqua">MAYA 303:</font> Animating Creatures for Interactive Multimedia *</h3></div><!--/a--></div><br class="clear"/></div></article><br class="clear"></section>
+
+  <!--quote-->
+  <div class="clear color">
+    <section class="single">
+      <div class="quote text-center"><h4><font class="color">&ldquo;</font><em>Education is the most powerful weapon which you can use to change the world.</em><font class="color">&rdquo;―<em>Nelson Mandela</em></font></h4></div></section></div>
+
+  <section class="single">
+    <article>
+      <null js-obj="../inc/studio/copy.html"></null></article><br class="clear"/></section>
+
+</body>
+
+  <script>
+    loadObject();
+  </script>
+
+</html>
