@@ -36,7 +36,14 @@
   <!--meta-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <null js-obj="../inc/studio/meta.html"></null></head>
+  <null js-obj="../inc/studio/meta.html"></null>
+
+  <style>
+    body { display:none; }</style>
+
+  <noscript>
+    <style>
+    	body { display:block; }</style></noscript></head>
 
 <body id="zero">
 
@@ -91,7 +98,15 @@
 
 </body>
 
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>
+		$( window ).on( 'load', function() {
+
+			$('body').fadeIn(0);
+
+		});
+
     loadObject();
   </script>
 
