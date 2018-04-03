@@ -73,7 +73,7 @@
 
       <div>
         <!--Photo 101-->
-        <a onclick="studio_101()" title="PHOTO 101 | character design for animation">
+        <a class="button" onclick="studio_101()" title="PHOTO 101 | character design for animation">
           <div class="color"><h3><font class="blue">PHOTO 101:</font> Character Design for Animation</h3></div></a>
 
         <div class="clear" id="s101">
@@ -84,14 +84,14 @@
           <div><h3><font class="blue">PHOTO 102:</font> Creature Design for Animation *</h3></div><!--</a>-->
 
         <!--Maya 201-->
-        <a onclick="studio_201()" title="MAYA 201 | modeling creatures for animation">
+        <a class="button" onclick="studio_201()" title="MAYA 201 | modeling creatures for animation">
           <div class="color"><h3><font class="aqua">MAYA 201:</font> Modeling Creatures for Animation</h3></div></a>
 
         <div class="clear" id="s201">
           <div class="gutter-tobo blocks" id="aqua" js-obj="201/outline.html"></div></div>
 
         <!--Maya 202-->
-        <a onclick="studio_202()" title="MAYA 202 | rigging creatures for animation">
+        <a class="button" onclick="studio_202()" title="MAYA 202 | rigging creatures for animation">
           <div class="color"><h3><font class="aqua">MAYA 202:</font> Rigging Creatures for Animation</h3></div></a>
 
         <div class="clear" id="s202">
@@ -132,7 +132,7 @@
         s_101.style.display = "block";
         s_201.style.display = "none";
         s_202.style.display = "none";
-        document.s_101.scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('#s101').scrollIntoView({ behavior: 'smooth' });
       }
       else {
         s_101.style.display = "none";
@@ -144,7 +144,7 @@
         s_101.style.display = "none";
         s_201.style.display = "block";
         s_202.style.display = "none";
-        document.s_201.scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('#s201').scrollIntoView({ behavior: 'smooth' });
       }
       else {
         s_201.style.display = "none";
@@ -156,7 +156,7 @@
         s_101.style.display = "none";
         s_201.style.display = "none";
         s_202.style.display = "block";
-        document.s_202.scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('#s202').scrollIntoView({ behavior: 'smooth' });
       }
       else {
         s_202.style.display = "none";

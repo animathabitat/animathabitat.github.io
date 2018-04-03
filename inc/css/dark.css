@@ -207,7 +207,8 @@ th {
   font-size:0.4em;
   vertical-align:text-top;
 }
-.lettermark {
+.lettermark,
+.button {
   cursor:pointer;
 }
 .lettermark  {
