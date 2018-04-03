@@ -36,16 +36,24 @@
   <!--meta-->
   <meta charset="UTF-8">
   <meta name="company" content="Animat Habitat&trade;">
-  <meta name="keywords" content="creature fx artist, creature design, Maya creature artist, Maya creature fx, Maya creature rig">
   <meta name="description" content="Animat Habitat&trade; studio series: Creating Creatures for Animation.">
+  <meta name="keywords" content="creature fx artist, creature design, Maya creature artist, Maya creature fx, Maya creature rig">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Animat Habitat&trade; stud&#299;um.</title>
+  <title>Animat Habitat&trade; studium.</title>
+
+  <link rel="icon" href="http://animathabitat.org/inc/icons/oafa-light.png">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,500">
   <link rel="stylesheet" href="https://animathabitat.github.io/inc/css/dark.css">
 
-  <link rel="icon" href="http://animathabitat.org/inc/icons/oafa-light.png"></head>
+  <style>
+    #studio-101,
+    #studio-201,
+    #studio-202 {
+     display: none;
+    }
+  </style></head>
 
 <body id="zero">
 
@@ -53,7 +61,7 @@
       <li class="crumb zero logo">
         <a href="http://animathabitat.org" title="Animat Habitat&trade;">
           <img alt="OAFA Mark (Light) &copy; Animat Habitat&trade;, 2015" class="logo" src="../inc/ico/oafa-light.svg"/></a></li>
-      <li class="crumb zero"><a><em>Stud&#299;um</em></a></li></ul></nav>
+      <li class="crumb zero"><a><em>Studium</em></a></li></ul></nav>
 
   <section class="single">
     <article>
@@ -65,20 +73,26 @@
 
       <div>
         <!--Photo 101-->
-        <a href="_101/" title="PHOTO 101 | character design for animation">
+        <a onclick="studio_101()" title="PHOTO 101 | character design for animation">
           <div class="color"><h3><font class="blue">PHOTO 101:</font> Character Design for Animation</h3></div></a>
+
+        <div class="clear blocks" id="studio-101"><null js-obj="../inc/studio/studio-101.html"></null></div>
 
         <!--Photo 102-->
         <!--<a href="_102/" title="PHOTO 102 | creature design for animation">-->
           <div><h3><font class="blue">PHOTO 102:</font> Creature Design for Animation *</h3></div><!--</a>-->
 
         <!--Maya 201-->
-        <a href="_201/" title="MAYA 201 | modeling creatures for animation">
+        <a onclick="studio_201()" title="MAYA 201 | modeling creatures for animation">
           <div class="color"><h3><font class="aqua">MAYA 201:</font> Modeling Creatures for Animation</h3></div></a>
 
+        <div class="clear blocks" id="studio-201"><null js-obj="../inc/studio/studio-201.html"></null></div>
+
         <!--Maya 202-->
-        <a href="_202/" title="MAYA 202 | rigging creatures for animation">
+        <a onclick="studio_202()" title="MAYA 202 | rigging creatures for animation">
           <div class="color"><h3><font class="aqua">MAYA 202:</font> Rigging Creatures for Animation</h3></div></a>
+
+        <div class="clear blocks" id="studio-202"><null js-obj="../inc/studio/studio-202.html"></null></div>
 
         <!--Maya 301-->
         <!--a href="_301/" title="MAYA 301 | creature fx for animation"-->
@@ -105,6 +119,46 @@
 
   <script>
     loadObject();
+
+    var s_101 = document.getElementById("studio-101"),
+        s_201 = document.getElementById("studio-201"),
+        s_202 = document.getElementById("studio-202");
+
+    function studio_101() {
+      if (s_101.style.display == "none") {
+        s_101.style.display = "block";
+        s_201.style.display = "none";
+        s_202.style.display = "none";
+        document.querySelector('#studio-101').scrollIntoView({ behavior: 'smooth' });
+      }
+      else {
+        s_101.style.display = "none";
+      }
+    };
+
+    function studio_201() {
+      if (s_201.style.display == "none") {
+        s_101.style.display = "none";
+        s_201.style.display = "block";
+        s_202.style.display = "none";
+        document.querySelector('#studio-201').scrollIntoView({ behavior: 'smooth' });
+      }
+      else {
+        s_201.style.display = "none";
+      }
+    };
+
+    function studio_202() {
+      if (s_201.style.display == "none") {
+        s_101.style.display = "none";
+        s_201.style.display = "block";
+        s_202.style.display = "none";
+        document.querySelector('#studio-202').scrollIntoView({ behavior: 'smooth' });
+      }
+      else {
+        s_202.style.display = "none";
+      }
+    };
   </script>
 
 </html>
