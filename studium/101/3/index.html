@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<script>
+  function loadObject() {
+    var e,
+        i,
+        obj_e,
+        obj,
+        xhttp;
+    e = document.getElementsByTagName("*");
+    for (i = 0; i < e.length; i++) {
+      obj_e = e[i];
+      obj = obj_e.getAttribute("js-obj");
+      if (obj) {
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {obj_e.innerHTML = this.responseText;}
+            if (this.status == 404) {obj_e.innerHTML = "JS 404.<br/><em>We should have taken a left turn at Albuquerque.</em>";}
+            obj_e.removeAttribute("js-obj");
+            loadObject();
+          }
+        }
+        xhttp.open("GET", obj, true);
+        xhttp.send();
+        return;
+      }
+    }
+  };
+</script>
+
+<head>
+
+  <!--meta-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <null js-obj="../../meta.html"></null>
+
+  <!--style-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,500">
+  <link rel="stylesheet" href="../../../inc/css/dark.css"></head>
+
+<body id="blue">
+
+  <nav><ul class="single">
+      <null js-obj="../../nav.html"></null>
+			<li class="crumb blue"><a><em>Photo 101.3</em></a></li></ul></nav>
+
+  <section class="single">
+    <article>
+    	<div>
+        <null js-obj="../meta.html"></null>
+        <h5>Continued from <a href="../2/" title="Maya 101.2 | the character">The Character</a>.</h5>
+
+  			<h3 class="linebreak">The Context</h3>
+        <p><em>We look at character art that catches the eye, at why a character design works, at why another does not, and in particular at the silhouette of a character in its context. We construct a mental and visceral image of a character design that works ― for you, over time. We look for a balance of originality and emulation in the art of character design.</em></p>
+
+        <h3 class="linebreak">a/ Duet. (2014) Glen Keane.</h3>
+        <p>Working in conjunction with Google’s Advanced Technology and Projects (ATAP), Glen Keane debuted his hand-drawn short, <em><a href="https://www.youtube.com/watch?v=O9CG_PoEWCg" title="Glen Keane | Duet (2014) (Youtube)" target="_blank">Duet</a> (2014)</em>, at the Google I/O developer conference. The animated short is part of a collection of Spotlight Stories that are designed to explore the possibilities of interactive animation on mobile devices. Here, the animation is referenced as a reminder to picture what a finished frame may look like, and yet to keep character design rough during its visual development. Rougher sketches tend to look better, and mostly it has to do with the energy ― you can feel the creativity of the person behind the drawing. <!--This is in contrast to a sketch that has been cleaned up, for example a vector, that can sacrifice organic qualities of a dynamic character pose.--></p></div>
+
+      <img alt="" src="http://picture.lifeasplay.ca/references/duet-keane.jpg" class="half left"><img alt="" src="http://picture.lifeasplay.ca/references/duet-mia.jpg" class="half left"><br clear="all">
+      <p class="text-right gutter-side"><em>&copy; Glen Keane, Duet (2014) | Mia</em></p>
+
+  		<!--nav-->
+  		<div class="clear navigation">
+  			<div class="nav-links">
+  				<a rel="next" href="../4/" title="Maya 101.4 | the history of a character">4/ The History</a></div></div>
+
+    <null js-obj="../../copy.html"></null></article></section>
+
+</body>
+</html>

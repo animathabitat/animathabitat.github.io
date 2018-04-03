@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<script>
+  function loadObject() {
+    var e,
+        i,
+        obj_e,
+        obj,
+        xhttp;
+    e = document.getElementsByTagName("*");
+    for (i = 0; i < e.length; i++) {
+      obj_e = e[i];
+      obj = obj_e.getAttribute("js-obj");
+      if (obj) {
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {obj_e.innerHTML = this.responseText;}
+            if (this.status == 404) {obj_e.innerHTML = "JS 404.<br/><em>We should have taken a left turn at Albuquerque.</em>";}
+            obj_e.removeAttribute("js-obj");
+            loadObject();
+          }
+        }
+        xhttp.open("GET", obj, true);
+        xhttp.send();
+        return;
+      }
+    }
+  };
+</script>
+
+<head>
+
+  <!--meta-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <null js-obj="../../meta.html"></null>
+
+  <!--style-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,500">
+  <link rel="stylesheet" href="../../../inc/css/dark.css"></head>
+
+<body id="blue">
+
+  <nav><ul class="single">
+      <null js-obj="../../nav.html"></null>
+			<li class="crumb blue"><a><em>Photo 101.6</em></a></li></ul></nav>
+
+  <section class="single">
+    <article>
+    	<div>
+        <null js-obj="../meta.html"></null>
+        <h5>Continued from <a href="../5/" title="Maya 101.5 | the personality of a character">The Personality</a>.</h5>
+
+  			<h3 class="linebreak">The Idea</h3>
+        <p>What is the character's purpose in life? What does the character want more than anything, and how would the character react if that was threatened? What is the character's best and worst memory, and how does the character react when asked about them? What is the character most afraid of, and what would the character do to prevent it?</p>
+
+        <p class="linebreak">Who knows the character best? How has family shaped the character? Does being around them make the character more, or less true to oneself? What does the character know that no one else does?</p>
+
+        <p class="linebreak">If the character could live anywhere, where would it be, and what does this place mean to the character? What is the character's favorite attire, and is it important? How have the times shaped the character? What characteristics have been defined by the time? How does age define the character?</p></div>
+
+    <null js-obj="../../copy.html"></null></article></section>
+
+</body>
+</html>
