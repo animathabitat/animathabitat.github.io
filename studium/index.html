@@ -48,9 +48,9 @@
   <link rel="stylesheet" href="https://animathabitat.github.io/inc/css/dark.css">
 
   <style>
-    #studio-101,
-    #studio-201,
-    #studio-202 {
+    #s101,
+    #s201,
+    #s202 {
      display: none;
     }
   </style></head>
@@ -76,7 +76,7 @@
         <a onclick="studio_101()" title="PHOTO 101 | character design for animation">
           <div class="color"><h3><font class="blue">PHOTO 101:</font> Character Design for Animation</h3></div></a>
 
-        <div class="clear" id="studio-101">
+        <div class="clear" id="s101">
           <div class="gutter-tobo blocks" id="blue" js-obj="101/outline.html"></div></div>
 
         <!--Photo 102-->
@@ -87,14 +87,14 @@
         <a onclick="studio_201()" title="MAYA 201 | modeling creatures for animation">
           <div class="color"><h3><font class="aqua">MAYA 201:</font> Modeling Creatures for Animation</h3></div></a>
 
-        <div class="clear" id="studio-201">
+        <div class="clear" id="s201">
           <div class="gutter-tobo blocks" id="aqua" js-obj="201/outline.html"></div></div>
 
         <!--Maya 202-->
         <a onclick="studio_202()" title="MAYA 202 | rigging creatures for animation">
           <div class="color"><h3><font class="aqua">MAYA 202:</font> Rigging Creatures for Animation</h3></div></a>
 
-        <div class="clear" id="studio-202">
+        <div class="clear" id="s202">
           <div class="gutter-tobo blocks" id="aqua" js-obj="202/outline.html"></div></div>
 
         <!--Maya 301-->
@@ -123,16 +123,16 @@
   <script>
     loadObject();
 
-    var s_101 = document.getElementById("studio-101"),
-        s_201 = document.getElementById("studio-201"),
-        s_202 = document.getElementById("studio-202");
+    var s_101 = document.getElementById("s101"),
+        s_201 = document.getElementById("s201"),
+        s_202 = document.getElementById("s202");
 
     function studio_101() {
       if (s_101.style.display == "none") {
         s_101.style.display = "block";
         s_201.style.display = "none";
         s_202.style.display = "none";
-        document.querySelector('#studio-101').scrollIntoView({ behavior: 'smooth' });
+        document.s_101.scrollIntoView({ behavior: 'smooth' });
       }
       else {
         s_101.style.display = "none";
@@ -144,7 +144,7 @@
         s_101.style.display = "none";
         s_201.style.display = "block";
         s_202.style.display = "none";
-        document.querySelector('#studio-201').scrollIntoView({ behavior: 'smooth' });
+        document.s_201.scrollIntoView({ behavior: 'smooth' });
       }
       else {
         s_201.style.display = "none";
@@ -154,9 +154,9 @@
     function studio_202() {
       if (s_201.style.display == "none") {
         s_101.style.display = "none";
-        s_201.style.display = "block";
-        s_202.style.display = "none";
-        document.querySelector('#studio-202').scrollIntoView({ behavior: 'smooth' });
+        s_201.style.display = "none";
+        s_202.style.display = "block";
+        document.s_202.scrollIntoView({ behavior: 'smooth' });
       }
       else {
         s_202.style.display = "none";
