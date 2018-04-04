@@ -16,15 +16,7 @@
   <link rel="icon" href="http://animathabitat.org/inc/icons/oafa-light.png">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,500">
-  <link rel="stylesheet" href="https://animathabitat.github.io/inc/css/dark.css">
-
-  <style>
-    #s101,
-    #s201,
-    #s202 {
-     display: none;
-    }
-  </style></head>
+  <link rel="stylesheet" href="https://animathabitat.github.io/inc/css/dark.css"></head>
 
 <body id="zero">
 
@@ -219,16 +211,16 @@
 
   <section class="single">
     <article>
-  		<div class="clear blocks">
+      <div class="clear blocks">
 
-  			<!--open-->
-  			<div class="quote left">
+        <!--open-->
+        <div class="quote left">
 
-  				<!--<pre class="thin"></pre>-->
+          <!--<pre class="thin"></pre>-->
 
-  				<p class="linebreak small">Animat Habitat<font class="trade">&trade;</font> studium is published in part for all students of animation, and for the advancement of the craft of creature effects for interactive multimedia and motion pictures. For a local workshop or studio session, please contact: <a href="mailto:inbox@lifeasplay.ca?subject=Creating&nbsp;Creatures&nbsp;for&nbsp;Animation" title="inbox [at] lifeasplay.ca">inbox [at] lifeasplay.ca</a>.</p>
+          <p class="linebreak small">Animat Habitat<font class="trade">&trade;</font> studium is published in part for all students of animation, and for the advancement of the craft of creature effects for interactive multimedia and motion pictures. For a local workshop or studio session, please contact: <a href="mailto:inbox@lifeasplay.ca?subject=Creating&nbsp;Creatures&nbsp;for&nbsp;Animation" title="inbox [at] lifeasplay.ca">inbox [at] lifeasplay.ca</a>.</p>
 
-  				<p class="linebreak small">* Curriculum is in development.</p></div><br class="clear"/></div></article><br class="clear"/></section>
+          <p class="linebreak small">* Curriculum is in development.</p></div><br class="clear"/></div></article><br class="clear"/></section>
 
 </body>
 
@@ -236,6 +228,10 @@
     var s_101 = document.getElementById("s101"),
         s_201 = document.getElementById("s201"),
         s_202 = document.getElementById("s202");
+
+    s_101.style.display = "none";
+    s_201.style.display = "none";
+    s_202.style.display = "none";
 
     function studio_101() {
       if (s_101.style.display == "none") {

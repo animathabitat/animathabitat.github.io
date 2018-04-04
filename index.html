@@ -18,14 +18,6 @@
 
   <link rel="icon" href="http://animathabitat.org/inc/icons/oafa-light.png">
 
-  <style>
-    #none,
-    /* #one, */
-    #two {
-     display: none;
-    }
-  </style>
-
 </head>
 
 <body id="zero">
@@ -182,6 +174,9 @@
   <script>
     var zero = document.getElementById("none"),
         one = document.getElementById("one");
+
+    one.style.display = "none";
+    zero.style.display = "none";
 
     function issueZero() {
       if (zero.style.display == "none") {
