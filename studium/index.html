@@ -16,7 +16,14 @@
   <link rel="icon" href="http://animathabitat.org/inc/icons/oafa-light.png">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,500">
-  <link rel="stylesheet" href="https://animathabitat.github.io/inc/css/dark.css"></head>
+  <link rel="stylesheet" href="https://animathabitat.github.io/inc/css/dark.css">
+
+  <style>
+    section { display:none; }</style>
+
+  <noscript>
+    <style>
+    	section { display:block; }</style></noscript></head>
 
 <body id="zero">
 
@@ -269,5 +276,8 @@
       }
     };
   </script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>$( window ).on( 'load', function() { $('section').fadeIn(1200); });</script>
 
 </html>
