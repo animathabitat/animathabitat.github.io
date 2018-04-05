@@ -32,9 +32,6 @@ wp-content/plugins/hello.php
 
 # Pages caches
 _*/
-studium/copy.html
-studium/meta.html
-studium/nav.html
 
 # Server caches
 /.htaccess
