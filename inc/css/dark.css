@@ -19,6 +19,9 @@
   margin:0;
   padding:0;
 }
+html {
+  cursor:default;
+}
 article,
 aside,
 footer,
@@ -65,6 +68,7 @@ h6 {
 }
 a,
 abbr {
+  cursor:pointer;
   text-decoration:none;
 }
 img {
@@ -98,7 +102,6 @@ span {
 /* 1 *//* fonts */
 
 html {
-  cursor:default;
   -webkit-text-size-adjust:62.5%;
      -moz-text-size-adjust:62.5%;
       -ms-text-size-adjust:62.5%;
@@ -208,7 +211,6 @@ th {
   font-size:0.4em;
   vertical-align:text-top;
 }
-a,
 .lettermark,
 .button {
   cursor:pointer;
