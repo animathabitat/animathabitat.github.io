@@ -269,6 +269,9 @@ p a,
 .score {
   text-decoration:line-through;
 }
+a.cursor {
+  cursor:default;
+}
 
 /***********************/
 /* 2 *//* frameworks */
