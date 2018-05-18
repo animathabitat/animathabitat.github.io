@@ -269,7 +269,7 @@ p a,
 .score {
   text-decoration:line-through;
 }
-a.cursor, a.cursor em {
+.default, .default a, .default a em {
   cursor:default;
 }
 
