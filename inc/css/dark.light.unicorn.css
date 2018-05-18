@@ -269,8 +269,8 @@ p a,
 .score {
   text-decoration:line-through;
 }
-.default, .default a, .default a em {
-  cursor:text;
+.default a {
+  cursor:default;
 }
 
 /***********************/
