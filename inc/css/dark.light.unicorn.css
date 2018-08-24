@@ -441,8 +441,7 @@ select.format {
   width:100%;
 }
 
-::-webkit-scrollbar { width:0.5em; }
-::-webkit-scrollbar:horizontal { width:0.5em; }
+::-webkit-scrollbar { width:0.5em; height: 0.5em; }
 
 /********************/
 /* 3 *//* classes */
