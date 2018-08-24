@@ -442,6 +442,7 @@ select.format {
 }
 
 ::-webkit-scrollbar { width:0.5em; }
+::-webkit-scrollbar:horizontal { height:0.5em; }
 
 /********************/
 /* 3 *//* classes */
