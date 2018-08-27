@@ -197,6 +197,7 @@ option {
 h6,
 p.small,
 em.small,
+font.small,
 ul.small {
   font-size:0.75em;
 }
