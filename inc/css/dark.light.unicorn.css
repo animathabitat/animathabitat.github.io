@@ -713,7 +713,8 @@ div#one,
 #one button,
 #one input[type="submit"],
 #one a:hover > div.color,
-div.one {
+div.one,
+.color-one {
   background:#594D32;
 }
 #one button:hover,
@@ -1157,6 +1158,10 @@ and (max-device-width:720px) {
   input,
   button {
     height:3em;
+  }
+
+  select {
+
   }
 
   /************************/
