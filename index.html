@@ -40,7 +40,7 @@
     <h1><font class="clear">ANIMAT</font> HABITAT<font class="clear trade"> &trade;</font></h1>
     <h3>scenes in wildlife art<font class="fr"> &#92; scènes dans l'art de la faune </font>:</h3></div>
 
-  <div class="text-center">
+  <div class="text-center" id="a-one">
     <h1 class="clear title"><a class="lettermark one" onclick="issueOne();">White Elephant</a></h1></div>
 
   <div id="one" class="gutter-tobo">
@@ -92,7 +92,6 @@
         <div>
           <h5 class="one"><em>issue <b>one</b></em><font class="fr"> &#92; <em>publication <b>un</b></em> </font>:</h5>
           <h2 class="color">WHITE ELEPHANT <em class="small">Comic Book</em><font class="fr small"> &#92; <em>Bande dessin&eacute;e</em></font></h2>
-          <h5>First edition.<font class="fr"> &#92; Premi&egrave;re &eacute;dition.</font></h5>
           <h5>28 pages.</h5>
           <h5>Created in Canada.<font class="fr"> &#92; Cr&eacute;&eacute; au Canada.</font></h5>
 
@@ -115,20 +114,21 @@
         <div class="left">
           <h5><font class="overscore">E-book</font><font class="fr"> &#92; Publication num&eacute;rique</font></h5>
           <p>Language<font class="fr"> &#92; Langue </font>: En, Fr, Zh-HanT*</p>
-          <p>Price<font class="fr"> &#92; Prix </font>: CA$10</p>
+          <p>Price<font class="fr"> &#92; Prix </font>: CA$15</p>
           <p>Publication Date<font class="fr"> &#92; Parution </font>: <em>04.2019</em></p>
           <!--p>UPC: X XXXXX XXXXX X XXXXX</p--></div>
 
         <div class="left">
           <h5><font class="overscore">Full Color Paperback</font><font class="fr"> &#92; Broch&eacute; en couleur</font></h5>
           <p>Language<font class="fr"> &#92; Langue </font>: En</p>
-          <p>Price<font class="fr"> &#92; Prix </font>: CA$50 <em>incl. shipping</em></p>
+          <p>Limited edition<font class="fr"> &#92; &Eacute;dition limit&eacute;e : </font> 200 copies</p>
+          <p>Price<font class="fr"> &#92; Prix </font>: CA$75 <em>incl. shipping</em></p>
           <p>Publication Date<font class="fr"> &#92; Parution </font>: <em>04.2019</em></p>
           <!--p>UPC: X XXXXX XXXXX X XXXXX</p--></div><br class="clear"/></div></div><br class="clear"/></section></div>
 
   <section class="single">
     <article>
-      <div class="text-center">
+      <div class="text-center" id="a-none">
         <h1 class="clear title"><a class="lettermark zero" onclick="issueZero();">White Rhino</a></h1></div></article><br class="clear"/></section>
 
   <div id="none" class="color gutter-tobo">
@@ -158,6 +158,7 @@
         <div class="clear blocks">
           <div class="left">
             <h5><font class="overscore">Oil Painting</font><font class="fr"> &#92; Peinture &agrave; l'huile</font></h5>
+            <p>Limited edition<font class="fr"> &#92; &Eacute;dition limit&eacute;e : </font> Original</p>
             <p>Show Date<font class="fr"> &#92; d'exposition </font>: 04.2007</p></div><br class="clear"/></div></div><br class="clear"/></section></div>
 
   <section class="single">
@@ -177,8 +178,7 @@
     function issueZero() {
       if (zero.style.display == "none") {
         zero.style.display = "block";
-        one.style.display = "none";
-        document.querySelector('#none').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('#a-none').scrollIntoView({ behavior: 'smooth' });
       }
       else {
         zero.style.display = "none";
@@ -187,9 +187,8 @@
 
     function issueOne() {
       if (one.style.display == "none") {
-        zero.style.display = "none";
         one.style.display = "block";
-        document.querySelector('#one').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('#a-one').scrollIntoView({ behavior: 'smooth' });
       }
       else {
         one.style.display = "none";
