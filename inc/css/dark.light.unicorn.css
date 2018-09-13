@@ -256,7 +256,8 @@ th {
 p.linebreak {
   padding-top:1em;
 }
-.lineend {
+.lineend,
+.stock /* woo */ {
   padding-bottom:1em;
 }
 p a,
@@ -281,6 +282,7 @@ nav ul,
 section {
   width:128rem;
 }
+header,
 .single {
   width:96rem;
 }
@@ -433,6 +435,9 @@ div.quote,
 blockquote,
 q {
   padding:3em;
+}
+div.hidden {
+  padding: 0;
 }
 pre.thin {
   width:auto;
@@ -1173,6 +1178,7 @@ and (max-device-width:720px) {
 
   nav ul,
   section,
+  header,
   aside,
   article,
   .single,
