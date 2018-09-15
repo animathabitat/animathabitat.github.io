@@ -972,8 +972,10 @@ div#soci,
 /*************************/
 /* 9 *//* -woocommerce */
 
-li.has-post-thumbnail div div { height:160px; }
-img.size-shop_catalog {
+li.has-post-thumbnail {
+  display: grid;
+}
+/* img.size-shop_catalog {
   max-height:100%;
   max-width:100%;
   width:auto;
@@ -981,7 +983,8 @@ img.size-shop_catalog {
   position:absolute;
   bottom:0; left:0; right:0;
   margin:auto;
-  padding:0; }
+  padding:0;
+} */
 
 .woo-currency {
 
