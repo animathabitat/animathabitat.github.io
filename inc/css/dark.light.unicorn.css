@@ -247,7 +247,8 @@ th {
   left: 0;
   right: 0;
 }
-.letterhead {
+.letterhead,
+.return-to-shop /* woo */ {
   padding-top:4.5em;
 }
 .linebreak {
@@ -433,7 +434,8 @@ div {
 }
 div.quote,
 blockquote,
-q {
+q,
+li.type-product /* woo */ {
   padding:3em;
 }
 div.hidden {
@@ -493,6 +495,7 @@ br.clear {
   text-align:right;
 }
 select,
+.gutter,
 .gutter-side {
   padding:0 1em;
 }
