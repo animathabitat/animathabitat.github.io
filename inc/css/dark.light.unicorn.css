@@ -477,7 +477,8 @@ br.clear {
   margin:0 auto;
   position:relative;
 }
-.left {
+.left,
+li.type-product /* woo */  {
   display:inline;
   float:left;
 }
