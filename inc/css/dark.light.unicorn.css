@@ -429,13 +429,13 @@ aside {
 .single article {
   width:100%;
 }
-div {
+div,
+li.type-product /* woo */  {
   padding:1em;
 }
 div.quote,
 blockquote,
-q,
-li.type-product /* woo */ {
+q{
   padding:3em;
 }
 div.hidden {
@@ -522,7 +522,8 @@ select,
 .three-quarter {
   width:75%;
 }
-.quarter {
+.quarter,
+li.type-product /* woo */ {
   width:25%;
 }
 .two-third {
@@ -534,7 +535,7 @@ select,
   width:calc(100% /3);
 }
 .blocks > div,
-.blocks > div.quote {
+.blocks > div.quote /* woo */ {
   display:inline; width:50%;
 }
 .quads > div,
@@ -1194,7 +1195,8 @@ and (max-device-width:720px) {
     min-width:100%;
     width:100%;
   }
-  .quarter {
+  .quarter,
+  li.type-product /* woo */ {
     width:50%;
   }
   div.vol,
