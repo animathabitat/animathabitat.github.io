@@ -248,6 +248,7 @@ th {
   right: 0;
 }
 .letterhead,
+.cart-empty, /* woo */
 .return-to-shop /* woo */ {
   padding-top:4.5em;
 }
