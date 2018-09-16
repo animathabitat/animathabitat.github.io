@@ -1005,6 +1005,12 @@ a.checkout-button {
   /* text-align:right; */
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 input[type=checkbox].input-checkbox,
 input[type=radio].input-checkbox {
   display:inline;
@@ -1014,9 +1020,13 @@ input[type=radio].input-checkbox {
   width:1em;
 }
 
-input[type=checkbox]#ship-to-different-address-checkbox:empty ~ .woocommerce-shipping-fields__field-wrapper { display: none; }
+input[type=checkbox]#ship-to-different-address-checkbox:empty ~ .woocommerce-shipping-fields__field-wrapper {
+  display: none;
+}
 
-input[type=checkbox]#ship-to-different-address-checkbox:checked ~ .woocommerce-shipping-fields__field-wrapper { display: block; }
+input[type=checkbox]#ship-to-different-address-checkbox:checked ~ .woocommerce-shipping-fields__field-wrapper {
+  display: block;
+}
 
 div.related div.woo-price {
   padding:1em 0;
