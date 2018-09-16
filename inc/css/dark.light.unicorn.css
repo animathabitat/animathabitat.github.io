@@ -976,14 +976,15 @@ li.has-post-thumbnail {
   display:grid;
 }
 li.has-post-thumbnail div {
+  align-items: flex-end;
+  display: flex;
   height:160px;
 }
-img.size-woocommerce_thumbnail {
+li.has-post-thumbnail div img {
   max-height:160px;
   max-width:100%;
   width:auto;
   margin:auto;
-  bottom:0;
 }
 
 .woo-currency {
