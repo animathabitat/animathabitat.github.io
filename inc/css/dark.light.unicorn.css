@@ -974,9 +974,12 @@ div#soci,
 
 li.has-post-thumbnail {
   display:grid;
+}
+li.has-post-thumbnail div {
   height:160px;
 }
 img.size-woocommerce_thumbnail {
+  bottom: 0;
   max-height:160px;
   max-width:100%;
   width:auto;
