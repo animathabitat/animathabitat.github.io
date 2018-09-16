@@ -248,14 +248,14 @@ th {
   right: 0;
 }
 .letterhead,
-.cart-empty, /* woo */
-.return-to-shop /* woo */ {
+.cart-empty /* woo */ {
   padding-top:4.5em;
 }
 .linebreak {
   padding-top:1.5em;
 }
-p.linebreak {
+p.linebreak,
+.return-to-shop /* woo */ {
   padding-top:1em;
 }
 .lineend,
