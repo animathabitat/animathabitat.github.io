@@ -976,8 +976,8 @@ li.has-post-thumbnail {
   display:grid;
 }
 li.has-post-thumbnail div {
-  align-items: flex-end;
-  display: flex;
+  align-items:flex-end;
+  display:flex;
   height:160px;
 }
 li.has-post-thumbnail div img {
@@ -985,6 +985,7 @@ li.has-post-thumbnail div img {
   max-width:100%;
   width:auto;
   margin:auto;
+  vertical-align:bottom;
 }
 
 .woo-currency {
