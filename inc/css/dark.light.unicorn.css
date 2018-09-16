@@ -983,8 +983,7 @@ img.size-woocommerce_thumbnail {
   max-width:100%;
   width:auto;
   margin:auto;
-  padding:auto;
-  align-self: baseline;
+  bottom:0;
 }
 
 .woo-currency {
