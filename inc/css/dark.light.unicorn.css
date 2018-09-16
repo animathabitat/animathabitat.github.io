@@ -985,7 +985,7 @@ li.has-post-thumbnail div img {
   max-width:100%;
   width:auto;
   margin:auto;
-  vertical-align:bottom;
+  align-self:flex-end;
 }
 
 .woo-currency {
