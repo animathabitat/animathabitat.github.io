@@ -973,14 +973,13 @@ div#soci,
 /* 9 *//* -woocommerce */
 
 li.has-post-thumbnail {
-  display: grid;
+  display:grid;
   height:160px;
 }
 img.size-woocommerce_thumbnail {
   max-height:100%;
   max-width:100%;
-  width:auto;
-  height:auto;
+  width:100%;
   margin:auto;
 }
 
