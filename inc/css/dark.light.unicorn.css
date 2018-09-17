@@ -1023,11 +1023,11 @@ input[type=radio].input-checkbox {
   width:1em;
 }
 
-input[type=checkbox]#ship-to-different-address-checkbox:empty ~ .shipping_address {
+input[type=checkbox]#ship-to-different-address-checkbox:empty ~ div#ship-to-different-address {
   display: none;
 }
 
-input[type=checkbox]#ship-to-different-address-checkbox:checked ~ .shipping_address {
+input[type=checkbox]#ship-to-different-address-checkbox:checked ~ div#ship-to-different-address {
   display: block;
 }
 
