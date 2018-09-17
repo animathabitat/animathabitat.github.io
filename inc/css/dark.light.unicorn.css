@@ -1023,12 +1023,16 @@ input[type=radio].input-checkbox {
   width:1em;
 }
 
-input[type=checkbox]#ship-to-different-address-checkbox:empty ~ div.shipping_address {
+div.shipping_address {
   display: none;
 }
 
 input[type=checkbox]#ship-to-different-address-checkbox:checked ~ div.shipping_address {
   display: block;
+}
+
+input[type=checkbox]#ship-to-different-address-checkbox:empty ~ div.shipping_address {
+  display: none;
 }
 
 div.related div.woo-price {
