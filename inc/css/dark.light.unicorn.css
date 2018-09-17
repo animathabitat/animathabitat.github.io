@@ -1027,7 +1027,7 @@ div.shipping_address {
   display: none;
 }
 
-input[type=checkbox]#ship-to-different-address-checkbox:checked ~ div.shipping_address {
+input#ship-to-different-address-checkbox:checked ~ div.shipping_address {
   display: block;
 }
 
