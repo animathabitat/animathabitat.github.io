@@ -1023,11 +1023,11 @@ input[type=radio].input-checkbox {
   width:1em;
 }
 
-input[type=checkbox]#ship-to-different-address-checkbox:empty ~ #ship-to-different-address {
+input[type=checkbox].woocommerce-form__input-checkbox:empty~.woocommerce-shipping-fields__field-wrapper {
   display: none;
 }
 
-input[type=checkbox]#ship-to-different-address-checkbox:checked ~ #ship-to-different-address {
+input[type=checkbox].woocommerce-form__input-checkbox:checked~.woocommerce-shipping-fields__field-wrapper {
   display: block;
 }
 
