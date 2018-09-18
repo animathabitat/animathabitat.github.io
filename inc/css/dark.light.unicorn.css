@@ -1003,8 +1003,8 @@ a.checkout-button {
   /* text-align:right; */
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   appearance: none;
   margin: 0;
@@ -1014,8 +1014,8 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-input[type=checkbox].input-checkbox,
-input[type=radio].input-checkbox {
+input[type="checkbox"].input-checkbox,
+input[type="radio"].input-checkbox {
   display:inline;
   float:left;
   margin:0 0.5em 0 0;
@@ -1023,11 +1023,11 @@ input[type=radio].input-checkbox {
   width:1em;
 }
 
-label input[type=checkbox]#ship-to-different-address-checkbox:empty ~ div.shipping_address {
+input[type="checkbox"]:empty ~ div.shipping_address {
   display: none;
 }
 
-label input[type=checkbox]#ship-to-different-address-checkbox:checked ~ div.shipping_address {
+input[type="checkbox"]:checked ~ div.shipping_address {
   display: block;
 }
 
