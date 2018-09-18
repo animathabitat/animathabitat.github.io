@@ -1023,14 +1023,11 @@ input[type=radio].input-checkbox {
   width:1em;
 }
 
-div.shipping_address,
-input[type=checkbox].woocommerce-form__input-checkbox:empty ~ div.shipping_address,
-input[type=checkbox].woocommerce-form__label-for-checkbox:empty ~ div.shipping_address {
+label input[type=checkbox]#ship-to-different-address-checkbox:empty ~ div.shipping_address {
   display: none;
 }
 
-input[type=checkbox].woocommerce-form__input-checkbox:checked ~ div.shipping_address,
-input[type=checkbox].woocommerce-form__label-for-checkbox:checked ~ div.shipping_address {
+label input[type=checkbox]#ship-to-different-address-checkbox:checked ~ div.shipping_address {
   display: block;
 }
 
