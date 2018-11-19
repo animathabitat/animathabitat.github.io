@@ -255,8 +255,11 @@ p.linebreak,
 .return-to-shop /* woo */ {
   padding-top:1em;
 }
-.lineend,
-.return-to-shop, .stock, /* woo */ {
+.lineend {
+  padding-bottom:1.5em;
+}
+p.lineend,
+.return-to-shop, .stock /* woo */ {
   padding-bottom:1em;
 }
 p a,
