@@ -79,14 +79,6 @@ span {
   display: none;
 }
 
-.default a {
-  cursor: default;
-}
-.lettermark,
-.button {
-  cursor: pointer;
-}
-
 /******************/
 /* 1 *//* fonts */
 
@@ -247,6 +239,14 @@ p a,
 }
 .score {
   text-decoration: line-through;
+}
+
+.default a {
+  cursor: default;
+}
+.lettermark,
+.button {
+  cursor: pointer;
 }
 
 /***********************/
@@ -1104,10 +1104,6 @@ p#shipping_address_2_field {
 @media screen
 and (max-width: 1295px) {
 
-  /* h1 {
-    font-size: calc( 5em + ( 1 * ( ( 100vw - 971px ) / 524 ) ) );
-  } */
-
 }
 
 /* IPHONE-Retina */
@@ -1128,12 +1124,34 @@ and (max-width: 971px) {
   h1.small {
     font-size: 2em;
   }
+  h3 {
+    font-size: calc( 24px + ( 6 * ( ( 100vw - 640px ) / 332 ) ) );
+    padding: calc( 1.5px + ( 1.5 * ( ( 100vw - 640px ) / 332 ) ) ) 0;
+  }
 
   /***********************/
   /* 2 *//* frameworks */
   nav ul,
-  section {
+  section,
+  .single {
     width: 100%;
+    max-width: 640px;
+  }
+
+  header,
+  aside,
+  article,
+  .blocks > div,
+  .blocks > div.quote,
+  .half,
+  .two-third,
+  .third {
+    min-width: 100%;
+    width: 100%;
+  }
+  .quarter,
+  li.type-product /* woo */ {
+    width: 50%;
   }
 
   /********************/
@@ -1149,26 +1167,6 @@ and (max-width: 971px) {
 
   div.quote {
     padding: 1.5em;
-  }
-
-  nav ul,
-  section,
-  header,
-  aside,
-  article,
-  .single,
-  .scoll,
-  .blocks > div,
-  .blocks > div.quote,
-  .half,
-  .two-third,
-  .third {
-    min-width: 100%;
-    width: 100%;
-  }
-  .quarter,
-  li.type-product /* woo */ {
-    width: 50%;
   }
   div.vol,
   .vol a,
@@ -1229,7 +1227,7 @@ and (max-width: 971px) {
 and (max-width: 639px) {
 
   body {
-    font-size: calc( 10px + ( 8 * ( ( 100vw - 320px ) / 320 ) ) );
+    font-size: calc( 12px + ( 6 * ( ( 100vw - 320px ) / 320 ) ) );
   }
   h1 {
     font-size: 3em;
@@ -1238,8 +1236,8 @@ and (max-width: 639px) {
     font-size: 2em;
   }
   h3 {
-    font-size: 1.5em;
-    padding: 0;
+    font-size: 1.333em;
+    padding: 0.085em 0;
   }
 
 }
@@ -1249,7 +1247,7 @@ and (max-width: 639px) {
 and (max-width: 320px) {
 
   body {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
 }
