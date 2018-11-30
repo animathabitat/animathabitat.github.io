@@ -109,14 +109,12 @@ a.button,
 .navigation,
 .thin,
 .trade */ {
-  font-family:inherit;
   font-style:normal;
   font-weight:200;
 }
 h1, h4,
 b, strong,
 nav {
-  font-family:inherit;
   font-style:normal;
   font-weight:500;
 }
