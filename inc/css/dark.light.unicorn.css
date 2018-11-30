@@ -253,6 +253,7 @@ p a,
 /* 2 *//* frameworks */
 
 body {
+  min-width: 320px;
   width: 100%;
 }
 nav ul,
@@ -1103,13 +1104,9 @@ p#shipping_address_2_field {
 @media screen
 and (max-width: 1295px) {
 
-  /***********************/
-  /* 2 *//* frameworks */
-
-  nav ul,
-  section {
-    width: 100%;
-  }
+  /* h1 {
+    font-size: calc( 5em + ( 1 * ( ( 100vw - 971px ) / 524 ) ) );
+  } */
 
 }
 
@@ -1125,29 +1122,18 @@ and (max-width: 971px) {
 
   /******************/
   /* 1 *//* fonts */
-
-  body {
-    font-size: 2rem;
-  }
   h1 {
-    font-size: 2.4em;
-    padding-top: 1.6em;
+    font-size: calc( 54px + ( 54 * ( ( 100vw - 640px ) / 332 ) ) );
   }
-  h2 {
-    font-size: 1.67em;
-    padding: 0.165em 0;
-  }
-  h3 {
-    font-size: 1.33em;
-    padding: 0.085em 0;
+  h1.small {
+    font-size: 2em;
   }
 
-  /******************/
-  /* 2.1 *//* nav */
-
-  nav,
-  .navigation {
-    font-size: 1em;
+  /***********************/
+  /* 2 *//* frameworks */
+  nav ul,
+  section {
+    width: 100%;
   }
 
   /********************/
@@ -1158,15 +1144,11 @@ and (max-width: 971px) {
     height: 3em;
   }
 
-  select {
-
-  }
-
   /************************/
   /* 2.3 *//* containers */
 
   div.quote {
-    padding: 2em;
+    padding: 1.5em;
   }
 
   nav ul,
@@ -1205,7 +1187,7 @@ and (max-width: 971px) {
   /* 3.1 *//*** gutters ***/
 
   .gutter-ref {
-    padding: 0 3em 1em 3em;
+    padding: 0 3em 1em;
   }
 
   /********************/
@@ -1238,6 +1220,36 @@ and (max-width: 971px) {
   }
   .google img {
     width: 7.275rem;
+  }
+
+}
+
+/* Break after @1x, before @2x. */
+@media screen
+and (max-width: 639px) {
+
+  body {
+    font-size: calc( 10px + ( 8 * ( ( 100vw - 320px ) / 320 ) ) );
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h1.small {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.5em;
+    padding: 0;
+  }
+
+}
+
+/* @1x. */
+@media screen
+and (max-width: 320px) {
+
+  body {
+    font-size: 1rem;
   }
 
 }
