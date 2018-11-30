@@ -1101,7 +1101,7 @@ p#shipping_address_2_field {
 
 /* Tablet */
 @media screen
-and (max-device-width: 1024px) {
+and (max-width: 1295px) {
 
   /***********************/
   /* 2 *//* frameworks */
@@ -1121,7 +1121,7 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
 
 /* Break after iPhone, before iPad. */
 @media screen
-and (max-device-width: 720px) {
+and (max-width: 971px) {
 
   /******************/
   /* 1 *//* fonts */
