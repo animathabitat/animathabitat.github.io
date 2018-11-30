@@ -31,6 +31,7 @@ wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
 
 # Pages caches
+_*
 _*/
 
 # Server caches

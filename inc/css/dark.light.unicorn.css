@@ -22,23 +22,15 @@
 html {
   cursor:default;
 }
-article,
-aside,
-footer,
-header,
-nav,
-section,
-blockquote,
-q,
-div {
+article, aside, footer, header, nav, section,
+blockquote, q, div {
   background:inherit;
   display:block;
   height:auto;
   margin:auto;
   position:relative;
 }
-blockquote,
-q {
+blockquote, q {
   -webkit-hyphens:none;
      -moz-hyphens:none;
       -ms-hyphens:none;
@@ -46,24 +38,14 @@ q {
           hyphens:none;
   quotes:none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content:"";
   content:none;
 }
-ol,
-ul,
-li {
+ol, ul, li {
   list-style:none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   cursor:inherit;
 }
 a,
@@ -93,7 +75,9 @@ table {
 span {
   background:none;
 }
-[hidden] { display:none; }
+[hidden] {
+  display:none;
+}
 
 /******************/
 /* 1 *//* fonts */
@@ -106,67 +90,36 @@ html {
   font-size:62.5%;
   size:62.5%;
 }
-
-body,
-h2,
-h3,
-h5,
-h6,
-p,
-em,
-form,
-select,
-option,
-button,
-a.button,
-input,
-textarea,
-.navigation,
-.thin,
-.trade,
-table,
-tr,
-td,
-th {
-  font-family:'Oswald', sans-serif;
-  font-weight:200;
-}
-b,
-strong,
-h1,
-h4,
-nav {
-  font-family:'Oswald', sans-serif;
-  font-weight:500;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-select,
-button,
-input,
-textarea,
-table,
-tr,
-td,
-th {
-  font-style:normal;
-}
-em,
-h6 {
-  font-style:italic;
-}
 body {
   font-size:1.8rem;
-  width:100%;
+}
+h2, h3, h5, h6,
+p,
+em, i,
+form, button, a.button, input, option, select, textarea,
+table, tr, td, th,
+.navigation,
+.thin,
+.trade {
+  font-family:'Oswald', sans-serif;
+  font-style:normal;
+  font-weight:200;
+}
+h1, h4,
+b, strong,
+nav {
+  font-family:'Oswald', sans-serif;
+  font-style:normal;
+  font-weight:500;
+}
+h6,
+em, i {
+  font-style:italic;
 }
 h1 {
   font-size:6em;
-  /*letter-spacing:.08em;*/
-  padding-top:1em;
+  /* letter-spacing:.08em; */
+  padding:1.5em 0 0;
 }
 h1.small {
   font-size:3em;
@@ -180,8 +133,7 @@ h3 {
   padding:0.165em 0;
 }
 h4,
-button,
-input,
+button, input,
 nav,
 .navigation {
   font-size:1.333em;
@@ -198,8 +150,7 @@ font.small,
 ul.small {
   font-size:0.75em;
 }
-td,
-th {
+td, th {
   text-align:left;
 }
 .title {
@@ -213,7 +164,7 @@ th {
 .button {
   cursor:pointer;
 }
-.lettermark  {
+.lettermark {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -280,6 +231,9 @@ p a,
 /***********************/
 /* 2 *//* frameworks */
 
+body {
+  width:100%;
+}
 nav ul,
 section {
   width:128rem;
@@ -435,12 +389,11 @@ li.type-product /* woo */  {
   padding:1em;
 }
 div.quote,
-blockquote,
-q{
+blockquote, q {
   padding:3em;
 }
 div.hidden {
-  padding: 0;
+  padding:0;
 }
 pre.thin {
   width:auto;
@@ -450,7 +403,7 @@ select.format {
   width:100%;
 }
 
-::-webkit-scrollbar { width:0.5em; height: 0.5em; }
+::-webkit-scrollbar { width:0.5em; height:0.5em; }
 
 /********************/
 /* 3 *//* classes */
@@ -464,7 +417,7 @@ select.format {
   position:static;
 }
 br.clear {
-  clear: both;
+  clear:both;
 }
 
 /**********************/
@@ -572,8 +525,8 @@ img.logo {
   height:1em;
 }
 .video {
-  height:54rem;
   width:100%;
+  height:54em;
 }
 
 /************************/
