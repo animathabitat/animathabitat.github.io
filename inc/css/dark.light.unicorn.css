@@ -116,8 +116,8 @@ nav {
 h2, h3, h5,
 /* p,
 ol, ul, li,
-table, tr, td, th, */
-form, button, input, option, select, textarea,
+table, tr, td, th,
+form, button, input, option, select, textarea, */
 a.button,
 .navigation,
 .thin,
@@ -424,7 +424,9 @@ select.format {
   width: 100%;
 }
 
-:: -webkit-scrollbar { width: 0.5em; height: 0.5em; }
+:: -webkit-scrollbar {
+  height: 0.5em;
+  width: 0.5em; }
 
 /********************/
 /* 3 *//* classes */
@@ -474,7 +476,7 @@ select,
   padding-bottom: 0;
 }
 .gutter-ref {
-  padding: 0 4em 1em 4em;
+  padding: 0 4em 1em;
 }
 
 /*********************/
@@ -495,19 +497,21 @@ li.type-product /* woo */ {
 }
 .two-third {
   width: 64rem;
-  width: calc(200% /3);
+  width: calc( 200% / 3 );
 }
 .third {
   width: 32rem;
-  width: calc(100% /3);
+  width: calc( 100% /3 );
 }
 .blocks > div,
 .blocks > div.quote /* woo */ {
-  display: inline; width: 50%;
+  display: inline;
+  width: 50%;
 }
 .quads > div,
 .quads > div.quote {
-  display: inline; width: 25%;
+  display: inline;
+  width: 25%;
 }
 .vol a div {
   display: inline;
