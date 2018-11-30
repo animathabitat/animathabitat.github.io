@@ -98,19 +98,7 @@ body {
 }
 form, button, input, option, select, textarea {
   font-family:inherit;
-}
-h2, h3, h5, h6 /*,
-p,
-em, i,
-ol, ul, li,
-table, tr, td, th,
-form, button, input, option, select, textarea,
-a.button,
-.navigation,
-.thin,
-.trade */ {
   font-style:normal;
-  font-weight:200;
 }
 h1, h4,
 b, strong,
@@ -118,9 +106,22 @@ nav {
   font-style:normal;
   font-weight:500;
 }
+h2, h3, h5,
+/* p,
+ol, ul, li,
+table, tr, td, th,
+form, button, input, option, select, textarea, */
+a.button,
+.navigation,
+.thin,
+.trade {
+  font-style:normal;
+  font-weight:200;
+}
 h6,
 em, i {
   font-style:italic;
+  font-weight:200;
 }
 h1 {
   font-size:6em;
