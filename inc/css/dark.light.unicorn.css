@@ -106,7 +106,6 @@ body {
 }
 form, button, input, option, select, textarea {
   font-family: inherit;
-  font-style: normal;
 }
 h1, h4,
 b, strong,
@@ -117,8 +116,8 @@ nav {
 h2, h3, h5,
 /* p,
 ol, ul, li,
-table, tr, td, th,
-form, button, input, option, select, textarea, */
+table, tr, td, th, */
+form, button, input, option, select, textarea,
 a.button,
 .navigation,
 .thin,
