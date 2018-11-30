@@ -96,22 +96,27 @@ body {
   font-style:normal;
   font-weight:200;
 }
-h2, h3, h5, h6,
+form, button, input, option, select, textarea {
+  font-family:inherit;
+}
+h2, h3, h5, h6 /*,
 p,
 em, i,
 ol, ul, li,
 table, tr, td, th,
 form, button, input, option, select, textarea,
-a.button /*,
+a.button,
 .navigation,
 .thin,
 .trade */ {
+  font-family:inherit;
   font-style:normal;
   font-weight:200;
 }
 h1, h4,
 b, strong,
 nav {
+  font-family:inherit;
   font-style:normal;
   font-weight:500;
 }
