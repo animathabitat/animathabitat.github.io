@@ -127,9 +127,6 @@ h1 {
   /* letter-spacing:.08em; */
   padding: 1.5em 0 0;
 }
-h1.small {
-  font-size: 3em;
-}
 h2 {
   font-size: 2em;
   line-height: 1.5em;
@@ -150,18 +147,14 @@ option {
   font-size: 1em;
 }
 h6,
-p.small,
-em.small,
-font.small,
-ul.small {
+.small {
   font-size: 0.75em;
 }
-td, th {
-  text-align: left;
-}
+
 .text-center {
   text-align: center;
 }
+td, th,
 .text-left {
   text-align: left;
 }
@@ -173,6 +166,7 @@ td, th {
   line-height: 0.5em;
   vertical-align: -0.5em;
 }
+
 .title {
   text-transform: uppercase;
 }
@@ -447,9 +441,6 @@ br.clear {
 /**********************/
 /* 3.1 *//* gutters */
 
-.auto {
-  width: auto;
-}
 .center {
   display: block;
   margin: 0 auto;
@@ -528,17 +519,43 @@ ul.products li.product-category h2 {
 /********************/
 /* 3.3 *//* media */
 
-div.profile {
-  position: fixed;
-  width: 18em;
-}
-aside img.profile {
-  margin-top: 3em;
-}
+/* nav icon */
 img.logo {
   width: 1em;
   height: 1em;
 }
+
+/* profile image */
+.profile {
+  position: fixed;
+  width: 18em;
+}
+.profile img.profile {
+  margin-top: 3em;
+}
+
+/* logo mark */
+div.logo {
+  float: left;
+  height: 9em;
+  padding: 0;
+}
+div.logo img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto;
+  padding: 2.4em 3.2em;
+  /* display: inline-block;
+  vertical-align:middle; */
+}
+.auto {
+  width: auto;
+}
+
 .video {
   width: 100%;
   height: 30em;
@@ -547,22 +564,6 @@ img.logo {
 /************************/
 /* 3.4 *//*** logos ***/
 
-div.logo {
-  float: left;
-  height: 9em;
-  padding: 0;
-}
-div.logo img {
-    max-height: 100%;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
-    margin: auto;
-    padding: 2.4em 3.2em;
-  }
-  /*.logo img { display: inline-block; margin: auto; vertical-align:middle; }*/
 
 /*************************/
 /* 3.5 *//*** badges ***/
@@ -1104,6 +1105,10 @@ p#shipping_address_2_field {
 @media screen
 and (max-width: 1295px) {
 
+  h1 {
+    font-size: calc( 72px + ( 36 * ( ( 100vw - 972px ) / 524 ) ) );
+  }
+
 }
 
 /* IPHONE-Retina */
@@ -1116,24 +1121,25 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
 @media screen
 and (max-width: 971px) {
 
-  /******************/
-  /* 1 *//* fonts */
+  /* fonts */
+
   h1 {
-    font-size: calc( 54px + ( 54 * ( ( 100vw - 640px ) / 332 ) ) );
+    font-size: calc( 54px + ( 18 * ( ( 100vw - 640px ) / 332 ) ) );
   }
-  h1.small {
-    font-size: 2em;
+  h2 {
+    font-size: 1.5em;
   }
   h3 {
-    font-size: calc( 24px + ( 6 * ( ( 100vw - 640px ) / 332 ) ) );
-    padding: calc( 1.5px + ( 1.5 * ( ( 100vw - 640px ) / 332 ) ) ) 0;
+    font-size: 1.333em;
+    padding: 0.085em 0;
   }
 
-  /***********************/
-  /* 2 *//* frameworks */
+  /* grid */
+
   nav ul,
   section,
-  .single {
+  .single,
+  .profile {
     width: 100%;
     max-width: 640px;
   }
@@ -1149,25 +1155,20 @@ and (max-width: 971px) {
     min-width: 100%;
     width: 100%;
   }
+  div.quote {
+    padding: 1.5em;
+  }
   .quarter,
   li.type-product /* woo */ {
     width: 50%;
   }
-
-  /********************/
-  /* 2.3 *//* forms */
-
   input,
   button {
-    height: 3em;
+    height: calc( 45px + ( 9 * ( ( 100vw - 640px ) / 332 ) ) );
   }
 
-  /************************/
-  /* 2.3 *//* containers */
+  /* hide */
 
-  div.quote {
-    padding: 1.5em;
-  }
   div.vol,
   .vol a,
   .vol div,
@@ -1191,8 +1192,9 @@ and (max-width: 971px) {
   /********************/
   /* 3.3 *//* media */
 
-  div.profile {
+  .profile {
     position: relative;
+    max-width: 640px;
     width: 100%;
   }
   .video {
@@ -1232,12 +1234,10 @@ and (max-width: 639px) {
   h1 {
     font-size: 3em;
   }
-  h1.small {
-    font-size: 2em;
-  }
-  h3 {
-    font-size: 1.333em;
-    padding: 0.085em 0;
+
+  input,
+  button {
+    height: 3em;
   }
 
 }
