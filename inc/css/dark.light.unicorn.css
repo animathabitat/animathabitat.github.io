@@ -114,10 +114,10 @@ nav {
   font-weight: 500;
 }
 h2, h3, h5,
+form, button, input, option, select, textarea,
 /* p,
 ol, ul, li,
-table, tr, td, th,
-form, button, input, option, select, textarea, */
+table, tr, td, th, */
 a.button,
 .navigation,
 .thin,
@@ -257,11 +257,11 @@ body {
 }
 nav ul,
 section {
-  width: 128rem;
+  width: 72em;
 }
 header,
 .single {
-  width: 96rem;
+  width: 54em;
 }
 
 /******************/
@@ -278,7 +278,7 @@ nav ul {
   height: auto;
   margin: 0 auto;
   position: relative;
-  min-width: 64rem;
+  min-width: 36em;
   text-align: center;
 }
 nav ul li {
@@ -496,12 +496,10 @@ li.type-product /* woo */ {
   width: 25%;
 }
 .two-third {
-  width: 64rem;
   width: calc( 200% / 3 );
 }
 .third {
-  width: 32rem;
-  width: calc( 100% /3 );
+  width: calc( 100% / 3 );
 }
 .blocks > div,
 .blocks > div.quote /* woo */ {
@@ -531,7 +529,7 @@ ul.products li.product-category h2 {
 
 div.profile {
   position: fixed;
-  width: 32rem;
+  width: 18em;
 }
 aside img.profile {
   margin-top: 3em;
@@ -550,7 +548,7 @@ img.logo {
 
 div.logo {
   float: left;
-  height: 16rem;
+  height: 9em;
   padding: 0;
 }
 div.logo img {
