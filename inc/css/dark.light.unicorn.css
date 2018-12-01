@@ -526,11 +526,11 @@ img.logo {
 }
 
 /* profile image */
-.profile {
+div.profile {
   position: fixed;
   width: 18em;
 }
-.profile img.profile {
+div.profile img.profile {
   margin-top: 3em;
 }
 
@@ -1139,7 +1139,7 @@ and (max-width: 971px) {
   nav ul,
   section,
   .single,
-  .profile {
+  div.profile {
     width: 100%;
     max-width: 640px;
   }
@@ -1192,7 +1192,7 @@ and (max-width: 971px) {
   /********************/
   /* 3.3 *//* media */
 
-  .profile {
+  div.profile {
     position: relative;
     max-width: 640px;
     width: 100%;
