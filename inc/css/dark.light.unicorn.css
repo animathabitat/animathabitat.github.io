@@ -1197,6 +1197,9 @@ and (max-width: 971px) {
     max-width: 640px;
     width: 100%;
   }
+  div.profile img.profile {
+    margin-top: 0;
+  }
 
   /************************/
   /* 3.4 *//*** logos ***/
