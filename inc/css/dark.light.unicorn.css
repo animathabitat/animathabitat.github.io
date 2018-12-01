@@ -542,7 +542,6 @@ div.profile img.profile {
 /************************/
 /* 3.4 *//*** logos ***/
 
-
 div.logo {
   float: left;
   height: 9em;
@@ -574,13 +573,13 @@ div.logo img {
 .apple img, .google img {
   display: inline;
   float: right;
-  height: 4rem;
-  margin: 1.2rem 1.6rem 0; }
+  height: 2em;
+  margin: 1.5em 1.5em 0; }
 .apple img {
-  width: 11.2rem;
+  width: 5em;
 }
 .google img {
-  width: 9.7rem;
+  width: 4.375rem;
 }
 
 /*******************/
@@ -1208,7 +1207,6 @@ and (max-width: 971px) {
   div.logo {
     float: left;
     height: 4.5em;
-    padding: 0;
   }
   div.logo img {
     padding: 1.2em 1.6em;
@@ -1218,14 +1216,14 @@ and (max-width: 971px) {
   /* 3.5 *//*** badges ***/
 
   .apple img, .google img {
-    height: 3rem;
-    margin: 0.4rem 1.2rem 0;
+    height: 1.667em;
+    margin: 0.5em 1em 0;
   }
   .apple img {
-    width: 8.4rem;
+    width: 4.667em;
   }
   .google img {
-    width: 7.275rem;
+    width: 4em;
   }
 
 }
