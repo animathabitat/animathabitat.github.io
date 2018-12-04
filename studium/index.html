@@ -20,11 +20,11 @@
   <link rel="icon" href="../inc/ico/oafa.light.png">
 
   <style>
-    body > div, footer, header, nav, section { display:none; }</style>
+    body > div, body > section, footer, header, nav { display:none; }</style>
 
   <noscript>
     <style>
-    	body > div, footer, header, nav, section { display:block; }</style></noscript>
+    	body > div, body > section, footer, header, nav { display:block; }</style></noscript>
 
 </head>
 
@@ -286,10 +286,10 @@
     $( window ).on( 'load', function() {
 
       $('body>div').fadeIn(600);
+      $('body>section').fadeIn(600);
       $('footer').fadeIn(600);
       $('header').fadeIn(600);
       $('nav').fadeIn(600);
-      $('section').fadeIn(600);
 
     });</script>
 
