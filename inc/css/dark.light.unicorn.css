@@ -252,6 +252,7 @@ section {
   width: 72em;
 }
 header,
+footer,
 .single {
   width: 54em;
 }
@@ -1134,13 +1135,14 @@ and (max-width: 971px) {
 
   nav ul,
   section,
+  header,
+  footer,
   .single,
   div.profile {
     width: 100%;
     max-width: 640px;
   }
-
-  header,
+  
   aside,
   article,
   .blocks > div,
