@@ -284,6 +284,8 @@ nav ul li.crumb {
 nav ul li.thin {
   border-top: 0;
   margin-top: 0.33em;
+}
+nav ul .thin {
   text-transform: lowercase;
 }
 nav ul li.btn {
