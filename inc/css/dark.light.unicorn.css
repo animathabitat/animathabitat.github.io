@@ -247,10 +247,10 @@ body {
   min-width: 320px;
   width: 100%;
 }
-nav ul,
 section {
   width: 72em;
 }
+nav ul,
 header,
 footer,
 .single {
