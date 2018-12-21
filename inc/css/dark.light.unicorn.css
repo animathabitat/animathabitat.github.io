@@ -1201,7 +1201,7 @@ and (max-width: 971px) {
 
   div.profile {
     position: relative;
-    max-width: 640px;
+    max-width: 320px;
     width: 100%;
   }
   div.profile img.profile {
