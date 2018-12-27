@@ -244,7 +244,6 @@ p a,
 /* 2 *//* frameworks */
 
 body {
-  min-width: 320px;
   width: 100%;
 }
 section {
@@ -274,7 +273,7 @@ nav ul {
   height: auto;
   margin: 0 auto;
   position: relative;
-  min-width: 36em;
+  min-width: 32em;
   text-align: center;
 }
 nav ul li {
@@ -424,7 +423,8 @@ select.format {
 
 :: -webkit-scrollbar {
   height: 0.5em;
-  width: 0.5em; }
+  width: 0.5em;
+}
 
 /********************/
 /* 3 *//* classes */
@@ -1105,7 +1105,7 @@ p#shipping_address_2_field {
 
 /* Tablet */
 @media screen
-and (max-width: 1295px) {
+and ( max-width: 1295px ) {
 
   h1 {
     font-size: calc( 72px + ( 36 * ( ( 100vw - 972px ) / 524 ) ) );
@@ -1121,7 +1121,7 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
 
 /* Break after iPhone, before iPad. */
 @media screen
-and (max-width: 971px) {
+and ( max-width: 971px ) {
 
   /* fonts */
 
@@ -1237,13 +1237,13 @@ and (max-width: 971px) {
 
 /* Break after @1x, before @2x. */
 @media screen
-and (max-width: 639px) {
+and ( max-width: 639px ) {
 
   body {
-    font-size: calc( 12px + ( 6 * ( ( 100vw - 320px ) / 320 ) ) );
+    font-size: calc( 18px + ( 6 * ( ( 100vw - 320px ) / 320 ) ) );
   }
   h1 {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   input,
@@ -1255,10 +1255,10 @@ and (max-width: 639px) {
 
 /* @1x. */
 @media screen
-and (max-width: 320px) {
+and ( max-width: 320px ) {
 
   body {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
 }
