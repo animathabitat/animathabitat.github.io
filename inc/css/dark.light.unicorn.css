@@ -273,7 +273,7 @@ nav ul {
   height: auto;
   margin: 0 auto;
   position: relative;
-  min-width: 32em;
+  min-width: 320px;
   text-align: center;
 }
 nav ul li {
@@ -406,8 +406,8 @@ div,
 li.type-product /* woo */  {
   padding: 1em;
 }
-div.quote,
-blockquote, q {
+blockquote, q,
+.quote {
   padding: 3em;
 }
 div.hidden {
@@ -497,12 +497,12 @@ li.type-product /* woo */ {
   width: calc( 100% / 3 );
 }
 .blocks > div,
-.blocks > div.quote /* woo */ {
+.blocks > .quote /* woo */ {
   display: inline;
   width: 50%;
 }
 .quads > div,
-.quads > div.quote {
+.quads > .quote {
   display: inline;
   width: 25%;
 }
@@ -1151,14 +1151,14 @@ and ( max-width: 971px ) {
   aside,
   article,
   .blocks > div,
-  .blocks > div.quote,
+  .blocks > .quote,
   .half,
   .two-third,
   .third {
     min-width: 100%;
     width: 100%;
   }
-  div.quote {
+  .quote {
     padding: 1.5em;
   }
   .quarter,
@@ -1243,7 +1243,7 @@ and ( max-width: 639px ) {
     font-size: calc( 18px + ( 6 * ( ( 100vw - 320px ) / 320 ) ) );
   }
   h1 {
-    font-size: 2em;
+    font-size: calc( 36px + ( 18 * ( ( 100vw - 320px ) / 320 ) ) );
   }
 
   input,
@@ -1259,6 +1259,9 @@ and ( max-width: 320px ) {
 
   body {
     font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 2em;
   }
 
 }
