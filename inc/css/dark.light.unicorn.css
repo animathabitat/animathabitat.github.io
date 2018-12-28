@@ -1152,7 +1152,7 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
   }
   nav,
   .navigation {
-    font-size: calc( 1.125em + ( 0.125 * ( ( 100vw - 320px ) / 320 ) ) );
+    font-size: 1em;
   }
   input,
   button {
@@ -1251,10 +1251,6 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
   h2 {
     font-size: 1.5em;
   }
-  nav,
-  .navigation {
-    font-size: calc( 1em + ( 0.125 * ( ( 100vw - 320px ) / 320 ) ) );
-  }
   input,
   button {
     height: calc( 2em + ( 0.5 * ( ( 100vw - 320px ) / 320 ) ) );
@@ -1270,10 +1266,6 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
   }
   h1 {
     font-size: 2em;
-  }
-  nav,
-  .navigation {
-    font-size: 1em;
   }
   input,
   button {
