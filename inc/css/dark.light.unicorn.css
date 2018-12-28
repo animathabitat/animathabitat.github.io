@@ -273,6 +273,7 @@ nav ul {
   height: auto;
   margin: 0 auto;
   position: relative;
+  min-width: 320px;
   text-align: center;
 }
 nav ul li {
@@ -1139,12 +1140,15 @@ and ( max-width: 971px ) {
 
   nav ul,
   section,
+  section.single,
   header,
-  footer,
-  .single,
-  div.profile {
+  footer {
     width: 100%;
     max-width: 640px;
+  }
+  div.profile {
+    padding: 6em;
+    width: auto;
   }
 
   aside,
