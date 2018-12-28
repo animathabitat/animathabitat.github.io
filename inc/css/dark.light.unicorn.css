@@ -1146,6 +1146,7 @@ and ( max-width: 971px ) {
     width: 100%;
     max-width: 640px;
   }
+
   div.profile {
     padding: 6em;
     width: auto;
@@ -1246,12 +1247,12 @@ and ( max-width: 639px ) {
     font-size: calc( 18px + ( 6 * ( ( 100vw - 320px ) / 320 ) ) );
   }
   h1 {
-    font-size: calc( 36px + ( 18 * ( ( 100vw - 320px ) / 320 ) ) );
+    font-size: calc( 2em + ( 1 * ( ( 100vw - 320px ) / 320 ) ) );
   }
 
   input,
   button {
-    height: 3em;
+    font-size: calc( 2em + ( 1 * ( ( 100vw - 320px ) / 320 ) ) );
   }
 
 }
@@ -1264,6 +1265,11 @@ and ( max-width: 320px ) {
     font-size: 1.8rem;
   }
   h1 {
+    font-size: 2em;
+  }
+
+  input,
+  button {
     font-size: 2em;
   }
 
