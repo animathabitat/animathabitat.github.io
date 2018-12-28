@@ -273,7 +273,6 @@ nav ul {
   height: auto;
   margin: 0 auto;
   position: relative;
-  min-width: 320px;
   text-align: center;
 }
 nav ul li {
@@ -1151,6 +1150,10 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
     font-size: calc( 4em / 3 );
     padding: 0.085em 0;
   }
+  nav,
+  .navigation {
+    font-size: calc( 1em + ( 0.25 * ( ( 100vw - 320px ) / 320 ) ) );
+  }
   input,
   button {
     height: calc( 2.5em + ( 0.5 * ( ( 100vw - 640px ) / 332 ) ) );
@@ -1277,6 +1280,9 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
     height: 2em;
   }
 
+  nav ul {
+    min-width: 320px;
+  }
   nav ul li.right {
     break-before: right;
     display: block;
