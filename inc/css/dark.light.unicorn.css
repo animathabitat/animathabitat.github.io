@@ -311,7 +311,7 @@ nav ul li.btn a:visited {
   position: relative;
   display: block;
   -webkit-transition: -webkit-transform 1s ease;
-          transition: translate 1s;
+          transition: transform 1s;
 }
 nav ul li.btn a:link:after,
 nav ul li.btn a:visited:after {
