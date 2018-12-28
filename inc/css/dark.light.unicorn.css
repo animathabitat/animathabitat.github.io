@@ -1278,4 +1278,14 @@ and ( max-width: 320px ) {
     height: 2em;
   }
 
+  nav ul {
+    /* min-width: 320px; */
+  }
+  nav ul li.right.btn {
+    display: block;
+  }
+  nav ul li.right.thin {
+    /* display: inline;
+    float: right; */
+  }
 }
