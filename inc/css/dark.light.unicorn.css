@@ -1104,8 +1104,7 @@ p#shipping_address_2_field {
 /* 0 *//* queries */
 
 /* Tablet */
-@media screen
-and ( max-width: 1295px ) {
+@media screen and ( max-width: 1295px ) {
 
   h1 {
     font-size: calc( 4em + ( 2 * ( ( 100vw - 972px ) / 524 ) ) );
@@ -1120,8 +1119,22 @@ and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2) { } */
 
 /* Break after iPhone, before iPad. */
-@media screen
-and ( max-width: 971px ) {
+@media screen and ( max-width: 971px ) {
+
+  /* hide */
+
+  div.vol,
+  .vol a,
+  .vol div,
+  .vol h5,
+  .vol br,
+  .desktop {
+    display: none;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    padding: 0;
+  }
 
   /* fonts */
 
@@ -1175,21 +1188,6 @@ and ( max-width: 971px ) {
     width: 50%;
   }
 
-  /* hide */
-
-  div.vol,
-  .vol a,
-  .vol div,
-  .vol h5,
-  .vol br,
-  .desktop {
-    display: none;
-    visibility: hidden;
-    height: 0;
-    line-height: 0;
-    padding: 0;
-  }
-
   /****************************/
   /* 3.1 *//*** gutters ***/
 
@@ -1236,8 +1234,7 @@ and ( max-width: 971px ) {
 }
 
 /* Break after @1x, before @2x. */
-@media screen
-and ( max-width: 639px ) {
+@media screen and ( max-width: 639px ) {
 
   body {
     font-size: calc( 1.8rem + ( 0.6 * ( ( 100vw - 320px ) / 320 ) ) );
@@ -1260,8 +1257,7 @@ and ( max-width: 639px ) {
 }
 
 /* @1x. */
-@media screen
-and ( max-width: 320px ) {
+@media screen and ( max-width: 320px ) {
 
   body {
     font-size: 1.8rem;
