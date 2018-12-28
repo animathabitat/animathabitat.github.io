@@ -1275,8 +1275,7 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
   nav ul {
     min-width: 320px;
   }
-  nav ul li.right {
-    break-before: always;
+  nav ul .right {
     display: block;
   }
 }
