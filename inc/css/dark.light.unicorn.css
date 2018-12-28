@@ -1153,6 +1153,7 @@ and ( max-width: 971px ) {
 
   div.profile {
     padding: 3em;
+    position: relative;
     width: auto;
   }
 
@@ -1203,11 +1204,6 @@ and ( max-width: 971px ) {
     height: 15em;
   }
 
-  div.profile {
-    position: relative;
-    max-width: 320px;
-    width: 100%;
-  }
   div.profile img.profile {
     margin-top: 0;
   }
@@ -1249,13 +1245,16 @@ and ( max-width: 639px ) {
   h1 {
     font-size: calc( 2em + ( 1 * ( ( 100vw - 320px ) / 320 ) ) );
   }
-  h3 {
-    font-size: calc( 4em / 3 );
-    padding: 0.085em 0;
+  h2 {
+    font-size: 1.5em;
   }
   nav,
   .navigation {
-    font-size: calc( 1em + ( calc( 1em / 3 ) * ( ( 100vw - 320px ) / 320 ) ) );
+    font-size: calc( 1em + ( 1 / 3 * ( ( 100vw - 320px ) / 320 ) ) );
+  }
+  input,
+  button {
+    height: calc( 2em + ( 0.5 * ( ( 100vw - 320px ) / 320 ) ) );
   }
 
 }
@@ -1270,16 +1269,13 @@ and ( max-width: 320px ) {
   h1 {
     font-size: 2em;
   }
-  h2 {
-    font-size: 1.5em;
-  }
-  h3 {
-    font-size: calc( 4em / 3 );
-    padding: 0.085em 0;
-  }
   nav,
   .navigation {
     font-size: 1em;
+  }
+  input,
+  button {
+    height: 2em;
   }
 
 }
