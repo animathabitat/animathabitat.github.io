@@ -310,8 +310,8 @@ nav ul li.btn a:link,
 nav ul li.btn a:visited {
   position: relative;
   display: block;
-  -webkit-transition: all 1s ease;
-          transition: all 1s ease;
+  -webkit-transition: -webkit-transform 1s ease;
+          transition: transform 1s ease;
 }
 nav ul li.btn a:link:after,
 nav ul li.btn a:visited:after {
@@ -321,8 +321,8 @@ nav ul li.btn a:visited:after {
   left: 50%;
   top: 50%;
   width: 150%;
-  -webkit-transition: all 0.5s ease 0s;
-          transition: all 0.5s ease 0s;
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+          transition: transform 0.5s ease 0s;
 }
 nav ul li.btn a:link:hover:after,
 nav ul li.btn a:visited:hover:after {
