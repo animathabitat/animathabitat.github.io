@@ -1152,7 +1152,7 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
   }
   nav,
   .navigation {
-    font-size: calc( 1em + ( 0.25 * ( ( 100vw - 320px ) / 320 ) ) );
+    font-size: calc( 1.125em + ( 0.125 * ( ( 100vw - 320px ) / 320 ) ) );
   }
   input,
   button {
@@ -1253,7 +1253,7 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
   }
   nav,
   .navigation {
-    font-size: calc( 1em + ( calc( 1em / 3 ) * ( ( 100vw - 320px ) / 320 ) ) );
+    font-size: calc( 1em + ( 0.125 * ( ( 100vw - 320px ) / 320 ) ) );
   }
   input,
   button {
