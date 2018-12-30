@@ -1236,7 +1236,6 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
   .google img {
     width: 4em;
   }
-
 }
 
 /* Break after @1x, before @2x. */
