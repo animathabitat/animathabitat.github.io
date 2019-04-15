@@ -175,8 +175,8 @@ td, th,
   text-transform: uppercase;
 }
 .trade {
-  font-size: 0.4em;
-  vertical-align: calc( 4em / 3 );
+  font-size: calc( 2.3em / 6 );
+  vertical-align: 0.5em;
 }
 .lettermark {
   display: inline-block;
