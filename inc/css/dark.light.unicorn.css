@@ -117,8 +117,7 @@ ol, ul, li,
 table, tr, td, th, */
 a.button,
 .navigation,
-.thin,
-.trade {
+.thin {
   font-style: normal;
   font-weight: 200;
 }
