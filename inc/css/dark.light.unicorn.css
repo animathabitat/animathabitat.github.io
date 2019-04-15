@@ -176,6 +176,7 @@ td, th,
 }
 .trade {
   font-size: calc( 2.3em / 6 );
+  vertical-align: calc( 4em / 3 );
 }
 .lettermark {
   display: inline-block;
