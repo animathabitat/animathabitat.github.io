@@ -1071,6 +1071,7 @@ p#billing_state_field,
 p#shipping_country_field,
 p#shipping_state_field {
   display: inline-block;
+  float: left;
   padding: 1em 1em 0 0;
   width: 50%;
 }
