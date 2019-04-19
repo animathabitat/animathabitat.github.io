@@ -1056,12 +1056,7 @@ p#billing_state_field,
 p#shipping_country_field,
 p#shipping_state_field {
   display: inline-block;
-  padding: 1em 1em 0 0;
-}
-p#billing_country_field,
-p#shipping_country_field,
-p#billing_state_field,
-p#shipping_state_field {
+  padding: 0.5em 1em;
   width: 50%;
 }
 p#billing_country_field label,
