@@ -1056,21 +1056,20 @@ p#billing_state_field,
 p#shipping_country_field,
 p#shipping_state_field {
   display: inline-block;
-  padding: 0.5em 1em;
+  padding: 1em 1em 0 0;
   width: 50%;
 }
 p#billing_country_field label,
 p#billing_state_field label,
 p#shipping_country_field label,
 p#shipping_state_field label {
-
+  padding: 0.5em 1em;
 }
 p#billing_country_field select,
 p#billing_state_field select,
 p#shipping_country_field select,
 p#shipping_state_field select {
   padding: 0.5em 1em;
-  width: 100%;
 }
 p#billing_address_1_field,
 p#billing_email_field,
