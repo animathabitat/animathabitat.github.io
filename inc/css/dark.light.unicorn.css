@@ -987,7 +987,7 @@ input[type="number"] {
 }
 
 input[type="checkbox"].input-checkbox,
-input[type="radio"].input-checkbox {
+input[type="radio"].input-radio {
   display: inline;
   float: left;
   margin: 0 0.5em 0 0;
@@ -1063,13 +1063,15 @@ p#billing_country_field label,
 p#billing_state_field label,
 p#shipping_country_field label,
 p#shipping_state_field label {
-  padding: 0.5em 1em;
+  padding: 0 1em;
+  width: 50%;
 }
 p#billing_country_field select,
 p#billing_state_field select,
 p#shipping_country_field select,
 p#shipping_state_field select {
-  padding: 0.5em 1em;
+  padding: 0 1em;
+  width: 50%;
 }
 p#billing_address_1_field,
 p#billing_email_field,
@@ -1091,6 +1093,7 @@ p#shipping_address_2_field {
 }
 
 div#payment {
+  float: left;
   width: 50%;
 }
 
