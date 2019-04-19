@@ -1079,7 +1079,7 @@ p#billing_state_field select,
 p#shipping_country_field select,
 p#shipping_state_field select {
   font-size: calc( 4em / 3 );
-  padding: calc( 1em / 3 ) 1em;
+  padding: calc( 0.5em / 3 ) 1em;
   width: 100%;
 }
 #order_comments_field textarea {
