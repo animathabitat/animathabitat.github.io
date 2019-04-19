@@ -1051,6 +1051,9 @@ p#shipping_postcode_field {
   padding: 1em 1em 0 0;
   width: 50%;
 }
+p#billing_company_field {
+  width: 100%;
+}
 p#billing_country_field,
 p#billing_state_field,
 p#shipping_country_field,
@@ -1064,7 +1067,7 @@ p#billing_state_field select,
 p#shipping_country_field select,
 p#shipping_state_field select {
   font-size: calc( 4em / 3 );
-  padding: 0 1em;
+  padding: calc( 1em / 3 ) 1em;
   width: 100%;
 }
 p#billing_address_1_field,
