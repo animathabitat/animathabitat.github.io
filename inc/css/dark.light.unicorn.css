@@ -175,7 +175,7 @@ td, th,
   text-transform: uppercase;
 }
 .trade {
-  font-size: calc( 2.3em / 6 );
+  font-size: calc( 1.15em / 3 );
   vertical-align: calc( 4em / 3 );
 }
 .lettermark {
@@ -1059,9 +1059,7 @@ p#shipping_state_field {
   padding: 1em 1em 0 0;
 }
 p#billing_country_field,
-p#shipping_country_field {
-  width: 100%;
-}
+p#shipping_country_field,
 p#billing_state_field,
 p#shipping_state_field {
   width: 50%;
@@ -1076,7 +1074,7 @@ p#billing_country_field select,
 p#billing_state_field select,
 p#shipping_country_field select,
 p#shipping_state_field select {
-  padding: 1em;
+  padding: 1em 0.5em;
   width: 100%;
 }
 p#billing_address_1_field,
