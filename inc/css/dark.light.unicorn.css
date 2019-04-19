@@ -1090,6 +1090,10 @@ p#shipping_address_2_field {
   padding: 1em 1.5em;
 }
 
+div#payment {
+  width: 50%;
+}
+
 /*******************/
 /* 0 *//* queries */
 
