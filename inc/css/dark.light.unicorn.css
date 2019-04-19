@@ -1042,7 +1042,6 @@ p#billing_postcode_field,
 p#billing_phone_field,
 p#shipping_first_name_field,
 p#shipping_last_name_field,
-p#shipping_company_field,
 p#shipping_city_field,
 p#shipping_postcode_field {
   display: inline;
@@ -1050,10 +1049,11 @@ p#shipping_postcode_field {
   padding: 1em 1em 0 0;
   width: 50%;
 }
-p#billing_company_field,
 p#billing_address_1_field,
-p#billing_email_field,
-p#shipping_address_1_field {
+p#shipping_address_1_field,
+p#billing_company_field,
+p#shipping_company_field,
+p#billing_email_field {
   display: inline;
   float: left;
   padding: 1em 1em 0 0;
@@ -1079,7 +1079,7 @@ p#billing_state_field select,
 p#shipping_country_field select,
 p#shipping_state_field select {
   font-size: calc( 4em / 3 );
-  padding: calc( 0.5em / 3 ) 1em;
+  padding: 0.25em 1em;
   width: 100%;
 }
 #order_comments_field textarea {
@@ -1090,6 +1090,10 @@ div#payment ul,
 div#payment div.place-order {
   float: left;
   width: 50%;
+}
+
+div#payment ul label {
+  padding: 1em;
 }
 
 /*******************/
