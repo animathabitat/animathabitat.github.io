@@ -101,7 +101,7 @@ body {
   font-style: normal;
   font-weight: 200;
 }
-form, button, input, option, select, textarea {
+form, button, input, label, option, select, textarea {
   font-family: inherit;
 }
 h1, h4,
@@ -111,7 +111,7 @@ nav {
   font-weight: 500;
 }
 h2, h3, h5,
-form, button, input, option, select, textarea,
+form, button, input, label, option, select, textarea,
 /* p,
 ol, ul, li,
 table, tr, td, th, */
@@ -1059,19 +1059,13 @@ p#shipping_state_field {
   padding: 1em 1em 0 0;
   width: 50%;
 }
-p#billing_country_field label,
-p#billing_state_field label,
-p#shipping_country_field label,
-p#shipping_state_field label {
-  padding: 0 1em;
-  width: 50%;
-}
 p#billing_country_field select,
 p#billing_state_field select,
 p#shipping_country_field select,
 p#shipping_state_field select {
+  font-size: calc( 4em / 3 );
   padding: 0 1em;
-  width: 50%;
+  width: 100%;
 }
 p#billing_address_1_field,
 p#billing_email_field,
