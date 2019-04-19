@@ -1074,7 +1074,7 @@ p#billing_country_field select,
 p#billing_state_field select,
 p#shipping_country_field select,
 p#shipping_state_field select {
-  padding: 1em 0.5em;
+  padding: 0.5em 1em;
   width: 100%;
 }
 p#billing_address_1_field,
