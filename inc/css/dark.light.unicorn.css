@@ -1086,6 +1086,10 @@ p#shipping_state_field select {
 #order_comments_field textarea {
   padding: 1em 1.5em;
 }
+p#account_password_field {
+  padding: 1em 1em 0 0;
+  width: 100%;
+}
 
 div#payment ul,
 div#payment div.place-order {
