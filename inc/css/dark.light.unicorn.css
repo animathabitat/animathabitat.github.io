@@ -1037,7 +1037,6 @@ th.product-remove {
 
 p#billing_first_name_field,
 p#billing_last_name_field,
-p#billing_company_field,
 p#billing_city_field,
 p#billing_postcode_field,
 p#billing_phone_field,
@@ -1051,7 +1050,20 @@ p#shipping_postcode_field {
   padding: 1em 1em 0 0;
   width: 50%;
 }
-p#billing_company_field {
+p#billing_company_field,
+p#billing_address_1_field,
+p#billing_email_field,
+p#shipping_address_1_field {
+  display: inline;
+  float: left;
+  padding: 1em 1em 0 0;
+  width: 100%;
+}
+p#billing_address_2_field,
+p#shipping_address_2_field {
+  display: inline;
+  float: left;
+  padding: 0 1em 0 0;
   width: 100%;
 }
 p#billing_country_field,
@@ -1070,26 +1082,12 @@ p#shipping_state_field select {
   padding: calc( 1em / 3 ) 1em;
   width: 100%;
 }
-p#billing_address_1_field,
-p#billing_email_field,
-p#shipping_address_1_field {
-  display: inline;
-  float: left;
-  padding: 1em 1em 0 0;
-  width: 100%;
-}
-p#billing_address_2_field,
-p#shipping_address_2_field {
-  display: inline;
-  float: left;
-  padding: 0 1em 0 0;
-  width: 100%;
-}
 #order_comments_field textarea {
   padding: 1em 1.5em;
 }
 
-div#payment {
+div#payment ul,
+div#payment div.place-order {
   float: left;
   width: 50%;
 }
