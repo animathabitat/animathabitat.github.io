@@ -911,16 +911,17 @@ div#soci,
 /* 8 *//* -wordpress */
 
 .screen-reader-text {
-  position: absolute !important;
+  /* position: absolute !important; */
+  display: none;
 }
 .screen-reader-text:focus {
-  clip: auto !important;
+  /* clip: auto !important;
   display: block;
   height: auto;
   line-height: normal;
   position: absolute;
   width: auto;
-  z-index: 100;
+  z-index: 100; */
 }
 
 .navigation {
