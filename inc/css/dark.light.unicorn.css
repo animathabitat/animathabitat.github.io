@@ -942,6 +942,10 @@ div#soci,
 /*************************/
 /* 9 *//* -woocommerce */
 
+ul.woocommerce-message {
+  margin-top: 3em;
+}
+
 li.has-post-thumbnail {
   display: grid;
 }
@@ -1005,7 +1009,7 @@ input[type="checkbox"]:checked ~ div.shipping_address {
 
 div.related div.woo-price {
   padding: 1em 0;
-  font-size: 0.67em;
+  /* font-size: 0.67em; */
 }
 div.related div.woo-price button {
 
@@ -1070,7 +1074,7 @@ p#order_comments_field {
 p#account_password_field {
   display: inline;
   float: left;
-  padding: 0 0 1em 0;
+  padding: 0 0 3em 0;
   width: 100%;
 }
 p#billing_country_field,
@@ -1087,7 +1091,7 @@ p#billing_state_field select,
 p#shipping_country_field select,
 p#shipping_state_field select {
   font-size: calc( 4em / 3 );
-  padding: 0.25em 1em;
+  padding: 0.233em 1em;
   width: 100%;
 }
 
