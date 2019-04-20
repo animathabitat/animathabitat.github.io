@@ -943,10 +943,6 @@ div#soci,
 /*************************/
 /* 9 *//* -woocommerce */
 
-ul.woocommerce-message {
-  margin-top: 3em;
-}
-
 li.has-post-thumbnail {
   display: grid;
 }
