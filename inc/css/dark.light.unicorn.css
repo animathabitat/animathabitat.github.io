@@ -954,10 +954,10 @@ li.has-post-thumbnail {
 li.has-post-thumbnail div {
   align-items: flex-end;
   display: flex;
-  height: 16em;
+  height: 8em;
 }
 li.has-post-thumbnail div img {
-  max-height: 16em;
+  max-height: 8em;
   max-width: 100%;
   width: auto;
   margin: auto auto 0;
