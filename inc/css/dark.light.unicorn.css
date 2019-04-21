@@ -345,13 +345,15 @@ nav ul li.btn.diagonal-up a:after {
 
 button,
 input,
+select,
 textarea {
   line-height: normal;
   text-align: left;
   width: 100%;
 }
 button,
-input {
+input,
+select {
   height: 2em;
 }
 textarea {
@@ -360,6 +362,7 @@ textarea {
 }
 button,
 input,
+select,
 textarea {
   padding-left: 1em;
   padding-right: 1em;
@@ -524,7 +527,7 @@ ul.products li.product-category h2 {
 
 .video {
   width: 100%;
-  height: 30em;
+  height: 30em; /* calc( ( 50vw - 3em ) / 1.78 ) */
 }
 
 /* nav icon */
@@ -951,10 +954,10 @@ li.has-post-thumbnail {
 li.has-post-thumbnail div {
   align-items: flex-end;
   display: flex;
-  height: 160px;
+  height: 16em;
 }
 li.has-post-thumbnail div img {
-  max-height: 160px;
+  max-height: 16em;
   max-width: 100%;
   width: auto;
   margin: auto auto 0;
@@ -1156,8 +1159,12 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
     font-size: 1em;
   }
   input,
-  button {
+  button,
+  select {
     height: calc( 2.5em + ( 0.5 * ( ( 100vw - 640px ) / 332 ) ) );
+  }
+  textarea {
+    height: 6em;
   }
 
   /* grid */
@@ -1252,8 +1259,12 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
     font-size: 1.5em;
   }
   input,
-  button {
+  button,
+  select {
     height: calc( 2em + ( 0.5 * ( ( 100vw - 320px ) / 320 ) ) );
+  }
+  textarea {
+    height: 5em;
   }
 
 }
@@ -1268,8 +1279,12 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
     font-size: 2em;
   }
   input,
-  button {
+  button,
+  select {
     height: 2em;
+  }
+  textarea {
+    height: 4em;
   }
 
   nav ul {
