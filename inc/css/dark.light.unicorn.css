@@ -355,13 +355,14 @@ input {
   height: 2em;
 }
 textarea {
-  height: 6em;
+  height: 4em;
   max-width: 100%;
 }
 button,
 input,
 textarea {
-  padding: 0 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 button,
 input[type="submit"],
