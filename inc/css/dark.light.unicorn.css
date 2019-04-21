@@ -1088,8 +1088,12 @@ p#billing_state_field select,
 p#shipping_country_field select,
 p#shipping_state_field select {
   font-size: calc( 4em / 3 );
-  padding: 0.233em 1em;
+  padding: 0.23em 1em;
   width: 100%;
+}
+
+#payment li.wc_payment_method img {
+  display: none;
 }
 
 /*******************/
