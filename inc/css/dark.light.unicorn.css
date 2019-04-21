@@ -1092,10 +1092,6 @@ p#shipping_state_field select {
   width: 100%;
 }
 
-#payment li.wc_payment_method img {
-  display: none;
-}
-
 /*******************/
 /* 0 *//* queries */
 
