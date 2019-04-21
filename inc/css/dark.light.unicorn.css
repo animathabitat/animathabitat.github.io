@@ -957,7 +957,7 @@ li.has-post-thumbnail div {
   height: 8em;
 }
 li.has-post-thumbnail div img {
-  max-height: 8em;
+  max-height: calc( 8em / 0.9 );
   max-width: 100%;
   width: auto;
   margin: auto auto 0;
