@@ -597,6 +597,7 @@ font.clear {
 }
 .fr { color: #BABABA; }
 .trim { border: #222222 thin solid; }
+li.has-post-thumbnail img,
 .wp-post-image { border: #FCFCFC thin solid; }
 
 /******************************************************/
