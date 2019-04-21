@@ -142,7 +142,8 @@ h3 {
 h4,
 button, input,
 nav,
-.navigation {
+.navigation,
+textarea {
   font-size: calc( 4em / 3 );
 }
 h5,
@@ -1072,6 +1073,9 @@ p#order_comments_field {
   float: left;
   padding: 0 1em 0 0;
   width: 100%;
+}
+p#order_comments_field textarea {
+
 }
 p#account_password_field {
   display: inline;
