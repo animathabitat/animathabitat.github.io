@@ -1075,9 +1075,6 @@ p#order_comments_field {
   padding: 0 1em 0 0;
   width: 100%;
 }
-p#order_comments_field textarea {
-
-}
 p#account_password_field {
   display: inline;
   float: left;
@@ -1096,7 +1093,8 @@ p#shipping_state_field {
 p#billing_country_field select,
 p#billing_state_field select,
 p#shipping_country_field select,
-p#shipping_state_field select {
+p#shipping_state_field select,
+p#order_comments_field textarea {
   font-size: calc( 4em / 3 );
   padding: 0.23em 1em;
   width: 100%;
