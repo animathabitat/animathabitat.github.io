@@ -121,6 +121,9 @@ a.button,
   font-style: normal;
   font-weight: 200;
 }
+th {
+  text-transform: uppercase;
+}
 h6,
 em, i {
   font-style: italic;
