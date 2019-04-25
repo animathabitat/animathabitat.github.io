@@ -309,19 +309,12 @@ nav ul li.btn {
   overflow: hidden;
   position: relative;
 }
-nav ul li a {
-  display: inline-block;
-  padding: 0.1em 1em;
-}
-nav ul li.logo a {
-  padding: 0 1em;
-}
-nav ul li.btn a:hover {
+nav ul li.btn:hover {
   z-index: 100;
   background-color: transparent;
 }
-nav ul li.btn a:link,
-nav ul li.btn a:visited {
+nav ul li.btn:link,
+nav ul li.btn:visited {
   position: relative;
   display: inline-block;
   -webkit-transition: -webkit-transform 1s ease;
@@ -330,8 +323,8 @@ nav ul li.btn a:visited {
        -o-transition: -moz-transform 1s;
           transition: transform 1s;
 }
-nav ul li.btn a:link:after,
-nav ul li.btn a:visited:after {
+nav ul li.btn:link:after,
+nav ul li.btn:visited:after {
   content: "";
   position: absolute;
   height: 0%;
@@ -344,11 +337,11 @@ nav ul li.btn a:visited:after {
        -o-transition: -o-transform 0.5s;
           transition: transform 0.5s;
 }
-nav ul li.btn a:link:hover:after,
-nav ul li.btn a:visited:hover:after {
+nav ul li.btn:link:hover:after,
+nav ul li.btn:visited:hover:after {
   height: 450%;
 }
-nav ul li.btn.diagonal-down a:after {
+nav ul li.btn.diagonal-down:after {
   display: inline-block;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
      -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
@@ -357,7 +350,7 @@ nav ul li.btn.diagonal-down a:after {
           transform: translateX(-50%) translateY(-50%) rotate(25deg);
   z-index: -1;
 }
-nav ul li.btn.diagonal-up a:after {
+nav ul li.btn.diagonal-up:after {
   display: inline-block;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
      -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
@@ -365,6 +358,13 @@ nav ul li.btn.diagonal-up a:after {
        -o-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
           transform: translateX(-50%) translateY(-50%) rotate(-25deg);
   z-index: -1;
+}
+nav ul li a {
+  display: inline-block;
+  padding: 0.1em 1em;
+}
+nav ul li.logo a {
+  padding: 0 1em;
 }
 
 /*******************/
@@ -680,8 +680,8 @@ div.zero:hover {
 }
 
 #zero pre.thin { border: #474747 thin solid; }
-#zero li.btn a:hover { color: #333333 !important; }
-#zero li.btn a:after { background: #FCFCFC; }
+#zero li.btn:hover { color: #333333 !important; }
+#zero li.btn:after { background: #FCFCFC; }
 nav ul li.zero { border-color: #FCFCFC; }
 .lettermark:before { background: #CACACA; }
 
@@ -738,8 +738,8 @@ div.one:hover {
 }
 
 #one pre.thin { border: #393428 thin solid; }
-#one li.btn a:hover { color: #222222 !important; }
-#one li.btn a:after { background: #FFCF60; }
+#one li.btn:hover { color: #222222 !important; }
+#one li.btn:after { background: #FFCF60; }
 nav ul li.one { border-color: #FFCF60; }
 .lettermark.one:before { background: #C8A450; }
 #one .one .fr,
@@ -813,8 +813,8 @@ div.ten:hover {
 }
 
 #ten pre.thin { border: #EAEAEA thin solid; }
-#ten li.btn a:hover { color: #FAFAFA !important; }
-#ten li.btn a:after { background: #0A0A0A; }
+#ten li.btn:hover { color: #FAFAFA !important; }
+#ten li.btn:after { background: #0A0A0A; }
 nav ul li.ten { border-color: #0A0A0A; }
 .lettermark.ten:before { background: #2A2A2A; }
 
