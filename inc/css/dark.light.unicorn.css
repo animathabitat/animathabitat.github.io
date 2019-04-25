@@ -189,6 +189,7 @@ td, th,
   -webkit-transform: perspective(1px) translateZ(0);
      -moz-transform: perspective(1px) translateZ(0);
       -ms-transform: perspective(1px) translateZ(0);
+       -o-transform: perspective(1px) translateZ(0);
           transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
@@ -205,14 +206,17 @@ td, th,
   -webkit-transition-property: left, right;
      -moz-transition-property: left, right;
       -ms-transition-property: left, right;
+       -o-transition-property: left, right;
           transition-property: left, right;
   -webkit-transition-duration: 0.25s;
      -moz-transition-duration: 0.25s;
-      -ms-transition-duration: 0.25s;
+      -ms-transition-property: left, right;
+       -o-transition-property: left, right;
           transition-duration: 0.25s;
   -webkit-transition-timing-function: ease-out;
      -moz-transition-timing-function: ease-out;
-      -ms-transition-timing-function: ease-out;
+      -ms-transition-property: left, right;
+       -o-transition-property: left, right;
           transition-timing-function: ease-out;
 }
 .lettermark:hover:before,
@@ -323,6 +327,7 @@ nav ul li.btn a:visited {
   -webkit-transition: -webkit-transform 1s ease;
      -moz-transition: -moz-transform 1s;
       -ms-transition: -moz-transform 1s;
+       -o-transition: -moz-transform 1s;
           transition: transform 1s;
 }
 nav ul li.btn a:link:after,
@@ -336,6 +341,7 @@ nav ul li.btn a:visited:after {
   -webkit-transition: -webkit-transform 0.5s ease 0s;
      -moz-transition: -moz-transform 0.5s;
       -ms-transition: -moz-transform 0.5s;
+       -o-transition: -o-transform 0.5s;
           transition: transform 0.5s;
 }
 nav ul li.btn a:link:hover:after,
@@ -347,6 +353,7 @@ nav ul li.btn.diagonal-down a:after {
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
      -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
       -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+       -o-transform: translateX(-50%) translateY(-50%) rotate(25deg);
           transform: translateX(-50%) translateY(-50%) rotate(25deg);
   z-index: -1;
 }
@@ -355,6 +362,7 @@ nav ul li.btn.diagonal-up a:after {
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
      -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
       -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+       -o-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
           transform: translateX(-50%) translateY(-50%) rotate(-25deg);
   z-index: -1;
 }
