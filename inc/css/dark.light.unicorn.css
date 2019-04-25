@@ -301,12 +301,12 @@ nav ul li.thin {
   margin-top: 0.27em;
 }
 nav ul li.btn {
-  display: block;
+  display: inline-block;
   overflow: hidden;
   position: relative;
 }
 nav ul li a {
-  display: block;
+  display: inline-block;
   padding: 0.1em 1em;
 }
 nav ul li.logo a {
@@ -319,10 +319,10 @@ nav ul li.btn a:hover {
 nav ul li.btn a:link,
 nav ul li.btn a:visited {
   position: relative;
-  display: block;
+  display: inline-block;
   -webkit-transition: -webkit-transform 1s ease;
-     -moz-transition: -moz-transform 1s ease;
-      -ms-transition: -moz-transform 1s ease;
+     -moz-transition: -moz-transform 1s;
+      -ms-transition: -moz-transform 1s;
           transition: transform 1s;
 }
 nav ul li.btn a:link:after,
@@ -334,8 +334,8 @@ nav ul li.btn a:visited:after {
   top: 50%;
   width: 150%;
   -webkit-transition: -webkit-transform 0.5s ease 0s;
-     -moz-transition: -moz-transform 0.5s ease 0s;
-      -ms-transition: -moz-transform 0.5s ease 0s;
+     -moz-transition: -moz-transform 0.5s;
+      -ms-transition: -moz-transform 0.5s;
           transition: transform 0.5s;
 }
 nav ul li.btn a:link:hover:after,
@@ -343,6 +343,7 @@ nav ul li.btn a:visited:hover:after {
   height: 450%;
 }
 nav ul li.btn.diagonal-down a:after {
+  display: inline-block;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
      -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
       -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
@@ -350,6 +351,7 @@ nav ul li.btn.diagonal-down a:after {
   z-index: -1;
 }
 nav ul li.btn.diagonal-up a:after {
+  display: inline-block;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
      -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
       -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
@@ -675,10 +677,8 @@ div.zero:hover {
 nav ul li.zero { border-color: #FCFCFC; }
 .lettermark:before { background: #CACACA; }
 
-#zero:: -webkit-scrollbar-track,
-#zero:: -moz-scrollbar-track { background: #333333; }
-#zero:: -webkit-scrollbar-thumb,
-#zero:: -moz-scrollbar-thumb { background: #FCFCFC; }
+#zero:: -webkit-scrollbar-track { background: #333333; }
+#zero:: -webkit-scrollbar-thumb { background: #FCFCFC; }
 
 /*********************************************/
 /* 4.1.1 *//*** ONE ***//* rgb(255,207,96) */
@@ -738,10 +738,8 @@ nav ul li.one { border-color: #FFCF60; }
 #one h2.color .fr,
 #one h4.color .fr { color: #917941; }
 
-#one:: -webkit-scrollbar-track,
-#one:: -moz-scrollbar-track { background: #222222; }
-#one:: -webkit-scrollbar-thumb,
-#one:: -moz-scrollbar-thumb { background: #FFCF60; }
+#one:: -webkit-scrollbar-track { background: #222222; }
+#one:: -webkit-scrollbar-thumb { background: #FFCF60; }
 
 /*****************************************************/
 /* 4.1.10 *//*** TEN [LIGHT] ***//* rgb(255,207,96) */
@@ -812,10 +810,8 @@ div.ten:hover {
 nav ul li.ten { border-color: #0A0A0A; }
 .lettermark.ten:before { background: #2A2A2A; }
 
-#ten:: -webkit-scrollbar-track,
-#ten:: -moz-scrollbar-track { background: #FAFAFA; }
-#ten:: -webkit-scrollbar-thumb,
-#ten:: -moz-scrollbar-thumb { background: #0A0A0A; }
+#ten:: -webkit-scrollbar-track { background: #FAFAFA; }
+#ten:: -webkit-scrollbar-thumb { background: #0A0A0A; }
 
 /*********************************************/
 /* 4.1.11 *//*** BLUE ***//* rgb(0,180,255) */
@@ -919,13 +915,9 @@ nav ul li .aqua { border-color: #00FFE4; }
 .lettermark.aqua:before { background: #08d4bf; }
 
 #aqua:: -webkit-scrollbar-track,
-#blue:: -webkit-scrollbar-track,
-#aqua:: -moz-scrollbar-track,
-#blue:: -moz-scrollbar-track { background: #2A2A2A; }
-#aqua:: -webkit-scrollbar-thumb,
-#aqua:: -moz-scrollbar-thumb { background: #00FFE4; }
-#blue:: -webkit-scrollbar-thumb,
-#blue:: -moz-scrollbar-thumb { background: #00B4FF; }
+#blue:: -webkit-scrollbar-track { background: #2A2A2A; }
+#aqua:: -webkit-scrollbar-thumb { background: #00FFE4; }
+#blue:: -webkit-scrollbar-thumb { background: #00B4FF; }
 
 /*****************/
 /* 5 *//* tags */
