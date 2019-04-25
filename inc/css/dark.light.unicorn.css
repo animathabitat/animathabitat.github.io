@@ -1,16 +1,17 @@
 /* CSS Document */
-/* OAFA Dark, Light, One by Dane Aleksander, based on Twenty Thirteen by the Wordpress team. */
+/* Dark, Light Unicorn (OAFA Zero, One, ..., Ten) by Dane Aleksander based on Twenty Thirteen by the Wordpress team. */
+/* CSS dark.light.unicorn.1.1.6-.revision: 39. */
 
 /*******************/
-/* - *//* resets */
-/* 1 *//* fonts */
-/* 2 *//* frameworks */
-/* 3 *//* .classes */
-/* 4 *//* #colors */
-/* 5 *//* #tags */
-/* 8 *//* -wordpress */
-/* 9 *//* -woocommerce */
-/* 0 *//* @queries */
+/* - resets */
+/* 1 fonts */
+/* 2 frameworks */
+/* 3 .classes */
+/* 4 #colors */
+/* 5 #tags */
+/* 8 -wordpress */
+/* 9 -woocommerce */
+/* 0 @queries */
 /*****************/
 
 * {
@@ -85,7 +86,7 @@ span {
 }
 
 /******************/
-/* 1 *//* fonts */
+/* 1 fonts */
 
 html {
   -webkit-text-size-adjust: 62.5%;
@@ -256,7 +257,7 @@ p a,
 }
 
 /***********************/
-/* 2 *//* frameworks */
+/* 2 frameworks */
 
 body {
   width: 100%;
@@ -275,7 +276,7 @@ section.single {
 }
 
 /******************/
-/* 2.1 *//* nav */
+/* 2.1 nav */
 
 nav {
   position: fixed;
@@ -368,7 +369,7 @@ nav ul li.logo a {
 }
 
 /*******************/
-/* 2.2*//* forms */
+/* 2.2 forms */
 
 button,
 input,
@@ -417,7 +418,7 @@ input[type="reset"]:focus {
 }
 
 /*************************/
-/* 2.3 *//* containers */
+/* 2.3 containers */
 
 section {
   z-index: 1;
@@ -434,7 +435,7 @@ aside {
   width: 100%;
 }
 div,
-li.type-product /* woo */  {
+li.type-product /* woo */ {
   padding: 1em;
 }
 blockquote, q,
@@ -458,7 +459,7 @@ select.format {
 }
 
 /********************/
-/* 3 *//* classes */
+/* 3 classes */
 
 .clear {
   color: inherit;
@@ -473,7 +474,7 @@ br.clear {
 }
 
 /**********************/
-/* 3.1 *//* gutters */
+/* 3.1 gutters */
 
 .center {
   display: block;
@@ -481,7 +482,7 @@ br.clear {
   position: relative;
 }
 .left,
-li.type-product /* woo */  {
+li.type-product /* woo */ {
   display: inline;
   float: left;
 }
@@ -506,7 +507,7 @@ select,
 }
 
 /*********************/
-/* 3.2 *//* blocks */
+/* 3.2 blocks */
 
 .full {
   width: 100%;
@@ -551,7 +552,7 @@ ul.products li.product-category h2 {
 }
 
 /********************/
-/* 3.3 *//* media */
+/* 3.3 media */
 
 .video {
   width: 100%;
@@ -574,7 +575,7 @@ div.profile img.profile {
 }
 
 /************************/
-/* 3.4 *//*** logos ***/
+/* 3.4 logos ***/
 
 div.logo {
   float: left;
@@ -599,7 +600,7 @@ div.logo img {
 
 
 /*************************/
-/* 3.5 *//*** badges ***/
+/* 3.5 badges ***/
 
 .apple, .google {
   display: inline;
@@ -617,7 +618,7 @@ div.logo img {
 }
 
 /*******************/
-/* 4 *//* colors */
+/* 4 colors */
 
 body,
 font.clear {
@@ -629,7 +630,7 @@ li.has-post-thumbnail img,
 .wp-post-image { border: #FCFCFC thin solid; }
 
 /******************************************************/
-/* 4.1.0 *//*** ZERO [DARK] ***//* rgb(252,252,252) */
+/* 4.1.0 ZERO [DARK] rgb(252,252,252) */
 
 a,
 a:hover p,
@@ -689,7 +690,7 @@ nav ul li.zero { border-color: #FCFCFC; }
 #zero:: -webkit-scrollbar-thumb { background: #FCFCFC; }
 
 /*********************************************/
-/* 4.1.1 *//*** ONE ***//* rgb(255,207,96) */
+/* 4.1.1 ONE rgb(255,207,96) */
 
 #one nav em,
 #one a.color,
@@ -750,7 +751,7 @@ nav ul li.one { border-color: #FFCF60; }
 #one:: -webkit-scrollbar-thumb { background: #FFCF60; }
 
 /*****************************************************/
-/* 4.1.10 *//*** TEN [LIGHT] ***//* rgb(255,207,96) */
+/* 4.1.10 TEN [LIGHT] rgb(255,207,96) */
 
 body#ten,
 #ten font.clear {
@@ -822,7 +823,7 @@ nav ul li.ten { border-color: #0A0A0A; }
 #ten:: -webkit-scrollbar-thumb { background: #0A0A0A; }
 
 /*********************************************/
-/* 4.1.11 *//*** BLUE ***//* rgb(0,180,255) */
+/* 4.1.11 BLUE rgb(0,180,255) */
 
 #blue a.color,
 #blue .navigation a,
@@ -872,7 +873,7 @@ nav ul li .blue { border-color: #00B4FF; }
 .lettermark.blue:before { background: #0898D4; }
 
 /*********************************************/
-/* 4.1.12 *//*** AQUA ***//* rgb(0,255,228) */
+/* 4.1.12 AQUA rgb(0,255,228) */
 
 #aqua a.color,
 #aqua .navigation a,
@@ -928,7 +929,7 @@ nav ul li .aqua { border-color: #00FFE4; }
 #blue:: -webkit-scrollbar-thumb { background: #00B4FF; }
 
 /*****************/
-/* 5 *//* tags */
+/* 5 tags */
 
 div#soci,
 #soci div {
@@ -942,7 +943,7 @@ div#soci,
 /* #soci a#vimeo img:hover { background: #44BBFF; } */
 
 /***********************/
-/* 8 *//* -wordpress */
+/* 8 -wordpress */
 
 .screen-reader-text {
   /* position: absolute !important; */
@@ -975,7 +976,7 @@ div#soci,
 }
 
 /*************************/
-/* 9 *//* -woocommerce */
+/* 9 -woocommerce */
 
 li.has-post-thumbnail {
   display: grid;
@@ -1133,7 +1134,7 @@ p#order_comments_field textarea {
 }
 
 /*******************/
-/* 0 *//* queries */
+/* 0 queries */
 
 /* Tablet */
 @media screen and ( max-width: 1295px ) {
@@ -1232,14 +1233,14 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
   }
 
   /****************************/
-  /* 3.1 *//*** gutters ***/
+  /* 3.1 gutters ***/
 
   .gutter-ref {
     padding: 0 3em 1em;
   }
 
   /********************/
-  /* 3.3 *//* media */
+  /* 3.3 media */
 
   .video {
     height: 15em;
@@ -1250,7 +1251,7 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
   }
 
   /************************/
-  /* 3.4 *//*** logos ***/
+  /* 3.4 logos ***/
 
   div.logo {
     float: left;
@@ -1261,7 +1262,7 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
   }
 
   /*************************/
-  /* 3.5 *//*** badges ***/
+  /* 3.5 badges ***/
 
   .apple img, .google img {
     height: 1.667em;
