@@ -1,6 +1,6 @@
 /* CSS Document */
 /* Dark, Light Unicorn (OAFA Zero, One, ..., Ten) by Dane Aleksander based on Twenty Thirteen by the Wordpress team. */
-/* CSS dark.light.unicorn.1.1.6-.revision: 41. */
+/* CSS dark.light.unicorn.1.1.6-.revision: 42. */
 
 /*******************/
 /* - resets */
@@ -929,3 +929,400 @@ nav ul li .aqua { border-color: #00FFE4; }
 #blue:: -webkit-scrollbar-track { background: #2A2A2A; }
 #aqua:: -webkit-scrollbar-thumb { background: #00FFE4; }
 #blue:: -webkit-scrollbar-thumb { background: #00B4FF; }
+
+/*****************/
+/* 5 tags */
+
+div#soci,
+#soci div {
+  padding: 0.5em;
+}
+#soci a#email img:hover { background: #0972C5; }
+#soci a#tw img:hover { background: #00ACED; }
+#soci a#in img:hover { background: #007FB1; }
+#soci a#behance img:hover { background: #005CFF; }
+/* #soci a#gmail img:hover { background: #DD4B39; } */
+/* #soci a#vimeo img:hover { background: #44BBFF; } */
+
+/***********************/
+/* 8 -wordpress */
+
+.screen-reader-text {
+  /* position: absolute !important; */
+  display: none;
+}
+.screen-reader-text:focus {
+  /* clip: auto !important;
+  display: block;
+  height: auto;
+  line-height: normal;
+  position: absolute;
+  width: auto;
+  z-index: 100; */
+}
+
+.navigation {
+  margin: 2em auto;
+  width: 100%;
+}
+.nav-links {
+  margin: 0 1em;
+}
+.navigation a[rel="prev"] {
+  float: left;
+  text-align: left;
+}
+.navigation a[rel="next"] {
+  float: right;
+  text-align: right;
+}
+
+/*************************/
+/* 9 -woocommerce */
+
+li.has-post-thumbnail {
+  display: grid;
+}
+li.has-post-thumbnail div {
+  align-items: flex-end;
+  display: flex;
+  height: 8em;
+}
+li.has-post-thumbnail div img {
+  max-height: calc( 8em / 0.9 );
+  max-width: 100%;
+  width: auto;
+  margin: auto auto 0;
+}
+
+.woo-currency {
+
+}
+.woo-title {
+  padding: 0.5em 1em 0 1em;
+  text-align: center;
+}
+
+a.checkout-button {
+  display: inline-block;
+  font-size: calc( 4em / 3 );
+  height: 2em;
+  width: 100%;
+  line-height: normal;
+  padding: 0.25em 1em;
+  /* text-align: right; */
+}
+
+input[type="number"]:: -webkit-inner-spin-button,
+input[type="number"]:: -webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="checkbox"].input-checkbox,
+input[type="radio"].input-radio {
+  display: inline;
+  float: left;
+  margin: 0 0.5em 0 0;
+  height: 1em;
+  width: 1em;
+}
+
+input[type="checkbox"]:empty ~ div.shipping_address {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ div.shipping_address {
+  display: block;
+}
+
+div.related div.woo-price {
+  padding: 1em 0;
+  /* font-size: 0.67em; */
+}
+div.related div.woo-price button {
+
+}
+div.related .woo-title {
+  padding: 0.25em 0.5em 0 0.5em;
+}
+
+table.cart tr th {
+  padding: 0 1em;
+}
+
+td.product-name,
+th.product-name {
+  width: 50%;
+}
+td.product-quantity,
+th.product-quantity {
+  width: 25%;
+}
+td.product-subtotal,
+th.product-subtotal {
+  width: 25%;
+}
+/* td.product-remove,
+th.product-remove {
+  width: 25%;
+} */
+
+p#billing_first_name_field,
+p#billing_last_name_field,
+p#billing_city_field,
+p#billing_postcode_field,
+p#billing_phone_field,
+p#shipping_first_name_field,
+p#shipping_last_name_field,
+p#shipping_city_field,
+p#shipping_postcode_field {
+  display: inline;
+  float: left;
+  padding: 1em 1em 0 0;
+  width: 50%;
+}
+p#billing_address_1_field,
+p#shipping_address_1_field,
+p#billing_company_field,
+p#shipping_company_field,
+p#billing_email_field {
+  display: inline;
+  float: left;
+  padding: 1em 1em 0 0;
+  width: 100%;
+}
+p#billing_address_2_field,
+p#shipping_address_2_field {
+  display: inline;
+  float: left;
+  padding: 1em 1em 0 0;
+  width: 100%;
+}
+p#order_comments_field {
+  display: inline;
+  float: left;
+  padding: 0 1em 0 0;
+  width: 100%;
+}
+p#account_password_field {
+  display: inline;
+  float: left;
+  padding: 0 0 3em 0;
+  width: 100%;
+}
+p#billing_country_field,
+p#billing_state_field,
+p#shipping_country_field,
+p#shipping_state_field {
+  display: inline-block;
+  float: left;
+  padding: 1em 1em 0 0;
+  width: 50%;
+}
+p#billing_country_field select,
+p#billing_state_field select,
+p#shipping_country_field select,
+p#shipping_state_field select,
+p#order_comments_field textarea {
+  font-size: calc( 4em / 3 );
+  padding: 0.23em 1em;
+  width: 100%;
+}
+
+/*******************/
+/* 0 queries */
+
+/* Tablet */
+@media screen and ( max-width: 1295px ) {
+
+  h1 {
+    font-size: calc( 4em + ( 2 * ( ( 100vw - 972px ) / 524 ) ) );
+  }
+
+}
+
+/* IPHONE-Retina */
+/* @media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) { } */
+
+/* Break after iPhone, before iPad. */
+@media screen and ( max-width: 971px ) {
+
+  /* hide */
+
+  div.vol,
+  .vol a,
+  .vol div,
+  .vol h5,
+  .vol br,
+  .desktop {
+    display: none;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    padding: 0;
+  }
+
+  /* fonts */
+
+  body {
+    font-size: 2.4rem;
+  }
+  h1 {
+    font-size: calc( 3em + ( 1 * ( ( 100vw - 640px ) / 332 ) ) );
+  }
+  h2 {
+    font-size: calc( 1.5em + ( 0.5 * ( ( 100vw - 640px ) / 332 ) ) )
+  }
+  h3 {
+    font-size: calc( 4em / 3 );
+    padding: 0.085em 0;
+  }
+  nav,
+  .navigation {
+    font-size: 1em;
+  }
+  input,
+  button,
+  select {
+    height: calc( 2.5em + ( 0.5 * ( ( 100vw - 640px ) / 332 ) ) );
+  }
+  textarea {
+    height: 6em;
+  }
+
+  /* grid */
+
+  nav ul,
+  section,
+  section.single,
+  header,
+  footer {
+    width: 100%;
+    max-width: 640px;
+  }
+
+  div.profile {
+    padding: 3em;
+    position: relative;
+    width: auto;
+  }
+
+  aside,
+  article,
+  .blocks > div,
+  .blocks > .quote,
+  .half,
+  .two-third,
+  .third {
+    min-width: 100%;
+    width: 100%;
+  }
+  .quote {
+    padding: 1.5em;
+  }
+  .quarter,
+  li.type-product /* woo */ {
+    width: 50%;
+  }
+
+  /****************************/
+  /* 3.1 gutters ***/
+
+  .gutter-ref {
+    padding: 0 3em 1em;
+  }
+
+  /********************/
+  /* 3.3 media */
+
+  .video {
+    height: 15em;
+  }
+
+  div.profile img.profile {
+    margin-top: 0;
+  }
+
+  /************************/
+  /* 3.4 logos ***/
+
+  div.logo {
+    float: left;
+    height: 6em;
+  }
+  div.logo img {
+    padding: 1.5em;
+  }
+
+  /*************************/
+  /* 3.5 badges ***/
+
+  .apple img, .google img {
+    height: 1.667em;
+    margin: 0.5em 1em 0;
+  }
+  .apple img {
+    width: 4.667em;
+  }
+  .google img {
+    width: 4em;
+  }
+}
+
+/* Break after @1x, before @2x. */
+@media screen and ( max-width: 639px ) {
+
+  body {
+    font-size: calc( 18px + ( 6 * ( ( 100vw - 320px ) / 320 ) ) );
+  }
+  h1 {
+    font-size: calc( 2em + ( 1 * ( ( 100vw - 320px ) / 320 ) ) );
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  input,
+  button,
+  select {
+    height: calc( 2em + ( 0.5 * ( ( 100vw - 320px ) / 320 ) ) );
+  }
+  textarea {
+    height: 5em;
+  }
+
+}
+
+/* @1x. */
+@media screen and ( max-width: 320px ) {
+
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  input,
+  button,
+  select {
+    height: 2em;
+  }
+  textarea {
+    height: 4em;
+  }
+
+  nav ul {
+    min-width: 320px;
+  }
+  nav ul .right {
+    display: block;
+  }
+}
