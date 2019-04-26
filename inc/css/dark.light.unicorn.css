@@ -1,6 +1,6 @@
 /* CSS Document */
 /* Dark, Light Unicorn (OAFA One - Ten) by Dane Aleksander based on Twenty Thirteen by the Wordpress team. */
-/* CSS dark.light.unicorn.1.1.6-.revision: 47. */
+/* CSS dark.light.unicorn.1.1.6-.revision: 48. */
 
 /* */
 /* - resets */
@@ -87,7 +87,7 @@ span {
   display: none;
 }
 
-/******************/
+/* */
 /* 1 fonts */
 
 html {
@@ -258,7 +258,7 @@ p a,
   text-decoration: line-through;
 }
 
-/***********************/
+/* */
 /* 2 frameworks */
 
 body {
@@ -288,7 +288,7 @@ section.single {
   width: 54em;
 }
 
-/******************/
+/* */
 /* 2.1 nav */
 
 nav ul .thin {
@@ -366,7 +366,7 @@ nav ul li.btn.diagonal-up a:after {
   z-index: -1;
 }
 
-/*******************/
+/* */
 /* 2.2 forms */
 
 button,
@@ -415,7 +415,7 @@ input[type="reset"]:focus {
   outline: none;
 }
 
-/*************************/
+/* */
 /* 2.3 containers */
 
 section {
@@ -456,7 +456,7 @@ select.format {
   width: 0.5em;
 }
 
-/********************/
+/* */
 /* 3 classes */
 
 .clear {
@@ -471,7 +471,7 @@ br.clear {
   clear: both;
 }
 
-/**********************/
+/* */
 /* 3.1 gutters */
 
 .center {
@@ -504,7 +504,7 @@ select,
   padding: 0 4em 1em;
 }
 
-/*********************/
+/* */
 /* 3.2 blocks */
 
 .full {
@@ -549,7 +549,7 @@ ul.products li.product-category h2 {
   display: inline;
 }
 
-/********************/
+/* */
 /* 3.3 media */
 
 .video {
@@ -572,7 +572,7 @@ div.profile img.profile {
   margin-top: 3em;
 }
 
-/************************/
+/* */
 /* 3.4 logos ***/
 
 div.logo {
@@ -597,7 +597,7 @@ div.logo img {
 }
 
 
-/*************************/
+/* */
 /* 3.5 badges ***/
 
 .apple, .google {
@@ -615,7 +615,7 @@ div.logo img {
   width: 4.375em;
 }
 
-/*******************/
+/* */
 /* 4 colors */
 
 body,
@@ -627,7 +627,7 @@ font.clear {
 li.has-post-thumbnail img,
 .wp-post-image { border: #FCFCFC thin solid; }
 
-/******************************************************/
+/* */
 /* 4.1.0 ZERO [DARK] rgb(252,252,252) */
 
 a,
@@ -680,76 +680,16 @@ div.zero:hover, div.dark:hover {
 
 #dark pre.thin { border: #474747 thin solid; }
 #dark li.btn a:hover { color: #333333 !important; }
-#dark li.btn a:after { background: #FCFCFC; }
+#dark li.btn a:after,
+#dark#homepage nav ul li a { background: #FCFCFC; }
 nav ul li.dark { border-color: #FCFCFC; }
 .lettermark:before { background: #CACACA; }
 
 #dark:: -webkit-scrollbar-track { background: #333333; }
 #dark:: -webkit-scrollbar-thumb { background: #FCFCFC; }
 
-/*********************************************/
-/* 4.1.1 ONE rgb(255,207,96) */
-
-#one nav em,
-#one a.color,
-#one .navigation a,
-#one h1,
-#one h3,
-#one h2.color,
-#one h4.color,
-#one font.color,
-.one,
-.lettermark.one:hover,
-li.one a:active,
-li.one a:hover {
-  color: #FFCF60;
-}
-#one a.color:hover,
-#one a:hover .color,
-#one .navigation a:hover,
-a.one:hover,
-a:hover .one {
-  color: #C8A450;
-}
-html #one,
-#one nav,
-#one article,
-#one aside,
-#one .color div.color {
-  background: #222222;
-}
-div#one,
-#one div.color,
-#one aside.color {
-  background: #393428;
-}
-#one button,
-#one input[type="submit"],
-#one a:hover > div.color,
-div.one,
-.color-one {
-  background: #594D32;
-}
-#one button:hover,
-#one input[type="submit"]:hover,
-div.one:hover {
-  background: #917941;
-}
-
-#one pre.thin { border: #393428 thin solid; }
-#one li.btn a:hover { color: #222222 !important; }
-#one li.btn a:after { background: #FFCF60; }
-nav ul li.one { border-color: #FFCF60; }
-.lettermark.one:before { background: #C8A450; }
-#one .one .fr,
-#one h2.color .fr,
-#one h4.color .fr { color: #917941; }
-
-#one:: -webkit-scrollbar-track { background: #222222; }
-#one:: -webkit-scrollbar-thumb { background: #FFCF60; }
-
-/*****************************************************/
-/* 4.1.10 TEN [LIGHT] rgb( ) */
+/* */
+/* 4.1.10 [LIGHT] rgb( ) */
 
 body#light,
 #light font.clear {
@@ -820,7 +760,68 @@ nav ul li.light { border-color: #0A0A0A; }
 #light:: -webkit-scrollbar-track { background: #FAFAFA; }
 #light:: -webkit-scrollbar-thumb { background: #0A0A0A; }
 
-/*********************************************/
+/* */
+/* 4.1.1 ONE rgb(255,207,96) */
+
+#one nav em,
+#one a.color,
+#one .navigation a,
+#one h1,
+#one h3,
+#one h2.color,
+#one h4.color,
+#one font.color,
+.one,
+.lettermark.one:hover,
+li.one a:active,
+li.one a:hover {
+  color: #FFCF60;
+}
+#one a.color:hover,
+#one a:hover .color,
+#one .navigation a:hover,
+a.one:hover,
+a:hover .one {
+  color: #C8A450;
+}
+html #one,
+#one nav,
+#one article,
+#one aside,
+#one .color div.color {
+  background: #222222;
+}
+div#one,
+#one div.color,
+#one aside.color {
+  background: #393428;
+}
+#one button,
+#one input[type="submit"],
+#one a:hover > div.color,
+div.one,
+.color-one {
+  background: #594D32;
+}
+#one button:hover,
+#one input[type="submit"]:hover,
+div.one:hover {
+  background: #917941;
+}
+
+#one pre.thin { border: #393428 thin solid; }
+#one li.btn a:hover { color: #222222 !important; }
+#one li.btn a:after { background: #FFCF60; }
+nav ul li.one { border-color: #FFCF60; }
+.lettermark.one:before { background: #C8A450; }
+#one .one .fr,
+#one h2.color .fr,
+#one h4.color .fr { color: #917941; }
+
+#one:: -webkit-scrollbar-track { background: #222222; }
+#one:: -webkit-scrollbar-thumb { background: #FFCF60; }
+
+/* */
 /* 4.1.11 BLUE rgb(0,180,255) */
 
 #blue a.color,
@@ -870,7 +871,7 @@ div.blue:hover {
 nav ul li .blue { border-color: #00B4FF; }
 .lettermark.blue:before { background: #0898D4; }
 
-/*********************************************/
+/* */
 /* 4.1.12 AQUA rgb(0,255,228) */
 
 #aqua a.color,
@@ -926,7 +927,7 @@ nav ul li .aqua { border-color: #00FFE4; }
 #aqua:: -webkit-scrollbar-thumb { background: #00FFE4; }
 #blue:: -webkit-scrollbar-thumb { background: #00B4FF; }
 
-/*****************/
+/* */
 /* 5 tags */
 
 div#soci,
@@ -940,7 +941,7 @@ div#soci,
 /* #soci a#gmail img:hover { background: #DD4B39; } */
 /* #soci a#vimeo img:hover { background: #44BBFF; } */
 
-/***********************/
+/* */
 /* 8 -wordpress */
 
 .screen-reader-text {
@@ -973,7 +974,7 @@ div#soci,
   text-align: right;
 }
 
-/*************************/
+/* */
 /* 9 -woocommerce */
 
 li.has-post-thumbnail {
@@ -1131,7 +1132,7 @@ p#order_comments_field textarea {
   width: 100%;
 }
 
-/*******************/
+/* */
 /* 0 queries */
 
 /* Tablet */
@@ -1230,14 +1231,14 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
     width: 50%;
   }
 
-  /****************************/
+  /* */
   /* 3.1 gutters ***/
 
   .gutter-ref {
     padding: 0 3em 1em;
   }
 
-  /********************/
+  /* */
   /* 3.3 media */
 
   .video {
@@ -1248,7 +1249,7 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
     margin-top: 0;
   }
 
-  /************************/
+  /* */
   /* 3.4 logos ***/
 
   div.logo {
@@ -1259,7 +1260,7 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
     padding: 1.5em;
   }
 
-  /*************************/
+  /* */
   /* 3.5 badges ***/
 
   .apple img, .google img {
