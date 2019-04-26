@@ -1,6 +1,6 @@
 /* CSS Document */
 /* Dark, Light Unicorn (OAFA Zero, One, ..., Ten) by Dane Aleksander based on Twenty Thirteen by the Wordpress team. */
-/* CSS dark.light.unicorn.1.1.6-.revision: 43. */
+/* CSS dark.light.unicorn.1.1.6-.revision: 44. */
 
 /*******************/
 /* - resets */
@@ -350,7 +350,6 @@ nav ul li.btn a:visited:hover:after {
   height: 450%;
 }
 nav ul li.btn a:after {
-  display: inline-block;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
      -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
       -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
@@ -359,7 +358,6 @@ nav ul li.btn a:after {
   z-index: -1;
 }
 nav ul li.btn.diagonal-up a:after {
-  display: inline-block;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
      -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
       -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
