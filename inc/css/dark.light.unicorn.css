@@ -316,7 +316,7 @@ nav ul li a {
 }
 nav ul li.logo a {
   padding: 0 1em;
-} /*
+}
 nav ul li.btn a:hover {
   z-index: 100;
   background-color: transparent;
@@ -366,7 +366,7 @@ nav ul li.btn.diagonal-up a:after {
        -o-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
           transform: translateX(-50%) translateY(-50%) rotate(-25deg);
   z-index: -1;
-} */
+}
 
 /*******************/
 /* 2.2 forms */
