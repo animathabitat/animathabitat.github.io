@@ -1,6 +1,6 @@
 /* CSS Document */
-/* Dark, Light Unicorn (OAFA Zero, One, ..., Ten) by Dane Aleksander based on Twenty Thirteen by the Wordpress team. */
-/* CSS dark.light.unicorn.1.1.6-.revision: 46. */
+/* Dark, Light Unicorn (OAFA One - Ten) by Dane Aleksander based on Twenty Thirteen by the Wordpress team. */
+/* CSS dark.light.unicorn.1.1.6-.revision: 47. */
 
 /* */
 /* - resets */
@@ -633,59 +633,59 @@ li.has-post-thumbnail img,
 a,
 a:hover p,
 h1 a:hover,
-li.zero a:active,
+li.dark a:active,
 a.checkout-button:hover,
 button,
 input[type="submit"],
 .white,
-.zero,
-#zero nav em,
-#zero h1,
-#zero h3,
-#zero h2.color,
-#zero h4.color,
-#zero font.color {
+.dark,
+#dark nav em,
+#dark h1,
+#dark h3,
+#dark h2.color,
+#dark h4.color,
+#dark font.color {
  color: #FCFCFC;
 }
 a:hover,
 a.white:hover,
-li.zero a:hover {
+li.dark a:hover {
   color: #CACACA;
 }
-html #zero,
-#zero nav,
-#zero article,
-#zero aside,
-#zero .color div.color {
+html #dark,
+#dark nav,
+#dark article,
+#dark aside,
+#dark .color div.color {
   background: #333333;
 }
-#zero section.color,
-#zero div.color,
-#zero aside.color {
+#dark section.color,
+#dark div.color,
+#dark aside.color {
   background: #474747;
 }
-#zero a.checkout-button,
-#zero button,
-#zero input[type="submit"],
-#zero a:hover > div.color,
-div.zero {
+#dark a.checkout-button,
+#dark button,
+#dark input[type="submit"],
+#dark a:hover > div.color,
+div.zero, div.dark {
   background: #656565;
 }
-#zero a.checkout-button:hover,
-#zero button:hover,
-#zero input[type="submit"]:hover,
-div.zero:hover {
+#dark a.checkout-button:hover,
+#dark button:hover,
+#dark input[type="submit"]:hover,
+div.zero:hover, div.dark:hover {
   background: #989898;
 }
 
-#zero pre.thin { border: #474747 thin solid; }
-#zero li.btn a:hover { color: #333333 !important; }
-#zero li.btn a:after { background: #FCFCFC; }
-nav ul li.zero { border-color: #FCFCFC; }
+#dark pre.thin { border: #474747 thin solid; }
+#dark li.btn a:hover { color: #333333 !important; }
+#dark li.btn a:after { background: #FCFCFC; }
+nav ul li.dark { border-color: #FCFCFC; }
 .lettermark:before { background: #CACACA; }
 
-#zero:: -webkit-scrollbar-track { background: #333333; }
-#zero:: -webkit-scrollbar-thumb { background: #FCFCFC; }
+#dark:: -webkit-scrollbar-track { background: #333333; }
+#dark:: -webkit-scrollbar-thumb { background: #FCFCFC; }
 
 /*********************************************/
 /* 4.1.1 ONE rgb(255,207,96) */
@@ -749,76 +749,76 @@ nav ul li.one { border-color: #FFCF60; }
 #one:: -webkit-scrollbar-thumb { background: #FFCF60; }
 
 /*****************************************************/
-/* 4.1.10 TEN [LIGHT] rgb(255,207,96) */
+/* 4.1.10 TEN [LIGHT] rgb( ) */
 
-body#ten,
-#ten font.clear {
+body#light,
+#light font.clear {
   color: #222222;
 }
-#ten .trim {
+#light .trim {
   border: #FAFAFA thin solid;
 }
-#ten .wp-post-image {
+#light .wp-post-image {
   border: #222222 thin solid;
 }
-#ten .fr {
+#light .fr {
   color: #333333;
 }
 
-#ten a,
-#ten li.zero a:active,
-#ten a.checkout-button:hover,
-#ten button,
-#ten input[type="submit"],
-#ten nav em,
-#ten h1,
-#ten h3,
-#ten h2.color,
-#ten h4.color,
-#ten font.color,
-.ten,
+#light a,
+#light li.light a:active,
+#light a.checkout-button:hover,
+#light button,
+#light input[type="submit"],
+#light nav em,
+#light h1,
+#light h3,
+#light h2.color,
+#light h4.color,
+#light font.color,
+.light,
 .lettermark
-.ten:hover {
+.light:hover {
   color: #0A0A0A;
 }
-#ten a.color:hover,
-#ten a:hover .color,
-#ten .navigation a:hover,
-a.ten:hover,
-a:hover .ten {
+#light a.color:hover,
+#light a:hover .color,
+#light .navigation a:hover,
+a.light:hover,
+a:hover .light {
   color: #2A2A2A;
 }
-html #ten,
-#ten nav,
-#ten article,
-#ten aside,
-#ten .color div.color {
+html #light,
+#light nav,
+#light article,
+#light aside,
+#light .color div.color {
   background: #FAFAFA;
 }
-#ten div.color,
-#ten aside.color {
+#light div.color,
+#light aside.color {
   background: #EAEAEA;
 }
-#ten button,
-#ten input[type="submit"],
-#ten a:hover > div.color,
-div.ten {
+#light button,
+#light input[type="submit"],
+#light a:hover > div.color,
+div.light {
   background: #DADADA;
 }
-#ten button:hover,
-#ten input[type="submit"]:hover,
-div.ten:hover {
+#light button:hover,
+#light input[type="submit"]:hover,
+div.light:hover {
   background: #CACACA;
 }
 
-#ten pre.thin { border: #EAEAEA thin solid; }
-#ten li.btn a:hover { color: #FAFAFA !important; }
-#ten li.btn a:after { background: #0A0A0A; }
-nav ul li.ten { border-color: #0A0A0A; }
-.lettermark.ten:before { background: #2A2A2A; }
+#light pre.thin { border: #EAEAEA thin solid; }
+#light li.btn a:hover { color: #FAFAFA !important; }
+#light li.btn a:after { background: #0A0A0A; }
+nav ul li.light { border-color: #0A0A0A; }
+.lettermark.light:before { background: #2A2A2A; }
 
-#ten:: -webkit-scrollbar-track { background: #FAFAFA; }
-#ten:: -webkit-scrollbar-thumb { background: #0A0A0A; }
+#light:: -webkit-scrollbar-track { background: #FAFAFA; }
+#light:: -webkit-scrollbar-thumb { background: #0A0A0A; }
 
 /*********************************************/
 /* 4.1.11 BLUE rgb(0,180,255) */
