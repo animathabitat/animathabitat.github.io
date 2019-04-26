@@ -1,6 +1,6 @@
 /* CSS Document */
 /* Dark, Light Unicorn (OAFA One - Ten) by Dane Aleksander based on Twenty Thirteen by the Wordpress team. */
-/* CSS dark.light.unicorn.1.1.6-.revision: 51. */
+/* CSS dark.light.unicorn.1.1.6-.revision: 52. */
 
 /* */
 /* - resets */
@@ -315,7 +315,7 @@ nav ul li a {
   padding: 0.1em 1em;
 }
 nav ul li.logo a {
-  padding: 0 1em;
+  padding: 0 1em 0.2em;
 }
 nav ul li.btn a:hover {
   z-index: 100;
