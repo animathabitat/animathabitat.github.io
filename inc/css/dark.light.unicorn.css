@@ -1,6 +1,6 @@
 /* CSS Document */
 /* Dark, Light Unicorn (OAFA Zero, One, ..., Ten) by Dane Aleksander based on Twenty Thirteen by the Wordpress team. */
-/* CSS dark.light.unicorn.1.1.6-.revision: 42. */
+/* CSS dark.light.unicorn.1.1.6-.revision: 43. */
 
 /*******************/
 /* - resets */
@@ -267,8 +267,19 @@ body {
 section {
   width: 72em;
 }
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
 nav ul {
+  display: block;
   width: 40.5em;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
 }
 header,
 footer,
@@ -280,18 +291,8 @@ section.single {
 /******************/
 /* 2.1 nav */
 
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
-nav ul {
-  display: block;
-  height: auto;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
+nav ul .thin {
+  text-transform: lowercase;
 }
 nav ul li {
   border-top: 0.27em solid;
@@ -299,9 +300,6 @@ nav ul li {
 }
 nav ul li.crumb {
   float: left;
-}
-nav ul .thin {
-  text-transform: lowercase;
 }
 nav ul li.thin {
   border-top: 0;
@@ -312,6 +310,13 @@ nav ul li.btn {
   overflow: hidden;
   position: relative;
 }
+nav ul li a {
+  display: inline-block;
+  padding: 0.1em 1em;
+}
+nav ul li.logo a {
+  padding: 0 1em;
+} /*
 nav ul li.btn a:hover {
   z-index: 100;
   background-color: transparent;
@@ -361,14 +366,7 @@ nav ul li.btn.diagonal-up a:after {
        -o-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
           transform: translateX(-50%) translateY(-50%) rotate(-25deg);
   z-index: -1;
-}
-nav ul li a {
-  display: inline-block;
-  padding: 0.1em 1em;
-}
-nav ul li.logo a {
-  padding: 0 1em;
-}
+} */
 
 /*******************/
 /* 2.2 forms */
