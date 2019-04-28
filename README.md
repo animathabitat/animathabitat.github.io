@@ -3,4 +3,4 @@ Official series index of Animat Habitat™ designed and developed by Dane Aleksa
 Font(s): “Oswald” [Extra-Light, Medium] principally designed by Vernon Adams, licensed under the SIL Open Font License 1.1.
 
 # animathabitat.org
-Art is copyright © 2018 Animat Habitat™. https://animathabitat.org/c/
+Art is copyright © 2015-2019 Animat Habitat™. https://animathabitat.org/c/
