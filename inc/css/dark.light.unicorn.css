@@ -622,10 +622,16 @@ body,
 font.clear {
   color: #DADADA;
 }
-.fr { color: #BABABA; }
-.trim { border: #222222 thin solid; }
+.fr {
+  color: #BABABA;
+}
+.trim {
+  border: #222222 thin solid;
+}
 li.has-post-thumbnail img,
-.wp-post-image { border: #FCFCFC thin solid; }
+.wp-post-image {
+  border: #FCFCFC thin solid;
+}
 
 /* */
 /* 4.1.0 ZERO [DARK] rgb(252,252,252) */
@@ -678,12 +684,22 @@ div.zero:hover, div.dark:hover {
   background: #989898;
 }
 
-#dark pre.thin { border: #474747 thin solid; }
-#dark li.btn a:hover { color: #333333 !important; }
+#dark pre.thin {
+  border: #474747 thin solid;
+}
+#dark li.btn a:hover {
+  color: #333333 !important;
+}
 #dark li.btn a:after,
-#dark .home li.logo a { background: #FCFCFC; }
-nav ul li.dark { border-color: #FCFCFC; }
-.lettermark:before { background: #CACACA; }
+#dark .home li.logo a {
+  background: #FCFCFC;
+}
+nav ul li.dark {
+  border-color: #FCFCFC;
+}
+.lettermark:before {
+  background: #CACACA;
+}
 
 #dark:: -webkit-scrollbar-track { background: #333333; }
 #dark:: -webkit-scrollbar-thumb { background: #FCFCFC; }
@@ -751,11 +767,21 @@ div.light:hover {
   background: #CACACA;
 }
 
-#light pre.thin { border: #EAEAEA thin solid; }
-#light li.btn a:hover { color: #FAFAFA !important; }
-#light li.btn a:after { background: #0A0A0A; }
-nav ul li.light { border-color: #0A0A0A; }
-.lettermark.light:before { background: #2A2A2A; }
+#light pre.thin {
+  border: #EAEAEA thin solid;
+}
+#light li.btn a:hover {
+  color: #FAFAFA !important;
+}
+#light li.btn a:after {
+  background: #0A0A0A;
+}
+nav ul li.light {
+  border-color: #0A0A0A;
+}
+.lettermark.light:before {
+  background: #2A2A2A;
+}
 
 #light:: -webkit-scrollbar-track { background: #FAFAFA; }
 #light:: -webkit-scrollbar-thumb { background: #0A0A0A; }
@@ -809,14 +835,26 @@ div.one:hover {
   background: #917941;
 }
 
-#one pre.thin { border: #393428 thin solid; }
-#one li.btn a:hover { color: #222222 !important; }
-#one li.btn a:after { background: #FFCF60; }
-nav ul li.one { border-color: #FFCF60; }
-.lettermark.one:before { background: #C8A450; }
+#one pre.thin {
+  border: #393428 thin solid;
+}
+#one li.btn a:hover {
+  color: #222222 !important;
+}
+#one li.btn a:after {
+  background: #FFCF60;
+}
+nav ul li.one {
+  border-color: #FFCF60;
+}
+.lettermark.one:before {
+  background: #C8A450;
+}
 #one .one .fr,
 #one h2.color .fr,
-#one h4.color .fr { color: #917941; }
+#one h4.color .fr {
+  color: #917941;
+}
 
 #one:: -webkit-scrollbar-track { background: #222222; }
 #one:: -webkit-scrollbar-thumb { background: #FFCF60; }
@@ -867,9 +905,15 @@ div.blue:hover {
   background: #117DAA;
 }
 
-#blue pre.thin { border: #403e39 thin solid; }
-nav ul li .blue { border-color: #00B4FF; }
-.lettermark.blue:before { background: #0898D4; }
+#blue pre.thin {
+  border: #403e39 thin solid;
+}
+nav ul li .blue {
+  border-color: #00B4FF;
+}
+.lettermark.blue:before {
+  background: #0898D4;
+}
 
 /* */
 /* 4.1.12 AQUA rgb(0,255,228) */
@@ -918,9 +962,15 @@ div.aqua:hover {
   background: #11aa9a;
 }
 
-#aqua pre.thin { border: #403E39 thin solid; }
-nav ul li .aqua { border-color: #00FFE4; }
-.lettermark.aqua:before { background: #08d4bf; }
+#aqua pre.thin {
+  border: #403E39 thin solid;
+}
+nav ul li .aqua {
+  border-color: #00FFE4;
+}
+.lettermark.aqua:before {
+  background: #08d4bf;
+}
 
 #aqua:: -webkit-scrollbar-track,
 #blue:: -webkit-scrollbar-track { background: #2A2A2A; }
@@ -930,14 +980,14 @@ nav ul li .aqua { border-color: #00FFE4; }
 /* */
 /* 5 tags */
 
-div#soci,
+/* div#soci,
 #soci div {
   padding: 0.5em;
-}
-#soci a#email img:hover { background: #0972C5; }
-#soci a#tw img:hover { background: #00ACED; }
-#soci a#in img:hover { background: #007FB1; }
-#soci a#behance img:hover { background: #005CFF; }
+} */
+/* #soci a#email img:hover { background: #0972C5; } */
+/* #soci a#tw img:hover { background: #00ACED; } */
+/* #soci a#in img:hover { background: #007FB1; } */
+/* #soci a#behance img:hover { background: #005CFF; } */
 /* #soci a#gmail img:hover { background: #DD4B39; } */
 /* #soci a#vimeo img:hover { background: #44BBFF; } */
 
