@@ -2,19 +2,28 @@
 /* Dark, Light Unicorn (OAFA One - Ten) by Dane Aleksander based on Twenty Thirteen by the Wordpress team. */
 /* CSS dark.light.unicorn.1.1.6-.revision: 52. */
 
-/* */
-/* - resets */
-/* 1 fonts */
-/* 2 frameworks */
-/* 3 .classes */
-/* 4 #colors */
+/* - reset */
+/* 1 type */
+/* 2 architecture */
+/*** 1 navigation */
+/*** 2 page */
+/*** 3 input */
+/* 3 media */
+/*** 1 logo */
+/*** 2 profile */
+/*** 3 badge */
+/* 4 .classes */
+/*** 1 gutter */
+/*** 2 grid */
+/*** 3 badge */
 /* 5 #tags */
-/* 6  */
+/* 6 #colors */
 /* 7  */
 /* 8 -wordpress */
 /* 9 -woocommerce */
 /* 0 @queries */
-/* */
+
+/* RESET */
 
 * {
   box-sizing: border-box;
@@ -87,8 +96,7 @@ span {
   display: none;
 }
 
-/* */
-/* 1 fonts */
+/* 1 TYPE */
 
 html {
   -webkit-text-size-adjust: 62.5%;
@@ -258,8 +266,7 @@ p a,
   text-decoration: line-through;
 }
 
-/* */
-/* 2 frameworks */
+/* 2 ARCHITECTURE */
 
 body {
   width: 100%;
@@ -288,8 +295,7 @@ section.single {
   width: 54em;
 }
 
-/* */
-/* 2.1 nav */
+/* 2. 1 NAVIGATION */
 
 nav ul .thin {
   text-transform: lowercase;
@@ -366,8 +372,42 @@ nav ul li.btn.diagonal-up a:after {
   z-index: -1;
 }
 
-/* */
-/* 2.2 forms */
+/* 2. 2 PAGE */
+
+section {
+  z-index: 1;
+}
+article {
+  float: left;
+  width: 75%;
+}
+aside {
+  float: right;
+  width: 25%;
+}
+.single article {
+  width: 100%;
+}
+div,
+li.type-product /* woo */ {
+  padding: 1em;
+}
+blockquote, q,
+.quote {
+  padding: 3em;
+}
+div.hidden {
+  padding: 0;
+}
+pre.thin {
+  width: auto;
+}
+input.format,
+select.format {
+  width: 100%;
+}
+
+/* 2. 3 INPUT */
 
 button,
 input,
@@ -415,49 +455,71 @@ input[type="reset"]:focus {
   outline: none;
 }
 
-/* */
-/* 2.3 containers */
-
-section {
-  z-index: 1;
-}
-article {
-  float: left;
-  width: 75%;
-}
-aside {
-  float: right;
-  width: 25%;
-}
-.single article {
-  width: 100%;
-}
-div,
-li.type-product /* woo */ {
-  padding: 1em;
-}
-blockquote, q,
-.quote {
-  padding: 3em;
-}
-div.hidden {
-  padding: 0;
-}
-pre.thin {
-  width: auto;
-}
-input.format,
-select.format {
-  width: 100%;
-}
-
 :: -webkit-scrollbar {
   height: 0.5em;
   width: 0.5em;
 }
 
-/* */
-/* 3 classes */
+/* 3 MEDIA */
+
+.video {
+  width: 100%;
+  height: 30em; /* calc( ( 50vw - 3em ) / 1.78 ) */
+}
+
+/* 3. 1 LOGO */
+img.logo {
+  width: 1em;
+  height: 1em;
+}
+div.logo {
+  float: left;
+  height: 9em;
+  padding: 0;
+}
+div.logo img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto;
+  padding: 2.4em 3.2em;
+  /* display: inline-block;
+  vertical-align:middle; */
+}
+.auto {
+  width: auto;
+}
+
+/* 3. 2 PROFILE */
+div.profile {
+  position: fixed;
+  width: 18em;
+}
+div.profile img.profile {
+  margin-top: 3em;
+}
+
+/* 3. 3 BADGE */
+
+.apple, .google {
+  display: inline;
+  float: right; }
+.apple img, .google img {
+  display: inline;
+  float: right;
+  height: 2em;
+  margin: 1.5em 1.5em 0; }
+.apple img {
+  width: 5em;
+}
+.google img {
+  width: 4.375em;
+}
+
+/* 4 CLASS */
 
 .clear {
   color: inherit;
@@ -471,8 +533,7 @@ br.clear {
   clear: both;
 }
 
-/* */
-/* 3.1 gutters */
+/* 4. 1 GUTTER */
 
 .center {
   display: block;
@@ -504,8 +565,7 @@ select,
   padding: 0 4em 1em;
 }
 
-/* */
-/* 3.2 blocks */
+/* 4. 2 GRID */
 
 .full {
   width: 100%;
@@ -549,74 +609,9 @@ ul.products li.product-category h2 {
   display: inline;
 }
 
-/* */
-/* 3.3 media */
+/* 5 TAG */
 
-.video {
-  width: 100%;
-  height: 30em; /* calc( ( 50vw - 3em ) / 1.78 ) */
-}
-
-/* nav icon */
-img.logo {
-  width: 1em;
-  height: 1em;
-}
-
-/* profile image */
-div.profile {
-  position: fixed;
-  width: 18em;
-}
-div.profile img.profile {
-  margin-top: 3em;
-}
-
-/* */
-/* 3.4 logos ***/
-
-div.logo {
-  float: left;
-  height: 9em;
-  padding: 0;
-}
-div.logo img {
-  max-height: 100%;
-  max-width: 100%;
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: 0; bottom: 0; left: 0; right: 0;
-  margin: auto;
-  padding: 2.4em 3.2em;
-  /* display: inline-block;
-  vertical-align:middle; */
-}
-.auto {
-  width: auto;
-}
-
-
-/* */
-/* 3.5 badges ***/
-
-.apple, .google {
-  display: inline;
-  float: right; }
-.apple img, .google img {
-  display: inline;
-  float: right;
-  height: 2em;
-  margin: 1.5em 1.5em 0; }
-.apple img {
-  width: 5em;
-}
-.google img {
-  width: 4.375em;
-}
-
-/* */
-/* 4 colors */
+/* 6 COLOR */
 
 body,
 font.clear {
@@ -633,8 +628,8 @@ li.has-post-thumbnail img,
   border: #FCFCFC thin solid;
 }
 
-/* */
-/* 4.1.0 ZERO [DARK] rgb(252,252,252) */
+/* ZERO [DARK] rgb(252,252,252) */
+/* - [LIGHT] rgb( ) */
 
 a,
 a:hover p,
@@ -700,12 +695,6 @@ nav ul li.dark {
 .lettermark:before {
   background: #CACACA;
 }
-
-#dark:: -webkit-scrollbar-track { background: #333333; }
-#dark:: -webkit-scrollbar-thumb { background: #FCFCFC; }
-
-/* */
-/* 4.1.10 [LIGHT] rgb( ) */
 
 body#light,
 #light font.clear {
@@ -783,11 +772,12 @@ nav ul li.light {
   background: #2A2A2A;
 }
 
+#dark:: -webkit-scrollbar-track { background: #333333; }
 #light:: -webkit-scrollbar-track { background: #FAFAFA; }
+#dark:: -webkit-scrollbar-thumb { background: #FCFCFC; }
 #light:: -webkit-scrollbar-thumb { background: #0A0A0A; }
 
-/* */
-/* 4.1.1 ONE rgb(255,207,96) */
+/* 6.1 ONE rgb(255,207,96) */
 
 #one nav em,
 #one a.color,
@@ -859,64 +849,7 @@ nav ul li.one {
 #one:: -webkit-scrollbar-track { background: #222222; }
 #one:: -webkit-scrollbar-thumb { background: #FFCF60; }
 
-/* */
-/* 4.1.11 BLUE rgb(0,180,255) */
-
-#blue a.color,
-#blue .navigation a,
-#blue h1,
-#blue h3,
-#blue h2.color,
-#blue h4.color,
-#blue font.color,
-.blue,
-.lettermark.blue:hover,
-li.blue a:active,
-li.blue a:hover,
-li.blue a em {
-  color: #00B4FF;
-}
-#blue a.color:hover,
-#blue a:hover .color,
-#blue .navigation a:hover,
-a.blue:hover,
-a:hover .blue {
-  color: #0898D4;
-}
-html #blue,
-#blue nav,
-#blue article,
-#blue aside,
-#blue .color div.color {
-  background: #2A2A2A;
-}
-#blue div.color,
-#blue aside.color {
-  background: #224655;
-}
-#blue button,
-#blue #soci a img,
-#blue a:hover > div.color,
-div.blue {
-  background: #19617F;
-}
-#blue button:hover,
-div.blue:hover {
-  background: #117DAA;
-}
-
-#blue pre.thin {
-  border: #403e39 thin solid;
-}
-nav ul li .blue {
-  border-color: #00B4FF;
-}
-.lettermark.blue:before {
-  background: #0898D4;
-}
-
-/* */
-/* 4.1.12 AQUA rgb(0,255,228) */
+/* 6.2 AQUA rgb(0,255,228) */
 
 #aqua a.color,
 #aqua .navigation a,
@@ -970,6 +903,61 @@ nav ul li .aqua {
 }
 .lettermark.aqua:before {
   background: #08d4bf;
+}
+
+/* 6.3 BLUE rgb(0,180,255) */
+
+#blue a.color,
+#blue .navigation a,
+#blue h1,
+#blue h3,
+#blue h2.color,
+#blue h4.color,
+#blue font.color,
+.blue,
+.lettermark.blue:hover,
+li.blue a:active,
+li.blue a:hover,
+li.blue a em {
+  color: #00B4FF;
+}
+#blue a.color:hover,
+#blue a:hover .color,
+#blue .navigation a:hover,
+a.blue:hover,
+a:hover .blue {
+  color: #0898D4;
+}
+html #blue,
+#blue nav,
+#blue article,
+#blue aside,
+#blue .color div.color {
+  background: #2A2A2A;
+}
+#blue div.color,
+#blue aside.color {
+  background: #224655;
+}
+#blue button,
+#blue #soci a img,
+#blue a:hover > div.color,
+div.blue {
+  background: #19617F;
+}
+#blue button:hover,
+div.blue:hover {
+  background: #117DAA;
+}
+
+#blue pre.thin {
+  border: #403e39 thin solid;
+}
+nav ul li .blue {
+  border-color: #00B4FF;
+}
+.lettermark.blue:before {
+  background: #0898D4;
 }
 
 #aqua:: -webkit-scrollbar-track,
