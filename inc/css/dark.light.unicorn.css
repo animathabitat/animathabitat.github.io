@@ -335,7 +335,7 @@ nav ul li.btn a:visited {
      -moz-transition: -moz-transform 1s ease;
       -ms-transition: -ms-transform 1s ease;
        -o-transition: -o-transform 1s ease;
-          transition: transform 1s;
+          transition: transform 1s ease;
 }
 nav ul li.btn a:link:after,
 nav ul li.btn a:visited:after {
@@ -349,7 +349,7 @@ nav ul li.btn a:visited:after {
      -moz-transition: -moz-transform 0.5s ease 0s;
       -ms-transition: -ms-transform 0.5s ease 0s;
        -o-transition: -o-transform 0.5s ease 0s;
-          transition: transform 0.5s;
+          transition: transform 0.5s ease 0s;
 }
 nav ul li.btn a:link:hover:after,
 nav ul li.btn a:visited:hover:after {
@@ -440,6 +440,7 @@ input[type="reset"] {
   -webkit-appearance: button;
      -moz-appearance: button;
       -ms-appearance: button;
+       -o-appearance: button;
           appearance: button;
   cursor: pointer;
   display: inline-block;
@@ -506,12 +507,14 @@ div.profile img.profile {
 
 .apple, .google {
   display: inline;
-  float: right; }
+  float: right;
+}
 .apple img, .google img {
   display: inline;
   float: right;
   height: 2em;
-  margin: 1.5em 1.5em 0; }
+  margin: 1.5em 1.5em 0;
+}
 .apple img {
   width: 5em;
 }
