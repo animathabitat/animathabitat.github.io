@@ -349,7 +349,7 @@ nav ul li.btn a:link:hover:after,
 nav ul li.btn a:visited:hover:after {
   height: 450%;
 }
-nav ul li.btn a:after {
+nav ul li.btn.diagonal-down a:after {
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
      -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
       -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
