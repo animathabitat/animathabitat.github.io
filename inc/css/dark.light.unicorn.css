@@ -213,13 +213,13 @@ td, th,
           transition-property: left, right;
   -webkit-transition-duration: 0.25s;
      -moz-transition-duration: 0.25s;
-      -ms-transition-property: left, right;
-       -o-transition-property: left, right;
+      -ms-transition-duration: 0.25s;
+       -o-transition-duration: 0.25s;
           transition-duration: 0.25s;
   -webkit-transition-timing-function: ease-out;
      -moz-transition-timing-function: ease-out;
-      -ms-transition-property: left, right;
-       -o-transition-property: left, right;
+      -ms-transition-timing-function: ease-out;
+       -o-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
 }
 .lettermark:hover:before,
@@ -327,8 +327,8 @@ nav ul li.btn a:visited {
   display: inline-block;
   -webkit-transition: -webkit-transform 1s ease;
      -moz-transition: -moz-transform 1s ease;
-      -ms-transition: -moz-transform 1s ease;
-       -o-transition: -moz-transform 1s ease;
+      -ms-transition: -ms-transform 1s ease;
+       -o-transition: -o-transform 1s ease;
           transition: transform 1s;
 }
 nav ul li.btn a:link:after,
@@ -341,7 +341,7 @@ nav ul li.btn a:visited:after {
   width: 150%;
   -webkit-transition: -webkit-transform 0.5s ease 0s;
      -moz-transition: -moz-transform 0.5s ease 0s;
-      -ms-transition: -moz-transform 0.5s ease 0s;
+      -ms-transition: -ms-transform 0.5s ease 0s;
        -o-transition: -o-transform 0.5s ease 0s;
           transition: transform 0.5s;
 }
