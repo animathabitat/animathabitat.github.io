@@ -202,7 +202,6 @@ td, th,
       -ms-transform: perspective(1px) translateZ(0);
        -o-transform: perspective(1px) translateZ(0);
           transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
 }
@@ -213,7 +212,7 @@ td, th,
   left: 51%;
   right: 51%;
   bottom: 0;
-  height: 0.0625em;
+  height: 0.05em;
   -webkit-transition-property: left, right;
      -moz-transition-property: left, right;
       -ms-transition-property: left, right;
