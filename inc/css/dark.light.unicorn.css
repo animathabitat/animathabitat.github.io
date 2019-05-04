@@ -212,7 +212,7 @@ td, th,
   left: 51%;
   right: 51%;
   bottom: 0;
-  height: 0.05em;
+  height: 0.0125em;
   -webkit-transition-property: left, right;
      -moz-transition-property: left, right;
       -ms-transition-property: left, right;
