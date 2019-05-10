@@ -684,7 +684,8 @@ div.zero:hover, div.dark:hover {
 #dark pre.thin {
   border: #474747 thin solid;
 }
-#dark li.btn a:hover {
+#dark li.btn a:hover,
+#dark .page li.issue a {
   color: #333333 !important;
 }
 #dark li.btn a:after,
@@ -831,10 +832,12 @@ div.one:hover {
 #one pre.thin {
   border: #393428 thin solid;
 }
-#one li.btn a:hover {
+#one li.btn a:hover,
+#dark .page li.issue a {
   color: #222222 !important;
 }
-#one li.btn a:after {
+#one li.btn a:after,
+#dark .page li.issue a {
   background: #FFCF60;
 }
 nav ul li.one {
