@@ -3,19 +3,20 @@
 /* CSS dark.light.unicorn.1.1.6-.revision: 52. */
 
 /* - reset */
+
 /* 1 type */
 /* 2 architecture */
-/*** 1 navigation */
-/*** 2 page */
-/*** 3 input */
+/*   1 navigation */
+/*   2 page */
+/*   3 input */
 /* 3 media */
-/*** 1 logo */
-/*** 2 profile */
-/*** 3 badge */
+/*   1 logo */
+/*   2 profile */
+/*   3 badge */
 /* 4 .classes */
-/*** 1 gutter */
-/*** 2 grid */
-/*** 3 badge */
+/*   1 gutter */
+/*   2 grid */
+/*   3 badge */
 /* 5 #tags */
 /* 6 #colors */
 /* 7  */
@@ -613,6 +614,13 @@ ul.products li.product-category h2 {
 
 /* 5 TAG */
 
+/* #soci a#email img:hover { background: #0972C5; } */
+/* #soci a#tw img:hover { background: #00ACED; } */
+/* #soci a#in img:hover { background: #007FB1; } */
+/* #soci a#behance img:hover { background: #005CFF; } */
+/* #soci a#gmail img:hover { background: #DD4B39; } */
+/* #soci a#vimeo img:hover { background: #44BBFF; } */
+
 /* 6 COLOR */
 
 body,
@@ -833,11 +841,11 @@ div.one:hover {
   border: #393428 thin solid;
 }
 #one li.btn a:hover,
-#dark .page li.issue a {
+#one .page li.issue a {
   color: #222222 !important;
 }
 #one li.btn a:after,
-#dark .page li.issue a {
+#one .page li.issue a {
   background: #FFCF60;
 }
 nav ul li.one {
@@ -971,21 +979,6 @@ nav ul li .blue {
 #aqua:: -webkit-scrollbar-thumb { background: #00FFE4; }
 #blue:: -webkit-scrollbar-thumb { background: #00B4FF; }
 
-/* */
-/* 5 tags */
-
-/* div#soci,
-#soci div {
-  padding: 0.5em;
-} */
-/* #soci a#email img:hover { background: #0972C5; } */
-/* #soci a#tw img:hover { background: #00ACED; } */
-/* #soci a#in img:hover { background: #007FB1; } */
-/* #soci a#behance img:hover { background: #005CFF; } */
-/* #soci a#gmail img:hover { background: #DD4B39; } */
-/* #soci a#vimeo img:hover { background: #44BBFF; } */
-
-/* */
 /* 8 -wordpress */
 
 .screen-reader-text {
@@ -1018,7 +1011,6 @@ nav ul li .blue {
   text-align: right;
 }
 
-/* */
 /* 9 -woocommerce */
 
 li.has-post-thumbnail {
@@ -1179,6 +1171,12 @@ p#order_comments_field textarea {
 /* */
 /* 0 queries */
 
+/* IPHONE-Retina */
+/* @media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) { } */
+
 /* Tablet */
 @media screen and ( max-width: 1295px ) {
 
@@ -1188,13 +1186,7 @@ p#order_comments_field textarea {
 
 }
 
-/* IPHONE-Retina */
-/* @media only screen
-and (min-device-width: 320px)
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2) { } */
-
-/* Break after iPhone, before iPad. */
+/* Break after Mobile, before Tablet. */
 @media screen and ( max-width: 971px ) {
 
   /* hide */
