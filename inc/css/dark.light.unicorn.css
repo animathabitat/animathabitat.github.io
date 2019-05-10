@@ -693,7 +693,7 @@ div.zero:hover, div.dark:hover {
   border: #474747 thin solid;
 }
 #dark li.btn a:hover,
-#dark .page li.issue a {
+#dark nav .page li.issue em {
   color: #333333 !important;
 }
 #dark li.btn a:after,
@@ -841,7 +841,7 @@ div.one:hover {
   border: #393428 thin solid;
 }
 #one li.btn a:hover,
-#one .page li.issue a {
+#one nav .page li.issue em {
   color: #222222 !important;
 }
 #one li.btn a:after,
