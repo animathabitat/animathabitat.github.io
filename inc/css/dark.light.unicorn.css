@@ -32,7 +32,7 @@
   padding: 0;
 }
 html,
-.default a {
+.issue a {
   cursor: default;
 }
 article, aside, footer, header, nav, section,
@@ -168,7 +168,7 @@ option {
 }
 h6,
 .small {
-  font-size: 0.75em;
+  font-size: calc( 7em / 9 );
 }
 
 .text-center {
@@ -688,7 +688,8 @@ div.zero:hover, div.dark:hover {
   color: #333333 !important;
 }
 #dark li.btn a:after,
-#dark .home li.logo a {
+#dark .home li.logo a,
+#dark .page li.issue a {
   background: #FCFCFC;
 }
 nav ul li.dark {
