@@ -130,7 +130,8 @@ table, tr, td, */
 th,
 a.button,
 .navigation,
-.thin {
+.thin,
+.trade {
   font-style: normal;
   font-weight: 200;
 }
