@@ -214,7 +214,7 @@ td, th,
   left: 51%;
   right: 51%;
   bottom: 0;
-  height: 0.0125em;
+  height: 0.02em;
   -webkit-transition-property: left, right;
      -moz-transition-property: left, right;
       -ms-transition-property: left, right;
@@ -236,6 +236,9 @@ td, th,
 .lettermark:active:before {
   left: 0;
   right: 0;
+}
+.letterspace {
+  letter-spacing: 1em;
 }
 .letterhead,
 .cart-empty /* woo */ {
