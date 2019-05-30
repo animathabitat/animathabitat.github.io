@@ -1,6 +1,6 @@
 /* CSS Document */
 /* Dark, Light Unicorn (OAFA One - Ten) by Dane Aleksander based on Twenty Thirteen by the Wordpress team. */
-/* CSS dark.light.unicorn.1.2.0-.revision: 12. */
+/* CSS dark.light.unicorn.1.2.0-.revision: 15. */
 
 /* - reset */
 
@@ -238,7 +238,7 @@ td, th,
   right: 0;
 }
 .letterspace {
-  letter-spacing: 1em;
+  letter-spacing: 0.1;
 }
 .letterhead,
 .cart-empty /* woo */ {
