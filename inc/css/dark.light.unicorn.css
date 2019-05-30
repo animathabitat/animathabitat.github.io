@@ -1,6 +1,6 @@
 /* CSS Document */
 /* Dark, Light Unicorn (OAFA One - Ten) by Dane Aleksander based on Twenty Thirteen by the Wordpress team. */
-/* CSS dark.light.unicorn.1.2.0-.revision: 17. */
+/* CSS dark.light.unicorn.1.2.0-.revision: 18. */
 
 /* - reset */
 
@@ -109,7 +109,6 @@ html {
 }
 body {
   font-family:'Oswald', sans-serif;
-  font-kerning: normal;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 200;
