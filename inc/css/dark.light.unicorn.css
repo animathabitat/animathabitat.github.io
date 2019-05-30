@@ -141,6 +141,7 @@ th {
 h6,
 em, i {
   font-style: italic;
+  font-style: oblique;
   font-weight: 200;
 }
 h1 {
