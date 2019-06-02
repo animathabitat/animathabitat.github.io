@@ -163,6 +163,7 @@ nav,
 .navigation,
 textarea {
   font-size: calc( 4em / 3 );
+  line-height: 1em;
 }
 h5,
 select,
