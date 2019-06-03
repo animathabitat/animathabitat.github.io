@@ -163,7 +163,7 @@ nav,
 .navigation,
 textarea {
   font-size: calc( 4em / 3 );
-  line-height: 1.5em;
+  line-height: calc( 4em / 3 );
 }
 h5,
 select,
@@ -189,7 +189,9 @@ td, th,
   font-size: 2em;
   line-height: 0.5em;
   vertical-align: -0.5em;
-  overflow: hidden;
+}
+h4 {
+  line-height: 1.5em;
 }
 
 .title {
