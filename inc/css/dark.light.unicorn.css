@@ -114,7 +114,7 @@ body {
   font-weight: 200;
 }
 form, button, input, label, option, select, textarea {
-  font-family: inherit;
+  font-family:'Oswald', sans-serif;
 }
 h1, h4,
 b, strong,
