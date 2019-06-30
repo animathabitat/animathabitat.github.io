@@ -1,6 +1,6 @@
 /* CSS Document */
-/* Dark, Light Unicorn (OAFA One - Ten) by Dane Aleksander based on Twenty Thirteen by the Wordpress team. */
-/* CSS dark.light.unicorn.1.2.0-.revision: 22. */
+/* Dark, Light Unicorn (OAFA One - Ten) by Dane Aleksander based on Twenty Thirteen by Automattic */
+/* dark.light.unicorn.1.2.0-.revision: 22. */
 
 /* - reset */
 
@@ -706,7 +706,7 @@ div.zero:hover, div.dark:hover {
   color: #333333 !important;
 }
 #dark li.btn a:after,
-#dark .home li.logo a,
+#dark .home li.logo,
 #dark .page li.issue a {
   background: #FCFCFC;
 }
