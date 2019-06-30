@@ -1,6 +1,6 @@
 /* CSS Document */
 /* Dark, Light Unicorn (OAFA One - Ten) by Dane Aleksander based on Twenty Thirteen by Automattic */
-/* dark.light.unicorn.1.2.0-.revision: 22. */
+/* dark.light.unicorn.1.2.0-.revision: 27. */
 
 /* - reset */
 
@@ -330,7 +330,7 @@ nav ul li a {
   padding: 0.1em 1em;
 }
 nav ul li.logo a {
-  padding: 0 1em 0.2em;
+  padding: 0.2em 1em;
 }
 nav ul li.btn a:hover {
   z-index: 100;
@@ -706,7 +706,7 @@ div.zero:hover, div.dark:hover {
   color: #333333 !important;
 }
 #dark li.btn a:after,
-#dark .home li.logo,
+#dark .home li.logo a,
 #dark .page li.issue a {
   background: #FCFCFC;
 }
