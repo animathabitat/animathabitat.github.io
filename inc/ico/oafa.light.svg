@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- SVG Version: 6.00 -->
-<svg version="1.1" id="OAFA_Mark_Dark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="768px"
-	 height="768px" viewBox="0 0 768 768" enable-background="new 0 0 768 768" xml:space="preserve">
+<svg version="1.1" id="OAFA_Mark_Light" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 1200 1200" style="enable-background:new 0 0 1200 1200;" xml:space="preserve">
   <title>OAFA (Mark 1.0, Light)</title>
 
-  <style>.oafa-light { fill:#dadada; }</style>
+  <style>.oafa-light { fill:#fcfcfc; }</style>
 
-	<path id="oafa-mark" class="oafa-light" d="M682.564,581.129l-144-249.415l-83.139,48l57.34,99.314c-12.691,17.218-29.058,32.158-48.766,43.536
-		c-76.525,44.183-174.381,17.963-218.564-58.563l360.268-208c-59.643-103.304-180.414-149.313-290.244-118.718l50.631,87.694
-		c27.628-3.097,55.473,1.135,80.738,11.898L130.43,419.549c4.43,31.678,14.893,63.049,31.867,92.452
-		C232.99,634.443,389.557,676.396,512,605.703c19.141-11.05,36.308-24.202,51.39-38.991l36.036,62.417L682.564,581.129z"/>
+  <path id="oafa-mark" class="oafa-light" d="M904.5,497l-163.8,94.5l112.9,195.6c-25,33.9-57.2,63.3-96.1,85.8c-150.7,87-343.5,35.4-430.5-115.4
+    l709.6-409.7v0C919.3,144.4,681.4,53.7,465.1,114l99.7,172.7c54.4-6.1,109.3,2.2,159.1,23.4L100.6,670
+    c8.7,62.4,29.4,124.2,62.8,182.1c139.2,241.2,447.7,323.8,688.8,184.6c37.7-21.8,71.5-47.7,101.2-76.8l82.8,143.4l163.8-94.5
+    L904.5,497z"/>
 </svg>
