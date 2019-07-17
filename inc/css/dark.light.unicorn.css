@@ -194,8 +194,8 @@ td, th,
 }
 .text-quote {
   font-size: 2em;
-  line-height: calc( 1em / 3 );
-  vertical-align: calc( -1em / 3 );
+  line-height: 0.25em;
+  vertical-align: -0.5em;
 }
 h4 {
   line-height: 1.5em;
