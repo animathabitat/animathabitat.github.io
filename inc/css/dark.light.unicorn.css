@@ -556,6 +556,7 @@ br.clear {
   position: relative;
 }
 .left,
+.vol a div,
 li.type-product /* woo */ {
   display: inline;
   float: left;
@@ -600,7 +601,7 @@ th.product-name {
 .quarter,
 .polypty,
 .quads > div,
-.quads > .quote
+.quads > .quote,
 li.type-product, /* woo */
 td.product-quantity,
 th.product-quantity,
@@ -619,16 +620,9 @@ th.product-subtotal /* , td.product-remove, th.product-remove */ {
 .blocks > .quote,
 .quads > div,
 .quads > .quote,
-.vol a div,
 ul.products li.product-category, /* woo */
 ul.products li.product-category h2 /* woo */ {
   display: inline;
-}
-.vol a div {
-  float: left;
-}
-ul.product /* woo */ {
-  text-align: center;
 }
 
 /* 5 TAG */
@@ -1035,6 +1029,15 @@ nav ul li .blue {
 
 /* 9 -woocommerce */
 
+.woo-currency {
+}
+.woo-title {
+  padding: 0.5em 1em 0 1em;
+  text-align: center;
+}
+ul.product /* woo */ {
+  text-align: center;
+}
 li.has-post-thumbnail {
   display: grid;
 }
@@ -1048,14 +1051,6 @@ li.has-post-thumbnail div img {
   max-width: 100%;
   width: auto;
   margin: auto auto 0;
-}
-
-.woo-currency {
-
-}
-.woo-title {
-  padding: 0.5em 1em 0 1em;
-  text-align: center;
 }
 
 a.checkout-button {
