@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 57. */
+/* Revision 58. */
 
 /* - reset */
 
@@ -1182,7 +1182,7 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
 
   body{
     font-size: 1.4rem;
-    font-size: calc(14px + (4 * ((100vw - 972px) / 524)));
+    font-size: calc(14px + (4 * ((100vw - 972px) / 468)));
   }
 
 }
@@ -1243,7 +1243,7 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
 
   body {
     font-size: 1.8rem;
-    font-size: calc(18rem + (0.5 * ((100vw - 320px) / 400)));
+    font-size: calc(1.8rem + (0.5 * ((100vw - 320px) / 400)));
   }
   h1 {
     font-size: 2.4em;
