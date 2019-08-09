@@ -8,6 +8,8 @@
  Version:      1.2.1
 */
 
+/* Revision 53. */
+
 /* - reset */
 
 /* 1 type
@@ -182,7 +184,9 @@ h6,
   font-size: calc( 7em / 9 );
 }
 
-.text-center {
+.text-center,
+.woo-title, /* woo */
+ul.products /* woo */ {
   text-align: center;
 }
 td, th,
@@ -1029,15 +1033,6 @@ nav ul li .blue {
 
 /* 9 -woocommerce */
 
-.woo-currency {
-}
-.woo-title {
-  padding: 0.5em 1em 0 1em;
-  text-align: center;
-}
-ul.product /* woo */ {
-  text-align: center;
-}
 li.has-post-thumbnail {
   display: grid;
 }
@@ -1051,6 +1046,11 @@ li.has-post-thumbnail div img {
   max-width: 100%;
   width: auto;
   margin: auto auto 0;
+}
+.woo-currency {
+}
+.woo-title {
+  padding: 0.5em 1em 0 1em;
 }
 
 a.checkout-button {
