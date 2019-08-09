@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 53. */
+/* Revision 54. */
 
 /* - reset */
 
@@ -1178,10 +1178,11 @@ and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2) { } */
 
 /* Tablet */
-@media screen and ( max-width: 1295px ) {
+@media screen and ( max-width: 1440px ) {
 
-  h1 {
-    font-size: calc( 4em + ( 2 * ( ( 100vw - 972px ) / 524 ) ) );
+  body{
+    font-size: 1.6rem;
+    font-size: calc( 16px + ( 2 * ( ( 100vw - 972px ) / 524 ) ) );
   }
 
 }
@@ -1206,15 +1207,12 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
 
   /* fonts */
 
-  h1 {
-    font-size: calc( 3em + ( 1 * ( ( 100vw - 640px ) / 332 ) ) );
+  body {
+    font-size: 1.4rem;
+    font-size: calc( 14px + ( 2 * ( ( 100vw - 640px ) / 332 ) ) );
   }
-  h2 {
+  /* h2 {
     font-size: calc( 1.5em + ( 0.5 * ( ( 100vw - 640px ) / 332 ) ) )
-  }
-  h3 {
-    font-size: calc( 4em / 3 );
-    padding: 0.085em 0;
   }
   nav,
   .navigation {
@@ -1227,7 +1225,7 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
   }
   textarea {
     height: 6em;
-  }
+  } */
 
   /* grid */
 
@@ -1237,7 +1235,37 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
   header,
   footer {
     width: 100%;
-    max-width: 640px;
+    max-width: 720px;
+  }
+}
+
+/* Break after @1x, before @2x. */
+@media screen and ( max-width: 639px ) {
+
+  body {
+    font-size: 1.8rem;
+    font-size: calc( 18px + ( 6 * ( ( 100vw - 320px ) / 320 ) ) );
+    }
+  }
+  h1 {
+    font-size: 2.4em;
+    font-size: calc( 36px + ( 12 * ( ( 100vw - 320px ) / 320 ) ) );
+    }
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: calc( 4em / 3 );
+    padding: 0.085em 0;
+  }
+  input,
+  button,
+  select {
+    height: calc( 2em + ( 0.5 * ( ( 100vw - 320px ) / 320 ) ) );
+  }
+  textarea {
+    height: 5em;
   }
 
   div.profile {
@@ -1308,29 +1336,12 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
   }
 }
 
-/* Break after @1x, before @2x. */
-@media screen and ( max-width: 639px ) {
-
-  h1 {
-    font-size: calc( 2em + ( 1 * ( ( 100vw - 320px ) / 320 ) ) );
-  }
-  h2 {
-    font-size: 1.5em;
-  }
-  input,
-  button,
-  select {
-    height: calc( 2em + ( 0.5 * ( ( 100vw - 320px ) / 320 ) ) );
-  }
-  textarea {
-    height: 5em;
-  }
-
-}
-
 /* @1x. */
 @media screen and ( max-width: 320px ) {
 
+  body {
+    font-size: 1.8rem;
+  }
   h1 {
     font-size: 2em;
   }
