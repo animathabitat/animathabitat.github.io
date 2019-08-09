@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 55. */
+/* Revision 565. */
 
 /* - reset */
 
@@ -1182,7 +1182,7 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
 
   body{
     font-size: 1.4rem;
-    font-size: calc( 14px + 4 * ( (100vw - 972px ) / 524 ) );
+    font-size: calc(14px + (4 * ((100vw - 972px) / 524)));
   }
 
 }
@@ -1209,7 +1209,6 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
 
   body {
     font-size: 1.4rem;
-    font-size: calc( 14px + 2 * ( ( 100vw - 640px ) / 332 ) );
   }
   /* h2 {
     font-size: calc( 1.5em + ( 0.5 * ( ( 100vw - 640px ) / 332 ) ) )
@@ -1244,11 +1243,11 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
 
   body {
     font-size: 1.8rem;
-    font-size: calc( 18px + ( 6 * ( ( 100vw - 320px ) / 400 ) ) );
+    font-size: calc(18rem + (0.5 * ((100vw - 320px) / 400)));
   }
   h1 {
     font-size: 2.4em;
-    font-size: calc( 36px + ( 12 * ( ( 100vw - 320px ) / 400 ) ) );
+    font-size: calc(2em + (1 * ((100vw - 320px) / 400)));
   }
   h2 {
     font-size: 1.5em;
@@ -1260,7 +1259,7 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
   input,
   button,
   select {
-    height: calc( 2em + ( 0.5 * ( ( 100vw - 320px ) / 400 ) ) );
+    height: calc(2em + (0.5 * ((100vw - 320px) / 400)));
   }
   textarea {
     height: 5em;
