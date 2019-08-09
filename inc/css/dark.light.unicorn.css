@@ -5,7 +5,7 @@
  Author:       Dane Aleksander
  Author URI:   https://danealeksander.github.io/
  Template:     twentythirteen
- Version:      1.2.0
+ Version:      1.2.1
 */
 
 /* - reset */
@@ -211,11 +211,11 @@ h4 {
 .lettermark {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-     -moz-transform: perspective(1px) translateZ(0);
-      -ms-transform: perspective(1px) translateZ(0);
-       -o-transform: perspective(1px) translateZ(0);
-          transform: perspective(1px) translateZ(0);
+  -webkit-transform: perspective(0.02em) translateZ(0);
+     -moz-transform: perspective(0.02em) translateZ(0);
+      -ms-transform: perspective(0.02em) translateZ(0);
+       -o-transform: perspective(0.02em) translateZ(0);
+          transform: perspective(0.02em) translateZ(0);
   position: relative;
   overflow: hidden;
 }
@@ -288,7 +288,8 @@ body {
   width: 100%;
 }
 section {
-  width: 72em;
+  width: 80em;
+  z-index: 1;
 }
 nav {
   position: fixed;
@@ -298,7 +299,7 @@ nav {
 }
 nav ul {
   display: block;
-  width: 40.5em;
+  width: 45em;
   height: auto;
   margin: 0 auto;
   position: relative;
@@ -308,7 +309,11 @@ header,
 footer,
 nav ul.spread,
 section.single {
-  width: 54em;
+  width: 60em;
+}
+div.profile {
+  position: fixed;
+  width: 20em;
 }
 
 /* 2. 1 NAVIGATION */
@@ -390,9 +395,6 @@ nav ul li.btn.diagonal-up a:after {
 
 /* 2. 2 PAGE */
 
-section {
-  z-index: 1;
-}
 article {
   float: left;
   width: 75%;
@@ -401,26 +403,29 @@ aside {
   float: right;
   width: 25%;
 }
-.single article {
+.single article,
+input.format,
+select.format {
   width: 100%;
-}
-div,
-li.type-product /* woo */ {
-  padding: 1em;
-}
-blockquote, q,
-.quote {
-  padding: 3em;
-}
-div.hidden {
-  padding: 0;
 }
 pre.thin {
   width: auto;
 }
-input.format,
-select.format {
-  width: 100%;
+
+div,
+li.type-product /* woo */ {
+  padding: 1em;
+}
+div.hidden {
+  padding: 0;
+}
+div.profile img.profile {
+  margin-top: 3em;
+}
+
+blockquote, q,
+.quote {
+  padding: 3em;
 }
 
 /* 2. 3 INPUT */
@@ -510,15 +515,6 @@ div.logo img {
   width: auto;
 }
 
-/* 3. 2 PROFILE */
-div.profile {
-  position: fixed;
-  width: 18em;
-}
-div.profile img.profile {
-  margin-top: 3em;
-}
-
 /* 3. 3 BADGE */
 
 .apple, .google {
@@ -589,43 +585,50 @@ select,
 .full {
   width: 100%;
 }
-.half {
-  width: 50%;
-}
 .three-quarter {
   width: 75%;
 }
+.half,
+.dipty,
+.blocks > div,
+.blocks > .quote,
+.vol a div,
+td.product-name,
+th.product-name {
+  width: 50%;
+}
 .quarter,
-li.type-product /* woo */ {
+.polypty,
+.quads > div,
+.quads > .quote
+li.type-product, /* woo */
+td.product-quantity,
+th.product-quantity,
+td.product-subtotal,
+th.product-subtotal /* , td.product-remove, th.product-remove */ {
   width: 25%;
 }
 .two-third {
   width: calc( 200% / 3 );
 }
-.third {
+.third,
+.tripty {
   width: calc( 100% / 3 );
 }
 .blocks > div,
-.blocks > .quote /* woo */ {
-  display: inline;
-  width: 50%;
-}
+.blocks > .quote,
 .quads > div,
-.quads > .quote {
+.quads > .quote,
+.vol a div,
+ul.products li.product-category, /* woo */
+ul.products li.product-category h2 /* woo */ {
   display: inline;
-  width: 25%;
 }
 .vol a div {
-  display: inline;
   float: left;
-  width: 50%;
 }
-ul.products {
+ul.product /* woo */ {
   text-align: center;
-}
-ul.products li.product-category,
-ul.products li.product-category h2 {
-  display: inline;
 }
 
 /* 5 TAG */
@@ -1108,23 +1111,6 @@ table.cart tr th {
   padding: 0 1em;
 }
 
-td.product-name,
-th.product-name {
-  width: 50%;
-}
-td.product-quantity,
-th.product-quantity {
-  width: 25%;
-}
-td.product-subtotal,
-th.product-subtotal {
-  width: 25%;
-}
-/* td.product-remove,
-th.product-remove {
-  width: 25%;
-} */
-
 p#billing_first_name_field,
 p#billing_last_name_field,
 p#billing_city_field,
@@ -1225,9 +1211,6 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
 
   /* fonts */
 
-  body {
-    font-size: 2.4rem;
-  }
   h1 {
     font-size: calc( 3em + ( 1 * ( ( 100vw - 640px ) / 332 ) ) );
   }
@@ -1333,9 +1316,6 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
 /* Break after @1x, before @2x. */
 @media screen and ( max-width: 639px ) {
 
-  body {
-    font-size: calc( 18px + ( 6 * ( ( 100vw - 320px ) / 320 ) ) );
-  }
   h1 {
     font-size: calc( 2em + ( 1 * ( ( 100vw - 320px ) / 320 ) ) );
   }
@@ -1356,9 +1336,6 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
 /* @1x. */
 @media screen and ( max-width: 320px ) {
 
-  body {
-    font-size: 1.8rem;
-  }
   h1 {
     font-size: 2em;
   }
