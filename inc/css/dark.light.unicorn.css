@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 58. */
+/* Revision 59. */
 
 /* - reset */
 
@@ -1168,8 +1168,7 @@ p#order_comments_field textarea {
   width: 100%;
 }
 
-/* */
-/* 0 queries */
+/* 0 QUERIES */
 
 /* IPHONE-Retina */
 /* @media only screen
@@ -1177,21 +1176,22 @@ and (min-device-width: 320px)
 and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2) { } */
 
-/* Tablet */
-@media screen and ( max-width: 1440px ) {
+/* 0.1 High to Medium */
+@media screen
+and ( max-width: 1440px ) {
 
   body{
-    font-size: 1.4rem;
-    font-size: calc(14px + (4 * ((100vw - 972px) / 468)));
+    font-size: 1.2rem;
+    font-size: calc(12px + (6 * ((100vw - 720px) / 720)));
   }
 
 }
 
-/* Break after Mobile, before Tablet. */
-@media screen and ( max-width: 971px ) {
+/* 0.2 Medium to Low */
+@media screen
+and ( max-width: 719px ) {
 
-  /* hide */
-
+  /* 0.3.0 RESET */
   div.vol,
   .vol a,
   .vol div,
@@ -1205,49 +1205,13 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
     padding: 0;
   }
 
-  /* fonts */
-
-  body {
-    font-size: 1.4rem;
-  }
-  /* h2 {
-    font-size: calc( 1.5em + ( 0.5 * ( ( 100vw - 640px ) / 332 ) ) )
-  }
-  nav,
-  .navigation {
-    font-size: 1em;
-  }
-  input,
-  button,
-  select {
-    height: calc( 2.5em + ( 0.5 * ( ( 100vw - 640px ) / 332 ) ) );
-  }
-  textarea {
-    height: 6em;
-  } */
-
-  /* grid */
-
-  nav ul,
-  section,
-  section.single,
-  header,
-  footer {
-    width: 100%;
-    max-width: 720px;
-  }
-}
-
-/* Break after @1x, before @2x. */
-@media screen and ( max-width: 719px ) {
-
   body {
     font-size: 1.8rem;
-    font-size: calc(1.8rem + (0.5 * ((100vw - 320px) / 400)));
+    font-size: calc(1.8rem + (0.5 * ((100vw - 360px) / 400)));
   }
   h1 {
     font-size: 2.4em;
-    font-size: calc(2em + (1 * ((100vw - 320px) / 400)));
+    font-size: calc(2em + (1 * ((100vw - 360px) / 400)));
   }
   h2 {
     font-size: 1.5em;
@@ -1259,16 +1223,18 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
   input,
   button,
   select {
-    height: calc(2em + (0.5 * ((100vw - 320px) / 400)));
+    height: calc(2em + (0.5 * ((100vw - 360px) / 400)));
   }
   textarea {
-    height: 5em;
+    height: 6em;
   }
 
-  div.profile {
-    padding: 3em;
-    position: relative;
-    width: auto;
+  nav ul,
+  section,
+  section.single,
+  header,
+  footer {
+    max-width: 640px;
   }
 
   aside,
@@ -1303,6 +1269,12 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
     height: 15em;
   }
 
+
+  div.profile {
+    padding: 3em;
+    position: relative;
+    width: auto;
+  }
   div.profile img.profile {
     margin-top: 0;
   }
@@ -1319,8 +1291,7 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
   }
 
   /* */
-  /* 3.5 badges ***/
-
+  /* 3.5 badges */
   .apple img, .google img {
     height: 1.667em;
     margin: 0.5em 1em 0;
@@ -1333,8 +1304,9 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
   }
 }
 
-/* @1x. */
-@media screen and ( max-width: 320px ) {
+/* 0.4 LOW */
+@media screen
+and ( max-width: 360px ) {
 
   body {
     font-size: 1.8rem;
@@ -1352,9 +1324,16 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
   }
 
   nav ul {
-    max-width: 320px;
+    max-width: 360px;
   }
   nav ul .right {
     display: block;
+  }
+
+  section,
+  section.single,
+  header,
+  footer {
+    max-width: 320px;
   }
 }
