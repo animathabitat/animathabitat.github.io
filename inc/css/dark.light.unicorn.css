@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 61. */
+/* Revision 62. */
 
 /* - reset */
 
@@ -1182,7 +1182,7 @@ and ( max-width: 1440px ) {
 
   body{
     font-size: 1.4rem;
-    font-size: calc(1rem + (0.8 * ((100vw - 800px) / 640)));
+    font-size: calc(10px + (8 * ((100vw - 800px) / 640)));
   }
 }
 
@@ -1206,15 +1206,15 @@ and ( max-width: 800px ) {
 
   body {
     font-size: 1.8rem;
-    font-size: calc(1.4rem + (0.4 * ((100vw - 360px) / 420)));
+    font-size: calc(14px+ (4 * ((100vw - 360px) / 440)));
   }
   h1 {
     font-size: 3em;
-    font-size: calc(3em + (1 * ((100vw - 360px) / 420)));
+    font-size: calc(3em + (1 * ((100vw - 360px) / 440)));
   }
   h2 {
     font-size: 1.5em;
-    font-size: calc(1.5em + (0.5 * ((100vw - 360px) / 420)));
+    font-size: calc(1.5em + (0.5 * ((100vw - 360px) / 440)));
   }
   h3 {
     font-size: calc( 4em / 3 );
@@ -1223,7 +1223,7 @@ and ( max-width: 800px ) {
   input,
   button,
   select {
-    height: calc(2em + (0.5 * ((100vw - 360px) / 420)));
+    height: calc(2em + (0.5 * ((100vw - 360px) / 440)));
   }
   textarea {
     height: 6em;
