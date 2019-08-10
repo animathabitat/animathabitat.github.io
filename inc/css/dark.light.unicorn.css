@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 62. */
+/* Revision 63. */
 
 /* - reset */
 
@@ -1206,7 +1206,7 @@ and ( max-width: 800px ) {
 
   body {
     font-size: 1.8rem;
-    font-size: calc(14px+ (4 * ((100vw - 360px) / 440)));
+    font-size: calc(12px + (6 * ((100vw - 360px) / 440)));
   }
   h1 {
     font-size: 3em;
@@ -1312,7 +1312,7 @@ and ( max-width: 800px ) {
 and ( max-width: 360px ) {
 
   body {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   h1 {
     font-size: 2em;
