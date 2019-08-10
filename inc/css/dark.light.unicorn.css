@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 59. */
+/* Revision 60. */
 
 /* - reset */
 
@@ -1181,13 +1181,21 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
 and ( max-width: 1440px ) {
 
   body{
-    font-size: 1.2rem;
-    font-size: calc(12px + (6 * ((100vw - 720px) / 720)));
+    font-size: 1.4rem;
+    font-size: calc(14px + (4 * ((100vw - 960px) / 480)));
   }
-
 }
 
-/* 0.2 Medium to Low */
+/* 0.2 High to Medium */
+@media screen
+and ( max-width: 960px ) {
+
+  body{
+    font-size: 1.4rem;
+  }
+}
+
+/* 0.3 Medium to Low */
 @media screen
 and ( max-width: 719px ) {
 
@@ -1207,14 +1215,15 @@ and ( max-width: 719px ) {
 
   body {
     font-size: 1.8rem;
-    font-size: calc(1.8rem + (0.5 * ((100vw - 360px) / 400)));
+    font-size: calc(1.8rem + (0.5 * ((100vw - 360px) / 360)));
   }
   h1 {
-    font-size: 2.4em;
-    font-size: calc(2em + (1 * ((100vw - 360px) / 400)));
+    font-size: 3em;
+    font-size: calc(3em + (1 * ((100vw - 360px) / 360)));
   }
   h2 {
     font-size: 1.5em;
+    font-size: calc(1.5em + (0.5 * ((100vw - 360px) / 360)));
   }
   h3 {
     font-size: calc( 4em / 3 );
@@ -1223,18 +1232,21 @@ and ( max-width: 719px ) {
   input,
   button,
   select {
-    height: calc(2em + (0.5 * ((100vw - 360px) / 400)));
+    height: calc(2em + (0.5 * ((100vw - 360px) / 360)));
   }
   textarea {
     height: 6em;
   }
 
-  nav ul,
+  nav ul {
+    max-width: 720px;
+  }
+
   section,
   section.single,
   header,
   footer {
-    max-width: 640px;
+    max-width: 540px;
   }
 
   aside,
