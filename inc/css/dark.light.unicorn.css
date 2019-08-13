@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 64. */
+/* Revision 65. */
 
 /* - reset */
 
@@ -1226,7 +1226,6 @@ and ( max-width: 800px ) {
   }
 
   nav ul {
-    max-width: 800px;
     width: 100%;
   }
 
@@ -1234,7 +1233,8 @@ and ( max-width: 800px ) {
   section.single,
   header,
   footer {
-    max-width: 540px;
+    max-width: 600px;
+    width: calc(360px + (240 * ((100vw - 360px) / 440)));
   }
 
   aside,
