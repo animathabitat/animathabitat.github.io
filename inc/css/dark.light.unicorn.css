@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 63. */
+/* Revision 64. */
 
 /* - reset */
 
@@ -144,7 +144,8 @@ a.button,
   font-style: normal;
   font-weight: 200;
 }
-th {
+th,
+.title {
   text-transform: uppercase;
 }
 h6,
@@ -155,8 +156,10 @@ em, i {
 }
 h1 {
   font-size: 6em;
-  /* letter-spacing:.08em; */
   padding: 1.5em 0 0;
+}
+h1 .letterspace {
+  letter-spacing: 0.1em;
 }
 h2 {
   font-size: 2em;
@@ -164,7 +167,6 @@ h2 {
 }
 h3 {
   font-size: calc( 5em / 3 );
-  padding: 0.165em 0;
 }
 h4,
 button, input,
@@ -182,6 +184,21 @@ option {
 h6,
 .small {
   font-size: calc( 7em / 9 );
+}
+.trade {
+  font-size: calc( 1.15em / 3 );
+  vertical-align: calc( 4em / 3 );
+}
+p a,
+.navigation,
+.underscore {
+  text-decoration: underline;
+}
+.overscore {
+  text-decoration: overline;
+}
+.score {
+  text-decoration: line-through;
 }
 
 .text-center,
@@ -201,17 +218,7 @@ td, th,
   line-height: 0.25em;
   vertical-align: -0.5em;
 }
-h4 {
-  line-height: 1.5em;
-}
 
-.title {
-  text-transform: uppercase;
-}
-.trade {
-  font-size: calc( 1.15em / 3 );
-  vertical-align: calc( 4em / 3 );
-}
 .lettermark {
   display: inline-block;
   vertical-align: middle;
@@ -253,38 +260,6 @@ h4 {
   left: 0;
   right: 0;
 }
-.letterspace {
-  letter-spacing: 0.1em;
-}
-.letterhead,
-.cart-empty /* woo */ {
-  padding-top: 4.5em;
-}
-.linebreak {
-  padding-top: 1.5em;
-}
-p.linebreak,
-.return-to-shop /* woo */ {
-  padding-top: 1em;
-}
-.lineend {
-  padding-bottom: 1.5em;
-}
-p.lineend,
-.return-to-shop, .stock /* woo */ {
-  padding-bottom: 1em;
-}
-p a,
-.navigation,
-.underscore {
-  text-decoration: underline;
-}
-.overscore {
-  text-decoration: overline;
-}
-.score {
-  text-decoration: line-through;
-}
 
 /* 2 ARCHITECTURE */
 
@@ -322,13 +297,9 @@ div.profile {
 
 /* 2. 1 NAVIGATION */
 
-nav ul .thin {
-  text-transform: lowercase;
-}
 nav ul li {
   border-top: 0.27em solid;
   display: inline-block;
-  text-transform: uppercase;
 }
 nav ul li.crumb {
   float: left;
@@ -416,22 +387,6 @@ pre.thin {
   width: auto;
 }
 
-div,
-li.type-product /* woo */ {
-  padding: 1em;
-}
-div.hidden {
-  padding: 0;
-}
-div.profile img.profile {
-  margin-top: 3em;
-}
-
-blockquote, q,
-.quote {
-  padding: 3em;
-}
-
 /* 2. 3 INPUT */
 
 button,
@@ -487,7 +442,6 @@ input[type="reset"]:focus {
 }
 
 /* 3 MEDIA */
-
 .video {
   width: 100%;
   height: 30em; /* calc( ( 50vw - 3em ) / 1.78 ) */
@@ -540,20 +494,6 @@ div.logo img {
 
 /* 4 CLASS */
 
-.clear {
-  color: inherit;
-  padding: 0;
-  margin: 0;
-}
-.clear article {
-  position: static;
-}
-br.clear {
-  clear: both;
-}
-
-/* 4. 1 GUTTER */
-
 .center {
   display: block;
   margin: 0 auto;
@@ -569,6 +509,59 @@ li.type-product /* woo */ {
   display: inline;
   float: right;
 }
+
+.clear {
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+.clear article {
+  position: static;
+}
+br.clear {
+  clear: both;
+}
+
+/* 4. 1 GUTTER */
+
+div,
+li.type-product /* woo */ {
+  padding: 1em;
+}
+div.hidden {
+  padding: 0;
+}
+div.profile img.profile {
+  margin-top: 3em;
+}
+
+blockquote, q,
+.quote {
+  padding: 3em;
+}
+
+h3 {
+  padding: 0.165em 0;
+}
+.letterhead,
+.cart-empty /* woo */ {
+  padding-top: 4.5em;
+}
+.linebreak {
+  padding-top: 1.5em;
+}
+p.linebreak,
+.return-to-shop /* woo */ {
+  padding-top: 1em;
+}
+.lineend {
+  padding-bottom: 1.5em;
+}
+p.lineend,
+.return-to-shop, .stock /* woo */ {
+  padding-bottom: 1em;
+}
+
 select,
 .gutter,
 .gutter-side {
@@ -595,6 +588,7 @@ select,
 }
 .half,
 .dipty,
+.diptych > div,
 .blocks > div,
 .blocks > .quote,
 .vol a div,
@@ -604,6 +598,7 @@ th.product-name {
 }
 .quarter,
 .polypty,
+.polyptych > div,
 .quads > div,
 .quads > .quote,
 li.type-product, /* woo */
@@ -617,7 +612,8 @@ th.product-subtotal /* , td.product-remove, th.product-remove */ {
   width: calc( 200% / 3 );
 }
 .third,
-.tripty {
+.tripty,
+.triptych > div, {
   width: calc( 100% / 3 );
 }
 .blocks > div,
@@ -1231,6 +1227,7 @@ and ( max-width: 800px ) {
 
   nav ul {
     max-width: 800px;
+    width: 100%;
   }
 
   section,
@@ -1328,6 +1325,7 @@ and ( max-width: 360px ) {
 
   nav ul {
     max-width: 360px;
+    width: 100%;
   }
   nav ul .right {
     display: block;
