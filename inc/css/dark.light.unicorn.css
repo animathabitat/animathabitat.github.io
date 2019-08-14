@@ -217,6 +217,9 @@ em, i {
     .title {
       text-transform: uppercase;
     }
+    nav ul .thin {
+      text-transform: lowercase;
+    }
     p a,
     .navigation,
     .underscore {
