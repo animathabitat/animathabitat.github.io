@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 68. */
+/* Revision 71. */
 
 /* - reset */
 
@@ -1186,39 +1186,20 @@ and ( max-width: 1440px ) {
   }
 }
 
-/* IPAD - PORTRAIT */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
-
-}
-
-/* IPAD - LANDSCAPRE */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape) {
-
-}
-
-/* IPAD 1, 2, MINI */
+/* IPAD 1, 2, MINI ... */
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (-webkit-min-device-pixel-ratio: 1)
-and (orientation : portrait) {
-
-  body{
-    font-size: 1.8rem;
-  }
+and (orientation : landscape) {
 }
 
 /* IPAD 3, 4 */
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
-and (-webkit-min-device-pixel-ratio: 2) {
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation : landscape) {
 
 }
 
@@ -1227,37 +1208,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 and (min-device-width : 375px)
 and (max-device-width : 812px)
 and (-webkit-device-pixel-ratio : 3)
-/* and (orientation : portrait) */
-/* and (orientation : landscape) */ {
-
-}
-
-
-/* IPHONE 6+, 7+, 8+ */
-@media only screen
-and (min-device-width : 414px)
-and (max-device-width : 736px) {
-
-}
-
-/* IPHONE 6, 7, 8 */
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px) {
-
-}
-
-/* IPHONE 5, 5S */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 568px) {
-
-}
-
-/* IPHONE 4S */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
+and (orientation : landscape) {
 
 }
 
@@ -1379,6 +1330,64 @@ and ( max-width: 800px ) {
   .google img {
     width: 4em;
   }
+}
+
+/* IPAD 1, 2, MINI ... */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1)
+and (orientation : portrait) {
+
+  body{
+    font-size: 2.4rem;
+  }
+}
+
+/* IPAD 3, 4 */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation : portrait) {
+
+}
+
+/* IPHONE X */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+
+}
+
+/* IPHONE 6+, 7+, 8+ */
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+
+}
+
+/* IPHONE 6, 7, 8 */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+
+}
+
+/* IPHONE 5, 5S */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+
+}
+
+/* IPHONE 4S */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
 }
 
 /* 0.4 LOW */
