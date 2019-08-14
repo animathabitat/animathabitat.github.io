@@ -1234,19 +1234,7 @@ and ( max-width: 800px ) {
   }
 
   nav ul,
-  nav ul.spread {
-    font-size: 2em;
-    width: 100%;
-  }
-
-  section,
-  section.single,
-  header,
-  footer {
-    max-width: 600px;
-    width: calc(360px + (240 * ((100vw - 360px) / 440)));
-  }
-
+  nav ul.spread,
   aside,
   article,
   .blocks > div,
@@ -1257,12 +1245,21 @@ and ( max-width: 800px ) {
     min-width: 100%;
     width: 100%;
   }
-  .quote {
-    padding: 1.5em;
-  }
   .quarter,
   li.type-product /* woo */ {
     width: 50%;
+  }
+
+  section,
+  section.single,
+  header,
+  footer {
+    max-width: 600px;
+    width: calc(360px + (240 * ((100vw - 360px) / 440)));
+  }
+
+  .quote {
+    padding: 1.5em;
   }
 
   /* */
