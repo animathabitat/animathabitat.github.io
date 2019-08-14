@@ -178,10 +178,7 @@ em, i {
   button, input,
   nav,
   .navigation,
-  textarea {
-    font-size: calc(4em / 3);
-    line-height: calc(4em / 3);
-  }
+  textarea,
   p#billing_country_field select,
   p#billing_state_field select,
   p#shipping_country_field select,
@@ -189,7 +186,6 @@ em, i {
   p#order_comments_field textarea,
   a.checkout-button {
     font-size: calc(4em / 3);
-    line-height: 1em;
   }
   h5,
   select,
@@ -1188,6 +1184,81 @@ and ( max-width: 1440px ) {
     font-size: 1.4rem;
     font-size: calc(10px + (8 * ((100vw - 800px) / 640)));
   }
+}
+
+/* IPAD - PORTRAIT */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+}
+
+/* IPAD - LANDSCAPRE */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+
+}
+
+/* IPAD 1, 2, MINI */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1)
+and (orientation : portrait) {
+
+  body{
+    font-size: 1.8rem;
+  }
+}
+
+/* IPAD 3, 4 */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* IPHONE X */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+/* and (orientation : portrait) */
+/* and (orientation : landscape) */ {
+
+}
+
+
+/* IPHONE 6+, 7+, 8+ */
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+
+}
+
+/* IPHONE 6, 7, 8 */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+
+}
+
+/* IPHONE 5, 5S */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+
+}
+
+/* IPHONE 4S */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
 }
 
 /* 0.3 Medium to Low */
