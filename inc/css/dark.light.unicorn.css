@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 71. */
+/* Revision 72. */
 
 /* - reset */
 
@@ -169,7 +169,6 @@ em, i {
   }
   h2 {
     font-size: 2em;
-    line-height: 1.5em;
   }
   h3 {
     font-size: calc(5em / 3);
@@ -1190,7 +1189,6 @@ and ( max-width: 1440px ) {
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
-and (-webkit-min-device-pixel-ratio: 1)
 and (orientation : landscape) {
 }
 
@@ -1226,7 +1224,6 @@ and ( max-width: 800px ) {
     display: none;
     visibility: hidden;
     height: 0;
-    line-height: 0;
     padding: 0;
   }
 
@@ -1336,7 +1333,6 @@ and ( max-width: 800px ) {
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
-and (-webkit-min-device-pixel-ratio: 1)
 and (orientation : portrait) {
 
   body{
