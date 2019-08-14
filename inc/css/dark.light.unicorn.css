@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 66. */
+/* Revision 68. */
 
 /* - reset */
 
@@ -289,7 +289,8 @@ em, i {
       .text-left {
         text-align: left;
       }
-      .text-right {
+      .text-right,
+      .navigation a[rel="next"] /* wordpress */ {
         text-align: right;
       }
 
@@ -348,14 +349,6 @@ textarea {
   nav ul li {
     border-top: 0.27em solid;
     display: inline-block;
-  }
-  nav ul li.crumb,
-  .navigation a[rel="prev"] /* wordpress */ {
-    float: left;
-  }
-  .navigation a[rel="next"] /* wordpress */ {
-    float: right;
-    text-align: right;
   }
   nav ul li.thin {
     border-top: 0;
@@ -423,22 +416,33 @@ textarea {
 
     /* 2. 2 PAGE */
 
-    article {
+    article,
+    .left,
+    .vol a div,
+    div.logo,
+    nav ul li.crumb,
+    .navigation a[rel="prev"], /* wordpress */
+    li.type-product, /* woo */
+    input[type="checkbox"].input-checkbox,
+    input[type="radio"].input-radio {
       float: left;
-      width: 75%;
     }
-    aside {
+    aside,
+    .right,
+    .apple, .google,
+    .apple img, .google img,
+    .navigation a[rel="next"] /* wordpress */ {
       float: right;
-      width: 25%;
     }
-    .single article,
-    input.format,
-    select.format {
-      width: 100%;
-    }
-    .auto,
-    pre.thin {
-      width: auto;
+
+    .left, .right,
+    .vol a div,
+    .apple, .google,
+    .apple img, .google img,
+    li.type-product, /* woo */
+    input[type="checkbox"].input-checkbox,
+    input[type="radio"].input-radio {
+      display: inline;
     }
 
       /* 2. 3 INPUT */
@@ -480,16 +484,6 @@ textarea {
   margin: 0 auto;
   position: relative;
 }
-.left,
-.vol a div,
-li.type-product /* woo */ {
-  display: inline;
-  float: left;
-}
-.right {
-  display: inline;
-  float: right;
-}
 
 .clear {
   color: inherit;
@@ -505,9 +499,7 @@ br.clear {
 
   /* 3. 1 GRID */
 
-  .full {
-    width: 100%;
-  }
+  article,
   .three-quarter {
     width: 75%;
   }
@@ -521,6 +513,7 @@ br.clear {
   th.product-name {
     width: 50%;
   }
+  aside,
   .quarter,
   .polypty,
   .polyptych > div,
@@ -540,6 +533,16 @@ br.clear {
   .tripty,
   .triptych > div, {
     width: calc(100% / 3);
+  }
+  .full,
+  .single article,
+  input.format,
+  select.format {
+    width: 100%;
+  }
+  .auto,
+  pre.thin {
+    width: auto;
   }
   .blocks > div,
   .blocks > .quote,
@@ -650,8 +653,6 @@ br.clear {
 
       input[type="checkbox"].input-checkbox,
       input[type="radio"].input-radio {
-        display: inline;
-        float: left;
         margin: 0 0.5em 0 0;
         height: 1em;
         width: 1em;
@@ -691,9 +692,43 @@ br.clear {
       p#shipping_first_name_field,
       p#shipping_last_name_field,
       p#shipping_city_field,
-      p#shipping_postcode_field {
+      p#shipping_postcode_field,
+      p#billing_address_1_field,
+      p#shipping_address_1_field,
+      p#billing_company_field,
+      p#shipping_company_field,
+      p#billing_email_field,
+      p#billing_address_2_field,
+      p#shipping_address_2_field,
+      p#order_comments_field,
+      p#account_password_field,
+      p#billing_country_field,
+      p#billing_state_field,
+      p#shipping_country_field,
+      p#shipping_state_field {
         display: inline;
         float: left;
+      }
+      p#billing_country_field,
+      p#billing_state_field,
+      p#shipping_country_field,
+      p#shipping_state_field {
+        display: inline-block;
+      }
+
+      p#billing_first_name_field,
+      p#billing_last_name_field,
+      p#billing_city_field,
+      p#billing_postcode_field,
+      p#billing_phone_field,
+      p#shipping_first_name_field,
+      p#shipping_last_name_field,
+      p#shipping_city_field,
+      p#shipping_postcode_field,
+      p#billing_country_field,
+      p#billing_state_field,
+      p#shipping_country_field,
+      p#shipping_state_field {
         padding: 1em 1em 0 0;
         width: 50%;
       }
@@ -701,39 +736,19 @@ br.clear {
       p#shipping_address_1_field,
       p#billing_company_field,
       p#shipping_company_field,
-      p#billing_email_field {
-        display: inline;
-        float: left;
-        padding: 1em 1em 0 0;
-        width: 100%;
-      }
+      p#billing_email_field,
       p#billing_address_2_field,
       p#shipping_address_2_field {
-        display: inline;
-        float: left;
         padding: 1em 1em 0 0;
         width: 100%;
       }
       p#order_comments_field {
-        display: inline;
-        float: left;
         padding: 0 1em 0 0;
         width: 100%;
       }
       p#account_password_field {
-        display: inline;
-        float: left;
         padding: 0 0 3em 0;
         width: 100%;
-      }
-      p#billing_country_field,
-      p#billing_state_field,
-      p#shipping_country_field,
-      p#shipping_state_field {
-        display: inline-block;
-        float: left;
-        padding: 1em 1em 0 0;
-        width: 50%;
       }
       p#billing_country_field select,
       p#billing_state_field select,
@@ -753,7 +768,6 @@ br.clear {
     height: 1em;
   }
   div.logo {
-    float: left;
     height: 9em;
     padding: 0;
   }
@@ -779,13 +793,7 @@ br.clear {
 
       /* 5. 3 BADGE */
 
-      .apple, .google {
-        display: inline;
-        float: right;
-      }
       .apple img, .google img {
-        display: inline;
-        float: right;
         height: 2em;
         margin: 1.5em 1.5em 0;
       }
@@ -1225,7 +1233,9 @@ and ( max-width: 800px ) {
     height: 6em;
   }
 
-  nav ul {
+  nav ul,
+  nav ul.spread {
+    font-size: 2em;
     width: 100%;
   }
 
@@ -1283,7 +1293,6 @@ and ( max-width: 800px ) {
   /* 3.4 logos ***/
 
   div.logo {
-    float: left;
     height: 6em;
   }
   div.logo img {
@@ -1323,7 +1332,8 @@ and ( max-width: 360px ) {
     height: 4em;
   }
 
-  nav ul {
+  nav ul,
+  nav ul.spread {
     width: 100%;
   }
   nav ul .right {
