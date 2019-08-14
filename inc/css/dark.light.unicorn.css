@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 75. */
+/* Revision 76. */
 
 /* - reset */
 
@@ -1277,6 +1277,7 @@ and ( max-width: 800px ) {
   .blocks > div,
   .blocks > .quote,
   .half,
+  .three-quarter,
   .two-third,
   .third {
     min-width: 100%;
@@ -1291,8 +1292,8 @@ and ( max-width: 800px ) {
   section.single,
   header,
   footer {
-    max-width: 600px;
-    width: calc(360px + (240 * ((100vw - 360px) / 440)));
+    max-width: 720px;
+    width: calc(360px + (360 * ((100vw - 360px) / 440)));
   }
 
   .quote {
@@ -1355,16 +1356,6 @@ and (orientation : portrait) {
 
   body{
     font-size: 2.4rem;
-  }
-
-  nav ul,
-  nav ul.spread,
-  section,
-  section.single,
-  header,
-  footer {
-    max-width: 768px;
-    width: 100%;
   }
 }
 
