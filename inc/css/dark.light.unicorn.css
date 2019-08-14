@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 73. */
+/* Revision 74. */
 
 /* - reset */
 
@@ -1192,15 +1192,19 @@ and (max-device-width : 1024px)
 and (orientation : landscape) {
 
   body{
-    font-size: 1.8rem;
+    font-size: 2.4rem;
   }
 
   nav ul,
+  section.single,
+  footer {
+    max-width: 768px;
+    width: 75%;
+  }
+
   nav ul.spread,
   section,
-  section.single,
-  header,
-  footer {
+  header {
     max-width: 1024px;
     width: 100%;
   }
