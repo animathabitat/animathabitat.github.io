@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 74. */
+/* Revision 75. */
 
 /* - reset */
 
@@ -1355,6 +1355,16 @@ and (orientation : portrait) {
 
   body{
     font-size: 2.4rem;
+  }
+
+  nav ul,
+  nav ul.spread,
+  section,
+  section.single,
+  header,
+  footer {
+    max-width: 768px;
+    width: 100%;
   }
 }
 
