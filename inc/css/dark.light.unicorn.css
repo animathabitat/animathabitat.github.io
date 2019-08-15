@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 77. */
+/* Revision 78. */
 
 /* - reset */
 
@@ -216,7 +216,7 @@ em, i {
       text-transform: lowercase;
     }
     p a,
-    .navigation,
+    .navigation a,
     .underscore {
       text-decoration: underline;
     }
@@ -592,7 +592,7 @@ br.clear {
     .gutter,
     .gutter-side,
     .nav-links /* wordpress */ {
-      padding: 0 1em;
+      padding: 0 1.5em 1.5em;
     }
     .gutter-tobo {
       padding: 1em 0;
@@ -602,11 +602,11 @@ br.clear {
       padding-bottom: 0;
     }
     .gutter-ref {
-      padding: 0 4em 1em;
+      padding: 0 3em 1em;
     }
 
     .navigation /* wordpress */ {
-      margin: 2em auto;
+      margin: 1.5em auto;
       width: 100%;
     }
 
