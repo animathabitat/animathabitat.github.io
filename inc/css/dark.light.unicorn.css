@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 78. */
+/* Revision 79. */
 
 /* - reset */
 
@@ -526,7 +526,7 @@ br.clear {
   }
   .third,
   .tripty,
-  .triptych > div, {
+  .triptych > div {
     width: calc(100% / 3);
   }
   .full,
