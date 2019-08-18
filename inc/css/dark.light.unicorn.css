@@ -590,7 +590,9 @@ br.clear {
 
     select,
     .gutter,
-    .gutter-side,
+    .gutter-side {
+      padding: 0 1.5em;
+    }
     .nav-links /* wordpress */ {
       padding: 0 1.5em 1.5em;
     }
