@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 81. */
+/* Revision 79. */
 
 /* - reset */
 
@@ -131,9 +131,6 @@ body {
 }
 form, button, input, label, option, select, textarea {
   font-family: inherit;
-}
-option {
-  font-family:'Oswald' !important;
 }
 h1, h4,
 b, strong,
