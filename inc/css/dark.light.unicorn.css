@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 83. */
+/* Revision 84. */
 
 /* - reset */
 
@@ -577,6 +577,7 @@ br.clear {
       padding-top: 1.5em;
     }
     p.linebreak,
+    li.linebreak,
     .return-to-shop /* woo */ {
       padding-top: 1em;
     }
@@ -584,6 +585,7 @@ br.clear {
       padding-bottom: 1.5em;
     }
     p.lineend,
+    li.lineend,
     .return-to-shop, .stock /* woo */ {
       padding-bottom: 1em;
     }
