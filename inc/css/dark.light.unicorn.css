@@ -8,7 +8,7 @@
  Version:      1.2.1
 */
 
-/* Revision 84. */
+/* Revision 85. */
 
 /* - reset */
 
@@ -813,7 +813,7 @@ font.clear {
   color: #BABABA;
 }
 .trim {
-  border: #222222 thin solid;
+  border: #DADADA thin solid;
 }
 li.has-post-thumbnail img,
 .wp-post-image {
@@ -901,9 +901,6 @@ nav ul li.dark {
 body#light,
 #light font.clear {
   color: #222222;
-}
-#light .trim {
-  border: #FAFAFA thin solid;
 }
 #light .wp-post-image {
   border: #222222 thin solid;
