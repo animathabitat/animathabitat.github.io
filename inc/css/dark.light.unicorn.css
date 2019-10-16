@@ -42,7 +42,7 @@
   padding: 0;
 }
 html,
-.issue a {
+.scene a {
   cursor: default;
 }
 article, aside, footer, header, nav, section,
@@ -883,12 +883,12 @@ div.zero:hover, div.dark:hover {
   border: #474747 thin solid;
 }
 #dark li.btn a:hover,
-#dark nav .page li.issue em {
+#dark nav .page li.scene em {
   color: #333333 !important;
 }
 #dark li.btn a:after,
 #dark .home li.logo,
-#dark .page li.issue {
+#dark .page li.scene {
   background: #FCFCFC;
 }
 nav ul li.dark {
@@ -1030,11 +1030,11 @@ nav ul li.light {
     border: #393428 thin solid;
   }
   #one li.btn a:hover,
-  #one nav .page li.issue em {
+  #one nav .page li.scene em {
     color: #222222 !important;
   }
   #one li.btn a:after,
-  #one .page li.issue a {
+  #one .page li.scene a {
     background: #FFCF60;
   }
   nav ul li.one {
