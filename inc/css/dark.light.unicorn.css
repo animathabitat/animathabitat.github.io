@@ -204,6 +204,9 @@ em, i {
     line-height: 0.25em;
     vertical-align: -0.5em;
   }
+  sup {
+    line-height: 0.75em;
+  }
 
     /* 1. 2 DECO */
 
