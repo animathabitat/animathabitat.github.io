@@ -855,7 +855,7 @@ a.white:hover,
 li.dark a:hover {
   color: #CACACA;
 }
-html #dark,
+#dark,
 #dark nav,
 #dark article,
 #dark aside,
@@ -902,7 +902,7 @@ nav ul li.dark {
 }
 
 body#light,
-#light font.clear {
+body#light font.clear {
   color: #222222;
 }
 #light .wp-post-image {
@@ -935,7 +935,7 @@ a.light:hover,
 a:hover .light {
   color: #2A2A2A;
 }
-html #light,
+#light,
 #light nav,
 #light article,
 #light aside,
@@ -1004,7 +1004,7 @@ nav ul li.light {
   a:hover .one {
     color: #C8A450;
   }
-  html #one,
+  #one,
   #one nav,
   #one article,
   #one aside,
@@ -1079,7 +1079,7 @@ nav ul li.light {
     a:hover .aqua {
       color: #08d4bf;
     }
-    html #aqua,
+    #aqua,
     #aqua nav,
     #aqua article,
     #aqua aside,
@@ -1134,7 +1134,7 @@ nav ul li.light {
       a:hover .blue {
         color: #0898D4;
       }
-      html #blue,
+      #blue,
       #blue nav,
       #blue article,
       #blue aside,
