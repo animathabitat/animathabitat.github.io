@@ -1012,6 +1012,7 @@ li.scene-one a:hover {
   background: #222222;
 }
 div#scene-one,
+div#scene-one aside,
 #scene-one div.color,
 #scene-one aside.color {
   background: #393428;
