@@ -1054,60 +1054,74 @@ nav ul li.scene-one {
 #scene-one:: -webkit-scrollbar-track { background: #222222; }
 #scene-one:: -webkit-scrollbar-thumb { background: #FFCF60; }
 
-/* 6.2 AQUA rgb(0,255,228) */
+/* 6.2 TWO / AQUA rgb(0,255,228) */
 
-#aqua a.color,
-#aqua .navigation a,
-#aqua h1,
-#aqua h3,
-#aqua h2.color,
-#aqua h4.color,
-#aqua font.color,
-.aqua,
-.lettermark.aqua:hover,
-li.aqua a:active,
-li.aqua a:hover,
-li.aqua a em,
+#scene-two nav em,
+#scene-two a.color,
+#scene-two .navigation a,
+#scene-two h1,
+#scene-two h3,
+#scene-two h2.color,
+#scene-two h4.color,
+#scene-two font.color,
+.scene-two,
+.lettermark.scene-two:hover,
+li.scene-two a:active,
 .new {
   color: #00ffe4;
 }
-#aqua a.color:hover,
-#aqua a:hover .color,
-#aqua .navigation a:hover,
-a.aqua:hover,
-a:hover .aqua {
+#scene-two a.color:hover,
+#scene-two a:hover .color,
+#scene-two .navigation a:hover,
+a.scene-two:hover,
+a:hover .scene-two,
+li.scene-two a:hover {
   color: #08d4bf;
 }
-#aqua,
-#aqua nav,
-#aqua article,
-#aqua aside,
-#aqua .color div.color {
+#scene-two,
+#scene-two nav,
+#scene-two article,
+#scene-two aside,
+#scene-two .color div.color {
   background: #2a2a2a;
 }
-#aqua div.color,
-#aqua aside.color {
+#scene-two div.color,
+#scene-two aside.color {
   background: #22554f;
 }
-#aqua button,
-#aqua #soci a img,
-#aqua a:hover > div.color,
-div.aqua {
+#scene-two button,
+#scene-two #soci a img,
+#scene-two a:hover > div.color,
+div.scene-two,
+.color-two {
   background: #197f74;
 }
-#aqua button:hover,
-div.aqua:hover {
+#scene-two button:hover,
+div.scene-two:hover {
   background: #11aa9a;
 }
 
-#aqua pre.thin {
-  border: #403E39 thin solid;
+#scene-two pre.thin {
+  border: #403e39 thin solid;
 }
-nav ul li .aqua {
-  border-color: #00FFE4;
+#scene-two li.btn a:hover,
+#scene-two nav .page li.scene em {
+  color: #2a2a2a !important;
 }
-.lettermark.aqua:before {
+#scene-two li.btn a:after,
+#scene-two .page li.scene a {
+  background: #00ffe4;
+}
+nav ul li .scene-two {
+  border-color: #00ffe4;
+}
+.lettermark.scene-two:before {
   background: #08d4bf;
+}
+#scene-two .scene-two .fr,
+#scene-two h2.color .fr,
+#scene-two h4.color .fr {
+  color: #11aa9a;
 }
 
 /* 6.3 BLUE rgb(0,180,255) */
@@ -1165,9 +1179,9 @@ nav ul li .blue {
   background: #0898D4;
 }
 
-#aqua:: -webkit-scrollbar-track,
+#scene-two:: -webkit-scrollbar-track,
 #blue:: -webkit-scrollbar-track { background: #2A2A2A; }
-#aqua:: -webkit-scrollbar-thumb { background: #00FFE4; }
+#scene-two:: -webkit-scrollbar-thumb { background: #00FFE4; }
 #blue:: -webkit-scrollbar-thumb { background: #00B4FF; }
 
 /* 0 QUERIES */
