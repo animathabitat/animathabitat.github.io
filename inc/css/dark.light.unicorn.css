@@ -1054,7 +1054,7 @@ nav ul li.scene-one {
 #scene-one:: -webkit-scrollbar-track { background: #222222; }
 #scene-one:: -webkit-scrollbar-thumb { background: #FFCF60; }
 
-/* 6.2 TWO / AQUA rgb(0,255,228) */
+/* 6.2 TWO rgb(0,255,228) */
 
 #scene-two nav em,
 #scene-two a.color,
@@ -1068,7 +1068,7 @@ nav ul li.scene-one {
 .lettermark.scene-two:hover,
 li.scene-two a:active,
 .new {
-  color: #00ffe4;
+  color: #edf2e0; /* Dunn-Edwards Snowy Evergreen / 2261 */
 }
 #scene-two a.color:hover,
 #scene-two a:hover .color,
@@ -1076,7 +1076,7 @@ li.scene-two a:active,
 a.scene-two:hover,
 a:hover .scene-two,
 li.scene-two a:hover {
-  color: #08d4bf;
+  color: #c1c5b7;
 }
 #scene-two,
 #scene-two nav,
@@ -1087,22 +1087,22 @@ li.scene-two a:hover {
 }
 #scene-two div.color,
 #scene-two aside.color {
-  background: #22554f;
+  background: #53665a; /* Dunn-Edwards Deep in the Jungle / 207 */
 }
 #scene-two button,
 #scene-two #soci a img,
 #scene-two a:hover > div.color,
 div.scene-two,
 .color-two {
-  background: #197f74;
+  background: #89968e; /* Asian Paints Light Grey / 6118 */
 }
 #scene-two button:hover,
 div.scene-two:hover {
-  background: #11aa9a;
+  background: #a5afa9;
 }
 
 #scene-two pre.thin {
-  border: #403e39 thin solid;
+  border: #53665a thin solid;
 }
 #scene-two li.btn a:hover,
 #scene-two nav .page li.scene em {
@@ -1110,21 +1110,94 @@ div.scene-two:hover {
 }
 #scene-two li.btn a:after,
 #scene-two .page li.scene a {
-  background: #00ffe4;
+  background: #edf2e0;
 }
 nav ul li .scene-two {
-  border-color: #00ffe4;
+  border-color: #edf2e0;
 }
 .lettermark.scene-two:before {
-  background: #08d4bf;
+  background: #c1c5b7;
 }
 #scene-two .scene-two .fr,
 #scene-two h2.color .fr,
 #scene-two h4.color .fr {
+  color: #a5afa9;
+}
+
+#scene-two:: -webkit-scrollbar-track { background: #2a2a2a; }
+#scene-two:: -webkit-scrollbar-thumb { background: #edf2e0; }
+
+/* 6._ AQUA rgb(0,255,228) */
+
+#aqua nav em,
+#aqua a.color,
+#aqua .navigation a,
+#aqua h1,
+#aqua h3,
+#aqua h2.color,
+#aqua h4.color,
+#aqua font.color,
+.aqua,
+.lettermark.aqua:hover,
+li.aqua a:active,
+.new {
+  color: #00ffe4;
+}
+#aqua a.color:hover,
+#aqua a:hover .color,
+#aqua .navigation a:hover,
+a.aqua:hover,
+a:hover .aqua,
+li.aqua a:hover {
+  color: #08d4bf;
+}
+#aqua,
+#aqua nav,
+#aqua article,
+#aqua aside,
+#aqua .color div.color {
+  background: #2a2a2a;
+}
+#aqua div.color,
+#aqua aside.color {
+  background: #22554f;
+}
+#aqua button,
+#aqua #soci a img,
+#aqua a:hover > div.color,
+div.aqua,
+.color-two {
+  background: #197f74;
+}
+#aqua button:hover,
+div.aqua:hover {
+  background: #11aa9a;
+}
+
+#aqua pre.thin {
+  border: #403e39 thin solid;
+}
+#aqua li.btn a:hover,
+#aqua nav .page li.scene em {
+  color: #2a2a2a !important;
+}
+#aqua li.btn a:after,
+#aqua .page li.scene a {
+  background: #00ffe4;
+}
+nav ul li .aqua {
+  border-color: #00ffe4;
+}
+.lettermark.aqua:before {
+  background: #08d4bf;
+}
+#aqua .aqua .fr,
+#aqua h2.color .fr,
+#aqua h4.color .fr {
   color: #11aa9a;
 }
 
-/* 6.3 BLUE rgb(0,180,255) */
+/* 6._ BLUE rgb(0,180,255) */
 
 #blue a.color,
 #blue .navigation a,
@@ -1179,9 +1252,9 @@ nav ul li .blue {
   background: #0898D4;
 }
 
-#scene-two:: -webkit-scrollbar-track,
+#aqua:: -webkit-scrollbar-track,
 #blue:: -webkit-scrollbar-track { background: #2A2A2A; }
-#scene-two:: -webkit-scrollbar-thumb { background: #00FFE4; }
+#aqua:: -webkit-scrollbar-thumb { background: #00FFE4; }
 #blue:: -webkit-scrollbar-thumb { background: #00B4FF; }
 
 /* 0 QUERIES */
