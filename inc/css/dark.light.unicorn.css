@@ -1055,6 +1055,9 @@ nav ul li.scene-one {
 #scene-one:: -webkit-scrollbar-thumb { background: #FFCF60; }
 
 /* 6.2 TWO rgb(0,255,228) */
+/* #53665a; Dunn-Edwards Deep in the Jungle / 207 */
+/* #edf2e0; Dunn-Edwards Snowy Evergreen / 2261 */
+/* #426f1c; #497623; #507d2a; #507d2a; #5e8b38; Sap green. */
 
 #scene-two nav em,
 #scene-two a.color,
@@ -1066,9 +1069,8 @@ nav ul li.scene-one {
 #scene-two font.color,
 .scene-two,
 .lettermark.scene-two:hover,
-li.scene-two a:active,
-.new {
-  color: #edf2e0; /* Dunn-Edwards Snowy Evergreen / 2261 */
+li.scene-two a:active {
+  color: #5e8b38;
 }
 #scene-two a.color:hover,
 #scene-two a:hover .color,
@@ -1076,56 +1078,57 @@ li.scene-two a:active,
 a.scene-two:hover,
 a:hover .scene-two,
 li.scene-two a:hover {
-  color: #c1c5b7;
+  color: #507d2a;
 }
 #scene-two,
 #scene-two nav,
 #scene-two article,
 #scene-two aside,
 #scene-two .color div.color {
-  background: #2a2a2a;
+  background: #111111;
 }
 #scene-two div.color,
 #scene-two aside.color {
-  background: #53665a; /* Dunn-Edwards Deep in the Jungle / 207 */
+  background: #2a2f23;
 }
 #scene-two button,
-#scene-two #soci a img,
+#scene-two input[type="submit"],
 #scene-two a:hover > div.color,
 div.scene-two,
 .color-two {
-  background: #89968e; /* Asian Paints Light Grey / 6118 */
+  background: #edf2e0;
 }
 #scene-two button:hover,
+#scene-two input[type="submit"]:hover,
 div.scene-two:hover {
-  background: #a5afa9;
+  background: #2a2f23;
 }
 
 #scene-two pre.thin {
-  border: #53665a thin solid;
+  border: #edf2e0 thin solid;
 }
 #scene-two li.btn a:hover,
 #scene-two nav .page li.scene em {
-  color: #2a2a2a !important;
+  color: #111111 !important;
 }
 #scene-two li.btn a:after,
 #scene-two .page li.scene a {
-  background: #edf2e0;
+  background: #5e8b38;
 }
-nav ul li .scene-two {
-  border-color: #edf2e0;
+nav ul li.scene-two {
+  border-color: #5e8b38;
 }
 .lettermark.scene-two:before {
-  background: #c1c5b7;
+  background: #507d2a;
 }
 #scene-two .scene-two .fr,
 #scene-two h2.color .fr,
 #scene-two h4.color .fr {
-  color: #a5afa9;
+  color: #53665a;
 }
 
-#scene-two:: -webkit-scrollbar-track { background: #2a2a2a; }
-#scene-two:: -webkit-scrollbar-thumb { background: #edf2e0; }
+#scene-two:: -webkit-scrollbar-track { background: #111111; }
+#scene-two:: -webkit-scrollbar-thumb { background: #5e8b38; }
 
 /* 6._ AQUA rgb(0,255,228) */
 
