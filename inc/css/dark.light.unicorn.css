@@ -820,11 +820,13 @@ font.clear {
 .fr {
   color: #BABABA;
 }
-.trim {
-  border: #DADADA thin solid;
+.trim,
+li.has-post-thumbnail a img,
+.wp-post-image  {
+  border: #CACACA thin solid;
 }
-li.has-post-thumbnail img,
-.wp-post-image {
+li.has-post-thumbnail a:hover img,
+.wp-post-image:hover {
   border: #FCFCFC thin solid;
 }
 
@@ -910,7 +912,7 @@ body#light,
 body#light font.clear {
   color: #222222;
 }
-#light .wp-post-image {
+#light li.has-post-thumbnail img {
   border: #222222 thin solid;
 }
 #light .fr {
@@ -945,7 +947,7 @@ a:hover .light {
 #light article,
 #light aside,
 #light .color div.color {
-  background: #FAFAFA;
+  background: #FCFCFC;
 }
 #light section.color,
 #light img.color,
@@ -957,19 +959,19 @@ a:hover .light {
 #light input[type="submit"],
 #light a:hover > div.color,
 div.light {
-  background: #DADADA;
+  background: #CACACA;
 }
 #light button:hover,
 #light input[type="submit"]:hover,
 div.light:hover {
-  background: #CACACA;
+  background: #AAAAAA;
 }
 
 #light pre.thin {
   border: #EAEAEA thin solid;
 }
 #light li.btn a:hover {
-  color: #FAFAFA !important;
+  color: #FCFCFC !important;
 }
 #light li.btn a:after {
   background: #0A0A0A;
@@ -982,8 +984,8 @@ nav ul li.light {
 }
 
 #dark:: -webkit-scrollbar-track { background: #333333; }
-#light:: -webkit-scrollbar-track { background: #FAFAFA; }
-#dark:: -webkit-scrollbar-thumb { background: #FCFCFC; }
+#dark:: -webkit-scrollbar-thumb,
+#light:: -webkit-scrollbar-track { background: #FCFCFC; }
 #light:: -webkit-scrollbar-thumb { background: #0A0A0A; }
 
 /* 6.1 ONE rgb(255,207,96) */
@@ -1284,7 +1286,7 @@ and ( max-width: 1456px ) {
 
   section {
     max-width: 1360px;
-    width: calc(1024px + (336 * ((100vw - 800px) / 656)));
+    width: calc(768px + (592 * ((100vw - 800px) / 656)));
   }
   section.single {
     max-width: 1080px;
