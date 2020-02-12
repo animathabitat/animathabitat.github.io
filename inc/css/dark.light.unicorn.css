@@ -212,7 +212,8 @@ em, i {
 
     nav ul li,
     th,
-    .title {
+    .title,
+    .woo-title {
       text-transform: uppercase;
     }
     nav ul .thin {
@@ -554,6 +555,7 @@ br.clear {
     /* 3. 2 GUTTER */
 
     div,
+    section.type-product,
     li.type-product /* woo */ {
       padding: 1em;
     }
@@ -610,6 +612,9 @@ br.clear {
     }
     .gutter-ref {
       padding: 0 3em 1em;
+    }
+    .gutter-small {
+      padding: 0.75em;
     }
 
     .navigation /* wordpress */ {
@@ -1270,11 +1275,23 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
 
 /* 0.1 High to Medium */
 @media screen
-and ( max-width: 1440px ) {
+and ( max-width: 1456px ) {
 
   body{
     font-size: 1.4rem;
-    font-size: calc(10px + (8 * ((100vw - 800px) / 640)));
+    font-size: calc(10px + (8 * ((100vw - 800px) / 656)));
+  }
+
+  section {
+    max-width: 1360px;
+    width: calc(1024px + (336 * ((100vw - 800px) / 656)));
+  }
+  section.single {
+    max-width: 1080px;
+    width: calc(768px + (312 * ((100vw - 800px) / 656)));
+  }
+  .woo-title {
+    padding-top: calc(18px - (9 * ((100vw - 800px) / 656)));
   }
 }
 
@@ -1385,8 +1402,8 @@ and ( max-width: 800px ) {
   section.single,
   header,
   footer {
-    max-width: 720px;
-    width: calc(360px + (360 * ((100vw - 360px) / 440)));
+    max-width: 705px;
+    width: calc(360px + (345 * ((100vw - 360px) / 440)));
   }
 
   .quote {
@@ -1398,6 +1415,9 @@ and ( max-width: 800px ) {
 
   .gutter-ref {
     padding: 0 3em 1em;
+  }
+  .woo-title {
+    padding-top: 1.5em;
   }
 
   /* */
