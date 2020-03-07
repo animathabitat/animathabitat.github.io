@@ -1290,7 +1290,6 @@ and ( max-width: 1456px ) {
 
   nav ul,
   nav ul.spread,
-  aside,
   article {
     max-width: 1080px;
     width: calc(768px + (312 * ((100vw - 800px) / 656)));
@@ -1402,6 +1401,14 @@ and ( max-width: 800px ) {
     height: 6em;
   }
 
+  section,
+  section.single,
+  header,
+  footer {
+    max-width: 705px;
+    width: calc(360px + (345 * ((100vw - 360px) / 440)));
+  }
+
   nav ul,
   nav ul.spread,
   aside,
@@ -1418,14 +1425,6 @@ and ( max-width: 800px ) {
   .quarter,
   li.type-product /* woo */ {
     width: 50%;
-  }
-
-  section,
-  section.single,
-  header,
-  footer {
-    max-width: 705px;
-    width: calc(360px + (345 * ((100vw - 360px) / 440)));
   }
 
   .quote {
