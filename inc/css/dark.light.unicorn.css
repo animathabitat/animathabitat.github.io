@@ -338,6 +338,9 @@ input,
 select {
   height: 2em;
 }
+button {
+  overflow: hidden;
+}
 textarea {
   height: 4em;
   max-width: 100%;
@@ -1306,6 +1309,10 @@ and ( max-width: 1456px ) {
   .woo-title {
     padding-top: calc(18px - (9 * ((100vw - 800px) / 656)));
   }
+
+  .break-cut {
+    display: none;
+  }
 }
 
 /* IPAD 1, 2, MINI ... */
@@ -1439,6 +1446,10 @@ and ( max-width: 800px ) {
   }
   .woo-title {
     padding-top: 1.5em;
+  }
+
+  .break-cut {
+    display: inherit;
   }
 
   /* */
