@@ -542,6 +542,10 @@ br.clear {
   select.format {
     width: 100%;
   }
+  .full-frame {
+    width: 100%;
+    height: 18em;
+  }
   .auto,
   pre.thin {
     width: auto;
