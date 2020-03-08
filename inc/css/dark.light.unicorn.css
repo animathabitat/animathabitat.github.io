@@ -1119,12 +1119,12 @@ li.scene-two a:hover {
 #scene-two a:hover > div.color,
 div.scene-two,
 .color-two {
-  background: #edf2e0;
+  background: #5e8b38;
 }
 #scene-two button:hover,
 #scene-two input[type="submit"]:hover,
 div.scene-two:hover {
-  background: #2a2f23;
+  background: #507d2a;
 }
 
 #scene-two pre.thin {
