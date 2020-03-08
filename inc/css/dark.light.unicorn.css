@@ -76,8 +76,8 @@ abbr {
   cursor: pointer;
   text-decoration: none;
 }
-.lettermark,
-.button {
+.button,
+.lettermark {
   cursor: pointer;
 }
 img {
@@ -224,6 +224,9 @@ em, i {
     .underscore {
       text-decoration: underline;
     }
+    p a.button {
+      text-decoration: none;
+    }
     .overscore {
       text-decoration: overline;
     }
@@ -346,75 +349,75 @@ textarea {
   max-width: 100%;
 }
 
-  /* 2. 1 NAVIGATION */
+/* 2. 1 NAVIGATION */
 
-  nav ul li {
-    border-top: 0.27em solid;
-    display: inline-block;
-  }
-  nav ul li.thin {
-    border-top: 0;
-    margin-top: 0.27em;
-  }
-  nav ul li.btn {
-    overflow: hidden;
-    position: relative;
-  }
-  nav ul li a {
-    display: inline-block;
-    padding: 0.1em 1em;
-  }
-  nav ul li.logo a {
-    padding: 0 1em 0.2em;
-  }
-  nav ul li.btn a:hover {
-    z-index: 100;
-    background-color: transparent;
-  }
-  nav ul li.btn a:link,
-  nav ul li.btn a:visited {
-    position: relative;
-    display: inline-block;
-    -webkit-transition: -webkit-transform 1s ease;
-       -moz-transition: -moz-transform 1s ease;
-        -ms-transition: -ms-transform 1s ease;
-         -o-transition: -o-transform 1s ease;
-            transition: transform 1s ease;
-  }
-  nav ul li.btn a:link:after,
-  nav ul li.btn a:visited:after {
-    content: "";
-    position: absolute;
-    height: 0%;
-    left: 50%;
-    top: 50%;
-    width: 150%;
-    -webkit-transition: -webkit-transform 0.5s ease 0s;
-       -moz-transition: -moz-transform 0.5s ease 0s;
-        -ms-transition: -ms-transform 0.5s ease 0s;
-         -o-transition: -o-transform 0.5s ease 0s;
-            transition: transform 0.5s ease 0s;
-  }
-  nav ul li.btn a:link:hover:after,
-  nav ul li.btn a:visited:hover:after {
-    height: 450%;
-  }
-  nav ul li.btn.diagonal-down a:after {
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
-       -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
-        -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
-         -o-transform: translateX(-50%) translateY(-50%) rotate(25deg);
-            transform: translateX(-50%) translateY(-50%) rotate(25deg);
-    z-index: -1;
-  }
-  nav ul li.btn.diagonal-up a:after {
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-       -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-        -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-         -o-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-            transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-    z-index: -1;
-  }
+nav ul li {
+  border-top: 0.27em solid;
+  display: inline-block;
+}
+nav ul li.thin {
+  border-top: 0;
+  margin-top: 0.27em;
+}
+nav ul li.btn {
+  overflow: hidden;
+  position: relative;
+}
+nav ul li a {
+  display: inline-block;
+  padding: 0.1em 1em;
+}
+nav ul li.logo a {
+  padding: 0 1em 0.2em;
+}
+nav ul li.btn a:hover {
+  z-index: 100;
+  background-color: transparent;
+}
+nav ul li.btn a:link,
+nav ul li.btn a:visited {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 1s ease;
+     -moz-transition: -moz-transform 1s ease;
+      -ms-transition: -ms-transform 1s ease;
+       -o-transition: -o-transform 1s ease;
+          transition: transform 1s ease;
+}
+nav ul li.btn a:link:after,
+nav ul li.btn a:visited:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+     -moz-transition: -moz-transform 0.5s ease 0s;
+      -ms-transition: -ms-transform 0.5s ease 0s;
+       -o-transition: -o-transform 0.5s ease 0s;
+          transition: transform 0.5s ease 0s;
+}
+nav ul li.btn a:link:hover:after,
+nav ul li.btn a:visited:hover:after {
+  height: 450%;
+}
+nav ul li.btn.diagonal-down a:after {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+     -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+       -o-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+          transform: translateX(-50%) translateY(-50%) rotate(25deg);
+  z-index: -1;
+}
+nav ul li.btn.diagonal-up a:after {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+     -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+       -o-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+          transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  z-index: -1;
+}
 
 /* 2. 2 PAGE */
 
