@@ -430,14 +430,14 @@ nav ul li.crumb,
 li.type-product, /* woo */
 input[type="checkbox"].input-checkbox,
 input[type="radio"].input-radio {
-float: left;
+  float: left;
 }
 aside,
 .right,
 .apple, .google,
 .apple img, .google img,
 .navigation a[rel="next"] /* wordpress */ {
-float: right;
+  float: right;
 }
 
 .left, .right,
@@ -447,7 +447,7 @@ float: right;
 li.type-product, /* woo */
 input[type="checkbox"].input-checkbox,
 input[type="radio"].input-radio {
-display: inline;
+  display: inline;
 }
 
 /* 2. 3 INPUT */
@@ -548,7 +548,7 @@ select.format {
 }
 .full-frame {
   width: 100%;
-  height: 15em;
+  height: 16em;
 }
 .auto,
 pre.thin {
@@ -1307,19 +1307,16 @@ and ( max-width: 1456px ) {
 
   nav ul,
   nav ul.spread,
+  section {
+    max-width: 1360px;
+    width: calc(800px + (560 * ((100vw - 800px) / 656)));
+  }
+  section.single,
   article {
     max-width: 1080px;
     width: calc(768px + (312 * ((100vw - 800px) / 656)));
   }
 
-  section {
-    max-width: 1360px;
-    width: calc(768px + (592 * ((100vw - 800px) / 656)));
-  }
-  section.single {
-    max-width: 1080px;
-    width: calc(768px + (312 * ((100vw - 800px) / 656)));
-  }
   .woo-title {
     padding-top: calc(18px - (9 * ((100vw - 800px) / 656)));
   }
@@ -1429,7 +1426,6 @@ and ( max-width: 800px ) {
     max-width: 705px;
     width: calc(360px + (345 * ((100vw - 360px) / 440)));
   }
-
   nav ul,
   nav ul.spread,
   aside,
@@ -1447,16 +1443,16 @@ and ( max-width: 800px ) {
   li.type-product /* woo */ {
     width: 50%;
   }
-
-  .quote {
-    padding: 1.5em;
+  .full-frame .blocks > div, {
+    width: 50%;
   }
 
-  /* */
   /* 3.1 gutters ***/
-
   .gutter-ref {
     padding: 0 3em 1em;
+  }
+  .quote {
+    padding: 1.5em;
   }
   .woo-title {
     padding-top: 1.5em;
@@ -1466,13 +1462,10 @@ and ( max-width: 800px ) {
     display: inherit;
   }
 
-  /* */
   /* 3.3 media */
-
   .video {
     height: 15em;
   }
-
 
   div.profile {
     padding: 3em;
@@ -1483,9 +1476,7 @@ and ( max-width: 800px ) {
     margin-top: 0;
   }
 
-  /* */
   /* 3.4 logos ***/
-
   div.logo {
     height: 6em;
   }
@@ -1493,7 +1484,6 @@ and ( max-width: 800px ) {
     padding: 1.5em;
   }
 
-  /* */
   /* 3.5 badges */
   .apple img, .google img {
     height: 1.667em;
