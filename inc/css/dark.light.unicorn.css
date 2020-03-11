@@ -1305,11 +1305,14 @@ and ( max-width: 1456px ) {
     font-size: calc(13.5px + (4.5 * ((100vw - 800px) / 656)));
   }
 
-  nav ul,
-  nav ul.spread,
   section {
     max-width: 1360px;
     width: calc(800px + (560 * ((100vw - 800px) / 656)));
+  }
+  nav ul,
+  nav ul.spread {
+    max-width: 1080px;
+    width: calc(800px + (280 * ((100vw - 800px) / 656)));
   }
   section.single,
   article {
