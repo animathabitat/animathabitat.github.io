@@ -1439,10 +1439,7 @@ and ( max-width: 800px ) {
   section,
   section.single,
   header,
-  footer {
-    max-width: 705px;
-    width: calc(320px + (365 * ((100vw - 360px) / 440)));
-  }
+  footer,
   nav ul,
   nav ul.spread,
   article,
