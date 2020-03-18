@@ -1327,11 +1327,12 @@ and ( max-width: 1456px ) {
     float: none;
   }
   aside.bio {
+    float: none;
     max-width: 540px;
     width: calc(384px + (156 * ((100vw - 800px) / 656)));
   }
   div.profile {
-    position: inherit;
+    position: relative;
     width: 100%;
   }
 
