@@ -1305,13 +1305,13 @@ and ( max-width: 1456px ) {
     font-size: calc(13.5px + (4.5 * ((100vw - 800px) / 656)));
   }
 
-  section:not(.single) {
+  section {
     max-width: 1360px;
     width: calc(800px + (560 * ((100vw - 800px) / 656)));
   }
   nav ul,
   nav ul.spread,
-  section:not(.single) > article {
+  article {
     max-width: 1080px;
     width: calc(800px + (280 * ((100vw - 800px) / 656)));
   }
@@ -1323,8 +1323,7 @@ and ( max-width: 1456px ) {
     width: 100%;
   }
   section:not(.single) > article {
-    align-self: center;
-    float: none;
+    
   }
   aside.bio {
     float: none;
@@ -1494,7 +1493,7 @@ and ( max-width: 800px ) {
   .video {
     height: 15em;
   }
-  
+
   div.profile img.profile {
     margin: 3em 1.5em 0 1.5em;
   }
