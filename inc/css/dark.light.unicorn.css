@@ -325,11 +325,9 @@ nav ul.spread,
 section.single {
   width: 60em;
 }
-section.bio aside {
-  width: 20em;
-}
 div.profile {
   position: fixed;
+  width: 20em;
 }
 
 button,
@@ -1328,7 +1326,11 @@ and ( max-width: 1456px ) {
     width: 50%;
   }
   div.profile {
+    width: auto;
     position: relative;
+  }
+  div.profile img.profile {
+    margin: 3em 1.5em 0 1.5em;
   }
 
   .half .blocks > div {
@@ -1483,10 +1485,6 @@ and ( max-width: 800px ) {
   /* 3.3 media */
   .video {
     height: 15em;
-  }
-
-  div.profile img.profile {
-    margin: 3em 1.5em 0 1.5em;
   }
 
   /* 3.4 logos ***/
