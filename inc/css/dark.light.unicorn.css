@@ -325,7 +325,7 @@ nav ul.spread,
 section.single {
   width: 60em;
 }
-aside.bio {
+div.profile {
   position: fixed;
   width: 20em;
 }
@@ -519,7 +519,7 @@ td.product-name,
 th.product-name {
   width: 50%;
 }
-aside:not(.bio),
+aside,
 .quarter,
 .polypty,
 .polyptych > div,
@@ -1310,15 +1310,17 @@ and ( max-width: 1456px ) {
     width: calc(800px + (560 * ((100vw - 800px) / 656)));
   }
   nav ul,
-  nav ul.spread {
+  nav ul.spread,
+  section:not(.single) > article {
     max-width: 1080px;
     width: calc(800px + (280 * ((100vw - 800px) / 656)));
   }
-  section.single,
-  article,
-  aside.bio {
+  section.single {
     max-width: 1080px;
     width: calc(768px + (312 * ((100vw - 800px) / 656)));
+  }
+  section.single article {
+    width: 100%;
   }
   section:not(.single) > article,
   aside.bio {
@@ -1326,7 +1328,12 @@ and ( max-width: 1456px ) {
     float: none;
   }
   aside.bio {
+    width: 50%;
+  }
+  div.profile {
     position: relative;
+    max-width: 540px;
+    width: calc(384px + (156 * ((100vw - 800px) / 656)));
   }
 
   .half .blocks > div {
@@ -1459,6 +1466,10 @@ and ( max-width: 800px ) {
   li.type-product /* woo */ {
     width: 50%;
   }
+  aside.bio {
+    max-width: 400px;
+    width: calc(360px + (24 * ((100vw - 360px) / 440)));
+  }
   .full-frame .blocks > div, {
     width: 50%;
   }
@@ -1484,7 +1495,7 @@ and ( max-width: 800px ) {
   }
 
   div.profile img.profile {
-    margin: 3em 3em 0 3em;
+    margin: 0 3em;
     width: auto;
   }
 
