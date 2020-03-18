@@ -1322,6 +1322,8 @@ and ( max-width: 1456px ) {
   }
   section:not(.single) > article,
   aside.bio {
+    align-self: center;
+    float: none;
     margin-left: auto;
     margin-right: auto;
   }
