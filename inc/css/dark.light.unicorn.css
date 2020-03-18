@@ -1463,15 +1463,17 @@ and ( max-width: 800px ) {
   .three-quarter,
   .two-third,
   .third {
-    min-width: 100%;
-    width: 100%;
+    min-width: 360px;
+    width: calc(360px + (345 * ((100vw - 360px) / 440)));
   }
   .quarter,
-  li.type-product /* woo */ {
-    width: 50%;
-  }
+  li.type-product, /* woo */
   .full-frame .blocks > div, {
     width: 50%;
+  }
+  .quarter,
+  li.type-product {
+    width: calc(180px + (20 * ((100vw - 360px) / 440)));
   }
 
   /* 3.1 gutters ***/
