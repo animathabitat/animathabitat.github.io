@@ -5,7 +5,7 @@
  Author:       Dane Aleksander
  Author URI:   https://danealeksander.github.io/
  Template:     twentythirteen
- Version:      1.2.1
+ Version:      1.6.3
 */
 
 /* Revision 85. */
@@ -1305,7 +1305,7 @@ and ( max-width: 1456px ) {
     font-size: calc(13.5px + (4.5 * ((100vw - 800px) / 656)));
   }
 
-  section {
+  section:not(.single) {
     max-width: 1360px;
     width: calc(800px + (560 * ((100vw - 800px) / 656)));
   }
@@ -1450,6 +1450,8 @@ and ( max-width: 800px ) {
     width: calc(360px + (345 * ((100vw - 360px) / 440)));
   }
   aside.bio {
+    align-self: center;
+    float: none;
     max-width: 400px;
     width: calc(360px + (24 * ((100vw - 360px) / 440)));
   }
@@ -1463,6 +1465,8 @@ and ( max-width: 800px ) {
   .three-quarter,
   .two-third,
   .third {
+    align-self: center;
+    float: none;
     min-width: 360px;
     width: calc(360px + (345 * ((100vw - 360px) / 440)));
   }
