@@ -1322,13 +1322,9 @@ and ( max-width: 1456px ) {
   section.single article {
     width: 100%;
   }
-  section:not(.single) > article {
-    
-  }
   aside.bio {
-    float: none;
-    max-width: 540px;
-    width: calc(384px + (156 * ((100vw - 800px) / 656)));
+    min-width: 50%;
+    width: calc(705px - (165 * ((100vw - 800px) / 656)));
   }
   div.profile {
     position: relative;
@@ -1448,14 +1444,10 @@ and ( max-width: 800px ) {
     max-width: 705px;
     width: calc(360px + (345 * ((100vw - 360px) / 440)));
   }
-  aside.bio {
-    float: left;
-    max-width: 400px;
-    width: calc(360px + (24 * ((100vw - 360px) / 440)));
-  }
   nav ul,
   nav ul.spread,
-  aside:not(.bio),
+  aside,
+  aside.bio,
   article,
   .blocks > div,
   .blocks > .quote,
