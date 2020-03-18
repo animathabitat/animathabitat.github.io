@@ -1449,9 +1449,13 @@ and ( max-width: 800px ) {
     max-width: 705px;
     width: calc(360px + (345 * ((100vw - 360px) / 440)));
   }
+  aside.bio {
+    max-width: 400px;
+    width: calc(360px + (24 * ((100vw - 360px) / 440)));
+  }
   nav ul,
   nav ul.spread,
-  aside,
+  aside:not(.bio),
   article,
   .blocks > div,
   .blocks > .quote,
@@ -1465,10 +1469,6 @@ and ( max-width: 800px ) {
   .quarter,
   li.type-product /* woo */ {
     width: 50%;
-  }
-  aside.bio {
-    max-width: 400px;
-    width: calc(360px + (24 * ((100vw - 360px) / 440)));
   }
   .full-frame .blocks > div, {
     width: 50%;
