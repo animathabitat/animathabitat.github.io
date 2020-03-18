@@ -1329,9 +1329,6 @@ and ( max-width: 1456px ) {
     width: auto;
     position: relative;
   }
-  div.profile img.profile {
-    margin: 3em 3em 0 3em;
-  }
 
   .half .blocks > div {
     width: 100%;
