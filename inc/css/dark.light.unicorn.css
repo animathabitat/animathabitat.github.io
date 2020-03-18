@@ -1441,6 +1441,7 @@ and ( max-width: 800px ) {
     width: 100%;
   }
   section,
+  section.bio,
   section.single,
   header,
   footer {
@@ -1593,6 +1594,7 @@ and ( max-width: 360px ) {
   }
 
   section,
+  section.bio,
   section.single,
   header,
   footer {
