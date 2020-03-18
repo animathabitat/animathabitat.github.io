@@ -1319,12 +1319,14 @@ and ( max-width: 1456px ) {
     max-width: 1080px;
     width: calc(768px + (312 * ((100vw - 800px) / 656)));
   }
+  article {
+    align-self: center;
+  }
   section.single article {
     width: 100%;
   }
   aside.bio {
-    min-width: 50%;
-    width: calc(705px - (165 * ((100vw - 800px) / 656)));
+    width: 50%;
   }
   div.profile {
     position: relative;
