@@ -1322,12 +1322,12 @@ and ( max-width: 1456px ) {
   section.single article {
     width: 100%;
   }
-  section:not(.single) > article,
-  aside.bio {
+  section:not(.single) > article {
     align-self: center;
     float: none;
   }
   aside.bio {
+    float: left;
     width: 50%;
   }
   div.profile {
@@ -1494,9 +1494,11 @@ and ( max-width: 800px ) {
     height: 15em;
   }
 
+  div.profile {
+    margin: 0 1.5em;
+  }
   div.profile img.profile {
-    margin: 0 3em;
-    width: auto;
+    margin: 3em 1.5em 0 1.5em;
   }
 
   /* 3.4 logos ***/
