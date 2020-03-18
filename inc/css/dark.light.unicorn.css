@@ -1320,6 +1320,10 @@ and ( max-width: 1456px ) {
     width: calc(768px + (312 * ((100vw - 800px) / 656)));
   }
 
+  .half .blocks > div {
+    width: 100%;
+  }
+
   .woo-title {
     padding-top: calc(18px - (9 * ((100vw - 800px) / 656)));
   }
