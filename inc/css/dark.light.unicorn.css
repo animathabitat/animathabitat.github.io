@@ -325,9 +325,11 @@ nav ul.spread,
 section.single {
   width: 60em;
 }
+section.bio aside {
+  width: 20em;
+}
 div.profile {
   position: fixed;
-  width: 20em;
 }
 
 button,
@@ -1327,7 +1329,6 @@ and ( max-width: 1456px ) {
   }
   div.profile {
     position: relative;
-    width: 100%;
   }
 
   .half .blocks > div {
@@ -1445,7 +1446,6 @@ and ( max-width: 800px ) {
   }
   nav ul,
   nav ul.spread,
-  aside,
   aside,
   article,
   .blocks > div,
