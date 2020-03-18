@@ -1436,12 +1436,17 @@ and ( max-width: 800px ) {
     height: 6em;
   }
 
+  nav ul,
+  nav ul.spread {
+    width: 100%;
+  }
   section,
   section.single,
   header,
-  footer,
-  nav ul,
-  nav ul.spread,
+  footer {
+    max-width: 768px;
+    width: calc(320px + (448 * ((100vw - 360px) / 440)));
+  }
   article,
   aside,
   section.bio aside,
