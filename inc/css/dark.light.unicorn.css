@@ -1459,8 +1459,10 @@ and ( max-width: 800px ) {
   .third {
     width: 100%
   }
-  .quarter,
   li.type-product {
+    width: 50%;
+  }
+  .quarter {
     max-width: 50%;
     width: calc(180px + (20 * ((100vw - 360px) / 440)));
   }
