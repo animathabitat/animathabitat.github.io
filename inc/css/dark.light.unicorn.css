@@ -818,7 +818,7 @@ div.logo img {
 
 .video {
   width: 100%;
-  height: calc( 50vw / 1.78 );
+  height: calc( 60em / 1.78 );
 }
 
 /* 5. 3 BADGE */
@@ -1338,6 +1338,10 @@ and ( max-width: 1456px ) {
     width: 100%;
   }
 
+  .video {
+    height: calc(432px + (175.5 * ((100vw - 800px) / 656)));
+  }
+
   .woo-title {
     padding-top: calc(18px - (9 * ((100vw - 800px) / 656)));
   }
@@ -1369,6 +1373,10 @@ and (orientation : landscape) {
   section {
     max-width: 1024px;
     width: 100%;
+  }
+
+  .video {
+    height: 432px;
   }
 }
 
@@ -1492,7 +1500,7 @@ and ( max-width: 800px ) {
 
   /* 3.3 media */
   .video {
-    height: 15em;
+    height: calc(180px + (252 * ((100vw - 360px) / 440)));
   }
 
   /* 3.4 logos ***/
@@ -1606,5 +1614,9 @@ and ( max-width: 360px ) {
   header,
   footer {
     max-width: 320px;
+  }
+
+  .video {
+    height: 180px;
   }
 }
