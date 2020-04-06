@@ -818,7 +818,7 @@ div.logo img {
 
 .video {
   width: 100%;
-  height: 32.4em; /* calc(( 50vw - 3em ) / 1.78 ) */
+  height: calc( 50vw / 1.78 );
 }
 
 /* 5. 3 BADGE */
