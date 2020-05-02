@@ -63,9 +63,14 @@
           <p class="linebreak">Support studio projects with a month of a subscription to <u>Adobe Creative Cloud</u> computer art software.<font class="fr"> &#92; Soutenez les projets de studio avec un mois d'abonnement au logiciel Adobe Creative Cloud.</font></p>
         </div>
 
-        <div class="left">
+        <!-- <div class="left">
           <a href="https://www.paypal.me/animathabitat/CAD265" title="PayPal / Animat Habitat&trade; CA$265" rel="noopener"><button>CA$265</button></a>
           <p class="linebreak">Support studio projects with a month of a subscription to <u>Autodesk Maya</u> computer art software.<font class="fr"> &#92; Soutenez les projets de studio avec un mois d'abonnement au logiciel Autodesk Maya.</font></p>
+        </div> -->
+
+        <div class="left">
+          <a href="https://www.paypal.me/animathabitat" title="PayPal / Animat Habitat&trade;" rel="noopener"><button>Donate &#92; Don</button></a>
+          <p class="linebreak">Enter any amount in support of studio projects. <sup>[<a class="button" onclick="fn_1();" title="Footnote [1]">1</a>]</sup><font class="fr"> &#92; Soutenez les projets de studio avec autant que vous le pouvez.</font></p>
         </div>
         <br class="clear">
 
@@ -88,7 +93,7 @@
 
         <pre class="thin"></pre>
 
-        <p class="linebreak small">Donation is accepted with PayPal. For a donation of more than CA$500, please contact <a href="mailto:account@animathabitat.org" title="Contact Animat Habitat&trade;">account@animathabitat.org</a>, public accountant at Animat Habitat<font class="trade">&trade;</font></a>. Thank you for your support of independent art at Animat Habitat<font class="trade">&trade;</font>.<font class="fr"> &#92; Le don est accept&eacute; avec PayPal. Pour un don de plus de 500 $ CA, veuillez contacter le trésor public chez Animat Habitat<font class="trade">&trade;</font>. Merci pour votre soutien &agrave; l'art ind&eacute;pendant chez Animat Habitat<font class="trade">&trade;</font>.</font></p>
+        <p class="linebreak small" id="foot-1"><sup>1</sup> Donation is accepted with PayPal. For a donation of more than CA$500, please contact <a href="mailto:account@animathabitat.org" title="Contact Animat Habitat&trade;">account@animathabitat.org</a>, public accountant at Animat Habitat<font class="trade">&trade;</font></a>. Thank you for your support of independent art at Animat Habitat<font class="trade">&trade;</font>.<font class="fr"> &#92; Le don est accept&eacute; avec PayPal. Pour un don de plus de 500 $ CA, veuillez contacter le trésor public chez Animat Habitat<font class="trade">&trade;</font>. Merci pour votre soutien &agrave; l'art ind&eacute;pendant chez Animat Habitat<font class="trade">&trade;</font>.</font></p>
 
         <p class="linebreak small">Copyright &copy; 2015-2020 Animat Habitat<font class="trade">&trade;</font>. <a href="c/" target="_blank" title="Animat Habitat&trade; / Terms of Access">Terms of Access</a><font class="fr"> &#92; Conditions d'acc&egrave;s</font>.</p>
       </div><br class="clear">
@@ -105,6 +110,10 @@
     $('body').fadeIn('fast');
 
   });
+
+  function fn_1() {
+    document.querySelector('#foot-1').scrollIntoView({ behavior: 'smooth' });
+  };
 </script>
 
 </html>
