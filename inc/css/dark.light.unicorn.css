@@ -976,7 +976,7 @@ a:hover .light {
 #light img.color,
 #light div.color,
 #light aside.color {
-  background: #EAEAEA;
+  background: #E3E3E3;
 }
 #light button,
 #light input[type="submit"],
@@ -991,7 +991,7 @@ div.light:hover {
 }
 
 #light pre.thin {
-  border: #EAEAEA thin solid;
+  border: #E3E3E3 thin solid;
 }
 #light li.btn a:hover {
   color: #FCFCFC !important;
