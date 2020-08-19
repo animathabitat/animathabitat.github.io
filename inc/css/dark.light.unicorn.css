@@ -5,7 +5,7 @@
  Author:       Dane Aleksander
  Author URI:   https://danealeksander.github.io/
  Template:     twentythirteen
- Version:      1.6.3
+ Version:      1.7.0
 */
 
 /* Revision 85. */
@@ -42,6 +42,7 @@
   padding: 0;
 }
 html,
+.active a,
 .scene a {
   cursor: default;
 }
@@ -847,6 +848,7 @@ a,
 a:hover p,
 h1 a:hover,
 li.dark a:active,
+li.dark a:hover,
 a.checkout-button:hover,
 button,
 input[type="submit"],
@@ -898,12 +900,14 @@ div.scene-zero:hover, div.dark:hover {
   border: #474747 thin solid;
 }
 #dark li.btn:hover a,
+#dark nav .page li.active em,
 #dark nav .page li.scene em {
   color: #333333;
 }
 /* #dark li.btn a:after, */
 #dark .btn:before,
 #dark .home li.logo,
+#dark .page li.active,
 #dark .page li.scene {
   background: #FCFCFC;
 }
@@ -1047,13 +1051,15 @@ div.scene-one:hover {
   border: #393428 thin solid;
 }
 #scene-one li.btn a:hover,
+#scene-one nav .page li.active em,
 #scene-one nav .page li.scene em {
   color: #222222 !important;
 }
 #scene-one li.btn a:after,
 #dark .scene-one.btn:before,
 #scene-one .scene-one.btn:before,
-#scene-one .page li.scene a {
+#scene-one .page li.active a,
+#scene-one .page li.scene {
   background: #FFCF60;
 }
 nav ul li.scene-one {
@@ -1086,7 +1092,8 @@ nav ul li.scene-one {
 #scene-two font.color,
 .scene-two,
 .lettermark.scene-two:hover,
-li.scene-two a:active {
+li.scene-two a:active,
+#scene-two li.scene-two a {
   color: #5e8b38;
 }
 #scene-two a.color:hover,
@@ -1094,7 +1101,7 @@ li.scene-two a:active {
 #scene-two .navigation a:hover,
 a.scene-two:hover,
 a:hover .scene-two,
-li.scene-two a:hover {
+li.scene-two a {
   color: #507d2a;
 }
 #scene-two,
@@ -1126,11 +1133,15 @@ div.scene-two:hover {
   border: #2a2f23 thin solid;
 }
 #scene-two li.btn a:hover,
+#scene-two nav .page li.active em,
 #scene-two nav .page li.scene em {
   color: #111111 !important;
 }
 #scene-two li.btn a:after,
-#scene-two .page li.scene a {
+#dark .scene-two.btn:before,
+#scene-two .scene-two.btn:before,
+#scene-two .page li.active a,
+#scene-two .page li.scene  {
   background: #5e8b38;
 }
 nav ul li.scene-two {
@@ -1203,7 +1214,8 @@ div.aqua:hover {
   color: #2a2a2a !important;
 }
 #aqua li.btn a:after,
-#aqua .page li.scene a {
+#aqua .page li.active a,
+#aqua .page li.scene {
   background: #00ffe4;
 }
 nav ul li .aqua {
@@ -1265,6 +1277,11 @@ div.blue:hover {
 
 #blue pre.thin {
   border: #403e39 thin solid;
+}
+#blue li.btn a:after,
+#blue .page li.active a,
+#blue .page li.scene {
+  background: #00B4FF;
 }
 nav ul li .blue {
   border-color: #00B4FF;
