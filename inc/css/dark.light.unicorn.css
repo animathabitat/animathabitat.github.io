@@ -1406,17 +1406,16 @@ and (orientation : landscape) {
 and ( max-width: 800px ) {
 
   /* 0.3.0 RESET */
-  div.vol,
+  /* div.vol,
   .vol a,
   .vol div,
   .vol h5,
-  .vol br,
-  .desktop {
+  .vol br {
     display: none;
     visibility: hidden;
     height: 0;
     padding: 0;
-  }
+  } */
 
   body {
     font-size: 1.8rem;
@@ -1621,5 +1620,12 @@ and ( max-width: 360px ) {
 
   .video {
     height: 180px;
+  }
+
+  .desktop {
+    display: none;
+    visibility: hidden;
+    height: 0;
+    padding: 0;
   }
 }
