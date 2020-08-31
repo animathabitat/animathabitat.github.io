@@ -158,6 +158,9 @@ em, i {
   font-style: oblique;
   font-weight: 200;
 }
+em em {
+  text-decoration: underline;
+}
 
 /* 1. 1 TYPE */
 
@@ -172,7 +175,7 @@ h2 {
   font-size: 2em;
 }
 h3 {
-  font-size: calc(5em / 3);
+  font-size: calc( 5em / 3 );
 }
 h4,
 button, input,
@@ -185,7 +188,7 @@ p#shipping_country_field select,
 p#shipping_state_field select,
 p#order_comments_field textarea,
 a.checkout-button {
-  font-size: calc(4em / 3);
+  font-size: calc( 4em / 3 );
 }
 h5,
 select,
@@ -194,11 +197,11 @@ option {
 }
 h6,
 .small {
-  font-size: calc(7em / 9);
+  font-size: calc( 7em / 9 );
 }
 .trade {
-  font-size: calc(1.15em / 3);
-  vertical-align: calc(4em / 3);
+  font-size: calc( 1.15em / 3 );
+  vertical-align: calc( 4em / 3 );
 }
 .text-quote {
   font-size: 2em;
@@ -1309,22 +1312,22 @@ and ( max-width: 1456px ) {
 
   body{
     font-size: 1.8rem;
-    font-size: calc(13.5px + (4.5 * ((100vw - 800px) / 656)));
+    font-size: calc( 13.5px + ( 4.5 * ( ( 100vw - 800px ) / 656 ) ) );
   }
 
   section {
     max-width: 1360px;
-    width: calc(800px + (560 * ((100vw - 800px) / 656)));
+    width: calc( 00px + ( 560 * ((100vw - 800px) / 656)));
   }
   nav ul,
   nav ul.spread {
     max-width: 1080px;
-    width: calc(800px + (280 * ((100vw - 800px) / 656)));
+    width: calc( 800px + ( 280 * ( ( 100vw - 800px ) / 656 ) ) );
   }
   section.bio,
   section.single {
     max-width: 1080px;
-    width: calc(768px + (312 * ((100vw - 800px) / 656)));
+    width: calc( 768px + ( 312 * ( ( 100vw - 800px ) / 656 ) ) );
   }
   article {
     width: 100%;
@@ -1402,7 +1405,7 @@ and (orientation : landscape) {
 }
 
 /* 0.3 Medium to Low */
-@media screen
+@media only screen
 and ( max-width: 800px ) {
 
   /* 0.3.0 RESET */
@@ -1418,19 +1421,19 @@ and ( max-width: 800px ) {
   } */
 
   body {
-    font-size: 1.8rem;
-    font-size: calc(13.5px + (9 * ((100vw - 360px) / 440)));
+    /* font-size: 1.8rem; */
+    font-size: calc( 16px + ( 8 * ( ( 100vw - 360px ) / 480 ) ) );
   }
   h1 {
-    font-size: 3em;
-    font-size: calc(3em + (1 * ((100vw - 360px) / 440)));
+    /* font-size: 3em; */
+    font-size: calc( 2em + ( 2 * ( ( 100vw - 360px ) / 480 ) ) );
   }
   h2 {
-    font-size: 1.5em;
-    font-size: calc(1.5em + (0.5 * ((100vw - 360px) / 440)));
+    /* font-size: 1.5em; */
+    font-size: calc( 1.25em + ( 0.75 * ( ( 100vw - 360px ) / 480 ) ) );
   }
   h3 {
-    font-size: calc(4em / 3);
+    font-size: calc( 1.25em + ( calc( 1 / 12 ) * ( ( 100vw - 360px ) / 480 ) ) );
     padding: 0.085em 0;
   }
   h4,
@@ -1438,13 +1441,13 @@ and ( max-width: 800px ) {
   nav,
   .navigation,
   a.checkout-button {
-    font-size: calc(4em / 3);
-    font-size: calc(1em + (calc(1 / 3) * ((100vw - 360px) / 440)));
+    /* font-size: calc( 4em / 3 ); */
+    font-size: calc( 1em + ( calc( 1 / 3 ) * ( ( 100vw - 360px ) / 480 ) ) );
   }
   input,
   button,
   select {
-    height: calc(2em + (0.5 * ((100vw - 360px) / 440)));
+    height: calc( 2em + ( 0.5 * ( ( 100vw - 360px ) / 480 ) ) );
   }
   textarea {
     height: 6em;
@@ -1460,7 +1463,7 @@ and ( max-width: 800px ) {
   header,
   footer {
     max-width: 768px;
-    width: calc(320px + (448 * ((100vw - 360px) / 440)));
+    width: calc( 320px + ( 480 * ( ( 100vw - 360px ) / 480 ) ) );
   }
   article,
   aside,
@@ -1479,7 +1482,7 @@ and ( max-width: 800px ) {
   }
   .quarter {
     max-width: 50%;
-    width: calc(180px + (20 * ((100vw - 360px) / 440)));
+    width: calc( 160px + ( 20 * ( ( 100vw - 360px ) / 480 ) ) );
   }
   .full-frame .blocks > div, {
     width: 50%;
@@ -1502,7 +1505,7 @@ and ( max-width: 800px ) {
 
   /* 3.3 media */
   .video {
-    height: calc(180px + (252 * ((100vw - 360px) / 440)));
+    height: calc( 180px + ( 252 * ( ( 100vw - 360px ) / 480 ) ) );
   }
 
   /* 3.4 logos ***/
@@ -1532,9 +1535,10 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : portrait) {
 
-  body{
+  body {
     font-size: 3rem;
   }
+
 }
 
 /* IPAD 3, 4 */
@@ -1546,6 +1550,22 @@ and (orientation : portrait) {
 
 }
 
+/* IPHONE 6+, 7+, 8+ */
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : portrait) {
+
+  body {
+    font-size: 1.6rem;
+  }
+
+  .desktop {
+    display: inline !important;
+  }
+
+}
+
 /* IPHONE X */
 @media only screen
 and (min-device-width : 375px)
@@ -1553,53 +1573,72 @@ and (max-device-width : 812px)
 and (-webkit-device-pixel-ratio : 3)
 and (orientation : portrait) {
 
-}
+  body {
+    font-size: 1.6rem;
+  }
 
-/* IPHONE 6+, 7+, 8+ */
-@media only screen
-and (min-device-width : 414px)
-and (max-device-width : 736px) {
+  .desktop {
+    display: none;
+  }
 
 }
 
 /* IPHONE 6, 7, 8 */
 @media only screen
 and (min-device-width : 375px)
-and (max-device-width : 667px) {
+and (max-device-width : 667px)
+and (orientation : portrait) {
+
+  body {
+    font-size: 1.6rem;
+  }
+
+  .desktop {
+    display: none;
+  }
 
 }
 
 /* IPHONE 5, 5S */
 @media only screen
 and (min-device-width : 320px)
-and (max-device-width : 568px) {
+and (max-device-width : 568px)
+and (orientation : portrait) {
 
 }
 
 /* IPHONE 4S */
 @media only screen
 and (min-device-width : 320px)
-and (max-device-width : 480px) {
+and (max-device-width : 480px)
+and (orientation : portrait) {
 
 }
 
 /* 0.4 LOW */
-@media screen
-and ( max-width: 360px ) {
+@media only screen
+and ( max-width: 320px ) {
 
   body {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
   h1 {
     font-size: 2em;
+  }
+  h2 {
+    font-size: 1.25em;
+  }
+  h4,
+  button, input,
+  nav,
+  .navigation,
+  a.checkout-button {
+    font-size: 1em;
   }
   input,
   button,
   select {
     height: 2em;
-  }
-  textarea {
-    height: 4em;
   }
 
   nav ul,
@@ -1624,8 +1663,5 @@ and ( max-width: 360px ) {
 
   .desktop {
     display: none;
-    visibility: hidden;
-    height: 0;
-    padding: 0;
   }
 }
