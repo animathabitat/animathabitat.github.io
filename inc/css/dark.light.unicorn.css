@@ -1633,7 +1633,7 @@ and (max-device-width : 667px)
 and (orientation : portrait) {
 
   body {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
   }
   h1 {
     font-size: 2em;
@@ -1686,7 +1686,7 @@ and (orientation : portrait) {
 and ( max-width: 320px ) {
 
   body {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
   }
   h1 {
     font-size: 2em;
@@ -1730,4 +1730,5 @@ and ( max-width: 320px ) {
   .desktop {
     display: none;
   }
+
 }
