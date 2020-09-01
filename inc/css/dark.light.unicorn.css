@@ -1583,7 +1583,7 @@ and (orientation : portrait) {
 and ( max-width: 375px ) {
 
   body {
-    /* font-size: calc( 18px + ( 9 * ( ( 100vw - 320px ) / 55 ) ) ); */
+    font-size: calc( 18px + ( 9 * ( ( 100vw - 320px ) / 55 ) ) );
   }
 
   h1 {
@@ -1597,7 +1597,7 @@ and ( max-width: 375px ) {
   nav,
   .navigation,
   a.checkout-button {
-    font-size: calc( 7em / 9 );
+    /* font-size: calc( 7em / 9 ); */
   }
 
   section,
