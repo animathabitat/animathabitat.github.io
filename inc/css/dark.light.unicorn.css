@@ -1325,7 +1325,9 @@ and ( max-width: 1456px ) {
     width: calc( 800px + ( 280 * ( ( 100vw - 800px ) / 656 ) ) );
   }
   section.bio,
-  section.single {
+  section.single,
+  header,
+  footer {
     max-width: 1080px;
     width: calc( 768px + ( 312 * ( ( 100vw - 800px ) / 656 ) ) );
   }
@@ -1368,17 +1370,17 @@ and (orientation : landscape) {
   }
 
   nav ul,
+  nav ul.spread,
+  section {
+    max-width: 1024px;
+    width: 1024px;
+  }
   section.bio,
   section.single,
   header,
   footer {
     max-width: 768px;
     width: 768px;
-  }
-  nav ul.spread,
-  section {
-    max-width: 1024px;
-    width: 1024px;
   }
 
   .video {
@@ -1422,27 +1424,28 @@ and ( max-width: 800px ) {
 
   body {
     /* font-size: 1.8rem; */
-    font-size: calc( 1.6em + ( 0.8 * ( ( 100vw - 360px ) / 425 ) ) );
+    font-size: calc( 16px + ( 16 * ( ( 100vw - 360px ) / 425 ) ) );
   }
   h1 {
-    /* font-size: 3em; */
-    font-size: calc( 2em + ( 2 * ( ( 100vw - 360px ) / 425 ) ) );
+    font-size: 3em;
+    /* font-size: calc( 3em + ( 1 * ( ( 100vw - 360px ) / 425 ) ) ); */
   }
   h2 {
-    /* font-size: 1.5em; */
-    font-size: calc( 1.25em + ( 0.75 * ( ( 100vw - 360px ) / 425 ) ) );
+    font-size: 2em;
+    /* font-size: calc( 1.25em + ( 0.75 * ( ( 100vw - 360px ) / 425 ) ) ); */
   }
-  h3 {
+  /* h3 {
     font-size: calc( 1.25em + ( calc( 1 / 12 ) * ( ( 100vw - 360px ) / 425 ) ) );
     padding: 0.085em 0;
-  }
+  } */
+  h3,
   h4,
   button, input,
   nav,
   .navigation,
   a.checkout-button {
     /* font-size: calc( 4em / 3 ); */
-    font-size: calc( 1em + ( calc( 1 / 3 ) * ( ( 100vw - 360px ) / 425 ) ) );
+    font-size: calc( 1.25em + ( calc( 1 / 12 ) * ( ( 100vw - 360px ) / 425 ) ) );
   }
   input,
   button,
@@ -1454,16 +1457,16 @@ and ( max-width: 800px ) {
   }
 
   nav ul,
+  nav ul.spread,
+  section {
+    width: 100%;
+  }
   section.bio,
   section.single,
   header,
   footer {
     max-width: 768px;
     width: 100vw;
-  }
-  nav ul.spread,
-  section {
-    width: 100%;
   }
   article,
   aside,
@@ -1536,7 +1539,7 @@ and (max-device-width : 1024px)
 and (orientation : portrait) {
 
   body {
-    font-size: 3.2rem;
+    /* font-size: 3.2rem; */
   }
 
 }
@@ -1557,7 +1560,7 @@ and (max-device-width : 736px)
 and (orientation : portrait) {
 
   body {
-    font-size: 2.4rem;
+    /* font-size: 2.4rem; */
   }
 
   nav ul,
@@ -1584,7 +1587,7 @@ and (-webkit-device-pixel-ratio : 3)
 and (orientation : portrait) {
 
   body {
-    font-size: 3.2rem;
+    /* font-size: 3.2rem; */
   }
 
 }
@@ -1597,7 +1600,7 @@ and (-webkit-device-pixel-ratio : 2)
 and (orientation : portrait) {
 
   body {
-    font-size: 2.4rem;
+    /* font-size: 2.4rem; */
     color: #ff00ff;
   }
 
@@ -1608,7 +1611,7 @@ and (orientation : portrait) {
 and ( max-width: 375px ) {
 
   body {
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
   }
   h1 {
     font-size: 3em;
@@ -1678,7 +1681,7 @@ and (orientation : portrait) {
 and ( max-width: 320px ) {
 
   body {
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
   }
   h1 {
     font-size: 2em;
