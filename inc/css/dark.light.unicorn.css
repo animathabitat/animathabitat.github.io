@@ -1426,32 +1426,29 @@ and ( max-width: 768px ) {
 
   body {
     font-size: 2.7rem;
-    /* font-size: calc( 16px + ( 16 * ( ( 100vw - 360px ) / 425 ) ) ); */
+    /* font-size: calc( 16px + ( 16 * ( ( 100vw - 375px ) / 425 ) ) ); */
   }
   h1 {
     /* font-size: 3em; */
-    font-size: calc( 54px + ( 36 * ( ( 100vw - 360px ) / 393 ) ) );
+    font-size: calc( 54px + ( 36 * ( ( 100vw - 375px ) / 393 ) ) );
   }
   h2 {
     /* font-size: 2em; */
-    font-size: calc( 36px + ( 18 * ( ( 100vw - 360px ) / 393 ) ) );
+    font-size: calc( 36px + ( 18 * ( ( 100vw - 375px ) / 393 ) ) );
   }
   /* h3 {
-    font-size: calc( 1.25em + ( calc( 1 / 12 ) * ( ( 100vw - 360px ) / 425 ) ) );
+    font-size: calc( 1.25em + ( calc( 1 / 12 ) * ( ( 100vw - 375px ) / 425 ) ) );
     padding: 0.085em 0;
   } */
   h3 {
     font-size: calc( 27px + ( 9 * ( ( 100vw - 375px ) / 393 ) ) );
   }
   h4,
-  button, input {
-    /* font-size: calc( 33.75px + ( 2.25 * ( ( 100vw - 3750px ) / 393 ) ) ); */
-  }
+  button, input,
   nav,
   .navigation,
   a.checkout-button {
-    /* font-size: calc( 4em / 3 ); */
-    /* font-size: calc( 27px + ( 9 * ( ( 100vw - 375px ) / 393 ) ) ); */
+    font-size: calc( 21px + ( 6 * ( ( 100vw - 375px ) / 393 ) ) );
   }
   input,
   button,
@@ -1586,7 +1583,7 @@ and (orientation : portrait) {
 and ( max-width: 375px ) {
 
   body {
-    /* font-size: 2.7rem; */
+    /* font-size: calc( 18px + ( 9 * ( ( 100vw - 320px ) / 55 ) ) ); */
   }
 
   h1 {
@@ -1600,7 +1597,7 @@ and ( max-width: 375px ) {
   nav,
   .navigation,
   a.checkout-button {
-    /* font-size: 1em; */
+    font-size: calc( 7em / 9 );
   }
 
   section,
@@ -1645,6 +1642,10 @@ and (orientation : portrait) {
 /* Ultra LOW */
 @media only screen
 and ( max-width: 320px ) {
+
+  body {
+    font-size: 1.8rem;
+  }
 
   h1 {
     /* font-size: 2em; */
