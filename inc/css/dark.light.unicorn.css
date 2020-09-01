@@ -1590,38 +1590,12 @@ and (orientation : portrait) {
 /* IPHONE X */
 @media only screen
 and (min-device-width : 375px)
-and (max-device-width : 812px)
+/* and (max-device-width : 812px) */
 and (-webkit-device-pixel-ratio : 3)
 and (orientation : portrait) {
 
   body {
-    font-size: 2.4rem;
-  }
-  h1 {
-    font-size: 2em;
-  }
-  h2,
-  h3,
-  h4,
-  button, input,
-  nav,
-  .navigation,
-  a.checkout-button {
-    font-size: 1.25em;
-  }
-
-  nav ul,
-  nav ul.spread,
-  section,
-  section.single,
-  header,
-  footer {
-    max-width: 375px;
-    width: 375px;
-  }
-
-  .desktop {
-    display: none;
+    font-size: 3.2rem;
   }
 
 }
@@ -1629,33 +1603,60 @@ and (orientation : portrait) {
 /* IPHONE 6, 7, 8 */
 @media only screen
 and (min-device-width : 375px)
-and (max-device-width : 667px)
+/* and (max-device-width : 667px) */
+and (-webkit-device-pixel-ratio : 2)
 and (orientation : portrait) {
 
   body {
     font-size: 2.4rem;
   }
+
+}
+
+/* 0.4 LOW */
+@media only screen
+and ( max-width: 375px ) {
+
+  body {
+    font-size: 1.6rem;
+  }
   h1 {
+    font-size: 3em;
+  }
+  h2 {
     font-size: 2em;
   }
-  h2,
-  h3,
-  h4,
+  h3, h4,
   button, input,
   nav,
   .navigation,
   a.checkout-button {
     font-size: 1.25em;
   }
+  input,
+  button,
+  select {
+    height: 2em;
+  }
 
   nav ul,
-  nav ul.spread,
+  nav ul.spread {
+    width: 100%;
+  }
+  nav ul .right {
+    display: block;
+  }
+
   section,
+  section.bio,
   section.single,
   header,
   footer {
     max-width: 375px;
-    width: 375px;
+  }
+
+  .video {
+    height: 210px;
   }
 
   .desktop {
@@ -1686,7 +1687,7 @@ and (orientation : portrait) {
 and ( max-width: 320px ) {
 
   body {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
   }
   h1 {
     font-size: 2em;
@@ -1694,25 +1695,12 @@ and ( max-width: 320px ) {
   h2 {
     font-size: 1.25em;
   }
-  h4,
+  h3, h4,
   button, input,
   nav,
   .navigation,
   a.checkout-button {
     font-size: 1em;
-  }
-  input,
-  button,
-  select {
-    height: 2em;
-  }
-
-  nav ul,
-  nav ul.spread {
-    width: 100%;
-  }
-  nav ul .right {
-    display: block;
   }
 
   section,
@@ -1725,10 +1713,6 @@ and ( max-width: 320px ) {
 
   .video {
     height: 180px;
-  }
-
-  .desktop {
-    display: none;
   }
 
 }
