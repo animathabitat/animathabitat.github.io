@@ -1533,6 +1533,32 @@ and ( orientation : landscape ) {
 
 }
 
+/* IPAD 3, 4 MINI 2 */
+@media only screen
+and ( min-device-width : 768px )
+and ( max-device-width : 1024px )
+and ( -webkit-device-pixel-ratio: 2 )
+and ( orientation : portrait ) {
+
+  body {
+    /* font-size: 2.7rem; */
+  }
+
+}
+
+/* IPAD 1, 2, MINI ... */
+@media only screen
+and ( min-device-width : 768px )
+and ( max-device-width : 1024px )
+and ( -webkit-device-pixel-ratio: 1)
+and ( orientation : portrait ) {
+
+  body {
+    /* font-size: 2.7rem; */
+  }
+
+}
+
 /* 0.3 Medium to Low */
 @media only screen
 and ( max-width: 768px ) {
@@ -1553,17 +1579,17 @@ and ( max-width: 768px ) {
     font-size: calc( 21px + ( 6 * ( ( 100vw - 375px ) / 393 ) ) );
   }
   h1 {
-    font-size: calc( 2em + ( calc( 4 / 3 ) * ( ( 100vw - 375px ) / 393 ) ) );
+    font-size: calc( 2em + ( 36 * ( ( 100vw - 375px ) / 393 ) ) );
   }
   h2 {
-    font-size: calc( calc( 8em / 7 ) + ( calc( 4 / 21 ) * ( ( 100vw - 375px ) / 393 ) ) );
+    font-size: calc( ( 8em / 7 ) + ( ( 36 / 7 ) * ( ( 100vw - 375px ) / 393 ) ) );
   }
   h3, h4,
   button, input {
-    font-size: calc( calc( 8em / 7 ) - ( calc( 2 / 63 ) * ( ( 100vw - 375px ) / 393 ) ) );
+    font-size: calc( ( 8em / 7 ) - ( ( 6 / 7 ) * ( ( 100vw - 375px ) / 393 ) ) );
   }
   nav {
-    font-size: calc( calc( 1em ) - ( 3 * ( ( 100vw - 375px ) / 393 ) ) );
+    font-size: calc( 1em - ( 3 * ( ( 100vw - 375px ) / 393 ) ) );
   }
   input,
   button,
@@ -1574,28 +1600,6 @@ and ( max-width: 768px ) {
   .video {
     height: 432px;
   }
-}
-
-/* IPAD 3, 4 MINI 2 */
-@media only screen
-and ( min-device-width : 768px )
-and ( max-device-width : 1024px )
-and ( -webkit-device-pixel-ratio: 2 )
-and ( orientation : portrait ) {
-
-}
-
-/* IPAD 1, 2, MINI ... */
-@media only screen
-and ( min-device-width : 768px )
-and ( max-device-width : 1024px )
-and ( -webkit-device-pixel-ratio: 1)
-and ( orientation : portrait ) {
-
-  body {
-    font-size: 2.7rem;
-  }
-
 }
 
 /* IPHONE 5, 5S */
