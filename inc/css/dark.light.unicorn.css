@@ -166,7 +166,7 @@ em em {
 
 h1 {
   font-size: 8em;
-  padding: calc( 4em / 3 ) 0 0;
+  padding: 1.25em 0 0;
 }
 h1 .letterspace {
   letter-spacing: 0.1em;
@@ -331,11 +331,11 @@ header,
 footer,
 nav ul.spread,
 section.single {
-  width: calc( 200em / 3 );
+  width: calc( 640em / 9 );
 }
 div.profile {
   position: fixed;
-  width: calc( 200em / 9 );
+  width: calc( 160em / 9 );
 }
 
 button,
@@ -802,7 +802,7 @@ div.logo img {
 
 .video {
   width: 100%;
-  height: calc( 60em / 1.78 );
+  height: calc( 64em / 1.78 );
 }
 
 /* 5. 3 BADGE */
@@ -1311,10 +1311,13 @@ and (-webkit-min-device-pixel-ratio: 2) { } */
 and ( max-width: 1680px ) {
 
   h1 {
-    font-size: calc( 90px + ( 54 * ( ( 100vw - 768px ) / 912 ) ) );
+    font-size: calc( 90px + ( 54 * ( ( 100vw - 840px ) / 840 ) ) );
   }
   h2 {
-    font-size: calc( 36px + ( 18 * ( ( 100vw - 768px ) / 912 ) ) );
+    font-size: calc( 36px + ( 18 * ( ( 100vw - 840px ) / 840 ) ) );
+  }
+  h3 {
+    font-size: calc( 27px + ( 9 * ( ( 100vw - 840px ) / 840 ) ) );
   }
 
   section {
@@ -1322,7 +1325,7 @@ and ( max-width: 1680px ) {
     width: 100vw;
   }
   nav ul.spread {
-    max-width: 1200px;
+    max-width: 1280px;
     width: 100vw;
   }
   nav ul,
@@ -1330,7 +1333,7 @@ and ( max-width: 1680px ) {
   section.single,
   header,
   footer {
-    max-width: 1200px;
+    max-width: 1280px;
     width: 100vw;
   }
   article {
@@ -1361,6 +1364,53 @@ and ( max-width: 1680px ) {
   }
 }
 
+/* IPAD Pro 12 */
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width : 1366px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* IPAD 1, 2, MINI ... */
+@media only screen
+and ( max-width: 1280px ) {
+
+  body{
+    font-size: 1.8rem;
+  }
+
+  nav ul.spread,
+  section {
+    max-width: 1280px;
+    width: 100vw;
+  }
+  nav ul,
+  section.bio,
+  section.single,
+  header,
+  footer {
+    max-width: 1280px;
+    width: 100vw;
+  }
+  textarea {
+    height: 6em;
+  }
+
+  .video {
+    height: 432px;
+  }
+}
+
+/* IPAD Pro 10.5 */
+@media only screen
+and (min-device-width : 832px)
+and (max-device-width : 1112px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation : landscape) {
+
+}
+
 /* IPAD 3, 4 */
 @media only screen
 and (min-device-width : 768px)
@@ -1376,89 +1426,19 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : landscape) {
 
+}
+
+/* MID */
+@media only screen
+and ( max-width: 840px ) {
+
   body{
     font-size: 2.7rem;
   }
 
   nav ul.spread,
   section {
-    max-width: 1024px;
-    width: 1024px;
-  }
-  nav ul,
-  section.bio,
-  section.single,
-  header,
-  footer {
-    max-width: 768px;
-    width: 768px;
-  }
-
-  .video {
-    height: 432px;
-  }
-
-}
-
-/* IPHONE X */
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3)
-and (orientation : landscape) {
-
-}
-
-/* 0.3 Medium to Low */
-@media only screen
-and ( max-width: 768px ) {
-
-  /* 0.3.0 RESET */
-  /* div.vol,
-  .vol a,
-  .vol div,
-  .vol h5,
-  .vol br {
-    display: none;
-    visibility: hidden;
-    height: 0;
-    padding: 0;
-  } */
-
-  body {
-    font-size: 2.7rem;
-    /* font-size: calc( 16px + ( 16 * ( ( 100vw - 375px ) / 425 ) ) ); */
-  }
-  h1 {
-    /* font-size: 3em; */
-    font-size: calc( 54px + ( 36 * ( ( 100vw - 375px ) / 393 ) ) );
-  }
-  h2 {
-    /* font-size: 2em; */
-    font-size: calc( 36px + ( 18 * ( ( 100vw - 375px ) / 393 ) ) );
-  }
-  h3 {
-    font-size: calc( 27px + ( 9 * ( ( 100vw - 375px ) / 393 ) ) );
-  }
-  h4,
-  button, input,
-  nav,
-  .navigation,
-  a.checkout-button {
-    font-size: calc( 21px + ( 6 * ( ( 100vw - 375px ) / 393 ) ) );
-  }
-  input,
-  button,
-  select {
-    height: calc( 2em + ( 0.5 * ( ( 100vw - 320px ) / 448 ) ) );
-  }
-  textarea {
-    height: 6em;
-  }
-
-  nav ul.spread,
-  section {
-    max-width: 768px;
+    max-width: 840px;
     width: 100vw;
   }
   nav ul,
@@ -1483,9 +1463,6 @@ and ( max-width: 768px ) {
   li.type-product,
   .quads > div {
     width: 50%;
-  }
-  .quarter {
-    width: calc( 160px + ( 32 * ( ( 100vw - 320px ) / 448 ) ) );
   }
   .full-frame .blocks > div, {
     width: 50%;
@@ -1526,21 +1503,86 @@ and ( max-width: 768px ) {
     width: 4em;
   }
 
+  .video {
+    height: 432px;
+  }
+}
+
+/* IPAD Pro 10.5 */
+@media only screen
+and (min-device-width : 832px)
+and (max-device-width : 1112px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation : portrait) {
+
+}
+
+/* IPHONE X */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape) {
+
+}
+
+/* 0.3 Medium to Low */
+@media only screen
+and ( max-width: 768px ) {
+
+  /* 0.3.0 RESET */
+  /* div.vol,
+  .vol a,
+  .vol div,
+  .vol h5,
+  .vol br {
+    display: none;
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+  } */
+
+  body {
+    /* font-size: 2.7rem; */
+    font-size: calc( 18px + ( 9 * ( ( 100vw - 375px ) / 393 ) ) );
+  }
+  h1 {
+    font-size: calc( 54px + ( 36 * ( ( 100vw - 375px ) / 393 ) ) );
+  }
+  h2 {
+    font-size: calc( 36px + ( 18 * ( ( 100vw - 375px ) / 393 ) ) );
+  }
+  h3 {
+    font-size: calc( 27px + ( 9 * ( ( 100vw - 375px ) / 393 ) ) );
+  }
+  h4,
+  button, input,
+  nav,
+  .navigation,
+  a.checkout-button {
+    font-size: calc( 21px + ( 6 * ( ( 100vw - 375px ) / 393 ) ) );
+  }
+  input,
+  button,
+  select {
+    height: calc( 2em + ( 0.5 * ( ( 100vw - 320px ) / 448 ) ) );
+  }
+}
+
+/* IPAD 3, 4 MINI 2 */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation : portrait) {
+
 }
 
 /* IPAD 1, 2, MINI ... */
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
-and (orientation : portrait) {
-
-}
-
-/* IPAD 3, 4 */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (-webkit-min-device-pixel-ratio: 2)
+and (-webkit-max-device-pixel-ratio: 1)
 and (orientation : portrait) {
 
   body {
@@ -1555,36 +1597,22 @@ and (min-device-width : 414px)
 and (max-device-width : 736px)
 and (orientation : portrait) {
 
-  .desktop {
-    display: inline !important;
-  }
-
-}
-
-/* IPHONE X */
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3)
-and (orientation : portrait) {
-
-  body {
-    font-size: 3.6rem;
-  }
-
-}
-
-/* IPHONE 6, 7, 8 */
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px)
-and (-webkit-device-pixel-ratio : 2)
-and (orientation : portrait) {
-
   body {
     font-size: 2.7rem;
   }
 
+  .desktop {
+    display: inline !important;
+  }
+}
+
+/* LOW */
+@media only screen
+and ( max-width: 384px ) {
+
+  .quarter {
+    width: 50%;
+  }
 }
 
 /* LOW */
@@ -1615,7 +1643,6 @@ and ( max-width: 375px ) {
   header,
   footer {
     max-width: 375px;
-    width: 100vw;
   }
   nav ul,
   nav ul.spread {
@@ -1628,34 +1655,31 @@ and ( max-width: 375px ) {
   .desktop {
     display: none;
   }
-
 }
 
-/* IPHONE 5, 5S */
+/* IPHONE X */
 @media only screen
-and (min-device-width : 320px)
-and (max-device-width : 568px)
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+
+  body {
+    font-size: 3.6rem;
+  }
+}
+
+/* IPHONE 6, 7, 8 */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
 and (-webkit-device-pixel-ratio : 2)
 and (orientation : portrait) {
 
   body {
-    font-size: 1.8rem;
+    font-size: 2.7rem;
   }
-
 }
-
-/* IPHONE 4S */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px)
-and (orientation : portrait) {
-
-  body {
-    font-size: 1.2rem;
-  }
-
-}
-
 /* Ultra LOW */
 @media only screen
 and ( max-width: 320px ) {
@@ -1688,12 +1712,24 @@ and ( max-width: 320px ) {
     max-width: 320px;
   }
 
-  .quarter {
-    width: 50%;
-  }
-
   .video {
     height: 180px;
   }
+}
+
+/* IPHONE 5, 5S */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (-webkit-device-pixel-ratio : 2)
+and (orientation : portrait) {
+
+}
+
+/* IPHONE 4S */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+and (orientation : portrait) {
 
 }
