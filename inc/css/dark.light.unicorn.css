@@ -325,7 +325,7 @@ nav {
 }
 nav ul {
   display: block;
-  width: 50em;
+  width: calc( 160em / 3 );
   height: auto;
   margin: 0 auto;
   position: relative;
@@ -1312,7 +1312,7 @@ and ( -webkit-min-device-pixel-ratio: 2) { } */
 
 /*  */
 @media screen
-and ( max-width: 1680px ) {
+and ( max-width: 1600px ) {
 
   textarea {
     height: 6em;
@@ -1322,17 +1322,14 @@ and ( max-width: 1680px ) {
     max-width: 1600px;
     width: 100vw;
   }
-  nav ul.spread {
-    max-width: 1280px;
-    width: 100vw;
-  }
   nav ul,
+  nav ul.spread,
   section.bio,
   section.single,
   header,
   footer {
     max-width: 1280px;
-    width: 100vw;
+    width: 1280px;
   }
   article {
     width: 100%;
@@ -1358,13 +1355,7 @@ and ( max-width: 1680px ) {
   }
 }
 
-/* IPAD Pro 12 */
-@media only screen
-and ( min-device-width : 1024px )
-and ( max-device-width : 1366px )
-and ( -webkit-min-device-pixel-ratio: 2 ) {
-
-}
+/* IPAD Pro 12 : landscape */
 
 /* IPAD 1, 2, MINI ... */
 @media only screen
@@ -1384,36 +1375,25 @@ and ( max-width: 1280px ) {
     font-size: calc( calc( 1.5em ) + ( 9 * ( ( 100vw - 960px ) / 320 ) ) );
   }
 
+  nav ul,
+  nav ul.spread,
+  section.bio,
+  section.single,
+  header,
+  footer {
+    width: 100vw;
+  }
+
   .video {
     height: calc( 472px + ( 248 * ( ( 100vw - 960px ) / 320 ) ) );
   }
 }
 
-/* IPAD Pro 10.5 */
-@media only screen
-and ( min-device-width : 832px )
-and ( max-device-width : 1112px )
-and ( -webkit-min-device-pixel-ratio: 2 )
-and ( orientation : landscape ) {
+/* IPAD Pro 10.5 : landscape */
 
-}
+/* IPAD 3, 4 : landscape */
 
-/* IPAD 3, 4 */
-@media only screen
-and ( min-device-width : 768px )
-and ( max-device-width : 1024px )
-and ( -webkit-min-device-pixel-ratio: 2 )
-and ( orientation : landscape ) {
-
-}
-
-/* IPAD 1, 2, MINI ... */
-@media only screen
-and ( min-device-width : 768px )
-and ( max-device-width : 1024px )
-and ( orientation : landscape ) {
-
-}
+/* IPAD 1, 2, MINI ... : landscape */
 
 /* MID */
 @media only screen
@@ -1515,49 +1495,13 @@ and ( max-width: 960px ) {
   }
 }
 
-/* IPAD Pro 10.5 */
-@media only screen
-and ( min-device-width : 832px )
-and ( max-device-width : 1112px )
-and ( -webkit-min-device-pixel-ratio: 2 )
-and ( orientation : portrait ) {
+/* IPAD Pro 10.5 : portrait */
 
-}
+/* IPHONE X : landscape */
 
-/* IPHONE X */
-@media only screen
-and ( min-device-width : 375px )
-and ( max-device-width : 812px )
-and ( -webkit-device-pixel-ratio : 3 )
-and ( orientation : landscape ) {
+/* IPAD 3, 4 MINI 2 : portrait */
 
-}
-
-/* IPAD 3, 4 MINI 2 */
-@media only screen
-and ( min-device-width : 768px )
-and ( max-device-width : 1024px )
-and ( -webkit-device-pixel-ratio: 2 )
-and ( orientation : portrait ) {
-
-  body {
-    /* font-size: 2.7rem; */
-  }
-
-}
-
-/* IPAD 1, 2, MINI ... */
-@media only screen
-and ( min-device-width : 768px )
-and ( max-device-width : 1024px )
-and ( -webkit-device-pixel-ratio: 1)
-and ( orientation : portrait ) {
-
-  body {
-    /* font-size: 2.7rem; */
-  }
-
-}
+/* IPAD 1, 2, MINI ... : portrait */
 
 /* 0.3 Medium to Low */
 @media only screen
@@ -1602,21 +1546,9 @@ and ( max-width: 768px ) {
   }
 }
 
-/* IPHONE 5, 5S */
-@media only screen
-and ( min-device-width : 320px )
-and ( max-device-width : 568px )
-and ( orientation : landscape ) {
+/* IPHONE 5, 5S : landscape */
 
-}
-
-/* IPHONE 4S */
-@media only screen
-and ( min-device-width : 320px )
-and ( max-device-width : 480px )
-and ( orientation : landscape ) {
-
-}
+/* IPHONE 4S : landscape */
 
 /* IPHONE 6+, 7+, 8+ */
 @media only screen
@@ -1660,7 +1592,7 @@ and ( max-width: 375px ) {
   }
   h2, h3, h4,
   button, input {
-    font-size: calc( calc( 7em / 6 ) - ( calc( 1 / 42 ) * ( ( 100vw - 320px ) / 55 ) ) );
+    font-size: calc( calc( 7em / 6 ) - ( 0.5 * ( ( 100vw - 320px ) / 55 ) ) );
   }
   nav {
     font-size: 1em;
@@ -1740,18 +1672,6 @@ and ( max-width: 320px ) {
   }
 }
 
-/* IPHONE 5, 5S */
-@media only screen
-and ( min-device-width : 320px )
-and ( max-device-width : 568px )
-and ( orientation : portrait ) {
+/* IPHONE 5, 5S : portrait */
 
-}
-
-/* IPHONE 4S */
-@media only screen
-and ( min-device-width : 320px )
-and ( max-device-width : 480px )
-and ( orientation : portrait ) {
-
-}
+/* IPHONE 4S : portrait */
