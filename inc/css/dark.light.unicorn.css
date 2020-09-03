@@ -1362,17 +1362,25 @@ and ( max-width: 1600px ) {
 and ( max-width: 1280px ) {
 
   body{
-    /* font-size: 1.8rem; */
+    font-size: calc( 16px + ( 5 * ( ( 100vw - 960px ) / 320 ) ) );
   }
 
   h1 {
-    font-size: calc( calc( 5em ) + ( 54 * ( ( 100vw - 960px ) / 320 ) ) );
+    font-size: calc( ( 45em / 8 ) + ( 25.875 * ( ( 100vw - 960px ) / 320 ) ) );
+    /* font-size: calc( calc( 5em ) + ( 54 * ( ( 100vw - 960px ) / 320 ) ) ); */
   }
   h2 {
-    font-size: calc( calc( 2em ) + ( 18 * ( ( 100vw - 960px ) / 320 ) ) );
+    font-size: calc( 16em / 9 );
+    /* font-size: calc( calc( 2.25em ) + ( calc( 4em / 7 ) * ( ( 100vw - 960px ) / 320 ) ) ); */
   }
   h3 {
-    font-size: calc( calc( 1.5em ) + ( 9 * ( ( 100vw - 960px ) / 320 ) ) );
+    font-size: calc( 16em / 9 );
+    /* font-size: calc( calc( 1.5em ) + ( 9 * ( ( 100vw - 960px ) / 320 ) ) ); */
+  }
+  nav,
+  .navigation,
+  a.checkout-button {
+    font-size: calc( ( 24em / 16 ) - ( 7.5 * ( ( 100vw - 960px ) / 320 ) ) );
   }
 
   nav ul,
@@ -1526,11 +1534,11 @@ and ( max-width: 768px ) {
     font-size: calc( 2em + ( 36 * ( ( 100vw - 375px ) / 393 ) ) );
   }
   h2 {
-    font-size: calc( ( 8em / 7 ) + ( ( 36 / 7 ) * ( ( 100vw - 375px ) / 393 ) ) );
+    font-size: calc( calc( 8em / 7 ) + ( calc( 36 / 7 ) * ( ( 100vw - 375px ) / 393 ) ) );
   }
   h3, h4,
   button, input {
-    font-size: calc( ( 8em / 7 ) - ( ( 6 / 7 ) * ( ( 100vw - 375px ) / 393 ) ) );
+    font-size: calc( calc( 8em / 7 ) - ( calc( 6 / 7 ) * ( ( 100vw - 375px ) / 393 ) ) );
   }
   nav {
     font-size: calc( 1em - ( 3 * ( ( 100vw - 375px ) / 393 ) ) );
