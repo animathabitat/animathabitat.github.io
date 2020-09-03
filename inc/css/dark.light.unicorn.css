@@ -407,8 +407,8 @@ nav ul li.btn:hover, nav ul li.btn:focus, nav ul li.btn:active {
   /* color: white; */
 }
 nav ul li.btn:hover:before, nav ul li.btn:focus:before, nav ul li.btn:active:before {
-  -webkit-transform: scaleY(2);
-          transform: scaleY(2);
+  -webkit-transform: scaleY( 2 );
+          transform: scaleY( 2 );
 }
 
 /* 2. 2 PAGE */
@@ -1402,6 +1402,15 @@ and ( max-width: 1280px ) {
 /* IPAD 3, 4 : landscape */
 
 /* IPAD 1, 2, MINI ... : landscape */
+@media only screen
+and ( device-width : 1024px )
+and ( -webkit-device-pixel-ratio : 1 )
+and ( orientation : landscape ) {
+
+  body {
+    font-size: 2.7rem;
+  }
+}
 
 /* MID */
 @media only screen
@@ -1510,6 +1519,15 @@ and ( max-width: 960px ) {
 /* IPAD 3, 4 MINI 2 : portrait */
 
 /* IPAD 1, 2, MINI ... : portrait */
+@media only screen
+and ( device-width : 768px )
+and ( -webkit-device-pixel-ratio : 1 )
+and ( orientation : portrait ) {
+
+  body {
+    font-size: 2.7rem;
+  }
+}
 
 /* 0.3 Medium to Low */
 @media only screen
@@ -1562,7 +1580,7 @@ and ( max-width: 768px ) {
 @media only screen
 and ( min-device-width : 414px )
 and ( max-device-width : 736px )
-and ( -webkit-device-pixel-ratio: 2 )
+and ( -webkit-device-pixel-ratio : 2 )
 and ( orientation : portrait ) {
 
   body {
@@ -1616,10 +1634,6 @@ and ( max-width: 375px ) {
   header,
   footer {
     max-width: 375px;
-  }
-
-  nav ul .right {
-    display: block;
   }
 }
 
