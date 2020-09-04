@@ -1077,6 +1077,7 @@ nav ul li.scene-one {
 }
 #scene-one .scene-one .fr,
 #scene-one h2.color .fr,
+#scene-one h3.color .fr,
 #scene-one h4.color .fr {
   color: #917941;
 }
@@ -1159,6 +1160,7 @@ nav ul li.scene-two {
 }
 #scene-two .scene-two .fr,
 #scene-two h2.color .fr,
+#scene-two h3.color .fr,
 #scene-two h4.color .fr {
   color: #53665a;
 }
@@ -1233,6 +1235,7 @@ nav ul li .aqua {
 }
 #aqua .aqua .fr,
 #aqua h2.color .fr,
+#aqua h3.color .fr,
 #aqua h4.color .fr {
   color: #11aa9a;
 }
@@ -1356,31 +1359,44 @@ and ( max-width: 1600px ) {
 }
 
 /* IPAD Pro 12 : landscape */
+@media only screen
+and ( device-width : 1366px )
+and ( -webkit-device-pixel-ratio : 2 )
+and ( orientation : landscape ) {
+
+  body {
+    font-size: 2.7rem;
+  }
+}
 
 /* IPAD 1, 2, MINI ... */
 @media only screen
 and ( max-width: 1280px ) {
 
   body{
-    font-size: calc( 16px + ( 5 * ( ( 100vw - 960px ) / 320 ) ) );
+    font-size: 2.1rem;
+    font-size: calc( 1.6rem + ( 5 * ( ( 100vw - 960px ) / 320 ) ) );
   }
 
   h1 {
-    font-size: calc( ( 45em / 8 ) + ( 25.875 * ( ( 100vw - 960px ) / 320 ) ) );
+    font-size: 5em;
+    font-size: calc( calc( 45em / 8 ) + ( 25.875 * ( ( 100vw - 960px ) / 320 ) ) );
     /* font-size: calc( calc( 5em ) + ( 54 * ( ( 100vw - 960px ) / 320 ) ) ); */
   }
   h2 {
-    font-size: calc( 16em / 9 );
+    font-size: rem;
+    font-size: calc( calc( 9em / 4 ) + ( 12 * ( ( 100vw - 960px ) / 320 ) ) );
     /* font-size: calc( calc( 2.25em ) + ( calc( 4em / 7 ) * ( ( 100vw - 960px ) / 320 ) ) ); */
   }
   h3 {
-    font-size: calc( 16em / 9 );
-    /* font-size: calc( calc( 1.5em ) + ( 9 * ( ( 100vw - 960px ) / 320 ) ) ); */
+    /* font-size: calc( 16em / 9 ); */
+    font-size: calc( calc( 33em / 16 ) - ( 7.1375 * ( ( 100vw - 960px ) / 320 ) ) );
   }
   nav,
   .navigation,
   a.checkout-button {
-    font-size: calc( ( 24em / 16 ) - ( 7.5 * ( ( 100vw - 960px ) / 320 ) ) );
+    font-size: 2.4rem;
+    /* font-size: calc( calc( 24em / 16 ) - ( 7.5 * ( ( 100vw - 960px ) / 320 ) ) ); */
   }
 
   nav ul,
@@ -1398,19 +1414,28 @@ and ( max-width: 1280px ) {
 }
 
 /* IPAD Pro 10.5 : landscape */
-
-/* IPAD 3, 4 : landscape */
-
-/* IPAD 1, 2, MINI ... : landscape */
 @media only screen
-and ( device-width : 1024px )
-and ( -webkit-device-pixel-ratio : 1 )
+and ( device-width : 1112px )
+and ( -webkit-device-pixel-ratio : 2 )
 and ( orientation : landscape ) {
 
   body {
     font-size: 2.7rem;
   }
 }
+
+/* IPAD 3, 4 : landscape */
+@media only screen
+and ( device-width : 1024px )
+and ( -webkit-device-pixel-ratio : 2 )
+and ( orientation : landscape ) {
+
+  body {
+    font-size: 2.7rem;
+  }
+}
+
+/* IPAD 1, 2, MINI ... : landscape */
 
 /* MID */
 @media only screen
@@ -1427,12 +1452,12 @@ and ( max-width: 960px ) {
   }
   h3, h4,
   button, input {
-    font-size: calc( 10em / 9 );
+    font-size: calc( 11em / 9 );
   }
   nav,
   .navigation,
   a.checkout-button {
-    font-size: calc( 8em / 9 );
+    /* font-size: calc( 8em / 9 ); */
   }
 
   nav ul.spread,
@@ -1512,9 +1537,38 @@ and ( max-width: 960px ) {
   }
 }
 
+/* IPHONE XS Max : landscape */
+@media only screen
+and ( device-width : 896px )
+and ( -webkit-device-pixel-ratio : 3 )
+and ( orientation : portrait ) {
+
+  body {
+    font-size: 3.6rem;
+  }
+}
+
 /* IPAD Pro 10.5 : portrait */
+@media only screen
+and ( device-width : 834px )
+and ( -webkit-device-pixel-ratio : 2 )
+and ( orientation : portrait ) {
+
+  body {
+    font-size: 2.7rem;
+  }
+}
 
 /* IPHONE X : landscape */
+@media only screen
+and ( device-width : 812px )
+and ( -webkit-device-pixel-ratio : 3 )
+and ( orientation : portrait ) {
+
+  body {
+    font-size: 3.6rem;
+  }
+}
 
 /* IPAD 3, 4 MINI 2 : portrait */
 
@@ -1546,40 +1600,93 @@ and ( max-width: 768px ) {
   } */
 
   body {
+    font-size: 2.7rem;
     font-size: calc( 21px + ( 6 * ( ( 100vw - 375px ) / 393 ) ) );
   }
   h1 {
+    font-size: calc( 10em / 3 );
     font-size: calc( 2em + ( 36 * ( ( 100vw - 375px ) / 393 ) ) );
   }
   h2 {
+    font-size: calc( 4em / 3 );
     font-size: calc( calc( 8em / 7 ) + ( calc( 36 / 7 ) * ( ( 100vw - 375px ) / 393 ) ) );
   }
   h3, h4,
   button, input {
-    font-size: calc( calc( 8em / 7 ) - ( calc( 6 / 7 ) * ( ( 100vw - 375px ) / 393 ) ) );
+    font-size: calc( 11em / 9 );
+    font-size: calc( calc( 8em / 7 ) + ( calc( 22 / 7 ) * ( ( 100vw - 375px ) / 393 ) ) );
   }
-  nav {
+  nav,
+  .navigation,
+  a.checkout-button {
+    font-size: calc( 8em / 9 );
     font-size: calc( 1em - ( 3 * ( ( 100vw - 375px ) / 393 ) ) );
   }
-  input,
-  button,
-  select {
-    height: calc( 2em + ( 0.5 * ( ( 100vw - 320px ) / 448 ) ) );
+  input, button, select {
+    height: calc( calc( 12em / 7 ) + ( calc( 54 / 7 ) * ( ( 100vw - 320px ) / 448 ) ) );
   }
 
   .video {
-    height: 432px;
+    height: calc( 180px + ( 252 * ( ( 100vw - 320px ) / 448 ) ) );
+  }
+}
+
+/* IPHONE 6, 7, 8 : landscape */
+@media only screen
+and ( device-width : 667px )
+and ( -webkit-device-pixel-ratio : 2 )
+and ( orientation : portrait ) {
+
+  body {
+    font-size: 2.7rem;
   }
 }
 
 /* IPHONE 5, 5S : landscape */
+@media only screen
+and ( device-width : 568px )
+and ( -webkit-device-pixel-ratio : 2 )
+and ( orientation : landscape ) {
+
+  body {
+    font-size: 2.4rem;
+  }
+}
 
 /* IPHONE 4S : landscape */
-
-/* IPHONE 6+, 7+, 8+ */
 @media only screen
-and ( min-device-width : 414px )
-and ( max-device-width : 736px )
+and ( device-width : 480px )
+and ( -webkit-device-pixel-ratio : 2 )
+and ( orientation : landscape ) {
+
+  body {
+    font-size: 2.4rem;
+  }
+}
+
+/* 480 */
+@media only screen
+and ( max-width: 480px ) {
+
+  .desktop {
+    display: none;
+  }
+}
+
+/* IPHONE XS Max : portrait */
+@media only screen
+and ( device-width : 414px )
+and ( -webkit-device-pixel-ratio : 3 )
+and ( orientation : portrait ) {
+
+  body {
+    font-size: 3rem;
+  }
+}
+
+/* IPHONE 6+, 7+, 8+ : portrait */
+@media only screen
+and ( device-width : 414px )
 and ( -webkit-device-pixel-ratio : 2 )
 and ( orientation : portrait ) {
 
@@ -1592,25 +1699,22 @@ and ( orientation : portrait ) {
   }
 }
 
-/* LOW */
+/* 384 */
 @media only screen
 and ( max-width: 384px ) {
 
   .quarter {
     width: 50%;
   }
-
-  .desktop {
-    display: none;
-  }
 }
 
-/* LOW */
+/* 375 */
 @media only screen
 and ( max-width: 375px ) {
 
   body {
-    font-size: calc( 18px + ( 3 * ( ( 100vw - 320px ) / 55 ) ) );
+    /* font-size: 2.1rem; */
+    font-size: calc( 1.8rem + ( 3 * ( ( 100vw - 320px ) / 55 ) ) );
   }
 
   h1 {
@@ -1618,10 +1722,16 @@ and ( max-width: 375px ) {
   }
   h2, h3, h4,
   button, input {
-    font-size: calc( calc( 7em / 6 ) - ( 0.5 * ( ( 100vw - 320px ) / 55 ) ) );
+    font-size: calc( 8em / 7 );
   }
-  nav {
+  nav,
+  .navigation,
+  a.checkout-button {
     font-size: 1em;
+  }
+
+  input,  button, select {
+    height: calc( 12em / 7 );
   }
 
   nav ul,
@@ -1637,10 +1747,9 @@ and ( max-width: 375px ) {
   }
 }
 
-/* IPHONE X */
+/* IPHONE X : portrait */
 @media only screen
-and ( min-device-width : 375px )
-and ( max-device-width : 812px )
+and ( device-width : 375px )
 and ( -webkit-device-pixel-ratio : 3 )
 and ( orientation : portrait ) {
 
@@ -1649,10 +1758,9 @@ and ( orientation : portrait ) {
   }
 }
 
-/* IPHONE 6, 7, 8 */
+/* IPHONE 6, 7, 8 : portrait */
 @media only screen
-and ( min-device-width : 375px )
-and ( max-device-width : 667px )
+and ( device-width : 375px )
 and ( -webkit-device-pixel-ratio : 2 )
 and ( orientation : portrait ) {
 
@@ -1660,7 +1768,8 @@ and ( orientation : portrait ) {
     font-size: 2.7rem;
   }
 }
-/* Ultra LOW */
+
+/* 320 */
 @media only screen
 and ( max-width: 320px ) {
 
@@ -1672,9 +1781,7 @@ and ( max-width: 320px ) {
     font-size: calc( 7em / 6 );
   }
 
-  input,
-  button,
-  select {
+  input,  button, select {
     height: 2em;
   }
 
