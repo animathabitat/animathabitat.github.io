@@ -1627,7 +1627,7 @@ and ( max-width: 768px ) {
   }
 
   .video {
-    height: calc( 180px + ( 252 * ( ( 100vw - 320px ) / 448 ) ) );
+    height: calc( 135px + ( 297 * ( ( 100vw - 240px ) / 528 ) ) );
   }
 }
 
@@ -1775,6 +1775,7 @@ and ( max-width: 320px ) {
 
   body {
     font-size: 1.8rem;
+    font-size: calc( 1.4rem + ( 4 * ( ( 100vw - 240px ) / 80 ) ) )
   }
   h2, h3, h4,
   button, input {
@@ -1793,14 +1794,35 @@ and ( max-width: 320px ) {
   header,
   footer {
     max-width: 320px;
-    min-width: 320px;
-  }
-
-  .video {
-    height: 180px;
   }
 }
 
 /* IPHONE 5, 5S : portrait */
 
 /* IPHONE 4S : portrait */
+
+
+/* 240 */
+@media only screen
+and ( max-width: 240px ) {
+
+  body {
+    font-size: 1.4rem;
+  }
+
+  body,
+  nav ul,
+  nav ul.spread,
+  section,
+  section.bio,
+  section.single,
+  header,
+  footer {
+    max-width: 240px;
+    min-width: 240px;
+  }
+
+  .video {
+    height: 135px;
+  }
+}

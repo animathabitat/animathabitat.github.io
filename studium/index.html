@@ -11,8 +11,8 @@
 
   <title>Animat Habitat&trade; studium.</title>
 
-  <link rel="prefetch" href="https://fonts.googleapis.com/css?family=Oswald:200,500" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,500" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap">
   <link rel="stylesheet" href="../inc/css/dark.light.unicorn.css" />
 
   <link rel="icon" href="../inc/ico/oafa.light.png" />
@@ -237,58 +237,59 @@
 
 </body>
 
-  <script>
-    var s_101 = document.getElementById("s101"),
-        s_201 = document.getElementById("s201"),
-        s_202 = document.getElementById("s202");
+<script>
+  var s_101 = document.getElementById("s101"),
+      s_201 = document.getElementById("s201"),
+      s_202 = document.getElementById("s202");
 
-    s_101.style.display = "none";
-    s_201.style.display = "none";
-    s_202.style.display = "none";
+  s_101.style.display = "none";
+  s_201.style.display = "none";
+  s_202.style.display = "none";
 
-    function studio_101() {
-      if (s_101.style.display == "none") {
-        s_101.style.display = "block";
-        s_201.style.display = "none";
-        s_202.style.display = "none";
-        document.querySelector('#s101-title').scrollIntoView({ behavior: 'smooth' });
-      }
-      else {
-        s_101.style.display = "none";
-      }
-    };
+  function studio_101() {
+    if (s_101.style.display == "none") {
+      s_101.style.display = "block";
+      s_201.style.display = "none";
+      s_202.style.display = "none";
+      document.querySelector('#s101-title').scrollIntoView({ behavior: 'smooth' });
+    }
+    else {
+      s_101.style.display = "none";
+    }
+  };
 
-    function studio_201() {
-      if (s_201.style.display == "none") {
-        s_101.style.display = "none";
-        s_201.style.display = "block";
-        s_202.style.display = "none";
-        document.querySelector('#s201-title').scrollIntoView({ behavior: 'smooth' });
-      }
-      else {
-        s_201.style.display = "none";
-      }
-    };
+  function studio_201() {
+    if (s_201.style.display == "none") {
+      s_101.style.display = "none";
+      s_201.style.display = "block";
+      s_202.style.display = "none";
+      document.querySelector('#s201-title').scrollIntoView({ behavior: 'smooth' });
+    }
+    else {
+      s_201.style.display = "none";
+    }
+  };
 
-    function studio_202() {
-      if (s_202.style.display == "none") {
-        s_101.style.display = "none";
-        s_201.style.display = "none";
-        s_202.style.display = "block";
-        document.querySelector('#s202-title').scrollIntoView({ behavior: 'smooth' });
-      }
-      else {
-        s_202.style.display = "none";
-      }
-    };
-  </script>
+  function studio_202() {
+    if (s_202.style.display == "none") {
+      s_101.style.display = "none";
+      s_201.style.display = "none";
+      s_202.style.display = "block";
+      document.querySelector('#s202-title').scrollIntoView({ behavior: 'smooth' });
+    }
+    else {
+      s_202.style.display = "none";
+    }
+  };
+</script>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>
-    $( window ).on( 'load', function() {
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script>
+  $( window ).on( 'load', function() {
 
-      $('body').fadeIn('fast');
+    $('body').fadeIn('slow');
 
-    });</script>
+  });
+</script>
 
 </html>
