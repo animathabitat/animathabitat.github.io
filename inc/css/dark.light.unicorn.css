@@ -166,6 +166,7 @@ em em {
 
 h1 {
   font-size: 8em;
+  /* line-height: normal; */
   padding: 1.25em 0 0;
 }
 h1 .letterspace {
@@ -1338,6 +1339,7 @@ and ( max-width: 1600px ) {
     width: 100%;
   }
   section.bio aside {
+    float: left;
     width: 50%;
   }
   div.profile {
@@ -1512,6 +1514,9 @@ and ( max-width: 960px ) {
   div.logo img {
     padding: 1.5em;
   }
+  div.profile img.profile {
+    margin-top: 0;
+  }
 
   /* 3.5 badges */
   .apple img, .google img {
@@ -1651,6 +1656,19 @@ and ( orientation : landscape ) {
   body {
     font-size: 2.4rem;
   }
+
+  .desktop {
+    display: inline;
+  }
+}
+
+/* 568 */
+@media only screen
+and ( max-width: 568px ) {
+
+  .desktop {
+    display: none;
+  }
 }
 
 /* IPHONE 4S : landscape */
@@ -1662,14 +1680,9 @@ and ( orientation : landscape ) {
   body {
     font-size: 2.4rem;
   }
-}
-
-/* 480 */
-@media only screen
-and ( max-width: 480px ) {
 
   .desktop {
-    display: none;
+    display: inline;
   }
 }
 
@@ -1681,6 +1694,10 @@ and ( orientation : portrait ) {
 
   body {
     font-size: 3rem;
+  }
+
+  .desktop {
+    display: inline;
   }
 }
 
@@ -1695,7 +1712,7 @@ and ( orientation : portrait ) {
   }
 
   .desktop {
-    /* display: inline !important; */
+    display: inline;
   }
 }
 
@@ -1756,6 +1773,10 @@ and ( orientation : portrait ) {
   body {
     font-size: 3.6rem;
   }
+
+  .desktop {
+    display: inline;
+  }
 }
 
 /* IPHONE 6, 7, 8 : portrait */
@@ -1766,6 +1787,10 @@ and ( orientation : portrait ) {
 
   body {
     font-size: 2.7rem;
+  }
+
+  .desktop {
+    display: inline;
   }
 }
 
