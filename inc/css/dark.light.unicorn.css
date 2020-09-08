@@ -1456,10 +1456,12 @@ and ( max-width: 960px ) {
   button, input {
     font-size: calc( 11em / 9 );
   }
-  nav,
   .navigation,
   a.checkout-button {
-    /* font-size: calc( 8em / 9 ); */
+    font-size: 1em;
+  }
+  nav {
+    font-size: calc( 8em / 9 );
   }
 
   nav ul.spread,
@@ -1609,22 +1611,20 @@ and ( max-width: 768px ) {
     font-size: calc( 21px + ( 6 * ( ( 100vw - 375px ) / 393 ) ) );
   }
   h1 {
-    font-size: calc( 10em / 3 );
+    /* font-size: calc( 10em / 3 ); */
     font-size: calc( 2em + ( 36 * ( ( 100vw - 375px ) / 393 ) ) );
   }
   h2 {
-    font-size: calc( 4em / 3 );
+    /* font-size: calc( 4em / 3 ); */
     font-size: calc( calc( 8em / 7 ) + ( calc( 36 / 7 ) * ( ( 100vw - 375px ) / 393 ) ) );
   }
   h3, h4,
   button, input {
-    font-size: calc( 11em / 9 );
+    /* font-size: calc( 11em / 9 ); */
     font-size: calc( calc( 8em / 7 ) + ( calc( 22 / 7 ) * ( ( 100vw - 375px ) / 393 ) ) );
   }
-  nav,
-  .navigation,
-  a.checkout-button {
-    font-size: calc( 8em / 9 );
+  nav {
+    /* font-size: calc( 8em / 9 ); */
     font-size: calc( 1em - ( 3 * ( ( 100vw - 375px ) / 393 ) ) );
   }
   input, button, select {
@@ -1741,9 +1741,7 @@ and ( max-width: 375px ) {
   button, input {
     font-size: calc( 8em / 7 );
   }
-  nav,
-  .navigation,
-  a.checkout-button {
+  nav {
     font-size: 1em;
   }
 
