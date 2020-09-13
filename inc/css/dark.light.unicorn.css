@@ -128,6 +128,7 @@ body {
   font-family:'Oswald', Helvetica, sans-serif;
   font-size: 1.8rem;
   font-style: normal;
+  font-weight: normal;
   font-weight: 200;
 }
 form, button, input, label, option, select, textarea {
@@ -686,7 +687,7 @@ input[type="checkbox"]:checked ~ div.shipping_address {
 }
 
 .woo-title {
-  padding: 0.5em 1em 0 1em;
+  padding: 1em 1em 0 1em;
 }
 div.related div.woo-price {
   padding: 1em 0;
@@ -1351,10 +1352,6 @@ and ( max-width: 1600px ) {
     width: 100%;
   }
 
-  .woo-title {
-    /* padding-top: calc( 9px + ( 9 * ( ( 100vw - 800px ) / 656 ) ) ); */
-  }
-
   .break-cut {
     display: none;
   }
@@ -1408,6 +1405,11 @@ and ( max-width: 1280px ) {
   header,
   footer {
     width: 100vw;
+  }
+
+  .woo-title {
+    /* padding-top: calc( 9px + ( 9 * ( ( 100vw - 960px ) / 320 ) ) ); */
+    padding-top: 0.5em;
   }
 
   .video {
@@ -1487,7 +1489,8 @@ and ( max-width: 960px ) {
     width: 100%;
   }
   li.type-product,
-  .quads > div {
+  .quads > div,
+  .quarter {
     width: 50%;
   }
   .full-frame .blocks > div, {
@@ -1671,6 +1674,17 @@ and ( max-width: 568px ) {
   }
 }
 
+/* 480 */
+@media only screen
+and ( max-width: 480px ) {
+
+  li.type-product,
+  .quads > div,
+  .quarter {
+    width: 100%;
+  }
+}
+
 /* IPHONE 4S : landscape */
 @media only screen
 and ( device-width : 480px )
@@ -1719,10 +1733,6 @@ and ( orientation : portrait ) {
 /* 384 */
 @media only screen
 and ( max-width: 384px ) {
-
-  .quarter {
-    width: 50%;
-  }
 }
 
 /* 375 */
