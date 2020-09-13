@@ -1368,22 +1368,22 @@ and ( orientation : landscape ) {
   }
 }
 
-/* IPAD 1, 2, MINI ... */
+/* 1280 */
 @media only screen
 and ( max-width: 1280px ) {
 
   body{
-    font-size: 2.1rem;
+    /* font-size: 2.1rem; */
     font-size: calc( 1.6rem + ( 5 * ( ( 100vw - 960px ) / 320 ) ) );
   }
 
   h1 {
-    font-size: 5em;
+    /* font-size: 5em; */
     font-size: calc( calc( 45em / 8 ) + ( 25.875 * ( ( 100vw - 960px ) / 320 ) ) );
     /* font-size: calc( calc( 5em ) + ( 54 * ( ( 100vw - 960px ) / 320 ) ) ); */
   }
   h2 {
-    font-size: rem;
+    /* font-size: rem; */
     font-size: calc( calc( 9em / 4 ) + ( 12 * ( ( 100vw - 960px ) / 320 ) ) );
     /* font-size: calc( calc( 2.25em ) + ( calc( 4em / 7 ) * ( ( 100vw - 960px ) / 320 ) ) ); */
   }
@@ -1408,12 +1408,23 @@ and ( max-width: 1280px ) {
   }
 
   .woo-title {
-    /* padding-top: calc( 9px + ( 9 * ( ( 100vw - 960px ) / 320 ) ) ); */
     padding-top: 0.5em;
   }
 
   .video {
     height: calc( 472px + ( 248 * ( ( 100vw - 960px ) / 320 ) ) );
+  }
+}
+
+/* 1280 */
+@media only screen
+and ( max-width: 1280px )
+and ( -webkit-device-pixel-ratio : 1 ) {
+
+  .woo-description,
+  .woo-tag,
+  .woo-category {
+    display: none;
   }
 }
 
@@ -1503,9 +1514,6 @@ and ( max-width: 960px ) {
   }
   .quote {
     padding: 1.5em;
-  }
-  .woo-title {
-    /* padding-top: 1.5em; */
   }
 
   .break-cut {
@@ -1683,6 +1691,10 @@ and ( max-width: 480px ) {
   .quarter {
     width: 100%;
   }
+
+  .woo-title {
+    padding-top: calc( 24px - ( 6 * ( ( 100vw - 375px ) / 105 ) ) );
+  }
 }
 
 /* IPHONE 4S : landscape */
@@ -1770,6 +1782,10 @@ and ( max-width: 375px ) {
   footer {
     max-width: 375px;
   }
+
+  .woo-title {
+    padding-top: 1em;
+  }
 }
 
 /* IPHONE X : portrait */
@@ -1807,7 +1823,7 @@ and ( orientation : portrait ) {
 and ( max-width: 320px ) {
 
   body {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
     font-size: calc( 1.4rem + ( 4 * ( ( 100vw - 240px ) / 80 ) ) )
   }
   h2, h3, h4,
