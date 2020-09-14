@@ -1386,17 +1386,20 @@ and ( max-width: 1280px ) {
 
   h1 {
     /* font-size: 5em; */
-    font-size: calc( calc( 45em / 8 ) + ( 25.875 * ( ( 100vw - 960px ) / 320 ) ) );
     /* font-size: calc( calc( 5em ) + ( 54 * ( ( 100vw - 960px ) / 320 ) ) ); */
+    /* font-size: calc( calc( 45em / 8 ) + ( 25.875 * ( ( 100vw - 960px ) / 320 ) ) ); */
+    font-size: calc( calc( 45em / 8 ) + ( 42.75 * ( ( 100vw - 960px ) / 320 ) ) );
   }
   h2 {
     /* font-size: rem; */
-    font-size: calc( calc( 9em / 4 ) + ( 12 * ( ( 100vw - 960px ) / 320 ) ) );
     /* font-size: calc( calc( 2.25em ) + ( calc( 4em / 7 ) * ( ( 100vw - 960px ) / 320 ) ) ); */
+    /* font-size: calc( calc( 9em / 4 ) + ( 12 * ( ( 100vw - 960px ) / 320 ) ) ); */
+    font-size: calc( calc( 9em / 4 ) + ( 13.5 * ( ( 100vw - 960px ) / 320 ) ) );
   }
   h3 {
     /* font-size: calc( 16em / 9 ); */
-    font-size: calc( calc( 33em / 16 ) - ( 7.1375 * ( ( 100vw - 960px ) / 320 ) ) );
+    /* font-size: calc( calc( 33em / 16 ) - ( 7.1375 * ( ( 100vw - 960px ) / 320 ) ) ); */
+    font-size: calc( calc( 33em / 16 ) - ( 1.125 * ( ( 100vw - 960px ) / 320 ) ) );
   }
   nav,
   .navigation,
@@ -1484,11 +1487,11 @@ and ( max-width: 960px ) {
     font-size: calc( 8em / 9 );
   }
 
-  nav ul.spread,
-  section {
+  nav ul.spread {
     max-width: 960px;
   }
   nav ul,
+  section,
   section.bio,
   section.single,
   header,
