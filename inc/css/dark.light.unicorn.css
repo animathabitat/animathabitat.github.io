@@ -1339,7 +1339,7 @@ and ( max-width: 1600px ) {
 
   section {
     max-width: 1600px;
-    width: 100vw;
+    width: 100%;
   }
   nav ul,
   nav ul.spread,
