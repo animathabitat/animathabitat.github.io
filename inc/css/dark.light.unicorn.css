@@ -815,7 +815,14 @@ div.logo img {
 
 .video {
   width: 100%;
-  height: calc( 64em / 1.78 );
+}
+
+.video {
+  height: 36em;
+}
+
+.single .video {
+  height: 40.5em;
 }
 
 /* 5. 3 BADGE */
@@ -1410,11 +1417,12 @@ and ( max-width: 1280px ) {
 
   nav ul,
   nav ul.spread,
+  section,
   section.bio,
   section.single,
   header,
   footer {
-    width: 100vw;
+    width: 100%;
   }
 
   h5.woo-title {
@@ -1422,7 +1430,11 @@ and ( max-width: 1280px ) {
   }
 
   .video {
-    height: calc( 472px + ( 248 * ( ( 100vw - 960px ) / 320 ) ) );
+    height: calc( 432px + ( 248 * ( ( 100vw - 960px ) / 320 ) ) );
+  }
+
+  .single .video {
+    height: calc( 540px + ( 180 * ( ( 100vw - 960px ) / 320 ) ) );
   }
 }
 
@@ -1544,6 +1556,9 @@ and ( max-width: 960px ) {
   article div.blocks > div {
     padding: 1em 0;
   }
+  article div.clear.blocks > div {
+    padding: 1em;
+  }
 
   blockquote, q,
   .quote {
@@ -1589,7 +1604,8 @@ and ( max-width: 960px ) {
     width: 4em;
   }
 
-  .video {
+  .video,
+  .single .video {
     height: 432px;
   }
 
@@ -1679,6 +1695,11 @@ and ( max-width: 768px ) {
 
   h5.woo-title {
     padding-top: calc( 21px - ( 7.5 * ( ( 100vw - 480px ) / 288 ) ) );
+  }
+
+  .video,
+  .single .video {
+    height: calc( 180px + ( 252 * ( ( 100vw - 320px ) / 448 ) ) );
   }
 }
 
@@ -1896,6 +1917,11 @@ and ( max-width: 320px ) {
   .gutter-side {
     /* padding: 0 0.5em; */
   }
+
+  .video,
+  .single .video {
+    height: 180px;
+  }
 }
 
 /* IPHONE 5, 5S : portrait */
@@ -1921,9 +1947,11 @@ and ( max-width: 240px ) {
   footer {
     max-width: 240px;
     min-width: 240px;
+    width: 240px;
   }
 
-  .video {
+  .video,
+  .single .video {
     height: 135px;
   }
 }
