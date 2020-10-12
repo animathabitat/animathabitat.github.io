@@ -27,7 +27,11 @@
 
   <noscript>
     <style>
-    	body { display:block; }</style></noscript>
+    	body, #register { display:block; }
+      #register-a { display:none; }
+    </style>
+
+  </noscript>
 
 </head>
 
@@ -55,22 +59,22 @@
   <section class="single">
     <article>
 
-      <div class="clear blocks">
+      <div class="clear type-block">
 
-        <!--div class="left">
-          <a href="scene/two/" title="Animat Habitat&trade; / 02: White Tiger">
-            <img src="inc/img/oafa-02._.banner.small.jpg" class="full" alt="_ &copy; Animat Habitat&trade;, 2020">
-            <div class="color">
-              <h3><font class="scene-two">02: White Tiger</font></h3>
+        <!-- <div class="left">
+          <a class="nav-block block-two" href="scene/two/" title="Animat Habitat&trade; / 02: White Tiger">
+            <img src="inc/uploads/02/1921.rodchenko.the-end-of-painting.png" class="full" alt="_ &copy; Animat Habitat&trade;, 2020">
+            <div>
+              <h3><font class="scene-two">&plus; White Tiger (2022)</font></h3>
               <p>Oil painting of a tiger in a taiga forest on fire behind the trees.<font class="fr"> &#92; Peinture &agrave; l'huile d'un tigre dans une for&ecirc;t de la ta&iuml;ga en feu derri&egrave;re les arbres.</font></p>
             </div></a>
 
-        </div-->
+        </div> -->
 
         <div class="left">
-          <a href="//lastofthebigtuskers.github.io" title="Last of the Big Tuskers (2018)">
+          <a class="nav-block block-one" href="//lastofthebigtuskers.github.io" title="Last of the Big Tuskers (2018)">
             <img src="inc/uploads/last-of-the-big-tuskers/lotbt.poster.art.1224-594.jpg" class="full" alt="Last of the Big Tuskers (2018)">
-            <div class="color">
+            <div>
               <h3><font class="scene-one">Last of the Big Tuskers (2018)</font></h3>
               <p>A film by James Currie documenting the challenges to save the last of the big tuskers in Tembe Elephant Park, South Africa.<font class="fr"> &#92; Un film de James Currie documentant les d&eacute;fis pour conserver les derniers des &eacute;l&eacute;phants &agrave; grosse d&eacute;fense au Parc des &eacute;l&eacute;phants Tembe, Afrique du Sud.</font></p>
             </div></a>
@@ -78,29 +82,39 @@
         </div>
 
         <div class="left">
-          <a href="scene/one/" title="Animat Habitat&trade; / 01: White Elephant">
+          <a class="nav-block block-one" href="scene/one/" title="Animat Habitat&trade; / 01: White Elephant">
             <img src="inc/img/oafa-01.cover.banner.small.jpg" class="full" alt="[Archives] &copy; Animat Habitat&trade;, 2015">
-            <div class="color">
-              <h3><font class="scene-one">01: White Elephant</font></h3>
+            <div>
+              <h3 id="register-header"><font class="scene-one">&plus; White Elephant (2022)</font></h3>
               <p>Journey with an elephant across a sea of sand &mdash; a comic book, an app and an invitation to change the way we look at wildlife.<font class="fr"> &#92; Voyageons avec un &eacute;l&eacute;phant &agrave; travers une mer de sable &mdash; une bande dessin&eacute;e, app et invitation &agrave; changer la fa&ccedil;on dont nous regardons la faune.</font></p>
             </div></a>
 
-          <div>
-            <h3>Behind the scenes<font class="fr"> &#92; Dans les coulisses :</font></h3>
-            <p>Register for membership behind the scenes in wildlife art.<font class="fr"> &#92; Adh&eacute;sion aux mises &agrave; jour dans les coulisses de l'art de la faune.</font></p>
+          <div id="register-a">
+            <h3><a onclick="toggle_register();">&plus;</a></h3>
+
           </div>
 
-          <!--form action="https://m.animathabitat.org/t/d/s/dliyu/" method="post"-->
-          <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A52FB6D182F7A8A669AB1C317E182AD3763A1B775C7C4E900069B5F6BE1E4B7A7B42258404945BDA2B8796E1BC8516FAF">
-            <div class="clear-top">
-              <p><label>Name<font class="fr"> &#92; Pr&eacute;nom</font></label></p>
-              <input aria-label="Name" class="trim" id="fieldName" maxlength="200" name="cm-name" required="" title="Name &#92; Pr&eacute;nom" type="text">
+          <div class="clear" id="register">
 
-              <p class="linebreak"><label>E-mail Address<font class="fr"> &#92; Addresse email</font></label></p>
-              <input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email trim" id="fieldEmail" maxlength="200" name="cm-dliyu-dliyu" required="" title="E-mail address &#92; Adresse email" type="email">
-              <button type="submit">Register<font class="fr"> &#92; Enregistrez</font></button>
+            <div>
+              <h3><a onclick="toggle_register();">&minus;</a><br>
+                Behind the scenes<font class="fr"> &#92; Dans les coulisses :</font></h3>
+              <p>Register for membership behind the scenes in wildlife art.<font class="fr"> &#92; Adh&eacute;sion aux mises &agrave; jour dans les coulisses de l'art de la faune.</font></p>
+
             </div>
-          </form>
+
+            <!--form action="https://m.animathabitat.org/t/d/s/dliyu/" method="post"-->
+            <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A52FB6D182F7A8A669AB1C317E182AD3763A1B775C7C4E900069B5F6BE1E4B7A7B42258404945BDA2B8796E1BC8516FAF">
+              <div class="clear-top">
+                <p><label>Name<font class="fr"> &#92; Pr&eacute;nom</font></label></p>
+                <input aria-label="Name" class="trim" id="fieldName" maxlength="200" name="cm-name" required="" title="Name &#92; Pr&eacute;nom" type="text">
+
+                <p class="linebreak"><label>E-mail Address<font class="fr"> &#92; Addresse email</font></label></p>
+                <input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email trim" id="fieldEmail" maxlength="200" name="cm-dliyu-dliyu" required="" title="E-mail address &#92; Adresse email" type="email">
+                <button type="submit">Register<font class="fr"> &#92; Enregistrez</font></button>
+              </div>
+            </form>
+          </div>
 
         </div><br class="clear">
       </div>
@@ -108,11 +122,17 @@
     </article><br class="clear">
   </section>
 
-  <section class="color quote single text-center">
-  <h4>Animat<font class="thin"> &mdash; <em>verb</em> in 3sg., indicative present, from the Latin</font> anim&otilde; <font class="text-quote">&ldquo;</font><font class="thin">animate</font><font class="text-quote">&rdquo;</font><font class="thin">,</font> <font class="text-quote">&ldquo;</font><font class="thin">give life to</font><font class="text-quote">&rdquo;</font><font class="thin">.</font><font class="fr"><font class="thin"> &#92; <em>verbe</em> en 3sg., pr&egrave;sent de l'indicatif, du Latin</font> anim&otilde; &laquo; <font class="thin">animer</font> &raquo; <font class="thin">,</font> &laquo; <font class="thin"> donner la vie</font> &raquo; <font class="thin">.</font></font></h4></section>
+  <div class="clear color">
+    <section class="single">
+      <div class="quote text-center">
+        <h4>Animat<font class="thin"> &mdash; <em>verb</em> in 3sg., indicative present, from the Latin</font> anim&otilde; <font class="text-quote">&ldquo;</font><font class="thin">animate</font><font class="text-quote">&rdquo;</font><font class="thin">,</font> <font class="text-quote">&ldquo;</font><font class="thin">give life to</font><font class="text-quote">&rdquo;</font><font class="thin">.</font><font class="fr"><font class="thin"> &#92; <em>verbe</em> en 3sg., pr&egrave;sent de l'indicatif, du Latin</font> anim&otilde; &laquo; <font class="thin">animer</font> &raquo; <font class="thin">,</font> &laquo; <font class="thin"> donner la vie</font> &raquo; <font class="thin">.</font></font></h4>
+
+      </div>
+    </section>
+  </div>
 
   <footer>
-    <div class="clear blocks">
+    <div class="clear type-block">
       <div class="quote right">
         <p class="lineend">Wildlife projects on the ground: <a href="conservatum/" title="Animat Habitat&trade; / C&#333;nservat&#363;m">c&#333;nservat&#363;m</a>.<font class="fr"> &#92; Les projets de conservation de la faune.</font></p>
 
@@ -155,6 +175,25 @@
       $('body').fadeIn('slow');
 
     });
+
+    var toggle_reg = document.getElementById("register");
+        toggle_reg_a = document.getElementById("register-a");
+
+    toggle_reg.style.display = "none";
+    toggle_reg_a.style.display = "block";
+
+    function toggle_register() {
+      if (toggle_reg.style.display == "none") {
+        toggle_reg.style.display = "block";
+        toggle_reg_a.style.display = "none";
+        document.querySelector('#register-header').scrollIntoView({ behavior: 'smooth' });
+      }
+      else {
+        toggle_reg.style.display = "none";
+        toggle_reg_a.style.display = "block";
+      }
+    };
+
   </script>
 
 </html>

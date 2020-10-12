@@ -49,7 +49,7 @@
 
         <div class="left">
           <a href="https://www.paypal.me/animathabitat" title="PayPal / Animat Habitat&trade;" rel="noopener"><button>Donate &#92; Don</button></a>
-          <p class="linebreak">Support of studio projects with any amount you can.<font class="fr"> &#92; Soutenez les projets de studio avec autant que vous le pouvez.</font> <sup>[<a class="button" onclick="fn_1();" title="PayPal">1</a>]</sup></p>
+          <p class="linebreak">Support of studio projects with any amount you can.<font class="fr"> &#92; Soutenez les projets de studio avec autant que vous le pouvez.</font> <sup>[<a class="button" onclick="fn();" title="PayPal">1</a>]</sup></p>
         </div>
 
         <div class="left">
@@ -75,29 +75,26 @@
 
       </div>
 
-      <!-- <div class="color quote text-center">
-        <h4><font class="color text-quote">&ldquo;</font><em>.</em><font class="color text-quote">&rdquo;</font><font class="thin"> &mdash; .</font></h4>
-        <h4><font class="fr">&laquo; <em>.</em> &raquo; <font class="thin">[ Traduction. ]</font></font></h4>
-      </div> -->
     </article><br class="clear">
   </section>
 
   <footer>
-    <div class="clear blocks">
+    <div class="clear type-block">
 
-      <div class="quote left">
+      <div class="quote" id="footnotes">
         <!-- <p class="lineend"><a href="https://www.paypal.me/animathabitat/" title="PayPal / Animat Habitat&trade;" target="_blank" rel="noopener">Donate</a> in support of independent art at Animat Habitat<font class="trade">&trade;</font>.<font class="fr"> &#92; Soutenir l'art ind&eacute;pendant chez Animat Habitat<font class="trade">&trade;</font>.</font></p> -->
 
         <!-- <p class="lineend">Tweet your feedback @<a href="//twitter.com/animathabitat/" title="Twitter / Animat Habitat&trade;" target="_blank" rel="noopener">animathabitat</a>.<font class="fr"> &#92; Envoyez-nous vos commentaires.</font></p> -->
 
         <!-- <pre class="thin"></pre> -->
 
-        <p class="small" id="foot-1"><sup>1</sup> Donation is accepted with PayPal. For a donation of more than CA$500, please contact <a href="mailto:account@animathabitat.org" title="Contact Animat Habitat&trade;">account@animathabitat.org</a>, public accountant at Animat Habitat<font class="trade">&trade;</font></a>. Thank you for your support of independent art at Animat Habitat<font class="trade">&trade;</font>.<font class="fr"> &#92; Le don est accept&eacute; avec PayPal. Pour un don de plus de 500 $ CA, veuillez contacter le trésor public chez Animat Habitat<font class="trade">&trade;</font>. Merci pour votre soutien &agrave; l'art ind&eacute;pendant chez Animat Habitat<font class="trade">&trade;</font>.</font></p>
+        <p class="small"><sup>1</sup> Donation is accepted with PayPal. For a donation of more than CA$500, please contact <a href="mailto:account@animathabitat.org" title="Contact Animat Habitat&trade;">account@animathabitat.org</a>, public accountant at Animat Habitat<font class="trade">&trade;</font></a>. Thank you for your support of independent art at Animat Habitat<font class="trade">&trade;</font>.<font class="fr"> &#92; Le don est accept&eacute; avec PayPal. Pour un don de plus de 500 $ CA, veuillez contacter le trésor public chez Animat Habitat<font class="trade">&trade;</font>. Merci pour votre soutien &agrave; l'art ind&eacute;pendant chez Animat Habitat<font class="trade">&trade;</font>.</font></p>
 
         <p class="linebreak small">Copyright &copy; 2015-2020 Animat Habitat<font class="trade">&trade;</font>. <a href="c/" target="_blank" title="Animat Habitat&trade; / Terms of Access">Terms of Access</a><font class="fr"> &#92; Conditions d'acc&egrave;s</font>.</p>
-      </div><br class="clear">
-    </div>
 
+      </div>
+      
+    </div>
   </footer>
 
 </body>
@@ -110,8 +107,8 @@
 
   });
 
-  function fn_1() {
-    document.querySelector('#foot-1').scrollIntoView({ behavior: 'smooth' });
+  function fn() {
+    document.querySelector('#footnotes').scrollIntoView({ behavior: 'smooth' });
   };
 </script>
 
