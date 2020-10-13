@@ -196,6 +196,7 @@ h5,
 select {
   font-size: calc( 7em / 6 );
 }
+h5.author,
 h5.woo-description,
 h5.woo-tag,
 h5.woo-category,
@@ -1593,6 +1594,8 @@ and ( max-width: 960px ) {
   button, input {
     font-size: calc( 11em / 9 );
   }
+  h5,
+  select,
   .navigation,
   a.checkout-button {
     font-size: 1em;
@@ -1613,20 +1616,18 @@ and ( max-width: 960px ) {
     max-width: 768px;
   }
 
+  /* GRID */
 
   div.type-block,
   section.product > div.type-product {
     grid-template-columns: 1fr;
   }
-
   section.product > div.type-product {
     grid-template-areas:
       "center"
       "left"
       "right";
   }
-
-
 
   article,
   aside,
@@ -1648,8 +1649,12 @@ and ( max-width: 960px ) {
     width: 50%;
   }
 
-  /* 3.1 gutters ***/
-  div.blocks > div {
+  /* GUTTER */
+
+  div.blocks > div,
+  article div.clear.blocks > div,
+  div.type-block > div,
+  article div.clear.type-block > div {
     padding: 1em;
   }
 
@@ -1664,11 +1669,9 @@ and ( max-width: 960px ) {
     padding-top: 0.5em;
   }
 
-  article div.blocks > div {
+  article div.blocks > div,
+  article div.type-blocks > div {
     padding: 1em 0;
-  }
-  article div.clear.blocks > div {
-    padding: 1em;
   }
 
   blockquote, q,
