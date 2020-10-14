@@ -95,8 +95,14 @@
       </div>
 
       <div class="clear type-block">
-        <div class="left">
-          <h3>Behind the scenes:</h3>
+
+        <div id="register-a">
+          <h3><a onclick="toggle_register();">&plus;</a></h3>
+
+        </div>
+
+        <div id="register">
+          <h3><a onclick="toggle_register();">&minus;</a><br>Behind the scenes:</h3>
           <p>Register for membership behind the scenes of <em>White Elephant</em>.</p>
 
           <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A52FB6D182F7A8A669AB1C317E182AD3763A1B775C7C4E900069B5F6BE1E4B7A7B42258404945BDA2B8796E1BC8516FAF">
@@ -127,5 +133,24 @@
 </body>
 
 <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+<script>
+  var toggle_reg = document.getElementById("register");
+      toggle_reg_a = document.getElementById("register-a");
+
+  toggle_reg.style.display = "none";
+
+  function toggle_register() {
+    if (toggle_reg.style.display == "none") {
+      toggle_reg.style.display = "block";
+      toggle_reg_a.style.display = "none";
+      document.querySelector('#register-header').scrollIntoView({ behavior: 'smooth' });
+    }
+    else {
+      toggle_reg.style.display = "none";
+      toggle_reg_a.style.display = "block";
+    }
+  };
+
+</script>
 
 </html>
