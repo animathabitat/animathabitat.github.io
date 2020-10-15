@@ -316,6 +316,7 @@ td, th,
 }
 
 .desktop-menu-alt,
+.mobile,
 .toggle-off,
 div.keeper-entry {
   display: none;
@@ -1763,6 +1764,9 @@ and ( orientation : landscape ) {
   .desktop {
     display: inline;
   }
+  .mobile {
+    display: none;
+  }
 }
 
 /* 568 */
@@ -1771,6 +1775,9 @@ and ( max-width: 568px ) {
 
   .desktop {
     display: none;
+  }
+  .mobile {
+    display: inline;
   }
 }
 
@@ -1808,6 +1815,9 @@ and ( orientation : landscape ) {
   .desktop {
     display: inline;
   }
+  .mobile {
+    display: none;
+  }
 }
 
 /* IPHONE XS Max : portrait */
@@ -1823,6 +1833,9 @@ and ( orientation : portrait ) {
   .desktop {
     display: inline;
   }
+  .mobile {
+    display: none;
+  }
 }
 
 /* IPHONE 6+, 7+, 8+ : portrait */
@@ -1837,6 +1850,9 @@ and ( orientation : portrait ) {
 
   .desktop {
     display: inline;
+  }
+  .mobile {
+    display: none;
   }
 }
 
@@ -1901,6 +1917,9 @@ and ( orientation : portrait ) {
   .desktop {
     display: inline;
   }
+  .mobile {
+    display: none;
+  }
 }
 
 /* IPHONE 6, 7, 8 : portrait */
@@ -1915,6 +1934,9 @@ and ( orientation : portrait ) {
 
   .desktop {
     display: inline;
+  }
+  .mobile {
+    display: none;
   }
 }
 
