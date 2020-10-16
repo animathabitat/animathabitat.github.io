@@ -268,7 +268,7 @@
 
         </div>
 
-        <div id="register">
+        <div class="toggle-off" id="register">
           <h3><a onclick="toggle_register();">&minus;</a><br>Behind the scenes:</h3>
           <p>Register for membership behind the scenes of <em>White Elephant</em>.</p>
 
@@ -301,13 +301,6 @@
 
 <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
 <script>
-
-  toggle_reg.style.display = "none";
-  //toggle_reg_a.style.display = "block";
-
-</script>
-
-<script>
   var p_1 = document.getElementById("principle-1");
       p_2 = document.getElementById("principle-2");
       p_3 = document.getElementById("principle-3");
@@ -337,8 +330,6 @@
 
   var toggle_reg = document.getElementById("register");
       toggle_reg_a = document.getElementById("register-a");
-
-  toggle_reg.style.display = "none";
 
   function principle_1() {
     if (p_1.style.display == "none") {
