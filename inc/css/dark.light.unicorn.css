@@ -708,7 +708,7 @@ li.lineend,
   padding: 0 1.5em;
 }
 .nav-links /* wordpress */ {
-  padding: 0 1.5em 1.5em;
+  padding: 1em 1.5em 1.5em;
 }
 .gutter-tobo {
   padding: 1em 0;
@@ -1083,6 +1083,9 @@ div.scene-one:hover {
 #scene-one .trim,
 #scene-one pre.thin {
   border: #393428 thin solid;
+}
+#scene-one .matte {
+  border: #FFCF60 2em solid;
 }
 #scene-one li.btn a:hover,
 #scene-one nav .page li.active em,
@@ -1609,9 +1612,11 @@ and ( max-width: 960px ) {
   .gutter-tobo {
     padding: 1em 0;
   }
-  .gutter-ref,
-  .nav-links /* wordpress */ {
+  .gutter-ref {
     padding: 0 1em 1em;
+  }
+  .nav-links /* wordpress */ {
+    padding: 1em 1em 1em;
   }
 
   .break-cut {
