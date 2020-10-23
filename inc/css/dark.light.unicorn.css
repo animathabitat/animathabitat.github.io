@@ -544,8 +544,7 @@ th.product-subtotal /* , td.product-remove, th.product-remove */ {
   width: calc( 200% / 3 );
 }
 .third,
-.tripty,
-.triptych > div {
+.tripty {
   width: calc( 100% / 3 );
 }
 .full,
@@ -569,10 +568,15 @@ ul.products li.product-category h2 /* woo */ {
 
 /* 3.1 GRID */
 
-.diptych {
+.diptych,
+.triptych,
+section.product > div.type-product {
   display: inline-grid;
-  grid-template-columns: 1fr 1fr;
   width: 100%;
+}
+
+.diptych {
+  grid-template-columns: 1fr 1fr;
 }
 footer .diptych {
   grid-template-areas: "left right";
@@ -580,11 +584,41 @@ footer .diptych {
 .diptych > div {
   margin: 0;
 }
-.diptych > div.block-left {
+
+.triptych {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "left center right";
+}
+
+section.product {
+  padding: 1em 0 2em 0;
+}
+section.product > div.type-product {
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: "left center right";
+}
+section.product > div.type-product > div {
+  margin: 0 auto;
+}
+
+div.ptych-center {
+  grid-area: center;
+}
+div.ptych-left {
   grid-area: left;
 }
-.diptych > div.block-right {
+div.ptych-right {
   grid-area: right;
+}
+
+div.clear-center.ptych-center {
+  padding: 0 0 0.5em;
+}
+div.clear-left.ptych-left {
+  padding: 0 1em 0 0;
+}
+div.clear-right.ptych-right {
+  padding: 0 0 0 1em;
 }
 
 /* 3.1.- THUMBNAIL */
@@ -609,29 +643,6 @@ a.checkout-button {
   width: 100%;
   padding: 0.25em 1em;
   /* text-align: right; */
-}
-
-/* 3.1.- PRODUCT */
-
-section.product {
-  padding: 1em 0 2em 0;
-}
-section.product > div.type-product {
-  display: inline-grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-areas: "left center right";
-}
-section.product > div.type-product > div {
-  margin: 0 auto;
-}
-div.product-summary {
-  grid-area: center;
-}
-div.product-preview {
-  grid-area: left;
-}
-div.product-stock {
-  grid-area: right;
 }
 
 /* 3.1.- PREVIEW */
@@ -1553,6 +1564,7 @@ and ( max-width: 960px ) {
   section.product > div.type-product {
     grid-template-columns: 1fr;
   }
+  .triptych,
   section.product > div.type-product {
     grid-template-areas:
       "center"
