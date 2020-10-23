@@ -1549,7 +1549,7 @@ and ( max-width: 960px ) {
 
   /* GRID */
 
-  div.diptych,
+  .diptych,
   section.product > div.type-product {
     grid-template-columns: 1fr;
   }
