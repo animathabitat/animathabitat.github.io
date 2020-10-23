@@ -5,7 +5,7 @@
  Author:       Dane Aleksander
  Author URI:   https://danealeksander.github.io/
  Template:     twentythirteen
- Version:      1.7.0
+ Version:      1.7.3
 */
 
 /* Revision 85. */
@@ -140,7 +140,7 @@ nav {
   font-style: normal;
   font-weight: 500;
 }
-h2, h3, h5,
+h2, h3, h5, h6,
 form, button, input, label, option, select, textarea,
 /* p,
 ol, ul, li,
@@ -153,7 +153,7 @@ a.button,
   font-style: normal;
   font-weight: 200;
 }
-h6,
+/* h6, */
 em, i {
   font-style: italic;
   font-style: oblique;
