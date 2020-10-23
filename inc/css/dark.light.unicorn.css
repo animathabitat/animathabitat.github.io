@@ -520,7 +520,6 @@ article,
 }
 .half,
 .dipty,
-.diptych > div,
 .blocks > div,
 .blocks > .quote,
 .vol a div,
@@ -570,13 +569,22 @@ ul.products li.product-category h2 /* woo */ {
 
 /* 3.1 GRID */
 
-div.type-block {
+.diptych {
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
 }
-div.type-block > div {
+footer .diptych {
+  grid-template-areas: "left right";
+}
+.diptych > div {
   margin: 0;
+}
+.diptych > div.block-left {
+  grid-area: left;
+}
+.diptych > div.block-right {
+  grid-area: right;
 }
 
 /* 3.1.- THUMBNAIL */
@@ -1541,7 +1549,7 @@ and ( max-width: 960px ) {
 
   /* GRID */
 
-  div.type-block,
+  div.diptych,
   section.product > div.type-product {
     grid-template-columns: 1fr;
   }
@@ -1573,8 +1581,8 @@ and ( max-width: 960px ) {
 
   div.blocks > div,
   article div.clear.blocks > div,
-  div.type-block > div,
-  article div.clear.type-block > div {
+  div.diptych > div,
+  article div.clear.diptych > div {
     padding: 1em;
   }
 
@@ -1590,7 +1598,7 @@ and ( max-width: 960px ) {
   }
 
   article div.blocks > div,
-  article div.type-blocks > div {
+  article div.diptych > div {
     padding: 1em 0;
   }
 
