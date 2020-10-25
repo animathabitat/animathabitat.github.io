@@ -37,7 +37,6 @@ _*/
 # Server caches
 /.htaccess
 /license.txt
-/robots.txt
 /readme.html
 /*.sitemap.xml
 /*.sitemap.xml.gz

@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+Disallow: /c/
+Disallow: /e/
+Disallow: /inc/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+
+Disallow: /support/
+
+Disallow: /studium/
+
+Disallow: /feed/
+
+Sitemap: /animathabitat.org.sitemap.xml
