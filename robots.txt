@@ -1,14 +1,15 @@
 User-agent: *
 Allow: /
 
-Disallow: /c/
 Disallow: /e/
+Disallow: /404.html
 Disallow: /inc/
-Disallow: /wp-admin/
-Disallow: /wp-includes/
 
+Disallow: /c/
+Disallow: /donate/
 Disallow: /support/
 
+Disallow: /societas/
 Disallow: /studium/
 
 Disallow: /feed/
