@@ -291,8 +291,27 @@ p a.button {
   right: 0;
 }
 
-ul.principle-list li {
+ul.lower-roman li {
   list-style: lower-roman;
+}
+ul.upper-roman li {
+  list-style: upper-roman;
+}
+ul.lower-alpha li {
+  list-style: lower-alpha;
+}
+ul.upper-alpha li {
+  list-style: upper-alpha;
+}
+ul.inside li {
+  list-style-position: inside;
+}
+ul.outside li {
+  list-style-position: outside;
+}
+
+ul.square li {
+  list-style: square;
 }
 
 /* 1. 3 ALIGN */
