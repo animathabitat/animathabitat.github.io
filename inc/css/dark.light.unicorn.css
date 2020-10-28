@@ -133,6 +133,8 @@ body {
 }
 form, button, input, label, option, select, textarea {
   font-family: inherit;
+  font-style: normal;
+  font-weight: 200;
 }
 h1, h4,
 b, strong,
