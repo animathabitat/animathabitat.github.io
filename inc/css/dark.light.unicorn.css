@@ -579,6 +579,8 @@ ul.products li.product-category h2 /* woo */ {
 
 .diptych,
 .diptych-fixed,
+.diptych-large-small,
+.diptych-small-large,
 .triptych,
 .triptych-fixed,
 .polyptych,
@@ -594,8 +596,17 @@ section.product > div.type-product {
   grid-template-columns: 1fr 1fr;
 }
 
+.diptych-large-small {
+  grid-template-columns: 3fr 1fr;
+}
+.diptych-small-large {
+  grid-template-columns: 1fr 3fr;
+}
+
 footer .diptych,
-.diptych-fixed {
+.diptych-fixed,
+.diptych-large-small,
+.diptych-small-large {
   grid-template-areas: "left right";
 }
 
