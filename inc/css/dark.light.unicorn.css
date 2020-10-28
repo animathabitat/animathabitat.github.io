@@ -539,19 +539,8 @@ article,
 .three-quarter {
   width: 75%;
 }
-.half,
-.dipty,
-.vol a div,
-td.product-name,
-th.product-name {
-  width: 50%;
-}
 aside,
 .quarter,
-.polypty,
-.polyptych > div,
-.quads > div,
-.quads > .quote,
 li.type-product, /* woo */
 td.product-quantity,
 th.product-quantity,
@@ -559,11 +548,16 @@ td.product-subtotal,
 th.product-subtotal /* , td.product-remove, th.product-remove */ {
   width: 25%;
 }
+.half,
+.vol a div,
+td.product-name,
+th.product-name {
+  width: 50%;
+}
 .two-third {
   width: calc( 200% / 3 );
 }
-.third,
-.tripty {
+.third {
   width: calc( 100% / 3 );
 }
 .full,
@@ -576,8 +570,6 @@ select.format {
 pre.thin {
   width: auto;
 }
-.quads > div,
-.quads > .quote,
 ul.products li.product-category, /* woo */
 ul.products li.product-category h2 /* woo */ {
   display: inline;
@@ -589,6 +581,8 @@ ul.products li.product-category h2 /* woo */ {
 .diptych-fixed,
 .triptych,
 .triptych-fixed,
+.polyptych,
+.polyptych-fixed,
 .desktop-feature,
 section.product > div.type-product {
   display: inline-grid;
@@ -621,14 +615,29 @@ section.product > div.type-product {
   grid-template-areas: "left center right";
 }
 
+.polyptych,
+.polyptych-fixed {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.polyptych-fixed {
+  grid-template-areas: "left center-left center-right right";
+}
+
 div.ptych-center {
-  grid-area: center;
+  grid-area: "center";
 }
 div.ptych-left {
-  grid-area: left;
+  grid-area: "left";
 }
 div.ptych-right {
-  grid-area: right;
+  grid-area: "right";
+}
+div.ptych-center-left {
+  grid-area: "center-left";
+}
+div.ptych-center-right {
+  grid-area: "center-right";
 }
 
 div.clear-center.ptych-center {
@@ -650,6 +659,9 @@ section.product > div.type-product > div {
 
 .diptych > div {
   margin: 0;
+}
+.polyptych > div {
+  margin-top: 0;
 }
 
 /* 3.1.- THUMBNAIL */
@@ -1593,6 +1605,7 @@ and ( max-width: 960px ) {
   section.product > div.type-product {
     grid-template-columns: 1fr;
   }
+
   footer .diptych {
     grid-template-areas:
       "right"
@@ -1607,6 +1620,17 @@ and ( max-width: 960px ) {
       "right";
   }
 
+  .polyptych,
+  .polyptych-fixed {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .polyptych-fixed {
+    grid-template-areas:
+      "left center-left"
+      "center-right right";
+  }
+
   article,
   aside,
   section.bio aside,
@@ -1617,7 +1641,6 @@ and ( max-width: 960px ) {
     width: 100%;
   }
   li.type-product,
-  .quads > div,
   .quarter {
     width: 50%;
   }
@@ -1841,9 +1864,12 @@ and ( max-width: 568px ) {
 and ( max-width: 480px ) {
 
   li.type-product,
-  .quads > div,
   .quarter {
     width: 100%;
+  }
+
+  .polyptych {
+    grid-template-columns: 1fr;
   }
 
   h5.woo-title {
