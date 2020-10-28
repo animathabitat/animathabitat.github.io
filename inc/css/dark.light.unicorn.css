@@ -643,23 +643,9 @@ div.ptych-center-right {
   grid-area: center-right;
 }
 
-div.clear-center.ptych-center {
-  padding: 0 0.333em;
-}
-div.clear-left.ptych-left {
-  padding: 0 0.667em 0 0;
-}
-div.clear-right.ptych-right {
-  padding: 0 0 0 0.667em;
-}
-
-section.product {
-  padding: 1em 0 2em 0;
-}
 section.product > div.type-product > div {
   margin: 0 auto;
 }
-
 .diptych > div,
 .polyptych > div,
 div.ptych-center,
@@ -721,6 +707,10 @@ div.preview img {
 
 /* 3.2 GUTTER */
 
+section.product {
+  padding: 1em 0 2em 0;
+}
+
 div,
 li.type-product /* woo */ {
   padding: 1em;
@@ -731,6 +721,16 @@ div.hidden {
 }
 div.profile img.profile {
   margin-top: 3em;
+}
+
+div.clear-center.ptych-center {
+  padding: 0 0.333em;
+}
+div.clear-left.ptych-left {
+  padding: 0 0.667em 0 0;
+}
+div.clear-right.ptych-right {
+  padding: 0 0 0 0.667em;
 }
 
 blockquote, q,
