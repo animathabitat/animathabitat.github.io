@@ -586,39 +586,39 @@ ul.products li.product-category h2 /* woo */ {
 /* 3.1 GRID */
 
 .diptych,
+.diptych-fixed,
 .triptych,
 .triptych-fixed,
+.desktop-feature,
 section.product > div.type-product {
   display: inline-grid;
   width: 100%;
 }
 
-.diptych {
+.diptych,
+.diptych-fixed {
   grid-template-columns: 1fr 1fr;
 }
+
 footer .diptych,
 .diptych-fixed {
   grid-template-areas: "left right";
-}
-.diptych > div {
-  margin: 0;
 }
 
 .triptych,
 .triptych-fixed {
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "left center right";
 }
 
-section.product {
-  padding: 1em 0 2em 0;
-}
+.desktop-feature,
 section.product > div.type-product {
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-areas: "left center right";
 }
-section.product > div.type-product > div {
-  margin: 0 auto;
+
+.triptych-fixed,
+.desktop-feature,
+section.product > div.type-product {
+  grid-template-areas: "left center right";
 }
 
 div.ptych-center {
@@ -639,6 +639,17 @@ div.clear-left.ptych-left {
 }
 div.clear-right.ptych-right {
   padding: 0 0 0 1em;
+}
+
+section.product {
+  padding: 1em 0 2em 0;
+}
+section.product > div.type-product > div {
+  margin: 0 auto;
+}
+
+.diptych > div {
+  margin: 0;
 }
 
 /* 3.1.- THUMBNAIL */
@@ -1577,6 +1588,8 @@ and ( max-width: 960px ) {
   /* GRID */
 
   .diptych,
+  .triptych,
+  .desktop-feature,
   section.product > div.type-product {
     grid-template-columns: 1fr;
   }
@@ -1586,6 +1599,7 @@ and ( max-width: 960px ) {
       "left";
   }
   .triptych,
+  .desktop-feature,
   section.product > div.type-product {
     grid-template-areas:
       "center"
