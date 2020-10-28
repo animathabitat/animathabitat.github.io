@@ -523,8 +523,8 @@ br.clear {
   clear: both;
 }
 .clear-top {
-  padding-top: 0;
-  margin-top: 0;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 .break-cut {
@@ -539,8 +539,6 @@ article,
 }
 .half,
 .dipty,
-.blocks > div,
-.blocks > .quote,
 .vol a div,
 td.product-name,
 th.product-name {
@@ -576,8 +574,6 @@ select.format {
 pre.thin {
   width: auto;
 }
-.blocks > div,
-.blocks > .quote,
 .quads > div,
 .quads > .quote,
 ul.products li.product-category, /* woo */
@@ -589,6 +585,7 @@ ul.products li.product-category h2 /* woo */ {
 
 .diptych,
 .triptych,
+.triptych-fixed,
 section.product > div.type-product {
   display: inline-grid;
   width: 100%;
@@ -597,14 +594,16 @@ section.product > div.type-product {
 .diptych {
   grid-template-columns: 1fr 1fr;
 }
-footer .diptych {
+footer .diptych,
+.diptych-fixed {
   grid-template-areas: "left right";
 }
 .diptych > div {
   margin: 0;
 }
 
-.triptych {
+.triptych,
+.triptych-fixed {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "left center right";
 }
@@ -1417,10 +1416,6 @@ and ( max-width: 1600px ) {
     position: relative;
   }
 
-  .half .blocks > div {
-    width: 100%;
-  }
-
   .break-cut {
     display: none;
   }
@@ -1583,6 +1578,11 @@ and ( max-width: 960px ) {
   section.product > div.type-product {
     grid-template-columns: 1fr;
   }
+  footer .diptych {
+    grid-template-areas:
+      "right"
+      "left";
+  }
   .triptych,
   section.product > div.type-product {
     grid-template-areas:
@@ -1594,8 +1594,6 @@ and ( max-width: 960px ) {
   article,
   aside,
   section.bio aside,
-  .blocks > div,
-  .blocks > .quote,
   .half,
   .three-quarter,
   .two-third,
@@ -1610,8 +1608,6 @@ and ( max-width: 960px ) {
 
   /* GUTTER */
 
-  div.blocks > div,
-  article div.clear.blocks > div,
   div.diptych > div,
   article div.clear.diptych > div {
     padding: 1em;
@@ -1628,7 +1624,6 @@ and ( max-width: 960px ) {
     padding-top: 0.5em;
   }
 
-  article div.blocks > div,
   article div.diptych > div {
     padding: 1em 0;
   }
