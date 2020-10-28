@@ -5,7 +5,7 @@
  Author:       Dane Aleksander
  Author URI:   https://danealeksander.github.io/
  Template:     twentythirteen
- Version:      1.7.3
+ Version:      1.7.5
 */
 
 /* Revision 85. */
@@ -1559,11 +1559,11 @@ and ( max-width: 960px ) {
   h2 {
     font-size: calc( 4em / 3 );
   }
-  h3, h4,
+  h3,
   button, input {
     font-size: calc( 11em / 9 );
   }
-  h5,
+  h4, h5,
   select,
   .navigation,
   a.checkout-button {
@@ -1772,7 +1772,7 @@ and ( max-width: 768px ) {
     /* font-size: calc( 4em / 3 ); */
     font-size: calc( calc( 8em / 7 ) + ( calc( 36 / 7 ) * ( ( 100vw - 375px ) / 393 ) ) );
   }
-  h3, h4,
+  h3,
   button, input {
     /* font-size: calc( 11em / 9 ); */
     font-size: calc( calc( 8em / 7 ) + ( calc( 22 / 7 ) * ( ( 100vw - 375px ) / 393 ) ) );
@@ -1934,7 +1934,7 @@ and ( max-width: 375px ) {
   h1 {
     font-size: 2em;
   }
-  h2, h3, h4,
+  h2, h3,
   button, input {
     font-size: calc( 8em / 7 );
   }
@@ -2003,7 +2003,7 @@ and ( max-width: 320px ) {
     /* font-size: 1.8rem; */
     font-size: calc( 1.4rem + ( 4 * ( ( 100vw - 240px ) / 80 ) ) )
   }
-  h2, h3, h4,
+  h2, h3,
   button, input {
     font-size: calc( 7em / 6 );
   }
