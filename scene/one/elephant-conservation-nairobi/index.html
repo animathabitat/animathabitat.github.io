@@ -462,16 +462,19 @@
 
         </div>
 
-        <div class="toggle-off" id="register">
-          <h3><a onclick="toggle_register();">&minus;</a><br>Behind the scenes:</h3>
-          <p>Register for membership behind the scenes of <em>White Elephant</em>.</p>
+        <div class="clear" id="register">
+
+          <div>
+            <h3><a onclick="toggle_register();">&minus;</a><br>Behind the scenes:</h3>
+            <p>Register for membership behind the scenes of <em>White Elephant</em>.</p>
+
+          </div>
 
           <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A52FB6D182F7A8A669AB1C317E182AD3763A1B775C7C4E900069B5F6BE1E4B7A7B42258404945BDA2B8796E1BC8516FAF">
 
-            <p class="linebreak"><input aria-label="Name" class="trim" id="fieldName" maxlength="200" name="cm-name" onfocus="if (this.value=='Name') this.value = ''" required="" title="Name" type="text" value="Name"></p>
+            <div class="clear-top"><input aria-label="Name" id="fieldName" maxlength="140" name="cm-name" title="First name" value="First name" onfocus="if (this.value=='First name') this.value = ''"></div><div class="clear-top"><input aria-label="Nom" id="fieldjyhhidh" maxlength="140" name="cm-f-jyhhidh" title="Last name" value="Last name" onfocus="if (this.value=='Last name') this.value = ''"></div>
 
-            <p class="linebreak"><input aria-label="Email" autocomplete="Email" class="js-cm-email-input qa-input-email trim" id="fieldEmail" maxlength="200" name="cm-dliyu-dliyu" onfocus="if (this.value=='Email address') this.value = ''" required="" title="E-mail address" type="email" value="Email address"></p>
-            <button type="submit">Register</button>
+            <div class="clear-top"><input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="140" name="cm-dliyu-dliyu" required="" type="email" value="E-mail address" onfocus="if (this.value=='E-mail address') this.value = ''" class="required email trim" title="E-mail address required."><button type="submit">Register</button></div>
 
           </form>
         </div>
@@ -765,6 +768,8 @@
 
   var toggle_reg = document.getElementById("register");
       toggle_reg_a = document.getElementById("register-a");
+
+  toggle_reg.style.display = "none";
 
   function toggle_register() {
     if (toggle_reg.style.display == "none") {

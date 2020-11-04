@@ -527,6 +527,10 @@ br.clear {
   padding-top: 0 !important;
   margin-top: 0 !important;
 }
+.clear-bottom {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
 
 .break-cut {
   display: inherit;
@@ -654,6 +658,10 @@ div.ptych-right,
 div.ptych-center-left,
 div.ptych-center-right {
   margin: 0;
+}
+
+div.ptych-bottom {
+  margin: auto 0 0;
 }
 
 /* 3.1.- THUMBNAIL */
