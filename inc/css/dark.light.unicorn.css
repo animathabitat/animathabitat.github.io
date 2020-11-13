@@ -1117,7 +1117,7 @@ nav ul li.light {
 .lettermark.scene-one:hover,
 li.scene-one a:active,
 #scene-one li.scene-one a {
-  color: #FFCF60;
+  color: #ffce60;
 }
 #scene-one a.color:hover,
 #scene-one a:hover .color,
@@ -1159,7 +1159,7 @@ div.scene-one:hover {
   border: #393428 thin solid;
 }
 #scene-one .matte {
-  border: #FFCF60 2em solid;
+  border: #ffce60 2em solid;
 }
 #scene-one li.btn a:hover,
 #scene-one nav .page li.active em,
@@ -1171,10 +1171,10 @@ div.scene-one:hover {
 #scene-one .scene-one.btn:before,
 #scene-one .page li.active a,
 #scene-one .page li.scene {
-  background: #FFCF60;
+  background: #ffce60;
 }
 nav ul li.scene-one {
-  border-color: #FFCF60;
+  border-color: #ffce60;
 }
 .lettermark.scene-one:before {
   background: #C8A450;
@@ -1187,7 +1187,7 @@ nav ul li.scene-one {
 }
 
 #scene-one:: -webkit-scrollbar-track { background: #222222; }
-#scene-one:: -webkit-scrollbar-thumb { background: #FFCF60; }
+#scene-one:: -webkit-scrollbar-thumb { background: #ffce60; }
 
 /* 6.2 TWO rgb(0,255,228) */
 /* #53665a; Dunn-Edwards Deep in the Jungle / 207 */
@@ -1235,7 +1235,7 @@ a.block-two:hover div {
 #scene-two a:hover > div.color,
 div.scene-two,
 .color-two {
-  background: #5e8b38;
+  background: #0b522a;
 }
 #scene-two button:hover,
 #scene-two input[type="submit"]:hover,
@@ -1246,6 +1246,9 @@ div.scene-two:hover {
 #scene-two .trim,
 #scene-two pre.thin {
   border: #2a2f23 thin solid;
+}
+#scene-two .matte {
+  border: #5e8b38 2em solid;
 }
 #scene-two li.btn a:hover,
 #scene-two nav .page li.active em,
@@ -1274,6 +1277,92 @@ nav ul li.scene-two {
 
 #scene-two:: -webkit-scrollbar-track { background: #111111; }
 #scene-two:: -webkit-scrollbar-thumb { background: #5e8b38; }
+
+/* 6.3 THREE rgb(255,207,96) */
+
+#scene-three nav em,
+#scene-three a.color,
+#scene-three .navigation a,
+#scene-three h1,
+#scene-three h3,
+#scene-three h2.color,
+#scene-three h4.color,
+#scene-three font.color,
+.scene-three,
+.lettermark.scene-three:hover,
+li.scene-three a:active,
+#scene-three li.scene-three a {
+  color: #44aee3;
+}
+#scene-three a.color:hover,
+#scene-three a:hover .color,
+#scene-three .navigation a:hover,
+a.scene-three:hover,
+a:hover .scene-three,
+li.scene-three a {
+  color: #368bb5;
+}
+#scene-three,
+#scene-three nav,
+#scene-three article,
+#scene-three aside,
+#scene-three .color div.color,
+a.block-three:hover div {
+  background: #444444;
+}
+#scene-three div.color,
+#scene-three aside.color,
+#scene-three #scene,
+#scene-three #scene aside {
+  background: #464953;
+}
+#scene-three button,
+#scene-three input[type="submit"],
+#scene-three a:hover > div.color,
+div.scene-three,
+.color-three {
+  background: #3b5d76;
+}
+#scene-three button:hover,
+#scene-three input[type="submit"]:hover,
+div.scene-three:hover {
+  background: #236889;
+}
+
+#scene-three .trim,
+#scene-three pre.thin {
+  border: #347091 thin solid;
+}
+#scene-three .matte {
+  border: #44aee3 2em solid;
+}
+#scene-three li.btn a:hover,
+#scene-three nav .page li.active em,
+#scene-three nav .page li.scene em {
+  color: #444444 !important;
+}
+#scene-three li.btn a:after,
+#dark .scene-three.btn:before,
+#scene-three .scene-three.btn:before,
+#scene-three .page li.active a,
+#scene-three .page li.scene {
+  background: #44aee3;
+}
+nav ul li.scene-three {
+  border-color: #44aee3;
+}
+.lettermark.scene-three:before {
+  background: #368bb5;
+}
+#scene-three .scene-three .fr,
+#scene-three h2.color .fr,
+#scene-three h3.color .fr,
+#scene-three h4.color .fr {
+  color: #236889;
+}
+
+#scene-three:: -webkit-scrollbar-track { background: #444444; }
+#scene-three:: -webkit-scrollbar-thumb { background: #44aee3; }
 
 /* 6._ AQUA rgb(0,255,228) */
 
