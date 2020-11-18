@@ -515,7 +515,7 @@ input[type="reset"]:focus {
 .clear {
   color: inherit;
   padding: 0 !important;
-  margin: 0 !important;
+  /* margin: 0 !important; */
 }
 .clear article {
   position: static;
@@ -525,11 +525,11 @@ br.clear {
 }
 .clear-top {
   padding-top: 0 !important;
-  margin-top: 0 !important;
+  /* margin-top: 0 !important; */
 }
 .clear-bottom {
   padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
+  /* margin-bottom: 0 !important; */
 }
 
 .break-cut {
@@ -729,6 +729,10 @@ div.hidden {
 }
 div.profile img.profile {
   margin-top: 3em;
+}
+
+body > div.clear.color {
+  margin-top: 1em;
 }
 
 div.clear-center.ptych-center {
