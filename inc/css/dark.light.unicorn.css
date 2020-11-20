@@ -875,7 +875,7 @@ div.logo {
   min-height: 0;
   min-width: 0;
   height: 9em;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 0;
 }
 div.logo img {
