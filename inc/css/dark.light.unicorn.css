@@ -2002,6 +2002,10 @@ and ( orientation : landscape ) {
     font-size: 2.4rem;
   }
 
+  .polyptych {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .desktop {
     display: inline;
   }
@@ -2018,6 +2022,10 @@ and ( orientation : portrait ) {
 
   body {
     font-size: 3rem;
+  }
+
+  .polyptych {
+    grid-template-columns: 1fr 1fr;
   }
 
   .desktop {
@@ -2038,6 +2046,10 @@ and ( orientation : portrait ) {
     font-size: 2.7rem;
   }
 
+  .polyptych {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .desktop {
     display: inline;
   }
@@ -2054,6 +2066,10 @@ and ( orientation : portrait ) {
 
   body {
     font-size: 2.7rem;
+  }
+
+  .polyptych {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -2092,6 +2108,10 @@ and ( max-width: 375px ) {
   footer {
     max-width: 375px;
   }
+
+  .polyptych {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* IPHONE X : portrait */
@@ -2110,6 +2130,10 @@ and ( orientation : portrait ) {
   .mobile {
     display: none;
   }
+
+  .polyptych {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* IPHONE 6, 7, 8 : portrait */
@@ -2120,6 +2144,10 @@ and ( orientation : portrait ) {
 
   body {
     font-size: 2.7rem;
+  }
+
+  .polyptych {
+    grid-template-columns: 1fr 1fr;
   }
 
   .desktop {
