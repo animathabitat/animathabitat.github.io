@@ -786,10 +786,10 @@ li.lineend,
 
 .gutter,
 .gutter-side {
-  padding: 0 1.5em;
+  padding: 0 1em;
 }
 .nav-links /* wordpress */ {
-  padding: 1em 1.5em 1.5em;
+  padding: 1em;
 }
 .gutter-tobo {
   padding: 1em 0;
@@ -802,7 +802,7 @@ li.lineend,
   padding: 0 3em 1em;
 }
 .gutter-small {
-  padding: 0.75em;
+  padding: 0.5em;
 }
 
 .keeper-entries pre {
@@ -813,7 +813,7 @@ li.lineend,
 }
 
 .navigation /* wordpress */ {
-  margin: 1.5em auto;
+  margin: 2em auto;
   width: 100%;
 }
 
