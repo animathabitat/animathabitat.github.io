@@ -5,7 +5,7 @@
  Author:       Dane Aleksander
  Author URI:   https://danealeksander.github.io/
  Template:     twentythirteen
- Version:      1.7.7
+ Version:      1.7.8
 */
 
 /* Revision 85. */
@@ -651,6 +651,7 @@ section.product > div.type-product > div {
   margin: 0 auto;
 }
 .diptych > div,
+.triptych > div,
 .polyptych > div,
 div.ptych-center,
 div.ptych-left,
