@@ -5,7 +5,7 @@
  Author:       Dane Aleksander
  Author URI:   https://danealeksander.github.io/
  Template:     twentythirteen
- Version:      1.7.8
+ Version:      1.7.9
 */
 
 /* Revision 85. */
@@ -1800,6 +1800,13 @@ and ( max-width: 960px ) {
   }
   .nav-links /* wordpress */ {
     padding: 1em 1em 1em;
+  }
+
+  .diptych:not(.ptych-fixed) p,
+  .triptych:not(.ptych-fixed) p,
+  .desktop-feature p,
+  section.product > div.type-product p {
+    margin-bottom: 1em;
   }
 
   .break-cut {
