@@ -1760,8 +1760,9 @@ and ( max-width: 960px ) {
   /* GUTTER */
 
   div.diptych > div,
-  article div.clear.diptych > div {
-    padding: 1em;
+  article div.clear.diptych > div,
+  .triptych:not(.ptych-fixed) > div {
+    padding: 0 1em 1em 1em;
   }
 
   li.type-product /* woo */ {
@@ -1790,21 +1791,14 @@ and ( max-width: 960px ) {
     padding: 0;
   }
 
-  .gutter,
-  .gutter-side {
-    padding: 0 1em;
-  }
-  .gutter-tobo {
-    padding: 1em 0;
-  }
   .gutter-ref {
     padding: 0 1em 1em;
   }
 
-  .diptych:not(.ptych-fixed) p,
-  .triptych:not(.ptych-fixed) p {
+  /* .diptych:not(.ptych-fixed) > p {
     padding-bottom: 1em;
-  }
+    padding-top: 0;
+  } */
 
   .break-cut {
     display: inherit;
