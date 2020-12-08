@@ -1707,6 +1707,8 @@ and ( max-width: 960px ) {
   /* GRID */
 
   .diptych:not(.ptych-fixed),
+  .diptych-large-small,
+  .diptych-small-large,
   .triptych:not(.ptych-fixed),
   .desktop-feature,
   section.product > div.type-product {
@@ -1803,9 +1805,7 @@ and ( max-width: 960px ) {
   }
 
   .diptych:not(.ptych-fixed) p,
-  .triptych:not(.ptych-fixed) p,
-  .desktop-feature p,
-  section.product > div.type-product p {
+  .triptych:not(.ptych-fixed) p {
     margin-bottom: 1em;
   }
 
