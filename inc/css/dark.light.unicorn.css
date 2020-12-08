@@ -1800,13 +1800,10 @@ and ( max-width: 960px ) {
   .gutter-ref {
     padding: 0 1em 1em;
   }
-  .nav-links /* wordpress */ {
-    padding: 1em 1em 1em;
-  }
 
   .diptych:not(.ptych-fixed) p,
   .triptych:not(.ptych-fixed) p {
-    margin-bottom: 1em;
+    padding-bottom: 1em;
   }
 
   .break-cut {
