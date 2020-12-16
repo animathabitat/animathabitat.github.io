@@ -647,9 +647,6 @@ div.ptych-center-right {
   grid-area: center-right;
 }
 
-section.product > div.type-product > div {
-  margin: 0 auto;
-}
 .diptych > div,
 .triptych > div,
 .polyptych > div,
@@ -659,6 +656,9 @@ div.ptych-right,
 div.ptych-center-left,
 div.ptych-center-right {
   margin: 0;
+}
+section.product > div.type-product > div {
+  margin: 0 auto;
 }
 
 div.ptych-bottom {
@@ -759,8 +759,8 @@ button,
 input,
 select,
 textarea {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .letterhead,
@@ -2191,10 +2191,6 @@ and ( max-width: 320px ) {
   /* section.type-product, */
   li.type-product {
     padding: 1em 0;
-  }
-  .gutter,
-  .gutter-side {
-    /* padding: 0 0.5em; */
   }
 
   .video,
