@@ -12,6 +12,10 @@ Disallow: /support/
 Disallow: /societas/
 Disallow: /studium/
 
+Disallow: /conservation/
+Disallow: /society/
+Disallow: /studio/
+
 Disallow: /feed/
 
 Sitemap: /animathabitat.org.sitemap.xml
