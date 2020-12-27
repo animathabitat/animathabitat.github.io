@@ -277,31 +277,31 @@
   <changefreq>never</changefreq>
 </url> -->
 
-<url>
+<!-- <url>
   <loc>https://animathabitat.org/societas/</loc>
   <lastmod>2020-09-01</lastmod>
   <priority>0</priority>
   <changefreq>yearly</changefreq>
-</url>
-<url>
+</url> -->
+<!-- <url>
   <loc>https://animathabitat.org/societas/annum/</loc>
   <lastmod>2020-09-01</lastmod>
   <priority>0</priority>
   <changefreq>yearly</changefreq>
-</url>
-<url>
+</url> -->
+<!-- <url>
   <loc>https://animathabitat.org/societas/registers/</loc>
   <lastmod>2020-09-01</lastmod>
   <priority>0</priority>
   <changefreq>yearly</changefreq>
-</url>
+</url> -->
 
-<url>
+<!-- <url>
   <loc>https://animathabitat.org/studium/</loc>
   <lastmod>2020-09-01</lastmod>
   <priority>0</priority>
   <changefreq>yearly</changefreq>
-</url>
+</url> -->
 <url>
   <loc>https://animathabitat.org/support/</loc>
   <lastmod>2020-09-01</lastmod>
