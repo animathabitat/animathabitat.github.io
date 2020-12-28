@@ -16,7 +16,7 @@
   <loc>https://animathabitat.org/boutique/</loc>
   <lastmod>2020-09-01</lastmod>
   <priority>0.8</priority>
-  <changefreq>monthly</changefreq>
+  <!-- <changefreq>monthly</changefreq> -->
  </url>
  <url>
   <loc>https://animathabitat.org/boutique/medium/digital/</loc>
@@ -37,31 +37,31 @@
   <changefreq>monthly</changefreq>
  </url>
 
- <url>
+ <!-- <url>
   <loc>https://animathabitat.org/c/</loc>
   <lastmod>2016-09-01</lastmod>
   <priority>0</priority>
   <changefreq>yearly</changefreq>
- </url>
+ </url> -->
 
  <url>
   <loc>https://animathabitat.org/canon/</loc>
   <lastmod>2020-09-01</lastmod>
   <priority>0.8</priority>
-  <changefreq>yearly</changefreq>
+  <!-- <changefreq>yearly</changefreq> -->
  </url>
 
  <url>
   <loc>https://animathabitat.org/conservatum/</loc>
   <lastmod>2020-09-01</lastmod>
   <priority>0.8</priority>
-  <changefreq>yearly</changefreq>
+  <!-- <changefreq>yearly</changefreq> -->
  </url>
  <url>
   <loc>https://animathabitat.org/conservatum/africa/</loc>
   <lastmod>2020-09-01</lastmod>
   <priority>0.4</priority>
-  <changefreq>yearly</changefreq>
+  <!-- <changefreq>yearly</changefreq> -->
  </url>
  <!-- <url>
   <loc>https://animathabitat.org/conservatum/asia/</loc>
@@ -76,12 +76,12 @@
   <changefreq>yearly</changefreq>
  </url> -->
 
-<url>
-  <loc>https://animathabitat.org/donate/</loc>
+<!-- <url>
+  <loc>https://animathabitat.org/dono/</loc>
   <lastmod>2020-09-01</lastmod>
   <priority>0.8</priority>
   <changefreq>yearly</changefreq>
-</url>
+</url> -->
 
 <url>
   <loc>https://animathabitat.org/scene/zero/</loc>
@@ -94,7 +94,7 @@
   <loc>https://animathabitat.org/scene/one/</loc>
   <lastmod>2020-09-01</lastmod>
   <priority>0.6</priority>
-  <changefreq>never</changefreq>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>https://animathabitat.org/scene/one/making-of-ella/</loc>
@@ -222,12 +222,12 @@
   <priority>0.4</priority>
   <changefreq>never</changefreq>
 </url>
-<!-- <url>
+<url>
   <loc>https://animathabitat.org/scene/one/technology-documentary/</loc>
   <lastmod>2018-12-31</lastmod>
   <priority>0.4</priority>
   <changefreq>never</changefreq>
-</url> -->
+</url>
 <url>
   <loc>https://animathabitat.org/scene/one/elephant-conservation-nairobi/</loc>
   <lastmod>2019-03-25</lastmod>
@@ -240,12 +240,12 @@
   <priority>0.4</priority>
   <changefreq>never</changefreq>
 </url>
-<!-- <url>
+<url>
   <loc>https://animathabitat.org/scene/one/technology-documentary-2/</loc>
   <lastmod>2019-12-26</lastmod>
   <priority>0.4</priority>
   <changefreq>never</changefreq>
-</url> -->
+</url>
 <url>
   <loc>https://animathabitat.org/scene/one/elephant-conservation-botswana/</loc>
   <lastmod>2020-06-29</lastmod>
@@ -262,14 +262,14 @@
  <loc>https://animathabitat.org/scene/two/</loc>
  <lastmod>2020-09-01</lastmod>
  <priority>0.6</priority>
- <changefreq>never</changefreq>
+ <changefreq>monthly</changefreq>
 </url>
-<!-- <url>
+<url>
   <loc>https://animathabitat.org/scene/two/the-beginning-of-painting/</loc>
   <lastmod>2020-3-30</lastmod>
   <priority>0.4</priority>
   <changefreq>never</changefreq>
-</url> -->
+</url>
 <!-- <url>
   <loc>https://animathabitat.org/scene/two/the-section-chapter/</loc>
   <lastmod>2021-3-29</lastmod>
@@ -302,12 +302,12 @@
   <priority>0</priority>
   <changefreq>yearly</changefreq>
 </url> -->
-<url>
+<!-- <url>
   <loc>https://animathabitat.org/support/</loc>
   <lastmod>2020-09-01</lastmod>
   <priority>0</priority>
   <changefreq>yearly</changefreq>
-</url>
+</url> -->
 
 <url>
   <loc>https://animathabitat.org/robots.txt</loc>

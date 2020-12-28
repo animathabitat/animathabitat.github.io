@@ -6,13 +6,14 @@ Disallow: /404.html
 Disallow: /inc/
 
 Disallow: /c/
-Disallow: /donate/
+Disallow: /dono/
 Disallow: /support/
 
 Disallow: /societas/
 Disallow: /studium/
 
 Disallow: /conservation/
+Disallow: /donate/
 Disallow: /society/
 Disallow: /studio/
 
