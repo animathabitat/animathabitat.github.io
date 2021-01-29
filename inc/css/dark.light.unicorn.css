@@ -531,6 +531,9 @@ br.clear {
   padding-bottom: 0 !important;
   /* margin-bottom: 0 !important; */
 }
+.clear-left {
+  padding-left: 0 !important;
+}
 
 .break-cut {
   display: inherit;
@@ -958,8 +961,8 @@ li.type-product a:hover img {
 a,
 a:hover p,
 h1 a:hover,
-li.dark a:active,
-li.dark a:hover,
+li.dark > a:active,
+li.dark > a:hover,
 a.checkout-button:hover,
 button,
 input[type="submit"],
@@ -977,7 +980,7 @@ a:hover,
 a.white:hover {
   color: #CACACA;
 }
-li.dark a {
+li.dark > a {
   color: #DADADA;
 }
 #dark,
@@ -1010,12 +1013,12 @@ div.scene-zero:hover, div.dark:hover {
 #dark pre.thin {
   border: #474747 thin solid;
 }
-#dark li.btn:hover a,
+#dark li.btn > a:hover,
 #dark nav .page li.active em,
 #dark nav .page li.scene em {
   color: #333333;
 }
-/* #dark li.btn a:after, */
+#dark li.btn a:after,
 #dark .btn:before,
 #dark .home li.logo,
 #dark .page li.active,
@@ -1649,7 +1652,7 @@ and ( -webkit-device-pixel-ratio : 1 )
 and ( orientation : landscape ) {
 
   body {
-    /* font-size: 2.7rem; */
+    font-size: 2.7rem;
   }
 }
 
@@ -1877,8 +1880,6 @@ and ( orientation : portrait ) {
   }
 }
 
-/* IPAD 3, 4 MINI 2 : portrait */
-
 /* 0.3 Medium to Low */
 @media only screen
 and ( max-width: 768px ) {
@@ -1968,6 +1969,28 @@ and ( max-width: 568px ) {
   }
   .mobile {
     display: inline;
+  }
+}
+
+/* IPAD 1, 2, MINI ... : portrait */
+@media only screen
+and ( device-width : 512px )
+and ( -webkit-device-pixel-ratio : 2 )
+and ( orientation : landscape ) {
+
+  body {
+    font-size: 2.7rem;
+  }
+}
+
+/* IPAD 3, 4 MINI 2 : portrait */
+@media only screen
+and ( device-width : 512px )
+and ( -webkit-device-pixel-ratio : 1 )
+and ( orientation : landscape ) {
+
+  body {
+    font-size: 2.4rem;
   }
 }
 
@@ -2069,6 +2092,21 @@ and ( orientation : portrait ) {
 
   body {
     font-size: 2.7rem;
+  }
+
+  .polyptych {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* IPAD 3, 4 MINI 2 : portrait */
+@media only screen
+and ( device-width : 384px )
+and ( -webkit-device-pixel-ratio : 1 )
+and ( orientation : portrait ) {
+
+  body {
+    font-size: 2.4rem;
   }
 
   .polyptych {
