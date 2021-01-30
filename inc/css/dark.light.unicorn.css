@@ -1634,7 +1634,7 @@ and ( orientation : landscape ) {
   }
 }
 
-/* IPAD 3, 4 : landscape */
+/* IPAD : landscape */
 @media only screen
 and ( device-width : 1024px )
 and ( -webkit-device-pixel-ratio : 2 )
@@ -1645,7 +1645,7 @@ and ( orientation : landscape ) {
   }
 }
 
-/* IPAD 1, 2, MINI ... : landscape */
+/* IPAD : landscape */
 @media only screen
 and ( device-width : 1024px )
 and ( -webkit-device-pixel-ratio : 1 )
@@ -1880,6 +1880,17 @@ and ( orientation : portrait ) {
   }
 }
 
+/* IPAD : portrait */
+@media only screen
+and ( device-width : 768px )
+and ( -webkit-device-pixel-ratio : 2 )
+and ( orientation : portrait ) {
+
+  body {
+    font-size: 2.7rem;
+  }
+}
+
 /* 0.3 Medium to Low */
 @media only screen
 and ( max-width: 768px ) {
@@ -1972,7 +1983,7 @@ and ( max-width: 568px ) {
   }
 }
 
-/* IPAD 1, 2, MINI ... : portrait */
+/* IPAD 1, 2, MINI ... : landscape */
 @media only screen
 and ( device-width : 512px )
 and ( -webkit-device-pixel-ratio : 2 )
@@ -1983,7 +1994,7 @@ and ( orientation : landscape ) {
   }
 }
 
-/* IPAD 3, 4 MINI 2 : portrait */
+/* IPAD 3, 4 MINI 2 : landscape */
 @media only screen
 and ( device-width : 512px )
 and ( -webkit-device-pixel-ratio : 1 )
