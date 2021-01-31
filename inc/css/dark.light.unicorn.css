@@ -1659,13 +1659,17 @@ and ( orientation : landscape ) {
     font-size: 1.8rem;
   }
 
+  section {
+    max-width: 1112px;
+    width: 100%;
+  }
   nav ul,
   nav ul.spread,
-  section,
   section.bio,
   section.single,
   header,
   footer {
+    max-width: 1112px;
     width: 1112px;
   }
 }
@@ -1680,13 +1684,17 @@ and ( orientation : landscape ) {
     font-size: 2.1rem;
   }
 
+  section {
+    max-width: 1024px;
+    width: 100%;
+  }
   nav ul,
   nav ul.spread,
-  section,
   section.bio,
   section.single,
   header,
   footer {
+    max-width: 1024px;
     width: 1024px;
   }
 }
@@ -1701,13 +1709,17 @@ and ( orientation : landscape ) {
     font-size: 2.1rem;
   }
 
+  section {
+    max-width: 1024px;
+    width: 100%;
+  }
   nav ul,
   nav ul.spread,
-  section,
   section.bio,
   section.single,
   header,
   footer {
+    max-width: 1024px;
     width: 1024px;
   }
 }
