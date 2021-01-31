@@ -1518,7 +1518,7 @@ and ( min-device-width: 320px )
 and ( max-device-width: 568px )
 and ( -webkit-min-device-pixel-ratio: 2) { } */
 
-/*  */
+/* 1600 */
 @media screen
 and ( max-width: 1600px ) {
 
@@ -1563,7 +1563,7 @@ and ( -webkit-device-pixel-ratio : 2 )
 and ( orientation : landscape ) {
 
   body {
-    font-size: 2.7rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -1630,7 +1630,7 @@ and ( -webkit-device-pixel-ratio : 2 )
 and ( orientation : landscape ) {
 
   body {
-    font-size: 2.7rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -1641,7 +1641,7 @@ and ( -webkit-device-pixel-ratio : 2 )
 and ( orientation : landscape ) {
 
   body {
-    font-size: 2.7rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -1652,19 +1652,7 @@ and ( -webkit-device-pixel-ratio : 1 )
 and ( orientation : landscape ) {
 
   body {
-    font-size: 2.7rem;
-  }
-}
-
-/* 960 */
-@media only screen
-and ( max-width: 960px )
-and ( -webkit-device-pixel-ratio : 1 ) {
-
-  h5.woo-description,
-  h5.woo-tag,
-  h5.woo-category {
-    display: none;
+    font-size: 2.1rem;
   }
 }
 
@@ -1839,6 +1827,12 @@ and ( max-width: 960px ) {
     height: 432px;
   }
 
+  h5.woo-description,
+  h5.woo-tag,
+  h5.woo-category {
+    display: none;
+  }
+
   .desktop-menu {
     display: none;
   }
@@ -1851,10 +1845,10 @@ and ( max-width: 960px ) {
 @media only screen
 and ( device-width : 896px )
 and ( -webkit-device-pixel-ratio : 3 )
-and ( orientation : portrait ) {
+and ( orientation : landscape ) {
 
   body {
-    font-size: 3.6rem;
+    font-size: 2.7rem;
   }
 }
 
@@ -1873,18 +1867,7 @@ and ( orientation : portrait ) {
 @media only screen
 and ( device-width : 812px )
 and ( -webkit-device-pixel-ratio : 3 )
-and ( orientation : portrait ) {
-
-  body {
-    font-size: 3.6rem;
-  }
-}
-
-/* IPAD : portrait */
-@media only screen
-and ( device-width : 768px )
-and ( -webkit-device-pixel-ratio : 2 )
-and ( orientation : portrait ) {
+and ( orientation : landscape ) {
 
   body {
     font-size: 2.7rem;
@@ -1942,9 +1925,9 @@ and ( max-width: 768px ) {
   }
 }
 
-/* IPHONE 6, 7, 8 : landscape */
+/* IPAD (?) : portrait */
 @media only screen
-and ( device-width : 667px )
+and ( device-width : 768px )
 and ( -webkit-device-pixel-ratio : 2 )
 and ( orientation : portrait ) {
 
@@ -1953,21 +1936,25 @@ and ( orientation : portrait ) {
   }
 }
 
-/* IPHONE 5, 5S : landscape */
+/* IPAD (?) : portrait */
 @media only screen
-and ( device-width : 568px )
+and ( device-width : 768px )
+and ( -webkit-device-pixel-ratio : 1 )
+and ( orientation : portrait ) {
+
+  body {
+    font-size: 2.7rem;
+  }
+}
+
+/* IPHONE 6, 7, 8 : landscape */
+@media only screen
+and ( device-width : 667px )
 and ( -webkit-device-pixel-ratio : 2 )
 and ( orientation : landscape ) {
 
   body {
-    font-size: 2.4rem;
-  }
-
-  .desktop {
-    display: inline;
-  }
-  .mobile {
-    display: none;
+    font-size: 2.7rem;
   }
 }
 
@@ -1983,21 +1970,10 @@ and ( max-width: 568px ) {
   }
 }
 
-/* IPAD 1, 2, MINI ... : landscape */
+/* IPHONE 5, 5S : landscape */
 @media only screen
-and ( device-width : 512px )
+and ( device-width : 568px )
 and ( -webkit-device-pixel-ratio : 2 )
-and ( orientation : landscape ) {
-
-  body {
-    font-size: 2.7rem;
-  }
-}
-
-/* IPAD 3, 4 MINI 2 : landscape */
-@media only screen
-and ( device-width : 512px )
-and ( -webkit-device-pixel-ratio : 1 )
 and ( orientation : landscape ) {
 
   body {
@@ -2036,7 +2012,7 @@ and ( -webkit-device-pixel-ratio : 2 )
 and ( orientation : landscape ) {
 
   body {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
   }
 
   .polyptych {
@@ -2058,7 +2034,7 @@ and ( -webkit-device-pixel-ratio : 3 )
 and ( orientation : portrait ) {
 
   body {
-    font-size: 3rem;
+    font-size: 2.1rem;
   }
 
   .polyptych {
@@ -2080,7 +2056,7 @@ and ( -webkit-device-pixel-ratio : 2 )
 and ( orientation : portrait ) {
 
   body {
-    font-size: 2.7rem;
+    font-size: 2.1rem;
   }
 
   .polyptych {
@@ -2092,36 +2068,6 @@ and ( orientation : portrait ) {
   }
   .mobile {
     display: none;
-  }
-}
-
-/* IPAD 1, 2, MINI ... : portrait */
-@media only screen
-and ( device-width : 384px )
-and ( -webkit-device-pixel-ratio : 2 )
-and ( orientation : portrait ) {
-
-  body {
-    font-size: 2.7rem;
-  }
-
-  .polyptych {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-/* IPAD 3, 4 MINI 2 : portrait */
-@media only screen
-and ( device-width : 384px )
-and ( -webkit-device-pixel-ratio : 1 )
-and ( orientation : portrait ) {
-
-  body {
-    font-size: 2.4rem;
-  }
-
-  .polyptych {
-    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -2173,7 +2119,11 @@ and ( -webkit-device-pixel-ratio : 3 )
 and ( orientation : portrait ) {
 
   body {
-    font-size: 3.6rem;
+    font-size: 1.8rem;
+  }
+
+  .polyptych {
+    grid-template-columns: 1fr 1fr;
   }
 
   .desktop {
@@ -2181,10 +2131,6 @@ and ( orientation : portrait ) {
   }
   .mobile {
     display: none;
-  }
-
-  .polyptych {
-    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -2195,7 +2141,7 @@ and ( -webkit-device-pixel-ratio : 2 )
 and ( orientation : portrait ) {
 
   body {
-    font-size: 2.7rem;
+    font-size: 1.8rem;
   }
 
   .polyptych {
