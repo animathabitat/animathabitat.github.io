@@ -1516,6 +1516,17 @@ nav ul li .blue {
 
 /* 0 QUERIES */
 
+/* IPAD (?) : landscape */
+@media only screen
+and ( device-width : 2048px )
+and ( -webkit-device-pixel-ratio : 1 )
+and ( orientation : landscape ) {
+
+  body {
+    font-size: 2.1rem;
+  }
+}
+
 /* IPHONE-Retina */
 /* @media only screen
 and ( min-device-width: 320px )
@@ -1557,6 +1568,17 @@ and ( max-width: 1600px ) {
 
   .break-cut {
     display: none;
+  }
+}
+
+/* IPAD (?) : portrait */
+@media only screen
+and ( device-width : 1536px )
+and ( -webkit-device-pixel-ratio : 1 )
+and ( orientation : portrait ) {
+
+  body {
+    font-size: 2.1rem;
   }
 }
 
@@ -1648,7 +1670,7 @@ and ( orientation : landscape ) {
   }
 }
 
-/* IPAD : landscape */
+/* IPAD, 3, 4 … Mini 2, 3, 4 : landscape */
 @media only screen
 and ( device-width : 1024px )
 and ( -webkit-device-pixel-ratio : 2 )
@@ -1669,7 +1691,7 @@ and ( orientation : landscape ) {
   }
 }
 
-/* IPAD : landscape */
+/* IPAD 1, 2, Mini : landscape */
 @media only screen
 and ( device-width : 1024px )
 and ( -webkit-device-pixel-ratio : 1 )
@@ -1959,7 +1981,7 @@ and ( max-width: 768px ) {
   }
 }
 
-/* IPAD (?) : portrait */
+/* IPAD 3, 4 … Mini 2, 3, 4 : portrait */
 @media only screen
 and ( device-width : 768px )
 and ( -webkit-device-pixel-ratio : 2 )
@@ -1970,7 +1992,7 @@ and ( orientation : portrait ) {
   }
 }
 
-/* IPAD (?) : portrait */
+/* IPAD 1, 2, Mini : portrait */
 @media only screen
 and ( device-width : 768px )
 and ( -webkit-device-pixel-ratio : 1 )
@@ -2013,6 +2035,75 @@ and ( orientation : landscape ) {
   body {
     font-size: 2.4rem;
   }
+}
+
+/* IPAD Mini : landscape */
+@media only screen
+and ( device-width : 512px )
+and ( -webkit-device-pixel-ratio : 2 )
+and ( orientation : landscape ) {
+
+  body {
+    font-size: 2.1rem;
+  }
+
+  nav ul,
+  nav ul.spread,
+  section,
+  section.bio,
+  section.single,
+  header,
+  footer {
+    width: 512px;
+  }
+
+  .diptych:not(.ptych-fixed),
+  .diptych-large-small,
+  .diptych-small-large {
+    grid-template-columns: 1fr 1fr;
+  }
+  .triptych:not(.ptych-fixed) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .desktop-feature,
+  section.product > div.type-product {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  .diptych-large-small,
+  .diptych-small-large {
+    grid-template-areas: "left right";
+  }
+  .diptych.ptych-flipped {
+    grid-template-areas: "left right";
+  }
+  .desktop-feature,
+  section.product > div.type-product {
+    grid-template-areas: "left center right";
+  }
+
+  .polyptych {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .polyptych.ptych-fixed {
+    grid-template-areas: "left center-left center-right right";
+  }
+
+  article,
+  aside,
+  section.bio aside,
+  .half,
+  .three-quarter,
+  .two-third,
+  .third {
+    width: 100%;
+  }
+  li.type-product,
+  .quarter {
+    width: 50%;
+  }
+
+
+
 }
 
 /* 480 */
@@ -2102,6 +2193,17 @@ and ( orientation : portrait ) {
   }
   .mobile {
     display: none;
+  }
+}
+
+/* IPAD Mini : portrait */
+@media only screen
+and ( device-width : 384px )
+and ( -webkit-device-pixel-ratio : 2 )
+and ( orientation : portrait ) {
+
+  body {
+    font-size: 2.1rem;
   }
 }
 
@@ -2231,7 +2333,6 @@ and ( max-width: 320px ) {
 /* IPHONE 5, 5S : portrait */
 
 /* IPHONE 4S : portrait */
-
 
 /* 240 */
 @media only screen
