@@ -1636,6 +1636,16 @@ and ( orientation : landscape ) {
   body {
     font-size: 1.8rem;
   }
+
+  nav ul,
+  nav ul.spread,
+  section,
+  section.bio,
+  section.single,
+  header,
+  footer {
+    width: 1112px;
+  }
 }
 
 /* IPAD : landscape */
@@ -1647,6 +1657,16 @@ and ( orientation : landscape ) {
   body {
     font-size: 2.1rem;
   }
+
+  nav ul,
+  nav ul.spread,
+  section,
+  section.bio,
+  section.single,
+  header,
+  footer {
+    width: 1024px;
+  }
 }
 
 /* IPAD : landscape */
@@ -1657,6 +1677,16 @@ and ( orientation : landscape ) {
 
   body {
     font-size: 2.1rem;
+  }
+
+  nav ul,
+  nav ul.spread,
+  section,
+  section.bio,
+  section.single,
+  header,
+  footer {
+    width: 1024px;
   }
 }
 
