@@ -229,6 +229,12 @@
   <changefreq>never</changefreq>
 </url>
 <url>
+  <loc>https://animathabitat.org/scene/one/technology-documentary-big-tuskers/</loc>
+  <lastmod>2018-12-31</lastmod>
+  <priority>0.4</priority>
+  <changefreq>never</changefreq>
+</url>
+<url>
   <loc>https://animathabitat.org/scene/one/elephant-conservation-nairobi/</loc>
   <lastmod>2019-03-25</lastmod>
   <priority>0.4</priority>
@@ -252,9 +258,14 @@
   <priority>0.4</priority>
   <changefreq>never</changefreq>
 </url>
-<!-- <url>
+<url>
   <loc>https://animathabitat.org/scene/one/elephant-conservation-caprivi/</loc>
   <lastmod>2020-12-28</lastmod>
+  <priority>0.4</priority>
+</url>
+<!-- <url>
+  <loc>https://animathabitat.org/scene/one/elephant-conservation-kavango/</loc>
+  <lastmod>2020-3-29</lastmod>
   <priority>0.4</priority>
 </url> -->
 
