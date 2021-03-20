@@ -301,6 +301,12 @@
   <changefreq>yearly</changefreq>
 </url> -->
 <!-- <url>
+  <loc>https://animathabitat.org/societas/princeps/</loc>
+  <lastmod>2020-09-01</lastmod>
+  <priority>0</priority>
+  <changefreq>yearly</changefreq>
+</url> -->
+<!-- <url>
   <loc>https://animathabitat.org/societas/registers/</loc>
   <lastmod>2020-09-01</lastmod>
   <priority>0</priority>
