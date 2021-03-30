@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="company" content="Animat Habitat" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Animat Habitat project broadcast.</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap">
+  <link rel="stylesheet" href="../../../inc/css/dark.light.unicorn.css" />
+
+  <link rel="icon" href="../../../inc/ico/oafa.one.png" />
+
+  <style>
+    html { background-color:#222; }
+  </style>
+
+</head>
+
+<body id="scene-one">
+
+  <nav>
+    <ul class="page">
+      <li class="crumb scene-one logo"><a href="../../../" title="Animat Habitat"><img alt="OAFA Mark (One) &copy; Animat Habitat, 2015" class="logo" src="../../../inc/ico/oafa.one.svg"/></a></li>
+      <li class="crumb btn scene-one"><a href="../" title="Animat Habitat / 1: White Elephant">1</a></li>
+      <li class="crumb scene scene-one"><a><em>Making of Ella Ch. 3</em></a></li>
+    </ul>
+  </nav>
+
+  <section class="single">
+    <article>
+      <div>
+        <h4 class="letterhead thin">November, 2016</h4>
+        <h2 class="scene-one">Making of Ella Ch. 3: Animatic</h2>
+        <h5 class="author"><a href="//danealeksander.github.io" rel="author" target="_blank" title="Dane Aleksander">Dane Aleksander</a>, animator at Animat Habitat</h5>
+      </div>
+
+      <div>
+        <p>This is an animatic &mdash; a pre-visualization of a visual story. The focus is placed on pacing and on a linear sequence of events. This is the <em>White Elephant</em> animatic, with comic book pages and panels fitted to the standard widescreen format. This working timeline for the story serves as a foundation for cinematography and audio engineering and so on.</p>
+
+      </div>
+
+      <!-- <iframe src="https://player.vimeo.com/video/23769807?color=ffcf60&title=0&byline=0&portrait=0" class="video" frameborder="0" sandbox="allow-scripts allow-same-origin" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
+      <div class="matte"><h4 class="color">Video coming soon.</h4></div>
+
+      <div>
+        <p>This is an exclusive look behind the scenes at Animat Habitat. Enter password sent with confirmation of membership. <a href="//animathabitat.org/r/" title="Animat Habitat / Register">Not a member</a>?</p></div>
+
+
+      <div class="clear navigation post-navigation" role="navigation">
+        <div class="nav-links">
+          <a class="nav-previous" href="../book-of-ella-4/" rel="prev"><font class="mobile">Previous Article /</font><font class="desktop">Book of Ella Ch. 4 /</font></a>
+          <a class="nav-next" href="../making-of-ella-4/" rel="next"><font class="mobile">/ Next Article</font><font class="desktop">/ Making of Ella Ch. 4</font></a>
+        </div>
+      </div>
+
+      <div class="clear diptych">
+
+        <div id="register-a">
+          <h3><a onclick="toggle_register();">&plus;</a></h3>
+
+        </div>
+
+
+        <div class="clear toggle-off" id="register">
+
+          <div>
+            <h3><a onclick="toggle_register();">&minus;</a><br>Behind the scenes:</h3>
+            <p>Register for membership behind the scenes of <em>White Elephant</em>.</p>
+
+          </div>
+
+          <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A52FB6D182F7A8A669AB1C317E182AD3763A1B775C7C4E900069B5F6BE1E4B7A7B42258404945BDA2B8796E1BC8516FAF">
+
+            <div class="clear-top"><input aria-label="Name" id="fieldName" maxlength="140" name="cm-name" title="Full name" placeholder="Name" onfocus="if (this.value=='Name') this.value = ''"></div>
+
+            <div class="clear-top"><input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="140" name="cm-dliyu-dliyu" required="" type="email" placeholder="E-mail address" onfocus="if (this.value=='E-mail address') this.value = ''" class="required email trim" title="E-mail address required."><button type="submit">Register</button></div>
+
+          </form>
+        </div>
+      </div>
+
+    </article><br class="clear">
+  </section>
+
+  <footer>
+    <div class="clear diptych">
+
+      <div class="quote">
+        <p class="small">Copyright &copy; 2016 Animat Habitat. <a href="../../../c/" target="_blank" title="Terms at Animat Habitat">Terms of Access</a><font class="fr"> &#92; Conditions d'acc&egrave;s.</font></p>
+
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+<script>
+  var toggle_reg = document.getElementById("register");
+      toggle_reg_a = document.getElementById("register-a");
+
+  toggle_reg.style.display = "none";
+
+  function toggle_register() {
+    if (toggle_reg.style.display == "none") {
+      toggle_reg.style.display = "block";
+      toggle_reg_a.style.display = "none";
+      document.querySelector('#register-header').scrollIntoView({ behavior: 'smooth' });
+    }
+    else {
+      toggle_reg.style.display = "none";
+      toggle_reg_a.style.display = "block";
+    }
+  };
+
+</script>
+
+</html>
