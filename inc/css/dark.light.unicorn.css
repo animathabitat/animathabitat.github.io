@@ -1017,6 +1017,9 @@ div.scene-zero:hover, div.dark:hover {
 #dark pre.thin {
   border: #474747 thin solid;
 }
+#dark .matte {
+  border: #DADADA 2em solid;
+}
 #dark li.btn > a:hover,
 #dark nav .page li.active em,
 #dark nav .page li.scene em {
@@ -1818,6 +1821,9 @@ and ( max-width: 960px ) {
   section.product {
     padding: 1em 0 0;
   }
+  section.product > div.type-product > div {
+    margin: 0;
+  }
 
   h5.woo-title {
     padding-top: 0.5em;
@@ -1879,8 +1885,8 @@ and ( max-width: 960px ) {
     height: 432px;
   }
 
-  h5.woo-description,
-  h5.woo-tag,
+  /* h5.woo-description, */
+  /* h5.woo-tag, */
   h5.woo-category {
     display: none;
   }
@@ -2072,8 +2078,8 @@ and ( max-width: 480px ) {
     padding-top: 1em;
   }
 
-  h5.woo-description,
-  h5.woo-tag,
+  /* h5.woo-description, */
+  /* h5.woo-tag, */
   h5.woo-category {
     display: block;
   }
