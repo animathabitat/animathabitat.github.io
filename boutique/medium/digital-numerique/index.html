@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en, fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; script-src 'unsafe-inline'; style-src fonts.googleapis.com 'self';" />
+  <meta name="google" content="notranslate" />
+
+  <meta name="author" content="Dane Aleksander" />
+  <meta name="company" content="Animat Habitat" />
+  <meta name="description" content="Art of wild animals to help protect their ecosystems and the biodiversity that cascades from their presence.&nbsp;&#92;&nbsp;L'art des animaux sauvages pour prot&eacute;ger leurs &eacute;cosyst&egrave;mes et la biodiversit&eacute; qui profite de leur pr&eacute;sence." />
+  <meta name="keywords" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Animat Habitat boutique. Digital editions. &ndash;&nbsp;&Eacute;ditions num&eacute;riques.</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
+  <link rel="stylesheet" href="../../../inc/css/dark.light.unicorn.css" />
+
+  <link rel="icon" href="../../../inc/ico/oafa.mark.1.1.72.light.png" />
+
+</head>
+
+<body id="dark">
+
+  <nav>
+    <ul class="page">
+      <li class="crumb dark logo"><a href="../../../" title="Animat Habitat"><img alt="OAFA Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../../../inc/svg/oafa.mark.1.1.1200.light.svg"/></a></li>
+      <li class="crumb dark"><a href="../../" title="Animat Habitat boutique.">Boutique</a></li>
+      <li class="crumb active dark"><a><em>Digital</em></a></li>
+      <li class="right thin"><a onclick="fr();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+    </ul>
+  </nav>
+
+  <header>
+
+    <div class="quote text-center">
+      <h1 class="title"><a href="../../" title="Animat Habitat boutique."><font class="clear">Animat<font class="letterspace-sp"> </font><font class="thin">Habitat</font></font></a></h1>
+      <h3>Digital Editions<font class="fr">&nbsp;&#92;&nbsp;&Eacute;ditions num&eacute;riques</font></h3>
+
+      <div class="term-description">
+        <p>Digital editions are delivered in a range of sizes fit to the aspect ratio of select screens appropriate to the composition of the original artwork. Seventy (70) per cent of the purchase price is directed to wildlife conservation projects partnered with scenes at Animat Habitat.<font class="fr">&nbsp;&#92;&nbsp;Les &eacute;ditions num&eacute;riques sont livr&eacute;es dans une gamme de tailles adapt&eacute;es au rapport d'aspect des &eacute;crans qui conviennent &agrave; la composition de l'&#156;uvre originale. Soixante-dix pour cent du prix d'achat est affect&eacute; &agrave; des projets de conservation de la nature en partenariat avec des sc&egrave;nes chez Animat Habitat.</font></p>
+      </div>
+    </div>
+
+  </header>
+
+  <section class="single">
+    <article>
+
+      <ul class="products columns-4">
+        <li class="product type-product has-post-thumbnail">
+          <a href="last-of-the-big-tuskers/">
+            <div class="clear">
+              <img alt="Last of the Big Tuskers (2018) &ndash; Isilo [thumbnail]" src="../../../inc/img/boutique/last-of-the-big-tuskers/lotbt.elephant.isilo.c.300-180.jpg" />
+            </div></a>
+          <a href="last-of-the-big-tuskers/"><h5 class="woo-title">Magnificent Seven</h5></a>
+          <h5 class="woo-description">Collection of<font class="fr">&nbsp;&#92;&nbsp;de</font> 7</h5>
+          <h5 class="woo-tag"><em>Last of the Big Tuskers</em> (2018)</h5>
+          <!-- <h5 class="woo-category">Digital Edition<font class="fr">&nbsp;&#92;&nbsp;&Eacute;dition num&eacute;rique</font></h5>
+          <h5 class="woo-dimension">3840 &times; 2160 px<sup>&nbsp;[<a class="button" onclick="fn();" title="Size List">1</a>]</sup></h5>
+          <h5 class="woo-price-amount">CA<font class="woo-currency-symbol">&#36;</font><font class="price">7</font></h5> -->
+        </li>
+
+        <br class="clear">
+
+      </ul>
+    </article><br class="clear">
+  </section>
+
+  <footer>
+    <div class="clear diptych">
+
+      <div class="quote">
+        <p class="small">Copyright &copy; 2018-2023 Animat Habitat. <a href="../../../c/" target="_blank" title="Animat Habitat &frasl; Terms of Access">Terms of Access</a>.<font class="fr">&nbsp;&#92;&nbsp;Conditions d'access.</font></p>
+
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+<script>
+
+  var r = document.querySelector(':root'),
+      toggle_fr = 0;
+
+  r.style.setProperty('--fr', "none");
+
+  function fr() {
+    if ( toggle_fr == 0 ) {
+      r.style.setProperty('--fr', "inline");
+      r.style.setProperty('--fr-en', "none");
+      toggle_fr = 1;
+    }
+    else {
+      r.style.setProperty('--fr', "none");
+      r.style.setProperty('--fr-en', "inline");
+      toggle_fr = 0;
+    }
+  };
+
+</script>
+
+</html>

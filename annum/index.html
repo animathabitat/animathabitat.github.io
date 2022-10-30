@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en, fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; script-src 'unsafe-inline'; style-src fonts.googleapis.com 'self';" />
+  <meta name="google" content="notranslate" />
+
+  <meta name="author" content="Dane Aleksander" />
+  <meta name="company" content="Animat Habitat" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Animat Habitat annum.</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
+  <link rel="stylesheet" href="../inc/css/dark.light.unicorn.css" />
+
+  <link rel="icon" href="../inc/ico/oafa.mark.1.1.72.light.png" />
+
+</head>
+
+<body id="dark">
+
+  <nav>
+    <ul class="page">
+      <li class="crumb dark logo"><a href="../" title="Animat Habitat"><img alt="OAFA Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../inc/svg/oafa.mark.1.1.1200.light.svg"/></a></li>
+      <li class="crumb dark"><a href="../societas/" title="Animat Habitat societ&#257;s.">Societ&#257;s</a></li>
+      <li class="crumb scene dark"><a><em>Annum</em></a></li>
+      <li class="right thin"><a onclick="fr();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+    </ul>
+  </nav>
+
+  <section class="single">
+    <article>
+
+      <div class="clear diptych">
+        <div>
+          <h2 class="letterhead">Letters<font class="fr">&nbsp;&#92;&nbsp;Lettres</font></h2>
+          <p class="lineend"><em>The annual letter from the president is addressed to members of Animat Habitat and published as a document of the <a href="../societas/" title="Animat Habitat societ&#257;s.">Member Handbook</a>.</em><font class="fr">&nbsp;&#92;&nbsp;<em>Le lettre annuelle du pr&eacute;sident est adress&eacute;e aux membres de Animat Habitat et publi&eacute;e en tant que document du manuel des membres.</em></font></p>
+
+          <p><a href="2022/" title="Animat Habitat annum. 2022.">Annual Address</a> &ndash; 2022<font class="fr">&nbsp;&#92;&nbsp;Adresse annuelle</font></p>
+          <p><a href="2021/" title="Animat Habitat annum. 2021.">Annual Address</a> &ndash; 2021<font class="fr">&nbsp;&#92;&nbsp;Adresse annuelle</font></p>
+          <p><a href="2020/" title="Animat Habitat annum. 2020.">Annual Address</a> &ndash; 2020<font class="fr">&nbsp;&#92;&nbsp;Adresse annuelle</font></p>
+          <p><a href="2019/" title="Animat Habitat annum. 2019.">Annual Address</a> &ndash; 2019<font class="fr">&nbsp;&#92;&nbsp;Adresse annuelle</font></p>
+          <p><a href="2018/" title="Animat Habitat annum. 2018.">Annual Address</a> &ndash; 2018<font class="fr">&nbsp;&#92;&nbsp;Adresse annuelle</font></p>
+          <p><a href="2017/" title="Animat Habitat annum. 2017.">Annual Address</a> &ndash; 2017<font class="fr">&nbsp;&#92;&nbsp;Adresse annuelle</font></p>
+          <p><a href="2016/" title="Animat Habitat annum. 2016.">Inaugural Address</a> &ndash; 2016<font class="fr">&nbsp;&#92;&nbsp;Adresse inaugural</font></p>
+          <p><a href="2015/" title="Animat Habitat annum. 2015.">Corporate Seal</a> &ndash; 2015<font class="fr">&nbsp;&#92;&nbsp;Sceau corporatif</font></p>
+        </div>
+
+      </div>
+
+    </article>
+
+    <br class="clear">
+
+  </section>
+
+  <footer></footer>
+
+</body>
+
+<script>
+
+  var r = document.querySelector(':root'),
+      toggle_fr = 0;
+
+  r.style.setProperty('--fr', "none");
+
+  function fr() {
+    if ( toggle_fr == 0 ) {
+      r.style.setProperty('--fr', "inline");
+      r.style.setProperty('--fr-en', "none");
+      toggle_fr = 1;
+    }
+    else {
+      r.style.setProperty('--fr', "none");
+      r.style.setProperty('--fr-en', "inline");
+      toggle_fr = 0;
+    }
+  };
+
+</script>
+
+</html>

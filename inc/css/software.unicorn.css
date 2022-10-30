@@ -1,0 +1,122 @@
+/* ROOT */
+
+:root {
+
+  /* MAYA rgb(0,255,228) */
+
+  --maya: #00FFE4;
+  --maya-ii: #08D4BF;
+  --maya-iii: #197F74;
+  --maya-iv: #11AA9A;
+  --maya-v: #22554F;
+  /* #403E39 */
+
+  /* PHOTO  rgb(0,180,255) */
+
+  --photo: #00B4FF;
+  --photo-ii: #0898D4;
+  --photo-iii: #117DAA;
+  --photo-iv: #19617F;
+  --photo-v: #224655;
+
+}
+
+/* 6.0.1 MAYA */
+
+#aqua nav em,
+#aqua a.color,
+#aqua .navigation a,
+#aqua h1,
+#aqua h3,
+#aqua h2.color,
+#aqua h4.color,
+#aqua font.color,
+.aqua,
+.lettermark.aqua:hover,
+li.aqua a:active,
+.new {
+  color: var(--maya);
+}
+#aqua a.color:hover,
+#aqua a:hover .color,
+#aqua .navigation a:hover,
+a.aqua:hover,
+a:hover .aqua,
+li.aqua a:hover {
+  color: var(--maya-ii);
+}
+#aqua div.color,
+#aqua aside.color {
+  background: var(--maya-v);
+}
+#aqua button,
+#aqua #soci a img,
+#aqua a:hover > div.color,
+div.aqua,
+.color-two {
+  background: var(--maya-iii);
+}
+#aqua button:hover,
+div.aqua:hover {
+  background: var(--maya-iv);
+}
+#aqua li.btn a:after,
+#aqua .page li.active a,
+#aqua .page li.scene {
+  background: var(--maya);
+}
+nav ul li .aqua {
+  border-color: var(--maya);
+}
+.lettermark.aqua:before {
+  background: var(--maya-ii);
+}
+
+/* 6.0.2 PHOTO */
+
+#blue a.color,
+#blue .navigation a,
+#blue h1,
+#blue h3,
+#blue h2.color,
+#blue h4.color,
+#blue font.color,
+.blue,
+.lettermark.blue:hover,
+li.blue a:active,
+li.blue a:hover,
+li.blue a em {
+  color: var(--photo);
+}
+#blue a.color:hover,
+#blue a:hover .color,
+#blue .navigation a:hover,
+a.blue:hover,
+a:hover .blue {
+  color: var(--photo-i);
+}
+#blue div.color,
+#blue aside.color {
+  background: var(--photo-v);
+}
+#blue button,
+#blue #soci a img,
+#blue a:hover > div.color,
+div.blue {
+  background: var(--photo-iv);
+}
+#blue button:hover,
+div.blue:hover {
+  background: var(--photo-iii);
+}
+#blue li.btn a:after,
+#blue .page li.active a,
+#blue .page li.scene {
+  background: var(--photo);
+}
+nav ul li .blue {
+  border-color: var(--photo);
+}
+.lettermark.blue:before {
+  background: var(--photo-i);
+}

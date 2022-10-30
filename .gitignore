@@ -1,23 +1,31 @@
-# ignore everything in the root except the "wp-content" directory.
-!wp-content/
+# Folder archives
+_*
+_*/
+.com/
+.htaccess
+*readme.txt
 
-# ignore everything in the "wp-content" directory, except:
-# "mu-plugins", "plugins", "themes" directory
-wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
-!wp-content/themes/
+# Folder config file
+Desktop.ini
 
-# ignore these plugins
-wp-content/plugins/hello.php
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-# ignore specific themes
-wp-content/themes/twenty*/
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
 
-# ignore node dependency directories
-node_modules/
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
 
-# ignore log files and databases
+# Windows shortcuts
+*.lnk
+
+# Wordpress caches
 *.log
-*.sql
-*.sqlite
+
+# Wordpress config file
+wp-config.php

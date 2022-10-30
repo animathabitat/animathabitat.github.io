@@ -1,0 +1,38 @@
+User-agent: *
+
+Disallow: /404.html
+Disallow: /readme.md
+
+Disallow: /annum/
+
+Disallow: /boutique/exit/
+
+Disallow: /c/
+
+Disallow: /conservation/
+
+Disallow: /don/
+Disallow: /donate/
+Disallow: /dono/
+
+Disallow: /inc/
+
+Disallow: /princeps/
+
+Disallow: /societas/
+Disallow: /societe/
+Disallow: /society/
+
+Disallow: /studio/
+
+Disallow: /support/
+
+Disallow: /url/
+
+# Sitemap #
+
+Allow: /canon/
+Allow: /conservatum/
+Allow: /scene/
+
+Sitemap: /animathabitat.org.sitemap.xml

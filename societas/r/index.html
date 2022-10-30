@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en, fr">
+<head>
+  <meta charset="UTF-8" />
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; script-src 'unsafe-inline' createsend.com www.createsend.com js.createsend1.com; style-src fonts.googleapis.com 'self';" /> -->
+  <meta name="google" content="notranslate" />
+
+  <meta name="author" content="Dane Aleksander" />
+  <meta name="company" content="Animat Habitat" />
+  <meta name="description" content="Membership behind the scenes in wildlife art." />
+  <meta name="keywords" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Animat Habitat societ&#257;s. Registration. &ndash;&nbsp;Enregistrement.</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
+  <link rel="stylesheet" href="../../inc/css/dark.light.unicorn.css" />
+
+  <link rel="icon" href="../../inc/ico/oafa.mark.1.1.72.light.png" />
+
+  <style>
+    html { background-color:#333; }
+
+  </style>
+
+</head>
+
+<body class="fadein" id="dark">
+
+  <nav>
+    <ul class="page">
+      <li class="crumb dark logo"><a href="../../" title="Animat Habitat"><img alt="OAFA Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/oafa.mark.1.1.1200.light.svg"/></a></li>
+      <li class="crumb dark"><a href="../" title="Animat Habitat societ&#257;s.">Societ&#257;s</a></li>
+      <li class="right thin"><a onclick="fr();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+      <li class="crumb scene dark"><a><em>Registration<font class="desktop"> &ndash; Enregistrement</font></em></a></li>
+    </ul>
+  </nav>
+
+  <section class="single">
+
+		<div class="clear diptych">
+
+      <div class="clear" id="register" spellcheck="false">
+
+        <div>
+          <h3 class="letterhead">Behind the scenes<font class="fr">&nbsp;&#92;&nbsp;Dans les coulisses</font></h3>
+          <p>Register for membership behind the scenes in wildlife art.<font class="fr">&nbsp;&#92;&nbsp;Adh&eacute;sion aux mises &agrave; jour dans les coulisses de l'art de la faune.</font></p>
+
+        </div>
+
+        <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A52FB6D182F7A8A669AB1C317E182AD3763A1B775C7C4E900069B5F6BE1E4B7A7B42258404945BDA2B8796E1BC8516FAF">
+          <div class="clear-top">
+            <input aria-label="Name" id="fieldName" maxlength="140" name="cm-name" title="Full name&nbsp;&#92;&nbsp;Nom et pr&eacute;nom" placeholder="Name&nbsp;&#92;&nbsp;Nom" onfocus="if (this.value=='Name&nbsp;&#92;&nbsp;Nom') this.value = ''">
+          </div>
+
+          <div class="clear-top">
+            <input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="140" name="cm-dliyu-dliyu" required="" type="email" placeholder="E-mail address&nbsp;&#92;&nbsp;Addresse e-mail" onfocus="if (this.value=='E-mail address&nbsp;&#92;&nbsp;Addresse e-mail') this.value = ''" class="required email trim" title="E-mail address required. &#92;&nbsp;Adresse e-mail requis.">
+            <button type="submit">Register<font class="fr">&nbsp;&#92;&nbsp;Enregistrez</font></button>
+
+          </div>
+
+        </form>
+
+        <div class="clear-top">
+          <p class="small">A verification e-mail will be sent to the address provided.<font class="fr">&nbsp;&#92;&nbsp;Un e-mail de v&eacute;rification sera envoy&eacute; &agrave; l'adresse fournie.</font></p>
+          <!-- <p class="small">A verification step is included to respect your privacy.<font class="fr">&nbsp;&#92;&nbsp;Une &eacute;tape de v&eacute;rification est incluse pour respecter votre vie priv&eacute;e.</font></p> -->
+          <!-- <ul class="small square">
+            <li>Behind the scenes access at Animat Habitat.<font class="fr">&nbsp;&#92;&nbsp;Acc&eacute;s aux coulisses chez Animat Habitat.</font></li>
+            <li>Letters from the editor of project updates.<font class="fr">&nbsp;&#92;&nbsp;Lettres de l'&eacute;diteur des mises &agrave; jour du projet.</font></li>
+            <li>Previews of artworks and exhibitions of work.<font class="fr">&nbsp;&#92;&nbsp;Avant-premi&egrave;res d'&oelig;uvres d'art et d'expositions d'&oelig;uvres.</font></li>
+
+          </ul> -->
+
+        </div>
+
+      </div>
+
+		</div>
+
+	</section>
+
+</body>
+
+<script>
+
+  var r = document.querySelector(':root'),
+      toggle_fr = 0;
+
+  r.style.setProperty('--fr', "none");
+
+  document.onload = load_createsend();
+
+  function load_createsend() {
+
+    var script = document.createElement( "script" );
+    script.src = "https://js.createsend1.com/javascript/copypastesubscribeformlogic.js";
+    script.type = "text/javascript";
+
+    document.body.appendChild(script);
+  };
+
+  function fr() {
+    if ( toggle_fr == 0 ) {
+      r.style.setProperty('--fr', "inline");
+      r.style.setProperty('--fr-en', "none");
+      toggle_fr = 1;
+    }
+    else {
+      r.style.setProperty('--fr', "none");
+      r.style.setProperty('--fr-en', "inline");
+      toggle_fr = 0;
+    }
+  };
+
+</script>
+
+</html>
