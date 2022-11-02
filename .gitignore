@@ -2,17 +2,15 @@
 _*
 _*/
 .com/
-.htaccess
-*readme.txt
 
 # Folder config file
-Desktop.ini
+desktop.ini
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
 # Windows image file caches
-Thumbs.db
+thumbs.db
 ehthumbs.db
 
 # Windows Installer files
