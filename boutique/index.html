@@ -33,7 +33,7 @@
     <ul class="page">
       <li class="crumb dark logo"><a href="../" title="Animat Habitat"><img alt="OAFA Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../inc/svg/oafa.mark.1.1.1200.light.svg"/></a></li>
       <li class="crumb active dark"><a><em>Boutique</em></a></li>
-      <li class="right thin"><a onclick="fr();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
       <!--li class="right thin"><a class="item-count" href="https://animathabitat.org/cart/" title="Animat Habitat cart&nbsp;&#92;&nbsp;panier">Cart<font class="fr">&nbsp;&#92;&nbsp;Panier</font></a></li-->
     </ul>
   </nav>
@@ -61,20 +61,20 @@
 <script>
 
   var r = document.querySelector(':root'),
-      toggle_fr = 0;
+      toggle_lang = 0;
 
   r.style.setProperty('--fr', "none");
 
-  function fr() {
-    if ( toggle_fr == 0 ) {
+  function toggle_language() {
+    if ( toggle_lang == 0 ) {
       r.style.setProperty('--fr', "inline");
       r.style.setProperty('--fr-en', "none");
-      toggle_fr = 1;
+      toggle_lang = 1;
     }
     else {
       r.style.setProperty('--fr', "none");
       r.style.setProperty('--fr-en', "inline");
-      toggle_fr = 0;
+      toggle_lang = 0;
     }
   };
 

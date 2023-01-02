@@ -28,7 +28,7 @@
       <li class="crumb dark"><a href="../../../" title="Animat Habitat boutique.">Boutique</a></li>
       <li class="crumb dark"><a href="../" title="Animat Habitat boutique. Traditional Artworks. &ndash;&nbsp;Oeuvres traditionels.">Traditional</a></li>
       <li class="crumb active dark"><a><em>Winter Wind</em></a></li>
-      <li class="right thin"><a onclick="fr();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
     </ul>
   </nav>
 
@@ -42,9 +42,9 @@
   </header>
 
   <div class="clear preview" id="preview">
-    <a onclick="preview();">
+    <a onclick="toggle_preview();">
       <div class="quote">
-        <img alt="Winter Wind &copy; Dane Aleksander, 2008 [preview]" class="wp-post-image" src="https://lifeasplay.ca/dane/inc/uploads/2008.winter-wind.jpg" />
+        <img alt="Winter Wind &copy; Dane Aleksander, 2008 [preview]" class="wp-post-image" src="../../../inc/img/boutique/winter-wind/2008.winter-wind.jpg" />
       </div>
     </a>
 
@@ -88,9 +88,9 @@
 
           <div>
             <div class="preview-thumbnail" id="preview-thumbnail">
-              <a onclick="preview();">
-                <img alt="Winter Wind &copy; Dane Aleksander, 2008 [thumbnail]" class="wp-post-image" src="https://lifeasplay.ca/dane/inc/uploads/2008.winter-wind.300-136.jpg" /></a>
-              <p class="text-right"><em>Winter Wind</em> &ndash; Rocky Mountain National Park, America</p>
+              <a onclick="toggle_preview();">
+                <img alt="Winter Wind &copy; Dane Aleksander, 2008 [thumbnail]" class="wp-post-image" src="../../../inc/img/boutique/winter-wind/2008.winter-wind.300-136.jpg" /></a>
+              <p class="text-right"><em>Winter Wind</em> &ndash; Rocky Mountain National Park, America (graphic pencil, 2008) &copy;&nbsp;Dane&nbsp;Aleksander</p>
             </div>
           </div>
 
@@ -134,14 +134,11 @@
 
   </div>
 
-  <footer>
-    <div class="clear diptych">
-
-      <div class="quote">
-        <p class="small">Copyright &copy; 2018 Animat Habitat. <a href="../../../../c/" target="_blank" title="Animat Habitat &frasl; Terms of Access">Terms of Access</a>.<font class="fr">&nbsp;&#92;&nbsp;Conditions d'access.</font></p>
-      </div>
+  <footer class="single">
+    <div class="quote">
 
     </div>
+
   </footer>
 
 </body>
@@ -149,7 +146,7 @@
 <script>
 
   var r = document.querySelector(':root'),
-      toggle_fr = 0,
+      toggle_lang = 0,
       img = document.getElementById("preview"),
       tmb = document.getElementById("preview-thumbnail");
 
@@ -158,7 +155,7 @@
   img.style.display = "none";
   // tmb.style.display = "block";
 
-  function preview() {
+  function toggle_preview() {
     if (img.style.display == "none") {
       img.style.display = "block";
       tmb.style.display = "none";
@@ -171,19 +168,19 @@
     }
   };
 
-  function fr() {
-    if ( toggle_fr == 0 ) {
+  function toggle_language() {
+    if ( toggle_lang == 0 ) {
       r.style.setProperty('--us', "none");
       r.style.setProperty('--ca', "inline");
       r.style.setProperty('--fr', "inline");
       r.style.setProperty('--fr-en', "none");
-      toggle_currency = 0;
-      toggle_fr = 1;
+      toggle_curr = 0;
+      toggle_lang = 1;
     }
     else {
       r.style.setProperty('--fr', "none");
       r.style.setProperty('--fr-en', "inline");
-      toggle_fr = 0;
+      toggle_lang = 0;
     }
   };
 

@@ -28,8 +28,8 @@
       <li class="crumb dark"><a href="../../../" title="Animat Habitat boutique.">Boutique</a></li>
       <li class="crumb dark"><a href="../" title="Animat Habitat boutique. Gicl&eacute;e prints. &ndash;&nbsp;Gicl&eacute;es.">Gicl&eacute;e</a></li>
       <li class="crumb active dark"><a><em>One Ton</em></a></li>
-      <li class="right thin"><a onclick="fr();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
-      <li class="right thin"><a class="title" onclick="currency();" title="Animat Habitat ."><font class="paypal-ca"><b class="overscore">CA</b>&nbsp;&#92;&nbsp;US</font><font class="paypal-us">CA&nbsp;&#92;&nbsp;<b class="overscore">US</b></font>&nbsp;<font class="currency-symbol">&#36;</font></a></li>
+      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+      <li class="right thin"><a class="title" onclick="toggle_currency();" title="Animat Habitat ."><font class="paypal-ca"><b class="overscore">CA</b>&nbsp;&#92;&nbsp;US</font><font class="paypal-us">CA&nbsp;&#92;&nbsp;<b class="overscore">US</b></font>&nbsp;<font class="currency-symbol">&#36;</font></a></li>
     </ul>
   </nav>
 
@@ -43,7 +43,7 @@
   </header>
 
   <div class="clear preview" id="preview">
-    <a onclick="preview();">
+    <a onclick="toggle_preview();">
       <div class="quote">
         <img alt="Last of the Big Tuskers (2018) &ndash; One Ton [preview]" class="wp-post-image" src="../../../../inc/img/boutique/last-of-the-big-tuskers/lotbt.elephant.one-ton.c.1440-864.jpg" />
       </div>
@@ -103,9 +103,9 @@
 
           <div>
             <div class="preview-thumbnail" id="preview-thumbnail">
-              <a onclick="preview();">
+              <a onclick="toggle_preview();">
                 <img alt="Last of the Big Tuskers (2018) &ndash; One Ton [thumbnail]" class="wp-post-image" src="../../../../inc/img/boutique/last-of-the-big-tuskers/lotbt.elephant.one-ton.c.300-180.jpg" /></a>
-              <p class="text-right"><em>One Ton</em> &ndash; Chyulu Hills National Park, Kenya</p>
+              <p class="text-right"><em>One Ton</em> &ndash; Chyulu Hills National Park, Kenya (digital paint, 2018) &copy;&nbsp;Dane&nbsp;Aleksander</p>
             </div>
           </div>
 
@@ -127,14 +127,11 @@
 
   </div>
 
-  <footer>
-    <div class="clear diptych">
-
-      <div class="quote">
-        <p class="small">Copyright &copy; 2018 Animat Habitat. <a href="../../../../c/" target="_blank" title="Animat Habitat &frasl; Terms of Access">Terms of Access</a>.<font class="fr">&nbsp;&#92;&nbsp;Conditions d'access.</font></p>
-      </div>
+  <footer class="single">
+    <div class="quote">
 
     </div>
+
   </footer>
 
 </body>
@@ -142,8 +139,8 @@
 <script>
 
   var r = document.querySelector(':root'),
-      toggle_currency = 0,
-      toggle_fr = 0,
+      toggle_curr = 0,
+      toggle_lang = 0,
       img = document.getElementById("preview"),
       tmb = document.getElementById("preview-thumbnail");
 
@@ -152,7 +149,7 @@
 
   img.style.display = "none";
 
-  function preview() {
+  function toggle_preview() {
     if (img.style.display == "none") {
       img.style.display = "block";
       tmb.style.display = "none";
@@ -165,35 +162,35 @@
     }
   };
 
-  function currency() {
-    if ( toggle_currency == 0 ) {
+  function toggle_currency() {
+    if ( toggle_curr == 0 ) {
       r.style.setProperty('--us', "inline");
       r.style.setProperty('--ca', "none");
       r.style.setProperty('--fr', "none");
       r.style.setProperty('--fr-en', "inline");
-      toggle_currency = 1;
-      toggle_fr = 0;
+      toggle_curr = 1;
+      toggle_lang = 0;
     }
     else {
       r.style.setProperty('--us', "none");
       r.style.setProperty('--ca', "inline");
-      toggle_currency = 0;
+      toggle_curr = 0;
     }
   };
 
-  function fr() {
-    if ( toggle_fr == 0 ) {
+  function toggle_language() {
+    if ( toggle_lang == 0 ) {
       r.style.setProperty('--us', "none");
       r.style.setProperty('--ca', "inline");
       r.style.setProperty('--fr', "inline");
       r.style.setProperty('--fr-en', "none");
-      toggle_currency = 0;
-      toggle_fr = 1;
+      toggle_curr = 0;
+      toggle_lang = 1;
     }
     else {
       r.style.setProperty('--fr', "none");
       r.style.setProperty('--fr-en', "inline");
-      toggle_fr = 0;
+      toggle_lang = 0;
     }
   };
 

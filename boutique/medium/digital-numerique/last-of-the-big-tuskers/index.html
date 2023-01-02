@@ -28,8 +28,8 @@
       <li class="crumb dark"><a href="../../../" title="Animat Habitat boutique.">Boutique</a></li>
       <li class="crumb dark"><a href="../" title="Animat Habitat boutique. Digital editions. &ndash;&nbsp;&Eacute;ditions num&eacute;riques.">Digital</a></li>
       <li class="crumb active dark"><a><em>Magnificent Seven</em></a></li>
-      <li class="right thin"><a onclick="fr();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
-      <li class="right thin"><a class="title" onclick="currency();" title="Animat Habitat ."><font class="paypal-ca"><b class="overscore">CA</b>&nbsp;&#92;&nbsp;US</font><font class="paypal-us">CA&nbsp;&#92;&nbsp;<b class="overscore">US</b></font>&nbsp;<font class="currency-symbol">&#36;</font></a></li>
+      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+      <li class="right thin"><a class="title" onclick="toggle_currency();" title="Animat Habitat ."><font class="paypal-ca"><b class="overscore">CA</b>&nbsp;&#92;&nbsp;US</font><font class="paypal-us">CA&nbsp;&#92;&nbsp;<b class="overscore">US</b></font>&nbsp;<font class="currency-symbol">&#36;</font></a></li>
     </ul>
   </nav>
 
@@ -126,7 +126,7 @@
 
         <div class="clear ptych-left product-preview">
 
-          <div class="triptych ptych-fixed" id="preview-thumbnail">
+          <div class="clear-bottom triptych ptych-fixed" id="preview-thumbnail">
             <div class="gutter-small">
               <a onclick="preview_isilo();"><img alt="Last of the Big Tuskers &ndash; Isilo [preview]" class="wp-post-image" src="../../../../inc/img/boutique/last-of-the-big-tuskers/lotbt.elephant.isilo.c.300-180.jpg" /></a>
             </div>
@@ -150,6 +150,7 @@
             </div>
 
           </div>
+          <p class="text-right gutter-side"><em>Magnificent Seven</em> (digital paint, 2018) &copy;&nbsp;Dane&nbsp;Aleksander</p>
 
         </div>
 
@@ -189,16 +190,12 @@
 
   </div>
 
-  <footer>
-    <div class="clear diptych">
+  <footer class="single">
+    <!-- <div class="quote">
+      <p class="small"><sup>1</sup> Dimension listed is the full resolution of the digital publication. All additional resolutions included.<font class="fr">&nbsp;&#92;&nbsp;La dimension indiqu&eacute;e est la pleine r&eacute;solution de la publication num&eacute;rique. Toutes les r&eacute;solutions suppl&eacute;mentaire incluses.</font></p>
 
-      <div class="quote">
-        <!-- <p class="small"><sup>1</sup> Dimension listed is the full resolution of the digital publication. All additional resolutions included.<font class="fr">&nbsp;&#92;&nbsp;La dimension indiqu&eacute;e est la pleine r&eacute;solution de la publication num&eacute;rique. Toutes les r&eacute;solutions suppl&eacute;mentaire incluses.</font></p> -->
+    </div> -->
 
-        <p class="small">Copyright &copy; 2018 Animat Habitat. <a href="../../../../c/" target="_blank" title="Animat Habitat &frasl; Terms of Access">Terms of Access</a>.<font class="fr">&nbsp;&#92;&nbsp;Conditions d'access.</font></p>
-      </div>
-
-    </div>
   </footer>
 
 </body>
@@ -206,8 +203,8 @@
 <script>
 
   var r = document.querySelector(':root'),
-      toggle_currency = 0,
-      toggle_fr = 0,
+      toggle_curr = 0,
+      toggle_lang = 0,
       img_isilo = document.getElementById("preview-isilo"),
       img_kamboyo = document.getElementById("preview-kamboyo"),
       img_masthulele = document.getElementById("preview-masthulele"),
@@ -305,35 +302,35 @@
     }
   };
 
-  function currency() {
-    if ( toggle_currency == 0 ) {
+  function toggle_currency() {
+    if ( toggle_curr == 0 ) {
       r.style.setProperty('--us', "inline");
       r.style.setProperty('--ca', "none");
       r.style.setProperty('--fr', "none");
       r.style.setProperty('--fr-en', "inline");
-      toggle_currency = 1;
-      toggle_fr = 0;
+      toggle_curr = 1;
+      toggle_lang = 0;
     }
     else {
       r.style.setProperty('--us', "none");
       r.style.setProperty('--ca', "inline");
-      toggle_currency = 0;
+      toggle_curr = 0;
     }
   };
 
-  function fr() {
-    if ( toggle_fr == 0 ) {
+  function toggle_language() {
+    if ( toggle_lang == 0 ) {
       r.style.setProperty('--us', "none");
       r.style.setProperty('--ca', "inline");
       r.style.setProperty('--fr', "inline");
       r.style.setProperty('--fr-en', "none");
-      toggle_currency = 0;
-      toggle_fr = 1;
+      toggle_curr = 0;
+      toggle_lang = 1;
     }
     else {
       r.style.setProperty('--fr', "none");
       r.style.setProperty('--fr-en', "inline");
-      toggle_fr = 0;
+      toggle_lang = 0;
     }
   };
 

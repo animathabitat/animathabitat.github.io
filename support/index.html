@@ -19,22 +19,24 @@
 
 </head>
 
-<body id="dark">
+<body class="single" id="dark">
 
   <nav>
     <ul class="page">
       <li class="crumb dark logo"><a href="../" title="Animat Habitat"><img alt="OAFA Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../inc/svg/oafa.mark.1.1.1200.light.svg"/></a></li>
       <li class="crumb active dark"><a><em>Support</em></a></li>
-      <li class="right thin"><a onclick="fr();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
     </ul>
   </nav>
 
-  <section class="single">
+  <section>
     <article>
+
       <div>
         <h4 class="letterhead thin">Animat Habitat</h4>
         <h2>Sitemap<font class="fr">&nbsp;&#92;&nbsp;Plan du site Web</font></h2>
         <h5>animathabitat.com &middot; animathabitat.org</h5>
+
       </div>
 
       <div>
@@ -85,20 +87,18 @@
         <p>Animat Habitat <a href="../c/" title="Animat Habitat terms of access.">Terms of Access</a><font class="fr">&nbsp;&#92;&nbsp;Conditions d'acc&egrave;s</font></p>
         <p>Animat Habitat Boutique &ndash; <a href="../c/terms-of-use/" title="Animat Habitat terms of use.">Terms of Use</a><font class="fr">&nbsp;&#92;&nbsp;Conditions d'utilisation</font></p>
         <p>Animat Habitat Boutique &ndash; <a href="../c/terms-of-purchase/" title="Animat Habitat terms of purchase.">Terms of Purchase</a><font class="fr">&nbsp;&#92;&nbsp;Conditions d'achat</font></p>
+
       </div>
-    </article>
-    <br class="clear">
+
+    </article><br class="clear">
   </section>
 
   <footer>
-    <div class="clear diptych">
-
-      <div class="quote">
-        <p class="small">Updated September 2019.<font class="fr">&nbsp;&#92;&nbsp;Mis &agrave; jour en septembre 2019.</font></p>
-
-      </div>
+    <div class="quote">
+      <p class="small">This list was updated September 2022.<font class="fr">&nbsp;&#92;&nbsp;Cette liste a &eacute;t&eacute; mis &agrave; jour en septembre 2022.</font></p>
 
     </div>
+
   </footer>
 
 </body>
@@ -106,20 +106,20 @@
 <script>
 
   var r = document.querySelector(':root'),
-      toggle_fr = 0;
+      toggle_lang = 0;
 
   r.style.setProperty('--fr', "none");
 
-  function fr() {
-    if ( toggle_fr == 0 ) {
+  function toggle_language() {
+    if ( toggle_lang == 0 ) {
       r.style.setProperty('--fr', "inline");
       r.style.setProperty('--fr-en', "none");
-      toggle_fr = 1;
+      toggle_lang = 1;
     }
     else {
       r.style.setProperty('--fr', "none");
       r.style.setProperty('--fr-en', "inline");
-      toggle_fr = 0;
+      toggle_lang = 0;
     }
   };
 

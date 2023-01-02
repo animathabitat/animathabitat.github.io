@@ -5,27 +5,28 @@
  Author:       Dane Aleksander
  Author URI:   https://danealeksander.github.io/
  Template:     twentythirteen
- Version:      2.0.0
+ Version:      2.0.1
 */
 
 /*
  * : ROOT
  * . RESET
  * 1 TYPE
+ *   1 spacing
+ *   2 decoration
+ *   3 alignment
  * 2 ARCHITECTURE
  *   1 navigation
  *   2 page
  *   3 input
- * 3 MEDIA
- *   1 logo
- *   2 profile
- *   3 badge
- * 4 .CLASSES
+ * 3 .CLASSES
  *   1 gutter
  *   2 grid
- *   3 badge
+ * 4 MEDIA
+ *   1 image
+ *   3 video
  * 5 #TAGS
- * 6 COLOR
+ * 6 #COLOR
  * 7
  * 8 -wordpress
  * 9 -woocommerce
@@ -36,9 +37,9 @@
 
 :root {
   --fr: "none";
-  --fr-en: "display-inline";
+  --fr-en: "inline";
 
-  --ca: "display-inline";
+  --ca: "inline";
   --us: "none";
 
   --gutter: 1em;
@@ -58,10 +59,10 @@
   --dark-ii: #222222;
   --dark-iii: #333333;
   --dark-iv: #444444;
-  --dark-v: #0A0A0A;
-  /* --dark-vi: #1A1A1A; */
-  --dark-vii: #2A2A2A;
-  /* --dark-viii: #3A3A3A; */
+  --dark-a: #0A0A0A;
+  /* --dark-i-a: #1A1A1A; */
+  --dark-ii-a: #2A2A2A;
+  /* --dark-iii-a: #3A3A3A; */
 
   /* ONE */
 
@@ -105,10 +106,24 @@
 }
 html,
 .active a,
-.scene a {
+.scene a,
+ul.periwinkle-list li a {
   cursor: default;
 }
-article, aside, footer, header, nav, section,
+body, nav, header,
+article, aside,
+button, input, select, textarea {
+  max-width: 100%;
+  width: 100%;
+}
+nav ul,
+footer,
+section {
+  max-width: 100%;
+}
+nav,
+header, footer,
+section, article, aside,
 blockquote, q, div {
   background: inherit;
   display: block;
@@ -168,11 +183,11 @@ span {
 
 [hidden],
 .feedback-text,
-.screen-reader-text /* wordpress */ {
+.screen-reader-text {
   display: none;
 }
 
-:: -webkit-scrollbar {
+::-webkit-scrollbar {
   height: 0.5em;
   width: 0.5em;
 }
@@ -204,7 +219,9 @@ span {
     100% { opacity: 1; }
 }
 
-/* 1 TYPE */
+
+
+/* * 1  TYPE */
 
 html {
   -webkit-text-size-adjust: 62.5%;
@@ -255,7 +272,7 @@ h2, h3, h5, h6,
 form, button, input, label, option, select, textarea,
 th,
 a.button,
-.navigation,
+div[role="navigation"],
 .thin,
 .trade {
   font-style: normal;
@@ -270,7 +287,9 @@ em em {
   text-decoration: underline;
 }
 
-/* 1.1  TYPE */
+
+
+/* * 1.1  SPACING */
 
 h1 {
   font-size: 8em;
@@ -290,17 +309,18 @@ h3,
   line-height: 0.25em;
   vertical-align: -0.5em;
 }
-h4,
-button, input,
+
+ul.periwinkle-list li a {
+  font-size: calc( 3em / 2 );
+}
+
 nav,
-.navigation,
-textarea,
-p#billing_country_field select,
-p#billing_state_field select,
-p#shipping_country_field select,
-p#shipping_state_field select,
-p#order_comments_field textarea,
-a.checkout-button {
+h4,
+div[role="navigation"] a,
+a.checkout-button,
+button, input, textarea,
+select.billing, select.shipping,
+ul.periwinkle-list li {
   font-size: calc( 4em / 3 );
 }
 h5,
@@ -329,7 +349,9 @@ sup {
   line-height: 0.75em;
 }
 
-/* 1.2  DECO */
+
+
+/* * 1.2  DECORATION */
 
 nav ul li,
 th,
@@ -341,14 +363,14 @@ nav ul .thin {
   text-transform: lowercase;
 }
 p a,
-.navigation a,
 .underscore {
   text-decoration: underline;
 }
 p a.button {
   text-decoration: none;
 }
-.overscore {
+.overscore,
+div[role="navigation"] a {
   text-decoration: overline;
 }
 .score {
@@ -359,6 +381,9 @@ ul.square li {
   list-style: square;
 }
 
+ul.decimal li {
+  list-style: decimal;
+}
 ul.lower-roman li {
   list-style: lower-roman;
 }
@@ -378,11 +403,13 @@ ul.outside li {
   list-style-position: outside;
 }
 
-/* 1. 3 ALIGN */
+
+
+/* * 1.3  ALIGNMENT */
 
 .text-center,
-h5.woo-title, /* woo */
-ul.products /* woo */ {
+h5.woo-title,
+ul.products {
   text-align: center;
 }
 button,
@@ -394,57 +421,53 @@ td, th,
   text-align: left;
 }
 .text-right,
-.navigation a[rel="next"] /* wordpress */ {
+div[role="navigation"] a[rel="next"] {
   text-align: right;
 }
 
-.desktop-menu-alt,
-.mobile,
-.toggle-off,
-div.keeper-entry {
-  display: none;
-}
 
-/* 2 ARCHITECTURE */
 
-body {
-  width: 100%;
-}
-section {
-  width: calc( 800em / 9 );
-  z-index: 1;
-}
+/* ** 2  ARCHITECTURE */
+
 nav {
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 10;
+}
+nav ul,
+footer {
+  margin: 0 auto;
+  width: 61.8em;
+  /* width: calc( 640em / 9 ); */
 }
 nav ul {
   display: block;
-  width: calc( 160em / 3 );
   height: auto;
-  margin: 0 auto;
   position: relative;
   text-align: center;
 }
-header,
-footer,
-nav ul.spread,
-section.single {
-  width: calc( 640em / 9 );
+section {
+  margin: 0 auto;
+  width: 76.4em;
+  /* width: calc( 800em / 9 ); */
+  z-index: 1;
 }
-div.profile {
-  position: fixed;
-  width: calc( 160em / 9 );
+article {
+  /* width: 61.8%; */
+}
+aside {
+  /* width: 38.2%; */
+}
+.single nav ul,
+.single footer > div:not(.diptych),
+.single article > div:not(.diptych, .triptych, .polyptych, .desktop-feature, .spread),
+section.single,
+footer.single {
+  margin: 0 auto;
+  width: 38.2em;
+  /* width: calc( 160em / 3 ); */
 }
 
-button,
-input,
-select,
-textarea {
-  width: 100%;
-}
 button,
 input,
 select {
@@ -458,10 +481,11 @@ option {
 }
 textarea {
   height: 4em;
-  max-width: 100%;
 }
 
-/* 2. 1 NAVIGATION */
+
+
+/* ** 2.1  NAVIGATION */
 
 nav ul li {
   border-top: 0.27em solid;
@@ -483,7 +507,6 @@ nav ul li.logo a {
   padding: 0 var(--gutter) 0.2em;
 }
 
-/* Sweep To Bottom */
 nav ul li.btn:before {
   content: "";
   position: absolute;
@@ -508,37 +531,39 @@ nav ul li.btn:hover:before, nav ul li.btn:focus:before, nav ul li.btn:active:bef
           transform: scaleY( 2 );
 }
 
-/* 2. 2 PAGE */
+
+
+/* ** 2.2  PAGE */
 
 article,
 .left,
-.vol a div,
 nav ul li.crumb,
-.navigation a[rel="prev"], /* wordpress */
-li.type-product, /* woo */
+div[role="navigation"] a[rel="prev"],
+li.type-product,
 input[type="checkbox"].input-checkbox,
 input[type="radio"].input-radio {
   float: left;
 }
 aside,
 .right,
-.apple, .google,
-.apple img, .google img,
-.navigation a[rel="next"] /* wordpress */ {
+div[role="navigation"] a[rel="next"] {
   float: right;
 }
-
 .left, .right,
-.vol a div,
-.apple, .google,
-.apple img, .google img,
-li.type-product, /* woo */
+li.type-product,
 input[type="checkbox"].input-checkbox,
 input[type="radio"].input-radio {
   display: inline;
 }
 
-/* 2. 3 INPUT */
+.auto,
+pre.thin {
+  width: auto;
+}
+
+
+
+/* ** 2.3  INPUT */
 
 button,
 input[type="submit"],
@@ -563,7 +588,9 @@ input[type="reset"]:focus {
   outline: none;
 }
 
-/* 3. CLASS */
+
+
+/* *** 3  CLASS */
 
 .center {
   display: block;
@@ -606,50 +633,22 @@ br.clear {
   transition: opacity 4s ease-out;
 }
 
-/* 3.0 CLASS CONT'D */
-article,
-.three-quarter {
-  width: 75%;
+.desktop-menu,
+.mobile,
+.toggle-off,
+div.keeper-entry {
+  display: none;
 }
-aside,
-.quarter,
-li.type-product, /* woo */
-td.product-quantity,
-th.product-quantity,
-/* td.product-remove, */
-/* th.product-remove, */
-td.product-subtotal,
-th.product-subtotal {
-  width: 25%;
-}
-.half,
-.vol a div,
-td.product-name,
-th.product-name {
-  width: 50%;
-}
-.two-third {
-  width: calc( 200% / 3 );
-}
-.third {
-  width: calc( 100% / 3 );
-}
-.full,
-.single article,
-input.format,
-select.format {
-  width: 100%;
-}
-.auto,
-pre.thin {
-  width: auto;
-}
-ul.products li.product-category, /* woo */
-ul.products li.product-category h2 /* woo */ {
+.desktop-menu-alt,
+ul.products li.product-category,
+ul.products li.product-category h2 {
   display: inline;
 }
 
-/* 3.1 GRID */
+
+
+/* *** 3.1  GRID */
+
 .diptych,
 .diptych-large-small,
 .diptych-small-large,
@@ -717,6 +716,10 @@ div.ptych-center-right {
   grid-area: center-right;
 }
 
+div[role="navigation"] {
+  margin: 2em auto;
+}
+
 .diptych > div,
 .triptych > div,
 .polyptych > div,
@@ -744,8 +747,6 @@ div.keeper-entries > div.keeper-entry {
   border-left: 0.382em solid;
 }
 
-/* 3.1.- THUMBNAIL */
-
 li.has-post-thumbnail {
   display: grid;
 }
@@ -765,10 +766,7 @@ a.checkout-button {
   height: 2em;
   width: 100%;
   padding: 0.25em 1em;
-  /* text-align: right; */
 }
-
-/* 3.1.- PREVIEW */
 
 div.preview {
   position: fixed;
@@ -779,7 +777,7 @@ div.preview {
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 10000;
+  z-index: 100;
 }
 div.preview div {
   align-items: center;
@@ -793,25 +791,25 @@ div.preview img {
   margin: 0 auto;
 }
 
-/* 3.2 GUTTER */
+
+
+/* *** 3.2  GUTTER */
 
 section.product {
   padding: 1em 0 2em 0;
 }
 
 div,
-li.type-product /* woo */ {
+li.type-product {
   padding: var(--gutter);
 }
 
 div.hidden {
   padding: 0;
 }
-div.profile img.profile {
-  margin-top: var(--gutter-iii);
-}
 
-body > div.clear.color {
+body > div.clear.color,
+ul.periwinkle-list li {
   margin-top: var(--gutter);
 }
 
@@ -852,7 +850,7 @@ textarea {
 }
 
 .letterhead,
-.cart-empty /* woo */ {
+.cart-empty {
   padding-top: var(--gutter-iv);
 }
 .letterend {
@@ -863,7 +861,7 @@ textarea {
 }
 p.linebreak,
 li.linebreak,
-.return-to-shop /* woo */ {
+.return-to-shop {
   padding-top: var(--gutter);
 }
 .lineend {
@@ -871,7 +869,7 @@ li.linebreak,
 }
 p.lineend,
 li.lineend,
-.return-to-shop, .stock /* woo */ {
+.return-to-shop, .stock {
   padding-bottom: var(--gutter);
 }
 
@@ -879,7 +877,7 @@ li.lineend,
 .gutter-side {
   padding: 0 var(--gutter);
 }
-.nav-links /* wordpress */ {
+.nav-links {
   padding: var(--gutter);
 }
 .gutter-tobo {
@@ -903,13 +901,8 @@ li.lineend,
   padding: 0 0 var(--gutter);
 }
 
-.navigation /* wordpress */ {
-  margin: 2em auto;
-  width: 100%;
-}
-
-input[type="number"]:: -webkit-inner-spin-button,
-input[type="number"]:: -webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   appearance: none;
   margin: 0;
@@ -941,11 +934,14 @@ input[type="checkbox"]:checked ~ div.shipping_address {
   display: var(--us);
 }
 
-/* 4  TAG */
 
-/* 5  MEDIA */
-/* 5.1  IMAGE */
-/* 5.1.1  LOGO */
+
+/* **** 4  MEDIA */
+
+
+
+/* **** 4.1  IMAGE */
+
 img.logo {
   width: 1em;
   height: 1em;
@@ -965,33 +961,37 @@ div.logo img {
   padding: 2.4em 3.2em;
 }
 
-/* 5.1.2  BADGE */
-.apple img, .google img {
-  height: 2em;
-  margin: 1.5em 1.5em 0;
-}
-.apple img {
-  width: 5em;
-}
-.google img {
-  width: 4.375em;
-}
 
-/* 5.2  VIDEO */
+
+/* **** 4.2  VIDEO */
+
 .video {
   width: 100%;
-}
-.video {
   height: 36em;
 }
 .single .video {
   height: 40.5em;
 }
+.single .video-3-2 {
+  width: 100%;
+  height: 28.5em;
+}
+.single .video-extra {
+  width: 100%;
+  height: 21.5em;
+}
 
-/* 6  COLOR */
+
+
+/* ***** 5  TAG */
+
+
+
+/* ****** 6  COLOR */
 
 body,
-font.clear {
+font.clear,
+ul.periwinkle-list li a {
   color: var(--light);
 }
 .fr {
@@ -1024,7 +1024,10 @@ a.nav-block:hover img {
   filter: saturate(1);
 }
 
-/* 6.1.1  ZERO [DARK] */
+
+
+/* ****** 6.1.0  DARK [ZERO] */
+
 a,
 a:hover p,
 h1 a:hover,
@@ -1102,12 +1105,15 @@ nav ul li.dark {
   background: var(--light);
 }
 
-#dark:: -webkit-scrollbar-track { background: var(--dark-iii); }
-#dark:: -webkit-scrollbar-thumb { background: var(--white); }
+#dark::-webkit-scrollbar-track { background: var(--dark-iii); }
+#dark::-webkit-scrollbar-thumb { background: var(--white); }
 
-/* 6.1.2  LIGHT */
-body#light,
-body#light font.clear {
+
+
+/* ****** 6.1.1  LIGHT */
+
+#light,
+#light font.clear {
   color: var(--dark-ii);
 }
 #light li.has-post-thumbnail img {
@@ -1129,16 +1135,15 @@ body#light font.clear {
 #light h4.color,
 #light font.color,
 .light,
-.lettermark
-.light:hover {
-  color: var(--dark-v);
+.lettermark.light:hover {
+  color: var(--dark-a);
 }
 #light a.color:hover,
 #light a:hover .color,
-#light .navigation a:hover,
+#light div[role="navigation"] a:hover,
 a.light:hover,
 a:hover .light {
-  color: var(--dark-vii);
+  color: var(--dark-ii-a);
 }
 #light,
 #light nav,
@@ -1169,19 +1174,22 @@ div.light:hover {
   border: var(--light) thin solid;
 }
 nav ul li.light {
-  border-color: var(--dark-v);
+  border-color: var(--dark-a);
 }
 .lettermark.light:before {
-  background: var(--dark-vii);
+  background: var(--dark-ii-a);
 }
 
-#light:: -webkit-scrollbar-track { background: var(--white); }
-#light:: -webkit-scrollbar-thumb { background: var(--dark-v); }
+#light::-webkit-scrollbar-track { background: var(--white); }
+#light::-webkit-scrollbar-thumb { background: var(--dark-a); }
 
-/* 6.2.1  ONE */
+
+
+/* ****** 6.2.1  DUNE [ONE] */
+
 #scene-one nav em,
 #scene-one a.color,
-#scene-one .navigation a,
+#scene-one div[role="navigation"] a,
 #scene-one h1,
 #scene-one h3,
 #scene-one h2.color,
@@ -1195,7 +1203,7 @@ li.scene-one a:active,
 }
 #scene-one a.color:hover,
 #scene-one a:hover .color,
-#scene-one .navigation a:hover,
+#scene-one div[role="navigation"] a:hover,
 a.scene-one:hover,
 a:hover .scene-one,
 li.scene-one a {
@@ -1264,13 +1272,16 @@ nav ul li.scene-one {
   color: var(--sand-ii);
 }
 
-#scene-one:: -webkit-scrollbar-track { background: var(--dark-ii); }
-#scene-one:: -webkit-scrollbar-thumb { background: var(--dune); }
+#scene-one::-webkit-scrollbar-track { background: var(--dark-ii); }
+#scene-one::-webkit-scrollbar-thumb { background: var(--dune); }
 
-/* 6.2.2  TWO */
+
+
+/* ****** 6.2.2  TAIGA [TWO] */
+
 #scene-two nav em,
 #scene-two a.color,
-#scene-two .navigation a,
+#scene-two div[role="navigation"] a,
 #scene-two h1,
 #scene-two h3,
 #scene-two h2.color,
@@ -1284,7 +1295,7 @@ li.scene-two a:active,
 }
 #scene-two a.color:hover,
 #scene-two a:hover .color,
-#scene-two .navigation a:hover,
+#scene-two div[role="navigation"] a:hover,
 a.scene-two:hover,
 a:hover .scene-two,
 li.scene-two a {
@@ -1350,13 +1361,16 @@ nav ul li.scene-two,
   color: var(--pine-ii);
 }
 
-#scene-two:: -webkit-scrollbar-track { background: var(--dark); }
-#scene-two:: -webkit-scrollbar-thumb { background: var(--taiga); }
+#scene-two::-webkit-scrollbar-track { background: var(--dark); }
+#scene-two::-webkit-scrollbar-thumb { background: var(--taiga); }
 
-/* 6.2.3  THREE */
+
+
+/* ****** 6.2.3  GALCIER [THREE] */
+
 #scene-three nav em,
 #scene-three a.color,
-#scene-three .navigation a,
+#scene-three div[role="navigation"] a,
 #scene-three h1,
 #scene-three h3,
 #scene-three h2.color,
@@ -1370,7 +1384,7 @@ li.scene-three a:active,
 }
 #scene-three a.color:hover,
 #scene-three a:hover .color,
-#scene-three .navigation a:hover,
+#scene-three div[role="navigation"] a:hover,
 a.scene-three:hover,
 a:hover .scene-three,
 li.scene-three a {
@@ -1435,55 +1449,46 @@ nav ul li.scene-three {
   color: var(--water-ii);
 }
 
-#scene-three:: -webkit-scrollbar-track { background: var(--dark-iv); }
-#scene-three:: -webkit-scrollbar-thumb { background: var(--glacier); }
+#scene-three::-webkit-scrollbar-track { background: var(--dark-iv); }
+#scene-three::-webkit-scrollbar-thumb { background: var(--glacier); }
 
-/* 0  QUERIES */
 
-/* IPHONE-Retina */
+
+/* ********** 0  MEDIA QUERIES */
+
+
+
+/* **********  IPHONE-Retina */
+
 /* @media only screen
-and ( min-device-width: 320px )
-and ( max-device-width: 568px )
 and ( -webkit-min-device-pixel-ratio: 2) { } */
 
-/* MAX */
+
+
+/* **********  MAX */
+
 @media screen
 and ( max-width: 1600px ) {
 
-  textarea {
-    height: 6em;
-  }
-
+  nav ul,
+  footer,
   section {
     max-width: 1600px;
     width: 100%;
   }
-  nav ul,
-  nav ul.spread,
-  section.bio,
-  section.single,
-  header,
-  footer {
-    max-width: 1280px;
-    width: 1280px;
+  .single section {
+    max-width: 76.4em;
+    /* width: 76.4em; */
   }
-  article,
-  section.bio aside {
-    width: 100%;
+  .single nav ul,
+  .single footer > div:not(.spread),
+  .single article > div:not(.diptych, .triptych, .polyptych, .desktop-feature, .spread),
+  .single div.single {
+    width: calc( 667px + ( 4 * ( ( 100vw - 1280px ) / 320 ) ) );
   }
-  div.profile {
-    width: auto;
-    position: relative;
-  }
-  section.bio aside div.profile > div {
-    float: left;
-    width: 50%;
-  }
-  div.profile > div.profile-copy {
-    padding: 3em;
-  }
-  div.profile img.profile {
-    margin-top: 0;
+
+  textarea {
+    height: 6em;
   }
 
   .break-cut {
@@ -1491,7 +1496,10 @@ and ( max-width: 1600px ) {
   }
 }
 
-/* IPAD Pro 12 : landscape */
+
+
+/* **********  IPAD Pro 12 : landscape */
+
 @media all
 and ( device-width : 1366px )
 and ( device-height : 1024px )
@@ -1503,14 +1511,16 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-/* 1280 */
+
+
+/* **********  1280 */
+
 @media only screen
 and ( max-width: 1280px ) {
 
   body{
     font-size: calc( 1.6rem + ( 2 * ( ( 100vw - 960px ) / 320 ) ) );
   }
-
   h1 {
     font-size: calc( calc( 45em / 8 ) + ( 42.75 * ( ( 100vw - 960px ) / 320 ) ) );
   }
@@ -1520,20 +1530,24 @@ and ( max-width: 1280px ) {
   h3 {
     font-size: calc( calc( 33em / 16 ) - ( 1.125 * ( ( 100vw - 960px ) / 320 ) ) );
   }
+
   nav,
-  .navigation,
+  div[role="navigation"],
   a.checkout-button {
     font-size: 2.4rem;
   }
 
   nav ul,
-  nav ul.spread,
-  section,
-  section.bio,
-  section.single,
-  header,
-  footer {
+  header, footer,
+  .single section {
     width: 100%;
+  }
+  .single nav ul,
+  .single footer > div:not(.spread),
+  .single article > div:not(.diptych, .triptych, .polyptych, .desktop-feature, .spread),
+  section.single,
+  footer.single {
+    max-width: 667px;
   }
 
   h5.woo-title {
@@ -1549,7 +1563,10 @@ and ( max-width: 1280px ) {
   }
 }
 
-/* IPAD Pro 10.5 : landscape */
+
+
+/* **********  IPAD Pro 10.5 : landscape */
+
 @media all
 and ( device-width : 1112px )
 and ( device-height : 834px )
@@ -1560,22 +1577,18 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
     font-size: 1.8rem;
   }
 
-  section {
-    max-width: 1112px;
-    width: 100%;
-  }
   nav ul,
-  nav ul.spread,
-  section.bio,
-  section.single,
-  header,
-  footer {
+  header, footer,
+  section {
     max-width: 1112px;
     width: 1112px;
   }
 }
 
-/* IPAD Pro 12 : portrait */
+
+
+/* **********  IPAD Pro 12 : portrait */
+
 @media all
 and ( device-width : 1366px )
 and ( device-height : 1024px )
@@ -1586,24 +1599,20 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
     font-size: 2.1rem;
   }
 
-  section {
-    max-width: 1024px;
-    width: 100%;
-  }
   nav ul,
-  nav ul.spread,
-  section.bio,
-  section.single,
-  header,
-  footer {
+  header, footer,
+  section {
     max-width: 1024px;
     width: 1024px;
   }
 }
 
-/* IPAD, 3, 4 … Mini 2, 3, 4 : landscape */
 
-/* IPAD 1, 2, Mini : landscape */
+
+/* **********  IPAD, 3, 4 … Mini 2, 3, 4 : landscape */
+
+/* **********  IPAD 1, 2, Mini : landscape */
+
 @media all
 and ( device-width : 1024px )
 and ( device-height : 768px )
@@ -1614,22 +1623,18 @@ and ( -webkit-min-device-pixel-ratio : 1 ) {
     font-size: 2.1rem;
   }
 
-  section {
-    max-width: 1024px;
-    width: 100%;
-  }
   nav ul,
-  nav ul.spread,
-  section.bio,
-  section.single,
-  header,
-  footer {
+  header, footer,
+  section {
     max-width: 1024px;
     width: 1024px;
   }
 }
 
-/* MID */
+
+
+/* **********  MID */
+
 @media only screen
 and ( max-width: 960px ) {
 
@@ -1643,32 +1648,35 @@ and ( max-width: 960px ) {
     font-size: calc( 4em / 3 );
   }
   h3,
-  button, input {
+  button, input,
+  ul.periwinkle-list li a {
     font-size: calc( 11em / 9 );
   }
   h4, h5,
   select,
   .navigation,
-  a.checkout-button {
+  a.checkout-button,
+  ul.periwinkle-list li {
     font-size: 1em;
   }
   nav {
     font-size: calc( 8em / 9 );
   }
 
-  nav ul.spread {
+  nav ul,
+  header, footer,
+  section {
     max-width: 960px;
   }
-  nav ul,
-  section,
-  section.bio,
-  section.single,
-  header,
-  footer {
-    max-width: 768px;
+
+  /* *** CLASS */
+
+  .break-cut {
+    display: inherit;
   }
 
-  /* GRID */
+  /* *** CLASS ** GRID */
+
   .diptych:not(.ptych-fixed),
   .diptych-large-small,
   .diptych-small-large,
@@ -1706,24 +1714,10 @@ and ( max-width: 960px ) {
       "center-right right";
   }
 
-  article,
-  aside,
-  .half,
-  .three-quarter,
-  .two-third,
-  .third,
-  section.bio aside div.profile > div {
-    width: 100%;
-  }
-  li.type-product,
-  .quarter {
-    width: 50%;
-  }
+  /* *** CLASS *** GUTTER */
 
-  /* GUTTER */
   div.diptych > div,
-  article div.clear.diptych > div,
-  div.profile > div.profile-copy {
+  article div.clear.diptych > div {
     padding: 1em;
   }
 
@@ -1765,7 +1759,10 @@ and ( max-width: 960px ) {
     padding: 0 1em 1em;
   }
 
-  /* LOGOS */
+  /* **** MEDIA */
+
+  /* **** MEDIA * IMAGE */
+
   div.logo {
     height: 6em;
   }
@@ -1773,50 +1770,38 @@ and ( max-width: 960px ) {
     padding: 1.5em;
   }
 
-  /* BADGES */
-  .apple img, .google img {
-    height: 1.667em;
-    margin: 0.5em 1em 0;
-  }
-  .apple img {
-    width: 4.667em;
-  }
-  .google img {
-    width: 4em;
-  }
+  /* **** MEDIA ** VIDEO */
 
   .video,
   .single .video {
     height: 432px;
   }
-
-  .break-cut {
-    display: inherit;
-  }
-
-  .desktop-menu {
-    display: none;
-  }
-  .desktop-menu-alt {
-    display: inline;
-  }
 }
 
-/* IPHONE XS Max : landscape */
+
+
+/* **********  IPHONE XS Max : landscape */
+
 /* @media all
 and ( device-width : 896px )
 and ( device-height : 414px )
 and ( orientation : landscape )
 and ( -webkit-min-device-pixel-ratio : 3 ) {} */
 
-/* IPHONE XR : landscape */
+
+
+/* **********  IPHONE XR : landscape */
+
 /* @media all
 and ( device-width : 896px )
 and ( device-height : 414px )
 and ( orientation : landscape )
 and ( -webkit-min-device-pixel-ratio : 2 ) {} */
 
-/* IPAD Pro 10.5 : portrait */
+
+
+/* **********  IPAD Pro 10.5 : portrait */
+
 @media all
 and ( device-width : 834px )
 and ( device-height : 1112px )
@@ -1828,7 +1813,10 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-/* IPHONE X : landscape */
+
+
+/* **********  IPHONE X : landscape */
+
 @media all
 and ( device-width : 812px )
 and ( device-height : 375px )
@@ -1840,7 +1828,10 @@ and ( -webkit-min-device-pixel-ratio : 3 ) {
   }
 }
 
-/* 0.3 Medium to Low */
+
+
+/* **********  0.3 Medium to Low */
+
 @media only screen
 and ( max-width: 768px ) {
 
@@ -1864,6 +1855,11 @@ and ( max-width: 768px ) {
     /* font-size: calc( 8em / 9 ); */
     font-size: calc( 1em - ( 3 * ( ( 100vw - 375px ) / 393 ) ) );
   }
+
+  ul.periwinkle-list li a {
+    font-size: 1em;
+  }
+
   input, button, select {
     height: calc( calc( 12em / 7 ) + ( calc( 54 / 7 ) * ( ( 100vw - 320px ) / 448 ) ) );
   }
@@ -1878,14 +1874,20 @@ and ( max-width: 768px ) {
   }
 }
 
-/* IPAD 3, 4 … Mini 2, 3, 4 : portrait */
+
+
+/* **********  IPAD 3, 4 … Mini 2, 3, 4 : portrait */
+
 /* @media all
 and ( device-width : 768px )
 and ( device-height : 1024px )
 and ( orientation : portrait )
 and ( -webkit-min-device-pixel-ratio : 2 ) {} */
 
-/* IPAD 1, 2, Mini : portrait */
+
+
+/* **********  IPAD 1, 2, Mini : portrait */
+
 @media all
 and ( device-width : 768px )
 and ( device-height : 1024px )
@@ -1897,7 +1899,10 @@ and ( -webkit-min-device-pixel-ratio : 1 ) {
   }
 }
 
-/* IPHONE 6+, 7+, 8+ : landscape */
+
+
+/* **********  IPHONE 6+, 7+, 8+ : landscape */
+
 @media all
 /* and ( device-width : 736px ) */
 and ( device-height : 414px )
@@ -1909,7 +1914,10 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-/* IPHONE 6, 7, 8 : landscape */
+
+
+/* **********  IPHONE 6, 7, 8 : landscape */
+
 @media all
 and ( device-width : 667px )
 and ( device-height : 375px )
@@ -1921,7 +1929,26 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-/* 568 */
+
+
+/* **********  667 */
+
+@media only screen
+and ( max-width: 667px ) {
+
+  .single nav ul,
+  .single footer > div:not(.spread),
+  .single article > div:not(.diptych, .triptych, .polyptych, .desktop-feature, .spread),
+  section.single,
+  footer.single {
+    width: 100%;
+  }
+}
+
+
+
+/* **********  568 */
+
 @media only screen
 and ( max-width: 568px ) {
 
@@ -1933,7 +1960,10 @@ and ( max-width: 568px ) {
   }
 }
 
-/* IPHONE 5, 5S : landscape */
+
+
+/* **********  IPHONE 5, 5S : landscape */
+
 @media all
 and ( device-width : 568px )
 and ( device-width : 320px )
@@ -1945,14 +1975,12 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-/* 480 */
+
+
+/* **********  480 */
+
 @media only screen
 and ( max-width: 480px ) {
-
-  li.type-product,
-  .quarter {
-    width: 100%;
-  }
 
   .polyptych {
     grid-template-columns: 1fr;
@@ -1963,7 +1991,10 @@ and ( max-width: 480px ) {
   }
 }
 
-/* IPHONE 4S : landscape */
+
+
+/* **********  IPHONE 4S : landscape */
+
 @media all
 and ( device-width : 480px )
 and ( device-height : 320px )
@@ -1986,21 +2017,30 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-/* IPHONE XS Max : portrait */
+
+
+/* **********  IPHONE XS Max : portrait */
+
 /* @media all
 and ( device-width : 414px )
 and ( device-height : 896px )
 and ( orientation : portrait )
 and ( -webkit-min-device-pixel-ratio : 3 ) {} */
 
-/* IPHONE XR : portrait */
+
+
+/* **********  IPHONE XR : portrait */
+
 /* @media all
 and ( device-width : 414px )
 and ( device-height : 896px )
 and ( orientation : portrait )
 and ( -webkit-min-device-pixel-ratio : 2 ) {} */
 
-/* IPHONE 6+, 7+, 8+ : portrait */
+
+
+/* **********  IPHONE 6+, 7+, 8+ : portrait */
+
 @media all
 and ( device-width : 414px )
 /* and ( device-height : 736px ) */
@@ -2023,7 +2063,10 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-/* BREAK */
+
+
+/* **********  BREAK */
+
 @media only screen
 and ( max-width: 375px ) {
 
@@ -2048,14 +2091,8 @@ and ( max-width: 375px ) {
   }
 
   nav ul,
-  nav ul.spread {
-    width: 100%;
-  }
-  section,
-  section.bio,
-  section.single,
-  header,
-  footer {
+  header, footer,
+  section {
     max-width: 375px;
   }
 
@@ -2064,14 +2101,20 @@ and ( max-width: 375px ) {
   }
 }
 
-/* IPHONE X : portrait */
+
+
+/* **********  IPHONE X : portrait */
+
 /* @media all
 and ( device-width : 375px )
 and ( device-height : 667px )
 and ( orientation : portrait )
 and ( -webkit-min-device-pixel-ratio : 3 ) {} */
 
-/* IPHONE 6, 7, 8 : portrait */
+
+
+/* **********  IPHONE 6, 7, 8 : portrait */
+
 @media all
 and ( device-width : 375px )
 and ( device-height : 667px )
@@ -2094,7 +2137,10 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-/* MIN */
+
+
+/* **********  MIN */
+
 @media only screen
 and ( max-width: 320px ) {
 
@@ -2112,12 +2158,8 @@ and ( max-width: 320px ) {
   }
 
   nav ul,
-  nav ul.spread,
-  section,
-  section.bio,
-  section.single,
-  header,
-  footer {
+  header, footer,
+  section {
     max-width: 320px;
   }
 
@@ -2131,11 +2173,13 @@ and ( max-width: 320px ) {
   }
 }
 
-/* IPHONE 5, 5S : portrait */
 
-/* IPHONE 4S : portrait */
 
-/* 240 */
+/* **********  IPHONE 5, 5S : portrait */
+
+/* **********  IPHONE 4S : portrait */
+
+/* **********  240 */
 @media only screen
 and ( max-width: 240px ) {
 
@@ -2145,12 +2189,8 @@ and ( max-width: 240px ) {
 
   body,
   nav ul,
-  nav ul.spread,
-  section,
-  section.bio,
-  section.single,
-  header,
-  footer {
+  header, footer,
+  section {
     max-width: 240px;
     min-width: 240px;
     width: 240px;

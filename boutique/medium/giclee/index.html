@@ -27,7 +27,7 @@
       <li class="crumb dark logo"><a href="../../../" title="Animat Habitat"><img alt="OAFA Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../../../inc/svg/oafa.mark.1.1.1200.light.svg"/></a></li>
       <li class="crumb dark"><a href="../../" title="Animat Habitat boutique.">Boutique</a></li>
       <li class="crumb active dark"><a><em>Gicl&eacute;e</em></a></li>
-      <li class="right thin"><a onclick="fr();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
     </ul>
   </nav>
 
@@ -37,14 +37,21 @@
       <h1 class="title"><a href="../../" title="Animat Habitat boutique."><font class="clear">Animat<font class="letterspace-sp"> </font><font class="thin">Habitat</font></font></a></h1>
       <h3>Gicl&eacute;e Prints<font class="fr">&nbsp;&#92;&nbsp;Gicl&eacute;es</font></h3>
 
-      <div class="term-description">
-        <p>Limited edition archival pigment prints are numbered and are signed by Dane Aleksander. Open edition archival pigment prints are not numbered and are not signed. Fifty (50) per cent of the purchase price of each gicl&eacute;e edition is directed to wildlife conservation projects partnered with scenes at Animat Habitat.<font class="fr">&nbsp;&#92;&nbsp;Tirages pigmentaires d'archives en &eacute;dition limit&eacute;e sont num&eacute;rot&eacute;s et sont sign&eacute;s par Dane Aleksander. Tirages pigmentaires d'archives en &eacute;dition ouverte ne sont pas num&eacute;rot&eacute;s et ne sont pas sign&eacute;s. Cinquante pour cent du prix d'achat de chaque &eacute;dition gicl&eacute;e est affect&eacute; &agrave; des projets de conservation de la nature en partenariat avec des sc&egrave;nes chez Animat Habitat.</font></p>
-      </div>
     </div>
 
   </header>
 
   <section class="single">
+    <article>
+
+      <div class="term-description">
+        <p>Limited edition archival pigment prints are numbered and are signed by Dane Aleksander. Open edition archival pigment prints are not numbered and are not signed. Fifty (50) per cent of the purchase price of each gicl&eacute;e edition is directed to wildlife conservation projects partnered with scenes at Animat Habitat.<font class="fr">&nbsp;&#92;&nbsp;Tirages pigmentaires d'archives en &eacute;dition limit&eacute;e sont num&eacute;rot&eacute;s et sont sign&eacute;s par Dane Aleksander. Tirages pigmentaires d'archives en &eacute;dition ouverte ne sont pas num&eacute;rot&eacute;s et ne sont pas sign&eacute;s. Cinquante pour cent du prix d'achat de chaque &eacute;dition gicl&eacute;e est affect&eacute; &agrave; des projets de conservation de la nature en partenariat avec des sc&egrave;nes chez Animat Habitat.</font></p>
+      </div>
+
+    </article><br class="clear">
+  </section>
+
+  <section>
     <article>
 
       <ul class="products columns-4">
@@ -127,22 +134,18 @@
     </article><br class="clear">
   </section>
 
-  <footer>
-    <div class="clear diptych">
+  <footer class="single">
+    <div class="quote">
+      <p class="small"><sup>1</sup> <em>Last of the Big Tuskers</em> (2018)&mdash;art of the film collection is a limited edition run of one hundred (100) numbered gicl&eacute;e prints.<font class="fr">&nbsp;&#92;&nbsp;La collection d'art du film est une s&eacute;rie en &eacute;dition limit&eacute;e d'une centaine de tirages gicl&eacute;es.</font></p>
 
-      <div class="quote">
+      <!-- Fine art print, printed on acid-free archival paper with unprinted / white borders around the edge for safe handling and to allow for framing options after delivery to you. -->
 
-        <p class="small"><sup>1</sup> <em>Last of the Big Tuskers</em> (2018)&mdash;art of the film collection is a limited edition run of one hundred (100) numbered gicl&eacute;e prints.<font class="fr">&nbsp;&#92;&nbsp;La collection d'art du film est une s&eacute;rie en &eacute;dition limit&eacute;e d'une centaine de tirages gicl&eacute;es.</font></p>
+      <!-- If you are interested in a custom print, please contact account office at Animat Habitat, for a quote based on the specific requirements. -->
 
-        <!-- Fine art print, printed on acid-free archival paper with unprinted / white borders around the edge for safe handling and to allow for framing options after delivery to you. -->
-
-        <!-- If you are interested in a custom print, please contact account office at Animat Habitat, for a quote based on the specific requirements. -->
-
-        <p class="linebreak small">Copyright &copy; 2018-2023 Animat Habitat. <a href="../../../c/" target="_blank" title="Animat Habitat &frasl; Terms of Access">Terms of Access</a>.<font class="fr">&nbsp;&#92;&nbsp;Conditions d'access.</font></p>
-
-      </div>
+      <p class="linebreak small">Copyright &copy; 2018-2023 Animat Habitat. <a href="../../../c/" target="_blank" title="Animat Habitat &frasl; Terms of Access">Terms of Access</a>.<font class="fr">&nbsp;&#92;&nbsp;Conditions d'access.</font></p>
 
     </div>
+
   </footer>
 
 </body>
@@ -150,20 +153,20 @@
 <script>
 
   var r = document.querySelector(':root'),
-      toggle_fr = 0;
+      toggle_lang = 0;
 
   r.style.setProperty('--fr', "none");
 
-  function fr() {
-    if ( toggle_fr == 0 ) {
+  function toggle_language() {
+    if ( toggle_lang == 0 ) {
       r.style.setProperty('--fr', "inline");
       r.style.setProperty('--fr-en', "none");
-      toggle_fr = 1;
+      toggle_lang = 1;
     }
     else {
       r.style.setProperty('--fr', "none");
       r.style.setProperty('--fr-en', "inline");
-      toggle_fr = 0;
+      toggle_lang = 0;
     }
   };
 

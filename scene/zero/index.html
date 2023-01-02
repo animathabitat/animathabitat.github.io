@@ -33,7 +33,7 @@
     <ul class="page">
       <li class="crumb dark logo"><a href="../../" title="Animat Habitat"><img alt="OAFA Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/oafa.mark.1.1.1200.light.svg"/></a></li>
       <li class="crumb scene dark"><a><em>White Rhino</em></a></li>
-      <li class="right thin"><a onclick="fr();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
     </ul>
   </nav>
 
@@ -41,13 +41,13 @@
     <div class="quote text-center">
       <h1 class="title">Animat<font class="letterspace-sp"> </font><font class="thin">Habitat</font></h1>
       <h3>Scene zero:<font class="fr">&nbsp;&#92;&nbsp;Sc&egrave;ne z&egrave;ro&nbsp;:</font></h3>
-      <h1 class="clear title" id="scene-header"><a class="lettermark" onclick="scene();">White<font class="letterspace-sp"> </font><font class="thin">Rhino</font></a></h1>
+      <h1 class="clear title" id="scene-header"><a class="lettermark" onclick="toggle_scene();">White<font class="letterspace-sp"> </font><font class="thin">Rhino</font></a></h1>
       <h3><font class="clear">Oil painting of a red horizon.</font><font class="fr">&nbsp;&#92;&nbsp;Peinture &agrave; l’huile d’un horizon en flammes.</font></h3>
     </div>
   </header>
 
   <div class="clear preview" id="preview">
-    <a onclick="preview();">
+    <a onclick="toggle_preview();">
       <div class="quote">
         <img alt="Animat Habitat scene zero. &ndash;&nbsp;sc&egrave;ne z&eacute;ro. White Rhino oil painting. &ndash;&nbsp;peinture &agrave; l'huile. &copy; Dane Aleksander, 2007" class="trim" src="../../inc/img/boutique/00/oafa.0.480-160.jpg" />
       </div>
@@ -57,7 +57,7 @@
 
   <div class="clear color">
 
-    <section id="scene" class="product">
+    <section class="product single" id="scene">
 
       <div class="clear type-product">
 
@@ -93,9 +93,9 @@
 
           <div>
             <div class="preview-thumbnail" id="preview-thumbnail">
-              <a onclick="preview();">
+              <a onclick="toggle_preview();">
                 <img alt="Animat Habitat scene zero. &ndash;&nbsp;sc&egrave;ne z&eacute;ro. White Rhino oil painting. &ndash;&nbsp;peinture &agrave; l'huile. &copy; Dane Aleksander, 2007" class="trim" src="../../inc/img/boutique/00/oafa.0.480-160.jpg" /></a>
-                <p class="text-right"><em>White Rhino</em> &ndash; Ngorongoro, Tanzania<font class="fr">&nbsp;&#92;&nbsp;Tanzanie</font></p>
+                <p class="text-right"><em>White Rhino</em> &ndash; Ngorongoro, Tanzania<font class="fr">&nbsp;&#92;&nbsp;Tanzanie</font> (oil paint, 2007) &copy; Dane Aleksander</p>
             </div>
           </div>
 
@@ -122,7 +122,7 @@
         <h3><a href="northern-white-rhinoceros/">Northern White Rhinoceros<font class="desktop"> &#47; <em>Nature</em></font></a></h3>
         <pre class="thin"></pre>
 
-        <h3><a href="../../url/git/danealeksander-art-ib/">Silver Studio Art Show<font class="desktop"> &#47; <em>Art</em></font></a></h3>
+        <h3><a href="../../url/git/danealeksander-art-international-baccalaureate/">Silver Studio Art Show<font class="desktop"> &#47; <em>Art</em></font></a></h3>
         <pre class="thin"></pre>
 
       </div>
@@ -140,14 +140,11 @@
   </div>
 
   <footer>
-    <div class="clear diptych">
-
-      <div class="quote">
-        <p class="small">Copyright &copy; 2015-2022 Animat Habitat. <a href="../../c/" target="_blank" title="Terms at Animat Habitat">Terms of Access</a>.<font class="fr">&nbsp;&#92;&nbsp;Conditions d'acc&egrave;s.</font></p>
-
-      </div>
+    <div class="quote">
+      <p class="small"> .<font class="fr">&nbsp;&#92;&nbsp;.</font></p>
 
     </div>
+
   </footer>
 
 </body>
@@ -155,18 +152,18 @@
 <script>
 
   var r = document.querySelector(':root'),
-      toggle_fr = 0,
+      toggle_lang = 0,
       num = document.getElementById( "scene" ),
       img = document.getElementById( "preview" ),
-      tmb = document.getElementById( "preview-thumbnail" );
+      tmb = document.getElementById( "preview-thumbnail" ),
+      num = document.getElementById( "scene" );
 
   r.style.setProperty('--fr', "none");
 
   num.style.display = "none";
   img.style.display = "none";
-  // tmb.style.display = "block";
 
-  function scene() {
+  function toggle_scene() {
     if ( num.style.display == "none" ) {
       num.style.display = "block";
       document.querySelector( "#scene-header" ).scrollIntoView({ behavior: 'smooth' });
@@ -177,7 +174,7 @@
     }
   };
 
-  function preview() {
+  function toggle_preview() {
     if ( img.style.display == "none" ) {
       img.style.display = "block";
       tmb.style.display = "none";
@@ -188,16 +185,16 @@
     }
   };
 
-  function fr() {
-    if ( toggle_fr == 0 ) {
+  function toggle_language() {
+    if ( toggle_lang == 0 ) {
       r.style.setProperty('--fr', "inline");
       r.style.setProperty('--fr-en', "none");
-      toggle_fr = 1;
+      toggle_lang = 1;
     }
     else {
       r.style.setProperty('--fr', "none");
       r.style.setProperty('--fr-en', "inline");
-      toggle_fr = 0;
+      toggle_lang = 0;
     }
   };
 

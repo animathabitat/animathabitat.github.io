@@ -27,7 +27,7 @@
       <li class="crumb dark logo"><a href="../../../" title="Animat Habitat"><img alt="OAFA Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../../../inc/svg/oafa.mark.1.1.1200.light.svg"/></a></li>
       <li class="crumb dark"><a href="../../" title="Animat Habitat boutique.">Boutique</a></li>
       <li class="crumb active dark"><a><em>Traditional</em></a></li>
-      <li class="right thin"><a onclick="fr();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
     </ul>
   </nav>
 
@@ -37,21 +37,25 @@
       <h1 class="title"><a href="../../" title="Animat Habitat boutique."><font class="clear">Animat<font class="letterspace-sp"> </font><font class="thin">Habitat</font></font></a></h1>
       <h3>Traditional Artworks<font class="fr">&nbsp;&#92;&nbsp;Oeuvres traditionels</font></h3>
 
-      <div class="term-description">
-        <p>Original art by Dane Aleksander. Sixty (60) per cent of the purchase price is directed to wildlife conservation projects partnered with scenes at Animat Habitat.<font class="fr">&nbsp;&#92;&nbsp;Art originale par Dane Aleksander. Soixante pour cent du prix d'achat est affect&eacute; &agrave; des projets de conservation de la nature en partenariat avec des sc&egrave;nes chez Animat Habitat.</font></p>
-      </div>
     </div>
 
   </header>
 
   <section class="single">
     <article>
+  
+      <div class="term-description">
+        <p>Original art by Dane Aleksander. Sixty (60) per cent of the purchase price is directed to wildlife conservation projects partnered with scenes at Animat Habitat.<font class="fr">&nbsp;&#92;&nbsp;Art originale par Dane Aleksander. Soixante pour cent du prix d'achat est affect&eacute; &agrave; des projets de conservation de la nature en partenariat avec des sc&egrave;nes chez Animat Habitat.</font></p>
+      </div>
+
+    </article><br class="clear">
+  </section>
 
       <ul class="products columns-4">
         <li class="product type-product has-post-thumbnail">
           <a href="winter-wind-2008/">
             <div class="clear">
-              <img alt="Winter Wind &copy; Dane Aleksander, 2008 [thumbnail]" src="https://lifeasplay.ca/dane/inc/uploads/2008.winter-wind.300-136.jpg" />
+              <img alt="Winter Wind (graphic pencil, 2008) [thumbnail] &copy; Dane Aleksander" src="../../../inc/img/boutique/winter-wind/2008.winter-wind.300-136.jpg" />
             </div></a>
           <a href="winter-wind-2008/"><h5 class="woo-title">Winter Wind</h5></a>
           <h5 class="woo-description">Rocky Mountain National Park, America</h5>
@@ -65,14 +69,11 @@
   </section>
 
   <footer>
-    <div class="clear diptych">
-
-      <div class="quote">
-        <p class="small">Copyright &copy; 2018-2023 Animat Habitat. <a href="../../../c/" target="_blank" title="Animat Habitat &frasl; Terms of Access">Terms of Access</a>.<font class="fr">&nbsp;&#92;&nbsp;Conditions d'access.</font></p>
-
-      </div>
+    <div class="quote">
+      <p class="small">Copyright &copy; 2018-2023 Animat Habitat. <a href="../../../c/" target="_blank" title="Animat Habitat &frasl; Terms of Access">Terms of Access</a>.<font class="fr">&nbsp;&#92;&nbsp;Conditions d'access.</font></p>
 
     </div>
+
   </footer>
 
 </body>
@@ -80,20 +81,20 @@
 <script>
 
   var r = document.querySelector(':root'),
-      toggle_fr = 0;
+      toggle_lang = 0;
 
   r.style.setProperty('--fr', "none");
 
-  function fr() {
-    if ( toggle_fr == 0 ) {
+  function toggle_language() {
+    if ( toggle_lang == 0 ) {
       r.style.setProperty('--fr', "inline");
       r.style.setProperty('--fr-en', "none");
-      toggle_fr = 1;
+      toggle_lang = 1;
     }
     else {
       r.style.setProperty('--fr', "none");
       r.style.setProperty('--fr-en', "inline");
-      toggle_fr = 0;
+      toggle_lang = 0;
     }
   };
 

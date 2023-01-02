@@ -25,20 +25,19 @@
 
 </head>
 
-<body class="fadein" id="dark">
+<body class="fadein single" id="dark">
 
   <nav>
     <ul class="page">
       <li class="crumb dark logo"><a href="../../" title="Animat Habitat"><img alt="OAFA Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/oafa.mark.1.1.1200.light.svg"/></a></li>
       <li class="crumb dark"><a href="../" title="Animat Habitat societ&#257;s.">Societ&#257;s</a></li>
-      <li class="right thin"><a onclick="fr();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
       <li class="crumb scene dark"><a><em>Registration<font class="desktop"> &ndash; Enregistrement</font></em></a></li>
     </ul>
   </nav>
 
-  <section class="single">
-
-		<div class="clear diptych">
+  <section>
+    <article>
 
       <div class="clear" id="register" spellcheck="false">
 
@@ -72,11 +71,9 @@
           </ul> -->
 
         </div>
-
       </div>
 
-		</div>
-
+    </article><br class="clear">
 	</section>
 
 </body>
@@ -84,7 +81,7 @@
 <script>
 
   var r = document.querySelector(':root'),
-      toggle_fr = 0;
+      toggle_lang = 0;
 
   r.style.setProperty('--fr', "none");
 
@@ -99,16 +96,16 @@
     document.body.appendChild(script);
   };
 
-  function fr() {
-    if ( toggle_fr == 0 ) {
+  function toggle_language() {
+    if ( toggle_lang == 0 ) {
       r.style.setProperty('--fr', "inline");
       r.style.setProperty('--fr-en', "none");
-      toggle_fr = 1;
+      toggle_lang = 1;
     }
     else {
       r.style.setProperty('--fr', "none");
       r.style.setProperty('--fr-en', "inline");
-      toggle_fr = 0;
+      toggle_lang = 0;
     }
   };
 

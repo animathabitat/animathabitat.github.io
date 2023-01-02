@@ -44,7 +44,7 @@
       <li class="crumb btn scene-one"><a href="scene/one/" title="Animat Habitat scene one. &ndash;&nbsp;sc&egrave;ne un.">I</a></li>
       <!-- <li class="crumb btn scene-two"><a href="scene/two/" title="Animat Habitat scene two. &ndash;&nbsp;sc&egrave;ne deux.">II</a></li> -->
       <!-- <li class="crumb btn scene-three"><a href="scene/three/" title="Animat Habitat scene three. &ndash;&nbsp;sc&egrave;ne trois.">III</a></li> -->
-      <li class="right thin"><a onclick="fr();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
       <li class="right thin desktop-menu"><a href="dono/" title="Animat Habitat dono.">Donate<font class="fr">&nbsp;&#92;&nbsp;don</font></a></li>
       <li class="right btn dark"><a href="boutique/" title="Animat Habitat boutique.">Boutique</a></li>
       <!-- <font class="desktop-menu">Boutique</font><font class="desktop-menu-alt">B.</font> -->
@@ -60,14 +60,14 @@
 
   </header>
 
-  <section class="single">
+  <section>
     <article>
 
       <div class="clear diptych">
 
         <div>
           <a class="nav-block block-one" href="url/git/bigtuskers/" target="_blank" title="Last of the Big Tuskers (2018)">
-            <img src="inc/img/last-of-the-big-tuskers/lotbt.poster.art.480-233.jpg" width="480" height="233" class="full" alt="Last of the Big Tuskers (documentary film, 2018) poster art." />
+            <img src="inc/img/last-of-the-big-tuskers/lotbt.poster.art.480-233.jpg" width="480" height="233" alt="Last of the Big Tuskers (documentary film, 2018) poster art." />
             <div>
               <h3><font class="scene-one">Last of the Big Tuskers (2018)</font></h3>
               <p>A film by James Currie&mdash;a documentary about the challenges to save the last of the big tuskers in Tembe Elephant Park, South Africa.<font class="fr">&nbsp;&#92;&nbsp;Un film de James Currie &mdash; un documentaire sur les d&eacute;fis pour conserver les derniers des &eacute;l&eacute;phants &agrave; grosse d&eacute;fense &agrave; Tembe, Afrique du Sud.</font></p>
@@ -79,7 +79,7 @@
 
         <div>
           <a class="nav-block block-one" href="scene/one/" title="Animat Habitat scene one. &ndash;&nbsp;sc&egrave;ne un.">
-            <img src="inc/img/oafa.1.cover.banner.480-160.jpg" width="480" height="160" class="full" alt="Animat Habitat scene one. &ndash;&nbsp;sc&egrave;ne un. White Elephant cover art. &ndash;&nbsp;art de couverture." />
+            <img src="inc/img/oafa.1.cover.banner.480-160.jpg" width="480" height="160" alt="Animat Habitat scene one. &ndash;&nbsp;sc&egrave;ne un. White Elephant cover art. &ndash;&nbsp;art de couverture." />
             <div>
               <h3 id="register-head"><font class="scene-one">&plus; White Elephant (2024)</font></h3>
               <p>Journey with an elephant across a sea of sand&mdash;a comic book, a companion app and an invitation to change the way we look at wildlife.<font class="fr">&nbsp;&#92;&nbsp;Voyageons avec un &eacute;l&eacute;phant &agrave; travers une mer de sable &mdash; une bande dessin&eacute;e, une app compagnon et une invitation &agrave; changer la fa&ccedil;on dont nous regardons la nature.</font></p>
@@ -159,13 +159,15 @@
       </div>
 
       <div class="quote ptych-left">
-        <p class="lineend">Follow what's happening @<a href="url/tw/animathabitat/" title="Twitter / Animat Habitat" target="_blank" rel="noopener">animathabitat</a>.<font class="fr">&nbsp;&#92;&nbsp;Suivez ce qui se passe chez Animat Habitat.</font></p>
+        <p class="lineend">Follow what's happening @<a href="url/tw/animathabitat/" title="Twitter / Animat Habitat" target="_blank" rel="noopener">animathabitat</a>, @<a href="https://mstdn.ca/@animathabitat/" title="Mastodon / Animat Habitat" target="_blank" rel="me">animathabitat&ndash;mstdn.ca</a>.<font class="fr">&nbsp;&#92;&nbsp;Suivez ce qui se passe chez Animat Habitat.</font></p>
 
         <pre class="thin"></pre>
 
-        <p class="linebreak small">Animat Habitat official website designed and developed by <a href="url/git/danealeksander/" title="Dane Aleksander, graphic artist.">Dane Aleksander</a> with the open-source WordPress and WooCommerce information architecture, and with Google Fonts: <em>Oswald</em> [Extra-Light, Medium], then archived with GitHub pages.<font class="fr">&nbsp;&#92;&nbsp;Animat Habitat site officiel con&ccedil;u et d&eacute;velopp&eacute; par Dane Aleksander avec l'architecture d'information WordPress et WooCommerce, et avec Google Fonts, puis archiv&eacute; avec les pages GitHub.</font></p>
+        <p class="linebreak small">Animat Habitat official website designed and developed by <a href="url/git/danealeksander/" title="Dane Aleksander, graphic artist.">Dane Aleksander</a> with the open-source WordPress and Automattic WooCommerce information architecture, with Google Fonts: <em>Oswald</em> [Extra-Light, Medium] licensed under the SIL Open Font License 1.1, and then archived with GitHub pages.<font class="fr">&nbsp;&#92;&nbsp;Animat Habitat site officiel con&ccedil;u et d&eacute;velopp&eacute; par Dane Aleksander avec l'architecture d'information WordPress et WooCommerce, avec Google Fonts, et puis archiv&eacute; avec les pages GitHub.</font></p>
 
-        <p class="linebreak small">Animat Habitat <a href="support/" title="Animat Habitat support.">Site Index</a>.<font class="fr">&nbsp;&#92;&nbsp;Index du site officiel.</font></p>
+        <!-- The protected areas of this website not served on GitHub are hosted in Canada powered by one-hundred percent renewable energy. <a href="//whc.ca/green-hosting/" title="WHC / Green Web Hosting in Canada" target="_blank" rel="noopener">Green web hosting in Canada</a>. -->
+
+        <p class="linebreak small">Animat Habitat <a href="support/" title="Animat Habitat support.">Sitemap</a>.<font class="fr">&nbsp;&#92;&nbsp;Plan du site Web.</font></p>
 
         <p class="linebreak small">Incorporated in Canada as not-for-profit organization #942675-2&mdash;&ldquo;Animat Habitat&rdquo; is an unregistered trademark that is protected for the purpose of corporate identity. Documents of the organization are archived and classified in the Animat Habitat <a href="societas/" title="Animat Habitat societ&#257;s.">Member Handbook</a>.<font class="fr">&nbsp;&#92;&nbsp;Incorpor&eacute;e au Canada comme organisation &agrave; but non lucratif &mdash; le nom de l'organisation est une marque non enregistr&eacute;e qui est prot&eacute;g&eacute;e aux fins de l'identit&eacute; corporatif. Les documents d'organisation sont archiv&eacute;s et class&eacute;s dans le manuel des membres.</font></p>
 
@@ -183,7 +185,7 @@
 <script>
 
   var r = document.querySelector(':root'),
-      toggle_fr = 0,
+      toggle_lang = 0,
       register_form = document.getElementById( "register" ),
       register_toggle = document.getElementById( "register-toggle" );
 
@@ -216,16 +218,16 @@
     document.body.appendChild(script);
   };
 
-  function fr() {
-    if ( toggle_fr == 0 ) {
+  function toggle_language() {
+    if ( toggle_lang == 0 ) {
       r.style.setProperty('--fr', "inline");
       r.style.setProperty('--fr-en', "none");
-      toggle_fr = 1;
+      toggle_lang = 1;
     }
     else {
       r.style.setProperty('--fr', "none");
       r.style.setProperty('--fr-en', "inline");
-      toggle_fr = 0;
+      toggle_lang = 0;
     }
   };
 

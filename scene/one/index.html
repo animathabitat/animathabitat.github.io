@@ -33,8 +33,12 @@
     <ul class="page">
       <li class="crumb scene-one logo"><a href="../../" title="Animat Habitat"><img alt="OAFA Mark (One) &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/oafa.mark.1.1.1200.one.svg"/></a></li>
       <li class="crumb scene scene-one"><a><em>White Elephant</em></a></li>
-      <li class="right thin"><a onclick="fr();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
-      <li class="right thin" id="currency"><a class="title" onclick="currency();" title="Animat Habitat ."><font class="paypal-ca"><b class="overscore">CA</b>&nbsp;&#92;&nbsp;US</font><font class="paypal-us">CA&nbsp;&#92;&nbsp;<b class="overscore">US</b></font>&nbsp;<font class="currency-symbol">&#36;</font></a></li>
+      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+      <li class="right thin" id="currency"><a class="title" onclick="toggle_currency();" title="Animat Habitat in Canada, United States.">
+        <font class="paypal-ca"><b class="overscore">CA</b>&nbsp;&#92;&nbsp;US</font>
+        <font class="paypal-us">CA&nbsp;&#92;&nbsp;<b class="overscore">US</b></font>
+        &nbsp;<font class="currency-symbol">&#36;</font></a>
+      </li>
     </ul>
   </nav>
 
@@ -42,13 +46,13 @@
     <div class="quote text-center">
       <h1 class="title">Animat<font class="letterspace-sp"> </font><font class="thin">Habitat</font></h1>
       <h3 class="scene-one">Scene one:<font class="fr">&nbsp;&#92;&nbsp;Sc&egrave;ne un&nbsp;:</font></h3>
-      <h1 class="clear title" id="scene-header"><a class="lettermark" onclick="scene();">White<font class="letterspace-sp"> </font><font class="thin">Elephant</font></a></h1>
+      <h1 class="clear title" id="scene-header"><a class="lettermark" onclick="toggle_scene();">White<font class="letterspace-sp"> </font><font class="thin">Elephant</font></a></h1>
       <h3><font class="clear">Comic book and companion app to change the way we look at wildlife.</font><font class="fr">&nbsp;&#92;&nbsp;Une bande dessin&eacute;e et l’app qui l’accompagne pour changer la fa&ccedil;on dont nous regardons la nature.</font></h3>
     </div>
   </header>
 
   <div class="clear preview" id="preview">
-    <a onclick="preview();">
+    <a onclick="toggle_preview();">
       <div class="quote">
         <img alt="Animat Habitat scene one. &ndash;&nbsp;sc&egrave;ne un. White Elephant cover art. &ndash;art de couverture." class="trim" src="../../inc/img/boutique/01/oafa.1.cover.420-640.jpg" />
       </div>
@@ -91,7 +95,7 @@
             <div>
               <h5>Full Color Paperback<font class="fr">&nbsp;&#92;&nbsp;Broch&eacute; en couleur</font></h5>
               <p>Language:<font class="fr">&nbsp;&#92;&nbsp;Langue&nbsp;:</font> En, Fr</p>
-              <p>Limited edition.<font class="fr">&nbsp;&#92;&nbsp;&Eacute;dition limit&eacute;e&nbsp;.</font><!-- ? copies--></p>
+              <p>Limited edition.<font class="fr">&nbsp;&#92;&nbsp;&Eacute;dition limit&eacute;e.</font><!-- ? copies--></p>
               <p>Price:<font class="fr">&nbsp;&#92;&nbsp;Prix&nbsp;:</font> <font class="paypal-ca">CA<font class="currency-symbol">&#36;</font><font class="price">50</font></font><font class="paypal-us">US<font class="currency-symbol">&#36;</font><font class="price-us">87</font></font></p>
               <p>Product Code:<font class="fr">&nbsp;&#92;&nbsp;Code produit&nbsp;:</font> <font class="sku">0101 1511</font></p>
               <p>Publication Date:<font class="fr">&nbsp;&#92;&nbsp;Date de parution&nbsp;:</font> 12.2024</p>
@@ -106,7 +110,7 @@
 
           <div>
             <div class="preview-thumbnail" id="preview-thumbnail">
-              <a onclick="preview();">
+              <a onclick="toggle_preview();">
                 <img alt="Animat Habitat scene one. &ndash;&nbsp;sc&egrave;ne un. White Elephant cover art. &ndash;art de couverture." class="trim" src="../../inc/img/boutique/01/oafa.1.cover.420-640.jpg" /></a>
                 <p class="text-right"><em>White Elephant</em> &ndash; Kavango, Angola &middot; Botswana &middot; Namibia<font class="fr">&nbsp;&#92;&nbsp;Namibie</font></p>
             </div>
@@ -128,8 +132,8 @@
               <input type="hidden" name="hosted_button_id" value="DULA9DUNNAFKQ">
 
               <input type="hidden" name="currency_code" value="CAD">
-              <input class="format" name="on0" type="hidden" value="Format">
-              <select class="format" name="os0">
+              <input name="on0" type="hidden" value="Format">
+              <select name="os0">
                 <option value="Portable Document Format (.pdf)">.pdf &nbsp;Portable Document Format</option>
                 <option value="Comic Book Archive (.cbz)">.cbz &nbsp;Comic Book Archive</option>
                 <option value="Electronic Publication (.epub)">.epub &nbsp;Electronic Publication</option>
@@ -146,8 +150,8 @@
               <input type="hidden" name="hosted_button_id" value="Z2T2FB8FCWB74">
 
               <input type="hidden" name="currency_code" value="USD">
-              <input class="format" name="on0" type="hidden" value="Format">
-              <select class="format" name="os0">
+              <input name="on0" type="hidden" value="Format">
+              <select name="os0">
                 <option value="Portable Document Format (.pdf)">.pdf &nbsp;Portable Document Format</option>
                 <option value="Comic Book Archive (.cbz)">.cbz &nbsp;Comic Book Archive</option>
                 <option value="Electronic Publication (.epub)">.epub &nbsp;Electronic Publication</option>
@@ -218,13 +222,16 @@
     <section class="single">
       <div class="quote">
         <h2>Project Broadcast<font class="fr">&nbsp;&#92;&nbsp;Mises &agrave; jour du projet</font></h2>
+
       </div>
+
     </section>
+
   </div>
 
   <section class="single">
     <article>
-      <div class="quote">
+      <div class="project-broadcast quote">
 
         <h3><a href="elephant-conservation-angola/"><font class="scene-one">Ghost Elephants in Angola</font><font class="desktop"> &#47; <em>Nature</em></font></a></h3>
         <pre class="thin"></pre>
@@ -329,55 +336,48 @@
     </section>
   </div>
 
-  <footer>
-    <div class="clear diptych ptych-flipped">
-      <div class="quote ptych-right">
-        <p class="small">In Memoriam</p>
+  <footer class="single">
+    <div class="quote">
+      <p class="small">In Memoriam</p>
 
-        <p class="linebreak small"><font class="title">Himba</font></p>
-        <p class="small"><font class="small">BBC <em>Natural World: Elephant Nomads Of The Namib Desert</em> (2008)</font></p>
+      <p class="linebreak small"><font class="title">Himba</font></p>
+      <p class="small"><font class="small">BBC <em>Natural World: Elephant Nomads Of The Namib Desert</em> (2008)</font></p>
 
-        <p class="linebreak small"><font class="title">Igor &middot;&nbsp;Qumquat</font></p>
-        <p class="small"><font class="small">Nick Brandt <em>On This Earth, A Shadow Falls</em> (book series, 2005, 2009)</font></p>
-        <!-- Igor (2009) was killed by poachers for his ivory in Amboseli National Park, Kenya. -->
-        <!-- Qumquat (1969 - 2012) slaughtered by poachers along with her two young daughters close to the border of Amboseli National Park, Kenya. -->
+      <p class="linebreak small"><font class="title">Igor &middot;&nbsp;Qumquat</font></p>
+      <p class="small"><font class="small">Nick Brandt <em>On This Earth, A Shadow Falls</em> (book series, 2005, 2009)</font></p>
+      <!-- Igor (2009) was killed by poachers for his ivory in Amboseli National Park, Kenya. -->
+      <!-- Qumquat (1969 - 2012) slaughtered by poachers along with her two young daughters close to the border of Amboseli National Park, Kenya. -->
 
-        <p class="linebreak small"><font class="title">Satao</font></p>
-        <p class="small"><font class="small">Tsavo Trust &ndash;&nbsp;Tsavo (c.1968-2014)</font></p>
-        <!-- Satao (c1964 - 2016) was killed by poachers for his ivory just outside Tsavo National Park, Kenya. -->
-        <!-- Satao II (2017) was believed to be shot with a poison arrow by poachers for his ivory in Tsavo National Park, Kenya. -->
-        <!-- Wide Satao -->
+      <p class="linebreak small"><font class="title">Satao</font></p>
+      <p class="small"><font class="small">Tsavo Trust &ndash;&nbsp;Tsavo (c.1968-2014)</font></p>
+      <!-- Satao (c1964 - 2016) was killed by poachers for his ivory just outside Tsavo National Park, Kenya. -->
+      <!-- Satao II (2017) was believed to be shot with a poison arrow by poachers for his ivory in Tsavo National Park, Kenya. -->
+      <!-- Wide Satao -->
 
-        <!-- Richard Ladkani and Kief Davidson <em>The Ivory Game</em> (Netflix original, 2015) -->
+      <!-- Richard Ladkani and Kief Davidson <em>The Ivory Game</em> (Netflix original, 2015) -->
 
-        <p class="linebreak small"><font class="title">Kamboyo &middot;&nbsp;Masthuele &middot;&nbsp;Isilo &middot;&nbsp;Tim</font></p>
-        <p class="small"><font class="small">James Currie <em>Last of the Big Tuskers</em> (film, 2018)</font></p>
-        <!-- Kamboyo (2014) died of old age in Tsavo Conservation Area, Kenya. https://tsavotrust.org/iconic-tusker-kamboyo-dies-naturally-of-old-age/ -->
-        <!-- Masthuele (2014) died … in Kruger National Park, South Africa. -->
-        <!-- Isilo (2017) died of old age in Tembe Elephant Park, South Africa. -->
-        <!-- Tim (2019) died of natural causes in Amboseli National Park, Kenya. -->
+      <p class="linebreak small"><font class="title">Kamboyo &middot;&nbsp;Masthuele &middot;&nbsp;Isilo &middot;&nbsp;Tim</font></p>
+      <p class="small"><font class="small">James Currie <em>Last of the Big Tuskers</em> (film, 2018)</font></p>
+      <!-- Kamboyo (2014) died of old age in Tsavo Conservation Area, Kenya. https://tsavotrust.org/iconic-tusker-kamboyo-dies-naturally-of-old-age/ -->
+      <!-- Masthuele (2014) died … in Kruger National Park, South Africa. -->
+      <!-- Isilo (2017) died of old age in Tembe Elephant Park, South Africa. -->
+      <!-- Tim (2019) died of natural causes in Amboseli National Park, Kenya. -->
 
-        <p class="linebreak small"><font class="title">Mimi &middot;&nbsp;Athena</font></p>
-        <p class="small"><font class="small">Mark Deeble and Victoria Stone <em>The Elephant Queen</em> (Apple TV&plus; original, 2018)</font></p>
-        <!-- Athena (2018) was not seen again … . -->
+      <p class="linebreak small"><font class="title">Mimi &middot;&nbsp;Athena</font></p>
+      <p class="small"><font class="small">Mark Deeble and Victoria Stone <em>The Elephant Queen</em> (Apple TV&plus; original, 2018)</font></p>
+      <!-- Athena (2018) was not seen again … . -->
 
-        <p class="linebreak small"><font class="title">Gaia</font></p>
-        <p class="small"><font class="small">Elephants Without Borders &ndash;&nbsp;<em>Elephant</em> (Disney&plus; original, 2020)</font></p>
+      <p class="linebreak small"><font class="title">Gaia</font></p>
+      <p class="small"><font class="small">Elephants Without Borders &ndash;&nbsp;<em>Elephant</em> (Disney&plus; original, 2020)</font></p>
 
-        <p class="linebreak small"><font class="title">Luggard &middot;&nbsp;Maisha</font></p>
-        <p class="small"><font class="small">Sheldrick Wildlife Trust &ndash;&nbsp;Ithumba (c.2016-2021)</font></p>
+      <p class="linebreak small"><font class="title">Luggard &middot;&nbsp;Maisha</font></p>
+      <p class="small"><font class="small">Sheldrick Wildlife Trust &ndash;&nbsp;Ithumba (c.2016-2021)</font></p>
 
-        <p class="linebreak small"><font class="title">Tolstoy</font></p>
-        <p class="small"><font class="small">Big Life Foundation &ndash;&nbsp;Amboseli (c.1971-2022)</font></p>
-
-      </div>
-
-      <div class="quote ptych-left">
-        <p class="small">Copyright &copy; 2015-2023 Animat Habitat. <a href="../../c/" target="_blank" title="Terms at Animat Habitat">Terms of Access</a>.<font class="fr">&nbsp;&#92;&nbsp;Conditions d'acc&egrave;s.</font></p>
-
-      </div>
+      <p class="linebreak small"><font class="title">Tolstoy</font></p>
+      <p class="small"><font class="small">Big Life Foundation &ndash;&nbsp;Amboseli (c.1971-2022)</font></p>
 
     </div>
+
   </footer>
 
 </body>
@@ -385,34 +385,34 @@
 <script>
 
   var r = document.querySelector(':root'),
-      toggle_currency = 0,
-      toggle_fr = 0,
-      cur = document.getElementById( "currency" ),
-      num = document.getElementById( "scene" ),
+      toggle_curr = 0,
+      toggle_lang = 0,
+      curr = document.getElementById( "currency" ),
       img = document.getElementById( "preview" ),
-      tmb = document.getElementById( "preview-thumbnail" );
+      tmb = document.getElementById( "preview-thumbnail" ),
+      num = document.getElementById( "scene" );
 
   r.style.setProperty('--us', "none");
   r.style.setProperty('--fr', "none");
 
-  cur.style.display = "none";
+  curr.style.display = "none";
   num.style.display = "none";
   img.style.display = "none";
 
-  function scene() {
+  function toggle_scene() {
     if ( num.style.display == "none" ) {
-      cur.style.display = "block";
+      curr.style.display = "block";
       num.style.display = "block";
       document.querySelector( "#scene-header" ).scrollIntoView({ behavior: 'smooth' });
     }
     else {
-      cur.style.display = "none";
+      curr.style.display = "none";
       num.style.display = "none";
       document.querySelector( "#scene-header" ).scrollIntoView({ behavior: 'smooth' });
     }
   };
 
-  function preview() {
+  function toggle_preview() {
     if ( img.style.display == "none" ) {
       img.style.display = "block";
       tmb.style.display = "none";
@@ -423,35 +423,35 @@
     }
   };
 
-  function currency() {
-    if ( toggle_currency == 0 ) {
+  function toggle_currency() {
+    if ( toggle_curr == 0 ) {
       r.style.setProperty('--us', "inline");
       r.style.setProperty('--ca', "none");
       r.style.setProperty('--fr', "none");
       r.style.setProperty('--fr-en', "inline");
-      toggle_currency = 1;
-      toggle_fr = 0;
+      toggle_curr = 1;
+      toggle_lang = 0;
     }
     else {
       r.style.setProperty('--us', "none");
       r.style.setProperty('--ca', "inline");
-      toggle_currency = 0;
+      toggle_curr = 0;
     }
   };
 
-  function fr() {
-    if ( toggle_fr == 0 ) {
+  function toggle_language() {
+    if ( toggle_lang == 0 ) {
       r.style.setProperty('--us', "none");
       r.style.setProperty('--ca', "inline");
       r.style.setProperty('--fr', "inline");
       r.style.setProperty('--fr-en', "none");
-      toggle_currency = 0;
-      toggle_fr = 1;
+      toggle_curr = 0;
+      toggle_lang = 1;
     }
     else {
       r.style.setProperty('--fr', "none");
       r.style.setProperty('--fr-en', "inline");
-      toggle_fr = 0;
+      toggle_lang = 0;
     }
   };
 

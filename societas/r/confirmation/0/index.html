@@ -18,31 +18,31 @@
 
   <link rel="icon" href="../../../../inc/ico/oafa.mark.1.1.72.light.png" />
 
+  <style>
+    html { background-color:#333; }
+
+  </style>
+
 </head>
 
-<body class="fadein" id="dark">
+<body class="fadein single" id="dark">
 
   <nav>
-    <ul class="page">
+    <ul class="page single">
       <li class="crumb dark logo"><a href="../../../../" title="Animat Habitat"><img alt="OAFA Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../../../../inc/svg/oafa.mark.1.1.1200.light.svg"/></a></li>
       <li class="crumb dark"><a href="../" title="Animat Habitat societ&#257;s.">Societ&#257;s</a></li>
       <li class="crumb scene dark"><a><em>Exit<font class="desktop"> &ndash; Sortie</font></em></a></li>
-      <li class="right thin"><a onclick="fr();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
     </ul>
   </nav>
 
-  <section class="single">
+  <section>
     <article>
+
       <div>
         <h3 class="letterhead">Thanks for journeying this far.<font class="fr">&nbsp;&#92;&nbsp;Merci d'avoir voyag&eacute; aussi loin.</font></h3>
 
-      </div>
-
-  		<div class="clear diptych">
-  			<div>
-          <p><a href="../" title="Animat Habitat societ&#257;s. Registration. &ndash;&nbsp;Enregistrement.">Re-register</a>.<font class="fr">&nbsp;&#92;&nbsp;Re-enregistrer.</font></p>
-
-        </div>
+        <p class="linebreak"><a href="../" title="Animat Habitat societ&#257;s. Registration. &ndash;&nbsp;Enregistrement.">Re-register</a>.<font class="fr">&nbsp;&#92;&nbsp;Re-enregistrer.</font></p>
 
       </div>
 
@@ -50,11 +50,11 @@
   </section>
 
   <footer>
-    <div class="clear diptych">
-      <div class="quote">
-        <p class="small">Exit through the <a href="../../../../boutique/" title="Animat Habitat boutique.">Boutique</a>.<font class="fr">&nbsp;&#92;&nbsp;Sortir par la boutique.</font></p>
-      </div>
+    <div class="quote">
+      <p class="small">Exit through the <a href="../../../../boutique/" title="Animat Habitat boutique.">Boutique</a>.<font class="fr">&nbsp;&#92;&nbsp;Sortir par la boutique.</font></p>
+
     </div>
+
   </footer>
 
 </body>
@@ -62,20 +62,20 @@
 <script>
 
   var r = document.querySelector(':root'),
-      toggle_fr = 0;
+      toggle_lang = 0;
 
   r.style.setProperty('--fr', "none");
 
-  function fr() {
-    if ( toggle_fr == 0 ) {
+  function toggle_language() {
+    if ( toggle_lang == 0 ) {
       r.style.setProperty('--fr', "inline");
       r.style.setProperty('--fr-en', "none");
-      toggle_fr = 1;
+      toggle_lang = 1;
     }
     else {
       r.style.setProperty('--fr', "none");
       r.style.setProperty('--fr-en', "inline");
-      toggle_fr = 0;
+      toggle_lang = 0;
     }
   };
 
