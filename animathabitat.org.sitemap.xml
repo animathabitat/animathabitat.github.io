@@ -91,12 +91,12 @@
   <priority>0.1</priority>
   <changefreq>never</changefreq>
 </url>
-<!-- <url>
+<url>
   <loc>https://animathabitat.org/scene/zero/northern-white-rhinoceros/</loc>
   <lastmod>2022-12-26</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
-</url> -->
+</url>
 
 <url>
   <loc>https://animathabitat.org/scene/one/</loc>
@@ -267,7 +267,7 @@
   <changefreq>never</changefreq>
 </url>
 <!-- <url>
-  <loc>https://animathabitat.org/scene/one/making-of-ella-4-2/</loc>
+  <loc>https://animathabitat.org/scene/one/making-of-ella-4/</loc>
   <lastmod>2023-6-26</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
@@ -280,13 +280,13 @@
 </url> -->
 <!-- <url>
   <loc>https://animathabitat.org/scene/one/companion-app/</loc>
-  <lastmod>2024-12-??</lastmod>
+  <lastmod>2024-12-30</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
 </url> -->
 <!-- <url>
   <loc>https://animathabitat.org/scene/one/elephant-conservation-future/</loc>
-  <lastmod>2025-3-??</lastmod>
+  <lastmod>2025-3-31</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
 </url> -->
@@ -329,32 +329,35 @@
 </url> -->
 <!-- <url>
   <loc>https://animathabitat.org/scene/two/exhibition/</loc>
-  <lastmod>2024-3-??</lastmod>
+  <lastmod>2024-3-25</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
 </url> -->
 
-<!-- <url>
- <loc>https://animathabitat.org/scene/three/</loc>
- <lastmod>2024-6-?</lastmod>
- <priority>0.8</priority>
- <changefreq>monthly</changefreq>
-</url> -->
+
 <!-- <url>
   <loc>https://animathabitat.org/scene/three/technology-vr/</loc>
   <lastmod>2016-1-25</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
 </url> -->
+
+
+<!-- <url>
+ <loc>https://animathabitat.org/scene/three/</loc>
+ <lastmod>2024-6-24</lastmod>
+ <priority>0.8</priority>
+ <changefreq>monthly</changefreq>
+</url> -->
 <!-- <url>
  <loc>https://animathabitat.org/scene/three/black-whale/</loc>
-  <lastmod>2024-6-??</lastmod>
+  <lastmod>2024-6-24</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
 </url> -->
 <!-- <url>
  <loc>https://animathabitat.org/scene/three/white-whale/</loc>
-  <lastmod>2025-6-??</lastmod>
+  <lastmod>2025-6-30</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
 </url> -->
