@@ -279,17 +279,38 @@
   <changefreq>never</changefreq>
 </url> -->
 <!-- <url>
-  <loc>https://animathabitat.org/scene/one/companion-app/</loc>
+  <loc>https://animathabitat.org/scene/one/companion-app-beta/</loc>
+  <lastmod>2024-3-25</lastmod>
   <lastmod>2024-12-30</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
 </url> -->
 <!-- <url>
-  <loc>https://animathabitat.org/scene/one/elephant-conservation-future/</loc>
-  <lastmod>2025-3-31</lastmod>
+  <loc>https://animathabitat.org/scene/one/companion-app-soundtrack/</loc>
+  <lastmod>2025-12-29</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
 </url> -->
+<!-- <url>
+  <loc>https://animathabitat.org/scene/one/book-of-ella-4/</loc>
+  <lastmod>2026-3-30</lastmod>
+  <priority>0.2</priority>
+  <changefreq>never</changefreq>
+</url> -->
+<!-- <url>
+  <loc>https://animathabitat.org/scene/one/elephant-conservation-future/</loc>
+  <lastmod>2026-12-28</lastmod>
+  <priority>0.2</priority>
+  <changefreq>never</changefreq>
+</url> -->
+
+<!-- <url>
+  <loc>https://animathabitat.org/app/</loc>
+  <lastmod>2024-3-25</lastmod>
+  <priority>0.2</priority>
+  <changefreq>never</changefreq>
+</url> -->
+
 
 <url>
  <loc>https://animathabitat.org/scene/two/</loc>
@@ -328,36 +349,53 @@
   <changefreq>never</changefreq>
 </url> -->
 <!-- <url>
-  <loc>https://animathabitat.org/scene/two/exhibition/</loc>
-  <lastmod>2024-3-25</lastmod>
+  <loc>https://animathabitat.org/scene/two/siberian-tiger-print/</loc>
+  <lastmod>2025-3-31</lastmod>
+  <priority>0.2</priority>
+  <changefreq>never</changefreq>
+</url> -->
+
+<!-- <url>
+  <loc>https://animathabitat.org/exhibition/</loc>
+  <lastmod>2025-3-31</lastmod>
+  <priority>0.2</priority>
+  <changefreq>never</changefreq>
+</url> -->
+<!-- <url>
+  <loc>https://animathabitat.org/exhibition/2025/</loc>
+  <lastmod>2025-3-31</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
 </url> -->
 
 
 <!-- <url>
-  <loc>https://animathabitat.org/scene/three/technology-vr/</loc>
-  <lastmod>2016-1-25</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url> -->
-
-
-<!-- <url>
- <loc>https://animathabitat.org/scene/three/</loc>
- <lastmod>2024-6-24</lastmod>
- <priority>0.8</priority>
- <changefreq>monthly</changefreq>
+  <loc>https://animathabitat.org/scene/three/</loc>
+  <lastmod>2024-6-24</lastmod>
+  <priority>0.8</priority>
+  <changefreq>monthly</changefreq>
 </url> -->
 <!-- <url>
- <loc>https://animathabitat.org/scene/three/black-whale/</loc>
+  <loc>https://animathabitat.org/scene/three/black-whale/</loc>
   <lastmod>2024-6-24</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
 </url> -->
 <!-- <url>
- <loc>https://animathabitat.org/scene/three/white-whale/</loc>
+  <loc>https://animathabitat.org/scene/three/white-noise/</loc>
+  <lastmod>2024-12-30</lastmod>
+  <priority>0.2</priority>
+  <changefreq>never</changefreq>
+</url> -->
+<!-- <url>
+  <loc>https://animathabitat.org/scene/three/white-whale/</loc>
   <lastmod>2025-6-30</lastmod>
+  <priority>0.2</priority>
+  <changefreq>never</changefreq>
+</url> -->
+<!-- <url>
+  <loc>https://animathabitat.org/scene/three/technology-documentary-lens-2/</loc>
+  <lastmod>2026-6-29</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
 </url> -->

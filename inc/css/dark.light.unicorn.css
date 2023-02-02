@@ -5,7 +5,7 @@
  Author:       Dane Aleksander
  Author URI:   https://danealeksander.github.io/
  Template:     twentythirteen
- Version:      2.0.1
+ Version:      2.1.2
 */
 
 /*
@@ -1189,6 +1189,22 @@ nav ul li.light {
 
 #scene-one nav em,
 #scene-one a.color,
+#scene-one b.color,
+#scene-one div[role="navigation"] a,
+#scene-one h1,
+#scene-one h3,
+#scene-one h2.color,
+#scene-one h4.color,
+#scene-one font.color,
+.scene-one,
+.lettermark.scene-one:hover,
+li.scene-one a:active,
+#scene-one li.scene-one a {
+  color: var(--dune);
+}
+#scene-one nav em,
+#scene-one a.color,
+#scene-one b.color,
 #scene-one div[role="navigation"] a,
 #scene-one h1,
 #scene-one h3,
@@ -1281,6 +1297,7 @@ nav ul li.scene-one {
 
 #scene-two nav em,
 #scene-two a.color,
+#scene-two b.color,
 #scene-two div[role="navigation"] a,
 #scene-two h1,
 #scene-two h3,
@@ -1370,6 +1387,7 @@ nav ul li.scene-two,
 
 #scene-three nav em,
 #scene-three a.color,
+#scene-three b.color,
 #scene-three div[role="navigation"] a,
 #scene-three h1,
 #scene-three h3,
@@ -1532,9 +1550,12 @@ and ( max-width: 1280px ) {
   }
 
   nav,
-  div[role="navigation"],
   a.checkout-button {
     font-size: 2.4rem;
+  }
+
+  div[role="navigation"] {
+    font-size: 1.8rem;
   }
 
   nav ul,
@@ -1654,7 +1675,6 @@ and ( max-width: 960px ) {
   }
   h4, h5,
   select,
-  .navigation,
   a.checkout-button,
   ul.periwinkle-list li {
     font-size: 1em;
