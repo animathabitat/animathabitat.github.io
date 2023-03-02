@@ -309,6 +309,9 @@ h3,
   line-height: 0.25em;
   vertical-align: -0.5em;
 }
+h4 .letterspace-sp {
+  letter-spacing: -0.1em;
+}
 
 ul.periwinkle-list li a {
   font-size: calc( 3em / 2 );
