@@ -295,7 +295,8 @@ h1 {
   font-size: 8em;
   /* line-height: normal; */
 }
-h1 .letterspace-sp {
+h1 .letterspace-sp,
+h4 .letterspace-sp {
   letter-spacing: -0.15em;
 }
 h2 {
@@ -308,9 +309,6 @@ h3,
 .text-quote {
   line-height: 0.25em;
   vertical-align: -0.5em;
-}
-h4 .letterspace-sp {
-  letter-spacing: -0.1em;
 }
 
 ul.periwinkle-list li a {
@@ -1488,34 +1486,8 @@ and ( -webkit-min-device-pixel-ratio: 2) { } */
 
 /* **********  MAX */
 
-@media screen
-and ( max-width: 1600px ) {
-
-  nav ul,
-  footer,
-  section {
-    max-width: 1600px;
-    width: 100%;
-  }
-  .single section {
-    max-width: 76.4em;
-    /* width: 76.4em; */
-  }
-  .single nav ul,
-  .single footer > div:not(.spread),
-  .single article > div:not(.diptych, .triptych, .polyptych, .desktop-feature, .spread),
-  .single div.single {
-    width: calc( 667px + ( 4 * ( ( 100vw - 1280px ) / 320 ) ) );
-  }
-
-  textarea {
-    height: 6em;
-  }
-
-  .break-cut {
-    display: none;
-  }
-}
+/* @media screen
+and ( max-width: 1600px ) {} */
 
 
 
@@ -1563,15 +1535,24 @@ and ( max-width: 1280px ) {
 
   nav ul,
   header, footer,
+  section,
   .single section {
+    /* max-width: 1600px; */
     width: 100%;
+  }
+  .single section {
+    max-width: 76.4em;
+    /* width: 76.4em; */
   }
   .single nav ul,
   .single footer > div:not(.spread),
   .single article > div:not(.diptych, .triptych, .polyptych, .desktop-feature, .spread),
+  .single div.single,
   section.single,
   footer.single {
     max-width: 667px;
+    width: 667px;
+    /* width: calc( 667px + ( 4 * ( ( 100vw - 1280px ) / 320 ) ) ); */
   }
 
   h5.woo-title {
@@ -1584,6 +1565,14 @@ and ( max-width: 1280px ) {
 
   .single .video {
     height: calc( 540px + ( 180 * ( ( 100vw - 960px ) / 320 ) ) );
+  }
+
+  textarea {
+    height: 6em;
+  }
+
+  .break-cut {
+    display: none;
   }
 }
 
