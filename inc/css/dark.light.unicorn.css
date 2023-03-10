@@ -342,6 +342,9 @@ h6,
 .small {
   font-size: calc( 7em / 9 );
 }
+h4 .small {
+  font-size: calc( 3em / 4 );
+}
 .trade {
   font-size: calc( 1.15em / 3 );
   vertical-align: calc( 4em / 3 );
@@ -367,7 +370,8 @@ p a,
 .underscore {
   text-decoration: underline;
 }
-p a.button {
+p a.button,
+p a.title {
   text-decoration: none;
 }
 .overscore,
@@ -1682,6 +1686,9 @@ and ( max-width: 960px ) {
   }
   nav {
     font-size: calc( 8em / 9 );
+  }
+  h4 .small {
+    font-size: calc( 7em / 9 );
   }
 
   nav ul,
