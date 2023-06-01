@@ -53,7 +53,7 @@
       <div class="matte"><h4 class="color">Video coming soon.</h4></div>
 
       <div>
-        <p>Due to an agreement with BBC Motion Gallery and Getty Images, this preview behind the scenes is protected and is published only for members at Animat Habitat. Enter password sent with confirmation of membership. <a href="../../../societas/r/" title="Animat Habitat societ&#257;s. Registration. &ndash;&nbsp;Enregistrement.">Not a member</a>?</p>
+        <p>Due to an agreement with BBC Motion Gallery and Getty Images, this preview behind the scenes is protected and is published only for members at Animat Habitat. Enter password sent with confirmation of membership. <a onclick="to_register();" title="Animat Habitat societ&#257;s. Registration. &ndash;&nbsp;Enregistrement.">Not a member</a>?</p>
 
       </div>
 
@@ -110,6 +110,12 @@
       register_toggle = document.getElementById( "register-toggle" );
 
   register_form.style.display = "none";
+
+  function to_register() {
+    register_form.style.display = "block";
+    register_toggle.style.display = "none";
+    document.querySelector( "#register" ).scrollIntoView({ behavior: 'smooth' });
+  };
 
   function toggle_register() {
     if (register_form.style.display == "none") {
