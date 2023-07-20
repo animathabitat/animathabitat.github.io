@@ -204,7 +204,7 @@
   <changefreq>never</changefreq>
 </url>
 <url>
-  <loc>https://animathabitat.org/scene/one/technology-lens/</loc>
+  <loc>https://animathabitat.org/scene/one/wildlife-documentary-lens/</loc>
   <!-- <lastmod>2017-12-25</lastmod> -->
   <lastmod>2023-3-31</lastmod>
   <priority>0.2</priority>
@@ -294,18 +294,18 @@
   <priority>0.2</priority>
   <changefreq>never</changefreq>
 </url>
-<!-- <url>
-  <loc>https://animathabitat.org/scene/one/making-of-ella-5/</loc>
+<url>
+  <loc>https://animathabitat.org/scene/one/making-of-ella-4/</loc>
   <lastmod>2023-6-26</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
-</url> -->
-<!-- <url>
+</url>
+<url>
   <loc>https://animathabitat.org/scene/one/companion-app-augmented-reality-kit/</loc>
   <lastmod>2023-12-25</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
-</url> -->
+</url>
 <!-- <url>
   <loc>https://animathabitat.org/scene/one/companion-app-beta/</loc>
   <lastmod>2024-3-25</lastmod>
