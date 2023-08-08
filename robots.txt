@@ -1,4 +1,8 @@
 User-agent: *
+Allow: /
+Allow: /canon/
+Allow: /conservatum/
+Allow: /scene/
 
 Disallow: /404.html
 Disallow: /readme.md
@@ -31,8 +35,9 @@ Disallow: /url/
 
 # Sitemap #
 
-Allow: /canon/
-Allow: /conservatum/
-Allow: /scene/
-
 Sitemap: /animathabitat.org.sitemap.xml
+
+# AI #
+
+User-agent: GPTBot
+Disallow: /
