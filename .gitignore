@@ -4,7 +4,6 @@ _*/
 
 # Folder config file
 desktop.ini
-*.DS_Store
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
