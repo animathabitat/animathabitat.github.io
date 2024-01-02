@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en, fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; script-src 'unsafe-inline'; style-src fonts.googleapis.com 'self';" />
+  <meta name="google" content="notranslate" />
+
+  <meta name="author" content="Dane Aleksander" />
+  <meta name="company" content="Animat Habitat" />
+  <meta name="description" content="Archived documents at Animat Habitat." />
+  <meta name="keywords" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Animat Habitat archived documents&hellip;</title>
+
+  <style>
+    html { background-color: #333; }
+
+  </style>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
+  <link rel="stylesheet" href="../../inc/css/dark.light.unicorn.css" />
+
+  <link rel="icon" href="../../inc/ico/oafa.mark.1.1.72.light.png" />
+
+</head>
+
+<body class="fadein single" id="dark">
+
+  <nav>
+    <ul class="page">
+      <li class="crumb dark logo"><a href="../../" title="Animat Habitat"><img alt="OAFA Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/oafa.mark.1.1.1200.light.svg"/></a></li>
+      <li class="crumb scene dark"><a><em>Confirmation</em></a></li>
+      <li class="right thin dark"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <article>
+
+      <div>
+        <h3 class="letterhead">Thanks for your interest in archived documents at Animat Habitat.<font class="fr">&nbsp;&#92;&nbsp;Merci de votre int&eacute;r&ecirc;t pour les documents archiv&eacute;s chez Animat Habitat.</font></h3>
+
+        <h5 class="linebreak">Please verify your address.<font class="fr">&nbsp;&#92;&nbsp;Veuillez v&eacute;rifier votre adresse.</font></h5>
+        <p>Use the verification link sent to your e-mail to confirm your request.<font class="fr">&nbsp;&#92;&nbsp;Utilisez le lien de v&eacute;rification envoy&eacute; &agrave; votre adresse e-mail pour confirmer votre demande.</font></p>
+
+      </div>
+
+    </article><br class="clear">
+  </section>
+
+  <footer>
+    <div class="quote">
+      <p class="small">This step is included to protect from spam and to respect your privacy.<font class="fr">&nbsp;&#92;&nbsp;Cette &eacute;tape est incluse pour prot&eacute;ger du spam et pour respecter la confidentialit&eacute;.</font></p>
+
+      <p class="small linebreak">You may close this page at any time.<font class="fr">&nbsp;&#92;&nbsp;Vous pouvez fermer cette page &agrave; tout moment.</font></p>
+
+      <p class="small linebreak">Exit through the <a href="../boutique/" title="Animat Habitat boutique.">Boutique</a>.<font class="fr">&nbsp;&#92;&nbsp;Sortir par la boutique.</font></p>
+
+    </div>
+
+  </footer>
+
+</body>
+
+<script>
+
+  var r = document.querySelector(':root'),
+      toggle_lang = 0;
+
+  r.style.setProperty('--fr', "none");
+
+  function toggle_language() {
+    if ( toggle_lang == 0 ) {
+      r.style.setProperty('--fr', "inline");
+      r.style.setProperty('--fr-en', "none");
+      toggle_lang = 1;
+    }
+    else {
+      r.style.setProperty('--fr', "none");
+      r.style.setProperty('--fr-en', "inline");
+      toggle_lang = 0;
+    }
+  };
+
+</script>
+
+</html>

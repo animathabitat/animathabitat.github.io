@@ -569,9 +569,10 @@ pre.thin {
 /* ** 2.3  INPUT */
 
 button,
-input[type="submit"],
 input[type="button"],
-input[type="reset"] {
+input[type="checkbox"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
      -moz-appearance: button;
       -ms-appearance: button;
@@ -582,12 +583,14 @@ input[type="reset"] {
   outline: none;
 }
 button:hover, button:focus,
-input[type="submit"]:hover,
 input[type="button"]:hover,
+input[type="checkbox"]:hover,
 input[type="reset"]:hover,
-input[type="submit"]:focus,
+input[type="submit"]:hover,
 input[type="button"]:focus,
-input[type="reset"]:focus {
+input[type="checkbox"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
   outline: none;
 }
 

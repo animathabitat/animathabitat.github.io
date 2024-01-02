@@ -26,6 +26,12 @@
   <changefreq>monthly</changefreq>
  </url>
  <url>
+   <loc>https://animathabitat.org/boutique/d/</loc>
+   <lastmod>2022-9-15</lastmod>
+   <priority>0</priority>
+   <changefreq>yearly</changefreq>
+ </url>
+ <url>
   <loc>https://animathabitat.org/boutique/medium/digital-numerique/</loc>
   <lastmod>2022-9-15</lastmod>
   <priority>0.2</priority>
@@ -429,12 +435,6 @@
 
 <!-- <url>
   <loc>https://animathabitat.org/societas/</loc>
-  <lastmod>2022-9-15</lastmod>
-  <priority>0</priority>
-  <changefreq>yearly</changefreq>
-</url> -->
-<!-- <url>
-  <loc>https://animathabitat.org/societas/d/</loc>
   <lastmod>2022-9-15</lastmod>
   <priority>0</priority>
   <changefreq>yearly</changefreq>
