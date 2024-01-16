@@ -65,13 +65,13 @@
  </url>
 
  <url>
-  <loc>https://animathabitat.org/conservatum/</loc>
+  <loc>https://animathabitat.org/conservation/</loc>
   <lastmod>2022-9-15</lastmod>
   <priority>0.8</priority>
   <changefreq>yearly</changefreq>
  </url>
  <url>
-  <loc>https://animathabitat.org/conservatum/africa-afrique/</loc>
+  <loc>https://animathabitat.org/conservation/africa-afrique/</loc>
   <lastmod>2022-9-15</lastmod>
   <priority>0.4</priority>
   <changefreq>yearly</changefreq>
@@ -441,6 +441,12 @@
 </url> -->
 <!-- <url>
   <loc>https://animathabitat.org/societas/r/</loc>
+  <lastmod>2022-9-15</lastmod>
+  <priority>0</priority>
+  <changefreq>yearly</changefreq>
+</url> -->
+<!-- <url>
+  <loc>https://animathabitat.org/societas/concilium/</loc>
   <lastmod>2022-9-15</lastmod>
   <priority>0</priority>
   <changefreq>yearly</changefreq>

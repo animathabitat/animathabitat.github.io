@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 Allow: /canon/
-Allow: /conservatum/
+Allow: /conservation/
 Allow: /scene/
 
 Disallow: /404.html
