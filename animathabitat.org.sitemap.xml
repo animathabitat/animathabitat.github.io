@@ -5,472 +5,526 @@
   xsi:schemaLocation="http://www.google.com/schemas/sitemap/0.9
                       http://www.google.com/schemas/sitemap/0.9/sitemap.xsd">
 
- <url>
-  <loc>https://animathabitat.org/</loc>
-  <lastmod>2022-9-15</lastmod>
-  <priority>1.0</priority>
-  <changefreq>yearly</changefreq>
- </url>
+  <url>
+    <loc>https://animathabitat.org/</loc>
+    <lastmod>2023-9-15</lastmod>
+    <priority>1.0</priority>
+    <changefreq>yearly</changefreq>
+  </url>
 
- <!-- <url>
-   <loc>https://animathabitat.org/annum/</loc>
-   <lastmod>2022-9-15</lastmod>
-   <priority>0</priority>
-   <changefreq>yearly</changefreq>
- </url> -->
 
- <url>
-  <loc>https://animathabitat.org/boutique/</loc>
-  <lastmod>2022-9-15</lastmod>
-  <priority>0.8</priority>
-  <changefreq>monthly</changefreq>
- </url>
- <url>
-   <loc>https://animathabitat.org/boutique/d/</loc>
-   <lastmod>2022-9-15</lastmod>
-   <priority>0</priority>
-   <changefreq>yearly</changefreq>
- </url>
- <url>
-  <loc>https://animathabitat.org/boutique/medium/digital-numerique/</loc>
-  <lastmod>2022-9-15</lastmod>
-  <priority>0.2</priority>
-  <changefreq>monthly</changefreq>
- </url>
- <url>
-  <loc>https://animathabitat.org/boutique/medium/giclee/</loc>
-  <lastmod>2022-9-15</lastmod>
-  <priority>0.2</priority>
-  <changefreq>monthly</changefreq>
- </url>
- <url>
-  <loc>https://animathabitat.org/boutique/medium/original/</loc>
-  <lastmod>2022-9-15</lastmod>
-  <priority>0.2</priority>
-  <changefreq>monthly</changefreq>
- </url>
 
- <!-- <url>
-  <loc>https://animathabitat.org/c/</loc>
-  <lastmod>2016-9-15</lastmod>
-  <priority>0</priority>
-  <changefreq>yearly</changefreq>
- </url> -->
+  <!-- <url>
+    <loc>https://animathabitat.org/app/</loc>
+    <lastmod>2024-3-25</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url> -->
+  <!-- <url>
+    <loc>https://animathabitat.org/app/beta/</loc>
+    <lastmod>2024-3-25</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url> -->
 
- <url>
-  <loc>https://animathabitat.org/canon/</loc>
-  <lastmod>2022-9-15</lastmod>
-  <priority>0.8</priority>
-  <changefreq>never</changefreq>
- </url>
 
- <url>
-  <loc>https://animathabitat.org/conservation/</loc>
-  <lastmod>2022-9-15</lastmod>
-  <priority>0.8</priority>
-  <changefreq>yearly</changefreq>
- </url>
- <url>
-  <loc>https://animathabitat.org/conservation/africa-afrique/</loc>
-  <lastmod>2022-9-15</lastmod>
-  <priority>0.4</priority>
-  <changefreq>yearly</changefreq>
- </url>
 
-<url>
-  <loc>https://animathabitat.org/dono/</loc>
-  <lastmod>2022-9-15</lastmod>
-  <priority>0.4</priority>
-  <changefreq>yearly</changefreq>
-</url>
+  <url>
+    <loc>https://animathabitat.org/boutique/</loc>
+    <lastmod>2023-9-15</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <!-- <url>
+    <loc>https://animathabitat.org/boutique/d/</loc>
+    <lastmod>2023-9-15</lastmod>
+    <priority>0</priority>
+    <changefreq>yearly</changefreq>
+  </url> -->
+  <!-- <url>
+    <loc>https://animathabitat.org/boutique/exit/</loc>
+    <lastmod>2023-9-15</lastmod>
+    <priority>0</priority>
+    <changefreq>yearly</changefreq>
+  </url> -->
+  <url>
+    <loc>https://animathabitat.org/boutique/medium/digital-numerique/</loc>
+    <lastmod>2023-9-15</lastmod>
+    <priority>0.2</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/boutique/medium/giclee/</loc>
+    <lastmod>2023-9-15</lastmod>
+    <priority>0.2</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/boutique/medium/original/</loc>
+    <lastmod>2023-9-15</lastmod>
+    <priority>0.2</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 
-<url>
-  <loc>https://animathabitat.org/princeps/</loc>
-  <lastmod>2022-9-15</lastmod>
-  <priority>0</priority>
-  <changefreq>yearly</changefreq>
-</url>
 
-<url>
-  <loc>https://animathabitat.org/scene/zero/</loc>
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.1</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/zero/northern-white-rhinoceros/</loc>
-  <!-- <lastmod>2022-12-26</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
 
-<url>
-  <loc>https://animathabitat.org/scene/one/</loc>
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.8</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/making-of-ella/</loc>
-  <!-- <lastmod>2014-3-31</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/companion-app-augmented-reality/</loc>
-  <!-- <lastmod>2014-6-30</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/elephant-conservation-africa/</loc>
-  <!-- <lastmod>2014-9-29</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/reference-art/</loc>
-  <!-- <lastmod>2014-12-29</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/reference-art-2/</loc>
-  <!-- <lastmod>2014-12-29</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/book-of-ella/</loc>
-  <!-- <lastmod>2015-3-30</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/book-of-ella-2/</loc>
-  <!-- <lastmod>2015-6-29</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/book-of-ella-3/</loc>
-  <!-- <lastmod>2015-6-29</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/history-of-elephants-ivory/</loc>
-  <!-- <lastmod>2015-12-28</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/making-of-ella-2/</loc>
-  <!-- <lastmod>2016-3-28</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/elephant-conservation-kenya/</loc>
-  <!-- <lastmod>2016-6-27</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/book-of-ella-4/</loc>
-  <!-- <lastmod>2016-12-26</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/making-of-ella-3/</loc>
-  <!-- <lastmod>2017-3-27</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/history-of-elephants/</loc>
-  <!-- <lastmod>2017-6-30</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/wildlife-documentary-lens/</loc>
-  <!-- <lastmod>2017-12-25</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/history-of-elephants-anatomy/</loc>
-  <!-- <lastmod>2018-3-26</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/history-of-elephants-charter/</loc>
-  <!-- <lastmod>2018-6-25</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/wildlife-documentary/</loc>
-  <!-- <lastmod>2018-12-31</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/wildlife-documentary-big-tuskers/</loc>
-  <!-- <lastmod>2018-12-31</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/elephant-conservation-nairobi/</loc>
-  <!-- <lastmod>2019-3-25</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/elephant-conservation-amboseli/</loc>
-  <!-- <lastmod>2019-6-24</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/wildlife-documentary-2/</loc>
-  <!-- <lastmod>2019-12-26</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/elephant-conservation-botswana/</loc>
-  <!-- <lastmod>2020-6-29</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/elephant-conservation-namibia/</loc>
-  <!-- <lastmod>2020-12-28</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/elephant-conservation-zambezi/</loc>
-  <!-- <lastmod>2021-3-29</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/elephant-conservation-kavango/</loc>
-  <!-- <lastmod>2021-6-28</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/elephant-conservation-angola/</loc>
-  <!-- <lastmod>2021-12-27</lastmod> -->
-  <lastmod>2023-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/making-of-ella-4/</loc>
-  <lastmod>2023-6-26</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/one/companion-app-augmented-reality-kit/</loc>
-  <lastmod>2023-12-25</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<!-- <url>
+  <!-- <url>
+    <loc>https://animathabitat.org/c/</loc>
+    <lastmod>2016-9-15</lastmod>
+    <priority>0</priority>
+    <changefreq>yearly</changefreq>
+  </url> -->
+
+
+
+  <url>
+    <loc>https://animathabitat.org/canon/</loc>
+    <lastmod>2023-9-15</lastmod>
+    <priority>0.8</priority>
+    <changefreq>never</changefreq>
+  </url>
+
+
+
+  <url>
+    <loc>https://animathabitat.org/conservation/</loc>
+    <lastmod>2023-9-15</lastmod>
+    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/conservation/africa-afrique/</loc>
+    <lastmod>2023-9-15</lastmod>
+    <priority>0.4</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+
+
+  <!-- <url>
+    <loc>https://animathabitat.org/exhibition/</loc>
+    <lastmod>2025-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url> -->
+  <!-- <url>
+    <loc>https://animathabitat.org/exhibition/2025/</loc>
+    <lastmod>2025-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url> -->
+
+
+
+  <url>
+    <loc>https://animathabitat.org/patron/</loc>
+    <lastmod>2023-9-15</lastmod>
+    <priority>0.4</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+
+
+  <url>
+    <loc>https://animathabitat.org/scene/zero/</loc>
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.1</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/zero/northern-white-rhinoceros/</loc>
+    <!-- <lastmod>2022-12-26</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+
+  <url>
+    <loc>https://animathabitat.org/scene/one/</loc>
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/making-of-ella/</loc>
+    <!-- <lastmod>2014-3-31</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/companion-app-augmented-reality/</loc>
+    <!-- <lastmod>2014-6-30</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/elephant-conservation-africa/</loc>
+    <!-- <lastmod>2014-9-29</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/reference-art/</loc>
+    <!-- <lastmod>2014-12-29</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/reference-art-2/</loc>
+    <!-- <lastmod>2014-12-29</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/book-of-ella/</loc>
+    <!-- <lastmod>2015-3-30</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/book-of-ella-2/</loc>
+    <!-- <lastmod>2015-6-29</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/book-of-ella-3/</loc>
+    <!-- <lastmod>2015-6-29</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/history-of-elephants-ivory/</loc>
+    <!-- <lastmod>2015-12-28</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/making-of-ella-2/</loc>
+    <!-- <lastmod>2016-3-28</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/elephant-conservation-kenya/</loc>
+    <!-- <lastmod>2016-6-27</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/book-of-ella-4/</loc>
+    <!-- <lastmod>2016-12-26</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/making-of-ella-3/</loc>
+    <!-- <lastmod>2017-3-27</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/history-of-elephants/</loc>
+    <!-- <lastmod>2017-6-30</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/wildlife-documentary-lens/</loc>
+    <!-- <lastmod>2017-12-25</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/history-of-elephants-anatomy/</loc>
+    <!-- <lastmod>2018-3-26</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/history-of-elephants-charter/</loc>
+    <!-- <lastmod>2018-6-25</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/wildlife-documentary/</loc>
+    <!-- <lastmod>2018-12-31</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/wildlife-documentary-big-tuskers/</loc>
+    <!-- <lastmod>2018-12-31</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/elephant-conservation-nairobi/</loc>
+    <!-- <lastmod>2019-3-25</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/elephant-conservation-amboseli/</loc>
+    <!-- <lastmod>2019-6-24</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/wildlife-documentary-2/</loc>
+    <!-- <lastmod>2019-12-26</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/elephant-conservation-botswana/</loc>
+    <!-- <lastmod>2020-6-29</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/elephant-conservation-namibia/</loc>
+    <!-- <lastmod>2020-12-28</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/elephant-conservation-zambezi/</loc>
+    <!-- <lastmod>2021-3-29</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/elephant-conservation-kavango/</loc>
+    <!-- <lastmod>2021-6-28</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/elephant-conservation-angola/</loc>
+    <!-- <lastmod>2021-12-27</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/making-of-ella-4/</loc>
+    <lastmod>2023-6-26</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/one/companion-app-augmented-reality-kit/</loc>
+    <lastmod>2023-12-25</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <!-- <url>
   <loc>https://animathabitat.org/scene/one/companion-app-beta/</loc>
   <lastmod>2024-3-25</lastmod>
   <lastmod>2024-12-30</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
-</url> -->
-<!-- <url>
+  </url> -->
+  <!-- <url>
   <loc>https://animathabitat.org/scene/one/companion-app-soundtrack/</loc>
   <lastmod>2025-12-29</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
-</url> -->
-<!-- <url>
-  <loc>https://animathabitat.org/scene/one/book-of-ella-4/</loc>
+  </url> -->
+  <!-- <url>
+  <loc>https://animathabitat.org/scene/one/book-of-ella-5/</loc>
   <lastmod>2026-3-30</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
-</url> -->
-<!-- <url>
+  </url> -->
+  <!-- <url>
   <loc>https://animathabitat.org/scene/one/elephant-conservation-future/</loc>
   <lastmod>2026-12-28</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
-</url> -->
+  </url> -->
 
-<!-- <url>
-  <loc>https://animathabitat.org/app/</loc>
-  <lastmod>2024-3-25</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url> -->
 
-<url>
- <loc>https://animathabitat.org/scene/two/</loc>
- <lastmod>2022-6-27</lastmod>
- <priority>0.8</priority>
- <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/two/the-beginning-of-painting/</loc>
-  <lastmod>2020-3-30</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/two/the-second-chapter/</loc>
-  <lastmod>2021-3-29</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/two/tiger-conservation-siberia/</loc>
-  <lastmod>2022-3-28</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://animathabitat.org/scene/two/history-of-the-forest-and-the-trees/</loc>
-  <lastmod>2022-6-27</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url>
-<!-- <url>
-  <loc>https://animathabitat.org/scene/two/the-beginning-of-exhibiting/</loc>
-  <lastmod>2023-3-27</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url> -->
-<!-- <url>
+
+  <url>
+    <loc>https://animathabitat.org/scene/two/</loc>
+    <lastmod>2022-6-27</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/two/the-beginning-of-painting/</loc>
+    <lastmod>2020-3-30</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/two/the-second-chapter/</loc>
+    <lastmod>2021-3-29</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/two/tiger-conservation-siberia/</loc>
+    <lastmod>2022-3-28</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/two/history-of-the-forest-and-the-trees/</loc>
+    <lastmod>2022-6-27</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/two/the-beginning-of-exhibiting/</loc>
+    <lastmod>2023-3-27</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <!-- <url>
   <loc>https://animathabitat.org/scene/two/the-beginning-of-printing/</loc>
   <lastmod>2025-3-31</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
-</url> -->
-
-<!-- <url>
-  <loc>https://animathabitat.org/exhibition/</loc>
-  <lastmod>2025-3-31</lastmod>
+  </url> -->
+  <!-- <url>
+  <loc>https://animathabitat.org/scene/two/history-of-rewilding/</loc>
+  <lastmod>2027-3-29</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
-</url> -->
-<!-- <url>
-  <loc>https://animathabitat.org/exhibition/2025/</loc>
-  <lastmod>2025-3-31</lastmod>
-  <priority>0.2</priority>
-  <changefreq>never</changefreq>
-</url> -->
+  </url> -->
 
 
-<!-- <url>
+
+  <!-- <url>
   <loc>https://animathabitat.org/scene/three/</loc>
   <lastmod>2024-6-24</lastmod>
   <priority>0.8</priority>
   <changefreq>monthly</changefreq>
-</url> -->
-<!-- <url>
+  </url> -->
+  <!-- <url>
   <loc>https://animathabitat.org/scene/three/black-whale/</loc>
   <lastmod>2024-6-24</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
-</url> -->
-<!-- <url>
+  </url> -->
+  <!-- <url>
   <loc>https://animathabitat.org/scene/three/white-noise/</loc>
   <lastmod>2024-12-30</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
-</url> -->
-<!-- <url>
+  </url> -->
+  <!-- <url>
   <loc>https://animathabitat.org/scene/three/white-whale/</loc>
   <lastmod>2025-6-30</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
-</url> -->
-<!-- <url>
+  </url> -->
+  <!-- <url>
   <loc>https://animathabitat.org/scene/three/wildlife-documentary-lens-2/</loc>
   <lastmod>2026-6-29</lastmod>
   <priority>0.2</priority>
   <changefreq>never</changefreq>
-</url> -->
+  </url> -->
+  <!-- <url>
+  <loc>https://animathabitat.org/scene/three/wildlife-documentary-lens-3/</loc>
+  <lastmod>2027-6-28</lastmod>
+  <priority>0.2</priority>
+  <changefreq>never</changefreq>
+  </url> -->
+  <!-- <url>
+  <loc>https://animathabitat.org/scene/three/white-bear-arctic/</loc>
+  <lastmod>2027-12-27</lastmod>
+  <priority>0.2</priority>
+  <changefreq>never</changefreq>
+  </url> -->
 
-<!-- <url>
+
+
+  <!-- <url>
   <loc>https://animathabitat.org/societas/</loc>
-  <lastmod>2022-9-15</lastmod>
+  <lastmod>2023-9-15</lastmod>
   <priority>0</priority>
   <changefreq>yearly</changefreq>
-</url> -->
-<!-- <url>
+  </url> -->
+  <!-- <url>
   <loc>https://animathabitat.org/societas/r/</loc>
-  <lastmod>2022-9-15</lastmod>
+  <lastmod>2023-9-15</lastmod>
   <priority>0</priority>
   <changefreq>yearly</changefreq>
-</url> -->
-<!-- <url>
+  </url> -->
+  <!-- <url>
+  <loc>https://animathabitat.org/societas/annum/</loc>
+  <lastmod>2023-9-15</lastmod>
+  <priority>0</priority>
+  <changefreq>yearly</changefreq>
+  </url> -->
+  <!-- <url>
   <loc>https://animathabitat.org/societas/concilium/</loc>
-  <lastmod>2022-9-15</lastmod>
+  <lastmod>2023-9-15</lastmod>
   <priority>0</priority>
   <changefreq>yearly</changefreq>
-</url> -->
+  </url> -->
+  <!-- <url>
+  <loc>https://animathabitat.org/societas/princeps/</loc>
+  <lastmod>2023-9-15</lastmod>
+  <priority>0</priority>
+  <changefreq>yearly</changefreq>
+  </url> -->
 
-<!-- <url>
+
+
+  <!-- <url>
   <loc>https://animathabitat.org/studio/</loc>
-  <lastmod>2022-9-15</lastmod>
+  <lastmod>2023-9-15</lastmod>
   <priority>0</priority>
   <changefreq>yearly</changefreq>
-</url> -->
+  </url> -->
 
-<!-- <url>
+
+
+  <!-- <url>
   <loc>https://animathabitat.org/support/</loc>
-  <lastmod>2022-9-15</lastmod>
+  <lastmod>2023-9-15</lastmod>
   <priority>0</priority>
   <changefreq>yearly</changefreq>
-</url> -->
+  </url> -->
 
-<url>
-  <loc>https://animathabitat.org/robots.txt</loc>
-  <lastmod>2022-9-15</lastmod>
-  <priority>0</priority>
-  <changefreq>monthly</changefreq>
-</url>
+
+  <url>
+    <loc>https://animathabitat.org/robots.txt</loc>
+    <lastmod>2023-9-15</lastmod>
+    <priority>0</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 
 </urlset>
