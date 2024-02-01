@@ -346,12 +346,12 @@
     <priority>0.2</priority>
     <changefreq>never</changefreq>
   </url>
-  <!-- <url>
+  <url>
     <loc>https://animathabitat.org/scene/one/companion-app-beta/</loc>
-    <lastmod>2024-12-30</lastmod>
+    <lastmod>2024-3-25</lastmod>
     <priority>0.2</priority>
     <changefreq>never</changefreq>
-  </url> -->
+  </url>
   <!-- <url>
     <loc>https://animathabitat.org/scene/one/companion-app-soundtrack/</loc>
     <lastmod>2025-12-29</lastmod>
@@ -426,24 +426,24 @@
 
   <!-- <url>
     <loc>https://animathabitat.org/scene/three/</loc>
-    <lastmod>2024-3-25</lastmod>
+    <lastmod>2024-6-24</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url> -->
   <!-- <url>
     <loc>https://animathabitat.org/scene/three/history-of-whales-north-atlantic-right-whale/</loc>
-    <lastmod>2024-3-25</lastmod>
-    <priority>0.2</priority>
-    <changefreq>never</changefreq>
-  </url> -->
-  <!-- <url>
-    <loc>https://animathabitat.org/scene/three/white-noise/</loc>
     <lastmod>2024-6-24</lastmod>
     <priority>0.2</priority>
     <changefreq>never</changefreq>
   </url> -->
   <!-- <url>
-    <loc>https://animathabitat.org/scene/three/white-whale/</loc>
+    <loc>https://animathabitat.org/scene/three/history-of-whales-communication/</loc>
+    <lastmod>2024-12-30</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url> -->
+  <!-- <url>
+    <loc>https://animathabitat.org/scene/three/history-of-whales-beluga/</loc>
     <lastmod>2025-6-30</lastmod>
     <priority>0.2</priority>
     <changefreq>never</changefreq>
@@ -473,13 +473,13 @@
     <changefreq>never</changefreq>
   </url> -->
   <!-- <url>
-    <loc>https://animathabitat.org/scene/three/bear-conservation-turtle-island/</loc>
+    <loc>https://animathabitat.org/scene/three/making-of-nannuk/</loc>
     <lastmod>2028-6-26</lastmod>
     <priority>0.2</priority>
     <changefreq>never</changefreq>
   </url> -->
   <!-- <url>
-    <loc>https://animathabitat.org/scene/three/history-of-whales-endangered-species-act/</loc>
+    <loc>https://animathabitat.org/scene/three/history-of-bears-turtle-island/</loc>
     <lastmod>2028-12-25</lastmod>
     <priority>0.2</priority>
     <changefreq>never</changefreq>
