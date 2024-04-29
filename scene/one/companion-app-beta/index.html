@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; script-src 'unsafe-inline' createsend.com www.createsend.com js.createsend1.com; style-src fonts.googleapis.com 'self';" />
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; script-src createsend.com js.createsend1.com 'unsafe-inline'; style-src fonts.googleapis.com 'self';" /> -->
   <!-- <meta name="google" content="notranslate" /> -->
 
   <meta name="author" content="Dane Aleksander" />
@@ -30,7 +30,7 @@
     <ul class="page">
       <li class="crumb scene-one logo"><a href="../../../" title="Animat Habitat"><img alt="Animat Mark (One) &copy; Animat Habitat, 2015" class="logo" src="../../../inc/svg/animat.mark.1.1.1200.one.svg"/></a></li>
       <li class="crumb btn scene-one"><a href="../" title="Animat Habitat scene one. &ndash;&nbsp;sc&egrave;ne un.">I</a></li>
-      <li class="crumb scene scene-one"><a><em>Companion App</em></a></li>
+      <li class="crumb scene scene-one"><a><em>Beta</em></a></li>
     </ul>
   </nav>
 
@@ -38,20 +38,62 @@
     <article>
       <div>
         <h4 class="letterhead thin">March 2024</h4>
-        <h2 class="scene-one">Companion App</h2>
+        <h2 class="scene-one">Companion App &ndash; Beta</h2>
         <h5 class="author">Press secretary at Animat Habitat.</h5>
+
+        <p class="linebreak"><em>This is a special announcement! The development office at Animat Habitat will begin a limited beta program in April 2025. And you are invited into a waiting room for our beta program, today. All you need is an Apple iOS, iPadOS or macOS device and an internet connection.</em></p>
+
+        <h3 class="linebreak">A Companion App</h3>
+        <p>This all preceeds a comic book, a companion app, and an invitation to change the way we look at wildlife. The <em>White Elephant</em> comic book tells its story with pictures and poems and so on. Its companion app gives life to those pictures and poems and so on. And its invitation calls upon the commercial audience to interact with the art and story&hellip; And then act in response.</p>
+
+        <p class="linebreak">Prior to the publication of that comic book and companion app, this preliminary invitation to a limited beta program calls upon a number&mdash;up to a hundred of you to help the development office at Animat Habitat review the accessibility of our companion app interface design. A first feature experience of our companion app is an interactive story mode designed for the <em>White Elephant</em> comic book. The companion app is in production at Animat Habitat with Apple Xcode Integrated Development Environment and Unity Real-Time Development Platform. The latest beta version of this companion app is made available through the TestFlight app for iOS, iPadOS and macOS. The TestFlight app is available on the Apple App Store.<sup>&nbsp;[<a class="button" onclick="fn();" title="Beta memberships.">1</a>]</sup></p>
+
+        <h3 class="linebreak">Beta Program</h3>
+        <p>Our beta program aims to assess accessiblility of the companion app interface design, in general, and of the interactive story mode, in particular. That aim, stated more simply, is to make this experience more accessible to more people. Also given an objective to collect a balanced range of feedback from, again simply, a sample of people who operate an Apple iPhone, this limited beta program obliges we share the beta version of our companion app with a broad demographic within that select audience.</p>
+
+        <p class="linebreak">Those people who are included in our beta program will be among the first to entertain the companion app, the <em>White Elephant</em> comic book and its interactive story. Any constructive feedback surveyed from this program will help to shape the commercial version of the companion app. We hope to hear from a diversity of voices. We hope to hear from you. Membership to this beta program is made available only to people registered in a beta program waiting room at Animat Habitat. Enter <a href="../../../beta/" title="">Beta Programs</a>.</p>
+
+        <h5 class="linebreak">Beta App on iOS, iPadOS and macOS</h5>
+        <p>Add your name to the beta program waiting room for Apple iPhone, iPad or Mac users: <a href="../../../beta/app-ios-ipados-macos/" title="">Beta Room</a>.</p>
+
+        <h5 class="linebreak">Beta App on Android</h5>
+        <p>The beta program for Android users is to be determined.</p>
+
+        <h5 class="linebreak">Beta App Feedback</h5>
+        <p>We welcome your feedback! Your input is invaluable in helping to develop a better experience for everyone who discovers the <em>White Elephant</em> comic book and its companion app later on. If you find any bugs in a beta version of the companion app, or have suggestions for an improvement, please use our dedicated feedback form for beta versions of the companion app: <a>Beta App Feedback Form</a>.</p>
+
+        <p class="linebreak">For anything related to a beta version of the companion app, please feel free to send specific feedback to the beta program development office at Animat Habitat [<a>beta&ndash;animathabitat.org</a>].</p>
+
       </div>
 
-      <div>
-        <h3>Companion App</h3>
-        <p>Beta in review.</p>
+      <div class="clear">
+        <div id="register-toggle">
+          <h3><a onclick="toggle_register();">&plus;</a></h3>
 
+        </div>
+
+        <div class="clear toggle-off" id="register" spellcheck="false">
+          <div>
+            <h3><a onclick="toggle_register();">&minus;</a></h3><h3>Behind-the-scenes&hellip;</h3>
+            <p>Register your name and address to get behind-the-scenes of <em>White Elephant</em>.</p>
+
+          </div>
+
+          <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A52FB6D182F7A8A669AB1C317E182AD3763A1B775C7C4E900069B5F6BE1E4B7A7B42258404945BDA2B8796E1BC8516FAF">
+
+            <div class="clear-top"><input aria-label="Name" id="fieldName" maxlength="140" name="cm-name" title="Full name" placeholder="Name" onfocus="if (this.value=='Name') this.value = ''"></div>
+
+            <div class="clear-top"><input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="140" name="cm-dliyu-dliyu" required="" type="email" placeholder="E-mail address" onfocus="if (this.value=='E-mail address') this.value = ''" class="required email trim" title="E-mail address required."><button type="submit">Register</button></div>
+
+          </form>
+
+        </div>
       </div>
 
-      <!-- <div class="quote" id="footnotes">
-        <p class="small"><sup>1</sup> Beta app invites are limited and made available only to members registered behind the scenes at Animat Habitat.</p>
+      <div class="quote" id="footnotes">
+        <p class="small"><sup>1</sup> Access to any beta version of the companion app on iOS, iPadOS and macOS is limited by the number of internal test memberships available to a developer account at Apple. Membership to our beta program is queued, and made available only to people registered in a beta program waiting room at Animat Habitat [<a href="../../../beta/app-ios-ipados-macos/" title="">Beta Room</a>].</p>
 
-      </div> -->
+      </div>
 
       <div class="clear navigation post-navigation" role="navigation">
         <div class="nav-links">
@@ -65,12 +107,33 @@
 
   <footer>
     <div class="quote">
-      <p class="small">Copyright &copy; 2024 Animat Habitat. <a href="../../../c/" target="_blank" title="Terms at Animat Habitat">Terms of Access</a>.</p>
+      <!-- <p class="small">Copyright &copy; 2024 Animat Habitat. <a href="../../../c/" target="_blank" title="Terms at Animat Habitat">Terms of Access</a>.</p> -->
 
     </div>
 
   </footer>
 
 </body>
+
+<script>
+  var register_form = document.getElementById( "register" ),
+      register_toggle = document.getElementById( "register-toggle" );
+
+  register_form.style.display = "none";
+
+  function toggle_register() {
+    if ( register_form.style.display == "none" ) {
+      register_form.style.display = "block";
+      register_toggle.style.display = "none";
+    }
+    else {
+      register_form.style.display = "none";
+      register_toggle.style.display = "block";
+    }
+  };
+
+  function fn() { document.querySelector( "#footnotes" ).scrollIntoView({ behavior: 'smooth' }); };
+
+</script>
 
 </html>

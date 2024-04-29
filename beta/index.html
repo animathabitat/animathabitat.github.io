@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en, fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; script-src 'unsafe-inline'; style-src fonts.googleapis.com 'self';" />
+  <meta name="google" content="notranslate" />
+
+  <meta name="author" content="Dane Aleksander" />
+  <meta name="company" content="Animat Habitat" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Animat Habitat beta.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
+  <link rel="stylesheet" href="../inc/css/dark.light.unicorn.css" />
+
+  <link rel="icon" href="../inc/ico/animat.mark.1.1.72.light.png" />
+
+  <style>
+    html { background-color: #333; }
+
+  </style>
+
+</head>
+
+<body class="fadein single" id="dark">
+
+  <nav>
+    <ul class="page">
+      <li class="crumb dark logo"><a href="../" title="Animat Habitat"><img alt="Animat Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../inc/svg/animat.mark.1.1.1200.light.svg"/></a></li>
+      <li class="crumb active dark"><a><em>Beta</em></a></li>
+      <li class="right thin dark"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <article>
+
+      <div>
+        <h2 class="letterhead">Beta Programs<font class="fr">&nbsp;&#92;&nbsp;Programmes b&ecirc;ta</font></h2>
+        <p><em>Welcome to the beta programs at Animat Habitat.</em><font class="fr">&nbsp;&#92;&nbsp;<em>Bienvenue aux programmes b&ecirc;ta chez Animat Habitat.</em></font></p>
+
+        <h5 class="linebreak">Beta App on iOS, iPadOS and macOS<font class="fr">&nbsp;&#92;&nbsp;Application b&ecirc;ta sur iOS, iPadOS et macOS</font></h5>
+        <p>Add your name to the beta program waiting room for Apple iPhone, iPad or Mac users: <a href="app-ios-ipados-macos/" title="">Beta Room</a>.<font class="fr">&nbsp;&#92;&nbsp;Enregistrez votre nom &agrave; la file d'attente du programme b&ecirc;ta pour les utilisateurs Apple iPhone, iPad ou Mac.</font></p>
+
+        <h5 class="linebreak">Beta App on Android<font class="fr">&nbsp;&#92;&nbsp;Application b&ecirc;ta sur Android</font></h5>
+        <p>The beta program for Android users is to be determined.<font class="fr">&nbsp;&#92;&nbsp;Le programme b&ecirc;ta pour les utilisateurs d’Android reste &agrave; d&eacute;terminer.</font></p>
+
+        <!-- <h5 class="linebreak">Official Website<font class="fr">&nbsp;&#92;&nbsp;Site officiel</font></h5>
+        <p>Link to latest beta website.</p>
+        <p>Steps to submit feedback.</p> -->
+
+      </div>
+
+    </article><br class="clear">
+  </section>
+
+  <footer></footer>
+
+</body>
+
+<script>
+
+  var r = document.querySelector(':root'),
+      toggle_lang = 0;
+
+  r.style.setProperty('--fr', "none");
+
+  function toggle_language() {
+    if ( toggle_lang == 0 ) {
+      r.style.setProperty('--fr', "inline");
+      r.style.setProperty('--fr-en', "none");
+      toggle_lang = 1;
+    }
+    else {
+      r.style.setProperty('--fr', "none");
+      r.style.setProperty('--fr-en', "inline");
+      toggle_lang = 0;
+    }
+  };
+
+  function fn() { document.querySelector( "#footnotes" ).scrollIntoView({ behavior: 'smooth' }); };
+
+</script>
