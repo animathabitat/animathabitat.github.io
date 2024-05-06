@@ -32,11 +32,6 @@
       <li class="crumb dark logo"><a href="../../" title="Animat Habitat"><img alt="Animat Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/animat.mark.1.1.1200.light.svg"/></a></li>
       <li class="crumb active dark"><a><em>Concilium</em></a></li>
       <li class="right thin dark"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
-      <!-- <li class="right thin dark"><a class="title" onclick="toggle_currency();">
-        <font class="paypal-ca"><b class="overscore">CA</b>&nbsp;&#92;&nbsp;US</font>
-        <font class="paypal-us">CA&nbsp;&#92;&nbsp;<b class="overscore">US</b></font>
-        &nbsp;<font class="currency-symbol">&#36;</font>
-      </a></li> -->
     </ul>
   </nav>
 
@@ -125,14 +120,12 @@
 
 <script>
   var r = document.querySelector(':root'),
-      // toggle_curr = 0,
       toggle_lang = 0,
       s_council = document.getElementById("silver-council"),
       s_council_a = document.getElementById("silver-council-a");
 
   s_council.style.display = "none";
 
-  // r.style.setProperty('--us', "none");
   r.style.setProperty('--fr', "none");
 
   function silver_council() {
@@ -146,29 +139,10 @@
     }
   };
 
-  // function toggle_currency() {
-  //   if ( toggle_curr == 0 ) {
-  //     r.style.setProperty('--us', "inline");
-  //     r.style.setProperty('--ca', "none");
-  //     r.style.setProperty('--fr', "none");
-  //     r.style.setProperty('--fr-en', "inline");
-  //     toggle_curr = 1;
-  //     toggle_lang = 0;
-  //   }
-  //   else {
-  //     r.style.setProperty('--us', "none");
-  //     r.style.setProperty('--ca', "inline");
-  //     toggle_curr = 0;
-  //   }
-  // };
-
   function toggle_language() {
     if ( toggle_lang == 0 ) {
-      // r.style.setProperty('--us', "none");
-      // r.style.setProperty('--ca', "inline");
       r.style.setProperty('--fr', "inline");
       r.style.setProperty('--fr-en', "none");
-      // toggle_curr = 0;
       toggle_lang = 1;
     }
     else {
