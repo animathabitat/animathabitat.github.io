@@ -241,6 +241,24 @@ body {
   font-weight: normal;
   font-weight: 200;
 }
+h1, h4,
+b,
+nav {
+  font-weight: 500;
+}
+h2, h3, h5, h6,
+em, i,
+form, button, input, label, option, select, textarea,
+div[role="navigation"],
+a.button,
+.thin,
+.trade {
+  font-weight: 200;
+}
+form, button, input, label, option, select, textarea {
+  font-family: inherit;
+}
+
 body.easein {
   -webkit-animation: fadein 0.8s;
      -moz-animation: fadein 0.8s;
@@ -255,33 +273,21 @@ body.fadein {
        -o-animation: fadein 0.5s;
           animation: fadein 0.5s;
 }
-form, button, input, label, option, select, textarea {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 200;
-}
-h1, h4,
-b, strong,
-nav {
-  font-style: normal;
-  font-weight: 500;
-}
-h2, h3, h5, h6,
+
+h1, h2, h3, h4, h5, h6,
+b,
+nav, div[role="navigation"],
 form, button, input, label, option, select, textarea,
-th,
 a.button,
-div[role="navigation"],
 .thin,
 .trade {
   font-style: normal;
-  font-weight: 200;
 }
-em, i {
+i {
   font-style: italic;
   font-style: oblique;
-  font-weight: 200;
 }
-em em {
+i i {
   text-decoration: underline;
 }
 
@@ -356,7 +362,6 @@ sup {
 /* * 1.2  DECORATION */
 
 nav ul li,
-th,
 .title,
 h5.woo-title {
   text-transform: uppercase;
@@ -419,7 +424,6 @@ button,
 input,
 select,
 textarea,
-td, th,
 .text-left {
   text-align: left;
 }
@@ -1028,7 +1032,7 @@ button,
 input[type="submit"],
 .white,
 .dark,
-#dark nav em,
+#dark nav i,
 #dark h1,
 #dark h3,
 #dark h2.color,
@@ -1080,8 +1084,8 @@ div.scene-zero:hover, div.dark:hover {
   border-color: var(--light-iii);
 }
 #dark li.btn > a:hover,
-#dark nav .page li.active em,
-#dark nav .page li.scene em {
+#dark nav .page li.active i,
+#dark nav .page li.scene i {
   color: var(--dark-iii);
 }
 #dark li.btn a:after,
@@ -1121,7 +1125,7 @@ nav ul li.dark {
 #light a.checkout-button:hover,
 #light button,
 #light input[type="submit"],
-#light nav em,
+#light nav i,
 #light h1,
 #light h3,
 #light h2.color,
@@ -1180,7 +1184,7 @@ nav ul li.light {
 
 /* ****** 6.2.1  DUNE [ONE] */
 
-#scene-one nav em,
+#scene-one nav i,
 #scene-one a.color,
 #scene-one b.color,
 #scene-one div[role="navigation"] a,
@@ -1195,7 +1199,7 @@ li.scene-one a:active,
 #scene-one li.scene-one a {
   color: var(--dune);
 }
-#scene-one nav em,
+#scene-one nav i,
 #scene-one a.color,
 #scene-one b.color,
 #scene-one div[role="navigation"] a,
@@ -1256,8 +1260,8 @@ div.scene-one:hover {
   border-color: var(--sand-iii);
 }
 #scene-one li.btn a:hover,
-#scene-one nav .page li.active em,
-#scene-one nav .page li.scene em {
+#scene-one nav .page li.active i,
+#scene-one nav .page li.scene i {
   color: var(--dark-ii) !important;
 }
 #scene-one li.btn a:after,
@@ -1291,7 +1295,7 @@ nav ul li.scene-one {
 
 /* ****** 6.2.2  TAIGA [TWO] */
 
-#scene-two nav em,
+#scene-two nav i,
 #scene-two a.color,
 #scene-two b.color,
 #scene-two div[role="navigation"] a,
@@ -1349,8 +1353,8 @@ div.scene-two:hover {
   border: var(--taiga) 2em solid;
 }
 #scene-two li.btn a:hover,
-#scene-two nav .page li.active em,
-#scene-two nav .page li.scene em {
+#scene-two nav .page li.active i,
+#scene-two nav .page li.scene i {
   color: var(--dark) !important;
 }
 #scene-two li.btn a:after,
@@ -1381,7 +1385,7 @@ nav ul li.scene-two,
 
 /* ****** 6.2.3  GALCIER [THREE] */
 
-#scene-three nav em,
+#scene-three nav i,
 #scene-three a.color,
 #scene-three b.color,
 #scene-three div[role="navigation"] a,
@@ -1439,8 +1443,8 @@ div.scene-three:hover {
   border: var(--glacier) 2em solid;
 }
 #scene-three li.btn a:hover,
-#scene-three nav .page li.active em,
-#scene-three nav .page li.scene em {
+#scene-three nav .page li.active i,
+#scene-three nav .page li.scene i {
   color: var(--dark-iv) !important;
 }
 #scene-three li.btn a:after,
@@ -2170,7 +2174,7 @@ and ( max-width: 320px ) {
     font-size: calc( 7em / 6 );
   }
 
-  input,  button, select {
+  input, button, select {
     height: 2em;
   }
 
