@@ -247,7 +247,7 @@ nav {
   font-weight: 500;
 }
 h2, h3, h5, h6,
-em, i,
+i,
 form, button, input, label, option, select, textarea,
 div[role="navigation"],
 a.button,
@@ -1025,14 +1025,14 @@ a,
 a:hover p,
 a:hover .fr-en,
 h1 a:hover,
-li.dark > a:active,
-li.dark > a:hover,
 a.checkout-button:hover,
 button,
 input[type="submit"],
+li.dark:not(.active) > a,
+li.dark:not(.active) > a:hover,
+.dark:not(.active),
 .white,
-.dark,
-#dark nav i,
+#dark nav li:not(.active) i,
 #dark h1,
 #dark h3,
 #dark h2.color,
@@ -1184,7 +1184,10 @@ nav ul li.light {
 
 /* ****** 6.2.1  DUNE [ONE] */
 
-#scene-one nav i,
+.lettermark.scene-one:hover,
+.scene-one:not(.active),
+#scene-one li.scene-one:not(.active) > a
+#scene-one nav li:not(.active) i,
 #scene-one a.color,
 #scene-one b.color,
 #scene-one div[role="navigation"] a,
@@ -1192,26 +1195,7 @@ nav ul li.light {
 #scene-one h3,
 #scene-one h2.color,
 #scene-one h4.color,
-#scene-one font.color,
-.scene-one,
-.lettermark.scene-one:hover,
-li.scene-one a:active,
-#scene-one li.scene-one a {
-  color: var(--dune);
-}
-#scene-one nav i,
-#scene-one a.color,
-#scene-one b.color,
-#scene-one div[role="navigation"] a,
-#scene-one h1,
-#scene-one h3,
-#scene-one h2.color,
-#scene-one h4.color,
-#scene-one font.color,
-.scene-one,
-.lettermark.scene-one:hover,
-li.scene-one a:active,
-#scene-one li.scene-one a {
+#scene-one font.color {
   color: var(--dune);
 }
 #scene-one a.color:hover,
