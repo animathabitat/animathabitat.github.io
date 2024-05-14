@@ -151,6 +151,7 @@ a,
 abbr {
   cursor: pointer;
   text-decoration: none;
+  -webkit-appearance: none;
 }
 .button,
 .lettermark {
