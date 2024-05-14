@@ -446,7 +446,6 @@ nav ul,
 footer {
   margin: 0 auto;
   width: 61.8em;
-  /* width: calc( 640em / 9 ); */
 }
 nav ul {
   display: block;
@@ -457,14 +456,7 @@ nav ul {
 section {
   margin: 0 auto;
   width: 76.4em;
-  /* width: calc( 800em / 9 ); */
   z-index: 1;
-}
-article {
-  /* width: 61.8%; */
-}
-aside {
-  /* width: 38.2%; */
 }
 .single nav ul,
 .single footer > div:not(.diptych),
@@ -473,7 +465,6 @@ section.single,
 footer.single {
   margin: 0 auto;
   width: 38.2em;
-  /* width: calc( 160em / 3 ); */
 }
 
 button {
@@ -613,6 +604,7 @@ br.clear {
 }
 .clear {
   color: inherit;
+  margin: 0 !important;
   padding: 0 !important;
 }
 .clear-top {
@@ -730,7 +722,7 @@ div.ptych-bottom {
   margin: auto 0 0;
 }
 
-div.indent-left-line > div,
+div.line-left > div,
 div.keeper-entries > div.keeper-entry {
   padding-right: 0;
   padding-top: 0;
@@ -1015,6 +1007,13 @@ li.product-thumbnail a:hover img,
 .product-image:hover {
   border: var(--white) thin solid;
 }
+.matte-lightbox {
+  border: var(--dark-ii) 2em solid;
+  border-bottom: 0 !important;
+}
+.matte-fold {
+  border-bottom: 0 !important;
+}
 
 div.bg-white {
   background: var(--white);
@@ -1208,6 +1207,7 @@ div.light:hover {
   color: var(--sand);
 }
 #scene-one h3:not(.subtitle) .fr,
+#scene-one h5.color .fr,
 #scene-one font.color .fr {
   color: var(--sand-ii);
 }
@@ -1251,7 +1251,7 @@ div.light:hover {
   border: var(--dune) 2em solid;
 }
 #scene-one .matte-fold:hover,
-#scene-one div.indent-left-line > div,
+#scene-one div.line-left > div,
 #scene-one div.keeper-entries > div.keeper-entry {
   border-color: var(--sand-iii);
 }
@@ -1266,17 +1266,19 @@ div.light:hover {
 #dark font.color-one {
   color: var(--sand);
 }
+/* #light .color-one .fr, */
+#dark .color-one .fr {
+  color: var(--sand-ii);
+}
+
 /* #light nav li.btn.color-one:before, */
 #dark nav li.btn.color-one:before {
   background: var(--dune);
 }
+
 /* #light nav li.color-one, */
 #dark nav li.color-one {
   border-color: var(--dune);
-}
-/* #light .color-one .fr, */
-#dark .color-one .fr {
-  color: var(--sand-ii);
 }
 
 
@@ -1286,11 +1288,7 @@ a:hover div.bg-one {
 div.scene-one {
   background: var(--sand-iv);
 }
-div.scene-one:hover {
-  background: var(--sand-iii);
-}
-
-
+div.scene-one:hover,
 .lettermark.scene-one:before {
   background: var(--sand-iii);
 }
@@ -1306,35 +1304,39 @@ div.scene-one:hover {
 
 /* ****** ** ** TAIGA [TWO] */
 
-/* #scene-two nav i,
+#scene-two nav li:not(.active) a,
+#scene-two div[role="navigation"] a,
 #scene-two a.color,
 #scene-two b.color,
-#scene-two div[role="navigation"] a,
 #scene-two h1,
 #scene-two h3,
 #scene-two h2.color,
 #scene-two h4.color,
 #scene-two h5.color,
-#scene-two font.color,
-.scene-two,
-.lettermark.scene-two:hover,
-li.scene-two a:active,
-#scene-two li.scene-two a {
+#scene-two font.color {
   color: var(--taiga);
 }
+#scene-two div[role="navigation"] a:hover,
 #scene-two a.color:hover,
 #scene-two a:hover .color,
-#scene-two div[role="navigation"] a:hover,
-a.scene-two:hover,
-a:hover .scene-two,
-li.scene-two a {
+#scene-two li.color a {
   color: var(--pine);
 }
+#scene-two h3:not(.subtitle) .fr,
+#scene-two h5.color .fr,
+#scene-two font.color .fr {
+  color: var(--pine-ii);
+}
+#scene-two li.btn a:hover,
+#scene-two nav ul.page li.active a,
+#scene-two nav ul.page li.scene a {
+  color: var(--dark);
+}
+
 #scene-two,
 #scene-two nav,
 #scene-two article,
-#scene-two .color div.color,
-a:hover div.bg-two {
+#scene-two .color div.color {
   background: var(--dark);
 }
 #scene-two div.color,
@@ -1343,14 +1345,18 @@ a:hover div.bg-two {
 }
 #scene-two button,
 #scene-two input[type="submit"],
-#scene-two a:hover > div.color,
-div.scene-two {
+#scene-two a:hover > div.color {
   background: var(--pine-iv);
 }
 #scene-two button:hover,
-#scene-two input[type="submit"]:hover,
-div.scene-two:hover {
+#scene-two input[type="submit"]:hover {
   background: var(--pine-iii);
+}
+#scene-two li.btn a:after,
+#scene-two .btn.color:before,
+#scene-two nav ul.page li.active a,
+#scene-two nav ul.page li.scene {
+  background: var(--taiga);
 }
 
 #scene-two .trim,
@@ -1360,34 +1366,55 @@ div.scene-two:hover {
 #scene-two .matte {
   border: var(--taiga) 2em solid;
 }
-#scene-two li.btn a:hover,
-#scene-two nav ul.page li.active a,
-#scene-two nav ul.page li.scene a {
-  color: var(--dark) !important;
+#scene-two .matte-fold:hover,
+#scene-two div.line-left > div {
+  border-color: var(--pine-iii);
 }
-#scene-two li.btn a:after,
-#dark .scene-two.btn:before,
-#scene-two .scene-two.btn:before,
-#scene-two nav ul.page li.active a,
-#scene-two nav ul.page li.scene  {
-  background: var(--taiga);
-}
-nav li.scene-two,
-#scene-two div.indent-left-line > div {
+#scene-two nav li.color {
   border-color: var(--taiga);
 }
-.lettermark.scene-two:before {
-  background: var(--pine-iii);
+
+
+/* #light nav li.color-two a, */
+/* #light font.color-two, */
+#dark nav li.color-two a,
+#dark font.color-two {
+  color: var(--pine);
 }
-#scene-two .scene-two .fr,
-#scene-two h2.color .fr,
-#scene-two h3.color .fr,
-#scene-two h4.color .fr {
+/* #light .color-two .fr, */
+#dark .color-two .fr {
   color: var(--pine-ii);
 }
 
+/* #light nav li.btn.color-two:before, */
+#dark nav li.btn.color-two:before {
+  background: var(--taiga);
+}
+
+/* #light nav li.color-two, */
+#dark nav li.color-two {
+  border-color: var(--taiga);
+}
+
+
+a:hover div.bg-two {
+  background: var(--dark);
+}
+div.scene-two {
+  background: var(--pine-iv);
+}
+div.scene-two:hover,
+.lettermark.scene-two:before {
+  background: var(--pine-iii);
+}
+.lettermark.scene-two:hover,
+li.scene-two a:active {
+  color: var(--taiga);
+}
+
+
 #scene-two::-webkit-scrollbar-track { background: var(--dark); }
-#scene-two::-webkit-scrollbar-thumb { background: var(--taiga); } */
+#scene-two::-webkit-scrollbar-thumb { background: var(--taiga); }
 
 /* ****** ** *** GALCIER [THREE] */
 
@@ -1473,15 +1500,7 @@ nav li.scene-three {
 #scene-three::-webkit-scrollbar-track { background: var(--dark-iv); }
 #scene-three::-webkit-scrollbar-thumb { background: var(--glacier); }
 
-
-.matte-lightbox {
-  border: var(--dark-ii) 2em solid;
-  border-bottom: 0 !important;
-}
-
-.matte-fold {
-  border-bottom: 0 !important;
-} */
+*/
 
 /* ********** 0  MEDIA QUERIES */
 
@@ -1753,9 +1772,6 @@ and ( max-width: 960px ) {
 
   ul.type-product > li {
     padding: 1em 0.5em;
-  }
-  section.product {
-    /* padding: 1em 0 0; */
   }
 
   h5.woo-title {
