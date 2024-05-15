@@ -5,7 +5,7 @@
  Author:       Dane Aleksander
  Author URI:   https://danealeksander.github.io/
  Template:     twentythirteen
- Version:      2.1.2
+ Version:      2.1.18
 */
 
 /*
@@ -33,11 +33,10 @@
  * - @queries
  */
 
-
-
 /* : ROOT */
 
 :root {
+
   --fr: "none";
   --fr-en: "inline";
 
@@ -106,12 +105,6 @@
   margin: 0;
   padding: 0;
 }
-html,
-.active a,
-.scene a,
-ul.periwinkle-list li a {
-  cursor: default;
-}
 body, nav, header,
 article, aside,
 button, input, select, textarea {
@@ -148,19 +141,6 @@ blockquote:before, blockquote:after, q:before, q:after {
 ol, ul, li {
   list-style: none;
 }
-h1, h2, h3, h4, h5, h6 {
-  cursor: inherit;
-}
-a,
-abbr {
-  cursor: pointer;
-  text-decoration: none;
-  -webkit-appearance: none;
-}
-.button,
-.lettermark {
-  cursor: pointer;
-}
 img {
   -ms-interpolation-mode: bicubic;
   border: 0;
@@ -184,18 +164,102 @@ span {
   background: none;
 }
 
-[hidden],
-.feedback-text,
-.screen-reader-text {
-  display: none;
-}
+/* - * INTERFACE */
 
 ::-webkit-scrollbar {
   height: 0.5em;
   width: 0.5em;
 }
 
-/* - * SET */
+html,
+.active a,
+.scene a {
+  cursor: default;
+}
+a,
+button, input,
+.button,
+.lettermark {
+  cursor: pointer;
+}
+h1, h2, h3, h4, h5, h6 {
+  cursor: inherit;
+}
+
+button, input {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+      -ms-appearance: button;
+       -o-appearance: button;
+          appearance: button;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+      -ms-appearance: none;
+       -o-appearance: none;
+          appearance: none;
+}
+
+button, input,
+/* nav li, */
+nav li a {
+  display: inline-block;
+}
+
+button,
+nav li.btn {
+  overflow: hidden;
+}
+
+/* - ** LANGUAGE */
+
+.fr {
+  display: var(--fr);
+}
+.fr-en {
+  display: var(--fr-en);
+}
+
+/* - *** CURRENCY */
+
+.paypal-ca {
+  display: var(--ca);
+}
+.paypal-us {
+  display: var(--us);
+}
+
+/* - **** SET */
+
+.break-cut {
+  display: inherit;
+}
+[hidden],
+.hidden,
+.feedback-text,
+.screen-reader-text,
+.toggle-form-break,
+.toggle-off,
+/* input[type="checkbox"]:empty ~ div, */
+div.keeper-entry {
+  display: none;
+}
+input[type="checkbox"]:checked ~ div,
+.visible {
+  display: block;
+}
+.hidden {
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
+  transition: opacity 4s ease-out;
+}
 
 @keyframes fadein {
     0% { opacity: 0; }
@@ -299,7 +363,6 @@ i {
 
 h1 {
   font-size: 8em;
-  /* line-height: normal; */
 }
 h2 {
   font-size: 3em;
@@ -308,34 +371,21 @@ h3,
 .text-quote {
   font-size: 2em;
 }
-
-ul.periwinkle-list li a {
-  font-size: calc( 3em / 2 );
-}
-
-nav,
 h4,
-div[role="navigation"] a,
-button, input, textarea,
-select.billing, select.shipping,
-ul.periwinkle-list li {
+nav, div[role="navigation"] a,
+button, input, textarea {
   font-size: calc( 4em / 3 );
 }
 h5,
 select {
   font-size: calc( 7em / 6 );
 }
+h6,
 h5.author,
-h5.woo-description,
-h5.woo-tag,
-h5.woo-category,
-h5.woo-dimension,
-h5.woo-price-amount,
-h5.woo-publication,
-h5.woo-sku {
+h5.product-description,
+h5.product-tag {
   font-size: 1em;
 }
-h6,
 .small {
   font-size: calc( 7em / 9 );
 }
@@ -350,7 +400,9 @@ h1 .letterspace,
 h4 .letterspace {
   letter-spacing: -0.15em;
 }
+
 sup {
+  /* line-height: normal; */
   line-height: 0.75em;
 }
 .text-quote {
@@ -364,26 +416,28 @@ sup {
 /* * ** TEXT-DECORATION */
 
 nav li,
-.title,
-h5.woo-title {
+h5.product-title,
+.title {
   text-transform: uppercase;
 }
 nav ul .thin {
   text-transform: lowercase;
 }
 
+a,
+p a.button,
+p a.title {
+  text-decoration: none;
+  -webkit-appearance: none;
+}
+div[role="navigation"] a,
+.overscore {
+  text-decoration: overline;
+}
 p a,
 i i,
 .underscore {
   text-decoration: underline;
-}
-p a.button,
-p a.title {
-  text-decoration: none;
-}
-.overscore,
-div[role="navigation"] a {
-  text-decoration: overline;
 }
 .score {
   text-decoration: line-through;
@@ -416,20 +470,17 @@ ul.outside li {
 
 /* * *** TEXT-ALIGNMENT */
 
-.text-center,
-h5.woo-title,
-ul.type-product {
+h5.product-title,
+ul.product,
+.text-center {
   text-align: center;
 }
-button,
-input,
-select,
-textarea,
+button, input, select, textarea,
 .text-left {
   text-align: left;
 }
-.text-right,
-div[role="navigation"] a[rel="next"] {
+div[role="navigation"] a[rel="next"],
+.text-right {
   text-align: right;
 }
 
@@ -467,38 +518,26 @@ footer.single {
   width: 38.2em;
 }
 
-button {
-  overflow: hidden;
-}
-button,
-input,
-select {
+button, input, select {
   height: 2em;
 }
 textarea {
   height: 4em;
 }
 
-option {
-  padding: var(--gutter) 0;
-}
-
 /* ** * NAVIGATION */
 
 nav li {
   border-top: 0.27em solid;
-  display: inline-block;
 }
 nav li.thin {
   border-top: 0;
   margin-top: 0.27em;
 }
 nav li.btn {
-  overflow: hidden;
   position: relative;
 }
 nav li a {
-  display: inline-block;
   padding: 0.1em var(--gutter);
 }
 nav li.logo a {
@@ -535,7 +574,7 @@ article,
 .left,
 nav li.crumb,
 div[role="navigation"] a[rel="prev"],
-ul.type-product > li,
+ul.product > li,
 input[type="checkbox"].input-checkbox,
 input[type="radio"].input-radio {
   float: left;
@@ -546,14 +585,14 @@ div[role="navigation"] a[rel="next"] {
   float: right;
 }
 .left, .right,
-ul.type-product > li,
-input[type="checkbox"].input-checkbox,
-input[type="radio"].input-radio {
+ul.product > li,
+input[type="checkbox"],
+input[type="radio"] {
   display: inline;
 }
 
-.auto,
-pre.thin {
+pre.thin,
+.auto {
   width: auto;
 }
 
@@ -564,16 +603,10 @@ input[type="button"],
 input[type="checkbox"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-      -ms-appearance: button;
-       -o-appearance: button;
-          appearance: button;
-  cursor: pointer;
-  display: inline-block;
   outline: none;
 }
-button:hover, button:focus,
+button:hover,
+button:focus,
 input[type="button"]:hover,
 input[type="checkbox"]:hover,
 input[type="reset"]:hover,
@@ -585,18 +618,32 @@ input[type="submit"]:focus {
   outline: none;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+  height: 1em;
+  width: 1em;
+}
+
+button, input, select, textarea {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+option {
+  padding: var(--gutter) 0;
+}
+
 
 
 /* *** CLASS */
-
-.break-cut {
-  display: inherit;
-}
 
 .center {
   display: block;
   margin: 0 auto;
   position: relative;
+}
+
+.clear article {
+  position: static;
 }
 
 br.clear {
@@ -615,32 +662,6 @@ br.clear {
 }
 .clear-left {
   padding-left: 0 !important;
-}
-.clear article {
-  position: static;
-}
-
-.fr {
-  display: var(--fr);
-}
-.fr-en {
-  display: var(--fr-en);
-}
-
-.hidden {
-  display: none;
-  opacity: 0;
-}
-.visible {
-  display: block;
-  opacity: 1;
-  transition: opacity 4s ease-out;
-}
-
-.toggle-form-break,
-.toggle-off,
-div.keeper-entry {
-  display: none;
 }
 
 /* *** * GRID */
@@ -731,45 +752,6 @@ div.keeper-entries > div.keeper-entry {
   border-left: 0.382em solid;
 }
 
-li.product-thumbnail {
-  display: grid;
-}
-li.product-thumbnail div {
-  align-items: flex-end;
-  display: flex;
-  height: 8em;
-}
-li.product-thumbnail div img {
-  max-height: calc(8em / 0.9);
-  max-width: 100%;
-  width: auto;
-  margin: auto auto 0;
-}
-
-div.preview {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 100;
-}
-div.preview a {
-  align-items: center;
-  display: flex;
-  /* height: 50vh; */
-}
-div.preview img {
-  max-height: 87.5vh;
-  max-width: 100%;
-  width: auto;
-  /* width: 100%; */
-  margin: 0 auto;
-}
-
 /* *** ** GUTTER */
 
 section.product {
@@ -777,7 +759,7 @@ section.product {
 }
 
 div,
-ul.type-product > li {
+ul.product > li {
   padding: var(--gutter);
 }
 
@@ -785,8 +767,7 @@ div.hidden {
   padding: 0;
 }
 
-body > div.clear.color,
-ul.periwinkle-list li {
+body > div.clear.color {
   margin-top: var(--gutter);
 }
 
@@ -811,19 +792,8 @@ h1 {
 h3 {
   padding: 0.165em 0;
 }
-h5.woo-title {
+h5.product-title {
   padding: 1em 1em 0 1em;
-}
-h5.woo-article-title {
-  padding: 0.5em 0;
-}
-
-button,
-input,
-select,
-textarea {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
 }
 
 .letterhead,
@@ -878,39 +848,6 @@ li.lineend,
   padding: 0 0 var(--gutter);
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  appearance: none;
-  margin: 0;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-input[type="checkbox"].input-checkbox,
-input[type="radio"].input-radio {
-  margin: 0 0.5em 0 0;
-  height: 1em;
-  width: 1em;
-}
-
-input[type="checkbox"]:empty ~ div.shipping_address {
-  display: none;
-}
-
-input[type="checkbox"]:checked ~ div.shipping_address {
-  display: block;
-}
-
-.paypal-ca {
-  display: var(--ca);
-}
-.paypal-us {
-  display: var(--us);
-}
-
 
 
 /* **** MEDIA */
@@ -941,6 +878,62 @@ a.project-thumbnail img {
 }
 a.project-thumbnail:hover img {
   filter: saturate(1);
+}
+
+li.product-thumbnail {
+  display: grid;
+}
+li.product-thumbnail div {
+  align-items: flex-end;
+  display: flex;
+  height: 8em;
+}
+li.product-thumbnail div img {
+  max-height: calc(8em / 0.9);
+  width: auto;
+  margin: auto auto 0;
+}
+
+div.preview {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+div.preview a {
+  align-items: center;
+  display: flex;
+  /* height: 50vh; */
+}
+div.preview img {
+  max-height: 87.5vh;
+  max-width: 100%;
+  width: auto;
+  /* width: 100%; */
+  margin: 0 auto;
+}
+
+pre.thin,
+li.product-thumbnail a img,
+li.product-thumbnail a:hover img,
+.product-image,
+.product-image:hover,
+.matte-thin {
+  border: thin solid;
+}
+.matte {
+  border: 2em solid;
+}
+.matte-preview {
+  border: var(--gutter) solid;
+}
+.matte-fold {
+  border-bottom: 0 !important;
 }
 
 /* **** ** VIDEO */
@@ -984,16 +977,9 @@ nav li:not(.active) > a,
   color: var(--light-ii);
 }
 
-.trim,
+li.product-thumbnail a img,
 .product-image,
-.product-image:hover,
-li.product-thumbnail a img,
-li.product-thumbnail a:hover img {
-  border: thin solid;
-}
-.trim,
-li.product-thumbnail a img,
-.product-image  {
+.matte-thin  {
   border-color: var(--light);
 }
 nav li,
@@ -1001,107 +987,19 @@ li.product-thumbnail a:hover img,
 .product-image:hover {
   border-color: var(--white);
 }
-
 .matte-preview {
-  border: var(--dark-ii) 1em solid;
-}
-.matte-fold {
-  border-bottom: 0 !important;
+  border-color: var(--dark-ii);
 }
 
-div.bg-white {
-  background: var(--white);
-}
 .lettermark:before {
-  background: var(--light);
-}
-a:hover div.bg-two {
-  background: var(--dark);
-}
-a:hover div.bg-one {
-  background: var(--dark-ii);
-}
-a:hover div.bg-three {
-  background: var(--dark-iv);
+  background-color: var(--light);
 }
 
-/* ****** * * DARK [ZERO] */
-
-a,
-a:hover p,
-a:hover .fr-en,
-nav li:not(.active) > a:hover,
-button,
-input[type="submit"],
-.white,
-#dark h1,
-#dark h1:hover a,
-#dark h3,
-#dark h2.color,
-#dark h4.color,
-#dark h5.color,
-#dark font.color {
-  color: var(--white);
-}
-#dark li.btn:hover a,
-#dark nav ul.page li.active a,
-#dark nav ul.page li.scene a {
-  color: var(--dark-iii);
-}
-
-#dark,
-#dark nav,
-#dark article,
-#dark aside,
-#dark .color div.color {
-  background: var(--dark-iii);
-}
-#dark section.color,
-#dark img.color,
-#dark div.color,
-#dark aside.color {
-  background: var(--light-v);
-}
-#dark button,
-#dark input[type="submit"],
-#dark a:hover > div.color{
-  background: var(--light-iv);
-}
-#dark button:hover,
-#dark input[type="submit"]:hover {
-  background: var(--light-iii);
-}
-#dark li.btn a:after,
-#dark .btn:before,
-#dark .home li.logo,
-#dark ul.page li.active,
-#dark ul.page li.scene {
-  background: var(--white);
-}
-
-#dark pre.thin {
-  border: var(--light-v) thin solid;
-}
-#dark .matte {
-  border: var(--light-iv) 2em solid;
-}
-#dark .matte-fold:hover {
-  border-color: var(--light-iii);
-}
-
-#dark::-webkit-scrollbar-track { background: var(--dark-iii); }
-#dark::-webkit-scrollbar-thumb { background: var(--white); }
-
-/* ****** * ** LIGHT */
-
-/*
+/* ****** * * LIGHT */
 
 #light,
 #light font.clear {
   color: var(--dark-ii);
-}
-#light li.product-thumbnail img {
-  border: var(--dark-ii) thin solid;
 }
 #light .fr {
   color: var(--dark-iii);
@@ -1124,34 +1022,38 @@ input[type="submit"],
 #light div[role="navigation"] a:hover {
   color: var(--dark-ii-a);
 }
+
 #light,
 #light nav,
 #light article,
 #light aside,
 #light .color div.color {
-  background: var(--white);
+  background-color: var(--white);
 }
 #light section.color,
 #light img.color,
 #light div.color,
 #light aside.color {
-  background: var(--light);
+  background-color: var(--light);
 }
 #light button,
 #light input[type="submit"],
 #light a:hover > div.color {
-  background: var(--light-ii);
+  background-color: var(--light-ii);
 }
 #light button:hover,
 #light input[type="submit"]:hover, {
-  background: var(--light-iii);
+  background-color: var(--light-iii);
 }
 
 #light pre.thin {
-  border: var(--light) thin solid;
+  border-color: var(--light);
+}
+#light li.product-thumbnail img {
+  border-color: var(--dark-ii);
 }
 
-*/
+
 
 /*
 
@@ -1167,19 +1069,88 @@ a:hover .light {
   color: var(--dark-a);
 }
 div.light {
-  background: var(--light-ii);
+  background-color: var(--light-ii);
 }
 div.light:hover {
-  background: var(--light-iii);
+  background-color: var(--light-iii);
 }
 .lettermark.light:before {
-  background: var(--dark-ii-a);
+  background-color: var(--dark-ii-a);
 }
 
 */
 
-/* #light::-webkit-scrollbar-track { background: var(--white); } */
-/* #light::-webkit-scrollbar-thumb { background: var(--dark-a); } */
+#light::-webkit-scrollbar-track { background: var(--white); }
+#light::-webkit-scrollbar-thumb { background: var(--dark-a); }
+
+/* ****** * ** DARK [ZERO] */
+
+a,
+a:hover p,
+a:hover .fr-en,
+nav li:not(.active) > a:hover,
+button,
+input[type="submit"],
+.white,
+#dark h1,
+#dark h1:hover a,
+#dark h3,
+#dark h2.color,
+#dark h4.color,
+#dark h5.color,
+#dark font.color {
+  color: var(--white);
+}
+#dark nav li.btn:hover a,
+#dark nav ul.page li.active a,
+#dark nav ul.page li.scene a {
+  color: var(--dark-iii);
+}
+
+#dark,
+#dark nav,
+#dark article,
+#dark aside,
+#dark .color div.color {
+  background-color: var(--dark-iii);
+}
+#dark section.color,
+#dark img.color,
+#dark div.color,
+#dark aside.color {
+  background-color: var(--light-v);
+}
+#dark button,
+#dark input[type="submit"],
+#dark a:hover > div.color{
+  background-color: var(--light-iv);
+}
+#dark button:hover,
+#dark input[type="submit"]:hover {
+  background-color: var(--light-iii);
+}
+#dark nav li.btn a:after,
+#dark nav li.btn:before,
+#dark .home li.logo,
+#dark ul.page li.active,
+#dark ul.page li.scene,
+div.bg-white {
+  background-color: var(--white);
+}
+
+#dark pre.thin {
+  border-color: var(--light-v);
+}
+#dark .matte {
+  border-color: var(--light-iv);
+}
+#dark .matte-fold:hover {
+  border-color: var(--light-iii);
+}
+
+#dark::-webkit-scrollbar-track { background: var(--dark-iii); }
+#dark::-webkit-scrollbar-thumb { background: var(--white); }
+
 
 
 /* #light nav li.color-one a, */
@@ -1195,12 +1166,16 @@ div.light:hover {
 
 /* #light nav li.btn.color-one:before, */
 #dark nav li.btn.color-one:before {
-  background: var(--dune);
+  background-color: var(--dune);
 }
 
 /* #light nav li.color-one, */
 #dark nav li.color-one {
   border-color: var(--dune);
+}
+
+a:hover div.bg-one {
+  background-color: var(--dark-ii);
 }
 
 
@@ -1217,12 +1192,16 @@ div.light:hover {
 
 /* #light nav li.btn.color-two:before, */
 #dark nav li.btn.color-two:before {
-  background: var(--taiga);
+  background-color: var(--taiga);
 }
 
 /* #light nav li.color-two, */
 #dark nav li.color-two {
   border-color: var(--taiga);
+}
+
+a:hover div.bg-two {
+  background-color: var(--dark);
 }
 
 
@@ -1239,13 +1218,18 @@ div.light:hover {
 
 /* #light nav li.btn.color-three:before, */
 #dark nav li.btn.color-three:before {
-  background: var(--glacier);
+  background-color: var(--glacier);
 }
 
 /* #light nav li.color-three, */
 #dark nav li.color-three {
   border-color: var(--glacier);
 }
+
+a:hover div.bg-three {
+  background-color: var(--dark-iv);
+}
+
 
 
 /* ****** ** * DUNE [ONE] */
@@ -1283,34 +1267,34 @@ div.light:hover {
 #scene-one nav,
 #scene-one article,
 #scene-one .color div.color {
-  background: var(--dark-ii);
+  background-color: var(--dark-ii);
 }
 #scene-one div.color,
 #scene-one #scene {
-  background: var(--sand-v);
+  background-color: var(--sand-v);
 }
 #scene-one button,
 #scene-one input[type="submit"],
 #scene-one a:hover > div.color {
-  background: var(--sand-iv);
+  background-color: var(--sand-iv);
 }
 #scene-one button:hover,
 #scene-one input[type="submit"]:hover {
-  background: var(--sand-iii);
+  background-color: var(--sand-iii);
 }
 #scene-one li.btn a:after,
-#scene-one .btn.color:before,
+#scene-one li.btn.color:before,
 #scene-one nav ul.page li.active a,
 #scene-one nav ul.page li.scene {
-  background: var(--dune);
+  background-color: var(--dune);
 }
 
-#scene-one .trim,
-#scene-one pre.thin {
-  border: var(--sand-v) thin solid;
+#scene-one pre.thin,
+#scene-one .matte-thin {
+  border-color: var(--sand-v);
 }
 #scene-one .matte {
-  border: var(--dune) 2em solid;
+  border-color: var(--dune);
 }
 #scene-one .matte-fold:hover,
 #scene-one div.line-left > div,
@@ -1359,34 +1343,34 @@ div.light:hover {
 #scene-two nav,
 #scene-two article,
 #scene-two .color div.color {
-  background: var(--dark);
+  background-color: var(--dark);
 }
 #scene-two div.color,
 #scene-two #scene {
-  background: var(--pine-v);
+  background-color: var(--pine-v);
 }
 #scene-two button,
 #scene-two input[type="submit"],
 #scene-two a:hover > div.color {
-  background: var(--pine-iv);
+  background-color: var(--pine-iv);
 }
 #scene-two button:hover,
 #scene-two input[type="submit"]:hover {
-  background: var(--pine-iii);
+  background-color: var(--pine-iii);
 }
 #scene-two li.btn a:after,
-#scene-two .btn.color:before,
+#scene-two li.btn.color:before,
 #scene-two nav ul.page li.active a,
 #scene-two nav ul.page li.scene {
-  background: var(--taiga);
+  background-color: var(--taiga);
 }
 
-#scene-two .trim,
-#scene-two pre.thin {
-  border: var(--pine-v) thin solid;
+#scene-two pre.thin,
+#scene-two .matte-thin {
+  border-color: var(--pine-v);
 }
 #scene-two .matte {
-  border: var(--taiga) 2em solid;
+  border-color: var(--taiga);
 }
 #scene-two .matte-fold:hover,
 #scene-two div.line-left > div {
@@ -1434,34 +1418,34 @@ div.light:hover {
 #scene-three nav,
 #scene-three article,
 #scene-three .color div.color {
-  background: var(--dark-iv);
+  background-color: var(--dark-iv);
 }
 #scene-three div.color,
 #scene-three #scene {
-  background: var(--water-v);
+  background-color: var(--water-v);
 }
 #scene-three button,
 #scene-three input[type="submit"],
 #scene-three a:hover > div.color {
-  background: var(--water-iv);
+  background-color: var(--water-iv);
 }
 #scene-three button:hover,
 #scene-three input[type="submit"]:hover {
-  background: var(--water-iii);
+  background-color: var(--water-iii);
 }
 #scene-three li.btn a:after,
-#scene-three .btn.color:before,
+#scene-three li.btn.color:before,
 #scene-three nav ul.page li.active a,
 #scene-three nav ul.page li.scene {
-  background: var(--glacier);
+  background-color: var(--glacier);
 }
 
-#scene-three .trim,
-#scene-three pre.thin {
-  border: var(--water-v) thin solid;
+#scene-three pre.thin,
+#scene-three .matte-thin {
+  border-color: var(--water-v);
 }
 #scene-three .matte {
-  border: var(--glacier) 2em solid;
+  border-color: var(--glacier);
 }
 #scene-three .matte-fold:hover,
 #scene-three div.line-left > div,
@@ -1477,25 +1461,19 @@ div.light:hover {
 
 
 
-/* ********** 0  MEDIA QUERIES */
+/* - MEDIA QUERIES */
 
-
-
-/* **********  IPHONE-Retina */
+/* - ****** IPHONE-Retina */
 
 /* @media only screen
 and ( -webkit-min-device-pixel-ratio: 2) { } */
 
-
-
-/* **********  MAX */
+/* - ****** MAX */
 
 /* @media screen
 and ( max-width: 1600px ) {} */
 
-
-
-/* **********  IPAD Pro 12 : landscape */
+/* - ****** IPAD Pro 12 : landscape */
 
 @media all
 and ( device-width : 1366px )
@@ -1508,9 +1486,7 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-
-
-/* **********  1280 */
+/* - ****** 1280 */
 
 @media only screen
 and ( max-width: 1280px ) {
@@ -1529,13 +1505,8 @@ and ( max-width: 1280px ) {
   }
 
   h5.author,
-  h5.woo-description,
-  h5.woo-tag,
-  h5.woo-category,
-  h5.woo-dimension,
-  h5.woo-price-amount,
-  h5.woo-publication,
-  h5.woo-sku {
+  h5.product-description,
+  h5.product-tag {
     font-size: calc( 7em / 9 );
   }
 
@@ -1551,7 +1522,7 @@ and ( max-width: 1280px ) {
   header, footer,
   section,
   .single section {
-    /* max-width: 1600px; */
+    /* max-width: ; */
     width: 100%;
   }
   .single section {
@@ -1569,7 +1540,7 @@ and ( max-width: 1280px ) {
     /* width: calc( 667px + ( 4 * ( ( 100vw - 1280px ) / 320 ) ) ); */
   }
 
-  h5.woo-title {
+  h5.product-title {
     /* padding-top: calc( 9px + ( 18 * ( ( 100vw - 960px ) / 320 ) ) ); */
   }
 
@@ -1590,9 +1561,7 @@ and ( max-width: 1280px ) {
   }
 }
 
-
-
-/* **********  IPAD Pro 10.5 : landscape */
+/* - ***** IPAD Pro 10.5 : landscape */
 
 @media all
 and ( device-width : 1112px )
@@ -1612,9 +1581,7 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-
-
-/* **********  IPAD Pro 12 : portrait */
+/* - ***** IPAD Pro 12 : portrait */
 
 @media all
 and ( device-width : 1366px )
@@ -1634,11 +1601,9 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
+/* - ***** IPAD, 3, 4 … Mini 2, 3, 4 : landscape */
 
-
-/* **********  IPAD, 3, 4 … Mini 2, 3, 4 : landscape */
-
-/* **********  IPAD 1, 2, Mini : landscape */
+/* - ***** IPAD 1, 2, Mini : landscape */
 
 @media all
 and ( device-width : 1024px )
@@ -1658,9 +1623,7 @@ and ( -webkit-min-device-pixel-ratio : 1 ) {
   }
 }
 
-
-
-/* **********  MID */
+/* - ***** MID */
 
 @media only screen
 and ( max-width: 960px ) {
@@ -1675,13 +1638,11 @@ and ( max-width: 960px ) {
     font-size: calc( 4em / 3 );
   }
   h3,
-  button, input,
-  ul.periwinkle-list li a {
+  button, input {
     font-size: calc( 11em / 9 );
   }
   h4, h5,
-  select
-  ul.periwinkle-list li {
+  select {
     font-size: 1em;
   }
   nav {
@@ -1697,13 +1658,9 @@ and ( max-width: 960px ) {
     max-width: 960px;
   }
 
-  /* *** CLASS */
-
   .break-cut {
     display: inherit;
   }
-
-  /* *** CLASS ** GRID */
 
   .diptych:not(.ptych-fixed),
   .diptych-large-small,
@@ -1733,8 +1690,6 @@ and ( max-width: 960px ) {
       "center-right right";
   }
 
-  /* *** CLASS *** GUTTER */
-
   div.diptych > div,
   article div.clear.diptych > div {
     padding: 1em;
@@ -1745,11 +1700,11 @@ and ( max-width: 960px ) {
     margin-bottom: 1em;
   }
 
-  ul.type-product > li {
+  ul.product > li {
     padding: 1em 0.5em;
   }
 
-  h5.woo-title {
+  h5.product-title {
     padding-top: 0.5em;
   }
 
@@ -1772,10 +1727,6 @@ and ( max-width: 960px ) {
     padding: 0 1em 1em;
   }
 
-  /* **** MEDIA */
-
-  /* **** MEDIA * IMAGE */
-
   div.logo {
     height: 6em;
   }
@@ -1783,17 +1734,13 @@ and ( max-width: 960px ) {
     padding: 1.5em;
   }
 
-  /* **** MEDIA ** VIDEO */
-
   .video,
   .single .video {
     height: 432px;
   }
 }
 
-
-
-/* **********  IPHONE XS Max : landscape */
+/* - **** IPHONE XS Max : landscape */
 
 /* @media all
 and ( device-width : 896px )
@@ -1801,9 +1748,7 @@ and ( device-height : 414px )
 and ( orientation : landscape )
 and ( -webkit-min-device-pixel-ratio : 3 ) {} */
 
-
-
-/* **********  IPHONE XR : landscape */
+/* - **** IPHONE XR : landscape */
 
 /* @media all
 and ( device-width : 896px )
@@ -1811,9 +1756,7 @@ and ( device-height : 414px )
 and ( orientation : landscape )
 and ( -webkit-min-device-pixel-ratio : 2 ) {} */
 
-
-
-/* **********  IPAD Pro 10.5 : portrait */
+/* - **** IPAD Pro 10.5 : portrait */
 
 @media all
 and ( device-width : 834px )
@@ -1826,9 +1769,7 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-
-
-/* **********  IPHONE X : landscape */
+/* - **** IPHONE X : landscape */
 
 @media all
 and ( device-width : 812px )
@@ -1841,44 +1782,29 @@ and ( -webkit-min-device-pixel-ratio : 3 ) {
   }
 }
 
-
-
-/* **********  0.3 Medium to Low */
+/* - **** 0.3 Medium to Low */
 
 @media only screen
 and ( max-width: 768px ) {
 
   body {
-    /* font-size: 2.7rem; */
     font-size: calc( 21px + ( 6 * ( ( 100vw - 375px ) / 393 ) ) );
   }
   h1 {
-    /* font-size: calc( 10em / 3 ); */
     font-size: calc( 2em + ( 36 * ( ( 100vw - 375px ) / 393 ) ) );
   }
   h2 {
-    /* font-size: calc( 4em / 3 ); */
     font-size: calc( calc( 8em / 7 ) + ( calc( 36 / 7 ) * ( ( 100vw - 375px ) / 393 ) ) );
   }
   h3, button, input {
-    /* font-size: calc( 11em / 9 ); */
     font-size: calc( calc( 8em / 7 ) + ( calc( 22 / 7 ) * ( ( 100vw - 375px ) / 393 ) ) );
   }
   nav {
-    /* font-size: calc( 8em / 9 ); */
     font-size: calc( 0.5em + ( 10 * ( ( 100vw - 375px ) / 393 ) ) );
-  }
-
-  ul.periwinkle-list li a {
-    font-size: 1em;
   }
 
   input, button, select {
     height: calc( calc( 12em / 7 ) + ( calc( 54 / 7 ) * ( ( 100vw - 320px ) / 448 ) ) );
-  }
-
-  h5.woo-title {
-    /* padding-top: calc( 21px - ( 7.5 * ( ( 100vw - 480px ) / 288 ) ) ); */
   }
 
   .video,
@@ -1887,9 +1813,7 @@ and ( max-width: 768px ) {
   }
 }
 
-
-
-/* **********  IPAD 3, 4 … Mini 2, 3, 4 : portrait */
+/* - *** IPAD 3, 4 … Mini 2, 3, 4 : portrait */
 
 /* @media all
 and ( device-width : 768px )
@@ -1897,9 +1821,7 @@ and ( device-height : 1024px )
 and ( orientation : portrait )
 and ( -webkit-min-device-pixel-ratio : 2 ) {} */
 
-
-
-/* **********  IPAD 1, 2, Mini : portrait */
+/* - *** IPAD 1, 2, Mini : portrait */
 
 @media all
 and ( device-width : 768px )
@@ -1912,9 +1834,7 @@ and ( -webkit-min-device-pixel-ratio : 1 ) {
   }
 }
 
-
-
-/* **********  IPHONE 6+, 7+, 8+ : landscape */
+/* - *** IPHONE 6+, 7+, 8+ : landscape */
 
 @media all
 /* and ( device-width : 736px ) */
@@ -1927,9 +1847,7 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-
-
-/* **********  IPHONE 6, 7, 8 : landscape */
+/* - *** IPHONE 6, 7, 8 : landscape */
 
 @media all
 and ( device-width : 667px )
@@ -1942,9 +1860,7 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-
-
-/* **********  667 */
+/* - *** 667 */
 
 @media only screen
 and ( max-width: 667px ) {
@@ -1958,9 +1874,7 @@ and ( max-width: 667px ) {
   }
 }
 
-
-
-/* **********  568 */
+/* - *** 568 */
 
 @media only screen
 and ( max-width: 568px ) {
@@ -1973,9 +1887,7 @@ and ( max-width: 568px ) {
   }
 }
 
-
-
-/* **********  IPHONE 5, 5S : landscape */
+/* - *** IPHONE 5, 5S : landscape */
 
 @media all
 and ( device-width : 568px )
@@ -1988,9 +1900,7 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-
-
-/* **********  480 */
+/* - *** 480 */
 
 @media only screen
 and ( max-width: 480px ) {
@@ -1999,14 +1909,12 @@ and ( max-width: 480px ) {
     /* grid-template-columns: 1fr; */
   }
 
-  h5.woo-title {
+  h5.product-title {
     padding-top: 1em;
   }
 }
 
-
-
-/* **********  IPHONE 4S : landscape */
+/* - *** IPHONE 4S : landscape */
 
 @media all
 and ( device-width : 480px )
@@ -2030,9 +1938,7 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-
-
-/* **********  IPHONE XS Max : portrait */
+/* - *** IPHONE XS Max : portrait */
 
 /* @media all
 and ( device-width : 414px )
@@ -2040,9 +1946,7 @@ and ( device-height : 896px )
 and ( orientation : portrait )
 and ( -webkit-min-device-pixel-ratio : 3 ) {} */
 
-
-
-/* **********  IPHONE XR : portrait */
+/* - *** IPHONE XR : portrait */
 
 /* @media all
 and ( device-width : 414px )
@@ -2050,9 +1954,7 @@ and ( device-height : 896px )
 and ( orientation : portrait )
 and ( -webkit-min-device-pixel-ratio : 2 ) {} */
 
-
-
-/* **********  IPHONE 6+, 7+, 8+ : portrait */
+/* - *** IPHONE 6+, 7+, 8+ : portrait */
 
 @media all
 and ( device-width : 414px )
@@ -2076,9 +1978,7 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-
-
-/* **********  BREAK */
+/* - ** BREAK */
 
 @media only screen
 and ( max-width: 375px ) {
@@ -2114,9 +2014,7 @@ and ( max-width: 375px ) {
   }
 }
 
-
-
-/* **********  IPHONE X : portrait */
+/* - ** IPHONE X : portrait */
 
 /* @media all
 and ( device-width : 375px )
@@ -2124,9 +2022,7 @@ and ( device-height : 667px )
 and ( orientation : portrait )
 and ( -webkit-min-device-pixel-ratio : 3 ) {} */
 
-
-
-/* **********  IPHONE 6, 7, 8 : portrait */
+/* - ** IPHONE 6, 7, 8 : portrait */
 
 @media all
 and ( device-width : 375px )
@@ -2150,9 +2046,7 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-
-
-/* **********  MIN */
+/* - * MIN */
 
 @media only screen
 and ( max-width: 320px ) {
@@ -2176,7 +2070,7 @@ and ( max-width: 320px ) {
     max-width: 320px;
   }
 
-  ul.type-product > li {
+  ul.product > li {
     padding: 1em 0;
   }
 
@@ -2186,13 +2080,11 @@ and ( max-width: 320px ) {
   }
 }
 
+/* - * IPHONE 5, 5S : portrait */
 
+/* - * IPHONE 4S : portrait */
 
-/* **********  IPHONE 5, 5S : portrait */
-
-/* **********  IPHONE 4S : portrait */
-
-/* **********  240 */
+/* - * 240 */
 @media only screen
 and ( max-width: 240px ) {
 
