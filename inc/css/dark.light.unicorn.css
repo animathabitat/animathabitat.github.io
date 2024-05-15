@@ -5,12 +5,15 @@
  Author:       Dane Aleksander
  Author URI:   https://danealeksander.github.io/
  Template:     twentythirteen
- Version:      2.1.18
+ Version:      2.2.0
 */
 
 /*
  * : ROOT
  * - RESET
+ *   - interface
+ *   - variable
+ *   - visible
  * 1 FONT
  *   - size
  * 2 TEXT
@@ -30,13 +33,24 @@
  *   - video
  * 8 BORDER
  * 9 COLOR
- *   - light
  *   - dark
+ *   - light
  *   - one
  *   - two
  *   - three
- * - @queries
+ * @ QUERY
+ *   - max : 1600
+ *   - - 1280
+ *   - mid break : 960
+ *   - mid : 768
+ *   - - 667
+ *   - - 568
+ *   - - 480
+ *   - min break : 375
+ *   - min : 240
  */
+
+
 
 /* : ROOT */
 
@@ -213,7 +227,6 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 button, input,
-/* nav li, */
 nav li a {
   display: inline-block;
 }
@@ -258,7 +271,7 @@ nav li.btn {
 div.keeper-entry {
   display: none;
 }
-input[type="checkbox"]:checked ~ div,
+/* input[type="checkbox"]:checked ~ div, */
 .visible {
   display: block;
 }
@@ -525,19 +538,12 @@ section {
   z-index: 1;
 }
 .single nav ul,
-.single footer > div:not(.diptych),
 .single article > div:not(.diptych, .triptych, .polyptych, .spread),
+.single footer > div:not(.diptych),
 section.single,
 footer.single {
   margin: 0 auto;
   width: 38.2em;
-}
-
-button, input, select {
-  height: 2em;
-}
-textarea {
-  height: 4em;
 }
 
 
@@ -589,24 +595,19 @@ nav li.btn:hover:before, nav li.btn:focus:before, nav li.btn:active:before {
 
 /* *** FRAME - PAGE */
 
-article,
-.left,
 nav li.crumb,
 div[role="navigation"] a[rel="prev"],
 ul.product > li,
-input[type="checkbox"].input-checkbox,
-input[type="radio"].input-radio {
+.left {
   float: left;
 }
-aside,
-.right,
-div[role="navigation"] a[rel="next"] {
+div[role="navigation"] a[rel="next"],
+.right {
   float: right;
 }
-.left, .right,
 ul.product > li,
-input[type="checkbox"],
-input[type="radio"] {
+.left,
+.right {
   display: inline;
 }
 
@@ -618,6 +619,18 @@ pre.thin,
 
 
 /* *** FRAME - INPUT */
+
+button, input, select {
+  height: 2em;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  height: 1em;
+  width: 1em;
+}
+textarea {
+  height: 4em;
+}
 
 button,
 input[type="button"],
@@ -637,12 +650,6 @@ input[type="checkbox"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus {
   outline: none;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  height: 1em;
-  width: 1em;
 }
 
 button, input, select, textarea {
@@ -1006,11 +1013,18 @@ a.white:hover,
 }
 .fr,
 .fr-en,
-nav li:not(.active) > a,
-#scene-one h3 font.clear .fr,
-#scene-two h3 font.clear .fr,
-#scene-three h3 font.clear .fr {
+nav li:not(.active) > a {
   color: var(--light-ii);
+}
+font.clear .fr {
+  color: var(--light-ii) !important;
+}
+
+div.bg-black {
+  background-color: var(--black);
+}
+div.bg-white {
+  background-color: var(--white);
 }
 
 nav li,
@@ -1026,96 +1040,6 @@ li.product-thumbnail a img,
 .matte-preview {
   border-color: var(--dark-ii);
 }
-
-
-
-/* ***** **** COLOR - LIGHT */
-
-#light,
-#light font.clear,
-#light a:hover {
-  color: var(--dark-ii);
-}
-#light .fr,
-#light .fr-en,
-#light nav li:not(.active) > a {
-  color: var(--dark-iii);
-}
-#light nav li:not(.active) a,
-#light div[role="navigation"] a,
-#light a.color,
-#light b.color,
-#light h1,
-#light h3,
-#light h2.color,
-#light h4.color,
-#light h5.color,
-#light font.color,
-#light .lettermark:hover,
-.light {
-  color: var(--dark-a);
-}
-#light nav li.btn:hover a,
-#light nav ul.page li.active a,
-#light nav ul.page li.scene a,
-#light .lettermark:before {
-  color: var(--dark-ii-a);
-}
-
-#light,
-#light nav,
-#light article,
-#light aside,
-#light .color div.color {
-  background-color: var(--white);
-}
-#light section.color,
-#light img.color,
-#light div.color,
-#light aside.color {
-  background-color: var(--light);
-}
-#light button,
-#light input[type="submit"],
-#light a:hover > div.color {
-  background-color: var(--light-ii);
-}
-#light button:hover,
-#light input[type="submit"]:hover, {
-  background-color: var(--light-iii);
-}
-#light nav li.btn a:after,
-#light nav li.btn:before,
-#light .home li.logo,
-#light ul.page li.active,
-#light ul.page li.scene,
-div.bg-black {
-  background-color: var(--black);
-}
-
-#light nav li,
-#light li.product-thumbnail a:hover img,
-#light .product-image:hover {
-  border-color: var(--black);
-}
-#light .matte-fold:hover {
-  border-color: var(--dark-iii);
-}
-#light li.product-thumbnail img,
-#light .product-image,
-#light .matte-thin,
-#light .matte {
-  border-color: var(--dark-ii);
-}
-#light .matte-preview {
-  border-color: var(--light-ii);
-}
-#light pre.thin {
-  border-color: var(--light);
-}
-
-#light::-webkit-scrollbar-track { background: var(--white); }
-#light::-webkit-scrollbar-thumb { background: var(--dark-a); }
 
 
 
@@ -1169,8 +1093,7 @@ input[type="submit"],
 #dark nav li.btn:before,
 #dark .home li.logo,
 #dark ul.page li.active,
-#dark ul.page li.scene,
-div.bg-white {
+#dark ul.page li.scene {
   background-color: var(--white);
 }
 
@@ -1186,6 +1109,94 @@ div.bg-white {
 
 #dark::-webkit-scrollbar-track { background: var(--dark-iii); }
 #dark::-webkit-scrollbar-thumb { background: var(--white); }
+
+
+
+/* ***** **** COLOR - LIGHT */
+
+#light,
+#light font.clear,
+#light a:hover {
+  color: var(--dark-ii);
+}
+#light .fr,
+#light .fr-en,
+#light nav li:not(.active) > a {
+  color: var(--dark-iii);
+}
+#light nav li:not(.active) a,
+#light div[role="navigation"] a,
+#light a.color,
+#light b.color,
+#light h1,
+#light h3,
+#light h2.color,
+#light h4.color,
+#light h5.color,
+#light font.color,
+#light .lettermark:hover {
+  color: var(--dark-a);
+}
+#light nav li.btn:hover a,
+#light nav ul.page li.active a,
+#light nav ul.page li.scene a,
+#light .lettermark:before {
+  color: var(--dark-ii-a);
+}
+
+#light,
+#light nav,
+#light article,
+#light aside,
+#light .color div.color {
+  background-color: var(--white);
+}
+#light section.color,
+#light img.color,
+#light div.color,
+#light aside.color {
+  background-color: var(--light);
+}
+#light button,
+#light input[type="submit"],
+#light a:hover > div.color {
+  background-color: var(--light-ii);
+}
+#light button:hover,
+#light input[type="submit"]:hover, {
+  background-color: var(--light-iii);
+}
+#light nav li.btn a:after,
+#light nav li.btn:before,
+#light .home li.logo,
+#light ul.page li.active,
+#light ul.page li.scene {
+  background-color: var(--black);
+}
+
+#light nav li,
+#light li.product-thumbnail a:hover img,
+#light .product-image:hover {
+  border-color: var(--black);
+}
+#light .matte-fold:hover {
+  border-color: var(--dark-iii);
+}
+#light li.product-thumbnail img,
+#light .product-image,
+#light .matte-thin,
+#light .matte {
+  border-color: var(--dark-ii);
+}
+#light .matte-preview {
+  border-color: var(--light-ii);
+}
+#light pre.thin {
+  border-color: var(--light);
+}
+
+#light::-webkit-scrollbar-track { background: var(--white); }
+#light::-webkit-scrollbar-thumb { background: var(--dark-a); }
 
 
 
@@ -1609,8 +1620,6 @@ and ( max-width: 1280px ) {
   }
 }
 
-
-
 /* - MEDIA - IPAD Pro 10.5 : landscape */
 
 @media all
@@ -1631,8 +1640,6 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-
-
 /* - MEDIA - IPAD Pro 12 : portrait */
 
 @media all
@@ -1652,8 +1659,6 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
     width: 1024px;
   }
 }
-
-
 
 /* - MEDIA - IPAD, 3, 4 … Mini 2, 3, 4 : landscape */
 
@@ -1679,7 +1684,7 @@ and ( -webkit-min-device-pixel-ratio : 1 ) {
 
 
 
-/* - MEDIA - MID */
+/* - MEDIA - BREAK (MID) */
 
 @media only screen
 and ( max-width: 960px ) {
@@ -1746,11 +1751,6 @@ and ( max-width: 960px ) {
       "center-right right";
   }
 
-  div.diptych > div,
-  article div.clear.diptych > div {
-    padding: 1em;
-  }
-
   .diptych:not(.ptych-fixed) > div,
   .triptych:not(.ptych-fixed) > div {
     margin-bottom: 1em;
@@ -1796,8 +1796,6 @@ and ( max-width: 960px ) {
   }
 }
 
-
-
 /* - MEDIA - IPHONE XS Max : landscape */
 
 /* @media all
@@ -1827,8 +1825,6 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-
-
 /* - MEDIA - IPHONE X : landscape */
 
 @media all
@@ -1844,7 +1840,7 @@ and ( -webkit-min-device-pixel-ratio : 3 ) {
 
 
 
-/* - MEDIA - MID - LOW */
+/* - MEDIA - MID */
 
 @media only screen
 and ( max-width: 768px ) {
@@ -1875,8 +1871,6 @@ and ( max-width: 768px ) {
   }
 }
 
-
-
 /* - MEDIA - IPAD 3, 4 … Mini 2, 3, 4 : portrait */
 
 /* @media all
@@ -1898,8 +1892,6 @@ and ( -webkit-min-device-pixel-ratio : 1 ) {
   }
 }
 
-
-
 /* - MEDIA - IPHONE 6+, 7+, 8+ : landscape */
 
 @media all
@@ -1912,8 +1904,6 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
     font-size: 2.7rem;
   }
 }
-
-
 
 /* - MEDIA - IPHONE 6, 7, 8 : landscape */
 
@@ -1936,8 +1926,8 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
 and ( max-width: 667px ) {
 
   .single nav ul,
-  .single footer > div:not(.spread),
   .single article > div:not(.diptych, .triptych, .polyptych, .spread),
+  .single footer > div:not(.spread),
   section.single,
   footer.single {
     width: 100%;
@@ -1958,8 +1948,6 @@ and ( max-width: 568px ) {
     display: inline;
   }
 }
-
-
 
 /* - MEDIA - IPHONE 5, 5S : landscape */
 
@@ -1990,8 +1978,6 @@ and ( max-width: 480px ) {
   }
 }
 
-
-
 /* - MEDIA - IPHONE 4S : landscape */
 
 @media all
@@ -2015,8 +2001,6 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
     display: none;
   }
 }
-
-
 
 /* - MEDIA - IPHONE XS Max : portrait */
 
@@ -2060,7 +2044,7 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
 
 
 
-/* - MEDIA - BREAK */
+/* - MEDIA - BREAK (MIN) */
 
 @media only screen
 and ( max-width: 375px ) {
@@ -2096,8 +2080,6 @@ and ( max-width: 375px ) {
   }
 }
 
-
-
 /* - MEDIA - IPHONE X : portrait */
 
 /* @media all
@@ -2132,7 +2114,7 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
 
 
 
-/* - MEDIA - LOW */
+/* - MEDIA - MIN */
 
 @media only screen
 and ( max-width: 320px ) {
@@ -2165,8 +2147,6 @@ and ( max-width: 320px ) {
     height: 180px;
   }
 }
-
-
 
 /* - MEDIA - IPHONE 5, 5S : portrait */
 
