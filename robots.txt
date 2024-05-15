@@ -8,18 +8,16 @@ Allow: /scene/
 Disallow: /404.html
 Disallow: /readme.md
 
+Disallow: /app/
 Disallow: /boutique/d/
 Disallow: /boutique/exit/
 Disallow: /c/
-Disallow: /conservatum/
-Disallow: /dono/
-Disallow: /patron/
 Disallow: /inc/
+Disallow: /rss/
 Disallow: /shop/
 Disallow: /societas/
 Disallow: /societe/
 Disallow: /society/
-Disallow: /studio/
 Disallow: /support/
 Disallow: /url/
 

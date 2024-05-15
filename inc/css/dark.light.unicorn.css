@@ -12,24 +12,29 @@
  * : ROOT
  * - RESET
  * 1 FONT
- *   1 font-size
- *   2 text-decoration
- *   3 alignment
- * 2 ARCHITECTURE
- *   1 navigation
- *   2 page
- *   3 input
- * 3 .CLASSES
- *   1 gutter
- *   2 grid
- * 4 MEDIA
- *   1 image
- *   3 video
- * 5 #TAGS
- * 6 #COLOR
- * 7
- * 8 -wordpress
- * 9 -woocommerce
+ *   - size
+ * 2 TEXT
+ *   - decoration
+ *   - alignment
+ * 3 FRAME
+ *   - navigation
+ *   - page
+ *   - input
+ * 4 GRID
+ *   - gutter
+ *   - clear
+ * 5 WORDPRESS *
+ * 6 WOOCOMMERCE *
+ * 7 MEDIA
+ *   - image
+ *   - video
+ * 8 BORDER
+ * 9 COLOR
+ *   - light
+ *   - dark
+ *   - one
+ *   - two
+ *   - three
  * - @queries
  */
 
@@ -49,6 +54,7 @@
   --gutter-iv: 4.5em;
 
   --white: #FCFCFC;
+  --black: #0A0A0A;
 
   --light: #E3E3E3;
   --light-ii: #CACACA;
@@ -60,10 +66,9 @@
   --dark-ii: #222222;
   --dark-iii: #333333;
   --dark-iv: #444444;
-  --dark-a: #0A0A0A;
-  /* --dark-i-a: #1A1A1A; */
-  --dark-ii-a: #2A2A2A;
-  /* --dark-iii-a: #3A3A3A; */
+  --dark-a: #1A1A1A;
+  --dark-a-ii: #2A2A2A;
+  /* --dark-a-iii: #3A3A3A; */
 
   /* ONE */
   --dune: #FFCF60;
@@ -164,7 +169,9 @@ span {
   background: none;
 }
 
-/* - * INTERFACE */
+
+
+/* - SET - INTERFACE */
 
 ::-webkit-scrollbar {
   height: 0.5em;
@@ -216,7 +223,9 @@ nav li.btn {
   overflow: hidden;
 }
 
-/* - ** LANGUAGE */
+
+
+/* - SET - VARIBALE */
 
 .fr {
   display: var(--fr);
@@ -225,8 +234,6 @@ nav li.btn {
   display: var(--fr-en);
 }
 
-/* - *** CURRENCY */
-
 .paypal-ca {
   display: var(--ca);
 }
@@ -234,7 +241,9 @@ nav li.btn {
   display: var(--us);
 }
 
-/* - **** SET */
+
+
+/* - SET - VISIBILE */
 
 .break-cut {
   display: inherit;
@@ -359,7 +368,9 @@ i {
   font-style: oblique;
 }
 
-/* * * FONT-SIZE */
+
+
+/* * FONT - SIZE */
 
 h1 {
   font-size: 8em;
@@ -413,7 +424,9 @@ sup {
   vertical-align: calc( 4em / 3 );
 }
 
-/* * ** TEXT-DECORATION */
+
+
+/* ** TEXT - DECORATION */
 
 nav li,
 h5.product-title,
@@ -468,7 +481,9 @@ ul.outside li {
   list-style-position: outside;
 }
 
-/* * *** TEXT-ALIGNMENT */
+
+
+/* ** TEXT - ALIGNMENT */
 
 h5.product-title,
 ul.product,
@@ -486,7 +501,7 @@ div[role="navigation"] a[rel="next"],
 
 
 
-/* ** ARCHITECTURE */
+/* *** FRAME */
 
 nav {
   position: fixed;
@@ -525,7 +540,9 @@ textarea {
   height: 4em;
 }
 
-/* ** * NAVIGATION */
+
+
+/* *** FRAME - NAVIGATION */
 
 nav li {
   border-top: 0.27em solid;
@@ -568,7 +585,9 @@ nav li.btn:hover:before, nav li.btn:focus:before, nav li.btn:active:before {
           transform: scaleY( 2 );
 }
 
-/* ** ** PAGE */
+
+
+/* *** FRAME - PAGE */
 
 article,
 .left,
@@ -596,7 +615,9 @@ pre.thin,
   width: auto;
 }
 
-/* ** *** INPUT */
+
+
+/* *** FRAME - INPUT */
 
 button,
 input[type="button"],
@@ -634,37 +655,13 @@ option {
 
 
 
-/* *** CLASS */
+/* **** GRID */
 
 .center {
   display: block;
   margin: 0 auto;
   position: relative;
 }
-
-.clear article {
-  position: static;
-}
-
-br.clear {
-  clear: both;
-}
-.clear {
-  color: inherit;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-.clear-top {
-  padding-top: 0 !important;
-}
-.clear-bottom {
-  padding-bottom: 0 !important;
-}
-.clear-left {
-  padding-left: 0 !important;
-}
-
-/* *** * GRID */
 
 .diptych,
 .diptych-large-small,
@@ -684,7 +681,6 @@ br.clear {
 .diptych-small-large {
   grid-template-columns: 1fr 3fr;
 }
-
 .diptych.ptych-fixed,
 .diptych.ptych-flipped,
 .diptych-large-small,
@@ -695,7 +691,6 @@ br.clear {
 .triptych {
   grid-template-columns: 1fr 1fr 1fr;
 }
-
 .triptych.ptych-fixed {
   grid-template-areas: "left center right";
 }
@@ -703,7 +698,6 @@ br.clear {
 .polyptych {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
 .polyptych.ptych-fixed {
   grid-template-areas: "left center-left center-right right";
 }
@@ -723,6 +717,10 @@ div.ptych-center-left {
 div.ptych-center-right {
   grid-area: center-right;
 }
+
+
+
+/* **** GRID - GUTTER */
 
 div[role="navigation"] {
   margin: 2em auto;
@@ -751,8 +749,6 @@ div.keeper-entries > div.keeper-entry {
   margin: var(--gutter) 0;
   border-left: 0.382em solid;
 }
-
-/* *** ** GUTTER */
 
 section.product {
   padding: 1em 0 2em 0;
@@ -850,35 +846,41 @@ li.lineend,
 
 
 
-/* **** MEDIA */
+/* **** GRID - CLEAR */
 
-/* **** * IMAGE */
-
-img.logo {
-  width: 1em;
-  height: 1em;
-}
-div.logo {
-  min-height: 0;
-  min-width: 0;
-  height: 9em;
-  padding: 0;
-}
-div.logo img {
-  max-height: 100%;
-  max-width: 100%;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  padding: 2.4em 3.2em;
+.clear article {
+  position: static;
 }
 
-a.project-thumbnail img {
-  filter: saturate(0.25);
+br.clear {
+  clear: both;
 }
-a.project-thumbnail:hover img {
-  filter: saturate(1);
+.clear {
+  color: inherit;
+  margin: 0 !important;
+  padding: 0 !important;
 }
+.clear-top {
+  padding-top: 0 !important;
+}
+.clear-bottom {
+  padding-bottom: 0 !important;
+}
+.clear-left {
+  padding-left: 0 !important;
+}
+
+
+
+/* *****  */
+
+
+
+/* ***** *  */
+
+
+
+/* ***** ** MEDIA */
 
 li.product-thumbnail {
   display: grid;
@@ -918,25 +920,39 @@ div.preview img {
   margin: 0 auto;
 }
 
-pre.thin,
-li.product-thumbnail a img,
-li.product-thumbnail a:hover img,
-.product-image,
-.product-image:hover,
-.matte-thin {
-  border: thin solid;
+
+
+/* ***** ** MEDIA - IMAGE */
+
+img.logo {
+  width: 1em;
+  height: 1em;
 }
-.matte {
-  border: 2em solid;
+div.logo {
+  min-height: 0;
+  min-width: 0;
+  height: 9em;
+  padding: 0;
 }
-.matte-preview {
-  border: var(--gutter) solid;
-}
-.matte-fold {
-  border-bottom: 0 !important;
+div.logo img {
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 2.4em 3.2em;
 }
 
-/* **** ** VIDEO */
+a.project-thumbnail img {
+  filter: saturate(0.25);
+}
+a.project-thumbnail:hover img {
+  filter: saturate(1);
+}
+
+
+
+/* ***** ** MEDIA - VIDEO */
 
 .video {
   width: 100%;
@@ -956,16 +972,36 @@ li.product-thumbnail a:hover img,
 
 
 
-/* ***** TAG */
+/* ***** *** BORDER */
+
+pre.thin,
+li.product-thumbnail a img,
+li.product-thumbnail a:hover img,
+.product-image,
+.product-image:hover,
+.matte-thin {
+  border: thin solid;
+}
+.matte {
+  border: 2em solid;
+}
+.matte-preview {
+  border: var(--gutter) solid;
+}
+
+.matte-fold {
+  border-bottom: 0 !important;
+}
 
 
 
-/* ****** COLOR */
+/* ***** **** COLOR */
 
 body,
 font.clear,
 a:hover,
-a.white:hover {
+a.white:hover,
+.lettermark:before {
   color: var(--light);
 }
 .fr,
@@ -977,49 +1013,52 @@ nav li:not(.active) > a,
   color: var(--light-ii);
 }
 
-li.product-thumbnail a img,
-.product-image,
-.matte-thin  {
-  border-color: var(--light);
-}
 nav li,
 li.product-thumbnail a:hover img,
 .product-image:hover {
   border-color: var(--white);
 }
+li.product-thumbnail a img,
+.product-image,
+.matte-thin {
+  border-color: var(--light);
+}
 .matte-preview {
   border-color: var(--dark-ii);
 }
 
-.lettermark:before {
-  background-color: var(--light);
-}
 
-/* ****** * * LIGHT */
+
+/* ***** **** COLOR - LIGHT */
 
 #light,
-#light font.clear {
+#light font.clear,
+#light a:hover {
   color: var(--dark-ii);
 }
-#light .fr {
+#light .fr,
+#light .fr-en,
+#light nav li:not(.active) > a {
   color: var(--dark-iii);
 }
-
-#light a,
-#light li.light a:active,
-#light button,
-#light input[type="submit"],
-#light nav i,
+#light nav li:not(.active) a,
+#light div[role="navigation"] a,
+#light a.color,
+#light b.color,
 #light h1,
 #light h3,
 #light h2.color,
 #light h4.color,
-#light font.color {
+#light h5.color,
+#light font.color,
+#light .lettermark:hover,
+.light {
   color: var(--dark-a);
 }
-#light a.color:hover,
-#light a:hover .color,
-#light div[role="navigation"] a:hover {
+#light nav li.btn:hover a,
+#light nav ul.page li.active a,
+#light nav ul.page li.scene a,
+#light .lettermark:before {
   color: var(--dark-ii-a);
 }
 
@@ -1045,45 +1084,42 @@ li.product-thumbnail a:hover img,
 #light input[type="submit"]:hover, {
   background-color: var(--light-iii);
 }
+#light nav li.btn a:after,
+#light nav li.btn:before,
+#light .home li.logo,
+#light ul.page li.active,
+#light ul.page li.scene,
+div.bg-black {
+  background-color: var(--black);
+}
 
+#light nav li,
+#light li.product-thumbnail a:hover img,
+#light .product-image:hover {
+  border-color: var(--black);
+}
+#light .matte-fold:hover {
+  border-color: var(--dark-iii);
+}
+#light li.product-thumbnail img,
+#light .product-image,
+#light .matte-thin,
+#light .matte {
+  border-color: var(--dark-ii);
+}
+#light .matte-preview {
+  border-color: var(--light-ii);
+}
 #light pre.thin {
   border-color: var(--light);
 }
-#light li.product-thumbnail img {
-  border-color: var(--dark-ii);
-}
-
-
-
-/*
-
-nav li.light {
-  border-color: var(--dark-a);
-}
-a.light:hover,
-a:hover .light {
-  color: var(--dark-ii-a);
-}
-.light,
-.lettermark.light:hover {
-  color: var(--dark-a);
-}
-div.light {
-  background-color: var(--light-ii);
-}
-div.light:hover {
-  background-color: var(--light-iii);
-}
-.lettermark.light:before {
-  background-color: var(--dark-ii-a);
-}
-
-*/
 
 #light::-webkit-scrollbar-track { background: var(--white); }
 #light::-webkit-scrollbar-thumb { background: var(--dark-a); }
 
-/* ****** * ** DARK [ZERO] */
+
+
+/* ***** **** COLOR - DARK [ZERO] */
 
 a,
 a:hover p,
@@ -1153,23 +1189,25 @@ div.bg-white {
 
 
 
-/* #light nav li.color-one a, */
-/* #light font.color-one, */
+/* ***** **** COLOR - UNICORN [ONE] */
+
+#light nav li.color-one a,
+#light font.color-one,
 #dark nav li.color-one a,
 #dark font.color-one {
   color: var(--sand);
 }
-/* #light .color-one .fr, */
+#light .color-one .fr,
 #dark .color-one .fr {
   color: var(--sand-ii);
 }
 
-/* #light nav li.btn.color-one:before, */
+#light nav li.btn.color-one:before,
 #dark nav li.btn.color-one:before {
   background-color: var(--dune);
 }
 
-/* #light nav li.color-one, */
+#light nav li.color-one,
 #dark nav li.color-one {
   border-color: var(--dune);
 }
@@ -1179,23 +1217,26 @@ a:hover div.bg-one {
 }
 
 
-/* #light nav li.color-two a, */
-/* #light font.color-two, */
+
+/* ***** **** COLOR - UNICORN [TWO] */
+
+#light nav li.color-two a,
+#light font.color-two,
 #dark nav li.color-two a,
 #dark font.color-two {
   color: var(--pine);
 }
-/* #light .color-two .fr, */
+#light .color-two .fr,
 #dark .color-two .fr {
   color: var(--pine-ii);
 }
 
-/* #light nav li.btn.color-two:before, */
+#light nav li.btn.color-two:before,
 #dark nav li.btn.color-two:before {
   background-color: var(--taiga);
 }
 
-/* #light nav li.color-two, */
+#light nav li.color-two,
 #dark nav li.color-two {
   border-color: var(--taiga);
 }
@@ -1205,23 +1246,26 @@ a:hover div.bg-two {
 }
 
 
-/* #light nav li.color-three a, */
-/* #light font.color-three, */
+
+/* ***** **** COLOR - UNICORN [THREE] */
+
+#light nav li.color-three a,
+#light font.color-three,
 #dark nav li.color-three a,
 #dark font.color-three {
   color: var(--water);
 }
-/* #light .color-three .fr, */
+#light .color-three .fr,
 #dark .color-three .fr {
   color: var(--water-ii);
 }
 
-/* #light nav li.btn.color-three:before, */
+#light nav li.btn.color-three:before,
 #dark nav li.btn.color-three:before {
   background-color: var(--glacier);
 }
 
-/* #light nav li.color-three, */
+#light nav li.color-three,
 #dark nav li.color-three {
   border-color: var(--glacier);
 }
@@ -1232,7 +1276,7 @@ a:hover div.bg-three {
 
 
 
-/* ****** ** * DUNE [ONE] */
+/* ***** **** COLOR - DUNE [ONE] */
 
 #scene-one nav li:not(.active) a,
 #scene-one div[role="navigation"] a,
@@ -1308,7 +1352,7 @@ a:hover div.bg-three {
 #scene-one::-webkit-scrollbar-track { background: var(--dark-ii); }
 #scene-one::-webkit-scrollbar-thumb { background: var(--dune); }
 
-/* ****** ** ** TAIGA [TWO] */
+/* ****** **** ** TAIGA [TWO] */
 
 #scene-two nav li:not(.active) a,
 #scene-two div[role="navigation"] a,
@@ -1383,7 +1427,9 @@ a:hover div.bg-three {
 #scene-two::-webkit-scrollbar-track { background: var(--dark); }
 #scene-two::-webkit-scrollbar-thumb { background: var(--taiga); }
 
-/* ****** ** *** GALCIER [THREE] */
+
+
+/* ***** **** COLOR - GALCIER [THREE] */
 
 #scene-three nav li:not(.active) a,
 #scene-three div[role="navigation"] a,
@@ -1463,17 +1509,17 @@ a:hover div.bg-three {
 
 /* - MEDIA QUERIES */
 
-/* - ****** IPHONE-Retina */
+/* - MEDIA - IPHONE-Retina */
 
 /* @media only screen
 and ( -webkit-min-device-pixel-ratio: 2) { } */
 
-/* - ****** MAX */
+/* - MEDIA - MAX */
 
 /* @media screen
 and ( max-width: 1600px ) {} */
 
-/* - ****** IPAD Pro 12 : landscape */
+/* - MEDIA - IPAD Pro 12 : landscape */
 
 @media all
 and ( device-width : 1366px )
@@ -1486,7 +1532,9 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-/* - ****** 1280 */
+
+
+/* - MEDIA - 1280 */
 
 @media only screen
 and ( max-width: 1280px ) {
@@ -1561,7 +1609,9 @@ and ( max-width: 1280px ) {
   }
 }
 
-/* - ***** IPAD Pro 10.5 : landscape */
+
+
+/* - MEDIA - IPAD Pro 10.5 : landscape */
 
 @media all
 and ( device-width : 1112px )
@@ -1581,7 +1631,9 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-/* - ***** IPAD Pro 12 : portrait */
+
+
+/* - MEDIA - IPAD Pro 12 : portrait */
 
 @media all
 and ( device-width : 1366px )
@@ -1601,9 +1653,11 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-/* - ***** IPAD, 3, 4 … Mini 2, 3, 4 : landscape */
 
-/* - ***** IPAD 1, 2, Mini : landscape */
+
+/* - MEDIA - IPAD, 3, 4 … Mini 2, 3, 4 : landscape */
+
+/* - MEDIA - IPAD 1, 2, Mini : landscape */
 
 @media all
 and ( device-width : 1024px )
@@ -1623,7 +1677,9 @@ and ( -webkit-min-device-pixel-ratio : 1 ) {
   }
 }
 
-/* - ***** MID */
+
+
+/* - MEDIA - MID */
 
 @media only screen
 and ( max-width: 960px ) {
@@ -1740,7 +1796,9 @@ and ( max-width: 960px ) {
   }
 }
 
-/* - **** IPHONE XS Max : landscape */
+
+
+/* - MEDIA - IPHONE XS Max : landscape */
 
 /* @media all
 and ( device-width : 896px )
@@ -1748,7 +1806,7 @@ and ( device-height : 414px )
 and ( orientation : landscape )
 and ( -webkit-min-device-pixel-ratio : 3 ) {} */
 
-/* - **** IPHONE XR : landscape */
+/* - MEDIA - IPHONE XR : landscape */
 
 /* @media all
 and ( device-width : 896px )
@@ -1756,7 +1814,7 @@ and ( device-height : 414px )
 and ( orientation : landscape )
 and ( -webkit-min-device-pixel-ratio : 2 ) {} */
 
-/* - **** IPAD Pro 10.5 : portrait */
+/* - MEDIA - IPAD Pro 10.5 : portrait */
 
 @media all
 and ( device-width : 834px )
@@ -1769,7 +1827,9 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-/* - **** IPHONE X : landscape */
+
+
+/* - MEDIA - IPHONE X : landscape */
 
 @media all
 and ( device-width : 812px )
@@ -1782,7 +1842,9 @@ and ( -webkit-min-device-pixel-ratio : 3 ) {
   }
 }
 
-/* - **** 0.3 Medium to Low */
+
+
+/* - MEDIA - MID - LOW */
 
 @media only screen
 and ( max-width: 768px ) {
@@ -1813,7 +1875,9 @@ and ( max-width: 768px ) {
   }
 }
 
-/* - *** IPAD 3, 4 … Mini 2, 3, 4 : portrait */
+
+
+/* - MEDIA - IPAD 3, 4 … Mini 2, 3, 4 : portrait */
 
 /* @media all
 and ( device-width : 768px )
@@ -1821,7 +1885,7 @@ and ( device-height : 1024px )
 and ( orientation : portrait )
 and ( -webkit-min-device-pixel-ratio : 2 ) {} */
 
-/* - *** IPAD 1, 2, Mini : portrait */
+/* - MEDIA - IPAD 1, 2, Mini : portrait */
 
 @media all
 and ( device-width : 768px )
@@ -1834,7 +1898,9 @@ and ( -webkit-min-device-pixel-ratio : 1 ) {
   }
 }
 
-/* - *** IPHONE 6+, 7+, 8+ : landscape */
+
+
+/* - MEDIA - IPHONE 6+, 7+, 8+ : landscape */
 
 @media all
 /* and ( device-width : 736px ) */
@@ -1847,7 +1913,9 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-/* - *** IPHONE 6, 7, 8 : landscape */
+
+
+/* - MEDIA - IPHONE 6, 7, 8 : landscape */
 
 @media all
 and ( device-width : 667px )
@@ -1860,7 +1928,9 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-/* - *** 667 */
+
+
+/* - MEDIA - 667 */
 
 @media only screen
 and ( max-width: 667px ) {
@@ -1874,7 +1944,9 @@ and ( max-width: 667px ) {
   }
 }
 
-/* - *** 568 */
+
+
+/* - MEDIA - 568 */
 
 @media only screen
 and ( max-width: 568px ) {
@@ -1887,7 +1959,9 @@ and ( max-width: 568px ) {
   }
 }
 
-/* - *** IPHONE 5, 5S : landscape */
+
+
+/* - MEDIA - IPHONE 5, 5S : landscape */
 
 @media all
 and ( device-width : 568px )
@@ -1900,7 +1974,9 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-/* - *** 480 */
+
+
+/* - MEDIA - 480 */
 
 @media only screen
 and ( max-width: 480px ) {
@@ -1914,7 +1990,9 @@ and ( max-width: 480px ) {
   }
 }
 
-/* - *** IPHONE 4S : landscape */
+
+
+/* - MEDIA - IPHONE 4S : landscape */
 
 @media all
 and ( device-width : 480px )
@@ -1938,7 +2016,9 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-/* - *** IPHONE XS Max : portrait */
+
+
+/* - MEDIA - IPHONE XS Max : portrait */
 
 /* @media all
 and ( device-width : 414px )
@@ -1946,7 +2026,7 @@ and ( device-height : 896px )
 and ( orientation : portrait )
 and ( -webkit-min-device-pixel-ratio : 3 ) {} */
 
-/* - *** IPHONE XR : portrait */
+/* - MEDIA - IPHONE XR : portrait */
 
 /* @media all
 and ( device-width : 414px )
@@ -1954,7 +2034,7 @@ and ( device-height : 896px )
 and ( orientation : portrait )
 and ( -webkit-min-device-pixel-ratio : 2 ) {} */
 
-/* - *** IPHONE 6+, 7+, 8+ : portrait */
+/* - MEDIA - IPHONE 6+, 7+, 8+ : portrait */
 
 @media all
 and ( device-width : 414px )
@@ -1978,7 +2058,9 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-/* - ** BREAK */
+
+
+/* - MEDIA - BREAK */
 
 @media only screen
 and ( max-width: 375px ) {
@@ -2014,7 +2096,9 @@ and ( max-width: 375px ) {
   }
 }
 
-/* - ** IPHONE X : portrait */
+
+
+/* - MEDIA - IPHONE X : portrait */
 
 /* @media all
 and ( device-width : 375px )
@@ -2022,7 +2106,7 @@ and ( device-height : 667px )
 and ( orientation : portrait )
 and ( -webkit-min-device-pixel-ratio : 3 ) {} */
 
-/* - ** IPHONE 6, 7, 8 : portrait */
+/* - MEDIA - IPHONE 6, 7, 8 : portrait */
 
 @media all
 and ( device-width : 375px )
@@ -2046,7 +2130,9 @@ and ( -webkit-min-device-pixel-ratio : 2 ) {
   }
 }
 
-/* - * MIN */
+
+
+/* - MEDIA - LOW */
 
 @media only screen
 and ( max-width: 320px ) {
@@ -2080,11 +2166,13 @@ and ( max-width: 320px ) {
   }
 }
 
-/* - * IPHONE 5, 5S : portrait */
 
-/* - * IPHONE 4S : portrait */
 
-/* - * 240 */
+/* - MEDIA - IPHONE 5, 5S : portrait */
+
+/* - MEDIA - IPHONE 4S : portrait */
+
+/* - MEDIA - 240 */
 @media only screen
 and ( max-width: 240px ) {
 
