@@ -595,6 +595,7 @@ nav li.btn:hover:before, nav li.btn:focus:before, nav li.btn:active:before {
 
 /* *** FRAME - PAGE */
 
+article,
 nav li.crumb,
 div[role="navigation"] a[rel="prev"],
 ul.product > li,
@@ -863,9 +864,7 @@ br.clear {
   clear: both;
 }
 .clear {
-  color: inherit;
-  margin: 0 !important;
-  padding: 0 !important;
+  padding: 0;
 }
 .clear-top {
   padding-top: 0 !important;
@@ -875,6 +874,10 @@ br.clear {
 }
 .clear-left {
   padding-left: 0 !important;
+}
+.clear-alt {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 
@@ -1005,7 +1008,7 @@ li.product-thumbnail a:hover img,
 /* ***** **** COLOR */
 
 body,
-font.clear,
+font.color-reset,
 a:hover,
 a.white:hover,
 .lettermark:before {
@@ -1016,7 +1019,7 @@ a.white:hover,
 nav li:not(.active) > a {
   color: var(--light-ii);
 }
-font.clear .fr {
+font.color-reset .fr {
   color: var(--light-ii) !important;
 }
 
@@ -1115,7 +1118,7 @@ input[type="submit"],
 /* ***** **** COLOR - LIGHT */
 
 #light,
-#light font.clear,
+#light font.color-reset,
 #light a:hover {
   color: var(--dark-ii);
 }
