@@ -398,7 +398,7 @@
     <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>https://animathabitat.org/scene/two/history-of-the-forest-and-the-trees/</loc>
+    <loc>https://animathabitat.org/scene/two/history-of-forests-trees/</loc>
     <lastmod>2022-6-27</lastmod>
     <priority>0.2</priority>
     <changefreq>never</changefreq>
@@ -416,8 +416,20 @@
     <changefreq>never</changefreq>
   </url> -->
   <!-- <url>
-    <loc>https://animathabitat.org/scene/two/history-of-rewilding/</loc>
+    <loc>https://animathabitat.org/scene/two/history-of-forests-tigers/</loc>
     <lastmod>2027-3-29</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url> -->
+  <!-- <url>
+    <loc>https://animathabitat.org/scene/two/history-of-forests-rewilding/</loc>
+    <lastmod>2029-3-??</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url> -->
+  <!-- <url>
+    <loc>https://animathabitat.org/scene/two/tiger-conservation-primorye/</loc>
+    <lastmod>2029-12-??</lastmod>
     <priority>0.2</priority>
     <changefreq>never</changefreq>
   </url> -->
