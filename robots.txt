@@ -12,13 +12,11 @@ Disallow: /app/
 Disallow: /boutique/d/
 Disallow: /boutique/exit/
 Disallow: /c/
+Disallow: /champion/
 Disallow: /inc/
+Disallow: /index/
 Disallow: /rss/
-Disallow: /shop/
-Disallow: /societas/
-Disallow: /societe/
-Disallow: /society/
-Disallow: /support/
+Disallow: /s/
 Disallow: /url/
 
 # Sitemap #

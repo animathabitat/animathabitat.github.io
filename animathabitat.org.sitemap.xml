@@ -12,6 +12,23 @@
     <changefreq>yearly</changefreq>
   </url>
 
+
+
+  <!-- <url>
+    <loc>https://animathabitat.org/app/</loc>
+    <lastmod>2024-3-25</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url> -->
+  <!-- <url>
+    <loc>https://animathabitat.org/app/beta/</loc>
+    <lastmod>2024-3-25</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url> -->
+
+
+
   <url>
     <loc>https://animathabitat.org/boutique/</loc>
     <lastmod>2023-9-15</lastmod>
@@ -70,6 +87,15 @@
 
 
   <url>
+    <loc>https://animathabitat.org/champion/</loc>
+    <lastmod>2023-9-15</lastmod>
+    <priority>0</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+
+
+  <url>
     <loc>https://animathabitat.org/conservation/</loc>
     <lastmod>2023-9-15</lastmod>
     <priority>0.8</priority>
@@ -79,6 +105,15 @@
     <loc>https://animathabitat.org/conservation/africa-afrique/</loc>
     <lastmod>2023-9-15</lastmod>
     <priority>0.4</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+
+
+  <url>
+    <loc>https://animathabitat.org/index/</loc>
+    <lastmod>2023-9-15</lastmod>
+    <priority>0</priority>
     <changefreq>yearly</changefreq>
   </url>
 
@@ -363,11 +398,33 @@
 
 
   <!-- <url>
-  <loc>https://animathabitat.org/support/</loc>
-  <lastmod>2023-9-15</lastmod>
-  <priority>0</priority>
-  <changefreq>yearly</changefreq>
+    <loc>https://animathabitat.org/rss/</loc>
+    <lastmod>2023-9-15</lastmod>
+    <priority>0</priority>
+    <changefreq>yearly</changefreq>
   </url> -->
+  <!-- <url>
+    <loc>https://animathabitat.org/rss/broadcast.xml</loc>
+    <lastmod>2023-9-15</lastmod>
+    <priority>0</priority>
+    <changefreq>yearly</changefreq>
+  </url> -->
+  <!-- <url>
+    <loc>https://animathabitat.org/rss/press.xml</loc>
+    <lastmod>2023-9-15</lastmod>
+    <priority>0</priority>
+    <changefreq>yearly</changefreq>
+  </url> -->
+
+
+
+  <!-- <url>
+    <loc>https://animathabitat.org/s/</loc>
+    <lastmod>2023-9-15</lastmod>
+    <priority>0</priority>
+    <changefreq>yearly</changefreq>
+  </url> -->
+
 
 
   <url>
