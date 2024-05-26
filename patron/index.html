@@ -208,11 +208,22 @@
 <script>
   var r = document.querySelector(':root'),
       // toggle_curr = 0,
-      toggle_lang = 0;
-
+      toggle_lang = 0,
+      toggle_council = document.getElementById("silver-council");
 
   // r.style.setProperty('--us', "none");
   r.style.setProperty('--fr', "none");
+
+  toggle_council.style.display = "none";
+
+  function silver_council() {
+    if (toggle_council.style.display == "none") {
+      toggle_council.style.display = "block";
+    }
+    else {
+      toggle_council.style.display = "none";
+    }
+  };
 
   // function toggle_currency() {
   //   if ( toggle_curr == 0 ) {
