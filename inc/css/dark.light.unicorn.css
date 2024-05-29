@@ -236,6 +236,16 @@ nav li.btn {
   overflow: hidden;
 }
 
+select {
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 0;
+
+}
+
 
 
 /* - SET - VARIBALE */
