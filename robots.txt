@@ -19,9 +19,13 @@ Disallow: /rss/
 Disallow: /s/
 Disallow: /url/
 
+
+
 # Sitemap #
 
 Sitemap: /animathabitat.org.sitemap.xml
+
+
 
 # AI #
 
