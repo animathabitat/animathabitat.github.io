@@ -1636,6 +1636,7 @@ and ( max-width: 1280px ) {
     height: calc( 540px + ( 180 * ( ( 100vw - 960px ) / 320 ) ) );
   }
 
+  input.textarea,
   textarea {
     height: 6em;
   }
