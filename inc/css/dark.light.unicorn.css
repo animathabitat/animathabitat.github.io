@@ -254,7 +254,7 @@ select {
     5px 5px,
     5px 5px;
   background-repeat: no-repeat;
-  
+
 }
 
 
@@ -650,6 +650,7 @@ input[type="radio"] {
   height: 1em;
   width: 1em;
 }
+input.textarea,
 textarea {
   height: 4em;
 }
