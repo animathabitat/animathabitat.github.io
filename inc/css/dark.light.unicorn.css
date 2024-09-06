@@ -681,6 +681,7 @@ button, input, select, textarea {
 textarea {
   padding-top: 0.25em;
   padding-bottom: 0.25em;
+  resize: none;
 }
 option {
   padding: var(--gutter) 0;
