@@ -1794,7 +1794,7 @@ and ( max-width: 960px ) {
   }
 
   article div.diptych > div {
-    padding: 1em 0;
+    padding-bottom: 0;
   }
 
   blockquote, q,
