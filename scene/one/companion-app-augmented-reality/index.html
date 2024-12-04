@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; script-src createsend.com s.animathabitat.org 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" /> -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; script-src s.animathabitat.org 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
   <!-- <meta name="google" content="notranslate" /> -->
 
   <meta name="author" content="Dane Aleksander" />
@@ -104,27 +104,26 @@
 
       </div>
 
-      <div class="clear">
-        <div id="register-toggle">
-          <h3><a onclick="toggle_register();">&plus;</a></h3>
+      <div>
+        <div class="color text-center">
 
-        </div>
+          <h3 class="linebreak">Help give life to the wild places.</h3>
+          <h5>You can support Animat Habitat in a few ways.</h5>
 
-        <div class="clear toggle-off" id="register" spellcheck="false">
-          <div>
-            <h3><a onclick="toggle_register();">&minus;</a></h3><h3>Behind-the-scenes&hellip;</h3>
-            <p>Register your name and address to get behind-the-scenes of <i>White Elephant</i>.</p>
+          <div class="triptych">
+            <div class="gutter-small">
+              <a href="../../../patron/" title="Animat Habitat patrons." target="_blank"><button class="text-center title">Donate</button></a>
+            </div>
+
+            <div class="gutter-small">
+              <a href="../../../boutique/" title="Animat Habitat boutique." target="_blank"><button class="text-center title">Shop</button></a>
+            </div>
+
+            <div class="gutter-small">
+              <a href="../../../rss/" title="Animat Habitat broadcast." target="_blank"><button class="text-center title">Subscribe</button></a>
+            </div>
 
           </div>
-
-          <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A52FB6D182F7A8A669AB1C317E182AD3763A1B775C7C4E900069B5F6BE1E4B7A7B42258404945BDA2B8796E1BC8516FAF">
-
-            <div class="clear-top"><input aria-label="Name" id="fieldName" maxlength="140" name="cm-name" title="Full name" placeholder="Name" onfocus="if (this.value=='Name') this.value = ''"></div>
-
-            <div class="clear-top"><input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email matte-thin" id="fieldEmail" maxlength="140" name="cm-dliyu-dliyu" required="" type="email" placeholder="E-mail address" onfocus="if (this.value=='E-mail address') this.value = ''" title="E-mail address required."><button type="submit">Register</button></div>
-
-          </form>
-
         </div>
       </div>
 
@@ -150,24 +149,7 @@
 
 </body>
 
-<script type="text/javascript" src="https://s.animathabitat.org/inc/js/createsend-com/copypastesubscribeformlogic.js"></script>
-
 <script>
-  var register_form = document.getElementById( "register" ),
-      register_toggle = document.getElementById( "register-toggle" );
-
-  register_form.style.display = "none";
-
-  function toggle_register() {
-    if (register_form.style.display == "none") {
-      register_form.style.display = "block";
-      register_toggle.style.display = "none";
-    }
-    else {
-      register_form.style.display = "none";
-      register_toggle.style.display = "block";
-    }
-  };
 
   function fn() { document.querySelector( "#footnotes" ).scrollIntoView({ behavior: 'smooth' }); };
 
