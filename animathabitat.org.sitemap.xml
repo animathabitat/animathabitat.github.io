@@ -130,7 +130,7 @@
 
   <url>
     <loc>https://animathabitat.org/scene/zero/</loc>
-    <lastmod>2023-3-31</lastmod>
+    <lastmod>2024-12-30</lastmod>
     <priority>0.1</priority>
     <changefreq>never</changefreq>
   </url>
@@ -142,9 +142,11 @@
     <changefreq>never</changefreq>
   </url>
 
+
+
   <url>
     <loc>https://animathabitat.org/scene/one/</loc>
-    <lastmod>2023-3-31</lastmod>
+    <lastmod>2024-12-30</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -339,28 +341,28 @@
   </url>
   <url>
     <loc>https://animathabitat.org/scene/one/making-of-ella-4/</loc>
-    <lastmod>2023-6-26</lastmod>
-    <priority>0.2</priority>
-    <changefreq>never</changefreq>
-  </url>
-  <url>
-    <loc>https://animathabitat.org/scene/one/companion-app-augmented-reality-kit/</loc>
     <lastmod>2023-12-25</lastmod>
     <priority>0.2</priority>
     <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>https://animathabitat.org/scene/one/companion-app-beta/</loc>
-    <lastmod>2024-3-25</lastmod>
+    <loc>https://animathabitat.org/scene/one/companion-app-augmented-reality-kit/</loc>
+    <lastmod>2024-12-30</lastmod>
     <priority>0.2</priority>
     <changefreq>never</changefreq>
   </url>
+  <!-- <url>
+    <loc>https://animathabitat.org/scene/one/companion-app-beta/</loc>
+    <lastmod>2025-12-29</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url> -->
 
 
 
   <url>
     <loc>https://animathabitat.org/scene/two/</loc>
-    <lastmod>2022-6-27</lastmod>
+    <lastmod>2024-12-30</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -384,16 +386,56 @@
   </url>
   <url>
     <loc>https://animathabitat.org/scene/two/history-of-forests-trees/</loc>
-    <lastmod>2022-6-27</lastmod>
+    <lastmod>2023-3-27</lastmod>
     <priority>0.2</priority>
     <changefreq>never</changefreq>
   </url>
   <url>
     <loc>https://animathabitat.org/scene/two/the-beginning-of-exhibiting/</loc>
-    <lastmod>2023-3-27</lastmod>
+    <lastmod>2024-3-25</lastmod>
     <priority>0.2</priority>
     <changefreq>never</changefreq>
   </url>
+  <!-- <url>
+    <loc>https://animathabitat.org/scene/two/the-beginning-of-printing/</loc>
+    <lastmod>2025-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url> -->
+
+
+
+  <url>
+    <loc>https://animathabitat.org/scene/three/</loc>
+    <lastmod>2024-12-30</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/three/history-of-whales-north-atlantic-right-whale/</loc>
+    <!-- <lastmod>2022-6-27</lastmod> -->
+    <lastmod>2023-3-31</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/three/history-of-whales-anatomy/</loc>
+    <lastmod>2023-6-26</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/scene/three/history-of-whales-communication/</loc>
+    <lastmod>2024-6-24</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <!-- <url>
+    <loc>https://animathabitat.org/scene/three/history-of-whales-beluga/</loc>
+    <lastmod>2025-6-30</lastmod>
+    <priority>0.2</priority>
+    <changefreq>never</changefreq>
+  </url> -->
 
 
 
