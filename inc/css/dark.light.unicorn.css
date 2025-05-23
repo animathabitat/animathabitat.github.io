@@ -58,6 +58,7 @@
 
   --fr: "none";
   --fr-en: "inline";
+  --en: "inline";
 
   --ca: "inline";
   --us: "none";
@@ -266,6 +267,9 @@ select {
 }
 .fr-en {
   display: var(--fr-en);
+}
+.en {
+  display: var(--en);
 }
 
 .paypal-ca {
@@ -1082,6 +1086,7 @@ li.product-thumbnail a img,
 a,
 a:hover p,
 a:hover .fr-en,
+nav li a:hover .fr,
 nav li:not(.active) > a:hover,
 button,
 input[type="submit"],
