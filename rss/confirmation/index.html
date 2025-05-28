@@ -30,8 +30,8 @@
   <nav>
     <ul class="page">
       <li class="crumb logo"><a href="../../" title="Animat Habitat"><img alt="Animat Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/animat.mark.1.1.1200.light.svg"/></a></li>
-      <li class="crumb active"><a>E-mail <i>Confirmation</i></a></li>
-      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+      <li class="crumb active"><a><i>Confirmation</i></a></li>
+      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en français, in english."><font class="en">fr</font><font class="fr">en</font></a></li>
     </ul>
   </nav>
 
@@ -39,10 +39,10 @@
     <article>
 
       <div>
-        <h3 class="letterhead">Thanks for your interest in scenes at Animat Habitat.<font class="fr">&nbsp;&#92;&nbsp;Merci pour votre int&eacute;r&ecirc;t pour les sc&egrave;nes chez Animat Habitat.</font></h3>
+        <h3 class="letterhead"><font class="en">Thanks for your interest in scenes at Animat Habitat.</font><font class="fr">Merci pour votre intérêt pour les scènes chez Animat Habitat.</font></h3>
 
-        <h5 class="linebreak">Please verify your address.<font class="fr">&nbsp;&#92;&nbsp;Veuillez v&eacute;rifier votre adresse.</font></h5>
-        <p>Use the verification link in your e-mail inbox to confirm your registration.<font class="fr">&nbsp;&#92;&nbsp;Utilisez le lien de v&eacute;rification envoy&eacute; &agrave; votre adresse e-mail pour confirmer votre inscription.</font></p>
+        <h5 class="linebreak"><font class="en">Please verify your address.</font><font class="fr">Veuillez vérifier votre adresse.</font></h5>
+        <p><font class="en">Use the verification link in your e-mail inbox to confirm your registration.</font><font class="fr">Utilisez le lien de vérification envoyé à votre adresse e-mail pour confirmer votre inscription.</font></p>
 
       </div>
 
@@ -51,11 +51,11 @@
 
   <footer>
     <div class="quote">
-      <p class="small">This step is included to protect from spam and to respect your privacy.<font class="fr">&nbsp;&#92;&nbsp;Cette &eacute;tape est incluse pour prot&eacute;ger du spam et pour respecter la confidentialit&eacute;.</font></p>
+      <p class="small"><font class="en">This step is included to protect from spam and to respect your privacy.</font><font class="fr">Cette étape est incluse pour protéger du spam et pour respecter la confidentialité.</font></p>
 
-      <p class="small linebreak">You may close this page at any time.<font class="fr">&nbsp;&#92;&nbsp;Vous pouvez fermer cette page &agrave; tout moment.</font></p>
+      <p class="small linebreak"><font class="en">You may close this page at any time.</font><font class="fr">Vous pouvez fermer cette page à tout moment.</font></p>
 
-      <p class="small linebreak">Exit through the <a href="../../boutique/" title="Animat Habitat boutique.">Boutique</a>.<font class="fr">&nbsp;&#92;&nbsp;Sortir par la boutique.</font></p>
+      <p class="small linebreak"><font class="en">Exit through the <a href="../../boutique/" title="Animat Habitat boutique.">Boutique</a>.</font><font class="fr"><a href="../../boutique/" title="Animat Habitat boutique.">Sortir par la boutique</a>.</font></p>
 
     </div>
 
@@ -73,12 +73,12 @@
   function toggle_language() {
     if ( toggle_lang == 0 ) {
       r.style.setProperty('--fr', "inline");
-      r.style.setProperty('--fr-en', "none");
+      r.style.setProperty('--en', "none");
       toggle_lang = 1;
     }
     else {
       r.style.setProperty('--fr', "none");
-      r.style.setProperty('--fr-en', "inline");
+      r.style.setProperty('--en', "inline");
       toggle_lang = 0;
     }
   };

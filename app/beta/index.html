@@ -11,7 +11,7 @@
   <meta name="keywords" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Animat Habitat app. Beta &ndash;&nbsp;B&ecirc;ta.</title>
+  <title>Animat Habitat app. Beta, Bêta.</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,8 +33,8 @@
     <ul class="page">
       <li class="crumb logo"><a href="../../" title="Animat Habitat"><img alt="Animat Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/animat.mark.1.1.1200.light.svg"/></a></li>
       <!-- <li class="crumb"><a href="../" title="Animat Habitat app.">App</a></li> -->
-      <li class="crumb active"><a><i>Beta</i></a></li>
-      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+      <li class="crumb active"><a><i><font class="en">Beta</font><font class="fr">Bêta</font></i></a></li>
+      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en français, in english."><font class="en">fr</font><font class="fr">en</font></a></li>
     </ul>
   </nav>
 
@@ -42,19 +42,19 @@
     <article>
 
       <div>
-        <h2 class="letterhead">Beta Programs<font class="fr">&nbsp;&#92;&nbsp;Programmes b&ecirc;ta</font></h2>
-        <p><i>Welcome to the beta programs at Animat Habitat.</i><font class="fr">&nbsp;&#92;&nbsp;<i>Bienvenue aux programmes b&ecirc;ta chez Animat Habitat.</i></font></p>
+        <h2 class="letterhead"><font class="en">Beta Programs</font><font class="fr">Programmes bêta</font></h2>
+        <p><i><font class="en">Welcome to the beta programs at Animat Habitat.</font><font class="fr">Bienvenue aux programmes bêta chez Animat Habitat.</font></i></p>
 
-        <h5 class="linebreak">Beta App on iOS and iPadOS<font class="fr">&nbsp;&#92;&nbsp;Application b&ecirc;ta sur iOS et iPadOS</font></h5>
-        <p>Add your name to the beta program waiting room for Apple iPhone or iPad users: <a href="ios-ipados/" title="Beta: Companion App on iOS and iPadOS">Beta Room</a>.<font class="fr">&nbsp;&#92;&nbsp;Enregistrez votre nom &agrave; la file d'attente du programme b&ecirc;ta pour les utilisateurs Apple iPhone ou iPad.</font></p>
+        <h5 class="linebreak"><font class="en">Beta App on iOS and iPadOS</font><font class="fr">Application bêta sur iOS et iPadOS</font></h5>
+        <p><font class="en">Add your name to the beta program queue for Apple iPhone or iPad users:</font><font class="fr">Enregistrez votre nom à la file d'attente du programme bêta pour les utilisateurs Apple iPhone ou iPad&nbsp;:</font> <a href="ios-ipados/" title="Animat Habitat app. Beta, Bêta. iOS-iPadOS."><font class="fr">Programme bêta </font>iOS-iPadOS<font class="en"> beta program</font></a>.</p>
 
-        <h5 class="linebreak">Beta App on macOS<font class="fr">&nbsp;&#92;&nbsp;Application b&ecirc;ta sur macOS</font></h5>
-        <p>The beta program for Apple Mac users is to be determined.<font class="fr">&nbsp;&#92;&nbsp;Le programme b&ecirc;ta pour les utilisateurs d'Apple Mac reste &agrave; d&eacute;terminer.</font></p>
+        <h5 class="linebreak"><font class="en">Beta App on macOS</font><font class="fr">Application bêta sur macOS</font></h5>
+        <p><font class="en">The beta program for Apple Mac users is to be determined.</font><font class="fr">Le programme bêta pour les utilisateurs d'Apple Mac reste à déterminer.</font></p>
 
-        <h5 class="linebreak">Beta App on Android<font class="fr">&nbsp;&#92;&nbsp;Application b&ecirc;ta sur Android</font></h5>
-        <p>The beta program for Android users is to be determined.<font class="fr">&nbsp;&#92;&nbsp;Le programme b&ecirc;ta pour les utilisateurs d’Android reste &agrave; d&eacute;terminer.</font></p>
+        <h5 class="linebreak"><font class="en">Beta App on Android</font><font class="fr">Application bêta sur Android</font></h5>
+        <p><font class="en">The beta program for Android users is to be determined.</font><font class="fr">Le programme bêta pour les utilisateurs d’Android reste à déterminer.</font></p>
 
-        <!-- <h5 class="linebreak">Official Website<font class="fr">&nbsp;&#92;&nbsp;Site officiel</font></h5>
+        <!-- <h5 class="linebreak"><font class="en">Official Website</font><font class="fr">Site officiel</font></h5>
         <p>Link to latest beta website.</p>
         <p>Steps to submit feedback.</p> -->
 
@@ -77,12 +77,12 @@
   function toggle_language() {
     if ( toggle_lang == 0 ) {
       r.style.setProperty('--fr', "inline");
-      r.style.setProperty('--fr-en', "none");
+      r.style.setProperty('--en', "none");
       toggle_lang = 1;
     }
     else {
       r.style.setProperty('--fr', "none");
-      r.style.setProperty('--fr-en', "inline");
+      r.style.setProperty('--en', "inline");
       toggle_lang = 0;
     }
   };

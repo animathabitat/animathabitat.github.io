@@ -11,7 +11,7 @@
   <meta name="keywords" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Animat Habitat beta. Exit, Sortie.</title>
+  <title>Animat Habitat app. Beta, Bêta. Exit, Sortie.</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
   <link rel="stylesheet" href="../../../../inc/css/dark.light.unicorn.css" />
@@ -25,9 +25,9 @@
   <nav>
     <ul class="page single">
       <li class="crumb logo"><a href="../../../../" title="Animat Habitat"><img alt="Animat Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../../../../inc/svg/animat.mark.1.1.1200.light.svg"/></a></li>
-      <li class="crumb"><a href="../../" title="Animat Habitat beta.">Beta</a></li>
-      <li class="crumb active"><a><i>Exit<font class="toggle-form-full fr">, Sortie</font></i></a></li>
-      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+      <li class="crumb"><a href="../../" title="Animat Habitat app. Beta, Bêta."><font class="en">Beta</font><font class="fr">Bêta</font></a></li>
+      <li class="crumb active"><a><i><font class="en">Exit</font><font class="fr">Sortie</font></i></a></li>
+      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en français, in english."><font class="en">fr</font><font class="fr">en</font></a></li>
     </ul>
   </nav>
 
@@ -35,9 +35,9 @@
     <article>
 
       <div>
-        <h3 class="letterhead">Thanks for your feedback.<font class="fr">&nbsp;&#92;&nbsp;Merci pour vos commentaires.</font></h3>
+        <h3 class="letterhead"><font class="en">Thanks for your feedback.</font><font class="fr">Merci pour vos commentaires.</font></h3>
 
-        <p class="linebreak"><a href="../../" title="Animat Habitat cast member registration.">Re-register</a>.<font class="fr">&nbsp;&#92;&nbsp;Re-enregistrer.</font></p>
+        <p class="linebreak"><a href="../../" title="Animat Habitat cast member registration."><font class="en">Re-register</font><font class="fr">Re-enregistrer</font></a>.</p>
 
       </div>
 
@@ -46,7 +46,7 @@
 
   <footer>
     <div class="quote">
-      <p class="small">Exit through the <a href="../../../../boutique/" title="Animat Habitat boutique.">Boutique</a>.<font class="fr">&nbsp;&#92;&nbsp;Sortir par la boutique.</font></p>
+      <p class="small"><font class="en">Exit through the <a href="../../../../boutique/" title="Animat Habitat boutique.">Boutique</a>.</font><font class="fr"><a href="../../../../boutique/" title="Animat Habitat boutique.">Sortir par la boutique</a>.</font></p>
 
     </div>
 
@@ -64,12 +64,12 @@
   function toggle_language() {
     if ( toggle_lang == 0 ) {
       r.style.setProperty('--fr', "inline");
-      r.style.setProperty('--fr-en', "none");
+      r.style.setProperty('--en', "none");
       toggle_lang = 1;
     }
     else {
       r.style.setProperty('--fr', "none");
-      r.style.setProperty('--fr-en', "inline");
+      r.style.setProperty('--en', "inline");
       toggle_lang = 0;
     }
   };

@@ -1046,11 +1046,12 @@ body,
 font.color-reset,
 a:hover,
 a.white:hover,
+nav li:not(.crumb) a,
 .lettermark:before {
   color: var(--light);
 }
-.fr,
-.fr-en,
+.lang .fr,
+/* .fr-en, */
 nav li:not(.active) > a {
   color: var(--light-ii);
 }
@@ -1085,9 +1086,10 @@ li.product-thumbnail a img,
 
 a,
 a:hover p,
-a:hover .fr-en,
-nav li a:hover .fr,
+section a .fr,
+footer a .fr,
 nav li:not(.active) > a:hover,
+nav li:not(.crumb) a:hover,
 button,
 input[type="submit"],
 .white,
@@ -1158,7 +1160,7 @@ input[type="submit"],
 #light a:hover {
   color: var(--dark-ii);
 }
-#light .fr,
+/* #light .fr, */
 #light .fr-en,
 #light nav li:not(.active) > a {
   color: var(--dark-iii);

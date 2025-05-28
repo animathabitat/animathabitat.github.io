@@ -11,7 +11,7 @@
   <meta name="keywords" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Animat Habitat beta. Registration, Inscription.</title>
+  <title>Animat Habitat app. Beta, Bêta. iOS-iPadOS.</title>
 
   <style>
     html { background-color: #333; }
@@ -30,9 +30,9 @@
   <nav>
     <ul class="page">
       <li class="crumb logo"><a href="../../../" title="Animat Habitat"><img alt="Animat Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../../../inc/svg/animat.mark.1.1.1200.light.svg"/></a></li>
-      <li class="crumb"><a href="../" title="Animat Habitat beta.">Beta</a></li>
-      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
-      <li class="crumb active"><a><i>App</i></a></li>
+      <li class="crumb"><a href="../" title="Animat Habitat app. Beta, Bêta."><font class="en">Beta</font><font class="fr">Bêta</font></a></li>
+      <li class="crumb active"><a><i>iOS &middot; iPadOS</i></a></li>
+      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en français, in english."><font class="en">fr</font><font class="fr">en</font></a></li>
     </ul>
   </nav>
 
@@ -42,32 +42,32 @@
       <div class="clear" id="register" spellcheck="false">
 
         <div>
-          <h3 class="letterhead">Beta App on iOS and iPadOS<font class="fr"><br>Application b&ecirc;ta sur iOS et iPadOS</font></h3>
+          <h3 class="letterhead"><font class="en">Beta App on iOS and iPadOS</font><font class="fr">Application bêta sur iOS et iPadOS</font></h3>
           <ul class="square">
-            <li>Preview the <i>White Elephant</i> comic book, its companion app and its interactive story.<font class="fr">&nbsp;&#92;&nbsp;Pr&eacute;visualisez la bande dessin&eacute;e <i>White Elephant</i>, son application compagnon et son histoire interactive.</font></li>
-            <li>Provide feedback to help us develop the commercial version of the companion app.<font class="fr">&nbsp;&#92;&nbsp;Fournissez vos commentaires pour nous aider &agrave; d&eacute;velopper la version commerciale de l’application compagnon.</font></li>
+            <li><font class="en">Preview the <i>White Elephant</i> comic book, its companion app and its interactive story.</font><font class="fr">Prévisualisez la bande dessinée <i>White Elephant</i>, son application compagnon et son histoire interactive.</font></li>
+            <li><font class="en">Provide feedback to help us develop the commercial version of the companion app.</font><font class="fr">Fournissez vos commentaires pour nous aider à développer la version commerciale de l’application compagnon.</font></li>
 
           </ul>
 
-          <p class="linebreak">Add your name to the beta program waiting list for Apple iPhone or iPad users.<font class="fr">&nbsp;&#92;&nbsp;Enregistrez votre nom &agrave; la file d'attente du programme b&ecirc;ta pour les utilisateurs Apple iPhone ou iPad.</font></p>
+          <p class="linebreak"><font class="en">Add your name to the beta program queue for Apple iPhone or iPad users.</font><font class="fr">Enregistrez votre nom à la file d'attente du programme bêta pour les utilisateurs Apple iPhone ou iPad.</font></p>
 
         </div>
 
         <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1AB37BC75F487152E8E6BCA08B7CD9E943DE33A7E521BC441883AB1AB956F7C2B24DAD52F1FBA11EEFE659F61970A1F946">
           <div class="clear-top">
-            <input aria-label="Name" id="fieldName" maxlength="140" name="cm-name" title="Full name&nbsp;&#92;&nbsp;Nom et pr&eacute;nom" placeholder="Name&nbsp;&#92;&nbsp;Nom" onfocus="if (this.value == 'Name&nbsp;&#92;&nbsp;Nom') this.value = ''">
+            <input aria-label="Name" id="fieldName" maxlength="140" name="cm-name" title="Full name&nbsp;&#92;&nbsp;Nom et prénom" placeholder="Name&nbsp;&#92;&nbsp;Nom" onfocus="if (this.value == 'Name&nbsp;&#92;&nbsp;Nom') this.value = ''">
           </div>
 
           <div class="clear-top">
             <input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email matte-thin" id="fieldEmail" maxlength="140" name="cm-tjjtet-tjjtet" required="" type="email" placeholder="E-mail address&nbsp;&#92;&nbsp;Addresse e-mail" onfocus="if (this.value == 'E-mail address&nbsp;&#92;&nbsp;Addresse e-mail') this.value = ''" title="E-mail address required. &#92;&nbsp;Adresse e-mail requis.">
-            <button type="submit">Register<font class="fr">&nbsp;&#92;&nbsp;Enregistrez</font></button>
+            <button type="submit"><font class="en">Register</font><font class="fr">Enregistrez</font></button>
 
           </div>
 
         </form>
 
         <div class="clear-top">
-          <p class="small">A verification e-mail will be sent to the address provided.<font class="fr">&nbsp;&#92;&nbsp;Un e-mail de v&eacute;rification sera envoy&eacute; &agrave; l'adresse fournie.</font></p>
+          <p class="small"><font class="en">A verification e-mail will be sent to the address provided.</font><font class="fr">Un e-mail de vérification sera envoyé à l'adresse fournie.</font></p>
 
         </div>
 
@@ -101,12 +101,12 @@
   function toggle_language() {
     if ( toggle_lang == 0 ) {
       r.style.setProperty('--fr', "inline");
-      r.style.setProperty('--fr-en', "none");
+      r.style.setProperty('--en', "none");
       toggle_lang = 1;
     }
     else {
       r.style.setProperty('--fr', "none");
-      r.style.setProperty('--fr-en', "inline");
+      r.style.setProperty('--en', "inline");
       toggle_lang = 0;
     }
   };

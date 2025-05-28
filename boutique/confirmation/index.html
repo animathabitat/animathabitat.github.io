@@ -32,7 +32,7 @@
       <li class="crumb logo"><a href="../../" title="Animat Habitat"><img alt="Animat Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/animat.mark.1.1.1200.light.svg"/></a></li>
       <li class="crumb"><a href="../" title="Animat Habitat boutique.">Boutique</a></li>
       <li class="crumb active"><a><i>Confirmation</i></a></li>
-      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en fran&ccedil;ais."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en français, in english."><font class="en">fr</font><font class="fr">en</font></a></li>
     </ul>
   </nav>
 
@@ -40,10 +40,10 @@
     <article>
 
       <div>
-        <h3 class="letterhead">Thanks for your purchase!<font class="fr">&nbsp;&#92;&nbsp;Merci pour votre achat&nbsp;!</font></h3>
+        <h3 class="letterhead"><font class="en">Thanks for your purchase!</font><font class="fr">Merci pour votre achat&nbsp;!</font></h3>
 
-        <h5 class="linebreak">We sent an invoice to the e-mail address associated with your payment account.<font class="fr">&nbsp;&#92;&nbsp;Nous avons envoy&eacute; une facture &eacute; l'adresse e-mail associ&eacute;e &agrave; votre compte de paiement.</font></h5>
-        <p>Your payment is being processed. When processed, a receipt of purchase will be sent to the same e-mail address. And when your purchase is packaged for delivery, another e-mail will be sent to that same address with tracking information.<font class="fr">&nbsp;&#92;&nbsp;Votre paiement est en cours de traitement. Une fois trait&eacute;, un re&ccedilu d'achat sera envoy&eacute; &agrave; la m&ecirc;me adresse e-mail. Et lorsque votre achat sera emball&eacute; pour la livraison, un autre e-mail sera envoy&eacute; &agrave; cette m&ecirc;me adresse avec les informations d'exp&eacute;dition.</font></p>
+        <h5 class="linebreak"><font class="en">We sent an invoice to the e-mail address associated with your payment account.</font><font class="fr">Nous avons envoyé une facture à l'adresse e-mail associée avec votre compte de paiement.</font></h5>
+        <p><font class="en">Your payment is being processed. Once processed, the e-mail address associated with your payment account will be sent a receipt of purchase. And when your purchase is packaged for delivery, the same e-mail address will be sent the tracking information.</font><font class="fr">Votre paiement est en cours de traitement. Une fois traité, un re&ccedilu d'achat sera envoyé à l'adresse e-mail associée avec votre compte de paiement. Et lorsque votre achat sera emballé pour la livraison, un e-mail sera envoyé à cette même adresse avec les informations d'expédition.</font></p>
 
       </div>
 
@@ -52,9 +52,9 @@
 
   <footer>
     <div class="quote">
-      <p class="small">You may close this page at any time.<font class="fr">&nbsp;&#92;&nbsp;Vous pouvez fermer cette page &agrave; tout moment.</font></p>
+      <p class="small"><font class="en">You may close this page at any time.</font><font class="fr">Vous pouvez fermer cette page à tout moment.</font></p>
 
-      <p class="small linebreak">Exit through the <a href="../" title="Animat Habitat boutique.">Boutique</a>.<font class="fr">&nbsp;&#92;&nbsp;Sortir par la boutique.</font></p>
+      <p class="small linebreak"><font class="en">Exit through the <a href="../" title="Animat Habitat boutique.">Boutique</a>.</font><font class="fr"><a href="../" title="Animat Habitat boutique.">Sortir par la boutique</a>.</font></p>
 
     </div>
 
@@ -72,12 +72,12 @@
   function toggle_language() {
     if ( toggle_lang == 0 ) {
       r.style.setProperty('--fr', "inline");
-      r.style.setProperty('--fr-en', "none");
+      r.style.setProperty('--en', "none");
       toggle_lang = 1;
     }
     else {
       r.style.setProperty('--fr', "none");
-      r.style.setProperty('--fr-en', "inline");
+      r.style.setProperty('--en', "inline");
       toggle_lang = 0;
     }
   };
