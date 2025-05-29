@@ -102,13 +102,25 @@
     <changefreq>yearly</changefreq>
   </url>
   <url>
-    <loc>https://animathabitat.org/conservation/africa-afrique/</loc>
+    <loc>https://animathabitat.org/conservation/africa/</loc>
     <lastmod>2025-03-31</lastmod>
     <priority>0.4</priority>
     <changefreq>yearly</changefreq>
   </url>
   <url>
-    <loc>https://animathabitat.org/conservation/turtle-island-ile-de-la-tortue/</loc>
+    <loc>https://animathabitat.org/conservation/afrique/</loc>
+    <lastmod>2025-03-31</lastmod>
+    <priority>0.4</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/conservation/turtle-island/</loc>
+    <lastmod>2025-03-31</lastmod>
+    <priority>0.4</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://animathabitat.org/conservation/ile-de-la-tortue/</loc>
     <lastmod>2025-03-31</lastmod>
     <priority>0.4</priority>
     <changefreq>yearly</changefreq>
