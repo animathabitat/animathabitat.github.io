@@ -33,7 +33,7 @@
     <ul class="page">
       <li class="crumb logo color"><a href="../../" title="Animat Habitat"><img alt="Animat Mark (Three) &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/animat.mark.1.1.1200.three.svg"/></a></li>
       <li class="crumb scene color"><a><i>White Bear</i></a></li>
-      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en français."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en français."><font class="en">en&nbsp;&#92;&nbsp;fr</font><font class="fr">en</font></a></li>
     </ul>
   </nav>
 
@@ -170,12 +170,12 @@
   function toggle_language() {
     if ( toggle_lang == 0 ) {
       r.style.setProperty('--fr', "inline");
-      r.style.setProperty('--fr-en', "none");
+      r.style.setProperty('--en', "none");
       toggle_lang = 1;
     }
     else {
       r.style.setProperty('--fr', "none");
-      r.style.setProperty('--fr-en', "inline");
+      r.style.setProperty('--en', "inline");
       toggle_lang = 0;
     }
   };

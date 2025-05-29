@@ -32,7 +32,7 @@
     <ul class="page">
       <li class="crumb logo color"><a href="../../" title="Animat Habitat"><img alt="Animat Mark (One) &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/animat.mark.1.1.1200.one.svg"/></a></li>
       <li class="crumb scene color"><a><i>White Elephant</i></a></li>
-      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en français."><font class="fr-en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
+      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en français."><font class="en">en&nbsp;&#92;&nbsp;fr</font><font class="fr">en</font></a></li>
       <li class="right thin" id="currency"><a class="title" onclick="toggle_currency();" title="Animat Habitat in Canada, United States of America."><font class="color-reset">
         <font class="paypal-ca"><b class="overscore">CA</b>&nbsp;&#92;&nbsp;US</font>
         <font class="paypal-us">CA&nbsp;&#92;&nbsp;<b class="overscore">US</b></font>
@@ -440,7 +440,7 @@
       r.style.setProperty('--us', "inline");
       r.style.setProperty('--ca', "none");
       r.style.setProperty('--fr', "none");
-      r.style.setProperty('--fr-en', "inline");
+      r.style.setProperty('--en', "inline");
       toggle_curr = 1;
       toggle_lang = 0;
     }
@@ -456,13 +456,13 @@
       r.style.setProperty('--us', "none");
       r.style.setProperty('--ca', "inline");
       r.style.setProperty('--fr', "inline");
-      r.style.setProperty('--fr-en', "none");
+      r.style.setProperty('--en', "none");
       toggle_curr = 0;
       toggle_lang = 1;
     }
     else {
       r.style.setProperty('--fr', "none");
-      r.style.setProperty('--fr-en', "inline");
+      r.style.setProperty('--en', "inline");
       toggle_lang = 0;
     }
   };

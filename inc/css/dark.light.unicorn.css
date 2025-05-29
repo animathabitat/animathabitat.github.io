@@ -57,7 +57,6 @@
 :root {
 
   --fr: "none";
-  --fr-en: "inline";
   --en: "inline";
 
   --ca: "inline";
@@ -264,9 +263,6 @@ select {
 
 .fr {
   display: var(--fr);
-}
-.fr-en {
-  display: var(--fr-en);
 }
 .en {
   display: var(--en);
@@ -1051,7 +1047,6 @@ nav li:not(.crumb) a,
   color: var(--light);
 }
 .lang .fr,
-/* .fr-en, */
 nav li:not(.active) > a {
   color: var(--light-ii);
 }
@@ -1161,7 +1156,6 @@ input[type="submit"],
   color: var(--dark-ii);
 }
 /* #light .fr, */
-#light .fr-en,
 #light nav li:not(.active) > a {
   color: var(--dark-iii);
 }
