@@ -31,7 +31,7 @@
 
   <nav>
     <ul class="page">
-      <li class="crumb logo color"><a href="../../" title="Animat Habitat"><img alt="Animat Mark (Two) &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/animat.mark.1.1.1200.two.svg"/></a></li>
+      <li class="crumb logo color"><a href="../../" title="Animat Habitat"><img alt="Animat Mark &ndash; Two &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/animat.mark.1.1.1200.two.svg"/></a></li>
       <li class="crumb scene color"><a><i>White Tiger</i></a></li>
       <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en français."><font class="en">en&nbsp;&#92;&nbsp;fr</font><font class="fr">en</font></a></li>
       <li class="right thin" id="currency"><a class="title" onclick="toggle_currency();"><font class="color-reset">
@@ -51,7 +51,7 @@
     </div>
   </header>
 
-  <div class="clear-bottom preview-thumbnail" id="preview-thumbnail">
+  <div class="clear-bottom vignette" id="vignette">
     <section class="single">
       <div class="clear-bottom">
         <!-- <a onclick="toggle_preview();"> -->
@@ -291,7 +291,7 @@
       toggle_lang = 0,
       curr = document.getElementById( "currency" ),
       // img = document.getElementById( "preview" ),
-      // tmb = document.getElementById( "preview-thumbnail" ),
+      // tmb = document.getElementById( "vignette" ),
       num = document.getElementById( "scene" ),
       p_meta = document.getElementById( "product-meta" ),
       p_0200_0011 = document.getElementById( "product-0200-0011" ),
@@ -315,7 +315,7 @@
     if ( num.style.display == "none" ) {
       curr.style.display = "block";
       num.style.display = "block";
-      document.querySelector( "#preview-thumbnail" ).scrollIntoView({ behavior: 'smooth' });
+      document.querySelector( "#vignette" ).scrollIntoView({ behavior: 'smooth' });
     }
     else {
       curr.style.display = "none";

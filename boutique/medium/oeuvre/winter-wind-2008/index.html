@@ -24,7 +24,7 @@
 
   <nav>
     <ul class="page">
-      <li class="crumb logo"><a href="../../../../" title="Animat Habitat"><img alt="Animat Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../../../../inc/svg/animat.mark.1.1.1200.light.svg"/></a></li>
+      <li class="crumb logo"><a href="../../../../" title="Animat Habitat"><img alt="Animat Mark &ndash; Light &copy; Animat Habitat, 2015" class="logo" src="../../../../inc/svg/animat.mark.1.1.1200.light.svg"/></a></li>
       <li class="crumb"><a href="../../../" title="Animat Habitat boutique.">Boutique</a></li>
       <li class="crumb"><a href="../" title="Animat Habitat boutique. Original Artwork, Oeuvre originale."><font class="en">Original</font><font class="fr">Originale</font></a></li>
       <li class="crumb active"><a><i>Winter Wind</i></a></li>
@@ -50,19 +50,19 @@
 
       <a onclick="toggle_preview();">
         <div class="text-center">
-          <img alt="Winter Wind &copy; Dane Aleksander, 2008 [preview]" class="product-image" src="../../../inc/img/boutique/winter-wind/2008.winter-wind.jpg" />
-          <p class="linebreak"><i>Winter Wind</i> &ndash; Rocky Mountain National Park, America (<font class="en">graphic Pencil</font><font class="fr">&nbsp;crayon graphique</font>, 2008<font class="fr">&nbsp;</font>) &copy;&nbsp;Dane&nbsp;Aleksander</p>
+          <img alt="Winter Wind preview, aperçu, 2008 &copy; Dane Aleksander" class="product-image" src="../../../inc/img/boutique/winter-wind/2008.winter-wind.jpg" />
+          <p class="linebreak"><i>Winter Wind</i> &ndash;  <font class="en">Rocky Mountain National Park, America</font><font class="fr">Parc national des Montagnes Rocheuses, Amérique</font> (<font class="en">graphic Pencil</font><font class="fr">&nbsp;crayon graphique</font>, 2008<font class="fr">&nbsp;</font>) &copy;&nbsp;Dane&nbsp;Aleksander</p>
 
         </div>
       </a>
 
   </div>
 
-  <div class="clear-bottom preview-thumbnail" id="preview-thumbnail">
+  <div class="clear-bottom vignette" id="vignette">
     <section class="single">
       <a onclick="toggle_preview();">
         <div class="clear-bottom">
-          <img alt="Winter Wind &copy; Dane Aleksander, 2008 [thumbnail]" class="matte matte-fold" src="../../../inc/img/boutique/winter-wind/2008.winter-wind.300-136.jpg" />
+          <img alt="Winter Wind vignette, 2008 &copy; Dane Aleksander" class="matte matte-fold" src="../../../inc/img/boutique/winter-wind/2008.winter-wind.300-136.jpg" />
 
         </div>
       </a>
@@ -125,7 +125,7 @@
       toggle_curr = 0,
       toggle_lang = 0,
       img = document.getElementById("preview"),
-      tmb = document.getElementById("preview-thumbnail"),
+      tmb = document.getElementById("vignette"),
       // p_meta = document.getElementById( "product-meta" ),
       p_0005_0000 = document.getElementById( "product-0005-0000" );
 
@@ -145,7 +145,7 @@
     else {
       img.style.display = "none";
       tmb.style.display = "block";
-      document.querySelector('#preview-thumbnail').scrollIntoView({ behavior: 'smooth' });
+      document.querySelector('#vignette').scrollIntoView({ behavior: 'smooth' });
     }
   };
 

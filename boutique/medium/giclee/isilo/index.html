@@ -24,7 +24,7 @@
 
   <nav>
     <ul class="page">
-      <li class="crumb logo"><a href="../../../../" title="Animat Habitat"><img alt="Animat Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../../../../inc/svg/animat.mark.1.1.1200.light.svg"/></a></li>
+      <li class="crumb logo"><a href="../../../../" title="Animat Habitat"><img alt="Animat Mark &ndash; Light &copy; Animat Habitat, 2015" class="logo" src="../../../../inc/svg/animat.mark.1.1.1200.light.svg"/></a></li>
       <li class="crumb"><a href="../../../" title="Animat Habitat boutique.">Boutique</a></li>
       <li class="crumb"><a href="../" title="Animat Habitat boutique. Giclée.">Giclée</a></li>
       <li class="crumb active"><a><i>Isilo</i></a></li>
@@ -50,19 +50,19 @@
 
       <a onclick="toggle_preview();">
         <div class="text-center">
-          <img alt="Last of the Big Tuskers, 2018 &ndash; Isilo [preview]" class="product-image" src="../../../../inc/img/boutique/last-of-the-big-tuskers/lotbt.elephant.isilo.c.1440-864.jpg" />
-          <p class="linebreak"><i>Isilo</i> &ndash; Tembe Elephant Park, South Africa (digital paint, 2018) &copy;&nbsp;Dane&nbsp;Aleksander</p>
+          <img alt="Last of the Big Tuskers, 2018 &ndash; Isilo preview, aperçu." class="product-image" src="../../../../inc/img/boutique/last-of-the-big-tuskers/lotbt.elephant.isilo.c.1440-864.jpg" />
+          <p class="linebreak"><i>Isilo</i> &ndash; <font class="en">Tembe Elephant Park, South Africa</font><font class="fr">Parc des éléphants de Tembe, Afrique du Sud</font> (<font class="en">digital painting</font><font class="fr">&nbsp;peinture numèrique</font>, 2018<font class="fr">&nbsp;</font>) &copy;&nbsp;Dane&nbsp;Aleksander</p>
 
         </div>
       </a>
 
   </div>
 
-  <div class="clear-bottom preview-thumbnail" id="preview-thumbnail">
+  <div class="clear-bottom vignette" id="vignette">
     <section class="single">
       <div class="clear-bottom">
         <a onclick="toggle_preview();">
-          <img alt="Last of the Big Tuskers, 2018 &ndash; Isilo [thumbnail]" class="matte matte-fold" src="../../../../inc/img/boutique/last-of-the-big-tuskers/lotbt.elephant.isilo.c.300-180.jpg" />
+          <img alt="Last of the Big Tuskers, 2018 &ndash; Isilo vignette." class="matte matte-fold" src="../../../../inc/img/boutique/last-of-the-big-tuskers/lotbt.elephant.isilo.c.300-180.jpg" />
 
         </a>
       </div>
@@ -223,7 +223,7 @@
   <footer class="single">
     <div class="quote">
       <p class="small"><sup>1</sup> <font class="en">Fifty (50) per cent of the purchase price is redirected to wildlife conservation projects in elephant range States in Africa in association with scene one at Animat Habitat.</font><font class="fr">Cinquante pour cent du prix d'achat est affecté à des projets de conservation de la nature dans les États de l'aire de répartition des éléphants en Afrique en association avec la première scène chez Animat Habitat.</font></p>
-      <p class="small"><sup>2</sup> <font class="en">International shipping is limited to countries listed as available for international shipping in the boutique <a href="../../c/terms-of-purchase/" target="_blank" title="Animat Habitat terms of purchase.">Terms of Purchase</a>.</font><font class="fr">L'expédition à l'extérieur du Canada est limitée aux pays répertoriés comme disponibles pour l'expédition international dans les <a href="../../c/terms-of-purchase/" target="_blank" title="Animat Habitat conditions d'achat.">conditions d'achat</a> de la boutique.</font></p>
+      <p class="small"><sup>2</sup> <font class="en">International shipping is limited to countries listed as available for international shipping in the boutique <a href="../../c/terms-of-purchase/" target="_blank" title="Animat Habitat terms of purchase.">Terms of Purchase</a>.</font><font class="fr">L'expédition à l'extérieur du Canada est limitée aux pays répertoriés comme disponibles pour l'expédition international dans les <a href="../../c/terms-of-purchase/" target="_blank" title="Animat Habitat conditions d'achat.">conditions d'achat</a>.</font></p>
 
     </div>
   </footer>
@@ -236,7 +236,7 @@
       toggle_curr = 0,
       toggle_lang = 0,
       img = document.getElementById("preview"),
-      tmb = document.getElementById("preview-thumbnail"),
+      tmb = document.getElementById("vignette"),
       p_meta = document.getElementById( "product-meta" ),
       p_0111_1111 = document.getElementById( "product-0111-1111" ),
       p_0111_1121 = document.getElementById( "product-0111-1121" );
@@ -257,7 +257,7 @@
     else {
       img.style.display = "none";
       tmb.style.display = "block";
-      document.querySelector('#preview-thumbnail').scrollIntoView({ behavior: 'smooth' });
+      document.querySelector('#vignette').scrollIntoView({ behavior: 'smooth' });
     }
   };
 

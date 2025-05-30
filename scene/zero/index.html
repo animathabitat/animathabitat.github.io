@@ -31,7 +31,7 @@
 
   <nav>
     <ul class="page">
-      <li class="crumb logo"><a href="../../" title="Animat Habitat"><img alt="Animat Mark (Light) &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/animat.mark.1.1.1200.light.svg"/></a></li>
+      <li class="crumb logo"><a href="../../" title="Animat Habitat"><img alt="Animat Mark &ndash; Light &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/animat.mark.1.1.1200.light.svg"/></a></li>
       <li class="crumb scene"><a><i>White Rhino</i></a></li>
       <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en français."><font class="en">fr</font><font class="fr">&#92;&nbsp;fr</font></a></li>
     </ul>
@@ -61,7 +61,7 @@
     </a>
   </div>
 
-  <div class="clear-bottom preview-thumbnail" id="preview-thumbnail">
+  <div class="clear-bottom vignette" id="vignette">
     <section class="single">
       <div class="clear-bottom">
         <a onclick="toggle_preview();">
@@ -153,7 +153,7 @@
       toggle_lang = 0,
       num = document.getElementById( "scene" ),
       img = document.getElementById( "preview" ),
-      tmb = document.getElementById( "preview-thumbnail" ),
+      tmb = document.getElementById( "vignette" ),
       num = document.getElementById( "scene" ),
       p_meta = document.getElementById( "product-meta" ),
       p_0000_0011 = document.getElementById( "product-0000-0011" );
@@ -185,7 +185,7 @@
     else {
       img.style.display = "none";
       tmb.style.display = "block";
-      document.querySelector( "#preview-thumbnail" ).scrollIntoView({ behavior: 'smooth' });
+      document.querySelector( "#vignette" ).scrollIntoView({ behavior: 'smooth' });
     }
   };
 
