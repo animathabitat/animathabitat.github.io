@@ -450,6 +450,9 @@ sup {
   /* line-height: normal; */
   line-height: 0.75em;
 }
+.btn-star {
+  vertical-align: 0.25em;
+}
 .text-quote {
   line-height: 0.2em;
   vertical-align: -0.5em;
