@@ -1,79 +1,87 @@
 <!doctype html>
 <html lang="en, fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src 'self'; script-src 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
-  <meta name="google" content="notranslate" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src 'self'; script-src 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
+    <meta name="google" content="notranslate" />
 
-  <meta name="author" content="Dane Aleksander" />
-  <meta name="company" content="Animat Habitat" />
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Dane Aleksander" />
+    <meta name="company" content="Animat Habitat" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Animat Habitat app. Beta, Bêta. Exit, Sortie.</title>
+    <title>Animat Habitat app. Beta, Bêta. Exit, Sortie.</title>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
-  <link rel="stylesheet" href="../../../../inc/css/dark.light.unicorn.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
+    <link rel="stylesheet" href="../../../../inc/css/dark.light.unicorn.css" />
 
-  <link rel="icon" href="../../../../inc/ico/animat.mark.1.1.72.light.png" />
+    <link rel="icon" href="../../../../inc/ico/animat.mark.1.1.72.light.png" />
 
-</head>
+    </head>
 
 <body class="easein single" id="dark">
 
-  <nav>
-    <ul class="page single">
-      <li class="crumb logo"><a href="../../../../" title="Animat Habitat"><img alt="Animat Mark &ndash; Light &copy; Animat Habitat, 2015" class="logo" src="../../../../inc/svg/animat.mark.1.1.1200.light.svg"/></a></li>
-      <li class="crumb"><a href="../../" title="Animat Habitat app. Beta, Bêta."><font class="en">Beta</font><font class="fr">Bêta</font></a></li>
-      <li class="crumb active"><a><i><font class="en">Exit</font><font class="fr">Sortie</font></i></a></li>
-      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en français, in english."><font class="en">fr</font><font class="fr">en</font></a></li>
-    </ul>
-  </nav>
+    <nav>
+        <ul class="page single">
+            <li class="crumb logo"><a href="../../../../" title="Animat Habitat"><img alt="Animat Mark &ndash; Light &copy; Animat Habitat, 2015" class="logo" src="../../../../inc/svg/animat.mark.1.1.1200.light.svg"/></a></li>
+            <li class="crumb"><a href="../../" title="Animat Habitat app. Beta, Bêta."><font class="en">Beta</font><font class="fr">Bêta</font></a></li>
+            <li class="crumb active"><a><i><font class="en">Exit</font><font class="fr">Sortie</font></i></a></li>
+            <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en français, in english."><font class="en">fr</font><font class="fr">en</font></a></li>
 
-  <section>
-    <article>
+            </ul>
 
-      <div>
-        <h3 class="letterhead"><font class="en">Thanks for your feedback.</font><font class="fr">Merci pour vos commentaires.</font></h3>
+        </nav>
 
-        <p class="linebreak"><a href="../../" title="Animat Habitat cast member registration."><font class="en">Re-register</font><font class="fr">Re-enregistrer</font></a>.</p>
+    <section>
+        <article>
 
-      </div>
+            <div>
+                <h3 class="letterhead"><font class="en">Thanks for your feedback.</font><font class="fr">Merci pour vos commentaires.</font></h3>
 
-    </article><br class="clear">
-  </section>
+                <p class="linebreak"><a href="../../" title="Animat Habitat cast member registration."><font class="en">Re-register</font><font class="fr">Re-enregistrer</font></a>.</p>
 
-  <footer>
-    <div class="quote">
-      <p class="small"><font class="en">Exit through the <a href="../../../../boutique/" title="Animat Habitat boutique.">Boutique</a>.</font><font class="fr"><a href="../../../../boutique/" title="Animat Habitat boutique.">Sortir par la boutique</a>.</font></p>
+                </div>
 
-    </div>
+            </article><br class="clear">
 
-  </footer>
+        </section>
 
-</body>
+    <footer>
+        <div class="quote">
+            <p class="small"><font class="en">Exit through the <a href="../../../../boutique/" title="Animat Habitat boutique.">Boutique</a>.</font><font class="fr"><a href="../../../../boutique/" title="Animat Habitat boutique.">Sortir par la boutique</a>.</font></p>
+
+            </div>
+
+        </footer>
+
+    </body>
 
 <script>
 
-  var r = document.querySelector(':root'),
-      toggle_lang = 0;
+    var r = document.querySelector( ":root" ),
+        toggle_lang = 0;
 
-  r.style.setProperty('--fr', "none");
+        r.style.setProperty( "--fr", "none" );
 
-  function toggle_language() {
-    if ( toggle_lang == 0 ) {
-      r.style.setProperty('--fr', "inline");
-      r.style.setProperty('--en', "none");
-      toggle_lang = 1;
-    }
-    else {
-      r.style.setProperty('--fr', "none");
-      r.style.setProperty('--en', "inline");
-      toggle_lang = 0;
-    }
-  };
+    function toggle_language() {
 
-</script>
+        if ( toggle_lang == 0 ) {
+
+            r.style.setProperty( "--fr", "inline" );
+            r.style.setProperty( "--en", "none" );
+            toggle_lang = 1;
+
+            } else {
+
+            r.style.setProperty( "--fr", "none" );
+            r.style.setProperty( "--en", "inline" );
+            toggle_lang = 0;
+
+            }
+
+        };
+
+    </script>
 
 </html>

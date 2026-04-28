@@ -1,514 +1,525 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src via.animathabitat.org 'self'; script-src createsend.com s.animathabitat.org 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" /> -->
-  <!-- <meta name="google" content="notranslate" /> -->
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src via.animathabitat.org 'self'; script-src createsend.com s.animathabitat.org 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" /> -->
+    <!-- <meta name="google" content="notranslate" /> -->
 
-  <meta name="author" content="Dane Aleksander" />
-  <meta name="company" content="Animat Habitat" />
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Dane Aleksander" />
+    <meta name="company" content="Animat Habitat" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Animat Habitat project broadcast.</title>
+    <title>Animat Habitat project broadcast.</title>
 
-  <style>
-    html { background-color: #222; }
-  </style>
+    <style>
+        html { background-color: #222; }
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
-  <link rel="stylesheet" href="../../../inc/css/dark.light.unicorn.css" />
+        </style>
 
-  <link rel="icon" href="../../../inc/ico/animat.mark.1.1.72.one.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
+    <link rel="stylesheet" href="../../../inc/css/dark.light.unicorn.css" />
 
-</head>
+    <link rel="icon" href="../../../inc/ico/animat.mark.1.1.72.one.png" />
+
+    </head>
 
 <body class="single" id="scene-one">
 
-  <nav>
-    <ul class="page">
-      <li class="crumb logo color"><a href="../../../" title="Animat Habitat"><img alt="Animat Mark &ndash; One &copy; Animat Habitat, 2015" class="logo" src="../../../inc/svg/animat.mark.1.1.1200.one.svg"/></a></li>
-      <li class="crumb btn color"><a href="../" title="Animat Habitat scene one, scène un.">I</a></li>
-      <li class="crumb scene color"><a><i>A History of Elephants &ndash; Ivory</i></a></li>
-    </ul>
-  </nav>
+    <nav>
+        <ul class="page">
+            <li class="crumb logo color"><a href="../../../" title="Animat Habitat"><img alt="Animat Mark &ndash; One &copy; Animat Habitat, 2015" class="logo" src="../../../inc/svg/animat.mark.1.1.1200.one.svg"/></a></li>
+            <li class="crumb btn color"><a href="../" title="Animat Habitat scene one, scène un.">I</a></li>
+            <li class="crumb scene color"><a><i>A History of Elephants &ndash; Ivory</i></a></li>
 
-  <section>
-    <article>
-      <div>
-        <h4 class="letterhead thin">December 2015</h4>
-        <h2 class="color">A History of Elephant Conservation</h2>
-        <h5 class="author">Press secretary at Animat Habitat.</h5>
+            </ul>
 
-        <p class="linebreak"><i>This article takes a look back at a human history of our natural world with elephants&hellip; When a worldwide ban on ivory sales in 1989 led to a rebound in the population, to about a million&hellip; Then in 1999 and 2008, due to pressure from countries in Asia and southern Africa, when the Convention on International Trade in Endangered Species allowed two sanctioned sales of ivory&hellip; Up until today, when the state of elephants in the world is not as it was decades ago and centuries ago and so on.</i></p>
+        </nav>
 
-        <p class="linebreak lineend"><i>As the world tries to look forward to a future with elephants in the wild in Africa, people must move past any one baseline in our history with elephants. Look at how the way our world is, today, is not the way our world once was, nor the way our world will forever be. And the way of our wild world is, today, up to us.</i></p>
+    <section>
+        <article>
+            <div>
+                <h4 class="letterhead thin">December 2015</h4>
+                <h2 class="color">A History of Elephant Conservation</h2>
+                <h5 class="author">Press secretary at Animat Habitat.</h5>
 
-      </div>
+                <p class="linebreak"><i>This article takes a look back at a human history of our natural world with elephants&hellip; When a worldwide ban on ivory sales in 1989 led to a rebound in the population, to about a million&hellip; Then in 1999 and 2008, due to pressure from countries in Asia and southern Africa, when the Convention on International Trade in Endangered Species allowed two sanctioned sales of ivory&hellip; Up until today, when the state of elephants in the world is not as it was decades ago and centuries ago and so on.</i></p>
 
-      <pre class="thin"></pre>
+                <p class="linebreak lineend"><i>As the world tries to look forward to a future with elephants in the wild in Africa, people must move past any one baseline in our history with elephants. Look at how the way our world is, today, is not the way our world once was, nor the way our world will forever be. And the way of our wild world is, today, up to us.</i></p>
 
-      <div id="request-toggle">
-        <h5>&plus; <a class="overscore" onclick="toggle_request();">Request PDF</a></h5>
-        <p>This article is available as a press release.</p>
+                </div>
 
-      </div>
+            <pre class="thin" id="request-header"></pre>
 
-      <div class="toggle-off" id="request">
+            <div id="request-toggle">
+                <h5>&plus; <a class="overscore" onclick="toggle(aa_fm_1, aa_fm_1_a, aa_fm_1_h);">Request PDF</a></h5>
+                <p>This article is available as a press release.</p>
 
-        <h5>&minus; <a class="overscore" onclick="toggle_request();">Close request</a></h5>
-        <p>Enter e-mail address for access to the press copy of <i>A History of Elephant Conservation</i> (PDF).</p>
+                </div>
 
-        <div class="gutter-tobo">
+            <div class="toggle-off" id="request">
+                <h5>&minus; <a class="overscore" onclick="toggle(aa_fm_1, aa_fm_1_a, aa_fm_1_h);">Close request</a></h5>
+                <p>Enter e-mail address for access to the press copy of <i>A History of Elephant Conservation</i> (PDF).</p>
 
-          <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A0A6F439069801F09A0CBBA94313CBFA8A9CFD0F6155D001351425E67703E4EEF34D21D77DAA7B416D98109D811B72051">
+                <div class="gutter-tobo">
 
-            <!-- <div class="clear">
-              <label class="" for="dliyu">Optional: Register for the project broadcast: Art and story&hellip; And elephants.</label>
-              <input id="dliyu" class="" name="cm-ol-dliyu" type="checkbox" value="dliyu">
-            </div> -->
+                    <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A0A6F439069801F09A0CBBA94313CBFA8A9CFD0F6155D001351425E67703E4EEF34D21D77DAA7B416D98109D811B72051">
 
-            <!-- <div class="clear">
-              <input aria-label="Name" id="fieldName" maxlength="140" name="cm-name" title="Full name" placeholder="Name" onfocus="if (this.value == 'Name') this.value = ''">
-            </div> -->
+                        <!-- <div class="clear">
+                            <label class="" for="dliyu">Optional: Register for the project broadcast: Art and story&hellip; And elephants.</label>
+                            <input id="dliyu" class="" name="cm-ol-dliyu" type="checkbox" value="dliyu">
+                        </div> -->
+
+                        <!-- <div class="clear">
+                            <input aria-label="Name" id="fieldName" maxlength="140" name="cm-name" title="Full name" placeholder="Name" onfocus="if (this.value == 'Name') this.value = ''">
+                        </div> -->
+
+                        <div class="clear">
+                            <input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email matte-thin" id="fieldEmail" maxlength="140" name="cm-jktktkh-jktktkh" required="" type="email" placeholder="E-mail address" onfocus="if (this.value == 'E-mail address') this.value = ''" title="E-mail address required.">
+                            <button type="submit">Submit Request</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            <pre class="thin"></pre>
+
+            <div class="clear-top clear-bottom">
+
+                <h3>&hellip;</h3>
+                <p><i>There are estimates of nearly thirty million African elephants in the wild in the 1500s, when Europeans started exploring Africa&hellip;</i></p>
+
+                <h3 class="linebreak">Pre-1960s</h3>
+                <p>Between the mid-1800s and the early 1900s, the annexation, colonization and partition of most of Africa by seven Western European nation-states &ndash; the Belgian, the British, the French, the German, the Italian, the Portuguese and the Spanish colonies &ndash; charted an unprecedented &lsquo;scramble&rsquo; for land and natural resources. The ivory trade followed the slave trade routes out of Africa, with broken tusks carried on the shoulders of <i>broken</i> men, out of the forests and savannas <i>en route</i> to the seas. African forest and savanna elephants were razed to the ground. Elephant populations were felled to ten million by the early 1900s, as an &lsquo;ivory frenzy&rsquo; in Europe was fueled by the mass production of combs, brush handles, piano keys and billiard balls and al that.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1960);" title="Christy, 2012">1</a>,&nbsp;<a class="button" onclick="fn(aa_fn_1960);" title="Hartley, 2013">2</a>]</sup></p>
+
+                <!-- The most pristine and prodigious tusks were designated &lsquo;billiard ball&rsquo; ivory. -->
+
+                <p class="linebreak">At this time, the United States of America was consuming 200 tons of ivory per year.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1960);" title="Hartley, 2013">2</a>]</sup></p>
+
+                <p class="linebreak"><i>Elephants continued to be massacred into the 1950s, with influxes of trafficked ivory that corresponded to African regions gaining independence from colonial rule. This meant wars. And elephants were a casualty.</i></p>
+
+                </div>
 
             <div class="clear">
-              <input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email matte-thin" id="fieldEmail" maxlength="140" name="cm-jktktkh-jktktkh" required="" type="email" placeholder="E-mail address" onfocus="if (this.value == 'E-mail address') this.value = ''" title="E-mail address required.">
-              <button type="submit">Submit Request</button>
+                <div class="quote" id="footnotes-1960">
+                    <p class="small"><sup>1</sup>&nbsp; Christy B. &lsquo;Blood Ivory: Ivory Worship&rsquo;, <i>National Geographic</i>, October 2012. <a href="../../../url/nationalgeographic/blood-ivory/" title="National Geographic / Ivory Worship" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small"><sup>2</sup>&nbsp; Christy B, Hartley A. &lsquo;The History of the Ivory Trade&rsquo;, <i>National Geographic</i>, 2013. <a href="../../../url/nationalgeographic/ivory-trade-history/" title="National Geographic / The History of the Ivory Trade" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small gutter-side">&plus;&nbsp; Kelly J J. Public Broadcasting Service (PBS), &lsquo;Battle for the Elephants&rsquo;, 2013.</p>
+
+                    </div>
+
+                </div>
+
+            <div>
+                <h3 class="linebreak">1970s</h3>
+                <p>The Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) was agreed to by the Parties &ndash; the nation-states that signed the Convention &ndash; in March 1973. The Parties to CITES listed the African elephant on Appendix III in 1976, then Appendix II in 1977, then as threatened with extinction, again, in 1978, yet, with a clause that permitted commercial international trade in ivory under the regulation of CITES. Over the years, more and more States joined this treaty organization that would ordain international wildlife trade policy. CITES as a result regulated the continued commercial international trade in ivory.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1970);" title="CITES">3</a>]</sup></p>
+
+                <p class="linebreak">An Endangered Species Act was signed into law in the United States of America in December 1973.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1970);" title="US FWS, 1973">4</a>]</sup></p>
+
+                <p class="linebreak">In 1979, estimates from the first pan-African elephant survey, led by Iain Douglas-Hamilton, reported the African elephant population at just over one million. <i>Dr Iain Douglas-Hamilton CBE would later found the data-driven charity registered in the United Kingdom and headquartered in Nairobi, Kenya, <u>Save The Elephants</u>.</i><sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1970);" title="STE">5</a>]</sup></p>
+
+                </div>
+
+            <div class="clear">
+                <div class="quote" id="footnotes-1970">
+                    <p class="small"><sup>3</sup>&nbsp; Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES). <a href="../../../url/-org/cites/" title="Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES)" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small"><sup>4</sup>&nbsp; United States Fish and Wildlife Service (US FWS), Endangered Species Act, 1973. <a href="../../../url/-gov/fws-endangered-laws-policies/" title="US FWS / Endangered Species Act" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small"><sup>5</sup>&nbsp; Save The Elephants (STE), &lsquo;Counting Elephants&rsquo;. <a href="../../../url/-org/savetheelephants-counting-elephants/" title="Save The Elephants" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    </div>
+
+                </div>
+
+            <div>
+                <h3 class="linebreak">1980s</h3>
+                <p>The Environmental Investigation Agency (EIA) revealed groundbreaking undercover footage of criminal syndicates caught red-handed, exposing how the international trade in ivory operated.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1980);" title="EIA, 1989">6</a>]</sup></p>
+
+                <p class="linebreak">Ten years after commercial international trade in ivory was regulated under CITES, African elephant populations had, again, declined by more than half. Six hundred thousand remained by 1989. In July of that year, Kenyan President Daniel arap Moi and the Kenya Wildlife Service (KWS) set fire to a 12-ton ivory stockpile in Nairobi National Park as a public, symbolic statement against the ivory trade. In October, in Lausanne, Switzerland, at the seventh Conference of the Parties, the Parties to CITES listed the African elephant on Appendix I, as a result a ban on the commercial international trade in ivory went into effect in early 1990.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1960);" title="Christy, 2012; Hartley, 2013; CITES">1-3</a>]</sup></p>
+                <!-- United Nations Framework Convention on Climate Change (UNFCCC) -->
+                <!-- Conference of the Parties (COP) -->
+
+                <p class="linebreak">At the time of the ivory ban, the United States of America, Europe and Japan collectively consumed eighty per cent of the &lsquo;carved trinket&rsquo; ivory market. The African Elephant Conservation Act went into effect in 1989, banning the import of African elephant ivory into the United States of America.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1980);" title="Christy, 2012">1</a>,&nbsp;<a class="button" onclick="fn(aa_fn_1980);" title="US FWS, 1988">7</a>]</sup></p>
+
+                </div>
+
+            <div class="clear">
+                <div class="quote" id="footnotes-1980">
+                    <p class="small"><sup>6</sup>&nbsp; Environmental Investigation Agency (EIA). &lsquo;A System of Extinction&rsquo;, 1989. <a href="../../../url/-org/eia-international-a-system-of-extinction/" title="Environmental Investigation Agency (EIA) / A System of Extinction" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small"><sup>7</sup>&nbsp; US FWS, African Elephant Conservation Act, 1988. <a href="../../../url/-gov/fws-african-elephant-conservation-act/" title="US FWS / African Elephant Conservation Act" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    </div>
+
+                </div>
+
+            <div>
+                <h3 class="linebreak">1990s</h3>
+                <p>The Republic of Kenya destroyed another 6.8 tons in 1991, followed closely by the Republic of Zambia, in 1992, with nearly 10 tons.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1990);" title="New Scientist, 1991">8</a>,&nbsp;<a class="button" onclick="fn(aa_fn_1990);" title="WWF, 2015">9</a>]</sup></p>
+
+                <p class="linebreak">On the other hand, the Republic of Botswana, the Republic of Namibia and the Republic of Zimbabwe submitted a proposal to down-list their elephant populations to Appendix II at the tenth Conference of the Parties, in 1997, in Harare, Zimbabwe, where Zimbabwe President Robert Mugabe proclaimed that elephants took up a lot of space and drank a lot of water. According to Mugabe, elephants would have to pay for their habitat with their ivory. There was an alternative proposal: Botswana, Namibia and Zimbabwe would continue to honor the ivory ban granted an exception be made for an experimental sale of ivory stockpiles&mdash;ivory from elephants that had been culled or had died of natural causes.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1960);" title="Christy, 2012">1</a>,&nbsp;<a class="button" onclick="fn(aa_fn_1970);" title="CITES">3</a>,&nbsp;<a class="button" onclick="fn(aa_fn_1990);" title="CITES, 2002">10</a>]</sup></p>
+
+                <p class="linebreak">The Parties to CITES approved a <u>first one-off sale</u>, of more than fifty tons&mdash;more than five thousand tusks, for approximately US$5,000,000 to a single buyer, Japan, in 1999. <i>This was the Japan experiment&hellip; Almost immediately Japan wanted more, and soon China would want a regulated ivory stockpile too.</i><sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1960);" title="Christy, 2012">1</a>,&nbsp;<a class="button" onclick="fn(aa_fn_1970);" title="CITES">3</a>,&nbsp;<a class="button" onclick="fn(aa_fn_1990);" title="CITES, 2002">10</a>]</sup></p>
+
+                <!-- </div>
+
+            <div class="color quote">
+                <h4><font class="color text-quote">&ldquo;</font><i>If Kenya’s Daniel arap Moi is the father of the ivory ban, then Zimbabwe’s Robert Mugabe is the father of its first rupture.</i>&nbsp;<font class="color text-quote">&rdquo;</font><br><font class="color small thin">&mdash;&nbsp;Bryan Christy, &lsquo;Blood Ivory: Ivory Worship&rsquo;, <i>National Geographic</i>, October 2012 [<a class="color" href="../../../url/nationalgeographic/blood-ivory/" title="National Geographic / Ivory Worship" target="_blank" rel="noopener">nationalgeographic.com</a>]</font></h4>
+
+                </div>
+
+            <div> -->
+                <p class="linebreak">Also, in the late 1990s, the Parties to CITES approved a proposal for Elephant Trade Information System (ETIS) and Monitoring the Illegal Killing of Elephants (MIKE) programs to keep all Parties informed on the status of illegal poaching and ivory trafficking. TRAFFIC, a non-governmental organization co-founded by the International Union for Conservation of Nature (IUCN) and the World Wide Fund for Nature (WWF) to monitor global wildlife trade, managed and operated the ETIS database. <i>The position of the IUCN and the WWF &ndash; with research projects and offices in ivory-trafficking States &ndash; complicated the oversight of ivory seizure audits. Also complicated, TRAFFIC headquartered the ETIS program in the Republic of Zimbabwe&mdash;the State spearheading the Japan experiment.</i><sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1990);" title="CITES, TRAFFIC, ETIS">11</a>,&nbsp;<a class="button" onclick="fn(aa_fn_1970);" title="CITES, MIKE">12</a>]</sup></p>
+
+                </div>
+
+            <div class="clear">
+                <div class="quote" id="footnotes-1990">
+                    <p class="small"><sup>8</sup>&nbsp; New Scientist, &lsquo;Ivory torched for Elephant Day&rsquo;, 1991. <a href="../../../url/newscientist/ivory-torched-for-elephant-day/" title="New Scientist / Ivory torched for Elephant Day" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small"><sup>9</sup>&nbsp; WWF, &lsquo;Crush and Burn: Destroying Illegal Elephant Ivory&rsquo;, 2015. <a href="../../../url/-org/worldwildlife-crush-and-burn-destroying-illegal-ivory/" title="WWF / Crush and Brun: Destroying Illegal Elephant Ivory" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small"><sup>10</sup>&nbsp; CITES, &lsquo;CITES sets strict conditions for any possible future ivory sales&rsquo;, 2002. <a href="../../../url/-org/cites-2002-ivory-update/" title="Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) / CITES sets strict conditions for any possible future ivory sales&rsquo;, 2002" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small"><sup>11</sup>&nbsp; CITES, Elephant Trade Information System (ETIS). <a href="../../../url/-org/cites-etis/" title="Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) / Elephant Trade Information System (ETIS)" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small gutter-side">&plus;&nbsp; TRAFFIC, ETIS. <a href="../../../url/-org/traffic-elephant-trade-information-system/" title="TRAFFIC / Elephant Trade Information System (ETIS)" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small"><sup>12</sup>&nbsp; CITES, Monitoring the Illegal Killing of Elephants (MIKE). <a href="../../../url/-org/cites-mike/" title="Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) / Monitoring the Illegal Killing of Elephants (MIKE)" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small gutter-side">&plus;&nbsp; MIKE. <a href="../../../url/-org/citesmike/" title="Monitoring the Illegal Killing of Elephants (MIKE)" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    </div>
+
+                </div>
+
+            <div>
+                <h3 class="linebreak">2000s</h3>
+                <p>The Republic of South Africa submitted a proposal to down-list its elephant populations to Appendix II at the twelfth Conference of the Parties, in 2002, in Santiago, Chile. There was, again, an alternative: South Africa plus the Republic of Botswana, the Republic of Namibia and the Republic of Zimbabwe submitted a proposal for another sale of ivory stockpiles. At that point, ETIS and MIKE lacked evidence &ndash; and lacked necessary oversight in some States for gathering proper evidence &ndash; of causality between the ivory stockpile sale to Japan and the poaching levels across Africa.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1960);" title="Christy, 2012">1</a>,&nbsp;<a class="button" onclick="fn(aa_fn_1970);" title="CITES">3</a>,&nbsp;<a class="button" onclick="fn(aa_fn_2000);" title="CITES, 2008">13</a>]</sup></p>
+
+                <p class="linebreak">The Parties to CITES approved a <u>second one-off sale</u> and, by 2008, auctioned more than 100 tons of stockpiled ivory to two buyers, China and Japan, for a combined total of approximately US$15,000,000. <i>That combined total was low. Japanese buyers were interested only in the medium-size, high-quality tusks for use as hanko. Chinese buyers were interested in the rest, the larger tusks for decadent carvings, and the smaller pieces for decorative trinkets. By almost all accounts, the ivory auction was an artifice.</i><sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1960);" title="Christy, 2012">1</a>,&nbsp;<a class="button" onclick="fn(aa_fn_1970);" title="CITES">3</a>,&nbsp;<a class="button" onclick="fn(aa_fn_2000);" title="CITES, 2008">13</a>]</sup></p>
+
+                <p class="linebreak">Parties to CITES from nineteen African elephant range States, in 2006, called for all African elephant populations to be unified under a single CITES Appendix listing. This would have enacted a ban on all commercial international trade in ivory. African elephants have instead been split-listed between two CITES Appendices since 1997. This African Elephant Coalition (AEC) had just come together in 2002. The AEC &ndash; now made up of thirty elephant range States &ndash; then had just the support of enough Parties to pass a CITES-instituted nine-year moratorium on ivory stockpile sale proposals, agreed to at the fourteenth Conference of the Parties, in 2007, in The Hague, Netherlands&mdash;to go into effect after the auction, through 2017.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1970);" title="CITES">3</a>,&nbsp;<a class="button" onclick="fn(aa_fn_2000);" title="Russo, 2014">14</a>,&nbsp;<a class="button" onclick="fn(aa_fn_2000);" title="AEC">15</a>]</sup></p>
+
+                </div>
+
+            <div class="clear">
+                <div class="quote" id="footnotes-2000">
+
+                    <p class="small"><sup>13</sup>&nbsp; CITES, &lsquo;Ivory Auctions&rsquo;, 2008. <a href="../../../url/-org/cites-2008-ivory/" title="Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) / 2008 Ivory Auctions" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    <p class="small"><sup>14</sup>&nbsp; Russo C. &lsquo;Can Elephants Survive a Legal Ivory Trade?&rsquo;, <i>National Geographic</i>, 2014. <a href="../../../url/nationalgeographic/ivory-ban-elephants-poaching/" title="National Geographic / Can Elephants Survive a Legal Ivory Trade?" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small gutter-side">&plus;&nbsp; STE, Opinion: &lsquo;Can Elephants Survive a Continued Ivory Trade Ban?&rsquo;, 2014. <a href="../../../url/-org/savetheelephants-can-elephants-survive-a-continued-ivory-trade-ban/" title="Save The Elephants (STE) / Opinion: Can Elephants Survive a Continued Ivory Trade Ban?" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    <p class="small"><sup>15</sup>&nbsp; African Elephant Coalition (AEC). <a href="../../../url/-com/africanelephantcoalition/" title="AEC" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    </div>
+
+                </div>
+
+            <div>
+                <p class="letterhead"><i>Once upon a time&hellip; We saved the elephants when our industrial world substituted carved ivory with the mass production of plastic combs, plastic brush handles, plastic piano keys and plastic billiard balls and all that. Religious use of ivory, however, remained fixed in culture. Ivory trafficking followed ancient trade routes into the twenty-first century, now accelerated by planes, phones, and the Internet.</i></p>
+
+                <!-- its role as a political symbol persists -->
+                <!-- frozen in amber -->
+
+                <p class="linebreak">In 2008, the EIA reported an internal Chinese government document that showed, between 1991 and 2002, the Chinese government had lost track of more than 110 tons of stockpiled ivory&mdash;equivalent to the tusks of eleven thousand elephants. <i>The artifice was being revealed.</i><sup>&nbsp;[<a class="button" onclick="fn(aa_fn_2000);" title="EIA, 2008">16</a>]</sup></p>
+
+                <!-- Confiscated, stockpiled ivory was funneling through markets in China. -->
+
+                </div>
+
+            <div class="color quote">
+                <h4><font class="color text-quote">&ldquo;</font><i>In recent years China has been implicated in more large-scale ivory seizures than any other non-African country. For the first time in generations many Chinese can afford to reach forward into a wealthy future, and they can also afford to look back into their own vibrant past. One of the first places many look is religion.</i>&nbsp;<font class="color text-quote">&rdquo;</font><br><font class="color small thin">&mdash;&nbsp;Bryan Christy, &lsquo;Blood Ivory: Ivory Worship&rsquo;, <i>National Geographic</i>, October 2012 [<a class="color" href="../../../url/nationalgeographic/blood-ivory/" title="National Geographic / Ivory Worship" target="_blank" rel="noopener">nationalgeographic.com</a>]</font></h4>
+
+                <!-- By all accounts, China is the world’s greatest villain when it comes to smuggled ivory. -->
+
+                </div>
+
+            <div class="clear">
+                <img alt="" src="https://via.animathabitat.org/img/01/photo/~brent-stirton/stirton.2013.chad.ivory-18.2048.jpg" />
+                <p class="text-right gutter-side">Zakouma National Park, Chad, photograph courtesy of Brent Stirton [<a href="../../../url/nationalgeographic/ivory-tracking/" title="National Geographic / How Killing Elephants Finances Terror in Africa" target="_blank" rel="noopener">nationalgeographic.com</a>]</p>
+
+                <!-- <img alt="" src="https://via.animathabitat.org/img/01/photo/~brent-stirton/stirton.2015.chad.ivory-wars.001.jpg" />
+                <p class="text-right gutter-side">&lsquo;Ivory Wars&rsquo;, Zakouma National Park, Chad, courtesy of Brent Stirton [brentstirton.com]</p> -->
+
+                </div>
+
+            <div class="clear-top">
+                <h3 class="linebreak"><b>2011</b></h3>
+                <p>The price of ivory reached US$1,000 per pound in Beijing, as a consumer class emerged in the People's Republic of China. Ignited by increased demand in Asia, stoked by limited wages in Africa, the number of elephants killed for their tusks and the large-scale seizures of ivory elevated so high that 2011 was labeled &lsquo;annus horribilis&rsquo; for the species.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_2011);" title="TRAFFIC, 2011">17</a>]</sup></p>
+
+                <!-- for the poached pachyderm species. <i>Incidently, the characteristic thick-skin was no match for an AK-47.</i> -->
+
+                <p class="linebreak" id="loophole-toggle">History: <a class="color" onclick="toggle(aa_ex_loophole, aa_ex_loophole_a, aa_ex_loophole_h);">The &lsquo;legal&rsquo; ivory loophole</a>.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1960);" title="Christy, 2012">1</a>]</sup></p>
+
+                <div class="clear line-left" id="loophole">
+                    <p class="linebreak"><i><font class="color">The &lsquo;pre-ban&rsquo; ivory loophole is where this history of the &lsquo;legal&rsquo; ivory loopholes begins.</font> African elephant ivory imported into a nation-state, before 1989, remained part of a viable domestic trade. Since no inventory was made of global ivory stockpiles before the ban, and since ivory can weather time, for all intents and purposes, forever, any trader caught with ivory tusks brazenly invoked the timeless defense: this is &lsquo;pre-ban&rsquo; ivory.</i></p>
+
+                    <div>
+                        <p>In the approval process for the Parties to CITES, TRAFFIC overstated that its ETIS database extended back to the 1989 ivory ban, when, in fact, States were not asked to report ivory seizures to its system until 1998. And so when a second ivory stockpile sale was proposed to the Parties to CITES, in 2002, the ETIS database had no effective baseline to evaluate the Japan experiment. Even with another decade, the transparency of the ETIS database was limited by its core metric: seizures. Export or import seizures were, of course, managed and operated by the authorities of each State, itself, under evaluation.</p>
+
+                        <!-- &mdash;the first ivory stockpile sale under CITES -->
+
+                        <p class="linebreak">The People's Republic of China considered the TRAFFIC information system a failure in regard to trade in ivory, at first. Then, after Japan received its first ivory stockpile under CITES, China reported the number of seizures of ivory trafficked into the Chinese mainland went up. In 2002, a Chinese report warned the Parties to CITES that a main reason for the increased trafficking of illicit ivory into Asia was the Japan experiment: &ldquo;Chinese people misunderstand the decision and believe that the international trade in ivory has been resumed.&rdquo; The Chinese consumers were apparently under the impression that the ivory markets were legal again, and, by 2004, the Chinese government had apparently forsaken any concerns. The People’s Republic of China petitioned the Parties to CITES for a second ivory stockpile sale.</p>
+
+                        <!-- CITES ignored China’s warning and placed its faith entirely in the ETIS statistics. “The data we have from ETIS is that there is no correlation between decisions made at CITES and the illegal trade,” Willem Wijnstekers, CITES secretary-general, would later assert in anticipation of more CITES-approved ivory sales. Tom Milliken, director of ETIS, would likewise suggest that the Japan sale had worked: “It is encouraging to note that the illicit trade in ivory progressively declined over the next five years.” But Milliken didn’t know what the illicit trade had done; what he knew was his seizure statistics. Nevertheless a judgment was made, and the future of the African elephant may forever be clouded by the moment when CITES, lacking the data to evaluate the impact of its first ivory sale, endorsed a second. -->
+
+                        <p class="linebreak">The Parties to CITES had not been informed of the extent of the illicit ivory trade. The Parties had the ETIS seizure statistics. <i>And so the future of the African elephant may forever be clouded by the moment when the Parties to CITES, lacking the data to evaluate the impact of its first ivory stockpile sale, endorsed a second.</i></p>
+
+                        <p class="linebreak">Japan is an island nation with a narrow primary use for its ivory: carved stamps called hanko. The People's Republic of China is a nation with a population of more than ten times the size, a separate system for the main ivory market&mdash;the Hong Kong Special Administrative Region (SAR), an extensive investment in Africa, and a culture with many uses for ivory ranging from symbolic figures to touristic trinkets.</p>
+
+                        <!-- a global &lsquo;Belt and Road&rsquo; initiative with -->
+
+                        <!-- And the Chinese government, which controls who may sell ivory in China, was not undercutting the black market, it was using its monopoly power to outperform the black market. -->
+
+                        <p class="linebreak">Once the Chinese government legally acquired an ivory stockpile, the commercialized, criminalized &lsquo;legal&rsquo; ivory loophole began in earnest. As part of the proposed ivory stockpile sale to China, a number of measures were instituted to safeguard the government-registered ivory, notably a photo-identification system for any ivory carving larger than a trinket. A 2011 survey of ivory markets in China, as reported by the International Fund for Animal Welfare (IFAW) in 2012, found that ivory markets in China found a way to exploit the system. On a small identification card &ndash; in a smaller-still photograph &ndash; the ivory carvings of the same religious or traditional motif all look alike. The exploitative markets simply retain the identification card from a sale, reuse the photograph to launder a look-alike carving made from illicit ivory and then repeat the process and so on. And so, the cards now have value and a secondary illicit market. This identification system, which was proposed as a measure of legitimacy, has proved worse than no system at all.</p>
+
+                        <!-- to an illegal icon -->
+
+                        <p class="linebreak">Close history: <a class="color" onclick="toggle(aa_ex_loophole, aa_ex_loophole_a, aa_ex_loophole_h);">The &lsquo;legal&rsquo; ivory loophole</a>.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1960);" title="Christy, 2012">1</a>,&nbsp;<a class="button" onclick="fn(aa_fn_2011);" title="IFAW, 2012">18</a>]</sup></p>
+
+                        </div>
+                    </div>
+
+                <p class="linebreak">In the loop&mdash;in the end, the two legal ivory sales have served to shelter smuggled ivory.</p>
+
+                <p class="linebreak">In July of 2011, the Republic of Kenya destroyed its ivory stockpile, again, this time a 5 ton stockpile&mdash;a symbolic statement that the Gabonese Republic echoed the year after.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1990);" title="WWF, 2015">9</a>]</sup></p>
+
+                </div>
+
+            <div class="clear">
+                <div class="quote" id="footnotes-2011">
+                    <p class="small"><sup>16</sup>&nbsp; EIA, &lsquo;China, Ivory Trade and the Future of Africa’s Elephants&rsquo;, 2008. <a href="../../../url/-org/eia-2008-china-ivory-trade-pdf/" title="EIA / China Ivory Trade and the Future of Africa's Elephants" target="_blank" rel="noopener">Document<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small"><sup>17</sup>&nbsp; TRAFFIC, &lsquo;Annus Horribilis for African Elephants&rsquo;, 2011. <a href="../../../url/-org/traffic-2011-annus-horribilis-for-african-elephants/" title="TRAFFIC / Annus horribilis for African elephants" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small"><sup>18</sup>&nbsp; International Fund for Animal Welfare (IFAW), &lsquo;Making a killing: a 2011 survey of ivory markets in China&rsquo;, 2012. <a href="../../../url/-org/ifaw-survey-ivory-markets-china/" title=" International Fund for Animal Welfare (IFAW) / Making a killing: a 2011 survey of ivory markets in China" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    </div>
+
+                </div>
+
+            <div>
+                <h3 class="linebreak"><b>2012</b></h3>
+                <p>Poachers traveled across the Sahara desert to massacre hundreds of elephants in the span of a few days in Bouba Ndjida National Park, the Republic of Cameroon. The scale of the killing was staggering. Empirical research, documented between 2009 and 2013, posited that poaching of elephants surpassed the level at which elephant populations naturally reproduce.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_2012);" title="Scriber, 2014">19</a>]</sup></p>
+
+                <p class="linebreak">The three previous years&mdash;2009, 2010 and 2011 listed in the ETIS records in the top five for amount of ivory seized around the world. The MIKE and the ETIS programs, in 2012, had enough data to suggest a close correspondence between trends in elephant poaching and trends in large-scale seizures of ivory. The Parties to CITES recognized that elephant poaching was, again, at a point of crisis, the most critical since the commercial international trade in ivory was banned in 1989.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_2012);" title="CITES, 2012">20</a>]</sup></p>
+
+                <p class="linebreak">United States of America Secretary of State Hillary Clinton at an event on &lsquo;Wildlife Trafficking and Conservation: A Call to Action&rsquo; called upon world leaders at every level of the international community to stop the killing of African elephants, to stop the trafficking of African elephant ivory, and to stop the demand for ivory, altogether.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_2012);" title="CITES, 2012">21</a>]</sup></p>
+
+                </div>
+
+            <div class="clear">
+                <div class="quote" id="footnotes-2012">
+                    <p class="small"><sup>19</sup>&nbsp; Scriber B. &lsquo;100,000 Elephants Killed by Poachers in Just Three Years&rsquo;, <i>National Geographic</i>, 2014. <a href="../../../url/nationalgeographic/elephants-africa-poaching-cites-census/" title="National Geographic / 100,000 Elephants Killed by Poachers in Just Three Years" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small"><sup>20</sup>&nbsp; CITES, &lsquo;Experts report highest elephant poaching and ivory smuggling rates in a decade&rsquo;, 2012. <a href="../../../url/-org/cites-2012-elephant-poaching-ivory-smuggling/" title="Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) / Experts report highest elephant poaching and ivory smuggling rates in a decade" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small"><sup>21</sup>&nbsp; CITES, &lsquo;CITES welcomes Secretary Clinton’s call for action on illegal wildlife trade&rsquo;, 2012. <a href="../../../url/-org/cites-2012-wildlife-trafficking/" title="Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) / CITES welcomes Secretary Clinton’s ‘Call for Action’" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    </div>
+
+                </div>
+
+            <div>
+                <h3 class="linebreak"><b>2013</b></h3>
+                <p>In early March, in the Republic of Chad, nearly one hundred elephants were killed in a devastating blow to one of Central Africa's last remaining elephant populations. It is estimated that more than one hundred African elephants died every day in 2013. Ivory seizures across the world reached a new high.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_2013);" title="Neme, 2013; Christy, 2015; Martin and Vigne, 2015">22-24</a>]</sup></p>
+
+                <p class="linebreak">Mainland Chinese tourists to Hong Kong exceeded forty million&mdash;more than double the number from 2009. The price per pound of ivory in the People's Republic of China exceeded US$1,000&mdash;more than triple the amount from 2010. The average elephant killed in 2013 fell victim to poaching for twenty pounds of ivory&mdash;of predominantly female- and young-elephant-sized tusks valued at nearly US$30,000. In Africa, criminal syndicates and organized terrorist groups were now inveterate in poaching the elephants and trafficking the ivory to raise money for munitions. Also, in States along trade routes out of Africa, political elites and security forces were perforce complicit.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_2013);" title="Martin and Vigne, 2015">24</a>,&nbsp;<a class="button" onclick="fn(aa_fn_2013);" title="Born Free USA, 2014">25</a>]</sup></p>
+
+                <p class="linebreak">The African elephant population was estimated at 470,000&mdash;confined to a patchwork of protected areas.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_2013);" title="IUCN, 2015">26</a>,&nbsp;<a class="button" onclick="fn(aa_fn_2013);" title="Elephant Database, 2015">27</a>]</sup></p>
+
+                <p class="linebreak">United States of America President Barack Obama, in July, passed an executive order to address wildlife trafficking, including ivory. Then the United States of America crushed 6 tons of ivory &ndash; tusks and trinkets seized in the past twenty-five years &ndash; to publicly address the illegal action and international corruption, which predicate this poaching crisis. That crush, in November, along with an earlier ivory crush in the Republic of the Philippines, in June, marked the first two times ivory-consuming nation-states made such a statement.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_2013);" title="The White House, 2013">28</a>,&nbsp;<a class="button" onclick="fn_6();" title="Christy, 2013">29</a>]</sup></p>
+
+                </div>
+
+            <div class="clear">
+                <div class="quote" id="footnotes-2013">
+
+                    <p class="small"><sup>22</sup>&nbsp; Neme L. &lsquo;New Promises Follow Elephant Slaughter in Chad and Cameroon&rsquo;, <i>A Voice for Elephants</i>, 2013. <a href="../../../url/-com/laurelneme-new-promises-follow-elephant-slaughter-in-chad-and-cameroon/" title="Laurel Neme / National Geographic: New Promises Follow Elephant Slaughter in Chad and Cameroon" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    <p class="small"><sup>23</sup>&nbsp; Christy B. &lsquo;How Killing Elephants Finances Terror in Africa&rsquo;, <i>National Geographic</i>, 2015. <a href="../../../url/nationalgeographic/ivory-tracking/" title="National Geographic / How Killing Elephants Finances Terror in Africa" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    <p class="small"><sup>24</sup>&nbsp; Martin E, Vigne L. &lsquo;Hong Kong's Ivory&rsquo;, STE, 2015. <a href="../../../url/-org/savetheelephants-2015-hong-kong-ivory-report-pdf/" title="Save The Elephants / 2015 Hong Kong Ivory Report" target="_blank" rel="noopener">Document<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small"><sup>25</sup>&nbsp; Born Free USA, &lsquo;Ivory's Curse: The Militarization and Professionalization of Poaching in Africa&rsquo;, 2014. <a href="../../../url/-org/bornfreeusa-ivorys-curse-2014/" title="Born Free / Ivory's Curse: The Militarization and Professionalization of Poaching in Africa" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small gutter-side">&plus;&nbsp; Born Free USA, &lsquo;Out of Africa: Mapping the Global Trade in Illicit Elephant Ivory&rsquo;, 2014. <a href="../../../url/-org/bornfreeusa-out-of-africa-2014/" title="Born Free / Out of Africa: Mapping the Global Trade in Illicit Elephant Ivory" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    <p class="small"><sup>26</sup>&nbsp; International Union for the Conservation of Nature (IUCN), &lsquo;Updated African Elephant Database&rsquo;, 2015. <a href="../../../url/-org/iucn-updated-african-elephant-database/" title="International Union for the Conservation of Nature (IUCN) / Updated African Elephant Database reveals declining elephant populations" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small"><sup>27</sup>&nbsp; Elephant Database, &lsquo;African Elephant Range&rsquo;, 2015. <a href="../../../url/-org/africanelephantdatabase/" title="Elephant Database / African Elephant Range" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    <p class="small"><sup>28</sup>&nbsp; The White House, &lsquo;Executive Order: Combating Wildlife Trafficking&rsquo;, 2013. <a href="../../../url/-gov/whitehouse-2013-executive-order-combating-wildlife-trafficking/" title="The White House / Executive Order: Combating Wildlife Trafficking" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small"><sup>29</sup>&nbsp; Christy B. &lsquo;Historic United States Ivory Crush a Call to Global Action&rsquo;, <i>National Geographic</i>, 2013. <a href="../../../url/nationalgeographic/ivory-crush-united-states/" title="National Geographic / Historic United States Ivory Crush a Call to Global Action" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small gutter-side">&plus;&nbsp; Christy B. &lsquo;In Global First, Philippines to Destroy Its Ivory Stock&rsquo;, <i>National Geographic</i>, 2013. <a href="../../../url/nationalgeographic/ivory-crush-philippines/" title="National Geographic / In Global First, Philippines to Destroy Its Ivory Stock" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    </div>
+
+                </div>
+
+            <div>
+                <h3 class="linebreak"><b>2014</b></h3>
+                <p class="linebreak">In January, the People's Republic of China &ndash; the biggest consumer of illicit ivory in the world &ndash; crushed 6 tons of carved trinkets and confiscated tusks, too, matching the American show of support for global efforts to protect African elephants from rampant poaching. Also in January, Hong Kong, noted for its more than four hundred licensed businesses displaying more than thirty thousand ivory items for sale&mdash;more than any other city in the world, announced plans to destroy more than 30 tons of confiscated ivory. (Only 1 ton was confirmed crushed in Hong Kong between May 2014 and 2015.) The Republic of Chad destroyed its national ivory stockpile in February. The French Republic did so too. Then the Kingdom of Belgium did so in April. These stockpiles weighed more than 5 tons altogether.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1990);" title="WWF, 2015">9</a>,&nbsp;<a class="button" onclick="fn(aa_fn_2014);" title="Clark Howard, 2014; Born Free UK, 2015; African Parks, 2014">29-31</a>]</sup></p>
+
+                <p class="linebreak">Dr Mike Chase and the Botswana-based non-governmental organization Elephants Without Borders (EWB), with funding from co-founder of Microsoft turned philanthropist Paul Allen, launched and led the <u>Great Elephant Census</u> (GEC)&mdash;the first-ever pan-African aerial census. The aerial census collected data about the number and distribution of African elephants to inform a baseline for any decision making on elephant conservation, in particular, land management in elephant range States. The GEC found that, between 2007 and 2014, African savanna elephant populations declined by more than thirty per cent&mdash;more or less 144,000 elephants. Most were killed just for their tusks. Elephant populations were decimated in a number of areas, or extirpated altogether, plus a few surprise herds were found in places where elephants were not known to inhabit.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_2014);" title="EWB, GEC">33</a>]</sup></p>
+
+                </div>
+
+            <div class="clear">
+                <div class="quote" id="footnotes-2014">
+                    <p class="small"><sup>30</sup>&nbsp; Howard B C. &lsquo;China Crushes Six Tons of Confiscated Elephant Ivory&rsquo;, <i>National Geographic</i>, 2014. <a href="../../../url/nationalgeographic/ivory-crush-china/" title="National Geographic / China Crushes Six Tons of Confiscated Elephant Ivory" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small"><sup>31</sup>&nbsp; Born Free UK, &lsquo;Ivory Destruction&rsquo;, 2015. <a href="../../../url/-org-uk/bornfree-ivory-trade/" title="Born Free / Ivory Destruction" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small"><sup>32</sup>&nbsp; African Parks, &lsquo;President Idriss Deby Itno of Chad Destroys 1.1 Ton Ivory Stockpile&rsquo;, 2014. <a href="../../../url/-org/africanparks-chad-destroys-1.1-ton-ivory-stockpile/" title="African Parks / President Idriss Deby Itno of Chad Destroys 1.1 Ton Ivory Stockpile" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    <!-- President Idriss Deby of Chad commits to destroying ivory stockpile amongst range of elephant protection measures
+                    //africanparks.org/newsroom/press-releases/president-idriss-deby-chad-commits-destroying-ivory-stockpile-amongst-range-elephant-protection-measures -->
+
+                    <p class="small"><sup>33</sup>&nbsp; Elephants Without Borders (EWB), Great Elephant Census (GEC). <a href="../../../url/-org/elephantswithoutborders-great-elephant-census/" title="Elephants Without Borders (EWB) / Great Elephant Census (GEC)" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small gutter-side">&plus;&nbsp; Paul Allen, GEC. <a href="../../../url/-com/greatelephantcensus-the-census/" title="Paul Allen / Great Elephant Census (GEC)" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    </div>
+
+                </div>
+
+            <div>
+                <h3 class="linebreak"><b>2015</b></h3>
+                <p>According to a report published by Save The Elephants on ivory sales and stockpiles in Hong Kong, more than 100 tons of ivory from the Hong Kong government-registered non-commercial ivory stockpile were &lsquo;deactivated&rsquo; and disappeared in a particularly short span, from 2008 through 2010, in particular in 2009, when a change in the registration system in Hong Kong required a license to possess ivory for commercial purpose. The report showed a correlation between the decreased weight of the government-registered non-commercial stockpile with the increased number of mainland Chinese tourists to Hong Kong. The report noted that correlation, however, in contrast with government-registered commercial ivory sales from 2010 through 2013, which accounted for less than 5 tons. This paradox &ndash; a thriving tourism industry that never diminishes commercial ivory stockpiles &ndash; can be explained by the aforementioned &lsquo;legal&rsquo; ivory loophole in the registration system that invites exploitative traders to launder illicit ivory into the legal markets in Hong Kong.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_2013);" title="Martin and Vigne, 2015">24</a>,&nbsp;<a class="button" onclick="fn(aa_fn_2014);" title="Born Free UK, 2015">31</a>,&nbsp;<a class="button" onclick="fn(aa_fn_2015);" title="National Geographic, 2015">34</a>]</sup></p>
+
+                <p class="linebreak">The Republic of Kenya, again, set off a symbolic defiance of the international trade in ivory, burned 15 tons, followed closely by over 6 tons in the Federal Democratic Republic of Ethiopia, nearly 5 tons in the Republic of Congo, more than 10 tons in the United Arab Emirates, nearly 1 ton in the People's Republic of China, 1 ton in the United States of America, and more than 2 tons in the Republic of Mozambique.<sup>&nbsp;[<a class="button" onclick="fn(aa_fn_1990);" title="WWF, 2015">9</a>,&nbsp;<a class="button" onclick="fn(aa_fn_2015);" title="Born Free USA, 2015; Neme, 2015; WCS, 2015; CITES, 2015; US FWS, 2015; TRAFFIC, 2015">35-40</a>]</sup></p>
+
+                </div>
+
+            <div class="clear">
+                <div class="quote" id="footnotes-2015">
+
+                    <p class="small"><sup>34</sup>&nbsp; Neme L. &lsquo;How World's Largest Legal Ivory Market Fuels Demand for Illegal Ivory&rsquo;, <i>National Geographic</i>, 2015. <a href="../../../url/nationalgeographic/ivory-loopholes-fuel-smuggling-in-hong-kong/" title="National Geographic / How World's Largest Legal Ivory Market Fuels Demand for Illegal Ivory" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    <p class="small"><sup>35</sup>&nbsp; Born Free USA, &lsquo;Kenya Sends Out 15 Ton Ivory Smoke Signal&rsquo;, 2015. <a href="../../../url/-org/bornfreeusa-kenya-sends-out-15-ton-ivory-smoke-signal/" title="Born Free / Kenya Sends Out 15 Ton Ivory Smoke Signal" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    <p class="small"><sup>36</sup>&nbsp; Neme L. &lsquo;Ethiopia Burns Entire 6.1-Ton Ivory Stockpile&rsquo;, <i>A Voice for Elephants</i>, 2015. <a href="../../../url/-com/laurelneme-ethiopia-burns-entire-6-1-ton-ivory-stockpile/" title="Laurel Neme / National Geographic: Ethiopia Burns Entire 6.1-Ton Ivory Stockpile" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    <p class="small"><sup>37</sup>&nbsp; Wildlife Conservation Society (WCS), &lsquo;Congo Republic burns its entire stockpile of seized ivory&rsquo;, 2015. <a href="../../../url/-org/wcs-congo-republic-burns-its-entire-stockpile-of-seized-ivory/" title="Wildlife Conservation Society / Congo Republic burns its entire stockpile of seized ivory" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    <p class="small"><sup>38</sup>&nbsp; CITES, &lsquo;CITES remarks to the first destruction of confiscated elephant ivory in the United Arab Emirates&rsquo;, 2015. <a href="../../../url/-org/cites-uae-ivory-destruction-2015/" title="Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) / CITES remarks to the first destruction of confiscated elephant ivory in the United Arab Emirates" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    <p class="small"><sup>39</sup>&nbsp; US FWS, &lsquo;United States Destroys Confiscated Elephant Ivory in Times Square&rsquo;, 2015. <a href="../../../url/-gov/fws-2015-united-states-destroys-confiscated-elephant-ivory-times-square/" title="USFWS / United States Destroys Confiscated Elephant Ivory in Times Square" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+                    <p class="small"><sup>40</sup>&nbsp; TRAFFIC, &lsquo;Vital Evidence Goes up in Smoke&rsquo;, 2015. <a href="../../../url/-org/traffic-vital-evidence-goes-up-in-smoke/" title="TRAFFIC / Vital Evidence Goes up in Smoke" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
+
+                    </div>
+
+                </div>
+
+            <div>
+                <h3 class="linebreak">Elephant Conservation Today</h3>
+                <p>The demand for ivory, the trafficking and the poaching are an acute threat to elephants in the wild in Africa today. Yet the ivory trade is not the only threat. There are ever more challenges for elephants with electrified fences, prolonged droughts and human-wildlife conflicts over any natural resources that remain in the buffer zones and on the fringes of farmlands developed into once wild elephant habitat. An elephant needs its tusks. And a lot of space. <i>Elephant conservation is kind of like a big deal.</i></p>
+
+                <p class="linebreak">As for a proposition to take on the commercial international trade in ivory &ndash; the governmental manipulations of ivory stockpiles and the cultural fixations on ivory carvings &ndash; that is a dual challenge. A solution highlighted in this history of elephant conservation has started with investigative journalism. Undercover footage of criminal syndicates exposed how the international trade in ivory operated in the 1980s, leaked documents reported on the mismanagement of the Chinese government-registered ivory stockpile in the 1990s, into the 2000s, and then journalists, often posed as tourists, shined a light on dark ivory markets within the Chinese government-regulated system that followed the second one-off sale of ivory, and that same system persist to this day.</p>
+
+                <p class="linebreak">In this history of elephant conservation, there has also surfaced a subtext of investment in people. People, and African people most of all, have the most meaningful part to play in any solution for African elephant conservation. And so, a theme here has been investment in the livelihoods of people living in rural areas of elephant range States in Africa, including access to education and health care and all that. This part of any solution extends to many of the other challenges that threaten elephants today and, increasingly, into the future. Furthermore, this theme of investment in people has extended to educational campaigns in ivory-consuming States in Asia, in particular, to stop the demand for ivory.</p>
+
+                <p class="linebreak"><i>A plea to save the elephants.</i> At times, ivory burns have attracted worldwide attention and have proved a critical, visual tool to address the poaching crisis. Sometimes public figures in ivory-consuming States then raised the level of awareness about this crisis, and invited political leaders to take on this central proposition that is rooted in scientific evidence and facts about the trade in ivory. And everytime any person in a position to purchase ivory, now, or in the future, becomes informed about the implication of ivory products &ndash; and the life of the elephants &ndash; the more the buying stops, the killing will too. A last hope in this battle for the elephants is that more and more people like you will become invested in future campaigns or funds to save them.</p>
+
+                <!-- When the buying stops, the killing can too. -->
+
+                </div>
+
+            <div class="gutter-tobo"><div class="color text-center"><h3 class="linebreak">Help give life to the wild places.</h3><h5>You can support Animat Habitat in a few ways.</h5><div class="triptych">
+
+                <div class="gutter-small"><a href="../../../patron/" title="Animat Habitat patrons." target="_blank"><button class="text-center title">Donate</button></a></div>
+
+                <div class="gutter-small"><a href="../../../boutique/" title="Animat Habitat boutique." target="_blank"><button class="text-center title">Shop</button></a></div>
+
+                <div class="gutter-small"><a href="../../../rss/" title="Animat Habitat broadcast." target="_blank"><button class="text-center title">Subscribe</button></a></div></div></div>
+
+                </div>
+
+            <div class="clear article-navigation" role="navigation">
+                <div class="nav-links">
+                    <a class="nav-previous" href="../book-of-ella-3/" rel="prev"><font class="toggle-form-full">Book of Ella Ch&nbsp;3 /</font><font class="toggle-form-break">Previous Article /</font></a>
+                    <a class="nav-next" href="../making-of-ella-2/" rel="next"><font class="toggle-form-full">/ Making of Ella Ch&nbsp;2</font><font class="toggle-form-break">/ Next Article</font></a>
+
+                    </div>
+
+                </div>
+
+            </article><br class="clear">
+
+        </section>
+
+    <footer>
+        <div class="quote">
+            <p class="small">This article was edited March 2023.</p>
+
+            <p class="linebreak small">Copyright &copy; Animat Habitat, 2015-2023. <a href="../../../c/" target="_blank" title="Terms at Animat Habitat">Terms of Access</a>.</p>
+
             </div>
 
-          </form>
+        </footer>
 
-        </div>
-
-      </div>
-
-      <pre class="thin"></pre>
-
-      <div class="clear-top clear-bottom">
-
-        <h3>&hellip;</h3>
-        <p><i>There are estimates of nearly thirty million African elephants in the wild in the 1500s, when Europeans started exploring Africa&hellip;</i></p>
-
-        <h3 class="linebreak">Pre-1960s</h3>
-        <p>Between the mid-1800s and the early 1900s, the annexation, colonization and partition of most of Africa by seven Western European nation-states &ndash; the Belgian, the British, the French, the German, the Italian, the Portuguese and the Spanish colonies &ndash; charted an unprecedented &lsquo;scramble&rsquo; for land and natural resources. The ivory trade followed the slave trade routes out of Africa, with broken tusks carried on the shoulders of <i>broken</i> men, out of the forests and savannas <i>en route</i> to the seas. African forest and savanna elephants were razed to the ground. Elephant populations were felled to ten million by the early 1900s, as an &lsquo;ivory frenzy&rsquo; in Europe was fueled by the mass production of combs, brush handles, piano keys and billiard balls and al that.<sup>&nbsp;[<a class="button" onclick="fn();" title="Christy, 2012">1</a>,&nbsp;<a class="button" onclick="fn();" title="Hartley, 2013">2</a>]</sup></p>
-
-        <!-- The most pristine and prodigious tusks were designated &lsquo;billiard ball&rsquo; ivory. -->
-
-        <p class="linebreak">At this time, the United States of America was consuming 200 tons of ivory per year.<sup>&nbsp;[<a class="button" onclick="fn();" title="Hartley, 2013">2</a>]</sup></p>
-
-        <p class="linebreak"><i>Elephants continued to be massacred into the 1950s, with influxes of trafficked ivory that corresponded to African regions gaining independence from colonial rule. This meant wars. And elephants were a casualty.</i></p>
-
-      </div>
-
-      <div class="clear">
-
-        <div class="quote" id="footnotes-1960">
-          <p class="small"><sup>1</sup>&nbsp; Christy B. &lsquo;Blood Ivory: Ivory Worship&rsquo;, <i>National Geographic</i>, October 2012. <a href="../../../url/nationalgeographic/blood-ivory/" title="National Geographic / Ivory Worship" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small"><sup>2</sup>&nbsp; Christy B, Hartley A. &lsquo;The History of the Ivory Trade&rsquo;, <i>National Geographic</i>, 2013. <a href="../../../url/nationalgeographic/ivory-trade-history/" title="National Geographic / The History of the Ivory Trade" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small gutter-side">&plus;&nbsp; Kelly J J. Public Broadcasting Service (PBS), &lsquo;Battle for the Elephants&rsquo;, 2013.</p>
-
-        </div>
-      </div>
-
-      <div>
-        <h3 class="linebreak">1970s</h3>
-        <p>The Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) was agreed to by the Parties &ndash; the nation-states that signed the Convention &ndash; in March 1973. The Parties to CITES listed the African elephant on Appendix III in 1976, then Appendix II in 1977, then as threatened with extinction, again, in 1978, yet, with a clause that permitted commercial international trade in ivory under the regulation of CITES. Over the years, more and more States joined this treaty organization that would ordain international wildlife trade policy. CITES as a result regulated the continued commercial international trade in ivory.<sup>&nbsp;[<a class="button" onclick="fn_1970();" title="CITES">3</a>]</sup></p>
-
-        <p class="linebreak">An Endangered Species Act was signed into law in the United States of America in December 1973.<sup>&nbsp;[<a class="button" onclick="fn_1970();" title="US FWS, 1973">4</a>]</sup></p>
-
-        <p class="linebreak">In 1979, estimates from the first pan-African elephant survey, led by Iain Douglas-Hamilton, reported the African elephant population at just over one million. <i>Dr Iain Douglas-Hamilton CBE would later found the data-driven charity registered in the United Kingdom and headquartered in Nairobi, Kenya, <u>Save The Elephants</u>.</i><sup>&nbsp;[<a class="button" onclick="fn_1970();" title="STE">5</a>]</sup></p>
-
-      </div>
-
-      <div class="clear">
-
-        <div class="quote" id="footnotes-1970">
-          <p class="small"><sup>3</sup>&nbsp; Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES). <a href="../../../url/-org/cites/" title="Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES)" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small"><sup>4</sup>&nbsp; United States Fish and Wildlife Service (US FWS), Endangered Species Act, 1973. <a href="../../../url/-gov/fws-endangered-laws-policies/" title="US FWS / Endangered Species Act" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small"><sup>5</sup>&nbsp; Save The Elephants (STE), &lsquo;Counting Elephants&rsquo;. <a href="../../../url/-org/savetheelephants-counting-elephants/" title="Save The Elephants" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-        </div>
-      </div>
-
-      <div>
-
-        <h3 class="linebreak">1980s</h3>
-        <p>The Environmental Investigation Agency (EIA) revealed groundbreaking undercover footage of criminal syndicates caught red-handed, exposing how the international trade in ivory operated.<sup>&nbsp;[<a class="button" onclick="fn_1980();" title="EIA, 1989">6</a>]</sup></p>
-
-        <p class="linebreak">Ten years after commercial international trade in ivory was regulated under CITES, African elephant populations had, again, declined by more than half. Six hundred thousand remained by 1989. In July of that year, Kenyan President Daniel arap Moi and the Kenya Wildlife Service (KWS) set fire to a 12-ton ivory stockpile in Nairobi National Park as a public, symbolic statement against the ivory trade. In October, in Lausanne, Switzerland, at the seventh Conference of the Parties, the Parties to CITES listed the African elephant on Appendix I, as a result a ban on the commercial international trade in ivory went into effect in early 1990.<sup>&nbsp;[<a class="button" onclick="fn();" title="Christy, 2012; Hartley, 2013; CITES">1-3</a>]</sup></p>
-        <!-- United Nations Framework Convention on Climate Change (UNFCCC) -->
-        <!-- Conference of the Parties (COP) -->
-
-        <p class="linebreak">At the time of the ivory ban, the United States of America, Europe and Japan collectively consumed eighty per cent of the &lsquo;carved trinket&rsquo; ivory market. The African Elephant Conservation Act went into effect in 1989, banning the import of African elephant ivory into the United States of America.<sup>&nbsp;[<a class="button" onclick="fn_1980();" title="Christy, 2012">1</a>,&nbsp;<a class="button" onclick="fn_1980();" title="US FWS, 1988">7</a>]</sup></p>
-
-      </div>
-
-      <div class="clear">
-
-        <div class="quote" id="footnotes-1980">
-          <p class="small"><sup>6</sup>&nbsp; Environmental Investigation Agency (EIA). &lsquo;A System of Extinction&rsquo;, 1989. <a href="../../../url/-org/eia-international-a-system-of-extinction/" title="Environmental Investigation Agency (EIA) / A System of Extinction" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small"><sup>7</sup>&nbsp; US FWS, African Elephant Conservation Act, 1988. <a href="../../../url/-gov/fws-african-elephant-conservation-act/" title="US FWS / African Elephant Conservation Act" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-        </div>
-      </div>
-
-      <div>
-
-        <h3 class="linebreak">1990s</h3>
-        <p>The Republic of Kenya destroyed another 6.8 tons in 1991, followed closely by the Republic of Zambia, in 1992, with nearly 10 tons.<sup>&nbsp;[<a class="button" onclick="fn_1990();" title="New Scientist, 1991">8</a>,&nbsp;<a class="button" onclick="fn_1990();" title="WWF, 2015">9</a>]</sup></p>
-
-        <p class="linebreak">On the other hand, the Republic of Botswana, the Republic of Namibia and the Republic of Zimbabwe submitted a proposal to down-list their elephant populations to Appendix II at the tenth Conference of the Parties, in 1997, in Harare, Zimbabwe, where Zimbabwe President Robert Mugabe proclaimed that elephants took up a lot of space and drank a lot of water. According to Mugabe, elephants would have to pay for their habitat with their ivory. There was an alternative proposal: Botswana, Namibia and Zimbabwe would continue to honor the ivory ban granted an exception be made for an experimental sale of ivory stockpiles&mdash;ivory from elephants that had been culled or had died of natural causes.<sup>&nbsp;[<a class="button" onclick="fn();" title="Christy, 2012">1</a>,&nbsp;<a class="button" onclick="fn_1970();" title="CITES">3</a>,&nbsp;<a class="button" onclick="fn_1990();" title="CITES, 2002">10</a>]</sup></p>
-
-        <p class="linebreak">The Parties to CITES approved a <u>first one-off sale</u>, of more than fifty tons&mdash;more than five thousand tusks, for approximately US$5,000,000 to a single buyer, Japan, in 1999. <i>This was the Japan experiment&hellip; Almost immediately Japan wanted more, and soon China would want a regulated ivory stockpile too.</i><sup>&nbsp;[<a class="button" onclick="fn();" title="Christy, 2012">1</a>,&nbsp;<a class="button" onclick="fn_1970();" title="CITES">3</a>,&nbsp;<a class="button" onclick="fn_1990();" title="CITES, 2002">10</a>]</sup></p>
-
-      <!-- </div>
-
-      <div class="color quote">
-        <h4><font class="color text-quote">&ldquo;</font><i>If Kenya’s Daniel arap Moi is the father of the ivory ban, then Zimbabwe’s Robert Mugabe is the father of its first rupture.</i>&nbsp;<font class="color text-quote">&rdquo;</font><br><font class="color small thin">&mdash;&nbsp;Bryan Christy, &lsquo;Blood Ivory: Ivory Worship&rsquo;, <i>National Geographic</i>, October 2012 [<a class="color" href="../../../url/nationalgeographic/blood-ivory/" title="National Geographic / Ivory Worship" target="_blank" rel="noopener">nationalgeographic.com</a>]</font></h4>
-
-      </div>
-
-      <div> -->
-        <p class="linebreak">Also, in the late 1990s, the Parties to CITES approved a proposal for Elephant Trade Information System (ETIS) and Monitoring the Illegal Killing of Elephants (MIKE) programs to keep all Parties informed on the status of illegal poaching and ivory trafficking. TRAFFIC, a non-governmental organization co-founded by the International Union for Conservation of Nature (IUCN) and the World Wide Fund for Nature (WWF) to monitor global wildlife trade, managed and operated the ETIS database. <i>The position of the IUCN and the WWF &ndash; with research projects and offices in ivory-trafficking States &ndash; complicated the oversight of ivory seizure audits. Also complicated, TRAFFIC headquartered the ETIS program in the Republic of Zimbabwe&mdash;the State spearheading the Japan experiment.</i><sup>&nbsp;[<a class="button" onclick="fn_1990();" title="CITES, TRAFFIC, ETIS">11</a>,&nbsp;<a class="button" onclick="fn_1970();" title="CITES, MIKE">12</a>]</sup></p>
-
-      </div>
-
-      <div class="clear">
-
-        <div class="quote" id="footnotes-1990">
-          <p class="small"><sup>8</sup>&nbsp; New Scientist, &lsquo;Ivory torched for Elephant Day&rsquo;, 1991. <a href="../../../url/newscientist/ivory-torched-for-elephant-day/" title="New Scientist / Ivory torched for Elephant Day" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small"><sup>9</sup>&nbsp; WWF, &lsquo;Crush and Burn: Destroying Illegal Elephant Ivory&rsquo;, 2015. <a href="../../../url/-org/worldwildlife-crush-and-burn-destroying-illegal-ivory/" title="WWF / Crush and Brun: Destroying Illegal Elephant Ivory" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small"><sup>10</sup>&nbsp; CITES, &lsquo;CITES sets strict conditions for any possible future ivory sales&rsquo;, 2002. <a href="../../../url/-org/cites-2002-ivory-update/" title="Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) / CITES sets strict conditions for any possible future ivory sales&rsquo;, 2002" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small"><sup>11</sup>&nbsp; CITES, Elephant Trade Information System (ETIS). <a href="../../../url/-org/cites-etis/" title="Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) / Elephant Trade Information System (ETIS)" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small gutter-side">&plus;&nbsp; TRAFFIC, ETIS. <a href="../../../url/-org/traffic-elephant-trade-information-system/" title="TRAFFIC / Elephant Trade Information System (ETIS)" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small"><sup>12</sup>&nbsp; CITES, Monitoring the Illegal Killing of Elephants (MIKE). <a href="../../../url/-org/cites-mike/" title="Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) / Monitoring the Illegal Killing of Elephants (MIKE)" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small gutter-side">&plus;&nbsp; MIKE. <a href="../../../url/-org/citesmike/" title="Monitoring the Illegal Killing of Elephants (MIKE)" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-        </div>
-      </div>
-
-      <div>
-
-        <h3 class="linebreak">2000s</h3>
-        <p>The Republic of South Africa submitted a proposal to down-list its elephant populations to Appendix II at the twelfth Conference of the Parties, in 2002, in Santiago, Chile. There was, again, an alternative: South Africa plus the Republic of Botswana, the Republic of Namibia and the Republic of Zimbabwe submitted a proposal for another sale of ivory stockpiles. At that point, ETIS and MIKE lacked evidence &ndash; and lacked necessary oversight in some States for gathering proper evidence &ndash; of causality between the ivory stockpile sale to Japan and the poaching levels across Africa.<sup>&nbsp;[<a class="button" onclick="fn();" title="Christy, 2012">1</a>,&nbsp;<a class="button" onclick="fn_1970();" title="CITES">3</a>,&nbsp;<a class="button" onclick="fn_2000();" title="CITES, 2008">13</a>]</sup></p>
-
-        <p class="linebreak">The Parties to CITES approved a <u>second one-off sale</u> and, by 2008, auctioned more than 100 tons of stockpiled ivory to two buyers, China and Japan, for a combined total of approximately US$15,000,000. <i>That combined total was low. Japanese buyers were interested only in the medium-size, high-quality tusks for use as hanko. Chinese buyers were interested in the rest, the larger tusks for decadent carvings, and the smaller pieces for decorative trinkets. By almost all accounts, the ivory auction was an artifice.</i><sup>&nbsp;[<a class="button" onclick="fn();" title="Christy, 2012">1</a>,&nbsp;<a class="button" onclick="fn_1970();" title="CITES">3</a>,&nbsp;<a class="button" onclick="fn_2000();" title="CITES, 2008">13</a>]</sup></p>
-
-        <p class="linebreak">Parties to CITES from nineteen African elephant range States, in 2006, called for all African elephant populations to be unified under a single CITES Appendix listing. This would have enacted a ban on all commercial international trade in ivory. African elephants have instead been split-listed between two CITES Appendices since 1997. This African Elephant Coalition (AEC) had just come together in 2002. The AEC &ndash; now made up of thirty elephant range States &ndash; then had just the support of enough Parties to pass a CITES-instituted nine-year moratorium on ivory stockpile sale proposals, agreed to at the fourteenth Conference of the Parties, in 2007, in The Hague, Netherlands&mdash;to go into effect after the auction, through 2017.<sup>&nbsp;[<a class="button" onclick="fn_1970();" title="CITES">3</a>,&nbsp;<a class="button" onclick="fn_2000();" title="Russo, 2014">14</a>,&nbsp;<a class="button" onclick="fn_2000();" title="AEC">15</a>]</sup></p>
-
-      </div>
-
-      <div class="clear">
-
-        <div class="quote" id="footnotes-2000">
-
-          <p class="small"><sup>13</sup>&nbsp; CITES, &lsquo;Ivory Auctions&rsquo;, 2008. <a href="../../../url/-org/cites-2008-ivory/" title="Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) / 2008 Ivory Auctions" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-          <p class="small"><sup>14</sup>&nbsp; Russo C. &lsquo;Can Elephants Survive a Legal Ivory Trade?&rsquo;, <i>National Geographic</i>, 2014. <a href="../../../url/nationalgeographic/ivory-ban-elephants-poaching/" title="National Geographic / Can Elephants Survive a Legal Ivory Trade?" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small gutter-side">&plus;&nbsp; STE, Opinion: &lsquo;Can Elephants Survive a Continued Ivory Trade Ban?&rsquo;, 2014. <a href="../../../url/-org/savetheelephants-can-elephants-survive-a-continued-ivory-trade-ban/" title="Save The Elephants (STE) / Opinion: Can Elephants Survive a Continued Ivory Trade Ban?" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-          <p class="small"><sup>15</sup>&nbsp; African Elephant Coalition (AEC). <a href="../../../url/-com/africanelephantcoalition/" title="AEC" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-        </div>
-      </div>
-
-      <div>
-        <p class="letterhead"><i>Once upon a time&hellip; We saved the elephants when our industrial world substituted carved ivory with the mass production of plastic combs, plastic brush handles, plastic piano keys and plastic billiard balls and all that. Religious use of ivory, however, remained fixed in culture. Ivory trafficking followed ancient trade routes into the twenty-first century, now accelerated by planes, phones, and the Internet.</i></p>
-
-        <!-- its role as a political symbol persists -->
-        <!-- frozen in amber -->
-
-        <p class="linebreak">In 2008, the EIA reported an internal Chinese government document that showed, between 1991 and 2002, the Chinese government had lost track of more than 110 tons of stockpiled ivory&mdash;equivalent to the tusks of eleven thousand elephants. <i>The artifice was being revealed.</i><sup>&nbsp;[<a class="button" onclick="fn_2000();" title="EIA, 2008">16</a>]</sup></p>
-
-        <!-- Confiscated, stockpiled ivory was funneling through markets in China. -->
-
-      </div>
-
-      <div class="color quote">
-        <h4><font class="color text-quote">&ldquo;</font><i>In recent years China has been implicated in more large-scale ivory seizures than any other non-African country. For the first time in generations many Chinese can afford to reach forward into a wealthy future, and they can also afford to look back into their own vibrant past. One of the first places many look is religion.</i>&nbsp;<font class="color text-quote">&rdquo;</font><br><font class="color small thin">&mdash;&nbsp;Bryan Christy, &lsquo;Blood Ivory: Ivory Worship&rsquo;, <i>National Geographic</i>, October 2012 [<a class="color" href="../../../url/nationalgeographic/blood-ivory/" title="National Geographic / Ivory Worship" target="_blank" rel="noopener">nationalgeographic.com</a>]</font></h4>
-
-        <!-- By all accounts, China is the world’s greatest villain when it comes to smuggled ivory. -->
-
-      </div>
-
-      <div class="clear">
-        <img alt="" src="https://via.animathabitat.org/img/01/photo/~brent-stirton/stirton.2013.chad.ivory-18.2048.jpg" />
-        <p class="text-right gutter-side">Zakouma National Park, Chad, photograph courtesy of Brent Stirton [<a href="../../../url/nationalgeographic/ivory-tracking/" title="National Geographic / How Killing Elephants Finances Terror in Africa" target="_blank" rel="noopener">nationalgeographic.com</a>]</p>
-
-        <!-- <img alt="" src="https://via.animathabitat.org/img/01/photo/~brent-stirton/stirton.2015.chad.ivory-wars.001.jpg" />
-        <p class="text-right gutter-side">&lsquo;Ivory Wars&rsquo;, Zakouma National Park, Chad, courtesy of Brent Stirton [brentstirton.com]</p> -->
-
-      </div>
-
-      <div class="clear-top">
-        <h3 class="linebreak"><b>2011</b></h3>
-        <p>The price of ivory reached US$1,000 per pound in Beijing, as a consumer class emerged in the People's Republic of China. Ignited by increased demand in Asia, stoked by limited wages in Africa, the number of elephants killed for their tusks and the large-scale seizures of ivory elevated so high that 2011 was labeled &lsquo;annus horribilis&rsquo; for the species.<sup>&nbsp;[<a class="button" onclick="fn_2011();" title="TRAFFIC, 2011">17</a>]</sup></p>
-
-        <!-- for the poached pachyderm species. <i>Incidently, the characteristic thick-skin was no match for an AK-47.</i> -->
-
-        <p class="linebreak" id="loophole-a">History: <a class="color" onclick="toggle_loophole();">The &lsquo;legal&rsquo; ivory loophole</a>.<sup>&nbsp;[<a class="button" onclick="fn();" title="Christy, 2012">1</a>]</sup></p>
-
-        <div class="clear line-left" id="loophole">
-          <p class="linebreak"><i><font class="color">The &lsquo;pre-ban&rsquo; ivory loophole is where this history of the &lsquo;legal&rsquo; ivory loopholes begins.</font> African elephant ivory imported into a nation-state, before 1989, remained part of a viable domestic trade. Since no inventory was made of global ivory stockpiles before the ban, and since ivory can weather time, for all intents and purposes, forever, any trader caught with ivory tusks brazenly invoked the timeless defense: this is &lsquo;pre-ban&rsquo; ivory.</i></p>
-
-          <div>
-            <p>In the approval process for the Parties to CITES, TRAFFIC overstated that its ETIS database extended back to the 1989 ivory ban, when, in fact, States were not asked to report ivory seizures to its system until 1998. And so when a second ivory stockpile sale was proposed to the Parties to CITES, in 2002, the ETIS database had no effective baseline to evaluate the Japan experiment. Even with another decade, the transparency of the ETIS database was limited by its core metric: seizures. Export or import seizures were, of course, managed and operated by the authorities of each State, itself, under evaluation.</p>
-
-            <!-- &mdash;the first ivory stockpile sale under CITES -->
-
-            <p class="linebreak">The People's Republic of China considered the TRAFFIC information system a failure in regard to trade in ivory, at first. Then, after Japan received its first ivory stockpile under CITES, China reported the number of seizures of ivory trafficked into the Chinese mainland went up. In 2002, a Chinese report warned the Parties to CITES that a main reason for the increased trafficking of illicit ivory into Asia was the Japan experiment: &ldquo;Chinese people misunderstand the decision and believe that the international trade in ivory has been resumed.&rdquo; The Chinese consumers were apparently under the impression that the ivory markets were legal again, and, by 2004, the Chinese government had apparently forsaken any concerns. The People’s Republic of China petitioned the Parties to CITES for a second ivory stockpile sale.</p>
-
-            <!-- CITES ignored China’s warning and placed its faith entirely in the ETIS statistics. “The data we have from ETIS is that there is no correlation between decisions made at CITES and the illegal trade,” Willem Wijnstekers, CITES secretary-general, would later assert in anticipation of more CITES-approved ivory sales. Tom Milliken, director of ETIS, would likewise suggest that the Japan sale had worked: “It is encouraging to note that the illicit trade in ivory progressively declined over the next five years.” But Milliken didn’t know what the illicit trade had done; what he knew was his seizure statistics. Nevertheless a judgment was made, and the future of the African elephant may forever be clouded by the moment when CITES, lacking the data to evaluate the impact of its first ivory sale, endorsed a second. -->
-
-            <p class="linebreak">The Parties to CITES had not been informed of the extent of the illicit ivory trade. The Parties had the ETIS seizure statistics. <i>And so the future of the African elephant may forever be clouded by the moment when the Parties to CITES, lacking the data to evaluate the impact of its first ivory stockpile sale, endorsed a second.</i></p>
-
-            <p class="linebreak">Japan is an island nation with a narrow primary use for its ivory: carved stamps called hanko. The People's Republic of China is a nation with a population of more than ten times the size, a separate system for the main ivory market&mdash;the Hong Kong Special Administrative Region (SAR), an extensive investment in Africa, and a culture with many uses for ivory ranging from symbolic figures to touristic trinkets.</p>
-
-            <!-- a global &lsquo;Belt and Road&rsquo; initiative with -->
-
-            <!-- And the Chinese government, which controls who may sell ivory in China, was not undercutting the black market, it was using its monopoly power to outperform the black market. -->
-
-            <p class="linebreak">Once the Chinese government legally acquired an ivory stockpile, the commercialized, criminalized &lsquo;legal&rsquo; ivory loophole began in earnest. As part of the proposed ivory stockpile sale to China, a number of measures were instituted to safeguard the government-registered ivory, notably a photo-identification system for any ivory carving larger than a trinket. A 2011 survey of ivory markets in China, as reported by the International Fund for Animal Welfare (IFAW) in 2012, found that ivory markets in China found a way to exploit the system. On a small identification card &ndash; in a smaller-still photograph &ndash; the ivory carvings of the same religious or traditional motif all look alike. The exploitative markets simply retain the identification card from a sale, reuse the photograph to launder a look-alike carving made from illicit ivory and then repeat the process and so on. And so, the cards now have value and a secondary illicit market. This identification system, which was proposed as a measure of legitimacy, has proved worse than no system at all.</p>
-
-            <!-- to an illegal icon -->
-
-            <p class="linebreak">Close history: <a class="color" onclick="toggle_loophole();">The &lsquo;legal&rsquo; ivory loophole</a>.<sup>&nbsp;[<a class="button" onclick="fn();" title="Christy, 2012">1</a>,&nbsp;<a class="button" onclick="fn_2011();" title="IFAW, 2012">18</a>]</sup></p>
-
-          </div>
-        </div>
-
-        <p class="linebreak">In the loop&mdash;in the end, the two legal ivory sales have served to shelter smuggled ivory.</p>
-
-        <p class="linebreak">In July of 2011, the Republic of Kenya destroyed its ivory stockpile, again, this time a 5 ton stockpile&mdash;a symbolic statement that the Gabonese Republic echoed the year after.<sup>&nbsp;[<a class="button" onclick="fn_1990();" title="WWF, 2015">9</a>]</sup></p>
-
-      </div>
-
-      <div class="clear">
-
-        <div class="quote" id="footnotes-2011">
-          <p class="small"><sup>16</sup>&nbsp; EIA, &lsquo;China, Ivory Trade and the Future of Africa’s Elephants&rsquo;, 2008. <a href="../../../url/-org/eia-2008-china-ivory-trade-pdf/" title="EIA / China Ivory Trade and the Future of Africa's Elephants" target="_blank" rel="noopener">Document<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small"><sup>17</sup>&nbsp; TRAFFIC, &lsquo;Annus Horribilis for African Elephants&rsquo;, 2011. <a href="../../../url/-org/traffic-2011-annus-horribilis-for-african-elephants/" title="TRAFFIC / Annus horribilis for African elephants" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small"><sup>18</sup>&nbsp; International Fund for Animal Welfare (IFAW), &lsquo;Making a killing: a 2011 survey of ivory markets in China&rsquo;, 2012. <a href="../../../url/-org/ifaw-survey-ivory-markets-china/" title=" International Fund for Animal Welfare (IFAW) / Making a killing: a 2011 survey of ivory markets in China" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-        </div>
-      </div>
-
-      <div>
-
-        <h3 class="linebreak"><b>2012</b></h3>
-        <p>Poachers traveled across the Sahara desert to massacre hundreds of elephants in the span of a few days in Bouba Ndjida National Park, the Republic of Cameroon. The scale of the killing was staggering. Empirical research, documented between 2009 and 2013, posited that poaching of elephants surpassed the level at which elephant populations naturally reproduce.<sup>&nbsp;[<a class="button" onclick="fn_2012();" title="Scriber, 2014">19</a>]</sup></p>
-
-        <p class="linebreak">The three previous years&mdash;2009, 2010 and 2011 listed in the ETIS records in the top five for amount of ivory seized around the world. The MIKE and the ETIS programs, in 2012, had enough data to suggest a close correspondence between trends in elephant poaching and trends in large-scale seizures of ivory. The Parties to CITES recognized that elephant poaching was, again, at a point of crisis, the most critical since the commercial international trade in ivory was banned in 1989.<sup>&nbsp;[<a class="button" onclick="fn_2012();" title="CITES, 2012">20</a>]</sup></p>
-
-        <p class="linebreak">United States of America Secretary of State Hillary Clinton at an event on &lsquo;Wildlife Trafficking and Conservation: A Call to Action&rsquo; called upon world leaders at every level of the international community to stop the killing of African elephants, to stop the trafficking of African elephant ivory, and to stop the demand for ivory, altogether.<sup>&nbsp;[<a class="button" onclick="fn_2012();" title="CITES, 2012">21</a>]</sup></p>
-
-      </div>
-
-      <div class="clear">
-
-        <div class="quote" id="footnotes-2012">
-          <p class="small"><sup>19</sup>&nbsp; Scriber B. &lsquo;100,000 Elephants Killed by Poachers in Just Three Years&rsquo;, <i>National Geographic</i>, 2014. <a href="../../../url/nationalgeographic/elephants-africa-poaching-cites-census/" title="National Geographic / 100,000 Elephants Killed by Poachers in Just Three Years" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small"><sup>20</sup>&nbsp; CITES, &lsquo;Experts report highest elephant poaching and ivory smuggling rates in a decade&rsquo;, 2012. <a href="../../../url/-org/cites-2012-elephant-poaching-ivory-smuggling/" title="Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) / Experts report highest elephant poaching and ivory smuggling rates in a decade" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small"><sup>21</sup>&nbsp; CITES, &lsquo;CITES welcomes Secretary Clinton’s call for action on illegal wildlife trade&rsquo;, 2012. <a href="../../../url/-org/cites-2012-wildlife-trafficking/" title="Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) / CITES welcomes Secretary Clinton’s ‘Call for Action’" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-        </div>
-      </div>
-
-      <div>
-
-        <h3 class="linebreak"><b>2013</b></h3>
-        <p>In early March, in the Republic of Chad, nearly one hundred elephants were killed in a devastating blow to one of Central Africa's last remaining elephant populations. It is estimated that more than one hundred African elephants died every day in 2013. Ivory seizures across the world reached a new high.<sup>&nbsp;[<a class="button" onclick="fn_2013();" title="Neme, 2013; Christy, 2015; Martin and Vigne, 2015">22-24</a>]</sup></p>
-
-        <p class="linebreak">Mainland Chinese tourists to Hong Kong exceeded forty million&mdash;more than double the number from 2009. The price per pound of ivory in the People's Republic of China exceeded US$1,000&mdash;more than triple the amount from 2010. The average elephant killed in 2013 fell victim to poaching for twenty pounds of ivory&mdash;of predominantly female- and young-elephant-sized tusks valued at nearly US$30,000. In Africa, criminal syndicates and organized terrorist groups were now inveterate in poaching the elephants and trafficking the ivory to raise money for munitions. Also, in States along trade routes out of Africa, political elites and security forces were perforce complicit.<sup>&nbsp;[<a class="button" onclick="fn_2013();" title="Martin and Vigne, 2015">24</a>,&nbsp;<a class="button" onclick="fn_2013();" title="Born Free USA, 2014">25</a>]</sup></p>
-
-        <p class="linebreak">The African elephant population was estimated at 470,000&mdash;confined to a patchwork of protected areas.<sup>&nbsp;[<a class="button" onclick="fn_2013();" title="IUCN, 2015">26</a>,&nbsp;<a class="button" onclick="fn_2013();" title="Elephant Database, 2015">27</a>]</sup></p>
-
-        <p class="linebreak">United States of America President Barack Obama, in July, passed an executive order to address wildlife trafficking, including ivory. Then the United States of America crushed 6 tons of ivory &ndash; tusks and trinkets seized in the past twenty-five years &ndash; to publicly address the illegal action and international corruption, which predicate this poaching crisis. That crush, in November, along with an earlier ivory crush in the Republic of the Philippines, in June, marked the first two times ivory-consuming nation-states made such a statement.<sup>&nbsp;[<a class="button" onclick="fn_2013();" title="The White House, 2013">28</a>,&nbsp;<a class="button" onclick="fn_6();" title="Christy, 2013">29</a>]</sup></p>
-
-      </div>
-
-      <div class="clear">
-
-        <div class="quote" id="footnotes-2013">
-
-          <p class="small"><sup>22</sup>&nbsp; Neme L. &lsquo;New Promises Follow Elephant Slaughter in Chad and Cameroon&rsquo;, <i>A Voice for Elephants</i>, 2013. <a href="../../../url/-com/laurelneme-new-promises-follow-elephant-slaughter-in-chad-and-cameroon/" title="Laurel Neme / National Geographic: New Promises Follow Elephant Slaughter in Chad and Cameroon" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-          <p class="small"><sup>23</sup>&nbsp; Christy B. &lsquo;How Killing Elephants Finances Terror in Africa&rsquo;, <i>National Geographic</i>, 2015. <a href="../../../url/nationalgeographic/ivory-tracking/" title="National Geographic / How Killing Elephants Finances Terror in Africa" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-          <p class="small"><sup>24</sup>&nbsp; Martin E, Vigne L. &lsquo;Hong Kong's Ivory&rsquo;, STE, 2015. <a href="../../../url/-org/savetheelephants-2015-hong-kong-ivory-report-pdf/" title="Save The Elephants / 2015 Hong Kong Ivory Report" target="_blank" rel="noopener">Document<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small"><sup>25</sup>&nbsp; Born Free USA, &lsquo;Ivory's Curse: The Militarization and Professionalization of Poaching in Africa&rsquo;, 2014. <a href="../../../url/-org/bornfreeusa-ivorys-curse-2014/" title="Born Free / Ivory's Curse: The Militarization and Professionalization of Poaching in Africa" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small gutter-side">&plus;&nbsp; Born Free USA, &lsquo;Out of Africa: Mapping the Global Trade in Illicit Elephant Ivory&rsquo;, 2014. <a href="../../../url/-org/bornfreeusa-out-of-africa-2014/" title="Born Free / Out of Africa: Mapping the Global Trade in Illicit Elephant Ivory" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-          <p class="small"><sup>26</sup>&nbsp; International Union for the Conservation of Nature (IUCN), &lsquo;Updated African Elephant Database&rsquo;, 2015. <a href="../../../url/-org/iucn-updated-african-elephant-database/" title="International Union for the Conservation of Nature (IUCN) / Updated African Elephant Database reveals declining elephant populations" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small"><sup>27</sup>&nbsp; Elephant Database, &lsquo;African Elephant Range&rsquo;, 2015. <a href="../../../url/-org/africanelephantdatabase/" title="Elephant Database / African Elephant Range" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-          <p class="small"><sup>28</sup>&nbsp; The White House, &lsquo;Executive Order: Combating Wildlife Trafficking&rsquo;, 2013. <a href="../../../url/-gov/whitehouse-2013-executive-order-combating-wildlife-trafficking/" title="The White House / Executive Order: Combating Wildlife Trafficking" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small"><sup>29</sup>&nbsp; Christy B. &lsquo;Historic United States Ivory Crush a Call to Global Action&rsquo;, <i>National Geographic</i>, 2013. <a href="../../../url/nationalgeographic/ivory-crush-united-states/" title="National Geographic / Historic United States Ivory Crush a Call to Global Action" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small gutter-side">&plus;&nbsp; Christy B. &lsquo;In Global First, Philippines to Destroy Its Ivory Stock&rsquo;, <i>National Geographic</i>, 2013. <a href="../../../url/nationalgeographic/ivory-crush-philippines/" title="National Geographic / In Global First, Philippines to Destroy Its Ivory Stock" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-        </div>
-      </div>
-
-      <div>
-
-        <h3 class="linebreak"><b>2014</b></h3>
-        <p class="linebreak">In January, the People's Republic of China &ndash; the biggest consumer of illicit ivory in the world &ndash; crushed 6 tons of carved trinkets and confiscated tusks, too, matching the American show of support for global efforts to protect African elephants from rampant poaching. Also in January, Hong Kong, noted for its more than four hundred licensed businesses displaying more than thirty thousand ivory items for sale&mdash;more than any other city in the world, announced plans to destroy more than 30 tons of confiscated ivory. (Only 1 ton was confirmed crushed in Hong Kong between May 2014 and 2015.) The Republic of Chad destroyed its national ivory stockpile in February. The French Republic did so too. Then the Kingdom of Belgium did so in April. These stockpiles weighed more than 5 tons altogether.<sup>&nbsp;[<a class="button" onclick="fn_1990();" title="WWF, 2015">9</a>,&nbsp;<a class="button" onclick="fn_2014();" title="Clark Howard, 2014; Born Free UK, 2015; African Parks, 2014">29-31</a>]</sup></p>
-
-        <p class="linebreak">Dr Mike Chase and the Botswana-based non-governmental organization Elephants Without Borders (EWB), with funding from co-founder of Microsoft turned philanthropist Paul Allen, launched and led the <u>Great Elephant Census</u> (GEC)&mdash;the first-ever pan-African aerial census. The aerial census collected data about the number and distribution of African elephants to inform a baseline for any decision making on elephant conservation, in particular, land management in elephant range States. The GEC found that, between 2007 and 2014, African savanna elephant populations declined by more than thirty per cent&mdash;more or less 144,000 elephants. Most were killed just for their tusks. Elephant populations were decimated in a number of areas, or extirpated altogether, plus a few surprise herds were found in places where elephants were not known to inhabit.<sup>&nbsp;[<a class="button" onclick="fn_2014();" title="EWB, GEC">33</a>]</sup></p>
-
-      </div>
-
-      <div class="clear">
-
-        <div class="quote" id="footnotes-2014">
-          <p class="small"><sup>30</sup>&nbsp; Howard B C. &lsquo;China Crushes Six Tons of Confiscated Elephant Ivory&rsquo;, <i>National Geographic</i>, 2014. <a href="../../../url/nationalgeographic/ivory-crush-china/" title="National Geographic / China Crushes Six Tons of Confiscated Elephant Ivory" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small"><sup>31</sup>&nbsp; Born Free UK, &lsquo;Ivory Destruction&rsquo;, 2015. <a href="../../../url/-org-uk/bornfree-ivory-trade/" title="Born Free / Ivory Destruction" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small"><sup>32</sup>&nbsp; African Parks, &lsquo;President Idriss Deby Itno of Chad Destroys 1.1 Ton Ivory Stockpile&rsquo;, 2014. <a href="../../../url/-org/africanparks-chad-destroys-1.1-ton-ivory-stockpile/" title="African Parks / President Idriss Deby Itno of Chad Destroys 1.1 Ton Ivory Stockpile" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-            <!-- President Idriss Deby of Chad commits to destroying ivory stockpile amongst range of elephant protection measures
-            //africanparks.org/newsroom/press-releases/president-idriss-deby-chad-commits-destroying-ivory-stockpile-amongst-range-elephant-protection-measures -->
-
-          <p class="small"><sup>33</sup>&nbsp; Elephants Without Borders (EWB), Great Elephant Census (GEC). <a href="../../../url/-org/elephantswithoutborders-great-elephant-census/" title="Elephants Without Borders (EWB) / Great Elephant Census (GEC)" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small gutter-side">&plus;&nbsp; Paul Allen, GEC. <a href="../../../url/-com/greatelephantcensus-the-census/" title="Paul Allen / Great Elephant Census (GEC)" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-        </div>
-      </div>
-
-      <div>
-
-        <h3 class="linebreak"><b>2015</b></h3>
-        <p>According to a report published by Save The Elephants on ivory sales and stockpiles in Hong Kong, more than 100 tons of ivory from the Hong Kong government-registered non-commercial ivory stockpile were &lsquo;deactivated&rsquo; and disappeared in a particularly short span, from 2008 through 2010, in particular in 2009, when a change in the registration system in Hong Kong required a license to possess ivory for commercial purpose. The report showed a correlation between the decreased weight of the government-registered non-commercial stockpile with the increased number of mainland Chinese tourists to Hong Kong. The report noted that correlation, however, in contrast with government-registered commercial ivory sales from 2010 through 2013, which accounted for less than 5 tons. This paradox &ndash; a thriving tourism industry that never diminishes commercial ivory stockpiles &ndash; can be explained by the aforementioned &lsquo;legal&rsquo; ivory loophole in the registration system that invites exploitative traders to launder illicit ivory into the legal markets in Hong Kong.<sup>&nbsp;[<a class="button" onclick="fn_2013();" title="Martin and Vigne, 2015">24</a>,&nbsp;<a class="button" onclick="fn_2014();" title="Born Free UK, 2015">31</a>,&nbsp;<a class="button" onclick="fn_2015();" title="National Geographic, 2015">34</a>]</sup></p>
-
-        <p class="linebreak">The Republic of Kenya, again, set off a symbolic defiance of the international trade in ivory, burned 15 tons, followed closely by over 6 tons in the Federal Democratic Republic of Ethiopia, nearly 5 tons in the Republic of Congo, more than 10 tons in the United Arab Emirates, nearly 1 ton in the People's Republic of China, 1 ton in the United States of America, and more than 2 tons in the Republic of Mozambique.<sup>&nbsp;[<a class="button" onclick="fn_1990();" title="WWF, 2015">9</a>,&nbsp;<a class="button" onclick="fn_2015();" title="Born Free USA, 2015; Neme, 2015; WCS, 2015; CITES, 2015; US FWS, 2015; TRAFFIC, 2015">35-40</a>]</sup></p>
-
-      </div>
-
-      <div class="clear">
-
-        <div class="quote" id="footnotes-2015">
-
-          <p class="small"><sup>34</sup>&nbsp; Neme L. &lsquo;How World's Largest Legal Ivory Market Fuels Demand for Illegal Ivory&rsquo;, <i>National Geographic</i>, 2015. <a href="../../../url/nationalgeographic/ivory-loopholes-fuel-smuggling-in-hong-kong/" title="National Geographic / How World's Largest Legal Ivory Market Fuels Demand for Illegal Ivory" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-          <p class="small"><sup>35</sup>&nbsp; Born Free USA, &lsquo;Kenya Sends Out 15 Ton Ivory Smoke Signal&rsquo;, 2015. <a href="../../../url/-org/bornfreeusa-kenya-sends-out-15-ton-ivory-smoke-signal/" title="Born Free / Kenya Sends Out 15 Ton Ivory Smoke Signal" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-          <p class="small"><sup>36</sup>&nbsp; Neme L. &lsquo;Ethiopia Burns Entire 6.1-Ton Ivory Stockpile&rsquo;, <i>A Voice for Elephants</i>, 2015. <a href="../../../url/-com/laurelneme-ethiopia-burns-entire-6-1-ton-ivory-stockpile/" title="Laurel Neme / National Geographic: Ethiopia Burns Entire 6.1-Ton Ivory Stockpile" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-          <p class="small"><sup>37</sup>&nbsp; Wildlife Conservation Society (WCS), &lsquo;Congo Republic burns its entire stockpile of seized ivory&rsquo;, 2015. <a href="../../../url/-org/wcs-congo-republic-burns-its-entire-stockpile-of-seized-ivory/" title="Wildlife Conservation Society / Congo Republic burns its entire stockpile of seized ivory" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-          <p class="small"><sup>38</sup>&nbsp; CITES, &lsquo;CITES remarks to the first destruction of confiscated elephant ivory in the United Arab Emirates&rsquo;, 2015. <a href="../../../url/-org/cites-uae-ivory-destruction-2015/" title="Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) / CITES remarks to the first destruction of confiscated elephant ivory in the United Arab Emirates" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-          <p class="small"><sup>39</sup>&nbsp; US FWS, &lsquo;United States Destroys Confiscated Elephant Ivory in Times Square&rsquo;, 2015. <a href="../../../url/-gov/fws-2015-united-states-destroys-confiscated-elephant-ivory-times-square/" title="USFWS / United States Destroys Confiscated Elephant Ivory in Times Square" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-          <p class="small"><sup>40</sup>&nbsp; TRAFFIC, &lsquo;Vital Evidence Goes up in Smoke&rsquo;, 2015. <a href="../../../url/-org/traffic-vital-evidence-goes-up-in-smoke/" title="TRAFFIC / Vital Evidence Goes up in Smoke" target="_blank" rel="noopener">Website<font class="none small">&nbsp;&nearr;</font></a></p>
-
-        </div>
-      </div>
-
-      <div>
-
-        <h3 class="linebreak">Elephant Conservation Today</h3>
-        <p>The demand for ivory, the trafficking and the poaching are an acute threat to elephants in the wild in Africa today. Yet the ivory trade is not the only threat. There are ever more challenges for elephants with electrified fences, prolonged droughts and human-wildlife conflicts over any natural resources that remain in the buffer zones and on the fringes of farmlands developed into once wild elephant habitat. An elephant needs its tusks. And a lot of space. <i>Elephant conservation is kind of like a big deal.</i></p>
-
-        <p class="linebreak">As for a proposition to take on the commercial international trade in ivory &ndash; the governmental manipulations of ivory stockpiles and the cultural fixations on ivory carvings &ndash; that is a dual challenge. A solution highlighted in this history of elephant conservation has started with investigative journalism. Undercover footage of criminal syndicates exposed how the international trade in ivory operated in the 1980s, leaked documents reported on the mismanagement of the Chinese government-registered ivory stockpile in the 1990s, into the 2000s, and then journalists, often posed as tourists, shined a light on dark ivory markets within the Chinese government-regulated system that followed the second one-off sale of ivory, and that same system persist to this day.</p>
-
-        <p class="linebreak">In this history of elephant conservation, there has also surfaced a subtext of investment in people. People, and African people most of all, have the most meaningful part to play in any solution for African elephant conservation. And so, a theme here has been investment in the livelihoods of people living in rural areas of elephant range States in Africa, including access to education and health care and all that. This part of any solution extends to many of the other challenges that threaten elephants today and, increasingly, into the future. Furthermore, this theme of investment in people has extended to educational campaigns in ivory-consuming States in Asia, in particular, to stop the demand for ivory.</p>
-
-        <p class="linebreak"><i>A plea to save the elephants.</i> At times, ivory burns have attracted worldwide attention and have proved a critical, visual tool to address the poaching crisis. Sometimes public figures in ivory-consuming States then raised the level of awareness about this crisis, and invited political leaders to take on this central proposition that is rooted in scientific evidence and facts about the trade in ivory. And everytime any person in a position to purchase ivory, now, or in the future, becomes informed about the implication of ivory products &ndash; and the life of the elephants &ndash; the more the buying stops, the killing will too. A last hope in this battle for the elephants is that more and more people like you will become invested in future campaigns or funds to save them.</p>
-
-        <!-- When the buying stops, the killing can too. -->
-
-      </div>
-
-      <div class="gutter-tobo"><div class="color text-center"><h3 class="linebreak">Help give life to the wild places.</h3><h5>You can support Animat Habitat in a few ways.</h5><div class="triptych">
-
-            <div class="gutter-small"><a href="../../../patron/" title="Animat Habitat patrons." target="_blank"><button class="text-center title">Donate</button></a></div>
-
-            <div class="gutter-small"><a href="../../../boutique/" title="Animat Habitat boutique." target="_blank"><button class="text-center title">Shop</button></a></div>
-
-            <div class="gutter-small"><a href="../../../rss/" title="Animat Habitat broadcast." target="_blank"><button class="text-center title">Subscribe</button></a></div></div></div>
-
-      </div>
-
-      <div class="clear article-navigation" role="navigation">
-        <div class="nav-links">
-          <a class="nav-previous" href="../book-of-ella-3/" rel="prev"><font class="toggle-form-full">Book of Ella Ch&nbsp;3 /</font><font class="toggle-form-break">Previous Article /</font></a>
-          <a class="nav-next" href="../making-of-ella-2/" rel="next"><font class="toggle-form-full">/ Making of Ella Ch&nbsp;2</font><font class="toggle-form-break">/ Next Article</font></a>
-        </div>
-      </div>
-
-    </article><br class="clear">
-  </section>
-
-  <footer>
-    <div class="quote">
-      <p class="small">This article was edited March 2023.</p>
-
-      <p class="linebreak small">Copyright &copy; Animat Habitat, 2015-2023. <a href="../../../c/" target="_blank" title="Terms at Animat Habitat">Terms of Access</a>.</p>
-
-    </div>
-
-  </footer>
-
-</body>
+    </body>
 
 <script>
 
-  document.onload = load_createsend();
+    document.onload = load_createsend();
 
-  function load_createsend() {
+    function load_createsend() {
 
-    var script = document.createElement( "script" );
-    script.src = "https://s.animathabitat.org/inc/js/createsend-com/copypastesubscribeformlogic.js";
-    script.type = "text/javascript";
+        var script = document.createElement( "script" );
 
-    document.body.appendChild(script);
-  };
+            script.src = "https://s.animathabitat.org/inc/js/createsend-com/copypastesubscribeformlogic.js";
+            script.type = "text/javascript";
 
-  var toggle_1 = document.getElementById("loophole"),
-      toggle_1_a = document.getElementById("loophole-a"),
-      request_form = document.getElementById( "request" ),
-      request_toggle = document.getElementById( "request-toggle" );
+        document.body.appendChild(script);
 
-  toggle_1.style.display = "none";
-  toggle_1_a.style.display = "block";
+        };
 
-  function toggle_loophole() {
-    if (toggle_1.style.display == "none") {
-      toggle_1.style.display = "block";
-      toggle_1_a.style.display = "none";
-      document.querySelector('#loophole-header').scrollIntoView({ behavior: 'smooth' });
-    }
-    else {
-      toggle_1.style.display = "none";
-      toggle_1_a.style.display = "block";
-    }
-  };
+    </script>
 
-  request_form.style.display = "none";
+<script>
 
-  function toggle_request() {
-    if (request_form.style.display == "none") {
-      request_form.style.display = "block";
-      request_toggle.style.display = "none";
-    }
-    else {
-      request_form.style.display = "none";
-      request_toggle.style.display = "block";
-    }
-  };
+    var aa_ex_loophole = document.getElementById( "loophole" ),
+        aa_ex_loophole_a = document.getElementById( "loophole-toggle" ),
+        aa_ex_loophole_h = "#loophole-a";
 
-  function fn() { document.querySelector( "#footnotes-1960" ).scrollIntoView({ behavior: 'smooth' }); };
-  function fn_1970() { document.querySelector( "#footnotes-1970" ).scrollIntoView({ behavior: 'smooth' }); };
-  function fn_1980() { document.querySelector( "#footnotes-1980" ).scrollIntoView({ behavior: 'smooth' }); };
-  function fn_1990() { document.querySelector( "#footnotes-1990" ).scrollIntoView({ behavior: 'smooth' }); };
-  function fn_2000() { document.querySelector( "#footnotes-2000" ).scrollIntoView({ behavior: 'smooth' }); };
-  function fn_2011() { document.querySelector( "#footnotes-2011" ).scrollIntoView({ behavior: 'smooth' }); };
-  function fn_2012() { document.querySelector( "#footnotes-2012" ).scrollIntoView({ behavior: 'smooth' }); };
-  function fn_2013() { document.querySelector( "#footnotes-2013" ).scrollIntoView({ behavior: 'smooth' }); };
-  function fn_2014() { document.querySelector( "#footnotes-2014" ).scrollIntoView({ behavior: 'smooth' }); };
-  function fn_2015() { document.querySelector( "#footnotes-2015" ).scrollIntoView({ behavior: 'smooth' }); };
+        aa_ex_loophole.style.display = "none";
+        aa_ex_loophole.style.display = "block";
 
-</script>
+    var aa_fm_pdf = document.getElementById( "request" ),
+        aa_fm_pdf_a = document.getElementById( "request-toggle" ),
+        aa_fm_pdf_h = "#request-header";
+
+        aa_fm_pdf.style.display = "none";
+
+    function toggle( aa_ex, aa_ex_a, aa_ex_h ) {
+
+        if ( aa_ex.style.display == "none" ) {
+
+            aa_ex.style.display = "block";
+            aa_ex_a.style.display = "none";
+            document.querySelector( aa_ex_h ).scrollIntoView({ behavior: 'smooth' });
+
+            } else {
+
+            aa_ex.style.display = "none";
+            aa_ex_a.style.display = "block";
+
+            }
+
+        };
+
+    </script>
+
+<script>
+
+    var aa_fn_1960 = "#footnotes-1960",
+        aa_fn_1970 = "#footnotes-1970",
+        aa_fn_1980 = "#footnotes-1980",
+        aa_fn_1970 = "#footnotes-1990",
+        aa_fn_1970 = "#footnotes-2000",
+        aa_fn_1970 = "#footnotes-2011",
+        aa_fn_1970 = "#footnotes-2012",
+        aa_fn_1970 = "#footnotes-2013",
+        aa_fn_1970 = "#footnotes-2014",
+        aa_fn_1970 = "#footnotes-2015";
+
+    function fn( aa_fn ) {
+
+        var fn = aa_fn;
+        document.querySelector( fn ).scrollIntoView({ behavior: 'smooth' });
+
+        };
+
+    </script>
 
 </html>

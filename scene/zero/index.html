@@ -1,225 +1,256 @@
 <!doctype html>
 <html lang="en, fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src via.animathabitat.org 'self'; script-src 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
-  <meta name="google" content="notranslate" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src via.animathabitat.org 'self'; script-src 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
+    <meta name="google" content="notranslate" />
 
-  <meta name="author" content="Dane Aleksander" />
-  <meta name="company" content="Animat Habitat" />
-  <meta name="description" content="White Rhino&mdash;oil painting of a red horizon.&nbsp;&#92;&nbsp;Rhinocéros blanc &mdash; peinture à l’huile d’un horizon en flammes." />
-  <meta name="keywords" content="white rhino, rhino painting, rhino art, rhino conservation art, ngoro" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Dane Aleksander" />
+    <meta name="company" content="Animat Habitat" />
+    <meta name="description" content="White Rhino&mdash;oil painting of a red horizon.&nbsp;&#92;&nbsp;Rhinocéros blanc &mdash; peinture à l’huile d’un horizon en flammes." />
+    <meta name="keywords" content="white rhino, rhino painting, rhino art, rhino conservation art, ngoro" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Animat Habitat scene zero.</title>
+    <title>Animat Habitat scene zero.</title>
 
-  <style>
-    html { background-color: #333; }
+    <style>
+        html { background-color: #333; }
 
-  </style>
+        </style>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
-  <link rel="stylesheet" href="../../inc/css/dark.light.unicorn.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
+    <link rel="stylesheet" href="../../inc/css/dark.light.unicorn.css" />
 
-  <link rel="icon" href="../../inc/ico/animat.mark.1.1.72.light.png" />
+    <link rel="icon" href="../../inc/ico/animat.mark.1.1.72.light.png" />
 
-</head>
+    </head>
 
 <body class="fadein" id="dark">
 
-  <nav>
-    <ul class="page">
-      <li class="crumb logo"><a href="../../" title="Animat Habitat"><img alt="Animat Mark &ndash; Light &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/animat.mark.1.1.1200.light.svg"/></a></li>
-      <li class="crumb scene"><a><i>White Rhino</i></a></li>
-      <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en français."><font class="en">fr</font><font class="fr">en</font></a></li>
-    </ul>
-  </nav>
+    <nav>
+        <ul class="page">
+            <li class="crumb logo"><a href="../../" title="Animat Habitat"><img alt="Animat Mark &ndash; Light &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/animat.mark.1.1.1200.light.svg"/></a></li>
+            <li class="crumb scene"><a><i>White Rhino</i></a></li>
+            <li class="right thin"><a onclick="toggle_language();" title="Animat Habitat en français."><font class="en">fr</font><font class="fr">en</font></a></li>
 
-  <header>
-    <div class="quote text-center">
-      <h1 class="title">Animat<font class="letterspace"> </font><font class="thin">Habitat</font></h1>
-      <h3><font class="en">Scene zero:</font><font class="fr">Scène zèro&nbsp;:</font></h3>
-      <h1 class="clear title" id="scene-header"><a class="lettermark" onclick="toggle_scene();"><font class="en">White<font class="letterspace"> </font><font class="thin">Rhino</font></font><font class="fr"><font class="thin">Rhinocéros</font><font class="letterspace"> </font>Blanc</font></a></h1>
-      <h3><font class="color-reset"><font class="en">Oil painting of a red horizon.</font></font><font class="fr">Peinture à l’huile d’un horizon en flammes.</font></h3>
-    </div>
-  </header>
+            </ul>
 
-  <div class="clear preview" id="preview">
-    <a onclick="toggle_preview();">
-      <section class="single">
-        <div class="text-center">
-          <div>
-            <img alt="Animat Habitat scene zero: White Rhino oil painting, 2007. &copy; Dane Aleksander"  class="matte-preview" src="../../inc/img/boutique/00/white-rhino.2007.480-160.jpg" />
+        </nav>
 
-          </div>
-          <p><i>White Rhino</i>, <font class="en">Ngorongoro Conservation Area</font><font class="fr">Zone de conservation de Ngorongoro</font>, <font class="en">Tanzania</font><font class="fr">Tanzanie</font> (<font class="en">oil paint</font><font class="fr">&nbsp;peinture à l'huile</font>, 2007<font class="fr">&nbsp;</font>) &copy; Dane Aleksander</p>
+    <header>
+        <div class="quote text-center">
+            <h1 class="title">Animat<font class="letterspace"> </font><font class="thin">Habitat</font></h1>
+            <h3><font class="en">Scene zero:</font><font class="fr">Scène zèro&nbsp;:</font></h3>
+            <h1 class="clear title" id="scene-header"><a class="lettermark" onclick="toggle_scene();"><font class="en">White<font class="letterspace"> </font><font class="thin">Rhino</font></font><font class="fr"><font class="thin">Rhinocéros</font><font class="letterspace"> </font>Blanc</font></a></h1>
+            <h3><font class="color-reset"><font class="en">Oil painting of a red horizon.</font></font><font class="fr">Peinture à l’huile d’un horizon en flammes.</font></h3>
 
-        </div>
-      </section>
-    </a>
-  </div>
+            </div>
 
-  <div class="clear-bottom vignette" id="vignette">
-    <section class="single">
-      <div class="clear-bottom">
+        </header>
+
+    <div class="clear preview" id="preview">
         <a onclick="toggle_preview();">
-          <img alt="Animat Habitat scene zero. White Rhino oil painting, 2007. &copy; Dane Aleksander" class="matte matte-fold" src="../../inc/img/boutique/00/white-rhino.2007.480-160.jpg" />
+            <section class="single">
+                <div class="text-center">
+                    <div>
+                        <img alt="Animat Habitat scene zero: White Rhino oil painting, 2007. &copy; Dane Aleksander"  class="matte-preview" src="../../inc/img/boutique/00/white-rhino.2007.480-160.jpg" />
 
-        </a>
-      </div>
-    </section>
-  </div>
+                        </div>
+                        <p><i>White Rhino</i>, <font class="en">Ngorongoro Conservation Area</font><font class="fr">Zone de conservation de Ngorongoro</font>, <font class="en">Tanzania</font><font class="fr">Tanzanie</font> (<font class="en">oil paint</font><font class="fr">&nbsp;peinture à l'huile</font>, 2007<font class="fr">&nbsp;</font>) &copy; Dane Aleksander</p>
 
-  <div class="clear-alt color">
+                    </div>
 
-    <section class="product single" id="scene">
+                </section>
 
-      <div>
-        <h5 class="color"><a class="color overscore" onclick="toggle_meta();"><font class="en">Oil Painting</font><font class="fr">Peinture à l'huile</font></a></h5>
-        <div class="clear" id="product-meta">
-          <p class="small"><font class="en">Painted with Pébéo oil colors on canvas.</font><font class="fr">Peint avec des couleurs à l'huile Pébéo sur toile.</font></p>
-          <h5 class="author">Art <font class="en">by</font><font class="fr">par</font> Dane Aleksander.</h5>
+            </a>
 
         </div>
 
-        <p class="linebreak"><font class="en"><i>White Rhino</i> is an oil painting that sets a serene landscape in Tanzania in contrast with an endangerment on the horizon for the northern white rhinoceros. The painting is regarded as a formative study at Animat Habitat where it started a conversation about the role we want to play in shaping the world we want to live in.</font><font class="fr"><i>Rhinocéros blanc</i> est une peinture à l'huile qui fixe un paysage serein en Tanzanie en contraste avec une menace à l'horizon pour le rhinocéros blanc. La peinture est considérée comme l'étude formative chez Animat Habitat où elle a commencé une conversation sur la façon dont nous voulons façonner le monde dans lequel nous voulons vivre.</font></p>
+    <div class="clear-bottom vignette" id="vignette">
+        <section class="single">
+            <div class="clear-bottom">
+                <a onclick="toggle_preview();">
+                    <img alt="Animat Habitat scene zero. White Rhino oil painting, 2007. &copy; Dane Aleksander" class="matte matte-fold" src="../../inc/img/boutique/00/white-rhino.2007.480-160.jpg" />
 
-        <p class="linebreak"><font class="en">Exhibited in April</font><font class="fr">Exposé en avril</font> 2007.</p>
+                    </a>
 
-      </div>
+                </div>
 
-      <div class="clear diptych">
-
-        <div class="clear-bottom">
-          <h5><a class="overscore" onclick="toggle_0000_0011();"><font class="en">Oil Painting</font><font class="fr">Peinture à l'huile</font></a></h5>
-          <div class="clear" id="product-0000-0011">
-            <p><font class="sku small">0000 0011</font></p>
-
-          </div>
-          <p>Dimension: 30&nbsp;&times;&nbsp;10 <font class="en">in</font><font class="fr">po</font></p>
+            </section>
 
         </div>
 
-      </div>
+    <div class="clear-alt color">
+        <section class="product single" id="scene">
+            <div>
+                <h5 class="color"><a class="color overscore" onclick="toggle(aa_p_meta);"><font class="en">Oil Painting</font><font class="fr">Peinture à l'huile</font></a></h5>
+                <div class="clear" id="product-meta">
+                    <p class="small"><font class="en">Painted with Pébéo oil colors on canvas.</font><font class="fr">Peint avec des couleurs à l'huile Pébéo sur toile.</font></p>
+                    <h5 class="author">Art <font class="en">by</font><font class="fr">par</font> Dane Aleksander.</h5>
 
-    </section>
+                    </div>
 
-  </div>
+                <p class="linebreak"><font class="en"><i>White Rhino</i> is an oil painting that sets a serene landscape in Tanzania in contrast with an endangerment on the horizon for the northern white rhinoceros. The painting is regarded as a formative study at Animat Habitat where it started a conversation about the role we want to play in shaping the world we want to live in.</font><font class="fr"><i>Rhinocéros blanc</i> est une peinture à l'huile qui fixe un paysage serein en Tanzanie en contraste avec une menace à l'horizon pour le rhinocéros blanc. La peinture est considérée comme l'étude formative chez Animat Habitat où elle a commencé une conversation sur la façon dont nous voulons façonner le monde dans lequel nous voulons vivre.</font></p>
 
-  <div class="clear">
-    <div class="quote clear-bottom text-center">
-      <h2><font class="en">Project Broadcast</font><font class="fr">Mises à jour du projet</font></h2>
-    </div>
+                <p class="linebreak"><font class="en">Exhibited in April</font><font class="fr">Exposé en avril</font> 2007.</p>
 
-  </div>
+                </div>
 
-  <section class="single">
-    <article>
-      <div class="quote">
+            <div class="clear diptych">
+                <div class="clear-bottom">
+                    <h5><a class="overscore" onclick="toggle(aa_p_0000_0011);"><font class="en">Oil Painting</font><font class="fr">Peinture à l'huile</font></a></h5>
+                    <div class="clear" id="product-0000-0011">
+                        <p><font class="sku small">0000 0011</font></p>
 
-        <h3><a href="northern-white-rhinoceros/">Northern White Rhinoceros<font class="toggle-form-full"> &#47;&nbsp;<i>Nature</i></font></a></h3>
-        <pre class="thin"></pre>
+                        </div>
 
-        <h3><a href="../../url/git/danealeksander-art-international-baccalaureate/">Silver Studio Art Show<font class="toggle-form-full"> &#47;&nbsp;<i>Art</i></font></a></h3>
-        <pre class="thin"></pre>
+                    <p>Dimension: 30&nbsp;&times;&nbsp;10 <font class="en">in</font><font class="fr">po</font></p>
 
-      </div>
-    </article><br class="clear">
-  </section>
+                    </div>
 
-  <div class="clear color">
+                </div>
+
+            </section>
+
+        </div>
+
+    <div class="clear">
+        <div class="quote clear-bottom text-center">
+            <h2><font class="en">Project Broadcast</font><font class="fr">Mises à jour du projet</font></h2>
+
+            </div>
+
+        </div>
+
     <section class="single">
-      <div class="quote text-center">
-        <h4><i><font class="en">Do not speak of a rhinoceros if there is no tree nearby.</font><font class="fr">Ne parlez pas de rhinocéros s'il n'y a pas d'arbre à proximité.</font></i><br><font class="color small thin">&mdash;&nbsp;<font class="en">Zulu proverb</font><font class="fr small thin">proverbe zoulou</font></h4>
+        <article>
+            <div class="quote">
 
-      </div>
-    </section>
-  </div>
+                <h3><a href="northern-white-rhinoceros/">Northern White Rhinoceros<font class="toggle-form-full"> &#47;&nbsp;<i>Nature</i></font></a></h3>
+                <pre class="thin"></pre>
 
-  <footer>
-    <div class="quote">
+                <h3><a href="../../url/git/danealeksander-art-international-baccalaureate/">Silver Studio Art Show<font class="toggle-form-full"> &#47;&nbsp;<i>Art</i></font></a></h3>
+                <pre class="thin"></pre>
 
-    </div>
+                </div>
 
-  </footer>
+            </article><br class="clear">
 
-</body>
+        </section>
+
+    <div class="clear color">
+        <section class="single">
+            <div class="quote text-center">
+                <h4><i><font class="en">Do not speak of a rhinoceros if there is no tree nearby.</font><font class="fr">Ne parlez pas de rhinocéros s'il n'y a pas d'arbre à proximité.</font></i><br><font class="color small thin">&mdash;&nbsp;<font class="en">Zulu proverb</font><font class="fr small thin">proverbe zoulou</font></h4>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    <footer>
+        <div class="quote">
+
+            </div>
+
+        </footer>
+
+    </body>
 
 <script>
 
-  var r = document.querySelector(':root'),
-      toggle_lang = 0,
-      num = document.getElementById( "scene" ),
-      img = document.getElementById( "preview" ),
-      tmb = document.getElementById( "vignette" ),
-      num = document.getElementById( "scene" ),
-      p_meta = document.getElementById( "product-meta" ),
-      p_0000_0011 = document.getElementById( "product-0000-0011" );
+    var r = document.querySelector( ":root" );
 
-  r.style.setProperty('--fr', "none");
+        r.style.setProperty( "--fr", "none" );
 
-  num.style.display = "none";
-  img.style.display = "none";
-  p_meta.style.display = "none";
-  p_0000_0011.style.display = "none";
+    var img = document.getElementById( "preview" ),
+        tmb = document.getElementById( "vignette" ),
+        num = document.getElementById( "scene" );
 
-  function toggle_scene() {
-    if ( num.style.display == "none" ) {
-      num.style.display = "block";
-      document.querySelector( "#scene-header" ).scrollIntoView({ behavior: 'smooth' });
-    }
-    else {
-      num.style.display = "none";
-      document.querySelector( "#scene-header" ).scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+        num.style.display = "none";
+        img.style.display = "none";
 
-  function toggle_preview() {
-    if ( img.style.display == "none" ) {
-      num.style.display = "block";
-      img.style.display = "block";
-      tmb.style.display = "none";
-    }
-    else {
-      img.style.display = "none";
-      tmb.style.display = "block";
-      document.querySelector( "#vignette" ).scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+    var toggle_lang = 0;
 
-  function toggle_meta() {
-    if ( p_meta.style.display == "none" ) {
-      p_meta.style.display = "block";
-    }
-    else {
-      p_meta.style.display = "none";
-    }
-  };
+    function toggle_language() {
 
-  function toggle_0000_0011() {
-    if ( p_0000_0011.style.display == "none" ) {
-      p_0000_0011.style.display = "block";
-    }
-    else {
-      p_0000_0011.style.display = "none";
-    }
-  };
+        if ( toggle_lang == 0 ) {
 
-  function toggle_language() {
-    if ( toggle_lang == 0 ) {
-      r.style.setProperty('--fr', "inline");
-      r.style.setProperty('--en', "none");
-      toggle_lang = 1;
-    }
-    else {
-      r.style.setProperty('--fr', "none");
-      r.style.setProperty('--en', "inline");
-      toggle_lang = 0;
-    }
-  };
+            r.style.setProperty( "--fr", "inline" );
+            r.style.setProperty( "--en", "none" );
+            toggle_lang = 1;
 
-</script>
+            } else {
+
+            r.style.setProperty( "--fr", "none" );
+            r.style.setProperty( "--en", "inline" );
+            toggle_lang = 0;
+
+            }
+
+        };
+
+    function toggle_preview() {
+
+        if ( img.style.display == "none" ) {
+
+            num.style.display = "block";
+            img.style.display = "block";
+            tmb.style.display = "none";
+
+            } else {
+
+            img.style.display = "none";
+            tmb.style.display = "block";
+            document.querySelector( "#vignette" ).scrollIntoView({ behavior: 'smooth' });
+
+            }
+
+        };
+
+    function toggle_scene() {
+
+        if ( num.style.display == "none" ) {
+
+            num.style.display = "block";
+            document.querySelector( "#vignette" ).scrollIntoView({ behavior: 'smooth' });
+
+            } else {
+
+            num.style.display = "none";
+            document.querySelector( "#scene-header" ).scrollIntoView({ behavior: 'smooth' });
+
+            }
+
+        };
+
+    </script>
+
+<script>
+
+    var aa_p_meta = document.getElementById( "product-meta" ),
+        aa_p_0000_0011 = document.getElementById( "product-0000-0011" );
+
+        aa_p_meta.style.display = "none";
+        aa_p_0000_0011.style.display = "none";
+
+    function toggle( aa_p ) {
+
+        if ( aa_p.style.display == "none" ) {
+
+            aa_p.style.display = "block";
+
+            } else {
+
+            aa_p.style.display = "none";
+
+            }
+
+        };
+
+    </script>
 
 </html>
