@@ -3,18 +3,26 @@ Allow: /
 Allow: /canon/
 Allow: /conservation/
 Allow: /patron/
-Allow: /scene/
+Allow: /scene/i/
+Allow: /scene/ii/
+Allow: /scene/iii/
 
 Disallow: /404.html
 Disallow: /readme.md
 
 Disallow: /app/
-Disallow: /boutique/d/
+Disallow: /boutique/confirmation/
 Disallow: /boutique/exit/
 Disallow: /c/
 Disallow: /champion/
+Disallow: /document/
+Disallow: /don/
+Disallow: /donate/
 Disallow: /inc/
 Disallow: /index/
+Disallow: /patron/confirmation/
+Disallow: /patron/s/
+Disallow: /re/
 Disallow: /rss/
 Disallow: /s/
 Disallow: /url/
