@@ -52,23 +52,23 @@
 <script>
 
     var r = document.querySelector( ":root" ),
-        toggle_lang = 0;
+        toggle_fr = 0;
 
         r.style.setProperty( "--fr", "none" );
 
     function toggle_language() {
 
-        if ( toggle_lang == 0 ) {
+        if ( toggle_fr == 0 ) {
 
             r.style.setProperty( "--fr", "inline" );
             r.style.setProperty( "--en", "none" );
-            toggle_lang = 1;
+            toggle_fr = 1;
 
             } else {
 
             r.style.setProperty( "--fr", "none" );
             r.style.setProperty( "--en", "inline" );
-            toggle_lang = 0;
+            toggle_fr = 0;
 
             }
 

@@ -48,23 +48,19 @@
 
         </header>
 
-    <div class="clear preview" id="preview">
+    <a onclick="toggle( aa_pv );" id="preview">
+        <div class="preview text-center">
+            <img alt="Last of the Big Tuskers, 2018 &ndash; Isilo preview, aperçu." class="product-image" src="../../../../../inc/img/boutique/last-of-the-big-tuskers/lotbt.elephant.isilo.c.1440-864.jpg" />
+            <p class="linebreak"><i>Isilo</i> &ndash; <font class="en">Tembe Elephant Park, South Africa</font><font class="fr">Parc des éléphants de Tembe, Afrique du Sud</font> (<font class="en">digital painting</font><font class="fr">&nbsp;peinture numèrique</font>, 2018<font class="fr">&nbsp;</font>)</p>
 
-        <a onclick="toggle_preview();">
-            <div class="text-center">
-                <img alt="Last of the Big Tuskers, 2018 &ndash; Isilo preview, aperçu." class="product-image" src="../../../../../inc/img/boutique/last-of-the-big-tuskers/lotbt.elephant.isilo.c.1440-864.jpg" />
-                <p class="linebreak"><i>Isilo</i> &ndash; <font class="en">Tembe Elephant Park, South Africa</font><font class="fr">Parc des éléphants de Tembe, Afrique du Sud</font> (<font class="en">digital painting</font><font class="fr">&nbsp;peinture numèrique</font>, 2018<font class="fr">&nbsp;</font>)</p>
+            </div>
 
-                </div>
-
-            </a>
-
-        </div>
+        </a>
 
     <div class="clear-bottom vignette" id="vignette">
         <section class="single">
             <div class="clear-bottom">
-                <a onclick="toggle_preview();">
+                <a onclick="toggle( aa_pv );">
                     <img alt="Last of the Big Tuskers, 2018 &ndash; Isilo vignette." class="matte matte-fold" src="../../../../../inc/img/boutique/last-of-the-big-tuskers/lotbt.elephant.isilo.300-180.jpg" />
 
                     </a>
@@ -246,25 +242,25 @@
         r.style.setProperty( "--us", "none" );
         r.style.setProperty( "--fr", "none" );
 
-    var toggle_curr = 0,
-        toggle_lang = 0;
+    var toggle_cc = 0,
+        toggle_fr = 0;
 
     function toggle_currency() {
 
-        if ( toggle_curr == 0 ) {
+        if ( toggle_cc == 0 ) {
 
             r.style.setProperty( "--us", "inline" );
             r.style.setProperty( "--ca", "none" );
             r.style.setProperty( "--fr", "none" );
             r.style.setProperty( "--en", "inline" );
-            toggle_curr = 1;
-            toggle_lang = 0;
+            toggle_cc = 1;
+            toggle_fr = 0;
 
             } else {
 
             r.style.setProperty( "--us", "none" );
             r.style.setProperty( "--ca", "inline" );
-            toggle_curr = 0;
+            toggle_cc = 0;
 
             }
 
@@ -272,45 +268,20 @@
 
     function toggle_language() {
 
-        if ( toggle_lang == 0 ) {
+        if ( toggle_fr == 0 ) {
 
             r.style.setProperty( "--us", "none" );
             r.style.setProperty( "--ca", "inline" );
             r.style.setProperty( "--fr", "inline" );
             r.style.setProperty( "--en", "none" );
-            toggle_curr = 0;
-            toggle_lang = 1;
+            toggle_cc = 0;
+            toggle_fr = 1;
 
             } else {
 
             r.style.setProperty( "--fr", "none" );
             r.style.setProperty( "--en", "inline" );
-            toggle_lang = 0;
-
-            }
-
-        };
-
-    </script>
-
-<script>
-
-    var aa_pv = document.getElementById( "preview" ),
-        aa_pv_vn = document.getElementById( "vignette" );
-
-        aa_pv.style.display = "none";
-
-    function toggle_preview() {
-
-        if ( aa_pv.style.display == "none" ) {
-
-            aa_pv.style.display = "block";
-            aa_pv_vn.style.display = "none";
-
-            } else {
-
-            aa_pv.style.display = "none";
-            aa_pv_vn.style.display = "block";
+            toggle_fr = 0;
 
             }
 
@@ -322,11 +293,13 @@
 
     var aa_p_meta = document.getElementById( "product-meta" ),
         aa_p_0111_1111 = document.getElementById( "product-0111-1111" ),
-        aa_p_0111_1121 = document.getElementById( "product-0111-1121" );
+        aa_p_0111_1121 = document.getElementById( "product-0111-1121" ),
+        aa_pv = document.getElementById( "preview" );
 
         aa_p_meta.style.display = "none";
         aa_p_0111_1111.style.display = "none";
         aa_p_0111_1121.style.display = "none";
+        aa_pv.style.display = "none";
 
     function toggle( aa_p ) {
 

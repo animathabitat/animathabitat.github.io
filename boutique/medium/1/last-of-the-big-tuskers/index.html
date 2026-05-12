@@ -263,25 +263,25 @@
         r.style.setProperty( "--us", "none" );
         r.style.setProperty( "--fr", "none" );
 
-    var toggle_curr = 0,
-        toggle_lang = 0;
+    var toggle_cc = 0,
+        toggle_fr = 0;
 
     function toggle_currency() {
 
-        if ( toggle_curr == 0 ) {
+        if ( toggle_cc == 0 ) {
 
             r.style.setProperty( "--us", "inline" );
             r.style.setProperty( "--ca", "none" );
             r.style.setProperty( "--fr", "none" );
             r.style.setProperty( "--en", "inline" );
-            toggle_curr = 1;
-            toggle_lang = 0;
+            toggle_cc = 1;
+            toggle_fr = 0;
 
             } else {
 
             r.style.setProperty( "--us", "none" );
             r.style.setProperty( "--ca", "inline" );
-            toggle_curr = 0;
+            toggle_cc = 0;
 
             }
 
@@ -289,20 +289,20 @@
 
     function toggle_language() {
 
-        if ( toggle_lang == 0 ) {
+        if ( toggle_fr == 0 ) {
 
             r.style.setProperty( "--us", "none" );
             r.style.setProperty( "--ca", "inline" );
             r.style.setProperty( "--fr", "inline" );
             r.style.setProperty( "--en", "none" );
-            toggle_curr = 0;
-            toggle_lang = 1;
+            toggle_cc = 0;
+            toggle_fr = 1;
 
             } else {
 
                 r.style.setProperty( "--fr", "none" );
                 r.style.setProperty( "--en", "inline" );
-                toggle_lang = 0;
+                toggle_fr = 0;
 
             }
 

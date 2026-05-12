@@ -47,16 +47,14 @@
 
         </header>
 
-    <div class="clear preview" id="preview">
-        <a onclick="toggle_preview();">
-            <div class="text-center">
-                <img alt="Winter Wind preview, aperçu, 2008 &copy; Dane Aleksander" class="product-image" src="../../../inc/img/boutique/winter-wind/2008.winter-wind.jpg" />
-                <p class="linebreak"><i>Winter Wind</i> &ndash;  <font class="en">Rocky Mountain National Park, America</font><font class="fr">Parc national des Montagnes Rocheuses, Amérique</font> (<font class="en">graphic Pencil</font><font class="fr">&nbsp;crayon graphique</font>, 2008<font class="fr">&nbsp;</font>) &copy;&nbsp;Dane&nbsp;Aleksander</p>
+    <a onclick="toggle_preview();" id="preview">
+        <div class="preview text-center">
+            <img alt="Winter Wind preview, aperçu, 2008 &copy; Dane Aleksander" class="product-image" src="../../../inc/img/boutique/winter-wind/2008.winter-wind.jpg" />
+            <p class="linebreak"><i>Winter Wind</i> &ndash;  <font class="en">Rocky Mountain National Park, America</font><font class="fr">Parc national des Montagnes Rocheuses, Amérique</font> (<font class="en">graphic Pencil</font><font class="fr">&nbsp;crayon graphique</font>, 2008<font class="fr">&nbsp;</font>) &copy;&nbsp;Dane&nbsp;Aleksander</p>
 
-                </div>
-            </a>
+            </div>
 
-        </div>
+        </a>
 
     <div class="clear-bottom vignette" id="vignette">
         <section class="single">
@@ -131,25 +129,25 @@
         r.style.setProperty( "--us", "none" );
         r.style.setProperty( "--fr", "none" );
 
-    var toggle_curr = 0,
-        toggle_lang = 0;
+    var toggle_cc = 0,
+        toggle_fr = 0;
 
     function toggle_currency() {
 
-        if ( toggle_curr == 0 ) {
+        if ( toggle_cc == 0 ) {
 
             r.style.setProperty( "--us", "inline" );
             r.style.setProperty( "--ca", "none" );
             r.style.setProperty( "--fr", "none" );
             r.style.setProperty( "--en", "inline" );
-            toggle_curr = 1;
-            toggle_lang = 0;
+            toggle_cc = 1;
+            toggle_fr = 0;
 
             } else {
 
             r.style.setProperty( "--us", "none" );
             r.style.setProperty( "--ca", "inline" );
-            toggle_curr = 0;
+            toggle_cc = 0;
 
             }
 
@@ -157,20 +155,20 @@
 
     function toggle_language() {
 
-        if ( toggle_lang == 0 ) {
+        if ( toggle_fr == 0 ) {
 
             r.style.setProperty( "--us", "none" );
             r.style.setProperty( "--ca", "inline" );
             r.style.setProperty( "--fr", "inline" );
             r.style.setProperty( "--en", "none" );
-            toggle_curr = 0;
-            toggle_lang = 1;
+            toggle_cc = 0;
+            toggle_fr = 1;
 
             } else {
 
             r.style.setProperty( "--fr", "none" );
             r.style.setProperty( "--en", "inline" );
-            toggle_lang = 0;
+            toggle_fr = 0;
 
             }
 

@@ -50,23 +50,21 @@
 
         </header>
 
-    <div class="clear preview" id="preview">
-        <a onclick="toggle_preview();">
-            <section class="single">
-                <div class="text-center">
-                    <div>
-                        <img alt="Animat Habitat scene zero: White Rhino oil painting, 2007. &copy; Dane Aleksander"  class="matte-preview" src="../../inc/img/boutique/00/white-rhino.2007.480-160.jpg" />
 
-                        </div>
-                        <p><i>White Rhino</i>, <font class="en">Ngorongoro Conservation Area</font><font class="fr">Zone de conservation de Ngorongoro</font>, <font class="en">Tanzania</font><font class="fr">Tanzanie</font> (<font class="en">oil paint</font><font class="fr">&nbsp;peinture à l'huile</font>, 2007<font class="fr">&nbsp;</font>) &copy; Dane Aleksander</p>
+    <a onclick="toggle_preview();" id="preview">
+        <div class="preview text-center">
+            <section class="single">
+                <div>
+                    <img alt="Animat Habitat scene zero: White Rhino oil painting, 2007. &copy; Dane Aleksander"  class="matte-preview" src="../../inc/img/boutique/00/white-rhino.2007.480-160.jpg" />
+                    <p class="linebreak"><i>White Rhino</i>, <font class="en">Ngorongoro Conservation Area</font><font class="fr">Zone de conservation de Ngorongoro</font>, <font class="en">Tanzania</font><font class="fr">Tanzanie</font> (<font class="en">oil paint</font><font class="fr">&nbsp;peinture à l'huile</font>, 2007<font class="fr">&nbsp;</font>) &copy; Dane Aleksander</p>
 
                     </div>
 
                 </section>
 
-            </a>
+            </div>
 
-        </div>
+        </a>
 
     <div class="clear-bottom vignette" id="vignette">
         <section class="single">
@@ -166,28 +164,28 @@
 
         r.style.setProperty( "--fr", "none" );
 
-    var img = document.getElementById( "preview" ),
-        tmb = document.getElementById( "vignette" ),
-        num = document.getElementById( "scene" );
+    var aa_pv = document.getElementById( "preview" ),
+        aa_vg = document.getElementById( "vignette" ),
+        aa_sc = document.getElementById( "scene" );
 
-        num.style.display = "none";
-        img.style.display = "none";
+        aa_sc.style.display = "none";
+        aa_pv.style.display = "none";
 
-    var toggle_lang = 0;
+    var toggle_fr = 0;
 
     function toggle_language() {
 
-        if ( toggle_lang == 0 ) {
+        if ( toggle_fr == 0 ) {
 
             r.style.setProperty( "--fr", "inline" );
             r.style.setProperty( "--en", "none" );
-            toggle_lang = 1;
+            toggle_fr = 1;
 
             } else {
 
             r.style.setProperty( "--fr", "none" );
             r.style.setProperty( "--en", "inline" );
-            toggle_lang = 0;
+            toggle_fr = 0;
 
             }
 
@@ -195,16 +193,16 @@
 
     function toggle_preview() {
 
-        if ( img.style.display == "none" ) {
+        if ( aa_pv.style.display == "none" ) {
 
-            num.style.display = "block";
-            img.style.display = "block";
-            tmb.style.display = "none";
+            aa_sc.style.display = "block";
+            aa_pv.style.display = "block";
+            aa_vg.style.display = "none";
 
             } else {
 
-            img.style.display = "none";
-            tmb.style.display = "block";
+            aa_pv.style.display = "none";
+            aa_vg.style.display = "block";
             document.querySelector( "#vignette" ).scrollIntoView({ behavior: 'smooth' });
 
             }
@@ -213,14 +211,14 @@
 
     function toggle_scene() {
 
-        if ( num.style.display == "none" ) {
+        if ( aa_sc.style.display == "none" ) {
 
-            num.style.display = "block";
+            aa_sc.style.display = "block";
             document.querySelector( "#vignette" ).scrollIntoView({ behavior: 'smooth' });
 
             } else {
 
-            num.style.display = "none";
+            aa_sc.style.display = "none";
             document.querySelector( "#scene-header" ).scrollIntoView({ behavior: 'smooth' });
 
             }

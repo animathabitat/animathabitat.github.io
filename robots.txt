@@ -25,6 +25,17 @@ Disallow: /patron/s/
 Disallow: /re/
 Disallow: /rss/
 Disallow: /s/
+Disallow: /scene/0/
+Disallow: /scene/1/
+Disallow: /scene/2/
+Disallow: /scene/3/
+Disallow: /scene/deux/
+Disallow: /scene/one/
+Disallow: /scene/three/
+Disallow: /scene/trois/
+Disallow: /scene/two/
+Disallow: /scene/un/
+Disallow: /scene/zero/
 Disallow: /url/
 
 
