@@ -549,12 +549,7 @@ sup {
     line-height: 0.75em;
 
 }
-div.footnotes p.small sup {
-
-    line-height: 0.5em;
-
-}
-
+div.footnotes p.small sup,
 .btn-star {
 
     vertical-align: 0.25em;
