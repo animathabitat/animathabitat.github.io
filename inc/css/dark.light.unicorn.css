@@ -549,6 +549,11 @@ sup {
     line-height: 0.75em;
 
 }
+div.footnotes p.small sup {
+
+    line-height: 0.5em;
+
+}
 
 .btn-star {
 
@@ -1021,8 +1026,7 @@ div.keeper-entries pre {
     margin: var( --gutter ) 0 0;
 
 }
-div.footnotes p.small:not(.gutter-side),
-div.footnotes p.small sup {
+div.footnotes p.small:not(.gutter-side) {
 
     margin: 0.333em 0 0;
 
