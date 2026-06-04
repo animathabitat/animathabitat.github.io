@@ -1021,9 +1021,10 @@ div.keeper-entries pre {
     margin: var( --gutter ) 0 0;
 
 }
-div.footnotes p.small:not(.gutter-side) {
+div.footnotes p.small:not(.gutter-side),
+div.footnotes p.small sup {
 
-    margin: 0.5em 0 0;
+    margin: 0.333em 0 0;
 
 }
 div.clear-center.ptych-center {
