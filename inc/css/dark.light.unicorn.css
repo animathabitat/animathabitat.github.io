@@ -1021,6 +1021,11 @@ div.keeper-entries pre {
     margin: var( --gutter ) 0 0;
 
 }
+div.footnotes p.small {
+
+    padding: 0.333em 0 0;
+
+}
 div.clear-center.ptych-center {
 
     padding: 0 0.333em;
