@@ -1016,14 +1016,10 @@ div.keeper-entries > div.keeper-entry p:not( :last-child ) {
     padding: 0 0 var( --gutter );
 
 }
-div.keeper-entries pre {
-
-    margin: var( --gutter ) 0 0;
-
-}
+div.keeper-entries pre,
 div.footnotes p.small {
 
-    padding: 0.333em 0 0;
+    margin: var( --gutter ) 0 0;
 
 }
 div.clear-center.ptych-center {
