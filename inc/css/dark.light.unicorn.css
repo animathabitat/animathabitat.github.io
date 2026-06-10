@@ -1021,7 +1021,7 @@ div.keeper-entries pre {
     margin: var( --gutter ) 0 0;
 
 }
-div.footnotes:not( :first-child ) p.small:not( .gutter-side ) {
+div.footnotes p.small:not( .clear-top, .gutter-side ) {
 
     margin: 0.5em 0 0;
 
