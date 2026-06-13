@@ -1098,6 +1098,7 @@ h5.product-title {
 }
 p.linebreak,
 li.linebreak,
+endnotes > h3.linebreak,
 .return-to-shop {
 
     padding-top: var( --gutter );
