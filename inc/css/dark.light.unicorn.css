@@ -503,7 +503,8 @@ h3,
 
 }
 h4,
-nav, div[ role="navigation" ] a,
+nav,
+div[ role="navigation" ] a,
 button, input, textarea {
 
     font-size: calc( 4em / 3 );
@@ -1311,6 +1312,7 @@ a.project-vignette:hover img {
 
 }
 .single .video-3-2 {
+
     width: 100%;
     height: 28.5em;
 
@@ -2025,6 +2027,12 @@ and ( max-width: 1600px ) {} */
         font-size: 2.1rem;
 
     }
+
+    .toggle-ios {
+
+        display: none;
+
+    }
 }
 
 
@@ -2063,15 +2071,10 @@ and ( max-width: 1600px ) {} */
 
     }
 
-    nav {
+    nav,
+    div[ role="navigation" ] a {
 
         font-size: 2.4rem;
-
-    }
-
-    div[ role="navigation" ] {
-
-        font-size: 1.8rem;
 
     }
 
@@ -2150,6 +2153,12 @@ and ( max-width: 1600px ) {} */
         width: 1112px;
 
     }
+
+    .toggle-ios {
+
+        display: none;
+
+    }
 }
 
 /* - MEDIA - IPAD Pro 12 : portrait */
@@ -2172,6 +2181,12 @@ and ( max-width: 1600px ) {} */
 
         max-width: 1024px;
         width: 1024px;
+
+    }
+
+    .toggle-ios {
+
+        display: none;
 
     }
 }
@@ -2198,6 +2213,12 @@ and ( max-width: 1600px ) {} */
 
         max-width: 1024px;
         width: 1024px;
+
+    }
+
+    .toggle-ios {
+
+        display: none;
 
     }
 }
@@ -2236,7 +2257,8 @@ and ( max-width: 1600px ) {} */
         font-size: 1em;
 
     }
-    nav {
+    nav,
+    div[ role="navigation" ] a {
 
         font-size: calc( 8em / 9 );
 
@@ -2395,6 +2417,12 @@ and ( max-width: 1600px ) {} */
         font-size: 2.7rem;
 
     }
+
+    .toggle-ios {
+
+        display: none;
+
+    }
 }
 
 /* - MEDIA - IPHONE X : landscape */
@@ -2408,6 +2436,12 @@ and ( max-width: 1600px ) {} */
     body {
 
         font-size: 2.7rem;
+
+    }
+
+    .toggle-ios {
+
+        display: none;
 
     }
 }
@@ -2439,9 +2473,10 @@ and ( max-width: 1600px ) {} */
         font-size: calc( calc( 8em / 7 ) + ( calc( 22 / 7 ) * ( ( 100vw - 375px ) / 393 ) ) );
 
     }
-    nav {
+    nav,
+    div[ role="navigation" ] a {
 
-        font-size: calc( 0.5em + ( 10 * ( ( 100vw - 375px ) / 393 ) ) );
+        font-size: calc( calc( 5em / 7 ) + ( calc( 54 / 7 ) * ( ( 100vw - 375px ) / 393 ) ) );
 
     }
 
@@ -2480,6 +2515,12 @@ and ( max-width: 1600px ) {} */
         font-size: 2.7rem;
 
     }
+
+    .toggle-ios {
+
+        display: none;
+
+    }
 }
 
 /* - MEDIA - IPHONE 6+, 7+, 8+ : landscape */
@@ -2495,6 +2536,12 @@ and ( max-width: 1600px ) {} */
         font-size: 2.7rem;
 
     }
+
+    .toggle-ios {
+
+        display: none;
+
+    }
 }
 
 /* - MEDIA - IPHONE 6, 7, 8 : landscape */
@@ -2508,6 +2555,12 @@ and ( max-width: 1600px ) {} */
     body {
 
         font-size: 2.7rem;
+
+    }
+
+    .toggle-ios {
+
+        display: none;
 
     }
 }
@@ -2562,6 +2615,12 @@ and ( max-width: 1600px ) {} */
         font-size: 2.4rem;
 
     }
+
+    .toggle-ios {
+
+        display: none;
+
+    }
 }
 
 
@@ -2603,7 +2662,8 @@ and ( max-width: 1600px ) {} */
         display: inline;
 
     }
-    .toggle-form-break {
+    .toggle-form-break,
+    .toggle-ios {
 
         display: none;
 
@@ -2651,7 +2711,8 @@ and ( max-width: 1600px ) {} */
         display: inline;
 
     }
-    .toggle-form-break {
+    .toggle-form-break,
+    .toggle-ios {
 
         display: none;
 
@@ -2683,13 +2744,14 @@ and ( max-width: 1600px ) {} */
         font-size: calc( 8em / 7 );
 
     }
-    nav {
+    nav,
+    div[ role="navigation" ] a {
 
-        font-size: 0.5em;
+        font-size: calc( 5em / 7 );
 
     }
 
-    input,  button, select {
+    input, button, select {
 
         height: calc( 12em / 7 );
 
@@ -2705,7 +2767,7 @@ and ( max-width: 1600px ) {} */
 
     .polyptych {
 
-    grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
 
     }
 }
@@ -2743,7 +2805,8 @@ and ( max-width: 1600px ) {} */
         display: inline;
 
     }
-    .toggle-form-break {
+    .toggle-form-break,
+    .toggle-ios {
 
         display: none;
 
