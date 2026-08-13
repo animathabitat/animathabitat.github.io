@@ -2221,7 +2221,7 @@ background-color: var( --dark-iv );
         }
         .single .video-extra {
 
-            height: calc( 320px + ( 64 * ( ( 100vw - 960px ) / 320 ) ) );
+            height: calc( 384px + ( 48 * ( ( 100vw - 960px ) / 320 ) ) );
 
         }
 
@@ -2449,10 +2449,14 @@ background-color: var( --dark-iv );
         }
 
         .video,
-        .single .video,
-        .single .video-extra {
+        .single .video {
 
             height: calc( 180px + ( 252 * ( ( 100vw - 320px ) / 448 ) ) );
+
+        }
+        .single .video-extra {
+
+            height: calc( 180px + ( 204 * ( ( 100vw - 320px ) / 448 ) ) );
 
         }
     }
