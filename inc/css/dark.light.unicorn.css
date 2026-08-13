@@ -6,7 +6,7 @@
     Author:       Dane Aleksander
     Author URI:   https://danealeksander.github.io/
     Template:     twentythirteen
-    Version:      2.2.0
+    Version:      2.2.5
 
     */
 
@@ -2133,6 +2133,66 @@ and ( max-width: 1600px ) {} */
 
 
 
+/* - MEDIA - IPAD 11-INCH : landscape */
+
+@media all
+    and ( device-width : 1180px )
+    and ( device-height : 820px )
+    and ( orientation : landscape )
+    and ( -webkit-min-device-pixel-ratio : 2 ) {
+
+    body {
+
+        font-size: 2.1rem;
+
+    }
+
+    nav ul,
+    header, footer,
+    section {
+
+        max-width: 1180px;
+        width: 1180px;
+
+    }
+
+    .toggle-ios {
+
+        display: none;
+
+    }
+}
+
+/* - MEDIA - IPAD MINI : landscape */
+
+@media all
+    and ( device-width : 1133px )
+    and ( device-height : 744px )
+    and ( orientation : landscape )
+    and ( -webkit-min-device-pixel-ratio : 2 ) {
+
+    body {
+
+        font-size: 2.1rem;
+
+    }
+
+    nav ul,
+    header, footer,
+    section {
+
+        max-width: 1133px;
+        width: 1133px;
+
+    }
+
+    .toggle-ios {
+
+        display: none;
+
+    }
+}
+
 /* - MEDIA - IPAD PRO 10.5 : landscape */
 
 @media all
@@ -2163,7 +2223,7 @@ and ( max-width: 1600px ) {} */
     }
 }
 
-/* - MEDIA - IPAD PRO 12 : portrait */
+/* - MEDIA - IPAD 13-INCH : portrait */
 
 @media all
     and ( device-width : 1366px )
@@ -2183,36 +2243,6 @@ and ( max-width: 1600px ) {} */
 
         max-width: 1024px;
         width: 1024px;
-
-    }
-
-    .toggle-ios {
-
-        display: none;
-
-    }
-}
-
-/* - MEDIA - IPAD MINI : landscape */
-
-@media all
-    and ( device-width : 1180px )
-    and ( device-height : 820px )
-    and ( orientation : landscape )
-    and ( -webkit-min-device-pixel-ratio : 2 ) {
-
-    body {
-
-        font-size: 2.1rem;
-
-    }
-
-    nav ul,
-    header, footer,
-    section {
-
-        max-width: 1180px;
-        width: 1180px;
 
     }
 
@@ -2459,6 +2489,27 @@ and ( max-width: 1600px ) {} */
     }
 }
 
+/* - MEDIA - IPAD 11-INCH : portrait */
+
+@media all
+    and ( device-width : 820px )
+    and ( device-height : 1180px )
+    and ( orientation : portrait )
+    and ( -webkit-min-device-pixel-ratio : 2 ) {
+
+    body {
+
+        font-size: 2.7rem;
+
+    }
+
+    .toggle-ios {
+
+        display: none;
+
+    }
+}
+
 
 
 /* - MEDIA - IPHONE X : landscape */
@@ -2547,6 +2598,27 @@ and ( max-width: 1600px ) {} */
     and ( device-height : 1024px )
     and ( orientation : portrait )
     and ( -webkit-min-device-pixel-ratio : 1 ) {
+
+    body {
+
+        font-size: 2.7rem;
+
+    }
+
+    .toggle-ios {
+
+        display: none;
+
+    }
+}
+
+/* - MEDIA - IPAD MINI : portrait */
+
+@media all
+    and ( device-width : 744px )
+    and ( device-height : 1133px )
+    and ( orientation : portrait )
+    and ( -webkit-min-device-pixel-ratio : 2 ) {
 
     body {
 
