@@ -2131,7 +2131,9 @@ and ( max-width: 1600px ) {} */
     }
 }
 
-/* - MEDIA - IPAD Pro 10.5 : landscape */
+
+
+/* - MEDIA - IPAD PRO 10.5 : landscape */
 
 @media all
     and ( device-width : 1112px )
@@ -2161,7 +2163,7 @@ and ( max-width: 1600px ) {} */
     }
 }
 
-/* - MEDIA - IPAD Pro 12 : portrait */
+/* - MEDIA - IPAD PRO 12 : portrait */
 
 @media all
     and ( device-width : 1366px )
@@ -2191,9 +2193,39 @@ and ( max-width: 1600px ) {} */
     }
 }
 
-/* - MEDIA - IPAD, 3, 4 … Mini 2, 3, 4 : landscape */
+/* - MEDIA - IPAD MINI : landscape */
 
-/* - MEDIA - IPAD 1, 2, Mini : landscape */
+@media all
+    and ( device-width : 1180px )
+    and ( device-height : 820px )
+    and ( orientation : landscape )
+    and ( -webkit-min-device-pixel-ratio : 2 ) {
+
+    body {
+
+        font-size: 2.1rem;
+
+    }
+
+    nav ul,
+    header, footer,
+    section {
+
+        max-width: 1180px;
+        width: 1180px;
+
+    }
+
+    .toggle-ios {
+
+        display: none;
+
+    }
+}
+
+/* - MEDIA - IPAD, 3, 4 … MINI 2, 3, 4 : landscape */
+
+/* - MEDIA - IPAD 1, 2, MINI : landscape */
 
 @media all
     and ( device-width : 1024px )
@@ -2388,6 +2420,8 @@ and ( max-width: 1600px ) {} */
     }
 }
 
+
+
 /* - MEDIA - IPHONE XS Max : landscape */
 
 /* @media all
@@ -2424,6 +2458,8 @@ and ( max-width: 1600px ) {} */
 
     }
 }
+
+
 
 /* - MEDIA - IPHONE X : landscape */
 
@@ -2494,6 +2530,8 @@ and ( max-width: 1600px ) {} */
     }
 }
 
+
+
 /* - MEDIA - IPAD 3, 4 … Mini 2, 3, 4 : portrait */
 
 /* @media all
@@ -2522,6 +2560,8 @@ and ( max-width: 1600px ) {} */
 
     }
 }
+
+
 
 /* - MEDIA - IPHONE 6+, 7+, 8+ : landscape */
 
@@ -2602,6 +2642,8 @@ and ( max-width: 1600px ) {} */
     }
 }
 
+
+
 /* - MEDIA - IPHONE 5, 5S : landscape */
 
 @media all
@@ -2637,6 +2679,8 @@ and ( max-width: 1600px ) {} */
     }
 }
 
+
+
 /* - MEDIA - IPHONE 4S : landscape */
 
 @media all
@@ -2644,6 +2688,72 @@ and ( max-width: 1600px ) {} */
     and ( device-height : 320px )
     and ( orientation : landscape )
     and ( -webkit-min-device-pixel-ratio : 2 ) {
+
+    body {
+
+        font-size: 2.1rem;
+
+    }
+
+    .polyptych {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .toggle-form-full {
+
+        display: inline;
+
+    }
+    .toggle-form-break,
+    .toggle-ios {
+
+        display: none;
+
+    }
+}
+
+/* - MEDIA - IPHONE PRO MAX : portrait */
+
+@media all
+    and ( device-width : 440px )
+    and ( device-height : 956px )
+    and ( orientation : portrait )
+    and ( -webkit-min-device-pixel-ratio : 3 ) {
+
+    body {
+
+        font-size: 2.1rem;
+
+    }
+
+    .polyptych {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .toggle-form-full {
+
+        display: inline;
+
+    }
+    .toggle-form-break,
+    .toggle-ios {
+
+        display: none;
+
+    }
+}
+
+/* - MEDIA - IPHONE PLUS : portrait */
+
+@media all
+    and ( device-width : 430px )
+    and ( device-height : 932px )
+    and ( orientation : portrait )
+    and ( -webkit-min-device-pixel-ratio : 3 ) {
 
     body {
 
@@ -2693,6 +2803,72 @@ and ( max-width: 1600px ) {} */
     /* and ( device-height : 736px ) */
     and ( orientation : portrait )
     and ( -webkit-min-device-pixel-ratio : 2 ) {
+
+    body {
+
+        font-size: 2.1rem;
+
+    }
+
+    .polyptych {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .toggle-form-full {
+
+        display: inline;
+
+    }
+    .toggle-form-break,
+    .toggle-ios {
+
+        display: none;
+
+    }
+}
+
+/* - MEDIA - IPHONE PRO : portrait */
+
+@media all
+    and ( device-width : 402px )
+    and ( device-height : 874px )
+    and ( orientation : portrait )
+    and ( -webkit-min-device-pixel-ratio : 3 ) {
+
+    body {
+
+        font-size: 2.1rem;
+
+    }
+
+    .polyptych {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .toggle-form-full {
+
+        display: inline;
+
+    }
+    .toggle-form-break,
+    .toggle-ios {
+
+        display: none;
+
+    }
+}
+
+/* - MEDIA - IPHONE : portrait */
+
+@media all
+    and ( device-width : 393px )
+    and ( device-height : 852px )
+    and ( orientation : portrait )
+    and ( -webkit-min-device-pixel-ratio : 3 ) {
 
     body {
 
@@ -2771,6 +2947,8 @@ and ( max-width: 1600px ) {} */
 
     }
 }
+
+
 
 /* - MEDIA - IPHONE X : portrait */
 
@@ -2860,6 +3038,8 @@ and ( max-width: 1600px ) {} */
 
     }
 }
+
+
 
 /* - MEDIA - IPHONE 5, 5S : portrait */
 
