@@ -82,7 +82,7 @@
     --gutter-iii: 3em;
     --gutter-iv: 4.5em;
 
-    --rem: clamp( 0.9rem, 1.8rem, 2.7rem );
+    /* --rem: clamp( 0.9rem, 1.8rem, 2.7rem ); */
 
     --white: #FCFCFC;
     --black: #0A0A0A;
@@ -320,7 +320,7 @@ select {
 }
 .en {
 
-    display: var( --en);
+    display: var( --en );
 
 }
 
@@ -331,7 +331,7 @@ select {
 }
 .paypal-us {
 
-    display: var( --us);
+    display: var( --us );
 
 }
 
@@ -1569,7 +1569,7 @@ input[ type="submit" ],
 
 }
 #light button:hover,
-#light input[ type="submit" ]:hover, {
+#light input[ type="submit" ]:hover {
 
     background-color: var( --light-iii );
 
@@ -2017,6 +2017,129 @@ background-color: var( --dark-iv );
         }
     }
 
+@media all
+    and ( -webkit-min-device-pixel-ratio : 3 ) {
+
+        body {
+
+            font-size: 2.7rem;
+
+        }
+    }
+
+/* - MEDIA - IPAD : landscape */
+
+@media all
+    and ( max-device-width : 1180px )
+    and ( min-device-width : 1024px )
+    and ( orientation : landscape )
+    and ( -webkit-min-device-pixel-ratio : 2 ) {
+
+        body {
+
+            font-size: 2.1rem;
+
+        }
+
+        nav ul,
+        header, footer,
+        section {
+
+            max-width: 100%;
+            width: 100%;
+
+        }
+    }
+
+/* - MEDIA - IPAD : portrait */
+
+@media all
+    and ( device-width : 1024px )
+    and ( orientation : portrait )
+    and ( -webkit-min-device-pixel-ratio : 2 ) {
+
+        body {
+
+            font-size: 2.1rem;
+
+        }
+
+        nav ul,
+        header, footer,
+        section {
+
+            max-width: 100%;
+            width: 100%;
+
+        }
+    }
+
+/* - MEDIA - IPHONE : landscape */
+
+@media all
+    and ( max-device-width : 568px )
+    and ( min-device-width : 480px )
+    and ( orientation : landscape )
+    and ( -webkit-min-device-pixel-ratio : 2 ) {
+
+        body {
+
+            font-size: 1.8rem;
+
+        }
+
+        div.polyptych {
+
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .toggle-form-full {
+
+            display: inline;
+
+        }
+        .toggle-form-break {
+
+            display: none;
+
+        }
+    }
+
+/* - MEDIA - IPHONE : portrait */
+
+@media all
+    and ( max-device-width : 480px )
+    and ( min-device-width : 400px )
+    and ( orientation : portrait )
+    and ( -webkit-min-device-pixel-ratio : 2 ) {
+
+        body {
+
+            font-size: 1.8rem;
+
+        }
+
+        div.polyptych {
+
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .toggle-form-full {
+
+            display: inline;
+
+        }
+        .toggle-form-break {
+
+            display: none;
+
+        }
+    }
+
+
+
 /* - MEDIA - 1280 */
 
 @media only screen
@@ -2113,42 +2236,7 @@ background-color: var( --dark-iv );
 
 
 
-/* - MEDIA - IPAD : landscape */
-
-@media all
-    and ( orientation : landscape )
-    and ( -webkit-min-device-pixel-ratio : 2 ) {
-
-        nav ul,
-        header, footer,
-        section {
-
-            max-width: 100%;
-            width: 100%;
-
-        }
-    }
-
-/* - MEDIA - IPAD : portrait */
-
-@media all
-    and ( device-width : 1024px )
-    and ( orientation : portrait )
-    and ( -webkit-min-device-pixel-ratio : 2 ) {
-
-        nav ul,
-        header, footer,
-        section {
-
-            max-width: 100%;
-            width: 100%;
-
-        }
-    }
-
-
-
-/* - MEDIA - BREAK (MID) */
+/* - MEDIA - BREAK : MID */
 
 @media only screen
     and ( max-width: 960px ) {
@@ -2398,34 +2486,6 @@ background-color: var( --dark-iv );
 
 
 
-/* - MEDIA - IPHONE 4S, 5, 5S : landscape */
-
-@media all
-    and ( max-device-width : 568px )
-    and ( min-device-width : 480px )
-    and ( orientation : landscape )
-    and ( -webkit-min-device-pixel-ratio : 2 ) {
-
-        div.polyptych {
-
-            grid-template-columns: 1fr 1fr;
-
-        }
-
-        .toggle-form-full {
-
-            display: inline;
-
-        }
-        .toggle-form-break {
-
-            display: none;
-
-        }
-    }
-
-
-
 /* - MEDIA - 480 */
 
 @media only screen
@@ -2440,35 +2500,7 @@ background-color: var( --dark-iv );
 
 
 
-/* - MEDIA - IPHONE : portrait */
-
-@media all
-    and ( max-device-width : 480px )
-    and ( min-device-width : 400px )
-    and ( orientation : portrait )
-    and ( -webkit-min-device-pixel-ratio : 2 ) {
-
-        div.polyptych {
-
-            grid-template-columns: 1fr 1fr;
-
-        }
-
-        .toggle-form-full {
-
-            display: inline;
-
-        }
-        .toggle-form-break {
-
-            display: none;
-
-        }
-    }
-
-
-
-/* - MEDIA - BREAK (MIN) */
+/* - MEDIA - BREAK : MIN */
 
 @media only screen
     and ( max-width: 375px ) {
