@@ -2214,11 +2214,19 @@ background-color: var( --dark-iv );
             height: calc( 432px + ( 248 * ( ( 100vw - 960px ) / 320 ) ) );
 
         }
-
-        .single .video,
-        .single .video-extra {
+        .single .video  {
 
             height: calc( 540px + ( 180 * ( ( 100vw - 960px ) / 320 ) ) );
+
+        }
+        .single .video-3-2 {
+
+            height: calc( 258px + ( 462 * ( ( 100vw - 960px ) / 320 ) ) );
+
+        }
+        .single .video-extra {
+
+            height: calc( 342px + ( 378 * ( ( 100vw - 960px ) / 320 ) ) );
 
         }
 
@@ -2399,6 +2407,11 @@ background-color: var( --dark-iv );
             height: 432px;
 
         }
+        .single .video-3-2 {
+
+            height: 576px;
+
+        }
     }
 
 
@@ -2445,7 +2458,12 @@ background-color: var( --dark-iv );
         .single .video,
         .single .video-extra {
 
-            height: calc( 180px + ( 252px * ( ( 100vw - 320px ) / 448 ) ) );
+            height: calc( 180px + ( 252 * ( ( 100vw - 320px ) / 448 ) ) );
+
+        }
+        .single .video-3-2 {
+
+            height: calc( 240px + ( 192 * ( ( 100vw - 320px ) / 448 ) ) );
 
         }
     }
@@ -2601,6 +2619,11 @@ background-color: var( --dark-iv );
             height: 180px;
 
         }
+        .single .video-3-2 {
+
+            height: 240px;
+
+        }
     }
 
 
@@ -2631,6 +2654,11 @@ background-color: var( --dark-iv );
         .single .video-extra {
 
             height: 135px;
+
+        }
+        .single .video-3-2 {
+
+            height: 180px;
 
         }
     }
