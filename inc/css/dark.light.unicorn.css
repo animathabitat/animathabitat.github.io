@@ -2027,12 +2027,6 @@ and ( max-width: 1600px ) {} */
         font-size: 2.7rem;
 
     }
-
-    .toggle-ios {
-
-        display: none;
-
-    }
 }
 
 
@@ -2155,12 +2149,6 @@ and ( max-width: 1600px ) {} */
         width: 1180px;
 
     }
-
-    .toggle-ios {
-
-        display: none;
-
-    }
 }
 
 /* - MEDIA - IPAD MINI : landscape */
@@ -2183,12 +2171,6 @@ and ( max-width: 1600px ) {} */
 
         max-width: 1133px;
         width: 1133px;
-
-    }
-
-    .toggle-ios {
-
-        display: none;
 
     }
 }
@@ -2215,12 +2197,6 @@ and ( max-width: 1600px ) {} */
         width: 1112px;
 
     }
-
-    .toggle-ios {
-
-        display: none;
-
-    }
 }
 
 /* - MEDIA - IPAD 13-INCH : portrait */
@@ -2243,12 +2219,6 @@ and ( max-width: 1600px ) {} */
 
         max-width: 1024px;
         width: 1024px;
-
-    }
-
-    .toggle-ios {
-
-        display: none;
 
     }
 }
@@ -2275,12 +2245,6 @@ and ( max-width: 1600px ) {} */
 
         max-width: 1024px;
         width: 1024px;
-
-    }
-
-    .toggle-ios {
-
-        display: none;
 
     }
 }
@@ -2452,7 +2416,7 @@ and ( max-width: 1600px ) {} */
 
 
 
-/* - MEDIA - IPHONE PRO MAX : portrait */
+/* - MEDIA - IPHONE PRO MAX : landscape */
 
 @media all
     and ( device-width : 956px )
@@ -2463,12 +2427,6 @@ and ( max-width: 1600px ) {} */
     body {
 
         font-size: 2.7rem;
-
-    }
-
-    .toggle-ios {
-
-        display: none;
 
     }
 }
@@ -2484,12 +2442,6 @@ and ( max-width: 1600px ) {} */
     body {
 
         font-size: 2.7rem;
-
-    }
-
-    .toggle-ios {
-
-        display: none;
 
     }
 }
@@ -2523,12 +2475,6 @@ and ( max-width: 1600px ) {} */
         font-size: 2.7rem;
 
     }
-
-    .toggle-ios {
-
-        display: none;
-
-    }
 }
 
 /* - MEDIA - IPHONE : landscape */
@@ -2542,12 +2488,6 @@ and ( max-width: 1600px ) {} */
     body {
 
         font-size: 2.7rem;
-
-    }
-
-    .toggle-ios {
-
-        display: none;
 
     }
 }
@@ -2565,12 +2505,6 @@ and ( max-width: 1600px ) {} */
         font-size: 2.7rem;
 
     }
-
-    .toggle-ios {
-
-        display: none;
-
-    }
 }
 
 /* - MEDIA - IPAD 11-INCH : portrait */
@@ -2584,12 +2518,6 @@ and ( max-width: 1600px ) {} */
     body {
 
         font-size: 2.7rem;
-
-    }
-
-    .toggle-ios {
-
-        display: none;
 
     }
 }
@@ -2607,12 +2535,6 @@ and ( max-width: 1600px ) {} */
     body {
 
         font-size: 2.7rem;
-
-    }
-
-    .toggle-ios {
-
-        display: none;
 
     }
 }
@@ -2688,12 +2610,6 @@ and ( max-width: 1600px ) {} */
         font-size: 2.7rem;
 
     }
-
-    .toggle-ios {
-
-        display: none;
-
-    }
 }
 
 /* - MEDIA - IPAD MINI : portrait */
@@ -2707,12 +2623,6 @@ and ( max-width: 1600px ) {} */
     body {
 
         font-size: 2.7rem;
-
-    }
-
-    .toggle-ios {
-
-        display: none;
 
     }
 }
@@ -2732,12 +2642,6 @@ and ( max-width: 1600px ) {} */
         font-size: 2.7rem;
 
     }
-
-    .toggle-ios {
-
-        display: none;
-
-    }
 }
 
 /* - MEDIA - IPHONE 6, 7, 8 : landscape */
@@ -2751,12 +2655,6 @@ and ( max-width: 1600px ) {} */
     body {
 
         font-size: 2.7rem;
-
-    }
-
-    .toggle-ios {
-
-        display: none;
 
     }
 }
@@ -2813,12 +2711,6 @@ and ( max-width: 1600px ) {} */
         font-size: 2.4rem;
 
     }
-
-    .toggle-ios {
-
-        display: none;
-
-    }
 }
 
 
@@ -2862,8 +2754,7 @@ and ( max-width: 1600px ) {} */
         display: inline;
 
     }
-    .toggle-form-break,
-    .toggle-ios {
+    .toggle-form-break {
 
         display: none;
 
@@ -2895,8 +2786,7 @@ and ( max-width: 1600px ) {} */
         display: inline;
 
     }
-    .toggle-form-break,
-    .toggle-ios {
+    .toggle-form-break {
 
         display: none;
 
@@ -2928,8 +2818,7 @@ and ( max-width: 1600px ) {} */
         display: inline;
 
     }
-    .toggle-form-break,
-    .toggle-ios {
+    .toggle-form-break {
 
         display: none;
 
@@ -2977,8 +2866,7 @@ and ( max-width: 1600px ) {} */
         display: inline;
 
     }
-    .toggle-form-break,
-    .toggle-ios {
+    .toggle-form-break {
 
         display: none;
 
@@ -3010,8 +2898,7 @@ and ( max-width: 1600px ) {} */
         display: inline;
 
     }
-    .toggle-form-break,
-    .toggle-ios {
+    .toggle-form-break {
 
         display: none;
 
@@ -3043,8 +2930,7 @@ and ( max-width: 1600px ) {} */
         display: inline;
 
     }
-    .toggle-form-break,
-    .toggle-ios {
+    .toggle-form-break {
 
         display: none;
 
@@ -3139,8 +3025,7 @@ and ( max-width: 1600px ) {} */
         display: inline;
 
     }
-    .toggle-form-break,
-    .toggle-ios {
+    .toggle-form-break {
 
         display: none;
 
@@ -3226,6 +3111,15 @@ and ( max-width: 1600px ) {} */
     .single .video {
 
         height: 135px;
+
+    }
+}
+
+@supports ( -webkit-touch-callout: inherit ) {
+
+    .toggle-ios {
+
+        display: none;
 
     }
 }
