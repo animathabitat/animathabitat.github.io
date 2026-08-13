@@ -2456,7 +2456,7 @@ background-color: var( --dark-iv );
         }
         .single .video-extra {
 
-            height: calc( 180px + ( 204 * ( ( 100vw - 320px ) / 448 ) ) );
+            height: calc( 380px + ( 52 * ( ( 100vw - 667px ) / 87 ) ) );
 
         }
     }
@@ -2475,6 +2475,12 @@ background-color: var( --dark-iv );
         footer.single {
 
             width: 100%;
+
+        }
+
+        .single .video-extra {
+
+            height: calc( 180px + ( 200 * ( ( 100vw - 320px ) / 347 ) ) );
 
         }
     }
