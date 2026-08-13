@@ -2004,220 +2004,134 @@ background-color: var( --dark-iv );
 
 /* - MEDIA QUERIES */
 
-/* - MEDIA - IPHONE-Retina */
-
-/* @media only screen
-and ( -webkit-min-device-pixel-ratio: 2 ) { } */
-
-/* - MEDIA - MAX */
-
-/* @media screen
-and ( max-width: 1600px ) {} */
-
-/* - MEDIA - IPAD Pro 12 : landscape */
-
-@media all
-    and ( max-device-width : 1366px )
-    /* and ( device-height : 1024px ) */
-    and ( orientation : landscape )
-    and ( -webkit-min-device-pixel-ratio : 2 ) {
-
-    body {
-
-        font-size: 2.7rem;
-
-    }
-}
-
-
-
 /* - MEDIA - 1280 */
 
 @media only screen
     and ( max-width: 1280px ) {
 
-    body {
+        body {
 
-        font-size: calc( 1.6rem + ( 2 * ( ( 100vw - 960px ) / 320 ) ) );
+            font-size: calc( 1.6rem + ( 2 * ( ( 100vw - 960px ) / 320 ) ) );
 
+        }
+        h1 {
+
+            font-size: calc( calc( 45em / 8 ) + ( 42.75 * ( ( 100vw - 960px ) / 320 ) ) );
+
+        }
+        h2 {
+
+            font-size: calc( calc( 9em / 4 ) + ( 13.5 * ( ( 100vw - 960px ) / 320 ) ) );
+
+        }
+        h3 {
+
+            font-size: calc( calc( 33em / 16 ) - ( 1.125 * ( ( 100vw - 960px ) / 320 ) ) );
+
+        }
+
+        h5.author,
+        h5.product-description,
+        h5.product-tag {
+
+            font-size: calc( 7em / 9 );
+
+        }
+
+        nav,
+        div[ role="navigation" ] a {
+
+            font-size: 2.4rem;
+
+        }
+
+        nav ul,
+        header, footer,
+        section,
+        .single section {
+
+            /* max-width: ; */
+            width: 100%;
+
+        }
+        .single section {
+
+            max-width: 76.4em;
+            /* width: 76.4em; */
+
+        }
+        .single nav ul,
+        .single footer > div:not( .spread ),
+        .single article > div:not( .diptych, .triptych, .polyptych, .spread ),
+        .single div.single,
+        section.single,
+        footer.single {
+
+            max-width: 667px;
+            width: 667px;
+            /* width: calc( 667px + ( 4 * ( ( 100vw - 1280px ) / 320 ) ) ); */
+
+        }
+
+        .video {
+
+            height: calc( 432px + ( 248 * ( ( 100vw - 960px ) / 320 ) ) );
+
+        }
+
+        .single .video {
+
+            height: calc( 540px + ( 180 * ( ( 100vw - 960px ) / 320 ) ) );
+
+        }
+
+        textarea {
+
+            height: 6.5em;
+
+        }
+
+        .break-cut {
+
+            display: none;
+
+        }
     }
-    h1 {
-
-        font-size: calc( calc( 45em / 8 ) + ( 42.75 * ( ( 100vw - 960px ) / 320 ) ) );
-
-    }
-    h2 {
-
-        font-size: calc( calc( 9em / 4 ) + ( 13.5 * ( ( 100vw - 960px ) / 320 ) ) );
-
-    }
-    h3 {
-
-        font-size: calc( calc( 33em / 16 ) - ( 1.125 * ( ( 100vw - 960px ) / 320 ) ) );
-
-    }
-
-    h5.author,
-    h5.product-description,
-    h5.product-tag {
-
-        font-size: calc( 7em / 9 );
-
-    }
-
-    nav,
-    div[ role="navigation" ] a {
-
-        font-size: 2.4rem;
-
-    }
-
-    nav ul,
-    header, footer,
-    section,
-    .single section {
-
-        /* max-width: ; */
-        width: 100%;
-
-    }
-    .single section {
-
-        max-width: 76.4em;
-        /* width: 76.4em; */
-
-    }
-    .single nav ul,
-    .single footer > div:not( .spread ),
-    .single article > div:not( .diptych, .triptych, .polyptych, .spread ),
-    .single div.single,
-    section.single,
-    footer.single {
-
-        max-width: 667px;
-        width: 667px;
-        /* width: calc( 667px + ( 4 * ( ( 100vw - 1280px ) / 320 ) ) ); */
-
-    }
-
-    .video {
-
-        height: calc( 432px + ( 248 * ( ( 100vw - 960px ) / 320 ) ) );
-
-    }
-
-    .single .video {
-
-        height: calc( 540px + ( 180 * ( ( 100vw - 960px ) / 320 ) ) );
-
-    }
-
-    textarea {
-
-        height: 6.5em;
-
-    }
-
-    .break-cut {
-
-        display: none;
-
-    }
-}
 
 
 
-/* - MEDIA - IPAD MINI, 11-INCH : landscape */
+/* - MEDIA - IPAD : landscape */
 
 @media all
-    and ( max-device-width : 1180px )
-    /* and ( device-height : 820px ) */
     and ( orientation : landscape )
     and ( -webkit-min-device-pixel-ratio : 2 ) {
 
-    body {
+        nav ul,
+        header, footer,
+        section {
 
-        font-size: 2.1rem;
+            max-width: 100%;
+            width: 100%;
 
+        }
     }
 
-    nav ul,
-    header, footer,
-    section {
-
-        max-width: 1112px;
-        width: 1112px;
-
-    }
-}
-
-/* - MEDIA - IPAD MINI : landscape */
-
-/* @media all
-    and ( device-width : 1133px )
-    and ( device-height : 744px )
-    and ( orientation : landscape )
-    and ( -webkit-min-device-pixel-ratio : 2 ) {
-
-    } */
-
-/* - MEDIA - IPAD PRO 10.5 : landscape */
-
-/* @media all
-    and ( device-width : 1112px )
-    and ( device-height : 834px )
-    and ( orientation : landscape )
-    and ( -webkit-min-device-pixel-ratio : 2 ) {
-
-    } */
-
-/* - MEDIA - IPAD 13-INCH : portrait */
+/* - MEDIA - IPAD : portrait */
 
 @media all
-    and ( max-device-width : 1024px )
-    /* and ( device-height : 1366px ) */
+    and ( device-width : 1024px )
     and ( orientation : portrait )
     and ( -webkit-min-device-pixel-ratio : 2 ) {
 
-    body {
+        nav ul,
+        header, footer,
+        section {
 
-        font-size: 2.1rem;
+            max-width: 100%;
+            width: 100%;
 
+        }
     }
-
-    nav ul,
-    header, footer,
-    section {
-
-        max-width: 1024px;
-        width: 1024px;
-
-    }
-}
-
-/* - MEDIA - IPAD MINI : landscape */
-
-@media all
-    and ( max-device-width : 1024px )
-    and ( device-height : 768px )
-    and ( orientation : landscape )
-    and ( -webkit-min-device-pixel-ratio : 1 ) {
-
-    body {
-
-        font-size: 2.1rem;
-
-    }
-
-    nav ul,
-    header, footer,
-    section {
-
-        max-width: 1024px;
-        width: 1024px;
-
-    }
-}
 
 
 
@@ -2226,281 +2140,163 @@ and ( max-width: 1600px ) {} */
 @media only screen
     and ( max-width: 960px ) {
 
-    body{
-
-        font-size: 2.7rem;
-
-    }
-    h1 {
-
-        font-size: calc( 10em / 3 );
-
-    }
-    h2 {
-
-        font-size: calc( 4em / 3 );
-
-    }
-    h3,
-    button, input {
-
-        font-size: calc( 11em / 9 );
-
-    }
-    h4, h5,
-    select {
-
-        font-size: 1em;
-
-    }
-    nav,
-    div[ role="navigation" ] a {
-
-        font-size: calc( 8em / 9 );
-
-    }
-    h4 .small {
-
-        font-size: calc( 7em / 9 );
-
-    }
-
-    nav ul,
-    header, footer,
-    section {
-
-        max-width: 960px;
-
-    }
-
-    .break-cut {
-
-        display: inherit;
-
-    }
-
-    .diptych:not( .ptych-fixed ),
-    .diptych-large-small,
-    .diptych-small-large,
-    .triptych:not( .ptych-fixed ) {
-
-        grid-template-columns: 1fr;
-
-    }
-
-    .diptych-large-small,
-    .diptych-small-large {
-
-        grid-template-areas:
-            "left"
-            "right";
-
-    }
-    .diptych.ptych-flipped {
-
-        grid-template-areas:
-            "right"
-            "left";
-
-    }
-
-    .polyptych {
-
-        grid-template-columns: 1fr 1fr;
-
-    }
-    .polyptych.ptych-fixed {
-
-        grid-template-areas:
-            "left center-left"
-            "center-right right";
-
-    }
-
-    .diptych:not( .ptych-fixed ) > div,
-    .triptych:not( .ptych-fixed ) > div {
-
-        margin-bottom: 1em;
-
-    }
-
-    ul.product > li {
-
-        padding: 1em 0.5em;
-
-    }
-
-    h5.product-title {
-
-        padding-top: 0.5em;
-
-    }
-
-    article div.diptych > div {
-
-        padding-bottom: 0;
-
-    }
-
-    blockquote, q,
-    .quote {
-
-        padding: 2em;
-
-    }
-    div.preview div.quote {
-
-        padding: 1em;
-
-    }
-    div.vignette {
-
-        padding: 0;
-
-    }
-
-    .gutter-ref {
-
-        padding: 0 1em 1em;
-
-    }
-
-    div.logo {
-
-        height: 6em;
-
-    }
-    div.logo img {
-
-        padding: 1.5em;
-
-    }
-
-    .video,
-    .single .video {
-
-        height: 432px;
-
-    }
-}
-
-/* - MEDIA - IPAD : portrait */
-
-@media all
-    and ( max-device-width : 956px )
-    and ( orientation : portrait )
-    and ( -webkit-min-device-pixel-ratio : 2 ) {
-
-        body {
+        body{
 
             font-size: 2.7rem;
 
         }
-    }
+        h1 {
 
-/* - MEDIA - IPHONE : landscape */
+            font-size: calc( 10em / 3 );
 
-@media all
-    and ( max-device-width : 834px )
-    and ( orientation : landscape )
-    and ( -webkit-min-device-pixel-ratio : 2 ) {
+        }
+        h2 {
 
-        body {
+            font-size: calc( 4em / 3 );
 
-            font-size: 2.7rem;
+        }
+        h3,
+        button, input {
+
+            font-size: calc( 11em / 9 );
+
+        }
+        h4, h5,
+        select {
+
+            font-size: 1em;
+
+        }
+        nav,
+        div[ role="navigation" ] a {
+
+            font-size: calc( 8em / 9 );
+
+        }
+        h4 .small {
+
+            font-size: calc( 7em / 9 );
+
+        }
+
+        nav ul,
+        header, footer,
+        section {
+
+            max-width: 960px;
+
+        }
+
+        .break-cut {
+
+            display: inherit;
+
+        }
+
+        .diptych:not( .ptych-fixed ),
+        .diptych-large-small,
+        .diptych-small-large,
+        .triptych:not( .ptych-fixed ) {
+
+            grid-template-columns: 1fr;
+
+        }
+
+        .diptych-large-small,
+        .diptych-small-large {
+
+            grid-template-areas:
+                "left"
+                "right";
+
+        }
+        .diptych.ptych-flipped {
+
+            grid-template-areas:
+                "right"
+                "left";
+
+        }
+
+        .polyptych {
+
+            grid-template-columns: 1fr 1fr;
+
+        }
+        .polyptych.ptych-fixed {
+
+            grid-template-areas:
+                "left center-left"
+                "center-right right";
+
+        }
+
+        .diptych:not( .ptych-fixed ) > div,
+        .triptych:not( .ptych-fixed ) > div {
+
+            margin-bottom: 1em;
+
+        }
+
+        ul.product > li {
+
+            padding: 1em 0.5em;
+
+        }
+
+        h5.product-title {
+
+            padding-top: 0.5em;
+
+        }
+
+        article div.diptych > div {
+
+            padding-bottom: 0;
+
+        }
+
+        blockquote, q,
+        .quote {
+
+            padding: 2em;
+
+        }
+        div.preview div.quote {
+
+            padding: 1em;
+
+        }
+        div.vignette {
+
+            padding: 0;
+
+        }
+
+        .gutter-ref {
+
+            padding: 0 1em 1em;
+
+        }
+
+        div.logo {
+
+            height: 6em;
+
+        }
+        div.logo img {
+
+            padding: 1.5em;
+
+        }
+
+        .video,
+        .single .video {
+
+            height: 432px;
 
         }
     }
-
-/* - MEDIA - IPHONE PRO MAX : landscape */
-
-/* @media all
-    and ( device-width : 956px )
-    and ( device-height : 440px )
-    and ( orientation : landscape )
-    and ( -webkit-min-device-pixel-ratio : 3 ) {
-
-    } */
-
-/* - MEDIA - IPHONE PLUS : landscape */
-
-/* @media all
-    and ( device-width : 932px )
-    and ( device-height : 430px )
-    and ( orientation : landscape )
-    and ( -webkit-min-device-pixel-ratio : 3 ) {
-
-    } */
-
-/* - MEDIA - IPHONE XS Max : landscape */
-
-/* @media all
-    and ( device-width : 896px )
-    and ( device-height : 414px )
-    and ( orientation : landscape )
-    and ( -webkit-min-device-pixel-ratio : 3 ) {
-
-    } */
-
-/* - MEDIA - IPHONE XR : landscape */
-
-/* @media all
-    and ( device-width : 896px )
-    and ( device-height : 414px )
-    and ( orientation : landscape )
-    and ( -webkit-min-device-pixel-ratio : 2 ) {
-
-    } */
-
-/* - MEDIA - IPHONE PRO : landscape */
-
-/* @media all
-    and ( device-width : 874px )
-    and ( device-height : 402px )
-    and ( orientation : landscape )
-    and ( -webkit-min-device-pixel-ratio : 3 ) {
-
-    } */
-
-/* - MEDIA - IPHONE : landscape */
-
-/* @media all
-    and ( device-width : 852px )
-    and ( device-height : 393px )
-    and ( orientation : landscape )
-    and ( -webkit-min-device-pixel-ratio : 3 ) {
-
-    } */
-
-/* - MEDIA - IPAD Pro 10.5 : portrait */
-
-/* @media all
-    and ( device-width : 834px )
-    and ( device-height : 1112px )
-    and ( orientation : portrait )
-    and ( -webkit-min-device-pixel-ratio : 2 ) {
-
-    } */
-
-/* - MEDIA - IPAD 11-INCH : portrait */
-
-/* @media all
-    and ( device-width : 820px )
-    and ( device-height : 1180px )
-    and ( orientation : portrait )
-    and ( -webkit-min-device-pixel-ratio : 2 ) {
-
-    } */
-
-/* - MEDIA - IPHONE X : landscape */
-
-/* @media all
-    and ( device-width : 812px )
-    and ( device-height : 375px )
-    and ( orientation : landscape )
-    and ( -webkit-min-device-pixel-ratio : 3 ) {
-
-    } */
 
 
 
@@ -2552,42 +2348,6 @@ and ( max-width: 1600px ) {} */
 
 
 
-/* - MEDIA - IPAD 3, 4 … : portrait */
-/* - MEDIA - IPAD MINI 2, 3, 4 … : portrait */
-
-@media all
-    and ( max-device-width : 768px )
-    /*and ( device-width : 744px )*/
-    /*and ( device-height : 1133px )*/
-    and ( orientation : portrait )
-    and ( -webkit-min-device-pixel-ratio : 2 ) {
-
-        body {
-
-            font-size: 2.7rem;
-
-        }
-    }
-
-/* - MEDIA - IPHONE 6+, 7+, 8+ : landscape */
-/* - MEDIA - IPHONE 6, 7, 8 : landscape */
-
-@media all
-    and ( max-device-width: 736px )
-    /* and ( device-width : 667px ) */
-    /* and ( device-height : 375px ) */
-    and ( orientation : landscape )
-    and ( -webkit-min-device-pixel-ratio : 2 ) {
-
-        body {
-
-            font-size: 2.7rem;
-
-        }
-    }
-
-
-
 /* - MEDIA - 667 */
 
 @media only screen
@@ -2629,16 +2389,8 @@ and ( max-width: 1600px ) {} */
 
 @media all
     and ( max-device-width : 568px )
-    /* and ( device-width : 568px ) */
-    /* and ( device-height : 320px ) */
     and ( orientation : landscape )
     and ( -webkit-min-device-pixel-ratio : 2 ) {
-
-        body {
-
-            font-size: 2.4rem;
-
-        }
 
         .polyptych {
 
@@ -2681,12 +2433,6 @@ and ( max-width: 1600px ) {} */
     and ( orientation : portrait )
     and ( -webkit-min-device-pixel-ratio : 2 ) {
 
-        body {
-
-            font-size: 2.1rem;
-
-        }
-
         .polyptych {
 
             grid-template-columns: 1fr 1fr;
@@ -2704,76 +2450,6 @@ and ( max-width: 1600px ) {} */
 
         }
     }
-
-/* - MEDIA - IPHONE PRO MAX : portrait */
-
-/* @media all
-    and ( device-width : 440px )
-    and ( device-height : 956px )
-    and ( orientation : portrait )
-    and ( -webkit-min-device-pixel-ratio : 3 ) {
-
-    } */
-
-/* - MEDIA - IPHONE PLUS : portrait */
-
-/* @media all
-    and ( device-width : 430px )
-    and ( device-height : 932px )
-    and ( orientation : portrait )
-    and ( -webkit-min-device-pixel-ratio : 3 ) {
-
-    } */
-
-/* - MEDIA - IPHONE XS Max : portrait */
-
-/* @media all
-    and ( device-width : 414px )
-    and ( device-height : 896px )
-    and ( orientation : portrait )
-    and ( -webkit-min-device-pixel-ratio : 3 ) {
-
-    } */
-
-/* - MEDIA - IPHONE XR : portrait */
-
-/* @media all
-    and ( device-width : 414px )
-    and ( device-height : 896px )
-    and ( orientation : portrait )
-    and ( -webkit-min-device-pixel-ratio : 2 ) {
-
-    } */
-
-/* - MEDIA - IPHONE 6+, 7+, 8+ : portrait */
-
-/* @media all
-    and ( device-width : 414px )
-    and ( device-height : 736px )
-    and ( orientation : portrait )
-    and ( -webkit-min-device-pixel-ratio : 2 ) {
-
-    } */
-
-/* - MEDIA - IPHONE PRO : portrait */
-
-/* @media all
-    and ( device-width : 402px )
-    and ( device-height : 874px )
-    and ( orientation : portrait )
-    and ( -webkit-min-device-pixel-ratio : 3 ) {
-
-    } */
-
-/* - MEDIA - IPHONE : portrait */
-
-/* @media all
-    and ( device-width : 393px )
-    and ( device-height : 852px )
-    and ( orientation : portrait )
-    and ( -webkit-min-device-pixel-ratio : 3 ) {
-
-    } */
 
 
 
@@ -2830,33 +2506,6 @@ and ( max-width: 1600px ) {} */
 
 
 
-/* - MEDIA - IPHONE X : portrait */
-
-/* @media all
-    and ( device-width : 375px )
-    and ( device-height : 667px )
-    and ( orientation : portrait )
-    and ( -webkit-min-device-pixel-ratio : 3 ) {
-
-    } */
-
-/* - MEDIA - IPHONE 6, 7, 8 : portrait */
-
-@media all
-    and ( device-width : 375px )
-    and ( device-height : 667px )
-    and ( orientation : portrait )
-    and ( -webkit-min-device-pixel-ratio : 2 ) {
-
-        body {
-
-            font-size: 1.8rem;
-
-        }
-    }
-
-
-
 /* - MEDIA - MIN */
 
 @media only screen
@@ -2905,10 +2554,6 @@ and ( max-width: 1600px ) {} */
 
 
 
-/* - MEDIA - IPHONE 5, 5S : portrait */
-
-/* - MEDIA - IPHONE 4S : portrait */
-
 /* - MEDIA - 240 */
 @media only screen
     and ( max-width: 240px ) {
@@ -2940,7 +2585,8 @@ and ( max-width: 1600px ) {} */
 
 /* - MEDIA - IOS, IPADOS */
 
-@supports ( -webkit-touch-callout: inherit ) {
+@media all
+    and ( -webkit-min-device-pixel-ratio : 1 ) {
 
     .toggle-ios {
 
