@@ -2221,7 +2221,7 @@ background-color: var( --dark-iv );
         }
         .single .video-extra {
 
-            height: calc( 384px + ( 48 * ( ( 100vw - 960px ) / 320 ) ) );
+            height: 380px;
 
         }
 
@@ -2401,11 +2401,6 @@ background-color: var( --dark-iv );
             height: 432px;
 
         }
-        .single .video-extra {
-
-            height: 384px;
-
-        }
     }
 
 
@@ -2454,11 +2449,6 @@ background-color: var( --dark-iv );
             height: calc( 380px + ( 52 * ( ( 100vw - 667px ) / 101 ) ) );
 
         }
-        .single .video-extra {
-
-            height: 380px;
-
-        }
     }
 
 
@@ -2484,7 +2474,6 @@ background-color: var( --dark-iv );
             height: calc( 180px + ( 200 * ( ( 100vw - 320px ) / 347 ) ) );
 
         }
-
         .single .video-extra {
 
             height: calc( 180px + ( 200 * ( ( 100vw - 320px ) / 347 ) ) );
