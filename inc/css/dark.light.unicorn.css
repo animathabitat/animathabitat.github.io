@@ -2221,12 +2221,12 @@ background-color: var( --dark-iv );
         }
         .single .video-3-2 {
 
-            height: calc( 258px + ( 462 * ( ( 100vw - 960px ) / 320 ) ) );
+            height: calc( 385px + ( 128 * ( ( 100vw - 960px ) / 320 ) ) );
 
         }
         .single .video-extra {
 
-            height: calc( 342px + ( 378 * ( ( 100vw - 960px ) / 320 ) ) );
+            height: calc( 287px + ( 100 * ( ( 100vw - 960px ) / 320 ) ) );
 
         }
 
@@ -2463,7 +2463,7 @@ background-color: var( --dark-iv );
         }
         .single .video-3-2 {
 
-            height: calc( 240px + ( 192 * ( ( 100vw - 320px ) / 448 ) ) );
+            height: calc( 240px + ( 336 * ( ( 100vw - 320px ) / 448 ) ) );
 
         }
     }
