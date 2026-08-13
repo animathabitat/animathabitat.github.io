@@ -82,6 +82,8 @@
     --gutter-iii: 3em;
     --gutter-iv: 4.5em;
 
+    --rem: clamp( 0.9rem, 1.8rem, 2.7rem );
+
     --white: #FCFCFC;
     --black: #0A0A0A;
 
@@ -883,57 +885,57 @@ option {
 
 }
 
-.diptych,
-.diptych-large-small,
-.diptych-small-large,
-.triptych,
-.polyptych {
+div.diptych,
+div.diptych-large-small,
+div.diptych-small-large,
+div.triptych,
+div.polyptych {
 
     display: inline-grid;
     width: 100%;
 
 }
-.diptych {
+div.diptych {
 
     grid-template-columns: 1fr 1fr;
 
 }
-.diptych-large-small {
+div.diptych-large-small {
 
     grid-template-columns: 3fr 1fr;
 
 }
-.diptych-small-large {
+div.diptych-small-large {
 
     grid-template-columns: 1fr 3fr;
 
 }
-.diptych.ptych-fixed,
-.diptych.ptych-flipped,
-.diptych-large-small,
-.diptych-small-large {
+div.diptych.ptych-fixed,
+div.diptych.ptych-flipped,
+div.diptych-large-small,
+div.diptych-small-large {
 
     grid-template-areas: "left right";
 
 }
 
-.triptych {
+div.triptych {
 
     grid-template-columns: 1fr 1fr 1fr;
 
 }
-.triptych.ptych-fixed {
+div.triptych.ptych-fixed {
 
     grid-template-areas: "left center right";
 
 }
 
-.polyptych {
+div.polyptych {
 
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
 }
-.polyptych.ptych-fixed {
+div.polyptych.ptych-fixed {
 
     grid-template-areas: "left center-left center-right right";
 
@@ -985,9 +987,9 @@ div.hidden {
     padding: 0;
 
 }
-.diptych > div,
-.triptych > div,
-.polyptych > div,
+div.diptych > div,
+div.triptych > div,
+div.polyptych > div,
 div.ptych-center,
 div.ptych-left,
 div.ptych-right,
@@ -2204,24 +2206,24 @@ background-color: var( --dark-iv );
 
         }
 
-        .diptych:not( .ptych-fixed ),
-        .diptych-large-small,
-        .diptych-small-large,
-        .triptych:not( .ptych-fixed ) {
+        div.diptych:not( .ptych-fixed ),
+        div.diptych-large-small,
+        div.diptych-small-large,
+        div.triptych:not( .ptych-fixed ) {
 
             grid-template-columns: 1fr;
 
         }
 
-        .diptych-large-small,
-        .diptych-small-large {
+        div.diptych-large-small,
+        div.diptych-small-large {
 
             grid-template-areas:
                 "left"
                 "right";
 
         }
-        .diptych.ptych-flipped {
+        div.diptych.ptych-flipped {
 
             grid-template-areas:
                 "right"
@@ -2229,12 +2231,12 @@ background-color: var( --dark-iv );
 
         }
 
-        .polyptych {
+        div.polyptych {
 
             grid-template-columns: 1fr 1fr;
 
         }
-        .polyptych.ptych-fixed {
+        div.polyptych.ptych-fixed {
 
             grid-template-areas:
                 "left center-left"
@@ -2242,8 +2244,8 @@ background-color: var( --dark-iv );
 
         }
 
-        .diptych:not( .ptych-fixed ) > div,
-        .triptych:not( .ptych-fixed ) > div {
+        div.diptych:not( .ptych-fixed ) > div,
+        div.triptych:not( .ptych-fixed ) > div {
 
             margin-bottom: 1em;
 
@@ -2400,10 +2402,11 @@ background-color: var( --dark-iv );
 
 @media all
     and ( max-device-width : 568px )
+    and ( min-device-width : 480px )
     and ( orientation : landscape )
     and ( -webkit-min-device-pixel-ratio : 2 ) {
 
-        .polyptych {
+        div.polyptych {
 
             grid-template-columns: 1fr 1fr;
 
@@ -2441,10 +2444,11 @@ background-color: var( --dark-iv );
 
 @media all
     and ( max-device-width : 480px )
+    and ( min-device-width : 400px )
     and ( orientation : portrait )
     and ( -webkit-min-device-pixel-ratio : 2 ) {
 
-        .polyptych {
+        div.polyptych {
 
             grid-template-columns: 1fr 1fr;
 
@@ -2508,7 +2512,7 @@ background-color: var( --dark-iv );
 
         }
 
-        .polyptych {
+        div.polyptych {
 
             grid-template-columns: 1fr 1fr;
 
