@@ -2024,7 +2024,7 @@ and ( max-width: 1600px ) {} */
 
     body {
 
-        font-size: 2.1rem;
+        font-size: 2.7rem;
 
     }
 
@@ -2226,8 +2226,8 @@ and ( max-width: 1600px ) {} */
 /* - MEDIA - IPAD 13-INCH : portrait */
 
 @media all
-    and ( device-width : 1366px )
-    and ( device-height : 1024px )
+    and ( device-width : 1024px )
+    and ( device-height : 1366px )
     and ( orientation : portrait )
     and ( -webkit-min-device-pixel-ratio : 2 ) {
 
