@@ -2004,6 +2004,17 @@ background-color: var( --dark-iv );
 
 /* - MEDIA QUERIES */
 
+/* - MEDIA - IOS, IPADOS */
+
+@supports ( -webkit-touch-callout: default ) {
+
+        .toggle-ios {
+
+            display: none;
+
+        }
+    }
+
 /* - MEDIA - 1280 */
 
 @media only screen
@@ -2582,15 +2593,3 @@ background-color: var( --dark-iv );
 
         }
     }
-
-/* - MEDIA - IOS, IPADOS */
-
-@media all
-    and ( -webkit-min-device-pixel-ratio : 1 ) {
-
-    .toggle-ios {
-
-        display: none;
-
-    }
-}
