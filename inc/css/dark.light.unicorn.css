@@ -2469,11 +2469,7 @@ background-color: var( --dark-iv );
         }
 
         .video,
-        .single .video {
-
-            height: calc( 180px + ( 200 * ( ( 100vw - 320px ) / 347 ) ) );
-
-        }
+        .single .video,
         .single .video-extra {
 
             height: calc( 180px + ( 200 * ( ( 100vw - 320px ) / 347 ) ) );
