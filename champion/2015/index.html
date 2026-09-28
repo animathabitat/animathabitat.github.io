@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en, fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cont/ent-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src 'self'; script-src 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
+    <meta name="google" content="notranslate" />
+
+    <meta name="author" content="Dane Aleksander" />
+    <meta name="company" content="Animat Habitat" />
+    <meta name="description" content="Inaugural champions for wild animals and their natural habitats.&nbsp;&#92;&nbsp;Champions 2015 des animaux sauvages et de leurs habitats naturels." />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Animat Habitat champions, 2015.</title>
+
+    <style>
+        html { background-color: #333; }
+
+        </style>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
+    <link rel="stylesheet" href="../../inc/css/dark.light.unicorn.css" />
+
+    <link rel="icon" href="../../inc/ico/animat.mark.1.1.72.light.png" />
+
+    </head>
+
+<body class="fadein single" id="dark">
+
+    <nav>
+        <ul class="page">
+            <li class="crumb logo"><a href="../../" title="Animat Habitat"><img alt="Animat Mark &ndash; Light &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/animat.mark.1.1.1200.light.svg"/></a></li>
+            <li class="crumb btn color"><a href="../" title="">Champions</a></li>
+            <li class="crumb active"><a><i>2015</i></a></li>
+            <li class="right thin"><a onclick="toggle_language();" title="English \ Français"><font class="en">fr</font><font class="fr">en</font></a></li>
+
+            </ul>
+
+        </nav>
+
+    <section>
+        <article>
+
+            <div class="clear text-center">
+
+                <h3 class="letterhead title">Champions</h3>
+                <p class="lineend"><i><font class="en">Inaugural champions for wild animals and their natural habitats. </font><font class="fr">Champions 2015 des animaux sauvages et de leurs habitats naturels.</font></i></p>
+
+                <pre class="thin"></pre>
+
+                <ul class="letterhead letterend">
+
+                    <h5 class="small"><i>Arts</i></h5>
+                    <h5>Robert (Bob) McLellan Bateman, CM, <font class="en">naturalist and artist </font><font class="fr">naturaliste et artiste </font>&nbsp;<b>&middot;</b>&nbsp; <a href="../../url/-org/batemanfoundation/" title="Bateman Foundation" target="_blank">Bateman Foundation</a></h5>
+                    <p><font class="en">Recognized for artwork to conserve nature in Canada. </font><font class="fr">Reconnu pour ses &oelig;uvres visant à préserver la nature au Canada.</font></p>
+
+                    </ul>
+
+                <pre class="thin"></pre>
+
+                <ul class="letterhead letterend">
+
+                    <h5 class="small"><i>Sciences</i></h5>
+                    <h5><a href="../../url/-org/janegoodall/" title="Jane Goodall Institute" target="_blank">Jane Goodall Institute</a></h5>
+                    <p><font class="en">Recognized for advocacy to conserve the nature world. </font><font class="fr">Reconnue pour sa défense de la conservation de la nature.</font></p>
+
+                    <div class="clear" id="in-mem-vjmg-toggle">
+                        <h5 class="linebreak"><a onclick="toggle( aa_im_vjmg, aa_im_vjmg_a );">&plus;</a></h5>
+
+                        </div>
+
+                    <div class="clear" id="in-mem-vjmg">
+                        <h5 class="linebreak"><a onclick="toggle( aa_im_vjmg, aa_im_vjmg_a );">&minus;</a></h5>
+                        <h5 class="linebreak title">In Memoriam</h5>
+                        <p><a href="../url/-org-tz/janegoodall/" title="Jane Goodall Institute" target="_blank">Dr Dame Valerie Jane Morris Goodall</a>. (<font class="fr">&nbsp;</font>1934-2025<font class="fr">&nbsp;</font>) &nbsp;<b>&middot;</b>&nbsp; <font class="en">Founder of the </font><font class="fr">Fondateur du </font>Jane Goodall Institute</p>
+                        <p><font class="en">Remembered as a conservationist, ethologist and primatologist, in particular, for early fieldwork studying chimpanzees at Gombe, in Tanganyika. That study continues to this day in Tanzania. It is the longest continuous study of any animal in a natural habitat. </font><font class="fr">Rappelée pour le défense de l'environnement, notamment pour ses premiers travaux de terrain sur les chimpanzés à Gombe, au Tanganyika. Cette étude se poursuit encore aujourd'hui en Tanzanie. Il s'agit de la plus longue étude continue menée sur un animal dans un habitat naturel.</font></p>
+
+                        </div>
+
+                    </ul>
+
+                <pre class="thin"></pre>
+
+                </div>
+
+            </article><br class="clear">
+
+        </section>
+
+    <footer class="single">
+        <div class="quote" id="footnotes">
+            <p class="small">Published 26 September 2016. Updated 28 September 2026.</p>
+
+            </div>
+
+        </footer>
+
+    </body>
+
+<script>
+
+    var r = document.querySelector( ":root" ),
+        toggle_fr = 0;
+
+        r.style.setProperty( "--fr", "none" );
+
+    function toggle_language() {
+
+        if ( toggle_fr == 0 ) {
+
+            r.style.setProperty( "--fr", "inline" );
+            r.style.setProperty( "--en", "none" );
+            toggle_fr = 1;
+
+            } else {
+
+            r.style.setProperty( "--fr", "none" );
+            r.style.setProperty( "--en", "inline" );
+            toggle_fr = 0;
+
+            }
+
+        };
+
+    </script>
+
+<script>
+
+    var aa_im_vjmg = document.getElementById( "in-mem-vjmg" ),
+        aa_im_vjmg_a = document.getElementById( "in-mem-vjmg-toggle" );
+
+        aa_im_vjmg.style.display = "none";
+        aa_im_vjmg_a.style.display = "block";
+
+    function toggle( aa_im, aa_im_a ) {
+
+        if ( aa_im.style.display == "none" ) {
+
+            aa_im.style.display = "block";
+            aa_im_a.style.display = "none";
+
+            } else {
+
+            aa_im.style.display = "none";
+            aa_im_a.style.display = "block";
+
+            }
+
+        };
+
+    </script>
+
+</html>
