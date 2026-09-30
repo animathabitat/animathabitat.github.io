@@ -141,7 +141,7 @@
     <div class="clear color">
         <section class="single">
             <div class="quote text-center">
-                <h4><i><font class="en">Do not speak of a rhinoceros if there is no tree nearby. </font><font class="fr">Ne parlez pas de rhinocéros s'il n'y a pas d'arbre à proximité.</font></i><br><font class="color small thin">&mdash;&nbsp;<font class="en">Zulu proverb</font><font class="fr small thin">proverbe zoulou</font></h4>
+                <h4><i><font class="en">Do not speak of a rhinoceros if there is no tree nearby. </font><font class="fr">Ne parlez pas de rhinocéros s'il n'y a pas d'arbre à proximité.</font></i><br><font class="color small thin">&mdash;&nbsp;<font class="en">Zulu proverb</font><font class="fr">proverbe zoulou</font></font></h4>
 
                 </div>
 
@@ -149,8 +149,20 @@
 
         </div>
 
-    <footer>
-        <div class="quote">
+    <footer class="single">
+        <div class="quote" id="in-mem-toggle">
+            <p class="small">&plus; <a class="color" onclick="toggle_memoriam()">In Memoriam</a></p>
+
+            </div>
+
+        <div class="quote" id="in-mem">
+            <p class="small">&minus; <a class="color" onclick="toggle_memoriam()">In Memoriam</a></p>
+
+            <!-- <p class="linebreak small"><font class="title">Impi</font></p>
+            <p class="small"><font class="small">Fundimvelo Thula Thula Rhino Orphanage, KwaZulu-Natal (2016-2017)</font></p> -->
+
+            <p class="linebreak small"><font class="title">Sudan</font></p>
+            <p class="small"><font class="small">Last male northern white rhinoceros at Ol Pejeta Conservancy, Laikipia (c.1973-2018)</font></p>
 
             </div>
 
@@ -171,6 +183,12 @@
         aa_sc.style.display = "none";
         aa_pv.style.display = "none";
 
+    var aa_im = document.getElementById( "in-mem" ),
+        aa_im_a = document.getElementById( "in-mem-toggle" );
+
+        aa_im.style.display = "none";
+        aa_im_a.style.display = "block";
+
     var toggle_fr = 0;
 
     function toggle_language() {
@@ -186,6 +204,23 @@
             r.style.setProperty( "--fr", "none" );
             r.style.setProperty( "--en", "inline" );
             toggle_fr = 0;
+
+            }
+
+        };
+
+    function toggle_memoriam() {
+
+        if ( aa_im.style.display == "none" ) {
+
+            aa_im.style.display = "block";
+            aa_im_a.style.display = "none";
+            document.querySelector( "#in-mem" ).scrollIntoView({ behavior: 'smooth' });
+
+            } else {
+
+            aa_im.style.display = "none";
+            aa_im_a.style.display = "block";
 
             }
 

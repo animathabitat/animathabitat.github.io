@@ -309,8 +309,13 @@
         </div>
 
     <footer class="single">
-        <div class="quote">
-            <p class="small">In Memoriam</p>
+        <div class="quote" id="in-mem-toggle">
+            <p class="small">&plus; <a class="color" onclick="toggle_memoriam()">In Memoriam</a></p>
+
+            </div>
+
+        <div class="quote" id="in-mem">
+            <p class="small">&minus; <a class="color" onclick="toggle_memoriam()">In Memoriam</a></p>
 
             <p class="linebreak small"><font class="title">Himba</font></p>
             <p class="small"><font class="small">Namib &ndash; BBC <i>Natural World: Elephant Nomads Of The Namib Desert</i> (<font class="en">documentary</font><font class="fr">&nbsp;documentaire</font>, 2008<font class="fr">&nbsp;</font>)</font></p>
@@ -401,6 +406,12 @@
         aa_sc.style.display = "none";
         aa_pv.style.display = "none";
 
+    var aa_im = document.getElementById( "in-mem" ),
+        aa_im_a = document.getElementById( "in-mem-toggle" );
+
+        aa_im.style.display = "none";
+        aa_im_a.style.display = "block";
+
     var toggle_cc = 0,
         toggle_fr = 0;
 
@@ -441,6 +452,23 @@
             r.style.setProperty( "--fr", "none" );
             r.style.setProperty( "--en", "inline" );
             toggle_fr = 0;
+
+            }
+
+        };
+
+    function toggle_memoriam() {
+
+        if ( aa_im.style.display == "none" ) {
+
+            aa_im.style.display = "block";
+            aa_im_a.style.display = "none";
+            document.querySelector( "#in-mem" ).scrollIntoView({ behavior: 'smooth' });
+
+            } else {
+
+            aa_im.style.display = "none";
+            aa_im_a.style.display = "block";
 
             }
 
