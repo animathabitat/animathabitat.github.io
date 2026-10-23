@@ -469,6 +469,7 @@ form, button, input, label, option, select, textarea {
 }
 h1, h2, h3, h4, h5, h6,
 b,
+i i,
 nav, div[ role="navigation" ],
 form, button, input, label, option, select, textarea,
 a.button,
@@ -1180,6 +1181,11 @@ br.clear {
 .clear-left {
 
     padding-left: 0 !important;
+
+}
+.clear-right {
+
+    padding-right: 0 !important;
 
 }
 .clear-alt {
