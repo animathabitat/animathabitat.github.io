@@ -1069,6 +1069,12 @@ blockquote, q,
     padding: var( --gutter-iii );
 
 }
+.quote-wide {
+
+    padding-bottom: var( --gutter-iii );
+    padding-top: var( --gutter-iii );
+
+}
 
 h1 {
 
