@@ -576,6 +576,7 @@ div.footnotes p.small sup,
 
 nav li:not(.lettermark),
 h5.product-title,
+.titles h5,
 .title {
 
     text-transform: uppercase;
@@ -597,6 +598,7 @@ p a.title {
 
 }
 div[ role="navigation" ] a,
+.titles h5 a,
 .overscore {
 
     text-decoration: overline;
@@ -890,6 +892,7 @@ div.diptych,
 div.diptych-large-small,
 div.diptych-small-large,
 div.triptych,
+ul.titles,
 div.polyptych {
 
     display: inline-grid;
@@ -920,7 +923,8 @@ div.diptych-small-large {
 
 }
 
-div.triptych {
+div.triptych,
+ul.titles {
 
     grid-template-columns: 1fr 1fr 1fr;
 
@@ -1073,6 +1077,11 @@ blockquote, q,
 
     padding-bottom: var( --gutter-iii );
     padding-top: var( --gutter-iii );
+
+}
+.titles li h5 {
+
+    margin-top: var( --gutter-ii );
 
 }
 
@@ -2335,7 +2344,8 @@ background-color: var( --dark-iv );
 
         }
 
-        div.polyptych {
+        div.polyptych,
+        ul.titles {
 
             grid-template-columns: 1fr 1fr;
 
@@ -2485,6 +2495,12 @@ background-color: var( --dark-iv );
         .single .video-extra {
 
             height: calc( 180px + ( 200 * ( ( 100vw - 320px ) / 347 ) ) );
+
+        }
+
+        ul.titles {
+
+            grid-template-columns: 1fr;
 
         }
     }
