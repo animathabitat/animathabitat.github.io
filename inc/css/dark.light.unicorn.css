@@ -894,7 +894,7 @@ div.diptych-small-large,
 div.triptych,
 div.polyptych,
 ul.titles,
-div.titles-poly {
+div.titles {
 
     display: inline-grid;
     width: 100%;
@@ -937,7 +937,7 @@ div.triptych.ptych-fixed {
 }
 
 div.polyptych,
-div.titles-poly {
+div.titles {
 
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
@@ -1001,7 +1001,8 @@ div.ptych-center,
 div.ptych-left,
 div.ptych-right,
 div.ptych-center-left,
-div.ptych-center-right {
+div.ptych-center-right,
+div.titles > div {
 
     margin: 0;
 
@@ -2112,7 +2113,7 @@ background-color: var( --dark-iv );
         }
 
         div.polyptych,
-        div.titles-poly {
+        div.titles {
 
             grid-template-columns: 1fr 1fr;
 
@@ -2145,7 +2146,7 @@ background-color: var( --dark-iv );
         }
 
         div.polyptych,
-        div.titles-poly {
+        div.titles {
 
             grid-template-columns: 1fr 1fr;
 
@@ -2234,7 +2235,7 @@ background-color: var( --dark-iv );
 
         }
 
-        div.titles-poly {
+        div.titles {
 
             grid-template-columns: 1fr 1fr 1fr;
 
@@ -2356,7 +2357,7 @@ background-color: var( --dark-iv );
 
         div.polyptych,
         ul.titles,
-        div.titles-poly {
+        div.titles {
 
             grid-template-columns: 1fr 1fr;
 
@@ -2510,7 +2511,7 @@ background-color: var( --dark-iv );
         }
 
         ul.titles,
-        div.titles-poly {
+        div.titles {
 
             grid-template-columns: 1fr;
 
@@ -2601,7 +2602,7 @@ background-color: var( --dark-iv );
             grid-template-columns: 1fr 1fr;
 
         }
-        div.titles-poly {
+        div.titles {
 
             grid-template-columns: 1fr;
 
