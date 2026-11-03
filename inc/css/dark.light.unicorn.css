@@ -598,7 +598,7 @@ p a.title {
 
 }
 div[ role="navigation" ] a,
-.titles h5 a,
+ul.titles h5 a,
 .overscore {
 
     text-decoration: overline;
@@ -1001,10 +1001,14 @@ div.ptych-center,
 div.ptych-left,
 div.ptych-right,
 div.ptych-center-left,
-div.ptych-center-right,
-div.titles > div {
+div.ptych-center-right {
 
     margin: 0;
+
+}
+div.titles > div {
+
+    margin-top: 0;
 
 }
 div.ptych-bottom {
@@ -1082,7 +1086,7 @@ blockquote, q,
     padding-top: var( --gutter-iii );
 
 }
-.titles li h5 {
+ul.titles li h5 {
 
     margin-top: var( --gutter-ii );
 
