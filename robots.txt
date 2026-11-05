@@ -40,12 +40,6 @@ Disallow: /url/
 
 
 
-# Sitemap #
-
-Sitemap: /animathabitat.org.sitemap.xml
-
-
-
 # AI #
 
 User-agent: Google-Extended
@@ -53,3 +47,12 @@ Disallow: /
 
 User-agent: GPTBot
 Disallow: /
+
+User-agent: __usage_ai-training
+Disallow: /
+
+
+
+# Sitemap #
+
+Sitemap: /animathabitat.org.sitemap.xml
