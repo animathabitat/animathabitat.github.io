@@ -103,13 +103,21 @@
             <div>
                 <p>In ancient Rome, a particular example of relief art&mdash;a triumphal monument of the Roman emperor Marcus Ulpius Traianus Crinitus: <i>Trajan’s Column</i> (106-113 CE) then had a significant impact on late Roman architecture and sculpture. Its bas-relief sculpture is in the form of an engraved band &ndash; 625 feet in length, and 4 feet in height &ndash; that spirals upward, around the column, in a continuous narrative of military conquests. Its spiral narrative holds more than one hundred and fifty scenes with more than two thousand five hundred figures, all sculpted in low-relief, including sixty images of the emperor known to history as Trajan. The scenes include specific events from wars in Dacia, an ancient region of southeastern Europe, and yet most scenes depict the day-to-day activities of the Roman legionaries there. <i>Trajan’s Column</i> provides an illustration of the ancient Roman military tactics and equipment set against a flat relief background with an occasional suggestion of a town: houses, walls and bridges and all that.</p>
 
-                <p class="linebreak">A note on the emperor Trajan in the context of wildlife. Following those Dacian Wars, this emperor of ancient Rome celebrated with a hundred and twenty-three days of gladiatorial contests that claimed the lives of at least eleven thousand wild animals, including bears, elephants, hippopotamuses, leopards, lions and tigers&mdash;all captured across Africa, Asia and Europe. And so setting aside this historical footnote that Trajan was a tragic villain in human dominion over wildlife, the monument is of particular note here for its unique application of visual storytelling. While its construction may seem impractical in relation to making a comic book today, <i>Trajan's Column</i> showcased a similar capacity to tell an epic story nearly two thousand years earlier.<sup>&nbsp;[<a class="button" onclick="fn( aa_fn_1 );" title="World History Encycolpedia">1</a>]</sup></p>
+                <p class="linebreak">A note on the emperor Trajan in the context of wildlife. Following those Dacian Wars, this emperor of ancient Rome celebrated with a hundred and twenty-three days of gladiatorial contests that claimed the lives of at least eleven thousand wild animals, including bears, elephants, hippopotamuses, leopards, lions and tigers&mdash;all captured across Africa, Asia and Europe. And so setting aside this historical footnote that Trajan was a tragic villain in human dominion over wildlife, the monument is of particular note here for its unique application of visual storytelling. While its construction may seem impractical in relation to making a comic book today, <i>Trajan's Column</i> showcased a similar capacity to tell an epic story nearly two thousand years earlier.<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_1 );" title="World History Encycolpedia">1</a>]</sup></p>
 
                 </div>
 
             <div class="clear">
-                <div class="quote" id="footnotes">
+
+                <div class="footnotes quote" id="footnotes-toggle">
+                    <p class="clear-top small">&plus; <a class="overscore" onclick="toggle_fn( aa_fn_1 );">Footnotes</a></p>
+
+                    </div>
+
+                <div class="footnotes quote" id="footnotes">
                     <p class="small"><sup>1</sup>&nbsp; World History Encycolpedia: Trajan. <a href="../../../url/www/worldhistory-trajan/" title="World History Encycolpedia / Trajan" target="_blank" rel="noopener">Website<font class="none small toggle-ios">&nbsp;&nearr;</font></a></p>
+
+                    <p class="linebreak small">Close: <a onclick="toggle_reset( aa_fn_1 );">Footnotes</a></p>
 
                     </div>
 
@@ -226,12 +234,34 @@
 
 <script>
 
-    var aa_fn_1 = "#footnotes";
+    var aa_fn_1 = "footnotes";
 
-    function fn( aa_fn ) {
+        toggle_reset( aa_fn_1 );
 
-        var fn = aa_fn;
+    function toggle_fn( aa_fn ) {
+
+        var fn = "#" + aa_fn;
+        var fn_a = aa_fn + "-toggle";
+
+        var aa_fn_a = document.getElementById( fn_a ),
+            aa_fn_i = document.getElementById( aa_fn );
+
+        aa_fn_a.style.display = "none";
+        aa_fn_i.style.display = "block";
+
         document.querySelector( fn ).scrollIntoView({ behavior: 'smooth' });
+
+        };
+
+    function toggle_reset( aa_id ) {
+
+      var id_a = aa_id + "-toggle";
+
+      var aa_id_a = document.getElementById( id_a ),
+          aa_id_i = document.getElementById( aa_id );
+
+          aa_id_i.style.display = "none";
+          aa_id_a.style.display = "block";
 
         };
 

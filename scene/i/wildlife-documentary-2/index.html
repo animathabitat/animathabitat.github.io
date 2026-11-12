@@ -88,7 +88,7 @@
                 <h3 class="linebreak">Into the Okavango (2018)</h3>
                 <p>1h 28min</p>
 
-                <p class="linebreak"><i>Into the Okavango</i>&mdash;a National Geographic Documentary Films documentary film follows National Geographic Fellow Dr Steve Boyes on a first expedition of National Geographic <a href="../../../url/-org/nationalgeographic-okavango/" title="National Geographic Society / Okavango Wilderness Project">Okavango Wilderness Project</a> (NGOWP). Boyes, a conservationist and native of South Africa, leads a research team to survey and trace the flow of water that feeds &lsquo;the jewel of the Kalahari&rsquo;&mdash;the Okavango Delta in Botswana. The team of scientists, photographers, film-makers, and African guides set out in dug-out mekoros &ndash; canoes &ndash; at the water source on a distant Angolan plateau. This film then documents the data-driven mission from the water tower in Angola to the delta in Botswana, ultimately capturing an extraordinary effort to safeguard the ecosystem of the greater Okavango Basin.<sup>&nbsp;[<a class="button" onclick="fn( aa_fn_2 );" title="Boyes">1</a>]</sup></p>
+                <p class="linebreak"><i>Into the Okavango</i>&mdash;a National Geographic Documentary Films documentary film follows National Geographic Fellow Dr Steve Boyes on a first expedition of National Geographic <a href="../../../url/-org/nationalgeographic-okavango/" title="National Geographic Society / Okavango Wilderness Project">Okavango Wilderness Project</a> (NGOWP). Boyes, a conservationist and native of South Africa, leads a research team to survey and trace the flow of water that feeds &lsquo;the jewel of the Kalahari&rsquo;&mdash;the Okavango Delta in Botswana. The team of scientists, photographers, film-makers, and African guides set out in dug-out mekoros &ndash; canoes &ndash; at the water source on a distant Angolan plateau. This film then documents the data-driven mission from the water tower in Angola to the delta in Botswana, ultimately capturing an extraordinary effort to safeguard the ecosystem of the greater Okavango Basin.<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_2 );" title="Boyes">1</a>]</sup></p>
 
                 <div>
                     <p><i>The water comes from Cuito.</i></p>
@@ -99,7 +99,7 @@
 
                 <p class="linebreak">The Okavango Delta supports the largest remaining elephant population on the planet, numbering around 130,000. The movements of these elephants shape and reshape the delta’s channels. Many of these elephants are native to Botswana, however, many others are refugees of Angola. These refugee elephants are not inclined or no longer able to navigate ancient migratory routes from the delta back to Angola, where in between the Okavango river now passes through one of the most densely populated human settlements in Namibia.</p>
 
-                <p class="linebreak">The documentary also introduces Angolan marine biologist Adjany Costa, following her perspective as part of the team, as the landscape of Angola shapes so much of the film as well as the research. The documentary highlights a history of civil war that has scarred Angola, and has transcended the character and culture of its people. A poignant reminder of this is the curtain of land mines in areas that surround the tributaries to the Okavango water tower. In this part of Angola, almost no research has been conducted about the people, the plants and the animals and so on. Boyes, Costa and the crew carefully navigate these uncharted waters.<sup>&nbsp;[<a class="button" onclick="fn( aa_fn_2 );" title="Costa">2</a>]</sup></p>
+                <p class="linebreak">The documentary also introduces Angolan marine biologist Adjany Costa, following her perspective as part of the team, as the landscape of Angola shapes so much of the film as well as the research. The documentary highlights a history of civil war that has scarred Angola, and has transcended the character and culture of its people. A poignant reminder of this is the curtain of land mines in areas that surround the tributaries to the Okavango water tower. In this part of Angola, almost no research has been conducted about the people, the plants and the animals and so on. Boyes, Costa and the crew carefully navigate these uncharted waters.<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_2 );" title="Costa">2</a>]</sup></p>
 
                 </div>
 
@@ -144,9 +144,17 @@
                 </div>
 
             <div class="clear">
+
+                <div class="footnotes quote" id="footnotes-2-toggle">
+                    <p class="clear-top small">&plus; <a class="overscore" onclick="toggle_fn( aa_fn_2 );">Footnotes</a></p>
+
+                    </div>
+
                 <div class="footnotes quote" id="footnotes-2">
                     <p class="clear-top small"><sup>1</sup> National Geographic Explorer: Steve Boyes. <a href="../../../url/nationalgeographic/explorer-steve-boyes/" title="National Geographic / Steve Boyes" target="_blank" rel="noopener">Website<font class="none small toggle-ios">&nbsp;&nearr;</font></a></p>
                     <p class="small"><sup>2</sup> National Geographic Explorer: Adjany Costa. <a href="../../../url/nationalgeographic/explorer-adjany-costa/" title="National Geographic / Adjany Costa" target="_blank" rel="noopener">Website<font class="none small toggle-ios">&nbsp;&nearr;</font></a></p>
+
+                    <p class="linebreak small">Close: <a onclick="toggle_reset( aa_fn_2 );">Footnotes</a></p>
 
                     </div>
 
@@ -193,12 +201,34 @@
 
 <script>
 
-    var aa_fn_2 = "#footnotes-2";
+    var aa_fn_2 = "footnotes-2";
 
-    function fn( aa_fn ) {
+        toggle_reset( aa_fn_2 );
 
-        var fn = aa_fn;
+    function toggle_fn( aa_fn ) {
+
+        var fn = "#" + aa_fn;
+        var fn_a = aa_fn + "-toggle";
+
+        var aa_fn_a = document.getElementById( fn_a ),
+            aa_fn_i = document.getElementById( aa_fn );
+
+        aa_fn_a.style.display = "none";
+        aa_fn_i.style.display = "block";
+
         document.querySelector( fn ).scrollIntoView({ behavior: 'smooth' });
+
+        };
+
+    function toggle_reset( aa_id ) {
+
+      var id_a = aa_id + "-toggle";
+
+      var aa_id_a = document.getElementById( id_a ),
+          aa_id_i = document.getElementById( aa_id );
+
+          aa_id_i.style.display = "none";
+          aa_id_a.style.display = "block";
 
         };
 
