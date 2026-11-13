@@ -57,7 +57,7 @@
                 <h3 class="linebreak" id="colin-bell-header">Once upon a time&hellip; in Botswana.</h3>
                 <p>The recent history of elephants in Botswana has taken on a greater significance for the future of elephants in Africa. The southern African state has become a refuge for elephants in a time of crisis.</p>
 
-                <p class="linebreak" id="colin-bell-toggle">History: <a class="color" onclick="toggle( aa_ex_cb, aa_ex_cb_a, aa_ex_cb_h );">Making a safe haven</a>.<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_1 );" title="Bell and Pinnock, 2019">2</a>]</sup></p>
+                <p class="linebreak" id="colin-bell-toggle">History: <a class="color" onclick="toggle( aa_ex_cb );">Making a safe haven</a>.<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_1 );" title="Bell and Pinnock, 2019">2</a>]</sup></p>
 
                 <div class="clear line-left" id="colin-bell">
                     <p class="linebreak"><font class="color"><i>In his chapter, &lsquo;Making a safe haven&rsquo;, in a book that he co-authored with Don Pinnock, <i>The Last Elephants</i> (2019), Colin Bell tells a history of elephants in Botswana.</i></font></p>
@@ -75,7 +75,7 @@
 
                         <p class="linebreak"><b class="color text-quote">&ldquo;</b>&nbsp;The core of Botswana's safari industry is based around its vast, pristine wilderness areas and its magnificent elephants.&nbsp;<b class="color text-quote">&rdquo;</b></p>
 
-                        <p class="linebreak">Close history: <a class="color" onclick="toggle( aa_ex_cb, aa_ex_cb_a, aa_ex_cb_h );">Making a safe haven</a>.<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_1 );" title="Bell and Pinnock, 2019">2</a>]</sup></p>
+                        <p class="linebreak">Close history: <a class="color" onclick="toggle( aa_ex_cb );">Making a safe haven</a>.<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_1 );" title="Bell and Pinnock, 2019">2</a>]</sup></p>
 
                         </div>
 
@@ -197,7 +197,7 @@
 
                     </div>
 
-                <p id="don-pinnock-toggle">History: <a class="color" onclick="toggle( aa_ex_dp, aa_ex_dp_a, aa_ex_dp_h );">Postscript</a>.<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_1 );" title="Bell and Pinnock, 2019">2</a>]</sup></p>
+                <p id="don-pinnock-toggle">History: <a class="color" onclick="toggle( aa_ex_dp );">Postscript</a>.<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_1 );" title="Bell and Pinnock, 2019">2</a>]</sup></p>
 
                 <div class="clear line-left" id="don-pinnock">
                     <p><font class="color"><i>Don Pinnock added a postscript to that chapter on Botswana.</i></font></p>
@@ -211,7 +211,7 @@
 
                         <p class="linebreak"><b class="color text-quote">&ldquo;</b>&nbsp;There has also been little clear policy direction on how communities can effectively deal with roving elephants that destroy crops and harass &ndash; even kill &ndash; people. These incidents are reported in the press and reach the ears of politicians and the pro-hunting lobby, which has been relentlessly exploiting them to persuade the Botswana government to reverse the ban on sport hunting.&nbsp;<b class="color text-quote">&rdquo;</b></p>
 
-                        <p class="linebreak">Close history: <a class="color" onclick="toggle( aa_ex_dp, aa_ex_dp_a, aa_ex_dp_h );">Postscript</a>.<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_1 );" title="Bell and Pinnock, 2019">2</a>]</sup></p>
+                        <p class="linebreak">Close history: <a class="color" onclick="toggle( aa_ex_dp );">Postscript</a>.<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_1 );" title="Bell and Pinnock, 2019">2</a>]</sup></p>
 
                         </div>
 
@@ -292,46 +292,40 @@
 
 <script>
 
-    var aa_ex_cb = document.getElementById( "colin-bell" ),
-        aa_ex_cb_a = document.getElementById( "colin-bell-toggle" ),
-        aa_ex_cb_h = "#colin-bell-header";
+    var aa_ex_cb = "colin-bell",
+        aa_ex_dp = "don-pinnock";
 
-        aa_ex_cb.style.display = "none";
-        aa_ex_cb_a.style.display = "block";
-
-    var aa_ex_dp = document.getElementById( "don-pinnock" ),
-        aa_ex_dp_a = document.getElementById( "don-pinnock-toggle" ),
-        aa_ex_dp_h = "#don-pinnock-header";
-
-        aa_ex_dp.style.display = "none";
-        aa_ex_dp_a.style.display = "block";
-
-    function toggle( aa_ex, aa_ex_a, aa_ex_h ) {
-
-        if ( aa_ex.style.display == "none" ) {
-
-            aa_ex.style.display = "block";
-            aa_ex_a.style.display = "none";
-            document.querySelector( aa_ex_h ).scrollIntoView({ behavior: 'smooth' });
-
-            } else {
-
-            aa_ex.style.display = "none";
-            aa_ex_a.style.display = "block";
-
-            }
-
-        };
-
-    </script>
-
-<script>
+        toggle_reset( aa_ex_cb );
+        toggle_reset( aa_ex_dp );
 
     var aa_fn_1 = "footnotes",
         aa_fn_2 = "footnotes-2";
 
         toggle_reset( aa_fn_1 );
         toggle_reset( aa_fn_2 );
+
+    function toggle( aa_ex ) {
+
+        var ex_a = aa_ex + "-toggle",
+            ex_h = "#" + aa_ex + "-header";
+
+        var aa_ex_a = document.getElementById( ex_a ),
+            aa_ex_i = document.getElementById( aa_ex );
+
+        if ( aa_ex_i.style.display == "none" ) {
+
+            aa_ex_i.style.display = "block";
+            aa_ex_a.style.display = "none";
+            document.querySelector( ex_h ).scrollIntoView({ behavior: 'smooth' });
+
+            } else {
+
+            aa_ex_i.style.display = "none";
+            aa_ex_a.style.display = "block";
+
+            }
+
+        };
 
     function toggle_fn( aa_fn ) {
 
