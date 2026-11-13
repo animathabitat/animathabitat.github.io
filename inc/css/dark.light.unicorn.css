@@ -278,7 +278,7 @@ input[ type="number" ]::-webkit-outer-spin-button {
 }
 button, input,
 nav li a,
-.titles-inline h5 {
+.inline-title h5 {
 
     display: inline-block;
 
@@ -566,7 +566,7 @@ div.footnotes p.small sup,
     vertical-align: -0.5em;
 
 }
-.titles-inline h5 {
+.inline-title h5 {
 
     line-height: 3em;
 
@@ -595,6 +595,7 @@ nav ul .thin {
 }
 a,
 p a.button,
+p a.footnote-title,
 p a.title {
 
     -webkit-appearance: none;
