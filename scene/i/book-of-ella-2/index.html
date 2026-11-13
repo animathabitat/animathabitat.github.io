@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src via.animathabitat.org 'self'; script-src s.animathabitat.org 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src via.animathabitat.org 'self'; script-src s.animathabitat.org 'self' 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
     <!-- <meta name="google" content="notranslate" /> -->
 
     <meta name="author" content="Dane Aleksander" />
@@ -19,6 +19,8 @@
         </style>
 
     <link rel="preconnect" href="https://via.animathabitat.org" />
+
+    <link rel="preload" href="../../../inc/js/unicorn.js" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
     <link rel="stylesheet" href="../../../inc/css/dark.light.unicorn.css" />
@@ -63,7 +65,7 @@
 
             <div class="clear">
                 <img alt="Calvin and Hobbes &ndash; snow art." src="https://via.animathabitat.org/img/01/comic/~bill-watterson/calvin-and-hobbes.snow-art.1.jpg" />
-                <p class="gutter-side text-right"><i>Calvin and Hobbes</i> (November 1985 - December 1995), image courtesy of Bill Watterson<sup>&nbsp;[<a class="button" onclick="fn();" title="Calvin and Hobbes">1</a>]</sup></p>
+                <p class="gutter-side text-right"><i>Calvin and Hobbes</i> (November 1985 - December 1995), image courtesy of Bill Watterson<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_1 );" title="Calvin and Hobbes">1</a>]</sup></p>
 
                 </div>
 
@@ -79,7 +81,7 @@
 
             <div class="clear">
                 <img alt="Calvin and Hobbes &ndash; snow art." src="https://via.animathabitat.org/img/01/comic/~bill-watterson/calvin-and-hobbes.snow-art.eggplant.jpg" />
-                <p class="gutter-side text-right"><i>Calvin and Hobbes</i> (November 1985 - December 1995), image courtesy of Bill Watterson<sup>&nbsp;[<a class="button" onclick="fn();" title="Calvin and Hobbes">1</a>]</sup></p>
+                <p class="gutter-side text-right"><i>Calvin and Hobbes</i> (November 1985 - December 1995), image courtesy of Bill Watterson<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_1 );" title="Calvin and Hobbes">1</a>]</sup></p>
 
                 </div>
 
@@ -102,7 +104,7 @@
 
             <div class="clear">
                 <img alt="Calvin and Hobbes &ndash; snow art." src="https://via.animathabitat.org/img/01/comic/~bill-watterson/calvin-and-hobbes.snow-art.2.jpg" />
-                <p class="gutter-side text-right"><i>Calvin and Hobbes</i> (November 1985 - December 1995), image courtesy of Bill Watterson<sup>&nbsp;[<a class="button" onclick="fn();" title="Calvin and Hobbes">1</a>]</sup></p>
+                <p class="gutter-side text-right"><i>Calvin and Hobbes</i> (November 1985 - December 1995), image courtesy of Bill Watterson<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_1 );" title="Calvin and Hobbes">1</a>]</sup></p>
 
                 </div>
 
@@ -134,13 +136,21 @@
 
             <div class="clear">
                 <img alt="Calvin and Hobbes &ndash; snow art." src="https://via.animathabitat.org/img/01/comic/~bill-watterson/calvin-and-hobbes.snow-art.3.jpg" />
-                <p class="gutter-side text-right"><i>Calvin and Hobbes</i> (November 1985 - December 1995), image courtesy of Bill Watterson<sup>&nbsp;[<a class="button" onclick="fn();" title="Calvin and Hobbes">1</a>]</sup></p>
+                <p class="gutter-side text-right"><i>Calvin and Hobbes</i> (November 1985 - December 1995), image courtesy of Bill Watterson<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_1 );" title="Calvin and Hobbes">1</a>]</sup></p>
 
                 </div>
 
             <div class="clear">
+
+                <div class="footnotes quote" id="footnotes-toggle">
+                    <p class="clear-top small">&plus; <a class="overscore" onclick="toggle_fn( aa_fn_1 );">Footnotes</a></p>
+
+                    </div>
+
                 <div class="footnotes quote" id="footnotes">
                     <p class="clear-top small"><sup>1</sup>&nbsp; The snowmen and other snow art is from the last great newspaper comic: <i>Calvin and Hobbes</i>, created by Bill Watterson. The daily comic strip was syndicated from November 1985 to December 1995, and is commonly cited as &ldquo;the last great newspaper comic&rdquo;. <a href="../../../url/www/calvinandhobbes/" rel="noopener" target="_blank" title="Bill Watterson / Calvin and Hobbes">Website<font class="none small toggle-ios">&nbsp;&nearr;</font></a></p>
+
+                    <p class="linebreak small">Close: <a onclick="toggle_reset( aa_fn_1 );">Footnotes</a></p>
 
                     </div>
 
@@ -231,9 +241,13 @@
 
     </body>
 
+<script src="../../../inc/js/unicorn.js"></script>
+
 <script>
 
-    function fn() { document.querySelector( "#footnotes" ).scrollIntoView({ behavior: 'smooth' }); };
+    var aa_fn_1 = "footnotes";
+
+    toggle_reset( aa_fn_1 );
 
     </script>
 
