@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src via.animathabitat.org 'self'; script-src s.animathabitat.org 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src via.animathabitat.org 'self'; script-src s.animathabitat.org 'self' 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
     <!-- <meta name="google" content="notranslate" /> -->
 
     <meta name="author" content="Dane Aleksander" />
@@ -19,6 +19,8 @@
         </style>
 
     <link rel="preconnect" href="https://via.animathabitat.org" />
+
+    <link rel="preload" href="../../../inc/js/unicorn.js" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
     <link rel="stylesheet" href="../../../inc/css/dark.light.unicorn.css" />
@@ -126,7 +128,7 @@
 
                 <pre class="thin"></pre>
 
-                <p class="linebreak lineend" id="toggle-africa">&plus; <a onclick="toggle( aa_li_africa, aa_li_africa_a );">Protected Habitats in Africa</a></p>
+                <p class="linebreak lineend" id="africa-toggle">&plus; <a onclick="toggle( aa_li_africa );">Protected Habitats in Africa</a></p>
 
                 <div class="clear" id="africa">
 
@@ -151,13 +153,13 @@
 
                                 </ul>
 
-                            <div class="clear" id="toggle-kenya">
-                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_kenya, aa_li_kenya_a );">Kenya</a></p>
+                            <div class="clear" id="kenya-toggle">
+                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_kenya );">Kenya</a></p>
 
                                 </div>
 
                             <div class="clear" id="kenya">
-                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_kenya, aa_li_kenya_a );">Kenya</a></p>
+                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_kenya );">Kenya</a></p>
                                 <ul class="small">
                                     <li>Aberdare National Park</li>
                                     <li>Amboseli National Park</li>
@@ -206,13 +208,13 @@
 
                                 </div>
 
-                            <div class="clear" id="toggle-malawi">
-                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_malawi, aa_li_malawi_a );">Malawi</a></p>
+                            <div class="clear" id="malawi-toggle">
+                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_malawi );">Malawi</a></p>
 
                                 </div>
 
                             <div class="clear" id="malawi">
-                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_malawi, aa_li_malawi_a );">Malawi</a></p>
+                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_malawi );">Malawi</a></p>
                                 <ul class="small">
                                     <li>Lengwe National Park</li>
                                     <li>Nyika National Park</li>
@@ -229,13 +231,13 @@
 
                                 </div>
 
-                            <div class="clear" id="toggle-mozambique">
-                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_mozambique, aa_li_mozambique_a );">Mozambique</a></p>
+                            <div class="clear" id="mozambique-toggle">
+                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_mozambique );">Mozambique</a></p>
 
                                 </div>
 
                             <div class="clear" id="mozambique">
-                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_mozambique, aa_li_mozambique_a );">Mozambique</a></p>
+                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_mozambique );">Mozambique</a></p>
                                 <ul class="small">
                                     <li>Banhine National Park</li>
                                     <li>Bazaruto National Park</li>
@@ -254,13 +256,13 @@
 
                                 </div>
 
-                            <div class="clear" id="toggle-tanzania">
-                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_tanzania, aa_li_tanzania_a );">Tanzania</a></p>
+                            <div class="clear" id="tanzania-toggle">
+                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_tanzania );">Tanzania</a></p>
 
                                 </div>
 
                             <div class="clear" id="tanzania">
-                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_tanzania, aa_li_tanzania_a );">Tanzania</a></p>
+                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_tanzania );">Tanzania</a></p>
                                 <ul class="small">
                                     <li>Arusha National Park</li>
                                     <li>Gombe Stream National Park</li>
@@ -290,13 +292,13 @@
 
                                 </div>
 
-                            <div class="clear" id="toggle-uganda">
-                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_uganda, aa_li_uganda_a );">Uganda</a></p>
+                            <div class="clear" id="uganda-toggle">
+                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_uganda );">Uganda</a></p>
 
                                 </div>
 
                             <div class="clear" id="uganda">
-                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_uganda, aa_li_uganda_a );">Uganda</a></p>
+                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_uganda );">Uganda</a></p>
                                 <ul class="small">
                                     <li>Katonga Wildlife Reserve</li>
                                     <li>Kibale National Park</li>
@@ -331,13 +333,13 @@
 
                                 </ul>
 
-                            <div class="clear" id="toggle-congo">
-                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_congo, aa_li_congo_a );">Congo</a></p>
+                            <div class="clear" id="congo-toggle">
+                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_congo );">Congo</a></p>
 
                                 </div>
 
                             <div class="clear" id="congo">
-                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_congo, aa_li_congo_a );">Congo</a></p>
+                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_congo );">Congo</a></p>
                                 <ul class="small">
                                     <li> National Park</li>
                                     <li> National Park</li>
@@ -348,13 +350,13 @@
 
                                 </div>
 
-                            <div class="clear" id="toggle-gabon">
-                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_gabon, aa_li_gabon_a );">Gabon</a></p>
+                            <div class="clear" id="gabon-toggle">
+                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_gabon );">Gabon</a></p>
 
                                 </div>
 
                             <div class="clear" id="gabon">
-                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_gabon, aa_li_gabon_a );">Gabon</a></p>
+                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_gabon );">Gabon</a></p>
                                 <ul class="small">
                                     <li> National Park</li>
                                     <li> National Park</li>
@@ -381,13 +383,13 @@
 
                                 </ul>
 
-                            <div class="clear" id="toggle-angola">
-                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_angola, aa_li_angola_a );">Angola</a></p>
+                            <div class="clear" id="angola-toggle">
+                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_angola );">Angola</a></p>
 
                                 </div>
 
                             <div class="clear" id="angola">
-                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_angola, aa_li_angola_a );">Angola</a></p>
+                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_angola );">Angola</a></p>
                                 <ul class="small">
                                     <li>Bicuari National Park</li>
                                     <li>Cangandala National Park</li>
@@ -405,13 +407,13 @@
 
                                 </div>
 
-                            <div class="clear" id="toggle-botswana">
-                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_botswana, aa_li_botswana_a );">Botswana</a></p>
+                            <div class="clear" id="botswana-toggle">
+                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_botswana );">Botswana</a></p>
 
                                 </div>
 
                             <div class="clear" id="botswana">
-                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_botswana, aa_li_botswana_a );">Botswana</a></p>
+                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_botswana );">Botswana</a></p>
                                 <ul class="small">
                                     <li>Chobe National Park</li>
                                     <li>Kgalagadi Transfrontier Park</li>
@@ -424,13 +426,13 @@
 
                                 </div>
 
-                            <div class="clear" id="toggle-eswatini">
-                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_eswatini, aa_li_eswatini_a );">Eswatini</a></p>
+                            <div class="clear" id="eswatini-toggle">
+                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_eswatini );">Eswatini</a></p>
 
                                 </div>
 
                             <div class="clear" id="eswatini">
-                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_eswatini, aa_li_eswatini_a );">Eswatini</a></p>
+                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_eswatini );">Eswatini</a></p>
                                 <ul class="small">
                                     <li>Hawane Nature Reserve</li>
                                     <li>Malolotja National Park</li>
@@ -449,13 +451,13 @@
 
                                 </div>
 
-                            <div class="clear" id="toggle-namibia">
-                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_namibia, aa_li_namibia_a );">Namibia</a></p>
+                            <div class="clear" id="namibia-toggle">
+                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_namibia );">Namibia</a></p>
 
                                 </div>
 
                             <div class="clear" id="namibia">
-                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_namibia, aa_li_namibia_a );">Namibia</a></p>
+                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_namibia );">Namibia</a></p>
                                 <ul class="small">
                                     <li>Bwabwata National Park</li>
                                     <li>Dorob National Park</li>
@@ -474,13 +476,13 @@
 
                                 </div>
 
-                            <div class="clear" id="toggle-south-africa">
-                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_south_africa, aa_li_south_africa_a );">South Africa</a></p>
+                            <div class="clear" id="south-africa-toggle">
+                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_south_africa );">South Africa</a></p>
 
                                 </div>
 
                             <div class="clear" id="south-africa">
-                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_south_africa, aa_li_south_africa_a );">South Africa</a></p>
+                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_south_africa );">South Africa</a></p>
                                 <ul class="small">
                                     <li>Addo Elephant National Park</li>
                                     <li>Agulhas National Park</li>
@@ -513,13 +515,13 @@
 
                                 </div>
 
-                            <div class="clear" id="toggle-zambia">
-                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_zambia, aa_li_zambia_a );">Zambia</a></p>
+                            <div class="clear" id="zambia-toggle">
+                                <p class="linebreak small">&plus; <a class="title" onclick="toggle( aa_li_zambia );">Zambia</a></p>
 
                                 </div>
 
                             <div class="clear" id="zambia">
-                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_zambia, aa_li_zambia_a );">Zambia</a></p>
+                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_zambia );">Zambia</a></p>
                                 <ul class="small">
                                     <li>Blue Lagoon National Park</li>
                                     <li>Kafue  National Park</li>
@@ -544,13 +546,13 @@
 
                                 </div>
 
-                            <div class="clear" id="toggle-zimbabwe">
-                                <p class="linebreak lineend small">&plus; <a class="title" onclick="toggle( aa_li_zimbabwe, aa_li_zimbabwe_a );">Zimbabwe</a></p>
+                            <div class="clear" id="zimbabwe-toggle">
+                                <p class="linebreak lineend small">&plus; <a class="title" onclick="toggle( aa_li_zimbabwe );">Zimbabwe</a></p>
 
                                 </div>
 
                             <div class="clear" id="zimbabwe">
-                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_zimbabwe, aa_li_zimbabwe_a );">Zimbabwe</a></p>
+                                <p class="linebreak overscore small"><a class="title" onclick="toggle( aa_li_zimbabwe );">Zimbabwe</a></p>
                                 <ul class="small">
                                     <li>Chizarira National Park</li>
                                     <li>Gonarezhou National Park</li>
@@ -577,14 +579,17 @@
 
                         </div>
 
-                    <div id="footnotes">
-                        <p class="small"><sup>1</sup>&nbsp; The Union of Comoros and republics of Madagascar, Mauritius, Seychelles are part of SADC but the islands are unique habitats and unlisted. The republics of Congo and Gabon are also part of SADC but are isolated forests to the northwest and, as of yet, unlisted. The republics of Malawi, Mozambique, Uganda and the United Republic of Tanzania are listed in East Africa.</p>
-                        <!--<p class="small"><sup>2</sup>&nbsp; A &ldquo;game reserve&rdquo; is a protected area where animals are seen on safari as well as are hunted for <i>sport</i>. In a game reserve, animal populations are controlled in their natural habitat. And so their ecosystems are conserved. A reserve that prohibits hunting may be considered a &ldquo;nature reserve&rdquo;.</p>-->
-                        <p class="small"><sup>2</sup>&nbsp; Kavango-Zambezi Transfrontier Conservation Area (KAZA TFCA) is an agreement signed by Angola, Botswana, Namibia, Zambia and Zimbabwe, binding these countries to create a transfrontier park straddling their national borders.</p>
+                    <div class="gutter-side" id="footnotes">
+                        <div class="letterhead letterend">
+                            <p class="small"><sup>1</sup>&nbsp; The Union of Comoros and republics of Madagascar, Mauritius, Seychelles are part of SADC but the islands are unique habitats and unlisted. The republics of Congo and Gabon are also part of SADC but are isolated forests to the northwest and, as of yet, unlisted. The republics of Malawi, Mozambique, Uganda and the United Republic of Tanzania are listed in East Africa.</p>
+                            <!--<p class="small"><sup>2</sup>&nbsp; A &ldquo;game reserve&rdquo; is a protected area where animals are seen on safari as well as are hunted for <i>sport</i>. In a game reserve, animal populations are controlled in their natural habitat. And so their ecosystems are conserved. A reserve that prohibits hunting may be considered a &ldquo;nature reserve&rdquo;.</p>-->
+                            <p class="small"><sup>2</sup>&nbsp; Kavango-Zambezi Transfrontier Conservation Area (KAZA TFCA) is an agreement signed by Angola, Botswana, Namibia, Zambia and Zimbabwe, binding these countries to create a transfrontier park straddling their national borders.</p>
+
+                            </div>
 
                         </div>
 
-                    <p class="lineend">Close: <a onclick="toggle( aa_li_africa, aa_li_africa_a );">Protected Habitats in Africa</a></p>
+                    <p class="lineend">Close: <a onclick="toggle( aa_li_africa );">Protected Habitats in Africa</a></p>
 
                     </div>
 
@@ -665,93 +670,57 @@
 
     </body>
 
+<script src="../../../inc/js/unicorn.js"></script>
+
 <script>
 
-    var aa_li_africa = document.getElementById( "africa" ),
-        aa_li_africa_a = document.getElementById( "toggle-africa" );
+    var aa_li_africa = "africa",
+        aa_li_angola = "angola",
+        aa_li_botswana = "botswana",
+        // aa_li_congo = "congo",
+        aa_li_eswatini = "eswatini",
+        // aa_li_gabon = "gabon",
+        aa_li_kenya = "kenya",
+        aa_li_malawi = "malawi",
+        aa_li_mozambique = "mozambique",
+        aa_li_namibia = "namibia",
+        aa_li_south_africa = "south-africa",
+        aa_li_tanzania = "tanzania",
+        aa_li_uganda = "uganda",
+        aa_li_zambia = "zambia",
+        aa_li_zimbabwe = "zimbabwe";
 
-        aa_li_africa.style.display = "none";
+        toggle_reset( aa_li_africa );
+        toggle_reset( aa_li_angola );
+        toggle_reset( aa_li_botswana );
+        // toggle_reset( aa_li_congo );
+        toggle_reset( aa_li_eswatini );
+        // toggle_reset( aa_li_gabon );
+        toggle_reset( aa_li_kenya );
+        toggle_reset( aa_li_malawi );
+        toggle_reset( aa_li_mozambique );
+        toggle_reset( aa_li_namibia );
+        toggle_reset( aa_li_south_africa );
+        toggle_reset( aa_li_tanzania );
+        toggle_reset( aa_li_uganda );
+        toggle_reset( aa_li_zambia );
+        toggle_reset( aa_li_zimbabwe );
 
-    var aa_li_angola = document.getElementById( "angola" ),
-        aa_li_angola_a = document.getElementById( "toggle-angola" );
+    function toggle( aa_li ) {
 
-        aa_li_angola.style.display = "none";
+        var li_a = aa_li + "-toggle";
 
-    var aa_li_botswana = document.getElementById( "botswana" ),
-        aa_li_botswana_a = document.getElementById( "toggle-botswana" );
+        var aa_li_a = document.getElementById( li_a ),
+            aa_li_i = document.getElementById( aa_li );
 
-        aa_li_botswana.style.display = "none";
+        if ( aa_li_i.style.display == "none" ) {
 
-//     var aa_li_congo = document.getElementById( "congo" ),
-//         aa_li_congo_a = document.getElementById( "toggle-congo" );
-//
-//         aa_li_congo.style.display = "none";
-
-    var aa_li_eswatini = document.getElementById( "eswatini" ),
-        aa_li_eswatini_a = document.getElementById( "toggle-eswatini" );
-
-        aa_li_eswatini.style.display = "none";
-
-//     var aa_li_gabon = document.getElementById( "gabon" ),
-//         aa_li_gabon_a = document.getElementById( "toggle-gabon" );
-//
-//         aa_li_gabon.style.display = "none";
-
-    var aa_li_kenya = document.getElementById( "kenya" ),
-        aa_li_kenya_a = document.getElementById( "toggle-kenya" );
-
-        aa_li_kenya.style.display = "none";
-
-    var aa_li_malawi = document.getElementById( "malawi" ),
-        aa_li_malawi_a = document.getElementById( "toggle-malawi" );
-
-        aa_li_malawi.style.display = "none";
-
-    var aa_li_mozambique = document.getElementById( "mozambique" ),
-        aa_li_mozambique_a = document.getElementById( "toggle-mozambique" );
-
-        aa_li_mozambique.style.display = "none";
-
-    var aa_li_namibia = document.getElementById( "namibia" ),
-        aa_li_namibia_a = document.getElementById( "toggle-namibia" );
-
-        aa_li_namibia.style.display = "none";
-
-    var aa_li_south_africa = document.getElementById( "south-africa" ),
-        aa_li_south_africa_a = document.getElementById( "toggle-south-africa" );
-
-        aa_li_south_africa.style.display = "none";
-
-    var aa_li_tanzania = document.getElementById( "tanzania" ),
-        aa_li_tanzania_a = document.getElementById( "toggle-tanzania" );
-
-        aa_li_tanzania.style.display = "none";
-
-    var aa_li_uganda = document.getElementById( "uganda" ),
-        aa_li_uganda_a = document.getElementById( "toggle-uganda" );
-
-        aa_li_uganda.style.display = "none";
-
-    var aa_li_zambia = document.getElementById( "zambia" ),
-        aa_li_zambia_a = document.getElementById( "toggle-zambia" );
-
-        aa_li_zambia.style.display = "none";
-
-    var aa_li_zimbabwe = document.getElementById( "zimbabwe" ),
-        aa_li_zimbabwe_a = document.getElementById( "toggle-zimbabwe" );
-
-        aa_li_zimbabwe.style.display = "none";
-
-    function toggle( aa_li, aa_li_a ) {
-
-        if ( aa_li.style.display == "none" ) {
-
-            aa_li.style.display = "block";
+            aa_li_i.style.display = "block";
             aa_li_a.style.display = "none";
 
             } else {
 
-            aa_li.style.display = "none";
+            aa_li_i.style.display = "none";
             aa_li_a.style.display = "block";
 
             }
