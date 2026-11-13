@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src via.animathabitat.org 'self'; script-src s.animathabitat.org 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src via.animathabitat.org 'self'; script-src s.animathabitat.org 'self' 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
     <!-- <meta name="google" content="notranslate" /> -->
 
     <meta name="author" content="Dane Aleksander" />
@@ -19,6 +19,8 @@
         </style>
 
     <link rel="preconnect" href="https://via.animathabitat.org" />
+
+    <link rel="preload" href="../../../inc/js/unicorn.js" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
     <link rel="stylesheet" href="../../../inc/css/dark.light.unicorn.css" />
@@ -51,7 +53,7 @@
                 <h3 class="linebreak">The End of Painting</h3>
                 <p>The art of Rodchenko and the art of Stepanova is, for the most part, part of a constructivist movement fueled by the revolutionary period in Russia in, and after, 1917. Constructivists moved to embrace technology and to promote art as a commodity in the service of society&mdash;as propaganda. In the wake of a revolution, artists had taken a pragmatic approach that applied art to encourage the construction of a socialist society.</p>
 
-                <p class="linebreak">This movement originated as a philosophy of design by Vladimir Tatlin, who wanted to construct art with new types of crafted materials&mdash;to emphasize the character of those materials that composed a piece of art, and, furthermore, that the piece itself was art and not simply a frame with a window to another world. Rodchenko, in particular, had been inclined toward the work of Tatlin. In an exhibition titled <i>5x5=25</i> set in Moscow in 1921, Rodchenko exhibited a triptych of monochromatic canvases painted red, yellow, blue, which he famously described, &ldquo;reduced painting to its logical conclusion.&rdquo; It was his declaration: <i>The End of Painting</i>, which stated that there was no reason to continue to explore the medium.<sup>&nbsp;[<a class="button" onclick="fn();" title="MoMA">1</a>]</sup></p>
+                <p class="linebreak">This movement originated as a philosophy of design by Vladimir Tatlin, who wanted to construct art with new types of crafted materials&mdash;to emphasize the character of those materials that composed a piece of art, and, furthermore, that the piece itself was art and not simply a frame with a window to another world. Rodchenko, in particular, had been inclined toward the work of Tatlin. In an exhibition titled <i>5x5=25</i> set in Moscow in 1921, Rodchenko exhibited a triptych of monochromatic canvases painted red, yellow, blue, which he famously described, &ldquo;reduced painting to its logical conclusion.&rdquo; It was his declaration: <i>The End of Painting</i>, which stated that there was no reason to continue to explore the medium.<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_1 );" title="MoMA">1</a>]</sup></p>
 
                 </div>
 
@@ -91,8 +93,15 @@
 
                 </div>
 
+            <div class="footnotes quote" id="footnotes-toggle">
+                <p class="clear-top small">&plus; <a class="overscore" onclick="toggle_fn( aa_fn_1 );">Footnotes</a></p>
+
+                </div>
+
             <div class="footnotes quote" id="footnotes">
                 <p class="small"><sup>1</sup>&nbsp; MoMA. Exhibitions, 1998: Aleksandr Rodchenko. <a href="../../../url/moma/rodchenko/" rel="noopener" target="_blank" title="MoMA / Exhibitions / 1998 / Aleksandr Rodchenko">Website<font class="none small toggle-ios">&nbsp;&nearr;</font></a></p>
+
+                <p class="linebreak small">Close: <a onclick="toggle_reset( aa_fn_1 );">Footnotes</a></p>
 
                 </div>
 
@@ -127,9 +136,9 @@
                 </div>
 
             <div>
-                <p>Classical painters of the nineteenth century were limited to a palette with limited intensity of color, and instead relied mostly on contrast in values&mdash;mostly light and dark earth tones with mostly red highlights. Impressionist painters of the twentieth century had access to a complete spectrum of colors made from the minerals that were a by-product of the industrial revolution. Rodchenko was not an Impressionist painter, and was explicitly not a painter at all after 1921, however his three colors are of this Impressionist era. These mineral colors will gray down to make natural tints when mixed with white.<sup>&nbsp;[<a class="button" onclick="fn();" title="Gamblin Artists Colors">2</a>]</sup></p>
+                <p>Classical painters of the nineteenth century were limited to a palette with limited intensity of color, and instead relied mostly on contrast in values&mdash;mostly light and dark earth tones with mostly red highlights. Impressionist painters of the twentieth century had access to a complete spectrum of colors made from the minerals that were a by-product of the industrial revolution. Rodchenko was not an Impressionist painter, and was explicitly not a painter at all after 1921, however his three colors are of this Impressionist era. These mineral colors will gray down to make natural tints when mixed with white.<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_2 );" title="Gamblin Artists Colors">2</a>]</sup></p>
 
-                <p class="linebreak">Modern painters now have access to extremely high key colors made from modern materials, which have pushed pigment intensity of color to almost all extremes of the color wheel. These modern colors will make bright tints when mixed with white and will make natural tints when mixed with gray. And modern painters still have access to many of the mineral colors and classical earth tones, and so &ndash; altogether with a modern palette &ndash; will have access to any color and color palette from art history.<sup>&nbsp;[<a class="button" onclick="fn();" title="Gamblin Artists Colors">2</a>]</sup></p>
+                <p class="linebreak">Modern painters now have access to extremely high key colors made from modern materials, which have pushed pigment intensity of color to almost all extremes of the color wheel. These modern colors will make bright tints when mixed with white and will make natural tints when mixed with gray. And modern painters still have access to many of the mineral colors and classical earth tones, and so &ndash; altogether with a modern palette &ndash; will have access to any color and color palette from art history.<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_2 );" title="Gamblin Artists Colors">2</a>]</sup></p>
 
                 </div>
 
@@ -214,7 +223,7 @@
 
                 <p class="linebreak">Those primary colors on the studio palette are complemented with a black, a white and a selection of secondary colors. The black is Burnt Umber in combination with either Ultramarine Blue or Pthalo Green, depending on the painting. Ultramarine and Umber are classical colors, and these two mix to make a beautiful blue&ndash;brown black. Pthalo is a modern blue&ndash;green ink, Quinacridone is a modern violet&ndash;red dye, and the color opposites mix to make a rich red&ndash;green black. The white is mostly Titanium White, another mineral-based color. Any more earth tones and secondary colors &ndash; in addition to Burnt Umber, Ultramarine Blue, Pthalo Green &ndash; are added to ease and extend access to select colors based on the design of each painting.</p>
 
-                <p class="linebreak">These oil colors on the studio palette are Gamblin Artist Oil Colors. Gamblin is a relatively modern color-making company, founded in 1980 by Robert Gamblin, based in Portland, Oregon, United States of America. The company shares a clear appreciation for the history of color in oil painting, and takes a contemporary approach to color-making so as to fit the needs of the modern-day oil painter. This balance of classic colors with a modern palette in many ways reflects a conservationist- as well as computer artist-aligned direction at Animat Habitat.<sup>&nbsp;[<a class="button" onclick="fn();" title="Gamblin Artists Colors">2</a>]</sup></p>
+                <p class="linebreak">These oil colors on the studio palette are Gamblin Artist Oil Colors. Gamblin is a relatively modern color-making company, founded in 1980 by Robert Gamblin, based in Portland, Oregon, United States of America. The company shares a clear appreciation for the history of color in oil painting, and takes a contemporary approach to color-making so as to fit the needs of the modern-day oil painter. This balance of classic colors with a modern palette in many ways reflects a conservationist- as well as computer artist-aligned direction at Animat Habitat.<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_2 );" title="Gamblin Artists Colors">2</a>]</sup></p>
 
                 </div>
 
@@ -239,7 +248,12 @@
                 <p class="text-right gutter-side">&ldquo;The Beginning of Painting&rdquo; (2020) Dane Aleksander</p>
 
             <div>
-                <p><i>The Beginning of Painting</i> is painted on three separate 10 by 10 inch wood panels, specifically Apollon Gotrick Birch Wood Panels. Apollon is an art canvas manufacturing company that began as a picture framing store, founded in the 1960s by Dimitri Apokatanidis, based in Montreal, Quebec, Canada. The panels are made in Canada, made of three millimetre Russian birch wood. This triptych marks the beginning of painting at Animat Habitat in the lead up to scene two: <i>White Tiger</i>&mdash;an oil painting of an Amur tiger in the taiga.<sup>&nbsp;[<a class="button" onclick="fn();" title="Apollon Gotrick Inc">3</a>]</sup></p>
+                <p><i>The Beginning of Painting</i> is painted on three separate 10 by 10 inch wood panels, specifically Apollon Gotrick Birch Wood Panels. Apollon is an art canvas manufacturing company that began as a picture framing store, founded in the 1960s by Dimitri Apokatanidis, based in Montreal, Quebec, Canada. The panels are made in Canada, made of three millimetre Russian birch wood. This triptych marks the beginning of painting at Animat Habitat in the lead up to scene two: <i>White Tiger</i>&mdash;an oil painting of an Amur tiger in the taiga.<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_2 );" title="Apollon Gotrick Inc">3</a>]</sup></p>
+
+                </div>
+
+            <div class="footnotes quote" id="footnotes-2-toggle">
+                <p class="clear-top small">&plus; <a class="overscore" onclick="toggle_fn( aa_fn_2 );">Footnotes</a></p>
 
                 </div>
 
@@ -249,6 +263,8 @@
                 <p class="small gutter-side">&plus;&nbsp; Gamblin Artists Colors. Conservation colors. <a href="../../../url/-com/conservationcolors/" rel="noopener" target="_blank" title="Gamblin / Conservation Colors">Website<font class="none small toggle-ios">&nbsp;&nearr;</font></a></p>
 
                 <p class="small"><sup>3</sup>&nbsp; Apollon Gotrick Inc. <a href="../../../url/-com/apollongotrick/" rel="noopener" target="_blank" title="Apollon Gotrick">Website<font class="none small toggle-ios">&nbsp;&nearr;</font></a></p>
+
+                <p class="linebreak small">Close: <a onclick="toggle_reset( aa_fn_2 );">Footnotes</a></p>
 
                 </div>
 
@@ -291,9 +307,15 @@
 
     </body>
 
+<script src="../../../inc/js/unicorn.js"></script>
+
 <script>
 
-    function fn() { document.querySelector( "#footnotes" ).scrollIntoView({ behavior: 'smooth' }); };
+    var aa_fn_1 = "footnotes",
+        aa_fn_2 = "footnotes-2";
+
+        toggle_reset( aa_fn_1 );
+        toggle_reset( aa_fn_2 );
 
     </script>
 

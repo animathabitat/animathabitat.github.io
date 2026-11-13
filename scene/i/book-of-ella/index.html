@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src via.animathabitat.org 'self'; script-src s.animathabitat.org 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src via.animathabitat.org 'self'; script-src s.animathabitat.org 'self' 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
     <!-- <meta name="google" content="notranslate" /> -->
 
     <meta name="author" content="Dane Aleksander" />
@@ -17,6 +17,8 @@
         html { background-color: #222; }
 
         </style>
+
+    <link rel="preload" href="../../../inc/js/unicorn.js" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
     <link rel="stylesheet" href="../../../inc/css/dark.light.unicorn.css" />
@@ -109,7 +111,7 @@
             <div>
                 <p>It matters that the things we make are meaningful to see, to hear and to touch and so on. Also, it matters that the things we make are responsibly sourced with regard to the use of materials. In the case of a simple card, the type of ink on the type of paper are design choices that manifest in the tactile quality of an art reproduction in print. And so for this first print campaign at Animat Habitat, the studio has made the conservative and more traditional selection of one hundred per cent recycled, uncoated white paper. This selection prioritized all eco-friendly practices over any aesthetic properties. The brown base color of kraft paper was of particular interest, however, printing on white card-stock offered more dynamic range to more accurately represent the digital artwork in print. The dynamic range is important for creating a high contrast image, and points of high contrast are important for image tracking in augmented reality. The uncoated card-stock is another design choice with a bias to an augmented reality experience &ndash; namely to the lens of a camera in an iPhone &ndash; as the matte finish of the card-stock helps to reduce glare on the surface of the image.</p>
 
-                <p class="linebreak">The limited edition <i>White Elephant</i> cover art card was printed in Canada on recycled paper with non-toxic, vegetable-based inks. This direction is based on a history of the impact of the pulp and paper industry, &ldquo;the third largest industrial polluter to air, water and land in both Canada and the United States.&rdquo; And so that is why the design office at Animat Habitat has carefully considered the card-stock and printing solution to be sent as thank-you cards for your support.<sup>&nbsp;[<a class="button" onclick="fn();" title="Green Printer">1</a>]</sup></p>
+                <p class="linebreak">The limited edition <i>White Elephant</i> cover art card was printed in Canada on recycled paper with non-toxic, vegetable-based inks. This direction is based on a history of the impact of the pulp and paper industry, &ldquo;the third largest industrial polluter to air, water and land in both Canada and the United States.&rdquo; And so that is why the design office at Animat Habitat has carefully considered the card-stock and printing solution to be sent as thank-you cards for your support.<sup>&nbsp;[<a class="button" onclick="toggle_fn( aa_fn_1 );" title="Green Printer">1</a>]</sup></p>
 
                 <p class="linebreak"><i>Thank you for joining the journey here at the start of the story.</i></p>
 
@@ -119,8 +121,15 @@
 
             <div class="clear">
 
+                <div class="footnotes quote" id="footnotes-toggle">
+                    <p class="clear-top small">&plus; <a class="overscore" onclick="toggle_fn( aa_fn_1 );">Footnotes</a></p>
+
+                    </div>
+
                 <div class="footnotes quote" id="footnotes">
                     <p class="clear-top small"><sup>1</sup>&nbsp; <s>Green Printer</s>, defunct print shop. So it goes.</p>
+
+                    <p class="linebreak small">Close: <a onclick="toggle_reset( aa_fn_1 );">Footnotes</a></p>
 
                     </div>
 
@@ -171,9 +180,13 @@
 
     </body>
 
+<script src="../../../inc/js/unicorn.js"></script>
+
 <script>
 
-    function fn() { document.querySelector( "#footnotes" ).scrollIntoView({ behavior: 'smooth' }); };
+    var aa_fn_1 = "footnotes";
+
+    toggle_reset( aa_fn_1 );
 
     </script>
 
