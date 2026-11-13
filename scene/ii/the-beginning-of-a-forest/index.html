@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src via.animathabitat.org 'self'; script-src s.animathabitat.org 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src via.animathabitat.org 'self'; script-src s.animathabitat.org 'self' 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
     <!-- <meta name="google" content="notranslate" /> -->
 
     <meta name="author" content="Dane Aleksander" />
@@ -19,6 +19,8 @@
         </style>
 
     <link rel="preconnect" href="https://via.animathabitat.org" />
+
+    <link rel="preload" href="../../../inc/js/unicorn.js" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
     <link rel="stylesheet" href="../../../inc/css/dark.light.unicorn.css" />
@@ -347,6 +349,8 @@
 
     </body>
 
+<script src="../../../inc/js/unicorn.js"></script>
+
 <script>
 
     var aa_fn_1 = "footnotes",
@@ -356,33 +360,6 @@
         toggle_reset( aa_fn_1 );
         toggle_reset( aa_fn_2 );
         toggle_reset( aa_fn_3 );
-
-    function toggle_fn( aa_fn ) {
-
-        var fn = "#" + aa_fn;
-        var fn_a = aa_fn + "-toggle";
-
-        var aa_fn_a = document.getElementById( fn_a ),
-            aa_fn_i = document.getElementById( aa_fn );
-
-        aa_fn_a.style.display = "none";
-        aa_fn_i.style.display = "block";
-
-        document.querySelector( fn ).scrollIntoView({ behavior: 'smooth' });
-
-        };
-
-    function toggle_reset( aa_id ) {
-
-      var id_a = aa_id + "-toggle";
-
-      var aa_id_a = document.getElementById( id_a ),
-          aa_id_i = document.getElementById( aa_id );
-
-          aa_id_i.style.display = "none";
-          aa_id_a.style.display = "block";
-
-        };
 
     </script>
 
