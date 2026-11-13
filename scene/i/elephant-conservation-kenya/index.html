@@ -20,6 +20,8 @@
 
     <link rel="preconnect" href="https://via.animathabitat.org" />
 
+    <link rel="preload" href="../../../inc/js/unicorn.js">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
     <link rel="stylesheet" href="../../../inc/css/dark.light.unicorn.css" />
 
@@ -219,17 +221,24 @@
 
     </body>
 
+<script src="../../../inc/js/unicorn.js"></script>
+
 <script>
 
     var aa_ex_1989 = "nairobi-1989",
         aa_ex_v1 = "video";
 
-        toggle_reset( aa_ex_1989 );
-        toggle_reset( aa_ex_v1 );
-
     var aa_fn_1 = "footnotes";
 
+    document.onload = reset();
+
+    function reset() {
+
+        toggle_reset( aa_ex_1989 );
+        toggle_reset( aa_ex_v1 );
         toggle_reset( aa_fn_1 );
+
+        };
 
     function toggle( aa_ex ) {
 
@@ -249,33 +258,6 @@
             aa_ex_a.style.display = "block";
 
             }
-
-        };
-
-    function toggle_fn( aa_fn ) {
-
-        var fn = "#" + aa_fn;
-        var fn_a = aa_fn + "-toggle";
-
-        var aa_fn_a = document.getElementById( fn_a ),
-            aa_fn_i = document.getElementById( aa_fn );
-
-        aa_fn_a.style.display = "none";
-        aa_fn_i.style.display = "block";
-
-        document.querySelector( fn ).scrollIntoView({ behavior: 'smooth' });
-
-        };
-
-    function toggle_reset( aa_id ) {
-
-      var id_a = aa_id + "-toggle";
-
-      var aa_id_a = document.getElementById( id_a ),
-          aa_id_i = document.getElementById( aa_id );
-
-          aa_id_i.style.display = "none";
-          aa_id_a.style.display = "block";
 
         };
 
