@@ -363,30 +363,6 @@
         toggle_reset( aa_p7 );
         toggle_reset( aa_p8 );
 
-    function toggle( aa_ex ) {
-
-        var ex_a = aa_ex + "-toggle",
-            ex_h = aa_ex + "-header";
-
-        var aa_ex_a = document.getElementById( ex_a ),
-            aa_ex_h = document.getElementById( ex_h ),
-            aa_ex_i = document.getElementById( aa_ex );
-
-        if ( aa_ex_i.style.display == "none" ) {
-
-            aa_ex_i.style.display = "block";
-            aa_ex_a.style.display = "none";
-            document.querySelector( aa_ex_h ).scrollIntoView({ behavior: 'smooth' });
-
-            } else {
-
-            aa_ex_i.style.display = "none";
-            aa_ex_a.style.display = "block";
-
-            }
-
-        };
-
     </script>
 
 </html>

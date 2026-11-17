@@ -96,7 +96,7 @@
 
                 <p class="linebreak" id="steve-boyes-header">The team started at the source lakes and soon came upon a peatland, which Kerllen Costa describes in <i>Guardians of the River</i>, &ldquo;a marshy layer of decaying plants and mud.&rdquo; Kerllen continues &ldquo;And while satellite images can show the path of a river, nothing but dragging boats across boggy land exposes the landscape.&rdquo; The source lakes in Angola are the water tower for this system. These source lakes are surrounded by vast, high-altitude, high-rainfall Miombo woodlands and &ndash; in between &ndash; there are sponge-like peatlands, with the whole system flowing into the river.</p>
 
-                <p class="linebreak" id="steve-boyes-toggle">Hypothesis: <a class="color" onclick="toggle( aa_ex_sb );">Termites and mushrooms</a>.</p>
+                <p class="linebreak" id="steve-boyes-toggle">Hypothesis: <a class="color" onclick="toggle_and_scroll( aa_ex_sb );">Termites and mushrooms</a>.</p>
 
                 <div class="clear line-left" id="steve-boyes">
                     <p class="linebreak"><font class="color"><i>Termites and mushrooms are the mechanics of the Okavango delta.</i></font></p>
@@ -106,7 +106,7 @@
                     <div class="clear-bottom">
                         <p>The water tower is basically a giant sand dune, with a forest on top, and a lot of rainfall. Doctor of Environmental Development at University of Natal, South Africa, and National Geographic Fellow&mdash;Dr Steve Boyes submits, &ldquo;this is the only place in the world that you have this high-altitude sand hump that is acting like a mountain glacier.&rdquo; Termites are the bulk herbivore up there, and Dr Boyes reasons that they are taking the grass and woody matter underground, &ldquo;creating cavities to store water in, increasing the nutrient levels in the sand.&rdquo; When fires are set in natural cycles to fertilize the sandy soils, this combination produces nitrogen, which produces fungi that show on the surface of the forested dune. Steve sees the spores, and hypothesizes there is a termite kingdom and giant mushroom under the sand, which acts as a sponge that is helping to slowly absorb and release water over time.</p>
 
-                        <p class="linebreak">Close hypothesis: <a class="color" onclick="toggle( aa_ex_sb );">Termites and mushrooms</a>.</p>
+                        <p class="linebreak">Close hypothesis: <a class="color" onclick="toggle_and_scroll( aa_ex_sb );">Termites and mushrooms</a>.</p>
 
                         </div>
 
@@ -233,7 +233,7 @@
                 <h3 class="linebreak" id="moremi-header">Guardians of the Okavango</h3>
                 <p>As more land mines from the decades-long civil war are decommissioned, more roads open up, and the outside world is encroaching into the isolated communities and the surrounding wilderness in Angola. The illegal commercial bushmeat trade has picked up as a result, as have unregulated development, charcoal production and logging and all that. The legal business of tourism lodges in a national reserve, however, remains complicated for some smaller local communities. Whether or not we consider humans as part of wilderness will inform how we conserve a place, Kerllen deliberates, &ldquo;and specifically its designation.&rdquo; A national park. A wilderness area. A privately owned tourist designation. Each of these have different implications for who can live and travel within the protected region.</p>
 
-                <p class="linebreak" id="moremi-toggle">History: <a class="color" onclick="toggle( aa_ex_moremi );">Moremi Reserve</a>.</p>
+                <p class="linebreak" id="moremi-toggle">History: <a class="color" onclick="toggle_and_scroll( aa_ex_moremi );">Moremi Reserve</a>.</p>
 
                 <div class="clear line-left" id="moremi">
                     <p class="linebreak"><font class="color"><i>A reserve in the Okavango delta.</i></font></p>
@@ -261,7 +261,7 @@
 
                     <p class="linebreak">In 2016, the high court of Botswana recognized that historically, minority tribes were not given equal rights. Kerllen adds, &ldquo;And the court acknowledged that the Wayeyi were truly a separate tribe, with their own language and culture.&rdquo; Kerllen concludes that legal recognition is the first step for minority tribes to gain equality in Botswana, &ldquo;to be considered a tribe, like the BaTawana.&rdquo;</p>
 
-                    <p class="linebreak">Close history: <a class="color" onclick="toggle( aa_ex_moremi );">Moremi Reserve</a>.</p>
+                    <p class="linebreak">Close history: <a class="color" onclick="toggle_and_scroll( aa_ex_moremi );">Moremi Reserve</a>.</p>
 
                     </div>
                 </div>
@@ -337,29 +337,6 @@
 
         toggle_reset( aa_fn_1 );
         toggle_reset( aa_fn_3 );
-
-    function toggle( aa_ex ) {
-
-        var ex_a = aa_ex + "-toggle",
-            ex_h = "#" + aa_ex + "-header";
-
-        var aa_ex_a = document.getElementById( ex_a ),
-            aa_ex_i = document.getElementById( aa_ex );
-
-        if ( aa_ex_i.style.display == "none" ) {
-
-            aa_ex_i.style.display = "block";
-            aa_ex_a.style.display = "none";
-            document.querySelector( ex_h ).scrollIntoView({ behavior: 'smooth' });
-
-            } else {
-
-            aa_ex_i.style.display = "none";
-            aa_ex_a.style.display = "block";
-
-            }
-
-        };
 
     </script>
 

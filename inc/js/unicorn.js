@@ -1,6 +1,16 @@
-// Toggle //
+// Scroll Into View //
 
-function toggle(aa_ex) {
+function scroll( aa_ex ) {
+
+    var ex_h = "#" + aa_ex + "-header";
+
+    document.querySelector( ex_h ).scrollIntoView({ behavior: 'smooth' });
+
+    };
+
+// Toggle Display: Block / None //
+
+function toggle( aa_ex ) {
 
     var ex_a = aa_ex + "-toggle";
 
@@ -21,17 +31,17 @@ function toggle(aa_ex) {
 
     };
 
-// Toggle: Footnotes //
+function toggle_and_scroll( aa_ex ) {
 
-function fn() {
-
-    document.querySelector("#footnotes").scrollIntoView({ behavior: 'smooth' });
+    toggle( aa_ex );
+    scroll( aa_ex );
 
     };
 
-function toggle_fn(aa_fn) {
+// Toggle Display: Footnotes //
 
-    var fn = "#" + aa_fn;
+function toggle_fn( aa_fn ) {
+
     var fn_a = aa_fn + "-toggle";
 
     var aa_fn_a = document.getElementById( fn_a ),
@@ -40,13 +50,13 @@ function toggle_fn(aa_fn) {
     aa_fn_a.style.display = "none";
     aa_fn_i.style.display = "block";
 
-    document.querySelector( fn ).scrollIntoView({ behavior: 'smooth' });
+    scroll( aa_fn );
 
     };
 
-// Toggle: Languages //
+// Toggle Language: English / French //
 
-var r = document.querySelector(":root"),
+var r = document.querySelector( ":root" ),
     toggle_fr = 0;
 
     r.style.setProperty( "--fr", "none" );
