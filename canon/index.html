@@ -57,7 +57,7 @@
 
                 </div>
 
-            <div id="presskit">
+            <div>
                 <h4 class="linebreak thin"><font class="en">September </font><font class="fr">Septembre </font>2015</h4>
                 <h2><font class="color-one">Canon</font></h2>
                 <h5 class="author"><font class="en">Press secretary at </font><font class="fr">Secrétaire de presse chez </font>Animat Habitat</h5>
@@ -66,11 +66,19 @@
 
             <pre class="thin"></pre>
 
-            <div>
+            <div class="quote" id="presskit-toggle">
+
+                <p>&plus; <a class="overscore" onclick="toggle( aa_pk );" title="Animat Habitat, press kit \ dossier de presse."><font class="en">Press Kit </font><font class="fr">Dossier de presse</font></a></p>
+
+                </div>
+
+            <div class="quote" id="presskit">
                 <ul>
                     <li>Animat Habitat canon<font class="fr">&nbsp;</font>: <a href="../re/canon-1-1-72/" title="Animat Habitat canon 1.2"><font class="en">PDF copy</font><font class="fr">Copie numèrique</font></a> (<font class="fr">&nbsp;</font>6,175&nbsp;KB<font class="fr">&nbsp;</font>)</li>
                     <li>Animat Habitat canon<font class="fr">&nbsp;</font>: <a href="../re/canon-1-1-s/" title="Animat Habitat canon 1.2"><font class="en">PDF archive</font><font class="fr">Archive numèrique protégée</font></a> (<font class="fr">&nbsp;</font>539&nbsp;KB<font class="fr">&nbsp;</font>)</li>
                     <li>Animat Habitat <font class="en">press kit:</font><font class="fr">dossier de presse&nbsp;:</font> <a href="../re/mark-1/" title="Animat Mark 1.1"><font class="en">ZIP archive</font><font class="fr">Archive numèrique protégée</font></a> (<font class="fr">&nbsp;</font>89&nbsp;KB<font class="fr">&nbsp;</font>)</li>
+
+                    <p class="linebreak"><font class="en">Close: <a onclick="toggle( aa_pk );" title="Animat Habitat, press kit.">Press Kit</a> </font><font class="fr">Fermer&nbsp;: <a onclick="toggle( aa_pk );" title="Animat Habitat, dossier de presse.">Dossier de presse</a></font></p>
 
                     </ul>
 
@@ -140,7 +148,7 @@
                 <p class="linebreak"><i><font class="en">Humans have long since become the driving influence on Earth. The time has long since come to use our unique capability for the good of this planet. We the people need to retake our place in the circle of life. </font><font class="fr">Les humains sont depuis longtemps devenus l'influence déterminante sur Terre. Le temps est venu depuis longtemps d'utiliser notre capacité d'agir pour le bien de cette planè. Nous, le peuple, devrons reprendre place dans le cercle de la vie.</font></i></p>
 
                 <ul class="linebreak">
-                    <li>Animat Habitat &ndash; <a class="overscore" onclick="to();" title="Animat Habitat,  press kit \ dossier de presse."><font class="en">Press Kit </font><font class="fr">Dossier de presse</font></a></li>
+                    <li>Animat Habitat &ndash; <a class="overscore" onclick="toggle_fn( aa_pk );" title="Animat Habitat, press kit \ dossier de presse."><font class="en">Press Kit </font><font class="fr">Dossier de presse</font></a></li>
 
                     </ul>
 
@@ -183,7 +191,9 @@
 
 <script>
 
-    function to() { document.querySelector( "#presskit" ).scrollIntoView({ behavior: 'smooth' }); };
+    var aa_pk = "presskit";
+
+        toggle_reset( aa_pk );
 
     </script>
 

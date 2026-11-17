@@ -2,7 +2,7 @@
 <html lang="en, fr">
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src via.animathabitat.org 'self'; script-src 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src via.animathabitat.org 'self'; script-src 'self' 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
     <meta name="google" content="notranslate" />
 
     <meta name="author" content="Dane Aleksander" />
@@ -17,6 +17,8 @@
         html { background-color: #222; }
 
         </style>
+
+    <link rel="preload" href="../../inc/js/unicorn.js" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,14 +50,14 @@
         <div class="quote text-center">
             <h1 class="title">Animat<font class="letterspace"> </font><font class="thin">Habitat</font></h1>
             <h3><font class="en">Scene one: </font><font class="fr">Scène un&nbsp;:</font></h3>
-            <h1 class="clear title" id="scene-header"><a class="wordmark" onclick="toggle_scene();"><font class="en">White<font class="letterspace"> </font><font class="thin">Elephant</font> </font><font class="fr"><font class="thin">Éléphant</font><font class="letterspace"> </font>Blanc</font></a></h1>
+            <h1 class="clear title" id="scene-header"><a class="wordmark" onclick="toggle_scene( aa_pv );"><font class="en">White<font class="letterspace"> </font><font class="thin">Elephant</font> </font><font class="fr"><font class="thin">Éléphant</font><font class="letterspace"> </font>Blanc</font></a></h1>
             <h3><font class="color-reset"><font class="en">Comic book and companion app to change the way we look at elephants. </font><font class="fr">Une bande dessinée et l’app qui l’accompagne pour changer la façon dont nous regardons les éléphants.</font></font></h3>
 
             </div>
 
         </header>
 
-    <a onclick="toggle_preview();" id="preview">
+    <a onclick="toggle_scene_preview( aa_pv );" id="preview">
         <div class="preview text-center">
             <section class="single">
                 <div>
@@ -70,10 +72,10 @@
 
         </a>
 
-    <div class="clear-bottom vignette" id="vignette">
+    <div class="clear-bottom vignette" id="preview-toggle">
         <section class="single">
             <div class="clear-bottom">
-                <a onclick="toggle_preview();">
+                <a onclick="toggle_scene_preview( aa_pv );">
                     <img alt="Animat Habitat scene one: White Elephant cover art, 2024." class="matte matte-fold" src="../../inc/img/boutique/01/white-elephant.2024.cover.fold.800.jpg" />
 
                     </a>
@@ -86,10 +88,10 @@
 
     <div class="clear-alt color">
 
-        <section class="product single" id="scene">
+        <section class="product single" id="scene-boutique">
 
             <div>
-                <h5 class="color"><a class="color overscore" onclick="toggle( aa_p_meta );"><font class="en">Comic Book</font><font class="fr">Bande dessinée</font></a></h5>
+                <h5 class="color"><a class="color overscore" onclick="toggle_off_on( aa_p_meta );"><font class="en">Comic Book</font><font class="fr">Bande dessinée</font></a></h5>
                 <div class="clear" id="product-meta">
                     <!-- <p class="small"><font class="en">Designed with</font><font class="fr">Conçu avec</font> .</p> -->
                     <p class="small"><font class="en">Created in Canada. </font><font class="fr">Créé au Canada.</font></p>
@@ -107,7 +109,7 @@
 
             <div class="clear diptych ptych-fixed">
                 <div class="clear-bottom">
-                    <h5><a class="overscore" onclick="toggle( aa_p_0101_0511 );"><font class="en">E-book</font><font class="fr">Publication numérique</font></a></h5>
+                    <h5><a class="overscore" onclick="toggle_off_on( aa_p_0101_0511 );"><font class="en">E-book</font><font class="fr">Publication numérique</font></a></h5>
                     <div class="clear" id="product-0101-0511">
                         <p><font class="sku small">0101 0511</font></p>
 
@@ -128,7 +130,7 @@
                     </div>
 
                 <div class="clear-bottom">
-                    <h5><a class="overscore" onclick="toggle( aa_p_0101_1511 );"><font class="en">Full Color Paperback</font><font class="fr">Broché en couleur</font></a></h5>
+                    <h5><a class="overscore" onclick="toggle_off_on( aa_p_0101_1511 );"><font class="en">Full Color Paperback</font><font class="fr">Broché en couleur</font></a></h5>
                     <div class="clear" id="product-0101-1511">
                         <p><font class="sku small">0101 1511</font></p>
                         <p><font class="en">First edition. </font><font class="fr">Première édition</font></p>
@@ -143,7 +145,7 @@
                         </div>
 
                     <div class="clear paypal-us">
-                        <p class="lineend small">International shipping is included in the US<font class="currency-symbol">&#36;</font> list price.<sup>&nbsp;[<a class="button" onclick="fn();" title="Terms of Purchase">1</a>]</sup></p>
+                        <p class="lineend small">International shipping is included in the US<font class="currency-symbol">&#36;</font> list price.<sup>&nbsp;[<a class="button" onclick="scroll_view( aa_fn_1 );" title="Terms of Purchase">1</a>]</sup></p>
 
                         </div>
 
@@ -182,6 +184,8 @@
 
             <div class="quote">
                 <p class="small"><sup>1</sup>&nbsp; <font class="en">International shipping is limited to countries listed as available for international shipping in the boutique <a href="../../c/terms-of-purchase/" target="_blank" title="Animat Habitat, terms of purchase, conditions d'achat.">Terms of Purchase</a>. </font><font class="fr">L'expédition à l'extérieur du Canada est limitée aux pays répertoriés comme disponibles pour l'expédition international dans les <a href="../../c/terms-of-purchase/" target="_blank" title="Animat Habitat, terms of purchase, conditions d'achat.">conditions d'achat</a>.</font></p>
+
+                <p class="linebreak small"><font class="en">Close: <a onclick="toggle_off( aa_sc_bq );">Boutique</a> </font><font class="fr">Fermer&nbsp;: <a onclick="toggle_off( aa_sc_bq );">Boutique</a></font></p>
 
                 </div>
 
@@ -309,13 +313,13 @@
         </div>
 
     <footer class="single">
-        <div class="quote" id="in-mem-toggle">
-            <p class="small">&plus; <a class="color" onclick="toggle_memoriam()">In Memoriam</a></p>
+        <div class="quote" id="in-memoriam-toggle">
+            <p class="small">&plus; <a class="color overscore" onclick="toggle_fn( aa_im );">In Memoriam</a></p>
 
             </div>
 
-        <div class="quote" id="in-mem">
-            <p class="small">&minus; <a class="color" onclick="toggle_memoriam()">In Memoriam</a></p>
+        <div class="quote" id="in-memoriam">
+            <p class="small">&minus; <a class="color footnote-title" onclick="toggle_reset( aa_im );">In Memoriam</a></p>
 
             <p class="linebreak small"><font class="title">Himba</font></p>
             <p class="small"><font class="small">Namib &ndash; BBC <i>Natural World: Elephant Nomads Of The Namib Desert</i> (<font class="en">documentary</font><font class="fr">&nbsp;documentaire</font>, 2008<font class="fr">&nbsp;</font>)</font></p>
@@ -393,152 +397,31 @@
 
     </body>
 
+<script src="../../inc/js/unicorn.js"></script>
+
 <script>
 
-    var r = document.querySelector( ":root" );
-
-        r.style.setProperty( "--us", "none" );
-        r.style.setProperty( "--fr", "none" );
-
-    var aa_cc = document.getElementById( "currency" ),
-        aa_pv = document.getElementById( "preview" ),
-        aa_vg = document.getElementById( "vignette" ),
-        aa_sc = document.getElementById( "scene" );
+    var aa_cc = document.getElementById( "currency" );
 
         aa_cc.style.display = "none";
-        aa_sc.style.display = "none";
-        aa_pv.style.display = "none";
 
-    var aa_im = document.getElementById( "in-mem" ),
-        aa_im_a = document.getElementById( "in-mem-toggle" );
+    var aa_pv = "preview",
+        aa_sc_bq = "scene-boutique",
+        aa_p_meta = "product-meta",
+        aa_p_0101_0511 = "product-0101-0511",
+        aa_p_0101_1511 = "product-0101-1511";
 
-        aa_im.style.display = "none";
-        aa_im_a.style.display = "block";
+        toggle_reset( aa_pv );
+        toggle_off( aa_sc_bq );
+        toggle_off( aa_p_meta );
+        toggle_off( aa_p_0101_0511 );
+        toggle_off( aa_p_0101_1511 );
 
-    var toggle_cc = 0,
-        toggle_fr = 0;
+    var aa_im = "in-memoriam";
 
-    function toggle_currency() {
+        toggle_reset( aa_im );
 
-        if ( toggle_cc == 0 ) {
-
-            r.style.setProperty( "--us", "inline" );
-            r.style.setProperty( "--ca", "none" );
-            r.style.setProperty( "--fr", "none" );
-            r.style.setProperty( "--en", "inline" );
-            toggle_cc = 1;
-            toggle_fr = 0;
-
-            } else {
-
-            r.style.setProperty( "--us", "none" );
-            r.style.setProperty( "--ca", "inline" );
-            toggle_cc = 0;
-
-            }
-
-        };
-
-    function toggle_language() {
-
-        if ( toggle_fr == 0 ) {
-
-            r.style.setProperty( "--us", "none" );
-            r.style.setProperty( "--ca", "inline" );
-            r.style.setProperty( "--fr", "inline" );
-            r.style.setProperty( "--en", "none" );
-            toggle_cc = 0;
-            toggle_fr = 1;
-
-            } else {
-
-            r.style.setProperty( "--fr", "none" );
-            r.style.setProperty( "--en", "inline" );
-            toggle_fr = 0;
-
-            }
-
-        };
-
-    function toggle_memoriam() {
-
-        if ( aa_im.style.display == "none" ) {
-
-            aa_im.style.display = "block";
-            aa_im_a.style.display = "none";
-            document.querySelector( "#in-mem" ).scrollIntoView({ behavior: 'smooth' });
-
-            } else {
-
-            aa_im.style.display = "none";
-            aa_im_a.style.display = "block";
-
-            }
-
-        };
-
-    function toggle_preview() {
-
-        if ( aa_pv.style.display == "none" ) {
-
-            aa_cc.style.display = "block";
-            aa_sc.style.display = "block";
-            aa_pv.style.display = "block";
-            aa_vg.style.display = "none";
-
-            } else {
-
-            aa_pv.style.display = "none";
-            aa_vg.style.display = "block";
-            document.querySelector( "#vignette" ).scrollIntoView({ behavior: 'smooth' });
-
-            }
-
-        };
-
-    function toggle_scene() {
-
-        if ( aa_sc.style.display == "none" ) {
-
-            aa_cc.style.display = "block";
-            aa_sc.style.display = "block";
-            document.querySelector( "#vignette" ).scrollIntoView({ behavior: 'smooth' });
-
-            } else {
-
-            aa_cc.style.display = "none";
-            aa_sc.style.display = "none";
-            document.querySelector( "#scene-header" ).scrollIntoView({ behavior: 'smooth' });
-
-            }
-
-        };
-
-    </script>
-
-<script>
-
-    var aa_p_meta = document.getElementById( "product-meta" ),
-        aa_p_0101_0511 = document.getElementById( "product-0101-0511" ),
-        aa_p_0101_1511 = document.getElementById( "product-0101-1511" );
-
-        aa_p_meta.style.display = "none";
-        aa_p_0101_0511.style.display = "none";
-        aa_p_0101_1511.style.display = "none";
-
-    function toggle( aa_p ) {
-
-        if ( aa_p.style.display == "none" ) {
-
-            aa_p.style.display = "block";
-
-            } else {
-
-            aa_p.style.display = "none";
-
-            }
-
-        };
+    var aa_fn = "footnotes";
 
     </script>
 
