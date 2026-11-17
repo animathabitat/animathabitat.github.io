@@ -2,7 +2,7 @@
 <html lang="en, fr">
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Cont/ent-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src 'self'; script-src 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
+    <meta http-equiv="Cont/ent-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src 'self'; script-src 'self' 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
     <meta name="google" content="notranslate" />
 
     <meta name="author" content="Dane Aleksander" />
@@ -17,6 +17,8 @@
         html { background-color: #333; }
 
         </style>
+
+    <link rel="preload" href="../../inc/js/unicorn.js" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
     <link rel="stylesheet" href="../../inc/css/dark.light.unicorn.css" />
@@ -67,13 +69,13 @@
                 <p><font class="en">Recognized for continued conservation leadership in Kenya. </font><font class="fr">Reconnue pour sa poursuite de la conservation au Kenya.</font></p>
                 <p class="linebreak lineend"><a class="overscore" href="../url/-org/sheldrickwildlifetrust/" title="Sheldrick Wildlife Trust" target="_blank" rel="noopener">sheldrickwildlifetrust.org</a></p>
 
-                <div class="clear" id="in-mem-dms-toggle">
-                    <h5 class="linebreak"><a onclick="toggle( aa_im_dms, aa_im_dms_a );">&plus;</a></h5>
+                <div class="clear" id="in-mem-2018-toggle">
+                    <h5 class="linebreak"><a onclick="toggle( aa_im_2018 );">&plus;</a></h5>
 
                     </div>
 
-                <div class="clear" id="in-mem-dms">
-                    <h5 class="linebreak"><a onclick="toggle( aa_im_dms, aa_im_dms_a );">&minus;</a></h5>
+                <div class="clear" id="in-mem-2018">
+                    <h5 class="linebreak"><a onclick="toggle( aa_im_2018 );">&minus;</a></h5>
                     <h5 class="linebreak title">In Memoriam</h5>
                     <p>Dr Dame Daphne Marjorie Sheldrick (<font class="fr">&nbsp;</font>1934-2018<font class="fr">&nbsp;</font>) &nbsp;<b>&middot;</b>&nbsp; <font class="en">Founder of </font><font class="fr">Fondateur de </font>Sheldrick Wildlife Trust</p>
                     <p><font class="en">Remembered for her dedication to wilderness and all that it embrases, to the memory of David and the pioneer wardens of national parks in Kenya, and to her family &ndash; and future generations &ndash; so that they may know how it was once upon a time. <a href="../url/-org/sheldrickwildlifetrust-dr-dame-daphne-sheldrick-d-b-e-1934-2018/" title="Sheldrick Wildlife Trust / Dame Daphne Sheldrick" target="_blank">Read more</a>. </font><font class="fr">Rappelée pour son dévouement à la nature sauvage et à tout ce qu'elle englobe, à la mémoire de David et des gardiens pionniers des parcs nationaux du Kenya, et à sa famille &ndash; et aux générations futures &ndash; afin qu'ils sachent comment c'était autrefois. <a href="../url/-org/sheldrickwildlifetrust-dr-dame-daphne-sheldrick-d-b-e-1934-2018/" title="Sheldrick Wildlife Trust / Dame Daphne Sheldrick" target="_blank">En savoir plus</a>.</font></p>
@@ -107,56 +109,13 @@
 
     </body>
 
-<script>
-
-    var r = document.querySelector( ":root" ),
-        toggle_fr = 0;
-
-        r.style.setProperty( "--fr", "none" );
-
-    function toggle_language() {
-
-        if ( toggle_fr == 0 ) {
-
-            r.style.setProperty( "--fr", "inline" );
-            r.style.setProperty( "--en", "none" );
-            toggle_fr = 1;
-
-            } else {
-
-            r.style.setProperty( "--fr", "none" );
-            r.style.setProperty( "--en", "inline" );
-            toggle_fr = 0;
-
-            }
-
-        };
-
-    </script>
+<script src="../../inc/js/unicorn.js"></script>
 
 <script>
 
-    var aa_im_dms = document.getElementById( "in-mem-dms" ),
-        aa_im_dms_a = document.getElementById( "in-mem-dms-toggle" );
+    var aa_im_2018 = "in-mem-2018";
 
-        aa_im_dms.style.display = "none";
-        aa_im_dms_a.style.display = "block";
-
-    function toggle( aa_im, aa_im_a ) {
-
-        if ( aa_im.style.display == "none" ) {
-
-            aa_im.style.display = "block";
-            aa_im_a.style.display = "none";
-
-            } else {
-
-            aa_im.style.display = "none";
-            aa_im_a.style.display = "block";
-
-            }
-
-        };
+        toggle_reset( aa_im_2018 );
 
     </script>
 

@@ -2,7 +2,7 @@
 <html lang="en, fr">
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src 'self'; script-src 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src 'self'; script-src 'self' 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
     <meta name="google" content="notranslate" />
 
     <meta name="author" content="Dane Aleksander" />
@@ -17,6 +17,8 @@
         html { background-color: #333; }
 
         </style>
+
+    <link rel="preload" href="../inc/js/unicorn.js" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
     <link rel="stylesheet" href="../inc/css/dark.light.unicorn.css" />
@@ -68,31 +70,6 @@
 
     </body>
 
-<script>
-
-    var r = document.querySelector( ":root" ),
-        toggle_fr = 0;
-
-        r.style.setProperty( "--fr", "none" );
-
-    function toggle_language() {
-
-        if ( toggle_fr == 0 ) {
-
-            r.style.setProperty( "--fr", "inline" );
-            r.style.setProperty( "--en", "none" );
-            toggle_fr = 1;
-
-            } else {
-
-            r.style.setProperty( "--fr", "none" );
-            r.style.setProperty( "--en", "inline" );
-            toggle_fr = 0;
-
-            }
-
-        };
-
-    </script>
+<script src="../inc/js/unicorn.js"></script>
 
 </html>

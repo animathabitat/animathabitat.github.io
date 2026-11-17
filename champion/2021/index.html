@@ -2,7 +2,7 @@ sa<!doctype html>
 <html lang="en, fr">
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Cont/ent-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src 'self'; script-src 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
+    <meta http-equiv="Cont/ent-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src 'self'; script-src 'self' 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
     <meta name="google" content="notranslate" />
 
     <meta name="author" content="Dane Aleksander" />
@@ -17,6 +17,8 @@ sa<!doctype html>
         html { background-color: #333; }
 
         </style>
+
+    <link rel="preload" href="../../inc/js/unicorn.js" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
     <link rel="stylesheet" href="../../inc/css/dark.light.unicorn.css" />
@@ -50,7 +52,7 @@ sa<!doctype html>
 
             <pre class="thin"></pre>
 
-            <div class="quote-wide text-center">
+            <div class="quote-tobo text-center">
 
                 <h5 class="lineend small">Silver</h5>
                 <h5>Dr Anne Christine Innis Dagg, CM, <font class="en">zoologist and author </font><font class="fr">zoologiste et auteur </font>&nbsp;<b>&middot;</b>&nbsp; Anne Innis Dagg Foundation</h5>
@@ -61,7 +63,7 @@ sa<!doctype html>
 
             <pre class="thin"></pre>
 
-            <div class="quote-wide text-center">
+            <div class="quote-tobo text-center">
 
                 <h5 class="lineend small"><font class="en">Periwinkle Blue </font><font class="fr">Bleu Pervenche</font></h5>
                 <h5>Dr Monica L Bond, <font class="en">wildlife biologist </font><font class="fr">biologiste de la faune </font>&nbsp;<b>&middot;</b>&nbsp; <font class="en">Co-founder of </font><font class="fr">Cofondateur de </font>Wild Nature Institute</h5>
@@ -72,6 +74,52 @@ sa<!doctype html>
                 </div>
 
             <pre class="thin"></pre>
+
+            <div class="quote-tobo text-center">
+
+                <div class="clear" id="in-mem-2021-toggle">
+                    <h5><a onclick="toggle( aa_im_2021 );">&plus;</a></h5>
+
+                    </div>
+
+                <div class="clear" id="in-mem-2021">
+                    <h5><a onclick="toggle( aa_im_2021 );">&minus;</a></h5>
+                    <h5 class="linebreak title">In Memoriam</h5>
+                    <p>Edward Osborne Wilson</a> (<font class="fr">&nbsp;</font>1929-2021<font class="fr">&nbsp;</font>) &nbsp;<b>&middot;</b>&nbsp; <font class="en">Guiding force for the E O Wilson Biodiversity Foundation </font><font class="fr">Force motrice de la E O Wilson Biodiversity Foundation</font></p>
+                    <p><font class="en">Remembered as the father of sociobiology, as a pioneer in the efforts to preserve and protect the biodiversity of Earth, and for his unique ability to communicate common ground among scientists and conservation communities. <a href="../url/-org/eowilsonfoundation-about-e-o-wilson/" title="" target="_blank">Read more</a>. </font><font class="fr">Rappelée comme le père de la sociobiologie, comme un pionnier des efforts visant à préserver et à protéger la biodiversité terrestre, et pour sa capacité unique à mettre en évidence des points communs entre les communautés scientifiques et celles vouées à la conservation. <a href="../url/-org/eowilsonfoundation-about-e-o-wilson/" title="" target="_blank">En savoir plus</a>.</font></p>
+
+                    <p class="linebreak">Thomas Eugene Lovejoy III (<font class="fr">&nbsp;</font>1941-2021<font class="fr">&nbsp;</font>) &nbsp;<b>&middot;</b>&nbsp; <font class="en">Founder of the Amazon Biodiversity Center </font><font class="fr">Fondateur du Centre pour la biodiversité amazonienne</font></p>
+                    <p><font class="en">Remembered as the godfather of biodiversity, as a pioneering conservation biologist, and for a career dedicated at the intersection of science and environmental policy to preserving the Amazon, making it visible to the rest of the world, inspiring people to take action. <a href="../url/-//" title="" target="_blank">Read more</a>. </font><font class="fr">Rappelée comme le père de la biodiversité, comme un biologiste de la conservation pionnier, et pour un parcours consacré, au croisement de la science et des politiques environnementales, à la préservation de l’Amazonie, à sa mise en lumière aux yeux du reste du monde, et à la mobilisation des individus à passer à l’action.<a href="../url/-//" title="" target="_blank">En savoir plus</a>.</font></p>
+                    <!--...and the Biological Dynamics of Forest Fragments Project-->
+                    <!--...et du Projet sur la dynamique biologique des fragments forestiers-->
+
+                    <!--//lovejoycenter.arizona.edu/about-thomas-e-lovejoy-->
+
+                    <!--//amazonaid.org/cleanergold-partners/biodiversity-5/-->
+                    <!--//amazonconservation.org/about/board-of-directors/-->
+
+                    <!--
+
+                        More than 40 years ago, the late Thomas Lovejoy, an American ecologist, coined the term biological diversity and made projections about global extinction rates, driven and accelerated by human population growth and poverty. Lovejoy highlighted some of nature‘s most visible creatures: among them big cats like tigers and lions. He reminded us that scientists have a term for animals most of us never think of as endangered – the “living dead“.
+
+                        ...
+                        did pioneering research in the amazon
+                        set out to  determine the minimal required piece of land required to maintain ecological diversity.
+
+                        -->
+
+                    </div>
+
+                </div>
+
+            <div class="clear article-navigation" role="navigation">
+                <div class="nav-links">
+                    <a class="nav-previous" href="../2020/" rel="prev">2020 /</a>
+                    <a class="nav-next" href="../2022/" rel="next">/ 2022</a>
+
+                    </div>
+
+                </div>
 
             </article><br class="clear">
 
@@ -87,30 +135,13 @@ sa<!doctype html>
 
     </body>
 
+<script src="../../inc/js/unicorn.js"></script>
+
 <script>
 
-    var r = document.querySelector( ":root" ),
-        toggle_fr = 0;
+    var aa_im_2021 = "in-mem-2021";
 
-        r.style.setProperty( "--fr", "none" );
-
-    function toggle_language() {
-
-        if ( toggle_fr == 0 ) {
-
-            r.style.setProperty( "--fr", "inline" );
-            r.style.setProperty( "--en", "none" );
-            toggle_fr = 1;
-
-            } else {
-
-            r.style.setProperty( "--fr", "none" );
-            r.style.setProperty( "--en", "inline" );
-            toggle_fr = 0;
-
-            }
-
-        };
+        toggle_reset( aa_im_2021 );
 
     </script>
 

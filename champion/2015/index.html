@@ -2,7 +2,7 @@
 <html lang="en, fr">
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Cont/ent-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src 'self'; script-src 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
+    <meta http-equiv="Cont/ent-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src 'self'; script-src 'self' 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
     <meta name="google" content="notranslate" />
 
     <meta name="author" content="Dane Aleksander" />
@@ -17,6 +17,8 @@
         html { background-color: #333; }
 
         </style>
+
+    <link rel="preload" href="../../inc/js/unicorn.js" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500" />
     <link rel="stylesheet" href="../../inc/css/dark.light.unicorn.css" />
@@ -69,12 +71,12 @@
                 <p class="linebreak lineend"><a class="overscore" href="../../url/-org/janegoodall/" title="Jane Goodall Institute" target="_blank">janegoodall.org</a></p>
 
                 <div class="clear" id="in-mem-vjmg-toggle">
-                    <h5 class="linebreak"><a onclick="toggle( aa_im_vjmg, aa_im_vjmg_a );">&plus;</a></h5>
+                    <h5 class="linebreak"><a onclick="toggle( aa_im_2025 );">&plus;</a></h5>
 
                     </div>
 
-                <div class="clear" id="in-mem-vjmg">
-                    <h5 class="linebreak"><a onclick="toggle( aa_im_vjmg, aa_im_vjmg_a );">&minus;</a></h5>
+                <div class="clear" id="in-mem-2025">
+                    <h5 class="linebreak"><a onclick="toggle( aa_im_2025 );">&minus;</a></h5>
                     <h5 class="linebreak title">In Memoriam</h5>
                     <p>Dr Dame Valerie Jane Morris Goodall (<font class="fr">&nbsp;</font>1934-2025<font class="fr">&nbsp;</font>) &nbsp;<b>&middot;</b>&nbsp; <font class="en">Founder of the </font><font class="fr">Fondateur du </font>Jane Goodall Institute</p>
                     <p><font class="en">Remembered as a conservationist, ethologist and primatologist, in particular, for early fieldwork studying chimpanzees at Gombe, in Tanganyika. That study continues to this day in Tanzania. It is the longest continuous study of any animal in a natural habitat. <a href="../url/-org-tz/janegoodall/" title="Jane Goodall Institute" target="_blank">Read more</a>. </font><font class="fr">Rappelée pour le défense de l'environnement, notamment pour ses premiers travaux de terrain sur les chimpanzés à Gombe, au Tanganyika. Cette étude se poursuit encore aujourd'hui en Tanzanie. Il s'agit de la plus longue étude continue menée sur un animal dans un habitat naturel. <a href="../url/-org-tz/janegoodall/" title="Jane Goodall Institute" target="_blank">En savoir plus</a>.</font></p>
@@ -108,56 +110,13 @@
 
     </body>
 
-<script>
-
-    var r = document.querySelector( ":root" ),
-        toggle_fr = 0;
-
-        r.style.setProperty( "--fr", "none" );
-
-    function toggle_language() {
-
-        if ( toggle_fr == 0 ) {
-
-            r.style.setProperty( "--fr", "inline" );
-            r.style.setProperty( "--en", "none" );
-            toggle_fr = 1;
-
-            } else {
-
-            r.style.setProperty( "--fr", "none" );
-            r.style.setProperty( "--en", "inline" );
-            toggle_fr = 0;
-
-            }
-
-        };
-
-    </script>
+<script src="../../inc/js/unicorn.js"></script>
 
 <script>
 
-    var aa_im_vjmg = document.getElementById( "in-mem-vjmg" ),
-        aa_im_vjmg_a = document.getElementById( "in-mem-vjmg-toggle" );
+    var aa_im_2025 = "in-mem-2025";
 
-        aa_im_vjmg.style.display = "none";
-        aa_im_vjmg_a.style.display = "block";
-
-    function toggle( aa_im, aa_im_a ) {
-
-        if ( aa_im.style.display == "none" ) {
-
-            aa_im.style.display = "block";
-            aa_im_a.style.display = "none";
-
-            } else {
-
-            aa_im.style.display = "none";
-            aa_im_a.style.display = "block";
-
-            }
-
-        };
+        toggle_reset( aa_im_2025 );
 
     </script>
 
