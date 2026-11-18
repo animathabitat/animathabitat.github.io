@@ -32,10 +32,10 @@
             <li class="crumb active"><a><i>Isilo</i></a></li>
             <li class="right thin"><a onclick="toggle_language();" title="English \ Français"><font class="en">fr</font><font class="fr">en</font></a></li>
             <li class="right thin"><a class="title" onclick="toggle_currency();">
-            <font class="paypal-ca"><b class="overscore">CA</b>&nbsp;&#92;&nbsp;US</font>
-            <font class="paypal-us">CA&nbsp;&#92;&nbsp;<b class="overscore">US</b></font>
-            &nbsp;<font class="currency-symbol">&#36;</font>
-            </a></li>
+                    <font class="paypal-ca"><b class="overscore">CA</b>&nbsp;&#92;&nbsp;US</font>
+                    <font class="paypal-us">CA&nbsp;&#92;&nbsp;<b class="overscore">US</b></font>
+                    &nbsp;<font class="currency-symbol">&#36;</font>
+                    </a></li>
 
             </ul>
 
@@ -50,7 +50,7 @@
 
         </header>
 
-    <a onclick="toggle( aa_pv );" id="preview">
+    <a onclick="toggle_off_on( aa_pv );" id="product-preview">
         <div class="preview text-center">
             <img alt="Last of the Big Tuskers, 2018 &ndash; Isilo preview, aperçu." class="product-image" src="../../../../../inc/img/boutique/last-of-the-big-tuskers/lotbt.elephant.isilo.c.1440-864.jpg" />
             <p class="linebreak"><i>Isilo</i> &ndash; <font class="en">Tembe Elephant Park, South Africa</font><font class="fr">Parc des éléphants de Tembe, Afrique du Sud</font> (<font class="en">digital painting</font><font class="fr">&nbsp;peinture numèrique</font>, 2018<font class="fr">&nbsp;</font>)</p>
@@ -59,10 +59,10 @@
 
         </a>
 
-    <div class="clear-bottom vignette" id="vignette">
+    <div class="clear-bottom vignette" id="product-preview-toggle">
         <section class="single">
             <div class="clear-bottom">
-                <a onclick="toggle( aa_pv );">
+                <a onclick="toggle_off_on( aa_pv );">
                     <img alt="Last of the Big Tuskers, 2018 &ndash; Isilo vignette." class="matte matte-fold" src="../../../../../inc/img/boutique/last-of-the-big-tuskers/lotbt.elephant.isilo.300-180.jpg" />
 
                     </a>
@@ -76,7 +76,7 @@
     <div class="clear-alt color">
         <section class="product single" id="product-0111">
             <div>
-                <h5 class="color tag"><a class="overscore" onclick="toggle( aa_p_meta );"><font class="en">Digital Painting</font><font class="fr">Peinture numèrique</font></a></h5>
+                <h5 class="color tag"><a class="overscore" onclick="toggle_off_on( aa_p_meta );"><font class="en">Digital Painting</font><font class="fr">Peinture numèrique</font></a></h5>
                 <div class="clear" id="product-meta">
                     <p class="small">Art <font class="en">of </font><font class="fr">de </font><i>Last of the Big Tuskers</i> (<font class="fr">&nbsp;</font>2018<font class="fr">&nbsp;</font>).</p>
 
@@ -99,7 +99,7 @@
             <div class="clear diptych ptych-fixed">
 
                 <div class="clear-bottom">
-                    <h5><a class="overscore" onclick="toggle( aa_p_0111_1111 );"><font class="en">Limited Edition Giclée</font><font class="fr">Giclée en édition limitée</font></a></h5>
+                    <h5><a class="overscore" onclick="toggle_off_on( aa_p_0111_1111 );"><font class="en">Limited Edition Giclée</font><font class="fr">Giclée en édition limitée</font></a></h5>
                     <div class="clear" id="product-0111-1111">
                         <p><font class="sku small">0111 1111</font></p>
                         <p><font class="en">Edition of </font><font class="fr">Édition de </font>100.</p>
@@ -113,7 +113,7 @@
 
                         </div>
 
-                    <p><font class="en">Price: </font><font class="fr">Prix&nbsp;: </font><font class="paypal-ca">CA<font class="currency-symbol">&#36;</font><font class="price">100</font></font><font class="paypal-us">US<font class="currency-symbol">&#36;</font><font class="price">125</font></font><sup>&nbsp;[<a class="button" onclick="fn();" title="Donation">1</a>]</sup></p>
+                    <p><font class="en">Price: </font><font class="fr">Prix&nbsp;: </font><font class="paypal-ca">CA<font class="currency-symbol">&#36;</font><font class="price">100</font></font><font class="paypal-us">US<font class="currency-symbol">&#36;</font><font class="price">125</font></font><sup>&nbsp;[<a class="button" onclick="scroll_view( aa_fn_1 );" title="Donation">1</a>]</sup></p>
 
                     <div class="clear paypal-ca">
                         <p class="lineend small"><font class="en">Shipping within Canada is included. </font><font class="fr">L'expédition au Canada est incluse.</font></p>
@@ -121,7 +121,7 @@
                         </div>
 
                     <div class="clear paypal-us">
-                        <p class="lineend small">International shipping is included in the US<font class="currency-symbol">&#36;</font> list price.<sup>&nbsp;[<a class="button" onclick="fn();" title="Terms of Purchase">2</a>]</sup></p>
+                        <p class="lineend small">International shipping is included in the US<font class="currency-symbol">&#36;</font> list price.<sup>&nbsp;[<a class="button" onclick="scroll_view( aa_fn_1 );" title="Terms of Purchase">2</a>]</sup></p>
 
                         </div>
 
@@ -153,14 +153,14 @@
                         </form>
 
                     <div class="clear paypal-ca">
-                        <p class="linebreak small"><font class="en">Select the <u>International</u> option for shipping outside Canada. </font><font class="fr">Veuillez sélectionner l'option <u>Internationale</u> pour l'expédition à l'extérieur du Canada.</font><sup>&nbsp;[<a class="button" onclick="fn();" title="Terms of Purchase">2</a>]</sup></p>
+                        <p class="linebreak small"><font class="en">Select the <u>International</u> option for shipping outside Canada. </font><font class="fr">Veuillez sélectionner l'option <u>Internationale</u> pour l'expédition à l'extérieur du Canada.</font><sup>&nbsp;[<a class="button" onclick="scroll_view( aa_fn_1 );" title="Terms of Purchase">2</a>]</sup></p>
 
                         </div>
 
                     </div>
 
                 <div class="clear-bottom">
-                    <h5><a class="overscore" onclick="toggle( aa_p_0111_1121 );"><font class="en">Limited Edition Giclée</font><font class="fr">Giclée en édition limitée</font></a></h5>
+                    <h5><a class="overscore" onclick="toggle_off_on( aa_p_0111_1121 );"><font class="en">Limited Edition Giclée</font><font class="fr">Giclée en édition limitée</font></a></h5>
                     <div class="clear" id="product-0111-1121">
                         <p><font class="sku small">0111 1121</font></p>
                         <p><font class="en">Edition of </font><font class="fr">Édition de </font>10.</p>
@@ -174,7 +174,7 @@
 
                         </div>
 
-                    <p><font class="en">Price: </font><font class="fr">Prix&nbsp;: </font><font class="paypal-ca">CA<font class="currency-symbol">&#36;</font><font class="price">200</font></font><font class="paypal-us">US<font class="currency-symbol">&#36;</font><font class="price">200</font></font><sup>&nbsp;[<a class="button" onclick="fn();" title="Donation">1</a>]</sup></p>
+                    <p><font class="en">Price: </font><font class="fr">Prix&nbsp;: </font><font class="paypal-ca">CA<font class="currency-symbol">&#36;</font><font class="price">200</font></font><font class="paypal-us">US<font class="currency-symbol">&#36;</font><font class="price">200</font></font><sup>&nbsp;[<a class="button" onclick="scroll_view( aa_fn_1 );" title="Donation">1</a>]</sup></p>
 
                     <div class="clear paypal-ca">
                         <p class="lineend small"><font class="en">Shipping within Canada is included. </font><font class="fr">L'expédition au Canada est incluse.</font></p>
@@ -182,7 +182,7 @@
                         </div>
 
                     <div class="clear paypal-us">
-                        <p class="lineend small">International shipping is included in the US<font class="currency-symbol">&#36;</font> list price.<sup>&nbsp;[<a class="button" onclick="fn();" title="Terms of Purchase">2</a>]</sup></p>
+                        <p class="lineend small">International shipping is included in the US<font class="currency-symbol">&#36;</font> list price.<sup>&nbsp;[<a class="button" onclick="scroll_view( aa_fn_1 );" title="Terms of Purchase">2</a>]</sup></p>
 
                         </div>
 
@@ -214,7 +214,7 @@
                         </form>
 
                     <div class="clear paypal-ca">
-                        <p class="linebreak small"><font class="en">Select the <u>International</u> option for shipping outside Canada. </font><font class="fr">Veuillez sélectionner l'option <u>Internationale</u> pour l'expédition à l'extérieur du Canada.</font><sup>&nbsp;[<a class="button" onclick="fn();" title="Terms of Purchase">2</a>]</sup></p>
+                        <p class="linebreak small"><font class="en">Select the <u>International</u> option for shipping outside Canada. </font><font class="fr">Veuillez sélectionner l'option <u>Internationale</u> pour l'expédition à l'extérieur du Canada.</font><sup>&nbsp;[<a class="button" onclick="scroll_view( aa_fn_1 );" title="Terms of Purchase">2</a>]</sup></p>
 
                         </div>
 
@@ -226,7 +226,7 @@
 
         </div>
 
-    <footer class="single">
+    <footer class="single" id="footnotes">
         <div class="quote">
             <p class="small"><sup>1</sup>&nbsp; <font class="en">Fifty (50) per cent of the purchase price is redirected to wildlife conservation projects in elephant range States in Africa in association with scene one at Animat Habitat. </font><font class="fr">Cinquante pour cent du prix d'achat est affecté à des projets de conservation de la nature dans les États de l'aire de répartition des éléphants en Afrique en association avec la première scène chez Animat Habitat.</font></p>
             <p class="small"><sup>2</sup>&nbsp; <font class="en">International shipping is limited to countries listed as available for international shipping in the <a href="../../../c/terms-of-purchase/" target="_blank" title="Animat Habitat, terms of purchase.">Terms of Purchase</a>. </font><font class="fr">L'expédition à l'extérieur du Canada est limitée aux pays répertoriés comme disponibles pour l'expédition international dans les <a href="../../../c/terms-of-purchase/" target="_blank" title="Animat Habitat, conditions d'achat.">conditions d'achat</a>.</font></p>
@@ -241,35 +241,23 @@
 
 <script>
 
-    var aa_p_meta = document.getElementById( "product-meta" ),
-        aa_p_0111_1111 = document.getElementById( "product-0111-1111" ),
-        aa_p_0111_1121 = document.getElementById( "product-0111-1121" ),
-        aa_pv = document.getElementById( "preview" );
+    var r = document.querySelector( ":root" );
 
-        aa_p_meta.style.display = "none";
-        aa_p_0111_1111.style.display = "none";
-        aa_p_0111_1121.style.display = "none";
-        aa_pv.style.display = "none";
+        r.style.setProperty( "--fr", "none" );
+        r.style.setProperty( "--us", "none" );
 
-    function toggle( aa_p ) {
+    var aa_p_meta = "product-meta",
+        aa_p_0111_1111 = "product-0111-1111",
+        aa_p_0111_1121 = "product-0111-1121",
+        aa_pv = "product-preview";
 
-        if ( aa_p.style.display == "none" ) {
+        toggle_off( aa_p_meta );
+        toggle_off( aa_p_0111_1111 );
+        toggle_off( aa_p_0111_1121 );
 
-            aa_p.style.display = "block";
+        toggle_reset( aa_pv );
 
-            } else {
-
-            aa_p.style.display = "none";
-
-            }
-
-        };
-
-    </script>
-
-<script>
-
-    function fn() { document.querySelector( "#footnotes" ).scrollIntoView({ behavior: 'smooth' }); };
+    var aa_fn_1 = "footnotes";
 
     </script>
 

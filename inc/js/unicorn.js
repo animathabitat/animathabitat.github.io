@@ -164,13 +164,15 @@ function toggle_region() {
 
 function toggle_scene( aa_sc ) {
 
-    var sc_a = aa_sc + "-toggle",
-        aa_bq = document.getElementById( aa_sc_bq );
+    var sc_a = aa_sc + "-toggle";
 
-    aa_cc.style.display = "block";
-    aa_bq.style.display = "block";
+    var aa_sc_b = document.getElementById( aa_bq ),
+        aa_sc_c = document.getElementById( aa_cc );
 
-    scroll_view( sc_a );
+        aa_sc_b.style.display = "block";
+        aa_sc_c.style.display = "block";
+
+        scroll_view( sc_a );
 
     };
 

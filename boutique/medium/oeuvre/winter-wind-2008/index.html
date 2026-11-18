@@ -32,10 +32,10 @@
             <li class="crumb active"><a><i>Winter Wind</i></a></li>
             <li class="right thin"><a onclick="toggle_language();" title="English \ Français"><font class="en">fr</font><font class="fr">en</font></a></li>
             <li class="right thin"><a class="title" onclick="toggle_currency();">
-            <font class="paypal-ca"><b class="overscore">CA</b>&nbsp;&#92;&nbsp;US</font>
-            <font class="paypal-us">CA&nbsp;&#92;&nbsp;<b class="overscore">US</b></font>
-            &nbsp;<font class="currency-symbol">&#36;</font>
-            </a></li>
+                    <font class="paypal-ca"><b class="overscore">CA</b>&nbsp;&#92;&nbsp;US</font>
+                    <font class="paypal-us">CA&nbsp;&#92;&nbsp;<b class="overscore">US</b></font>
+                    &nbsp;<font class="currency-symbol">&#36;</font>
+                    </a></li>
 
             </ul>
 
@@ -128,56 +128,21 @@
 
 <script>
 
-    var aa_pv = document.getElementById( "preview" ),
-        aa_pv_vn = document.getElementById( "vignette" );
+    var r = document.querySelector( ":root" );
 
-        aa_pv.style.display = "none";
+        r.style.setProperty( "--fr", "none" );
+        r.style.setProperty( "--us", "none" );
 
-    function toggle_preview() {
+    var aa_p_meta = "product-meta",
+        aa_p_0005_0000 = "product-0005-0000",
+        aa_pv = "product-preview";
 
-        if ( aa_pv.style.display == "none" ) {
+        toggle_off( aa_p_meta );
+        toggle_off( aa_p_0005_0000 );
 
-            aa_pv.style.display = "block";
-            aa_pv_vn.style.display = "none";
+        toggle_reset( aa_pv );
 
-            } else {
-
-            aa_pv.style.display = "none";
-            aa_pv_vn.style.display = "block";
-
-            }
-
-        };
-
-    </script>
-
-<script>
-
-    var aa_p_meta = document.getElementById( "product-meta" ),
-        aa_p_0005_0000 = document.getElementById( "product-0005-0000" );
-
-        aa_p_meta.style.display = "none";
-        aa_p_0005_0000.style.display = "none";
-
-    function toggle( aa_p ) {
-
-        if ( aa_p.style.display == "none" ) {
-
-            aa_p.style.display = "block";
-
-            } else {
-
-            aa_p.style.display = "none";
-
-            }
-
-        };
-
-    </script>
-
-<script>
-
-    function fn() { document.querySelector( "#footnotes" ).scrollIntoView({ behavior: 'smooth' }); };
+    var aa_fn_1 = "footnotes";
 
     </script>
 

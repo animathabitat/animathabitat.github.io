@@ -2,7 +2,7 @@
 <html lang="en, fr">
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src via.animathabitat.org 'self'; script-src 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; font-src fonts.gstatic.com; img-src via.animathabitat.org 'self'; script-src 'self' 'unsafe-inline'; style-src fonts.googleapis.com 'self' 'unsafe-inline';" />
     <meta name="google" content="notranslate" />
 
     <meta name="author" content="Dane Aleksander" />
@@ -17,6 +17,8 @@
         html { background-color: #444; }
 
         </style>
+
+    <link rel="preload" href="../../inc/js/unicorn.js" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,6 +36,11 @@
             <li class="crumb logo color"><a href="../../" title="Animat Habitat"><img alt="Animat Mark &ndash; Three &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/animat.mark.1.1.1200.three.svg"/></a></li>
             <li class="crumb scene color"><a><i>White Bear</i></a></li>
             <li class="right thin"><a onclick="toggle_language();" title="English \ Français"><font class="en">fr</font><font class="fr">en</font></a></li>
+            <li class="right thin" id="scene-currency"><a class="title" onclick="toggle_currency();"><font class="color-reset">
+                <!--<font class="paypal-ca"><b class="overscore">CA</b>&nbsp;&#92;&nbsp;US</font>
+                <font class="paypal-us">CA&nbsp;&#92;&nbsp;<b class="overscore">US</b></font>
+                &nbsp;<font class="currency-symbol">&#36;</font>-->
+                </font></a></li>
 
             </ul>
 
@@ -43,42 +50,47 @@
         <div class="quote text-center">
             <h1 class="title">Animat<font class="letterspace"> </font><font class="thin">Habitat</font></h1>
             <h3><font class="en">Scene three: </font><font class="fr">Scène trois&nbsp;:</font></h3>
-            <h1 class="clear title" id="scene-header"><a class="wordmark" onclick="toggle_scene();"><font class="en">White<font class="letterspace"> </font><font class="thin">Bear</font> </font><font class="fr"><font class="thin">Ours</font><font class="letterspace"> </font>Blanc</font></a></h1>
+            <h1 class="clear title" id="scene-header"><a class="wordmark" onclick="toggle_scene( aa_pv );"><font class="en">White<font class="letterspace"> </font><font class="thin">Bear</font> </font><font class="fr"><font class="thin">Ours</font><font class="letterspace"> </font>Blanc</font></a></h1>
             <h3><font class="color-reset"><font class="en">Mural and companion app to change the way we look at polar bears. </font><font class="fr">Une peinture murale et l'app qui l'accompagne pour changer la façon dont nous regardons les ours polaires.</font></font></h3>
 
             </div>
 
         </header>
 
-    <!--<a id="preview">
-
+    <a onclick="toggle_scene_preview( aa_pv );" id="scene-preview">
         <div class="preview text-center">
-
-            </div>
-
-        </a>-->
-
-    <div class="clear-bottom vignette" id="vignette">
-        <section class="single">
-            <!-- <a onclick="toggle_preview();"> -->
-                <div class="clear-bottom">
-                    <div class="matte matte-fold"><h4 class="color">Image coming soon.</h4></div>
+            <section class="single">
+                <div>
+                    <div class="matte"><h4 class="color">Image coming soon.</h4></div>
 
                     </div>
 
-                <!-- </a> -->
+                </section>
+
+            </div>
+
+        </a>
+
+    <div class="clear-bottom vignette" id="scene-preview-toggle">
+        <section class="single">
+            <div class="clear-bottom">
+                <a onclick="toggle_scene_preview( aa_pv );">
+                    <div class="matte matte-fold"><h4 class="color">Image coming soon.</h4></div>
+
+                    </a>
+
+                </div>
 
             </section>
 
         </div>
 
     <div class="clear-alt color">
-
-        <section class="product single" id="scene">
+        <section class="product single" id="scene-boutique">
 
             <div>
-                <h5 class="color"><a class="color overscore" onclick="toggle_meta();"><font class="en">Poster Series</font><font class="fr">Série d'affiches</font></a></h5>
-                <div class="clear" id="product-meta">
+                <h5 class="color"><a class="color overscore" onclick="toggle_off_on( aa_meta );"><font class="en">Poster Series</font><font class="fr">Série d'affiches</font></a></h5>
+                <div class="clear" id="scene-meta">
                     <!-- <p class="small"><font class="en">Created in Canada. </font><font class="fr">Créé au Canada.</font></p> -->
                     <!-- <h5 class="author">Art <font class="en">by </font><font class="fr">par </font>Dane Aleksander.</h5> -->
 
@@ -87,6 +99,11 @@
                 <p class="linebreak"><font class="en">Drift along with a polar bear cub across a sea of ice: <i>White Bear</i> is a mural that comes to life with passers-by and a companion app. This publication is third in a series of scenes in wildlife art at Animat Habitat. A poster series is not yet available for pre-order. </font><font class="fr">À la dérive avec un ourson polaire sur une mer de glace&nbsp;: <i>Ours blanc</i> est une peinture murale interactive qui prend vie avec l'application compagnon et avec les passants. Cette publication est la troisième d'une série de projets chez Animat Habitat. Une série d'affiches n'est pas encore disponible en précommande.</font></p>
 
                 <p class="linebreak"><font class="en">Installation Date: </font><font class="fr">Date d'installation&nbsp;:</font> &ndash;</p>
+
+                </div>
+
+            <div class="quote">
+                <p class="small"><font class="en">Close: <a onclick="toggle_off( aa_bq );toggle_off( aa_cc );">Boutique</a> </font><font class="fr">Fermer&nbsp;: <a onclick="toggle_off( aa_bq );toggle_off( aa_cc );">Boutique</a></font></p>
 
                 </div>
 
@@ -145,103 +162,25 @@
 
     </body>
 
+<script src="../../inc/js/unicorn.js"></script>
+
 <script>
 
     var r = document.querySelector( ":root" );
 
-        // r.style.setProperty( "--us", "none" );
         r.style.setProperty( "--fr", "none" );
+        r.style.setProperty( "--us", "none" );
 
-    var // aa_cc = document.getElementById( "currency" ),
-        // aa_pv = document.getElementById( "preview" ),
-        // aa_vg = document.getElementById( "vignette" ),
-        aa_sc = document.getElementById( "scene" );
+    var aa_bq = "scene-boutique",
+        aa_cc = "scene-currency",
+        aa_meta = "scene-meta",
+        aa_pv = "scene-preview";
 
-        // aa_cc.style.display = "none";
-        aa_sc.style.display = "none";
-        // aa_pv.style.display = "none";
+        toggle_off( aa_cc );
+        toggle_off( aa_bq );
+        toggle_off( aa_meta );
 
-    var // toggle_cc = 0,
-        toggle_fr = 0;
-
-    // function toggle_currency() {
-
-    //     if ( toggle_cc == 0 ) {
-
-    //         r.style.setProperty( "--us", "inline" );
-    //         r.style.setProperty( "--ca", "none" );
-    //         r.style.setProperty( "--fr", "none" );
-    //         r.style.setProperty( "--en", "inline" );
-    //         toggle_cc = 1;
-    //         toggle_fr = 0;
-
-    //         } else {
-
-    //         r.style.setProperty( "--us", "none" );
-    //         r.style.setProperty( "--ca", "inline" );
-    //         toggle_cc = 0;
-
-    //         }
-
-    //     };
-
-    function toggle_language() {
-
-        if ( toggle_fr == 0 ) {
-
-            // r.style.setProperty( "--us", "none" );
-            // r.style.setProperty( "--ca", "inline" );
-            r.style.setProperty( "--fr", "inline" );
-            r.style.setProperty( "--en", "none" );
-            // toggle_cc = 0;
-            toggle_fr = 1;
-
-            } else {
-
-            r.style.setProperty( "--fr", "none" );
-            r.style.setProperty( "--en", "inline" );
-            toggle_fr = 0;
-
-            }
-
-        };
-
-    // function toggle_preview() {
-
-    //     if ( aa_pv.style.display == "none" ) {
-
-    //         aa_cc.style.display = "block";
-    //         aa_sc.style.display = "block";
-    //         aa_pv.style.display = "block";
-    //         aa_vg.style.display = "none";
-
-    //         } else {
-
-    //         aa_pv.style.display = "none";
-    //         aa_vg.style.display = "block";
-    //         document.querySelector( "#vignette" ).scrollIntoView({ behavior: 'smooth' });
-
-    //         }
-
-    //     };
-
-    function toggle_scene() {
-
-        if ( aa_sc.style.display == "none" ) {
-
-            // aa_cc.style.display = "block";
-            aa_sc.style.display = "block";
-            document.querySelector( "#vignette" ).scrollIntoView({ behavior: 'smooth' });
-
-            } else {
-
-            // curr.style.display = "none";
-            aa_sc.style.display = "none";
-            document.querySelector( "#scene-header" ).scrollIntoView({ behavior: 'smooth' });
-
-            }
-
-        };
+        toggle_reset( aa_pv );
 
     </script>
 

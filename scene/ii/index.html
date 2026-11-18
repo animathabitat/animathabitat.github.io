@@ -36,11 +36,11 @@
             <li class="crumb logo color"><a href="../../" title="Animat Habitat"><img alt="Animat Mark &ndash; Two &copy; Animat Habitat, 2015" class="logo" src="../../inc/svg/animat.mark.1.1.1200.two.svg"/></a></li>
             <li class="crumb scene color"><a><i>White Tiger</i></a></li>
             <li class="right thin"><a onclick="toggle_language();" title="English \ Français"><font class="en">fr</font><font class="fr">en</font></a></li>
-            <li class="right thin" id="currency"><a class="title" onclick="toggle_currency();"><font class="color-reset">
-            <font class="paypal-ca"><b class="overscore">CA</b>&nbsp;&#92;&nbsp;US</font>
-            <font class="paypal-us">CA&nbsp;&#92;&nbsp;<b class="overscore">US</b></font>
-            &nbsp;<font class="currency-symbol">&#36;</font>
-            </font></a></li>
+            <li class="right thin" id="scene-currency"><a class="title" onclick="toggle_currency();"><font class="color-reset">
+                <font class="paypal-ca"><b class="overscore">CA</b>&nbsp;&#92;&nbsp;US</font>
+                <font class="paypal-us">CA&nbsp;&#92;&nbsp;<b class="overscore">US</b></font>
+                &nbsp;<font class="currency-symbol">&#36;</font>
+                </font></a></li>
 
             </ul>
 
@@ -57,14 +57,28 @@
 
         </header>
 
-    <div class="clear-bottom vignette" id="preview-toggle">
+    <a onclick="toggle_scene_preview( aa_pv );" id="scene-preview">
+        <div class="preview text-center">
+            <section class="single">
+                <div>
+                    <div class="matte"><h4 class="color">Image coming soon.</h4></div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </a>
+
+    <div class="clear-bottom vignette" id="scene-preview-toggle">
         <section class="single">
             <div class="clear-bottom">
-                <!-- <a onclick="toggle_scene_preview( aa_pv );"> -->
-
+                <a onclick="toggle_scene_preview( aa_pv );">
                     <div class="matte matte-fold"><h4 class="color">Image coming soon.</h4></div>
 
-                <!-- </a> -->
+                    </a>
+
                 </div>
 
             </section>
@@ -75,8 +89,8 @@
         <section class="product single" id="scene-boutique">
 
             <div>
-                <h5 class="color"><a class="color overscore" onclick="toggle_off_on( aa_p_meta );"><font class="en">Oil Painting</font><font class="fr">Peinture à l'huile</font></a></h5>
-                <div class="clear" id="product-meta">
+                <h5 class="color"><a class="color overscore" onclick="toggle_off_on( aa_meta );"><font class="en">Oil Painting</font><font class="fr">Peinture à l'huile</font></a></h5>
+                <div class="clear" id="scene-meta">
                     <p class="small"><font class="en">Painted with Gamblin artists colors on linen canvas. Created in Canada. </font><font class="fr">Peint avec des couleurs d'artistes Gamblin sur toile de lin. Créé au Canada.</font></p>
                     <h5 class="author">Art <font class="en">by </font><font class="fr">par </font>Dane Aleksander.</h5>
 
@@ -90,8 +104,8 @@
 
             <div class="clear diptych ptych-fixed">
                 <div>
-                    <h5><a class="overscore" onclick="toggle_off_on( aa_p_0200_0011 );"><font class="en">Oil Painting</font><font class="fr">Peinture à l'huile</font></a></h5>
-                    <div class="clear small" id="product-0200-0011">
+                    <h5><a class="overscore" onclick="toggle_off_on( aa_0200_0011 );"><font class="en">Oil Painting</font><font class="fr">Peinture à l'huile</font></a></h5>
+                    <div class="clear small" id="scene-0200-0011">
                         <p><font class="sku">0200 0011</font></p>
 
                         </div>
@@ -101,8 +115,8 @@
                     </div>
 
                 <div>
-                    <h5><a class="overscore" onclick="toggle_off_on( aa_p_0201_0111 );"><font class="en">Digital Image</font><font class="fr">Image numérique</font></a></h5>
-                    <div class="clear small" id="product-0201-0111">
+                    <h5><a class="overscore" onclick="toggle_off_on( aa_0201_0111 );"><font class="en">Digital Image</font><font class="fr">Image numérique</font></a></h5>
+                    <div class="clear small" id="scene-0201-0111">
                         <p><font class="sku">0201 0111</font></p>
 
                         </div>
@@ -114,8 +128,8 @@
                     </div>
 
                 <div class="clear-bottom">
-                    <h5><a class="overscore" onclick="toggle_off_on( aa_p_0201_1111 );"><font class="en">Limited Edition Giclée</font><font class="fr">Giclée en édition limitée</font></a></h5>
-                    <div class="clear" id="product-0201-1111">
+                    <h5><a class="overscore" onclick="toggle_off_on( aa_0201_1111 );"><font class="en">Limited Edition Giclée</font><font class="fr">Giclée en édition limitée</font></a></h5>
+                    <div class="clear" id="scene-0201-1111">
                         <p><font class="sku small">0201 1111</font></p>
                         <p><font class="en">Edition of </font><font class="fr">Édition de </font>250.</p>
 
@@ -172,8 +186,8 @@
                     </div>
 
                 <div class="clear-bottom">
-                    <h5><a class="overscore" onclick="toggle_off_on( aa_p_0201_1121 );"><font class="en">Limited Edition Giclée</font><font class="fr">Giclée en édition limitée</font></a></h5>
-                    <div class="clear" id="product-0201-1121">
+                    <h5><a class="overscore" onclick="toggle_off_on( aa_0201_1121 );"><font class="en">Limited Edition Giclée</font><font class="fr">Giclée en édition limitée</font></a></h5>
+                    <div class="clear" id="scene-0201-1121">
                         <p><font class="sku small">0201 1121</font></p>
                         <p><font class="en">Edition of </font><font class="fr">Édition de </font>25.</p>
 
@@ -234,7 +248,7 @@
             <div class="quote">
                 <p class="small"><sup>1</sup>&nbsp; <font class="en">International shipping is limited to countries listed as available for international shipping in the boutique <a href="../../c/terms-of-purchase/" target="_blank" title="Animat Habitat, terms of purchase, conditions d'achat.">Terms of Purchase</a>. </font><font class="fr">L'expédition à l'extérieur du Canada est limitée aux pays répertoriés comme disponibles pour l'expédition international dans les <a href="../../c/terms-of-purchase/" target="_blank" title="Animat Habitat, terms of purchase, conditions d'achat.">conditions d'achat</a>.</font></p>
 
-                <p class="linebreak small"><font class="en">Close: <a onclick="toggle_off( aa_sc_bq );">Boutique</a> </font><font class="fr">Fermer&nbsp;: <a onclick="toggle_off( aa_sc_bq );">Boutique</a></font></p>
+                <p class="linebreak small"><font class="en">Close: <a onclick="toggle_off( aa_bq );toggle_off( aa_cc );">Boutique</a> </font><font class="fr">Fermer&nbsp;: <a onclick="toggle_off( aa_bq );toggle_off( aa_cc );">Boutique</a></font></p>
 
                 </div>
 
@@ -334,32 +348,30 @@
     var r = document.querySelector( ":root" );
 
         r.style.setProperty( "--fr", "none" );
+        r.style.setProperty( "--us", "none" );
 
-    var aa_cc = document.getElementById( "currency" );
+    var aa_bq = "scene-boutique",
+        aa_cc = "scene-currency",
+        aa_meta = "scene-meta",
+        aa_pv = "scene-preview",
+        aa_0200_0011 = "scene-0200-0011",
+        aa_0201_0111 = "scene-0201-0111",
+        aa_0201_1111 = "scene-0201-1111",
+        aa_0201_1121 = "scene-0201-1121";
 
-        aa_cc.style.display = "none";
+        toggle_off( aa_bq );
+        toggle_off( aa_cc );
+        toggle_off( aa_meta );
+        toggle_off( aa_0200_0011 );
+        toggle_off( aa_0201_0111 );
+        toggle_off( aa_0201_1111 );
+        toggle_off( aa_0201_1121 );
 
-    var aa_pv = "preview",
-        aa_sc_bq = "scene-boutique",
-        aa_p_meta = "product-meta",
-        aa_p_0200_0011 = "product-0200-0011",
-        aa_p_0201_0111 = "product-0201-0111",
-        aa_p_0201_1111 = "product-0201-1111",
-        aa_p_0201_1121 = "product-0201-1121";
-
-        // toggle_reset( aa_pv );
-        toggle_off( aa_sc_bq );
-        toggle_off( aa_p_meta );
-        toggle_off( aa_p_0200_0011 );
-        toggle_off( aa_p_0201_0111 );
-        toggle_off( aa_p_0201_1111 );
-        toggle_off( aa_p_0201_0121 );
+        toggle_reset( aa_pv );
 
     var aa_im = "in-memoriam";
 
         toggle_reset( aa_im );
-
-    var aa_fn = "footnotes";
 
     </script>
 

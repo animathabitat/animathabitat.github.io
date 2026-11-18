@@ -53,7 +53,7 @@
         </header>
 
 
-    <a onclick="toggle_preview( aa_pv );" id="preview">
+    <a onclick="toggle_scene_preview( aa_pv );" id="scene-preview">
         <div class="preview text-center">
             <section class="single">
                 <div>
@@ -68,10 +68,10 @@
 
         </a>
 
-    <div class="clear-bottom vignette" id="preview-toggle">
+    <div class="clear-bottom vignette" id="scene-preview-toggle">
         <section class="single">
             <div class="clear-bottom">
-                <a onclick="toggle_preview( aa_pv );">
+                <a onclick="toggle_scene_preview( aa_pv );">
                     <img alt="Animat Habitat scene zero. White Rhino oil painting, 2007. &copy; Dane Aleksander" class="matte matte-fold" src="../../inc/img/boutique/00/white-rhino.2007.480-160.jpg" />
 
                     </a>
@@ -85,8 +85,8 @@
     <div class="clear-alt color">
         <section class="product single" id="scene-boutique">
             <div>
-                <h5 class="color"><a class="color overscore" onclick="toggle( aa_p_meta );"><font class="en">Oil Painting</font><font class="fr">Peinture à l'huile</font></a></h5>
-                <div class="clear" id="product-meta">
+                <h5 class="color"><a class="color overscore" onclick="toggle( aa_meta );"><font class="en">Oil Painting</font><font class="fr">Peinture à l'huile</font></a></h5>
+                <div class="clear" id="scene-meta">
                     <p class="small"><font class="en">Painted with Pébéo oil colors on canvas. </font><font class="fr">Peint avec des couleurs à l'huile Pébéo sur toile.</font></p>
                     <h5 class="author">Art <font class="en">by </font><font class="fr">par </font>Dane Aleksander.</h5>
 
@@ -100,8 +100,8 @@
 
             <div class="clear diptych">
                 <div class="clear-bottom">
-                    <h5><a class="overscore" onclick="toggle( aa_p_0000_0011 );"><font class="en">Oil Painting</font><font class="fr">Peinture à l'huile</font></a></h5>
-                    <div class="clear" id="product-0000-0011">
+                    <h5><a class="overscore" onclick="toggle( aa_0000_0011 );"><font class="en">Oil Painting</font><font class="fr">Peinture à l'huile</font></a></h5>
+                    <div class="clear" id="scene-0000-0011">
                         <p><font class="sku small">0000 0011</font></p>
 
                         </div>
@@ -109,6 +109,11 @@
                     <p>Dimension: 30&nbsp;&times;&nbsp;10 <font class="en">in </font><font class="fr">po</font></p>
 
                     </div>
+
+                </div>
+
+            <div class="quote">
+                <p class="small"><font class="en">Close: <a onclick="toggle_off( aa_bq );toggle_off( aa_cc );">Boutique</a> </font><font class="fr">Fermer&nbsp;: <a onclick="toggle_off( aa_bq );toggle_off( aa_cc );">Boutique</a></font></p>
 
                 </div>
 
@@ -180,16 +185,20 @@
     var r = document.querySelector( ":root" );
 
         r.style.setProperty( "--fr", "none" );
+        r.style.setProperty( "--us", "none" );
 
-    var aa_pv = "preview",
-        aa_sc_bq = "scene-boutique",
-        aa_p_meta = "product-meta",
-        aa_p_0000_0011 = "product-0000-0011";
+    var aa_bq = "scene-boutique",
+        aa_cc = "scene-currency",
+        aa_meta = "scene-meta",
+        aa_pv = "scene-preview",
+        aa_0000_0011 = "scene-0000-0011";
+
+        toggle_off( aa_cc );
+        toggle_off( aa_bq );
+        toggle_off( aa_meta );
+        toggle_off( aa_0000_0011 );
 
         toggle_reset( aa_pv );
-        toggle_off( aa_sc_bq );
-        toggle_off( aa_p_meta );
-        toggle_off( aa_p_0000_0011 );
 
     var aa_im = "in-memoriam";
 
