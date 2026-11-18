@@ -76,15 +76,9 @@ function toggle_fn( aa_fn ) {
 
     };
 
-// Toggle Region //
-
-var r = document.querySelector(":root");
-
 // Toggle Language: English, French //
 
 var toggle_fr = 0;
-
-    r.style.setProperty( "--fr", "none" );
 
 function toggle_lang_eng() {
 
@@ -119,8 +113,6 @@ function toggle_language() {
 // Toggle Currency: Canadian Dollars, American Dollars //
 
 var toggle_cc = 0;
-
-    r.style.setProperty( "--us", "none" );
 
 function toggle_curr_cad() {
 

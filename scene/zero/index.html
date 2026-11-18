@@ -68,7 +68,7 @@
 
         </a>
 
-    <div class="clear-bottom vignette" id="vignette">
+    <div class="clear-bottom vignette" id="preview-toggle">
         <section class="single">
             <div class="clear-bottom">
                 <a onclick="toggle_preview();">
@@ -83,7 +83,7 @@
         </div>
 
     <div class="clear-alt color">
-        <section class="product single" id="scene">
+        <section class="product single" id="scene-boutique">
             <div>
                 <h5 class="color"><a class="color overscore" onclick="toggle( aa_p_meta );"><font class="en">Oil Painting</font><font class="fr">Peinture à l'huile</font></a></h5>
                 <div class="clear" id="product-meta">
@@ -152,12 +152,12 @@
         </div>
 
     <footer class="single">
-        <div class="quote" id="in-mem-toggle">
+        <div class="quote" id="in-memoriam-toggle">
             <p class="small">&plus; <a class="color overscore" onclick="toggle_fn( aa_im );">In Memoriam</a></p>
 
             </div>
 
-        <div class="quote" id="in-mem">
+        <div class="quote" id="in-memoriam">
             <p class="small">&minus; <a class="color footnote-title" onclick="toggle_reset( aa_im );">In Memoriam</a></p>
 
             <!-- <p class="linebreak small"><font class="title">Gugu</font> &middot;&nbsp;<font class="title">Impi</font></p>
@@ -177,74 +177,23 @@
 
 <script>
 
-    var aa_pv = document.getElementById( "preview" ),
-        aa_vg = document.getElementById( "vignette" ),
-        aa_sc = document.getElementById( "scene" );
+    var r = document.querySelector( ":root" );
 
-        aa_sc.style.display = "none";
-        aa_pv.style.display = "none";
+        r.style.setProperty( "--fr", "none" );
+
+    var aa_pv = "preview",
+        aa_sc_bq = "scene-boutique",
+        aa_p_meta = "product-meta",
+        aa_p_0000_0011 = "product-0000-0011";
+
+        toggle_reset( aa_pv );
+        toggle_off( aa_sc_bq );
+        toggle_off( aa_p_meta );
+        toggle_off( aa_p_0000_0011 );
 
     var aa_im = "in-memoriam";
 
         toggle_reset( aa_im );
-
-    function toggle_preview() {
-
-        if ( aa_pv.style.display == "none" ) {
-
-            aa_sc.style.display = "block";
-            aa_pv.style.display = "block";
-            aa_vg.style.display = "none";
-
-            } else {
-
-            aa_pv.style.display = "none";
-            aa_vg.style.display = "block";
-            document.querySelector( "#vignette" ).scrollIntoView({ behavior: 'smooth' });
-
-            }
-
-        };
-
-    function toggle_scene() {
-
-        if ( aa_sc.style.display == "none" ) {
-
-            aa_sc.style.display = "block";
-            document.querySelector( "#vignette" ).scrollIntoView({ behavior: 'smooth' });
-
-            } else {
-
-            aa_sc.style.display = "none";
-            document.querySelector( "#scene-header" ).scrollIntoView({ behavior: 'smooth' });
-
-            }
-
-        };
-
-    </script>
-
-<script>
-
-    var aa_p_meta = document.getElementById( "product-meta" ),
-        aa_p_0000_0011 = document.getElementById( "product-0000-0011" );
-
-        aa_p_meta.style.display = "none";
-        aa_p_0000_0011.style.display = "none";
-
-    function toggle( aa_p ) {
-
-        if ( aa_p.style.display == "none" ) {
-
-            aa_p.style.display = "block";
-
-            } else {
-
-            aa_p.style.display = "none";
-
-            }
-
-        };
 
     </script>
 

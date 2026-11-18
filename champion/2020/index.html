@@ -59,12 +59,12 @@
                 <p><font class="en">Recognized for her role in shining a light on wildlife conservation in Kenya. </font><font class="fr">Reconnue pour son rôle dans la conservation de la nature au Kenya.</font></p>
 
                 <div class="clear" id="in-mem-refl-toggle">
-                    <h5 class="linebreak"><a onclick="toggle( aa_im_refl, aa_im_refl_a );">&plus;</a></h5>
+                    <h5 class="linebreak"><a onclick="toggle( aa_im_2020 );">&plus;</a></h5>
 
                     </div>
 
                 <div class="clear" id="in-mem-refl">
-                    <h5 class="linebreak"><a onclick="toggle( aa_im_refl, aa_im_refl_a );">&minus;</a></h5>
+                    <h5 class="linebreak"><a onclick="toggle( aa_im_2020 );">&minus;</a></h5>
                     <h5 class="linebreak title">In Memoriam</h5>
                     <p>Dr Richard Erskine Frere Leakey,<font class="en"> paleoanthropologist and wildlife conservationist</font><font class="fr"> paléoanthropologue et défenseur de la faune sauvage</font>. (<font class="fr">&nbsp;</font>1944-2022<font class="fr">&nbsp;</font>)</p>
                     <p><font class="en">Remembered as an activist for democracy in Africa, and as an advocate for African science, from the fossil-rich sedimentary rocks on the shore of Lake Turkana in northern Kenya all the way to the head of Kenya Wildlife Service in 1989, then to the head of the Kenyan Civil Service in 1998. <a href="../url/-org/leakeyfoundation-renowned-paleoanthropologist-and-conservationist-dies-at-age-77/" title="Leakey Foundation / Richard Leakey, renowned paleoanthropologist and conservationist&hellip;" target="_blank">Read more</a>. </font><font class="fr">Rappelée pour l'activisme en faveur de la démocratie en Afrique et pour le défense de la science africaine, depuis les roches sédimentaires riches en fossiles sur les rives du lac Turkana, dans le nord du Kenya, jusqu'au chef du Kenya Wildlife Service en 1989, et puis au chef de la fonction publique kenyane en 1998. <a href="../url/-org/leakeyfoundation-renowned-paleoanthropologist-and-conservationist-dies-at-age-77/" title="Leakey Foundation / Richard Leakey, renowned paleoanthropologist and conservationist&hellip;" target="_blank">En savoir plus</a>.</font></p>
@@ -115,27 +115,13 @@
 
 <script>
 
-    var aa_im_refl = document.getElementById( "in-mem-refl" ),
-        aa_im_refl_a = document.getElementById( "in-mem-refl-toggle" );
+    var r = document.querySelector( ":root" );
 
-        aa_im_refl.style.display = "none";
-        aa_im_refl_a.style.display = "block";
+        r.style.setProperty( "--fr", "none" );
 
-    function toggle( aa_im, aa_im_a ) {
+    var aa_im_2020 = "in-mem-2020";
 
-        if ( aa_im.style.display == "none" ) {
-
-            aa_im.style.display = "block";
-            aa_im_a.style.display = "none";
-
-            } else {
-
-            aa_im.style.display = "none";
-            aa_im_a.style.display = "block";
-
-            }
-
-        };
+        toggle_reset( aa_im_2020 );
 
     </script>
 
