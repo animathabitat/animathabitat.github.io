@@ -13,9 +13,9 @@ function scroll_view( aa_ex ) {
 function toggle_app( aa_ex ) {
 
     var ex_a = aa_ex + "-toggle";
-    var aa_id = document.getElementById( ex_a );
+    var aa_id_a = document.getElementById( ex_a );
 
-    return aa_id;
+    return aa_id_a;
 
     };
 
@@ -96,7 +96,7 @@ function toggle( aa_ex, aa_ex_case ) {
                 } else {
 
                 toggle_display( aa_id, aa_id_a );
-                toggle( aa_ex, 'scene' );
+                toggle( "scene-boutique", "scene" );
 
                 };
 
