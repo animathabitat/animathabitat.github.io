@@ -1,8 +1,8 @@
 // Scroll Into View //
 
-function scroll_view( aa_h ) {
+function scroll_view( aa_ex ) {
 
-    var aa_ex_h = "#" + aa_h;
+    var aa_ex_h = "#" + aa_ex;
 
     document.querySelector( aa_ex_h ).scrollIntoView({ behavior: 'smooth' });
 
@@ -21,21 +21,21 @@ function toggle_view( aa_ex ) {
 function toggle_app( aa_ex ) {
 
     var ex_a = aa_ex + "-toggle";
-    var aa_ex_a = document.getElementById( ex_a );
+    var aa_id_a = document.getElementById( ex_a );
 
-    return aa_ex_a;
-
-    };
-
-function toggle_block( aa_ex ) {
-
-    aa_ex.style.display = "block";
+    return aa_id_a;
 
     };
 
-function toggle_none( aa_ex ) {
+function toggle_block( aa_id ) {
 
-    aa_ex.style.display = "none";
+    aa_id.style.display = "block";
+
+    };
+
+function toggle_none( aa_id ) {
+
+    aa_id.style.display = "none";
 
     };
 
@@ -43,6 +43,13 @@ function toggle_display( aa_ex_no, aa_ex_bk ) {
 
     toggle_none( aa_ex_no );
     toggle_block( aa_ex_bk );
+
+    };
+
+function toggle_style( aa_ex_no, aa_ex_in ) {
+
+    r.style.setProperty( aa_ex_no, "none" );
+    r.style.setProperty( aa_ex_in, "inline" );
 
     };
 
@@ -64,22 +71,22 @@ function toggle_off_on( aa_ex ) {
 
     };
 
-function toggle( aa_ex, aa_sc ) {
+function toggle( aa_ex, aa_ex_case ) {
 
-    var aa_ex_a = toggle_app( aa_ex );
-    var aa_ex_i = document.getElementById( aa_ex );
+    var aa_id_a = toggle_app( aa_ex );
+    var aa_id_i = document.getElementById( aa_ex );
 
-    switch ( aa_sc ) {
+    switch ( aa_ex_case ) {
 
         case "preview" :
 
-            if ( aa_ex_i.style.display == "none" ) {
+            if ( aa_id_i.style.display == "none" ) {
 
-                toggle_display( aa_ex_a, aa_ex_i );
+                toggle_display( aa_id_a, aa_id_i );
 
                 } else {
 
-                toggle_display( aa_ex_i, aa_ex_a );
+                toggle_display( aa_id_i, aa_id_a );
                 toggle( aa_ex, 'scene' );
 
                 };
@@ -88,32 +95,31 @@ function toggle( aa_ex, aa_sc ) {
 
         case "scene" :
 
-            var aa_ex_b = document.getElementById( "scene-boutique" ),
-                aa_ex_c = document.getElementById( "scene-currency" );
+            var aa_id_b = document.getElementById( aa_ex ),
+                aa_id_c = document.getElementById( "scene-currency" );
 
-                toggle_block( aa_ex_b );
-                toggle_block( aa_ex_c );
-
-                scroll_view( aa_ex_a );
+                toggle_block( aa_id_b );
+                toggle_block( aa_id_c );
+                scroll_view( aa_ex );
 
             break;
 
         case "scroll" :
 
-            toggle_display( aa_ex_a, aa_ex_i );
+            toggle_display( aa_id_a, aa_id_i );
             scroll_view( aa_ex );
 
             break;
 
         default :
 
-            if ( aa_ex_i.style.display == "none" ) {
+            if ( aa_id_i.style.display == "none" ) {
 
-                toggle_display( aa_ex_a, aa_ex_i );
+                toggle_display( aa_id_a, aa_id_i );
 
                 } else {
 
-                toggle_display( aa_ex_i, aa_ex_a );
+                toggle_display( aa_id_i, aa_id_a );
 
                 };
 
@@ -121,7 +127,7 @@ function toggle( aa_ex, aa_sc ) {
 
     };
 
-function toggle_ex( aa_ex ) {
+function toggle_more( aa_ex ) {
 
     toggle( aa_ex );
     toggle_view( aa_ex );
@@ -134,16 +140,14 @@ var toggle_fr = 0;
 
 function toggle_lang_eng() {
 
-    r.style.setProperty( "--fr", "none" );
-    r.style.setProperty( "--en", "inline" );
+    toggle_style( "--fr", "--en" );
     toggle_fr = 0;
 
     };
 
 function toggle_lang_fra() {
 
-    r.style.setProperty( "--fr", "inline" );
-    r.style.setProperty( "--en", "none" );
+    toggle_style( "--en", "--fr" );
     toggle_fr = 1;
 
     };
@@ -168,16 +172,14 @@ var toggle_cc = 0;
 
 function toggle_curr_cad() {
 
-    r.style.setProperty( "--us", "none" );
-    r.style.setProperty( "--ca", "inline" );
+    toggle_style( "--us", "--ca" );
     toggle_cc = 0;
 
     };
 
 function toggle_curr_usd() {
 
-    r.style.setProperty( "--us", "inline" );
-    r.style.setProperty( "--ca", "none" );
+    toggle_style( "--ca", "--us" );
     toggle_cc = 1;
 
     };
