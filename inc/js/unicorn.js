@@ -21,7 +21,6 @@ function toggle_view( aa_ex ) {
 function toggle_app( aa_ex ) {
 
     var ex_a = aa_ex + "-toggle";
-
     var aa_ex_a = document.getElementById( ex_a );
 
     return aa_ex_a;
@@ -65,20 +64,60 @@ function toggle_off_on( aa_ex ) {
 
     };
 
-function toggle( aa_ex ) {
+function toggle( aa_ex, aa_sc ) {
 
     var aa_ex_a = toggle_app( aa_ex );
     var aa_ex_i = document.getElementById( aa_ex );
 
-    if ( aa_ex_i.style.display == "none" ) {
+    switch ( aa_sc ) {
 
-        toggle_display( aa_ex_a, aa_ex_i );
+        case "preview" :
 
-        } else {
+            if ( aa_ex_i.style.display == "none" ) {
 
-        toggle_display( aa_ex_i, aa_ex_a );
+                toggle_display( aa_ex_a, aa_ex_i );
 
-        }
+                } else {
+
+                toggle_display( aa_ex_i, aa_ex_a );
+                toggle( aa_ex, 'scene' );
+
+                };
+
+            break;
+
+        case "scene" :
+
+            var aa_ex_b = document.getElementById( "scene-boutique" ),
+                aa_ex_c = document.getElementById( "scene-currency" );
+
+                toggle_block( aa_ex_b );
+                toggle_block( aa_ex_c );
+
+                scroll_view( aa_ex_a );
+
+            break;
+
+        case "scroll" :
+
+            toggle_display( aa_ex_a, aa_ex_i );
+            scroll_view( aa_ex );
+
+            break;
+
+        default :
+
+            if ( aa_ex_i.style.display == "none" ) {
+
+                toggle_display( aa_ex_a, aa_ex_i );
+
+                } else {
+
+                toggle_display( aa_ex_i, aa_ex_a );
+
+                };
+
+        };
 
     };
 
@@ -86,17 +125,6 @@ function toggle_ex( aa_ex ) {
 
     toggle( aa_ex );
     toggle_view( aa_ex );
-
-    };
-
-function toggle_fn( aa_fn ) {
-
-    var aa_fn_a = toggle_app( aa_fn );
-    var aa_fn_i = document.getElementById( aa_fn );
-
-        toggle_display( aa_fn_a, aa_fn_i );
-
-        scroll_view( aa_fn );
 
     };
 
@@ -184,41 +212,6 @@ function toggle_region() {
 
     };
 
-// Toggle Preview //
-
-function toggle_scene( aa_sc ) {
-
-    var sc_a = aa_sc + "-toggle";
-
-    var aa_sc_b = document.getElementById( aa_bq ),
-        aa_sc_c = document.getElementById( aa_cc );
-
-        toggle_block( aa_sc_b );
-        toggle_block( aa_sc_c );
-
-        scroll_view( sc_a );
-
-    };
-
-function toggle_scene_preview( aa_pv ) {
-
-    var aa_pv_a = toggle_app( aa_pv );
-    var aa_pv_i = document.getElementById( aa_pv );
-
-    if ( aa_pv_i.style.display == "none" ) {
-
-        toggle_display( aa_pv_a, aa_pv_i );
-
-        } else {
-
-        toggle_display( aa_pv_i, aa_pv_a );
-
-        toggle_scene( aa_pv );
-
-        }
-
-    };
-
 // Toggle Reset //
 
 function toggle_off( aa_id ) {
@@ -234,7 +227,6 @@ function toggle_reset( aa_id ) {
     var aa_id_a = toggle_app( aa_id );
 
         toggle_block( aa_id_a );
-
         toggle_off( aa_id );
 
     };

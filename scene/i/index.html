@@ -50,14 +50,14 @@
         <div class="quote text-center">
             <h1 class="title">Animat<font class="letterspace"> </font><font class="thin">Habitat</font></h1>
             <h3><font class="en">Scene one: </font><font class="fr">Scène un&nbsp;:</font></h3>
-            <h1 class="clear title" id="scene-header"><a class="wordmark" onclick="toggle_scene( aa_pv );"><font class="en">White<font class="letterspace"> </font><font class="thin">Elephant</font> </font><font class="fr"><font class="thin">Éléphant</font><font class="letterspace"> </font>Blanc</font></a></h1>
+            <h1 class="clear title" id="scene-header"><a class="wordmark" onclick="toggle( aa_pv, 'scene' );"><font class="en">White<font class="letterspace"> </font><font class="thin">Elephant</font> </font><font class="fr"><font class="thin">Éléphant</font><font class="letterspace"> </font>Blanc</font></a></h1>
             <h3><font class="color-reset"><font class="en">Comic book and companion app to change the way we look at elephants. </font><font class="fr">Une bande dessinée et l’app qui l’accompagne pour changer la façon dont nous regardons les éléphants.</font></font></h3>
 
             </div>
 
         </header>
 
-    <a onclick="toggle_scene_preview( aa_pv );" id="scene-preview">
+    <a onclick="toggle( aa_pv, 'preview' );" id="scene-preview">
         <div class="preview text-center">
             <section class="single">
                 <div>
@@ -75,7 +75,7 @@
     <div class="clear-bottom vignette" id="scene-preview-toggle">
         <section class="single">
             <div class="clear-bottom">
-                <a onclick="toggle_scene_preview( aa_pv );">
+                <a onclick="toggle( aa_pv, 'preview' );">
                     <img alt="Animat Habitat scene one: White Elephant cover art, 2024." class="matte matte-fold" src="../../inc/img/boutique/01/white-elephant.2024.cover.fold.800.jpg" />
 
                     </a>
@@ -314,7 +314,7 @@
 
     <footer class="single">
         <div class="quote" id="in-memoriam-toggle">
-            <p class="small">&plus; <a class="color overscore" onclick="toggle_fn( aa_im );">In Memoriam</a></p>
+            <p class="small">&plus; <a class="color overscore" onclick="toggle( aa_im, 'scroll' );">In Memoriam</a></p>
 
             </div>
 
