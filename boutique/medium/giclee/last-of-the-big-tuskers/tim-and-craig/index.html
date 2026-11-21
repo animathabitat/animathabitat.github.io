@@ -50,7 +50,7 @@
 
         </header>
 
-    <a onclick="toggle_off_on( aa_pv_tim );" id="product-preview-tim">
+    <a onclick="toggle( aa_pv_tim, 'off-on' );" id="product-preview-tim">
         <div class="preview text-center">
             <img alt="Last of the Big Tuskers &ndash; Tim preview, aperçu." class="product-image" src="../../../../../inc/img/boutique/last-of-the-big-tuskers/lotbt.elephant.tim.c.864.jpg" />
             <p class="linebreak"><i>Tim</i> &ndash; <font class="en">Amboseli National Park</font><font class="fr">Parc national d'Amboseli</font>, Kenya (<font class="en">digital painting</font><font class="fr">&nbsp;peinture numèrique</font>, 2018<font class="fr">&nbsp;</font>)</p>
@@ -59,7 +59,7 @@
 
         </a>
 
-    <a onclick="toggle_off_on( aa_pv_craig );" id="product-preview-craig">
+    <a onclick="toggle( aa_pv_craig, 'off-on' );" id="product-preview-craig">
         <div class="preview text-center">
             <img alt="Last of the Big Tuskers &ndash; Craig preview, aperçu." class="product-image" src="../../../../../inc/img/boutique/last-of-the-big-tuskers/lotbt.elephant.craig.c.864.jpg" />
             <p class="linebreak"><i>Craig</i> &ndash; <font class="en">Amboseli National Park</font><font class="fr">Parc national d'Amboseli</font>, Kenya (<font class="en">digital painting</font><font class="fr">&nbsp;peinture numèrique</font>, 2018<font class="fr">&nbsp;</font>)</p>
@@ -72,12 +72,12 @@
         <section class="single">
             <div class="clear-bottom diptych ptych-fixed">
                 <div class="clear">
-                    <a onclick="toggle_off_on( aa_pv_tim );"><img alt="Last of the Big Tuskers &ndash; Tim preview, aperçu." class="matte matte-fold" src="../../../../../inc/img/boutique/last-of-the-big-tuskers/lotbt.elephant.tim.180.jpg" /></a>
+                    <a onclick="toggle( aa_pv_tim, 'off-on' );"><img alt="Last of the Big Tuskers &ndash; Tim preview, aperçu." class="matte matte-fold" src="../../../../../inc/img/boutique/last-of-the-big-tuskers/lotbt.elephant.tim.180.jpg" /></a>
 
                     </div>
 
                 <div class="clear">
-                    <a onclick="toggle_off_on( aa_pv_craig );"><img alt="Last of the Big Tuskers &ndash; Craig preview, aperçu." class="matte matte-fold" src="../../../../../inc/img/boutique/last-of-the-big-tuskers/lotbt.elephant.craig.180.jpg" /></a>
+                    <a onclick="toggle( aa_pv_craig, 'off-on' );"><img alt="Last of the Big Tuskers &ndash; Craig preview, aperçu." class="matte matte-fold" src="../../../../../inc/img/boutique/last-of-the-big-tuskers/lotbt.elephant.craig.180.jpg" /></a>
 
                     </div>
 
@@ -90,7 +90,7 @@
     <div class="clear-alt color">
         <section class="product single" id="product-0116">
             <div>
-                <h5 class="color tag"><a class="overscore" onclick="toggle_off_on( aa_p_meta );"><font class="en">Digital Painting</font><font class="fr">Peinture numèrique</font></a></h5>
+                <h5 class="color tag"><a class="overscore" onclick="toggle( aa_p_meta, 'off-on' );"><font class="en">Digital Painting</font><font class="fr">Peinture numèrique</font></a></h5>
                 <div class="clear" id="product-meta">
                     <p class="small">Art <font class="en">of </font><font class="fr">de </font><i>Last of the Big Tuskers</i> (<font class="fr">&nbsp;</font>2018<font class="fr">&nbsp;</font>).</p>
 
@@ -110,7 +110,7 @@
             <div class="clear diptych ptych-fixed">
 
                 <!-- <div class="clear-bottom">
-                    <h5><a class="overscore" onclick="toggle_off_on( aa_p_0116_1111 );"><font class="en">Limited Edition Giclée</font><font class="fr">Giclée en édition limitée</font></a></h5>
+                    <h5><a class="overscore" onclick="toggle( aa_p_0116_1111, 'off-on' );"><font class="en">Limited Edition Giclée</font><font class="fr">Giclée en édition limitée</font></a></h5>
                     <div class="clear" id="product-0116-1111">
                         <p><font class="sku small">0116 1111</font></p>
                         <p><font class="en">Edition of </font><font class="fr">Édition de </font>100.</p>
@@ -171,7 +171,7 @@
                     </div> -->
 
                 <div class="clear-bottom">
-                    <h5><a class="overscore" onclick="toggle_off_on( aa_p_0116_1121 );"><font class="en">Limited Edition Giclée</font><font class="fr">Giclée en édition limitée</font></a></h5>
+                    <h5><a class="overscore" onclick="toggle( aa_p_0116_1121, 'off-on' );"><font class="en">Limited Edition Giclée</font><font class="fr">Giclée en édition limitée</font></a></h5>
                     <div class="clear" id="product-0116-1121">
                         <p><font class="sku small">0116 1121</font></p>
                         <p><font class="en">Edition of </font><font class="fr">Édition de </font>10.</p>
@@ -263,9 +263,9 @@
         aa_pv_craig = "product-preview-craig",
         aa_pv_tim = "product-preview-tim";
 
-        toggle_off( aa_p_meta );
-        // toggle_off( aa_p_0116_1111 );
-        toggle_off( aa_p_0116_1121 );
+        toggle( aa_p_meta, "off" );
+        // toggle( aa_p_0116_1111, "off" );
+        toggle( aa_p_0116_1121, "off" );
 
         toggle_reset( aa_pv_craig );
         toggle_reset( aa_pv_tim );

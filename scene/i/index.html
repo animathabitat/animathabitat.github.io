@@ -91,7 +91,7 @@
         <section class="product single" id="scene-boutique">
 
             <div>
-                <h5 class="color linebreak"><a class="color overscore" onclick="toggle_off_on( aa_meta );"><font class="en">Comic Book</font><font class="fr">Bande dessinée</font></a></h5>
+                <h5 class="color linebreak"><a class="color overscore" onclick="toggle( aa_meta, 'off-on' );"><font class="en">Comic Book</font><font class="fr">Bande dessinée</font></a></h5>
                 <div class="clear" id="scene-meta">
                     <!-- <p class="small"><font class="en">Designed with</font><font class="fr">Conçu avec</font> .</p> -->
                     <p class="small"><font class="en">Created in Canada. </font><font class="fr">Créé au Canada.</font></p>
@@ -109,7 +109,7 @@
 
             <div class="clear diptych ptych-fixed">
                 <div class="clear-bottom">
-                    <h5><a class="overscore" onclick="toggle_off_on( aa_0101_0511 );"><font class="en">E-book</font><font class="fr">Publication numérique</font></a></h5>
+                    <h5><a class="overscore" onclick="toggle( aa_0101_0511, 'off-on' );"><font class="en">E-book</font><font class="fr">Publication numérique</font></a></h5>
                     <div class="clear" id="scene-0101-0511">
                         <p><font class="sku small">0101 0511</font></p>
 
@@ -130,7 +130,7 @@
                     </div>
 
                 <div class="clear-bottom">
-                    <h5><a class="overscore" onclick="toggle_off_on( aa_0101_1511 );"><font class="en">Full Color Paperback</font><font class="fr">Broché en couleur</font></a></h5>
+                    <h5><a class="overscore" onclick="toggle( aa_0101_1511, 'off-on' );"><font class="en">Full Color Paperback</font><font class="fr">Broché en couleur</font></a></h5>
                     <div class="clear" id="scene-0101-1511">
                         <p><font class="sku small">0101 1511</font></p>
                         <p><font class="en">First edition. </font><font class="fr">Première édition</font></p>
@@ -185,7 +185,7 @@
             <div class="quote">
                 <p class="small"><sup>1</sup>&nbsp; <font class="en">International shipping is limited to countries listed as available for international shipping in the boutique <a href="../../c/terms-of-purchase/" target="_blank" title="Animat Habitat, terms of purchase, conditions d'achat.">Terms of Purchase</a>. </font><font class="fr">L'expédition à l'extérieur du Canada est limitée aux pays répertoriés comme disponibles pour l'expédition international dans les <a href="../../c/terms-of-purchase/" target="_blank" title="Animat Habitat, terms of purchase, conditions d'achat.">conditions d'achat</a>.</font></p>
 
-                <p class="linebreak small"><font class="en">Close: <a onclick="toggle_off( aa_bq );toggle_off( aa_cc );">Boutique</a> </font><font class="fr">Fermer&nbsp;: <a onclick="toggle_off( aa_bq );toggle_off( aa_cc );">Boutique</a></font></p>
+                <p class="linebreak small"><font class="en">Close: <a onclick="toggle( aa_bq, 'off' );toggle( aa_cc, 'off' );">Boutique</a> </font><font class="fr">Fermer&nbsp;: <a onclick="toggle( aa_bq, 'off' );toggle( aa_cc, 'off' );">Boutique</a></font></p>
 
                 </div>
 
@@ -413,11 +413,11 @@
         aa_0101_0511 = "scene-0101-0511",
         aa_0101_1511 = "scene-0101-1511";
 
-        toggle_off( aa_cc );
-        toggle_off( aa_bq );
-        toggle_off( aa_meta );
-        toggle_off( aa_0101_0511 );
-        toggle_off( aa_0101_1511 );
+        toggle( aa_cc, "off" );
+        toggle( aa_bq, "off" );
+        toggle( aa_meta, "off" );
+        toggle( aa_0101_0511, "off" );
+        toggle( aa_0101_1511, "off" );
 
         toggle_reset( aa_pv );
 

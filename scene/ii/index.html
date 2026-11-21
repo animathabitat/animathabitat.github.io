@@ -89,7 +89,7 @@
         <section class="product single" id="scene-boutique">
 
             <div>
-                <h5 class="color linebreak"><a class="color overscore" onclick="toggle_off_on( aa_meta );"><font class="en">Oil Painting</font><font class="fr">Peinture à l'huile</font></a></h5>
+                <h5 class="color linebreak"><a class="color overscore" onclick="toggle( aa_meta, 'off-on' );"><font class="en">Oil Painting</font><font class="fr">Peinture à l'huile</font></a></h5>
                 <div class="clear" id="scene-meta">
                     <p class="small"><font class="en">Painted with Gamblin artists colors on linen canvas. Created in Canada. </font><font class="fr">Peint avec des couleurs d'artistes Gamblin sur toile de lin. Créé au Canada.</font></p>
                     <h5 class="author">Art <font class="en">by </font><font class="fr">par </font>Dane Aleksander.</h5>
@@ -104,7 +104,7 @@
 
             <div class="clear diptych ptych-fixed">
                 <div>
-                    <h5><a class="overscore" onclick="toggle_off_on( aa_0200_0011 );"><font class="en">Oil Painting</font><font class="fr">Peinture à l'huile</font></a></h5>
+                    <h5><a class="overscore" onclick="toggle( aa_0200_0011, 'off-on' );"><font class="en">Oil Painting</font><font class="fr">Peinture à l'huile</font></a></h5>
                     <div class="clear small" id="scene-0200-0011">
                         <p><font class="sku">0200 0011</font></p>
 
@@ -115,7 +115,7 @@
                     </div>
 
                 <div>
-                    <h5><a class="overscore" onclick="toggle_off_on( aa_0201_0111 );"><font class="en">Digital Image</font><font class="fr">Image numérique</font></a></h5>
+                    <h5><a class="overscore" onclick="toggle( aa_0201_0111, 'off-on' );"><font class="en">Digital Image</font><font class="fr">Image numérique</font></a></h5>
                     <div class="clear small" id="scene-0201-0111">
                         <p><font class="sku">0201 0111</font></p>
 
@@ -128,7 +128,7 @@
                     </div>
 
                 <div class="clear-bottom">
-                    <h5><a class="overscore" onclick="toggle_off_on( aa_0201_1111 );"><font class="en">Limited Edition Giclée</font><font class="fr">Giclée en édition limitée</font></a></h5>
+                    <h5><a class="overscore" onclick="toggle( aa_0201_1111, 'off-on' );"><font class="en">Limited Edition Giclée</font><font class="fr">Giclée en édition limitée</font></a></h5>
                     <div class="clear" id="scene-0201-1111">
                         <p><font class="sku small">0201 1111</font></p>
                         <p><font class="en">Edition of </font><font class="fr">Édition de </font>250.</p>
@@ -186,7 +186,7 @@
                     </div>
 
                 <div class="clear-bottom">
-                    <h5><a class="overscore" onclick="toggle_off_on( aa_0201_1121 );"><font class="en">Limited Edition Giclée</font><font class="fr">Giclée en édition limitée</font></a></h5>
+                    <h5><a class="overscore" onclick="toggle( aa_0201_1121, 'off-on' );"><font class="en">Limited Edition Giclée</font><font class="fr">Giclée en édition limitée</font></a></h5>
                     <div class="clear" id="scene-0201-1121">
                         <p><font class="sku small">0201 1121</font></p>
                         <p><font class="en">Edition of </font><font class="fr">Édition de </font>25.</p>
@@ -248,7 +248,7 @@
             <div class="quote">
                 <p class="small"><sup>1</sup>&nbsp; <font class="en">International shipping is limited to countries listed as available for international shipping in the boutique <a href="../../c/terms-of-purchase/" target="_blank" title="Animat Habitat, terms of purchase, conditions d'achat.">Terms of Purchase</a>. </font><font class="fr">L'expédition à l'extérieur du Canada est limitée aux pays répertoriés comme disponibles pour l'expédition international dans les <a href="../../c/terms-of-purchase/" target="_blank" title="Animat Habitat, terms of purchase, conditions d'achat.">conditions d'achat</a>.</font></p>
 
-                <p class="linebreak small"><font class="en">Close: <a onclick="toggle_off( aa_bq );toggle_off( aa_cc );">Boutique</a> </font><font class="fr">Fermer&nbsp;: <a onclick="toggle_off( aa_bq );toggle_off( aa_cc );">Boutique</a></font></p>
+                <p class="linebreak small"><font class="en">Close: <a onclick="toggle( aa_bq, 'off' );toggle( aa_cc, 'off' );">Boutique</a> </font><font class="fr">Fermer&nbsp;: <a onclick="toggle( aa_bq, 'off' );toggle( aa_cc, 'off' );">Boutique</a></font></p>
 
                 </div>
 
@@ -359,13 +359,13 @@
         aa_0201_1111 = "scene-0201-1111",
         aa_0201_1121 = "scene-0201-1121";
 
-        toggle_off( aa_bq );
-        toggle_off( aa_cc );
-        toggle_off( aa_meta );
-        toggle_off( aa_0200_0011 );
-        toggle_off( aa_0201_0111 );
-        toggle_off( aa_0201_1111 );
-        toggle_off( aa_0201_1121 );
+        toggle( aa_bq, "off" );
+        toggle( aa_cc, "off" );
+        toggle( aa_meta, "off" );
+        toggle( aa_0200_0011, "off" );
+        toggle( aa_0201_0111, "off" );
+        toggle( aa_0201_1111, "off" );
+        toggle( aa_0201_1121, "off" );
 
         toggle_reset( aa_pv );
 

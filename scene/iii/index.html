@@ -89,7 +89,7 @@
         <section class="product single" id="scene-boutique">
 
             <div>
-                <h5 class="color linebreak"><a class="color overscore" onclick="toggle_off_on( aa_meta );"><font class="en">Poster Series</font><font class="fr">Série d'affiches</font></a></h5>
+                <h5 class="color linebreak"><a class="color overscore" onclick="toggle( aa_meta, 'off-on' );"><font class="en">Poster Series</font><font class="fr">Série d'affiches</font></a></h5>
                 <div class="clear" id="scene-meta">
                     <!-- <p class="small"><font class="en">Created in Canada. </font><font class="fr">Créé au Canada.</font></p> -->
                     <!-- <h5 class="author">Art <font class="en">by </font><font class="fr">par </font>Dane Aleksander.</h5> -->
@@ -103,7 +103,7 @@
                 </div>
 
             <div class="quote">
-                <p class="small"><font class="en">Close: <a onclick="toggle_off( aa_bq );toggle_off( aa_cc );">Boutique</a> </font><font class="fr">Fermer&nbsp;: <a onclick="toggle_off( aa_bq );toggle_off( aa_cc );">Boutique</a></font></p>
+                <p class="small"><font class="en">Close: <a onclick="toggle( aa_bq, 'off' );toggle( aa_cc, 'off' );">Boutique</a> </font><font class="fr">Fermer&nbsp;: <a onclick="toggle( aa_bq, 'off' );toggle( aa_cc, 'off' );">Boutique</a></font></p>
 
                 </div>
 
@@ -176,9 +176,9 @@
         aa_meta = "scene-meta",
         aa_pv = "scene-preview";
 
-        toggle_off( aa_cc );
-        toggle_off( aa_bq );
-        toggle_off( aa_meta );
+        toggle( aa_cc, "off" );
+        toggle( aa_bq, "off" );
+        toggle( aa_meta, "off" );
 
         toggle_reset( aa_pv );
 

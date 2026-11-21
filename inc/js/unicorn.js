@@ -4,16 +4,32 @@ function scroll_view( aa_ex ) {
 
     var aa_ex_a = "#" + aa_ex;
 
-    document.querySelector( aa_ex_a ).scrollIntoView({ behavior: 'smooth' });
+    document.querySelector( aa_ex_a ).scrollIntoView({ behavior: "smooth" });
 
     };
 
 // Toggle Display //
 
-function toggle_app( aa_ex ) {
+function toggle_tag( aa_ex, aa_ex_tag ) {
 
-    var ex_a = aa_ex + "-toggle";
-    var aa_id_a = document.getElementById( ex_a );
+    var aa_ex_a = aa_ex + "-" + aa_ex_tag;
+
+    return aa_ex_a;
+
+    };
+
+function toggle_get( aa_ex ) {
+
+    var aa_id = document.getElementById( aa_ex );
+
+    return aa_id;
+
+    };
+
+function toggle_get_tag( aa_ex, aa_ex_tag ) {
+
+    var aa_ex_a = aa_ex + "-" + aa_ex_tag;
+    var aa_id_a = document.getElementById( aa_ex_a );
 
     return aa_id_a;
 
@@ -38,6 +54,15 @@ function toggle_display( aa_ex_no, aa_ex_bk ) {
 
     };
 
+function toggle_reset( aa_ex ) {
+
+    var aa_id_a = toggle_get_tag( aa_ex, "toggle" );
+
+        toggle_block( aa_id_a );
+        toggle( aa_ex, "off" );
+
+    };
+
 function toggle_style( aa_ex_no, aa_ex_in ) {
 
     r.style.setProperty( aa_ex_no, "none" );
@@ -47,30 +72,15 @@ function toggle_style( aa_ex_no, aa_ex_in ) {
 
 // Toggle Display: Block / None //
 
-function toggle_off_on( aa_ex ) {
-
-    var aa_id = document.getElementById( aa_ex );
-
-    if ( aa_id.style.display == "none" ) {
-
-        toggle_block( aa_id );
-
-        } else {
-
-        toggle_none( aa_id );
-
-        }
-
-    };
-
 function toggle( aa_ex, aa_ex_case ) {
 
-    var aa_id_a = toggle_app( aa_ex );
-    var aa_id = document.getElementById( aa_ex );
+    var aa_id = toggle_get( aa_ex );
 
     switch ( aa_ex_case ) {
 
         case "scroll" :
+
+            var aa_id_a = toggle_get_tag( aa_ex, "toggle" );
 
             toggle_display( aa_id_a, aa_id );
             scroll_view( aa_ex );
@@ -79,7 +89,8 @@ function toggle( aa_ex, aa_ex_case ) {
 
         case "scene" :
 
-            var aa_id_c = document.getElementById( "scene-currency" );
+            var aa_cc = "scene-currency";
+            var aa_id_c = toggle_get( aa_cc );
 
                 toggle_block( aa_id );
                 toggle_block( aa_id_c );
@@ -89,28 +100,47 @@ function toggle( aa_ex, aa_ex_case ) {
 
         case "preview" :
 
-            if ( aa_id.style.display == "none" ) {
+            if ( aa_id.style.display != "none" ) {
 
-                toggle_display( aa_id_a, aa_id );
-
-                } else {
-
-                toggle_display( aa_id, aa_id_a );
                 toggle( "scene-boutique", "scene" );
 
                 };
+
+            toggle( aa_ex );
+
+            break;
+
+        case "off-on" :
+
+            if ( aa_id.style.display == "none" ) {
+
+                toggle_block( aa_id );
+
+                } else {
+
+                toggle_none( aa_id );
+
+                }
+
+            break;
+
+        case "off" :
+
+            toggle_none( aa_id );
 
             break;
 
         case "header" :
 
-            var aa_ex_a = aa_ex + "-" + aa_ex_case;
+            var aa_ex_a = toggle_tag( aa_ex_case );
 
             scroll_view( aa_ex_a );
 
             // break;
 
         default :
+
+            var aa_id_a = toggle_get_tag( aa_ex, "toggle" );
 
             if ( aa_id.style.display == "none" ) {
 
@@ -203,24 +233,5 @@ function toggle_region() {
         toggle_lang_eng();
 
         }
-
-    };
-
-// Toggle Reset //
-
-function toggle_off( aa_ex ) {
-
-    var aa_id = document.getElementById( aa_ex );
-
-        toggle_none( aa_id );
-
-    };
-
-function toggle_reset( aa_ex ) {
-
-    var aa_id = toggle_app( aa_ex );
-
-        toggle_block( aa_id );
-        toggle_off( aa_ex );
 
     };
