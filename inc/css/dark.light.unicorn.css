@@ -77,10 +77,10 @@
     --ca: "inline";
     --us: "none";
 
-    --gutter: 1em;
-    --gutter-ii: 1.5em;
-    --gutter-iii: 3em;
-    --gutter-iv: 4.5em;
+    --em: 1em;
+    --em-ii: 2em;
+    --em-iii: 3em;
+    --em-iv: 5em;
 
     /* --rem: clamp( 0.9rem, 1.8rem, 2.7rem ); */
 
@@ -750,12 +750,12 @@ nav li.btn {
 }
 nav li a {
 
-    padding: 0.1em var( --gutter );
+    padding: 0.1em var( --em );
 
 }
 nav li.logo a {
 
-    padding: 0 var( --gutter ) 0.2em;
+    padding: 0 var( --em ) 0.2em;
 
 }
 nav li.btn:before {
@@ -827,7 +827,7 @@ pre.thin,
 
 button, input, select {
 
-    height: 2em;
+    height: var( --em-ii );
 
 }
 input[ type="checkbox" ],
@@ -880,7 +880,7 @@ textarea {
 }
 option {
 
-    padding: var( --gutter ) 0;
+    padding: var( --em ) 0;
 
 }
 
@@ -987,13 +987,13 @@ div.ptych-center-right {
 
 section.product {
 
-    padding: 1em 0 2em 0;
+    padding: var( --em ) 0 var( --em-ii ) 0;
 
 }
 div,
 ul.product > li {
 
-    padding: var( --gutter );
+    padding: var( --em );
 
 }
 div.hidden {
@@ -1023,24 +1023,29 @@ div.ptych-bottom {
     margin: auto 0 0;
 
 }
+div.boutique {
+
+    margin: 0 var( --em );
+
+}
 div.line-left > div,
 div.keeper-entries > div.keeper-entry {
 
     padding-right: 0;
     padding-top: 0;
     padding-bottom: 0;
-    margin: var( --gutter ) 0;
+    margin: var( --em ) 0;
     border-left: 0.382em solid;
 
 }
 div.keeper-entries > div.keeper-entry p:not( :last-child ) {
 
-    padding: 0 0 var( --gutter );
+    padding: 0 0 var( --em );
 
 }
 div.keeper-entries pre {
 
-    margin: var( --gutter ) 0 0;
+    margin: var( --em ) 0 0;
 
 }
 div.footnotes p.small:not( .clear-top, .gutter-side ) {
@@ -1064,38 +1069,38 @@ div.clear-right.ptych-right {
 
 }
 
-body > div.clear.color {
+body > div.clear.color:not( .boutique ) {
 
-    margin-top: var( --gutter );
+    margin-top: var( --em );
 
 }
 
 div[ role="navigation" ] {
 
-    margin: 2em auto;
+    margin: var( --em-ii ) auto;
 
 }
 .nav-links {
 
-    padding: var( --gutter );
+    padding: var( --em );
 
 }
 
 blockquote, q,
 .quote {
 
-    padding: var( --gutter-iii );
+    padding: var( --em-iii );
 
 }
 .quote-tobo {
 
-    padding-bottom: var( --gutter-iii );
-    padding-top: var( --gutter-iii );
+    padding-bottom: var( --em-iii );
+    padding-top: var( --em-iii );
 
 }
 ul.titles li h5 {
 
-    margin-top: var( --gutter-ii );
+    margin-top: var( --em-ii );
 
 }
 
@@ -1116,17 +1121,17 @@ h5.product-title {
 }
 .letterhead {
 
-    padding-top: var( --gutter-iv );
+    padding-top: var( --em-iv );
 
 }
 .letterend {
 
-    padding-bottom: var( --gutter-iv );
+    padding-bottom: var( --em-iv );
 
 }
 .linebreak {
 
-    padding-top: var( --gutter-ii );
+    padding-top: var( --em-ii );
 
 }
 p.linebreak,
@@ -1134,42 +1139,42 @@ li.linebreak,
 div.endnotes > h3.linebreak,
 .return-to-shop {
 
-    padding-top: var( --gutter );
+    padding-top: var( --em );
 
 }
 .lineend {
 
-    padding-bottom: var( --gutter-ii );
+    padding-bottom: var( --em-ii );
 
 }
 p.lineend,
 li.lineend,
 .return-to-shop, .stock {
 
-    padding-bottom: var( --gutter );
+    padding-bottom: var( --em );
 
 }
 
 .gutter,
 .gutter-side {
 
-    padding: 0 var( --gutter );
+    padding: 0 var( --em );
 
 }
 .gutter-tobo {
 
-    padding: var( --gutter ) 0;
+    padding: var( --em ) 0;
 
 }
 .ref {
 
-    padding-top: var( --gutter );
+    padding-top: var( --em );
     padding-bottom: 0;
 
 }
 .gutter-ref {
 
-    padding: 0 var( --gutter-iii ) var( --gutter );
+    padding: 0 var( --em-iii ) var( --em );
 
 }
 .gutter-small {
@@ -1215,12 +1220,6 @@ br.clear {
 .clear-right {
 
     padding-right: 0 !important;
-
-}
-.clear-alt {
-
-    margin: 0 !important;
-    padding: 0 !important;
 
 }
 
@@ -1377,12 +1376,12 @@ li.product-vignette a:hover img,
 }
 .matte {
 
-    border: 2em solid;
+    border: var( --em-ii ) solid;
 
 }
 .matte-preview {
 
-    border: var( --gutter ) solid;
+    border: var( --em ) solid;
 
 }
 
